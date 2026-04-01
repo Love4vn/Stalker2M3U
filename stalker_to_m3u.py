@@ -4,13 +4,14 @@ Stalker Portal to M3U Converter for Sports Channels
 - Kiểm tra portal, chọn portal có hạn dài nhất
 - Lọc kênh thể thao (loại trừ một số môn và giải trẻ, hạng dưới)
 - Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
-- Xuất M3U với URL stream trực tiếp (bỏ tiền tố ffmpeg/ffrt)
+- Xuất M3U với URL stream trực tiếp (bỏ tiền tố ffmpeg/ffrt, sửa localhost)
 """
 
 import requests
 import json
 import sys
 import time
+import re
 from datetime import datetime
 from urllib.parse import quote
 import os
@@ -175,14 +176,27 @@ def is_hd_channel(channel):
             return True
     return False
 
-def get_stream_url_from_cmd(cmd, base_url):
-    if not cmd:
-        return None
-    cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-    if cmd.startswith("http"):
-        return cmd
-    else:
-        return base_url.rstrip('/') + '/' + cmd.lstrip('/')
+def create_link(server_url, mac, token, cmd):
+    """Tạo URL stream từ cmd (gọi API portal)"""
+    params = {
+        "type": "itv",
+        "action": "create_link",
+        "cmd": cmd,
+        "JsHttpRequest": "1-xml"
+    }
+    headers = HEADERS.copy()
+    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
+    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
+    headers["Authorization"] = f"Bearer {token}"
+    try:
+        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        data = resp.json()
+        if "js" in data and "cmd" in data["js"]:
+            return data["js"]["cmd"]
+    except:
+        pass
+    return None
 
 # ==================== HÀM CHÍNH ====================
 def main():
@@ -276,18 +290,42 @@ def main():
     hd_sports = [ch for ch in sports_candidates if is_hd_channel(ch)]
     print(f"Found {len(hd_sports)} sports channels after HD filter")
     
+    # Lấy domain từ portal URL để thay thế localhost
+    base_url = best['url'].rstrip('/')
+    domain_match = re.search(r'https?://([^/]+)', base_url)
+    portal_domain = domain_match.group(1) if domain_match else None
+    
     # Tạo M3U
     m3u_content = "#EXTM3U\n"
     total_streams = 0
-    base_url = best['url'].rstrip('/')
     for idx, ch in enumerate(hd_sports):
         if idx % 10 == 0:
             print(f"Processing stream {idx}/{len(hd_sports)}...")
         cmd = ch.get("cmd")
         if not cmd:
             continue
-        stream_url = get_stream_url_from_cmd(cmd, base_url)
+        
+        # Làm sạch cmd (bỏ ffmpeg, ffrt)
+        clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+        
+        # Ưu tiên dùng clean_cmd nếu nó là http
+        if clean_cmd.startswith("http"):
+            stream_url = clean_cmd
+        else:
+            # Nếu không, thử create_link
+            stream_url = create_link(best["server_url"], best["mac"], best["token"], cmd)
+            if stream_url:
+                stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+        
         if not stream_url:
+            continue
+        
+        # Thay thế localhost nếu có
+        if "localhost" in stream_url and portal_domain:
+            stream_url = stream_url.replace("localhost", portal_domain)
+        
+        # Đảm bảo URL bắt đầu bằng http
+        if not stream_url.startswith("http"):
             continue
         
         tvg_id = ch.get("id", "")
