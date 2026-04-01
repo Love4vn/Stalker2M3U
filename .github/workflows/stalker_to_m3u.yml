@@ -2,18 +2,18 @@ name: Generate M3U Playlist
 
 on:
   schedule:
-    - cron: '0 0 * * *'      # Chạy mỗi ngày lúc 00:00 UTC
-  workflow_dispatch:          # Cho phép chạy thủ công
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write          # Cần quyền ghi để push
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Dùng token mặc định để push
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -27,6 +27,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add Mac_playlist.m3u
-          # Chỉ commit nếu có thay đổi
           git diff --quiet && git diff --staged --quiet || git commit -m "Update Mac_playlist.m3u"
           git push
