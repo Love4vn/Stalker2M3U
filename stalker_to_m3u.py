@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """
 Stalker Portal to M3U Converter for Sports Channels
-- Kiểm tra portal, chọn portal có hạn dài nhất
-- Lọc kênh thể thao (loại trừ một số môn và giải trẻ, hạng dưới)
-- Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
-- Xuất M3U với URL stream trực tiếp (bỏ tiền tố ffmpeg/ffrt)
+- Đọc Mac_list.txt, kiểm tra portal, chọn 3 portal sống tốt nhất
+- Lọc kênh thể thao theo danh sách từ khóa (bóng đá cao cấp, tennis, golf, F1)
+- Chỉ lấy kênh Full HD trở lên (FHD, 1080p, 4K, UHD)
+- Xuất M3U tổng hợp từ 3 portal với URL stream thực tế (create_link)
 """
 
 import requests
 import json
 import sys
 import time
+import re
 from datetime import datetime
 from urllib.parse import quote
 import os
@@ -33,11 +34,11 @@ HEADERS = {
     "X-Requested-With": "XMLHttpRequest"
 }
 
-# ========== TỪ KHÓA LỌC THỂ THAO ==========
+# ========== TỪ KHÓA LỌC THỂ THAO (mới) ==========
 SPORTS_KEYWORDS = [
     "sport", "sports", "football", "soccer", "tennis", "golf",
     "motorsport", "formula 1", "f1", "hub premier", "premier league",
-    "mono max", "astro arena", "spotv", "epl", "soccer", "tsn", "la liga", "laliga", "bundesliga",
+    "monomax", "astro arena", "spotv", "epl", "soccer", "tsn", "la liga", "laliga", "bundesliga",
     "seriea", "serie a", "uefa"
 ]
 
@@ -50,7 +51,7 @@ EXCLUDE_KEYWORDS = [
 ]
 
 # Các từ khóa độ phân giải cao
-HD_KEYWORDS = ["hd", "fhd", "full hd", "1080p", "1080", "4k", "uhd", "2160p"]
+HD_KEYWORDS = ["fhd", "full hd", "1080p", "1080", "4k", "uhd", "2160p"]
 
 # ==================== CÁC HÀM CHÍNH ====================
 def clean_url(base_url):
@@ -159,11 +160,9 @@ def is_sports_channel(channel, genres):
     genre_title = genres.get(genre_id, "").lower()
     text = title + " " + genre_title
 
-    # Kiểm tra thể thao
     if not any(kw in text for kw in SPORTS_KEYWORDS):
         return False
 
-    # Loại trừ các từ khóa không mong muốn
     for ex in EXCLUDE_KEYWORDS:
         if ex in text:
             return False
@@ -176,14 +175,27 @@ def is_hd_channel(channel):
             return True
     return False
 
-def get_stream_url_from_cmd(cmd, base_url):
-    if not cmd:
-        return None
-    cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-    if cmd.startswith("http"):
-        return cmd
-    else:
-        return base_url.rstrip('/') + '/' + cmd.lstrip('/')
+def create_link(server_url, mac, token, cmd):
+    """Tạo URL stream từ cmd (gọi API portal)"""
+    params = {
+        "type": "itv",
+        "action": "create_link",
+        "cmd": cmd,
+        "JsHttpRequest": "1-xml"
+    }
+    headers = HEADERS.copy()
+    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
+    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
+    headers["Authorization"] = f"Bearer {token}"
+    try:
+        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        data = resp.json()
+        if "js" in data and "cmd" in data["js"]:
+            return data["js"]["cmd"]
+    except:
+        pass
+    return None
 
 # ==================== HÀM CHÍNH ====================
 def main():
@@ -257,53 +269,75 @@ def main():
         print("No valid portal found.")
         sys.exit(1)
     
-    best = max(valid_portals, key=lambda p: p["days_left"])
-    print(f"\nSelected portal: {best['url']} (expires {best['expiry_str']}, {best['days_left']} days)")
-    print(f"Channels: {best['channels_count']}, Categories: {best['categories_count']}")
-    print(f"Check time: {best['check_time']:.2f}s")
+    # Sắp xếp theo days_left giảm dần (ưu tiên vô hạn)
+    valid_portals.sort(key=lambda p: p["days_left"], reverse=True)
+    # Lấy 3 portal đầu tiên
+    selected = valid_portals[:3]
+    print(f"\nSelected {len(selected)} portals:")
+    for idx, p in enumerate(selected):
+        print(f"  {idx+1}. {p['url']} (expires {p['expiry_str']}, {p['days_left']} days)")
     
-    channels = get_channels(best["server_url"], best["mac"], best["token"])
-    genres = get_genres(best["server_url"], best["mac"], best["token"])
-    print(f"Retrieved {len(channels)} channels, {len(genres)} genres")
-    
-    # Lọc kênh thể thao
-    sports_candidates = []
-    for ch in channels:
-        if is_sports_channel(ch, genres):
-            sports_candidates.append(ch)
-    print(f"Found {len(sports_candidates)} sports channels before HD filter")
-    
-    # Lọc kênh Full HD
-    hd_sports = [ch for ch in sports_candidates if is_hd_channel(ch)]
-    print(f"Found {len(hd_sports)} sports channels after HD filter")
-    
-    # Tạo M3U
+    # Tổng hợp M3U
     m3u_content = "#EXTM3U\n"
     total_streams = 0
-    base_url = best['url'].rstrip('/')
-    for idx, ch in enumerate(hd_sports):
-        if idx % 10 == 0:
-            print(f"Processing stream {idx}/{len(hd_sports)}...")
-        cmd = ch.get("cmd")
-        if not cmd:
-            continue
-        stream_url = get_stream_url_from_cmd(cmd, base_url)
-        if not stream_url:
-            continue
+    for portal in selected:
+        print(f"\nProcessing portal: {portal['url']}")
+        channels = get_channels(portal["server_url"], portal["mac"], portal["token"])
+        genres = get_genres(portal["server_url"], portal["mac"], portal["token"])
+        print(f"  Retrieved {len(channels)} channels, {len(genres)} genres")
         
-        tvg_id = ch.get("id", "")
-        tvg_name = ch.get("name", "")
-        tvg_logo = ch.get("logo", "")
-        genre_id = str(ch.get("tv_genre_id", ""))
-        group_title = genres.get(genre_id, "Sports")
-        m3u_content += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}\n'
-        m3u_content += f"{stream_url}\n"
-        total_streams += 1
+        sports_candidates = []
+        for ch in channels:
+            if is_sports_channel(ch, genres):
+                sports_candidates.append(ch)
+        print(f"  Found {len(sports_candidates)} sports channels before HD filter")
+        
+        hd_sports = [ch for ch in sports_candidates if is_hd_channel(ch)]
+        print(f"  Found {len(hd_sports)} sports channels after HD filter")
+        
+        # Lấy domain từ portal URL để thay localhost
+        base_url = portal['url'].rstrip('/')
+        domain_match = re.search(r'https?://([^/]+)', base_url)
+        portal_domain = domain_match.group(1) if domain_match else None
+        
+        for idx, ch in enumerate(hd_sports):
+            if idx % 10 == 0:
+                print(f"    Processing stream {idx}/{len(hd_sports)}...")
+            cmd = ch.get("cmd")
+            if not cmd:
+                continue
+            
+            stream_url = create_link(portal["server_url"], portal["mac"], portal["token"], cmd)
+            if not stream_url:
+                # Fallback: clean cmd
+                clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+                if clean_cmd.startswith("http"):
+                    stream_url = clean_cmd
+            if not stream_url:
+                continue
+            
+            stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+            if "localhost" in stream_url and portal_domain:
+                stream_url = stream_url.replace("localhost", portal_domain)
+            
+            if not stream_url.startswith("http"):
+                continue
+            
+            tvg_id = ch.get("id", "")
+            tvg_name = ch.get("name", "")
+            tvg_logo = ch.get("logo", "")
+            genre_id = str(ch.get("tv_genre_id", ""))
+            group_title = genres.get(genre_id, "Sports")
+            m3u_content += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}\n'
+            m3u_content += f"{stream_url}\n"
+            total_streams += 1
+        
+        print(f"  Added {len(hd_sports)} streams from this portal")
     
     with open("Mac_playlist.m3u", "w", encoding="utf-8") as f:
         f.write(m3u_content)
     
-    print(f"Playlist generated: Mac_playlist.m3u with {total_streams} streams.")
+    print(f"\nPlaylist generated: Mac_playlist.m3u with {total_streams} streams.")
     print(f"Total time: {time.time()-start_total:.2f}s")
 
 if __name__ == "__main__":
