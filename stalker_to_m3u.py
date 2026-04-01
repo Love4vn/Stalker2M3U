@@ -36,8 +36,9 @@ HEADERS = {
 # ========== TỪ KHÓA LỌC THỂ THAO ==========
 SPORTS_KEYWORDS = [
     "sport", "sports", "football", "soccer", "tennis", "golf",
-    "motorsport", "formula 1", "f1", "boxing", "ufc", "mma",
-    "bóng đá", "thể thao"
+    "motorsport", "formula 1", "f1", "hub premier", "premier league",
+    "mono max", "astro arena", "spotv", "epl", "soccer", "tsn", "la liga", "laliga", "bundesliga",
+    "seriea", "serie a", "uefa"
 ]
 
 # Từ khóa loại trừ (môn không mong muốn, giải trẻ, giải hạng dưới)
@@ -49,7 +50,7 @@ EXCLUDE_KEYWORDS = [
 ]
 
 # Các từ khóa độ phân giải cao
-HD_KEYWORDS = ["fhd", "full hd", "1080p", "1080", "4k", "uhd", "2160p"]
+HD_KEYWORDS = ["hd", "fhd", "full hd", "1080p", "1080", "4k", "uhd", "2160p"]
 
 # ==================== CÁC HÀM CHÍNH ====================
 def clean_url(base_url):
