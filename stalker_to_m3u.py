@@ -4,7 +4,6 @@ Stalker Portal to M3U Converter for Premium Sports Channels
 - Kiểm tra portal, chọn portal có hạn dài nhất
 - Lọc kênh: bóng đá các giải cao cấp, tennis, golf, F1, Olympic
 - Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
-- Kiểm tra stream hoạt động bằng HEAD request
 - Xuất M3U với URL stream trực tiếp (bỏ tiền tố ffmpeg/ffrt)
 """
 
@@ -220,13 +219,6 @@ def get_stream_url_from_cmd(cmd, base_url):
     else:
         return base_url.rstrip('/') + '/' + cmd.lstrip('/')
 
-def check_stream_working(url):
-    try:
-        resp = SESSION.head(url, timeout=5, allow_redirects=True)
-        return resp.status_code < 400
-    except:
-        return False
-
 # ==================== HÀM CHÍNH ====================
 def main():
     start_total = time.time()
@@ -322,7 +314,7 @@ def main():
     hd_sports = [ch for ch in sports_candidates if is_hd_channel(ch)]
     print(f"Found {len(hd_sports)} sports channels after HD filter")
     
-    # Tạo M3U và kiểm tra stream
+    # Tạo M3U (không kiểm tra stream)
     m3u_content = "#EXTM3U\n"
     total_streams = 0
     base_url = best['url'].rstrip('/')
@@ -334,10 +326,6 @@ def main():
             continue
         stream_url = get_stream_url_from_cmd(cmd, base_url)
         if not stream_url:
-            continue
-        # Kiểm tra stream hoạt động
-        if not check_stream_working(stream_url):
-            print(f"  Stream {ch.get('name')} appears not working, skipping")
             continue
         
         tvg_id = ch.get("id", "")
