@@ -7,11 +7,10 @@ generates M3U playlist with sports channels excluding specific sports.
 
 import requests
 import json
-import re
 import sys
 import time
 from datetime import datetime
-from urllib.parse import urljoin, urlencode, quote
+from urllib.parse import quote
 import os
 
 # Default values for device parameters (can be customized)
@@ -107,14 +106,31 @@ def get_profile(server_url, mac, token, random, serial, device_id1, device_id2, 
         data = resp.json()
         if "js" in data:
             expiry = data["js"].get("expirydate") or data["js"].get("expire_billing_date")
-            if expiry:
-                return expiry
+            return expiry
         else:
             print("Profile: Unexpected response", data)
         return None
     except Exception as e:
         print(f"Profile error: {e}")
         return None
+
+def parse_expiry(expiry_str):
+    """Parse expiry string to datetime object. Return None if invalid or unlimited."""
+    if not expiry_str or expiry_str.strip() == "":
+        return None
+    expiry_str = expiry_str.strip()
+    # Handle '0000-00-00' as no expiry (infinite)
+    if expiry_str.startswith("0000-00-00"):
+        return None
+    # Try common formats
+    for fmt in ["%Y-%m-%d", "%Y-%m-%d %H:%M:%S", "%d/%m/%Y", "%d-%m-%Y", "%m/%d/%Y"]:
+        try:
+            return datetime.strptime(expiry_str, fmt)
+        except ValueError:
+            continue
+    # If unable to parse, return None
+    print(f"Unable to parse expiry: {expiry_str}")
+    return None
 
 def get_channels(server_url, mac, token):
     """Get all channels list"""
@@ -232,10 +248,7 @@ def main():
         sys.exit(1)
     
     # For each portal, try to get expiry
-    best_portal = None
-    best_expiry_date = None
-    best_days_left = -1
-    
+    valid_portals = []
     for url, mac in portals:
         print(f"Checking portal: {url} - MAC: {mac}")
         server_url = clean_url(url)
@@ -251,32 +264,43 @@ def main():
         if not expiry_str:
             print("  Failed to get expiry, skipping.")
             continue
-        # Parse expiry (format: YYYY-MM-DD or similar)
-        try:
-            expiry_date = datetime.strptime(expiry_str.split()[0], "%Y-%m-%d")
+        print(f"  Raw expiry: {expiry_str}")
+        expiry_date = parse_expiry(expiry_str)
+        if expiry_date is None:
+            # Treat as unlimited (very large number)
+            days_left = 999999
+            print("  Expiry: unlimited (or unrecognized format), treating as valid.")
+        else:
             days_left = (expiry_date - datetime.now()).days
+            if days_left < 0:
+                print(f"  Expiry passed ({expiry_str}), skipping.")
+                continue
             print(f"  Expiry: {expiry_str}, days left: {days_left}")
-            if days_left > best_days_left:
-                best_days_left = days_left
-                best_portal = (url, mac, token, random, server_url)
-                best_expiry_date = expiry_str
-        except Exception as e:
-            print(f"  Error parsing expiry: {e}")
-            continue
+        # Store portal info
+        valid_portals.append({
+            "url": url,
+            "mac": mac,
+            "token": token,
+            "random": random,
+            "server_url": server_url,
+            "expiry_str": expiry_str,
+            "days_left": days_left
+        })
     
-    if not best_portal:
+    if not valid_portals:
         print("No valid portal found.")
         sys.exit(1)
     
-    url, mac, token, random, server_url = best_portal
-    print(f"Selected portal: {url} (expires {best_expiry_date}, {best_days_left} days left)")
+    # Select portal with highest days_left
+    best_portal = max(valid_portals, key=lambda p: p["days_left"])
+    print(f"Selected portal: {best_portal['url']} (expires {best_portal['expiry_str']}, {best_portal['days_left']} days left)")
     
     # Get channels and genres
-    channels = get_channels(server_url, mac, token)
+    channels = get_channels(best_portal["server_url"], best_portal["mac"], best_portal["token"])
     if not channels:
         print("No channels retrieved.")
         sys.exit(1)
-    genres = get_genres(server_url, mac, token)
+    genres = get_genres(best_portal["server_url"], best_portal["mac"], best_portal["token"])
     print(f"Retrieved {len(channels)} channels, {len(genres)} genres.")
     
     # Filter sports channels
@@ -294,7 +318,7 @@ def main():
         if not cmd:
             continue
         # Try to get real stream URL via create_link
-        stream_url = create_link(server_url, mac, token, cmd)
+        stream_url = create_link(best_portal["server_url"], best_portal["mac"], best_portal["token"], cmd)
         if not stream_url:
             # Fallback to cmd if create_link fails (maybe it's already a URL)
             if cmd.startswith("http"):
