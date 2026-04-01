@@ -4,15 +4,13 @@ Stalker Portal to M3U Converter for Sports Channels
 - Kiểm tra portal, chọn portal có hạn dài nhất
 - Lọc kênh thể thao (loại trừ một số môn và giải trẻ, hạng dưới)
 - Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
-- Luôn gọi create_link để lấy URL stream thực tế
-- Xuất M3U với URL stream trực tiếp (bỏ tiền tố ffmpeg/ffrt, sửa localhost)
+- Xuất M3U với URL stream trực tiếp (bỏ tiền tố ffmpeg/ffrt)
 """
 
 import requests
 import json
 import sys
 import time
-import re
 from datetime import datetime
 from urllib.parse import quote
 import os
@@ -160,9 +158,11 @@ def is_sports_channel(channel, genres):
     genre_title = genres.get(genre_id, "").lower()
     text = title + " " + genre_title
 
+    # Kiểm tra thể thao
     if not any(kw in text for kw in SPORTS_KEYWORDS):
         return False
 
+    # Loại trừ các từ khóa không mong muốn
     for ex in EXCLUDE_KEYWORDS:
         if ex in text:
             return False
@@ -175,32 +175,20 @@ def is_hd_channel(channel):
             return True
     return False
 
-def create_link(server_url, mac, token, cmd):
-    """Tạo URL stream từ cmd (gọi API portal)"""
-    params = {
-        "type": "itv",
-        "action": "create_link",
-        "cmd": cmd,
-        "JsHttpRequest": "1-xml"
-    }
-    headers = HEADERS.copy()
-    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
-    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
-    headers["Authorization"] = f"Bearer {token}"
-    try:
-        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-        if "js" in data and "cmd" in data["js"]:
-            return data["js"]["cmd"]
-    except:
-        pass
-    return None
+def get_stream_url_from_cmd(cmd, base_url):
+    if not cmd:
+        return None
+    cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+    if cmd.startswith("http"):
+        return cmd
+    else:
+        return base_url.rstrip('/') + '/' + cmd.lstrip('/')
 
 # ==================== HÀM CHÍNH ====================
 def main():
     start_total = time.time()
     
+    # Đọc danh sách portal
     if not os.path.exists("Mac_list.txt"):
         print("Error: Mac_list.txt not found.")
         sys.exit(1)
@@ -277,46 +265,29 @@ def main():
     genres = get_genres(best["server_url"], best["mac"], best["token"])
     print(f"Retrieved {len(channels)} channels, {len(genres)} genres")
     
+    # Lọc kênh thể thao
     sports_candidates = []
     for ch in channels:
         if is_sports_channel(ch, genres):
             sports_candidates.append(ch)
     print(f"Found {len(sports_candidates)} sports channels before HD filter")
     
+    # Lọc kênh Full HD
     hd_sports = [ch for ch in sports_candidates if is_hd_channel(ch)]
     print(f"Found {len(hd_sports)} sports channels after HD filter")
     
-    # Lấy domain từ portal URL để thay localhost
-    base_url = best['url'].rstrip('/')
-    domain_match = re.search(r'https?://([^/]+)', base_url)
-    portal_domain = domain_match.group(1) if domain_match else None
-    
+    # Tạo M3U
     m3u_content = "#EXTM3U\n"
     total_streams = 0
+    base_url = best['url'].rstrip('/')
     for idx, ch in enumerate(hd_sports):
         if idx % 10 == 0:
             print(f"Processing stream {idx}/{len(hd_sports)}...")
         cmd = ch.get("cmd")
         if not cmd:
             continue
-        
-        # Gọi create_link trước
-        stream_url = create_link(best["server_url"], best["mac"], best["token"], cmd)
-        if stream_url:
-            stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-            if "localhost" in stream_url and portal_domain:
-                stream_url = stream_url.replace("localhost", portal_domain)
-        else:
-            # Fallback: dùng clean_cmd
-            clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-            if clean_cmd.startswith("http"):
-                stream_url = clean_cmd
-                if "localhost" in stream_url and portal_domain:
-                    stream_url = stream_url.replace("localhost", portal_domain)
-            else:
-                continue
-        
-        if not stream_url or not stream_url.startswith("http"):
+        stream_url = get_stream_url_from_cmd(cmd, base_url)
+        if not stream_url:
             continue
         
         tvg_id = ch.get("id", "")
