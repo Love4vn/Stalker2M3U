@@ -159,11 +159,9 @@ def is_sports_channel(channel, genres):
     genre_title = genres.get(genre_id, "").lower()
     text = title + " " + genre_title
 
-    # Kiểm tra thể thao
     if not any(kw in text for kw in SPORTS_KEYWORDS):
         return False
 
-    # Loại trừ các từ khóa không mong muốn
     for ex in EXCLUDE_KEYWORDS:
         if ex in text:
             return False
@@ -202,7 +200,6 @@ def create_link(server_url, mac, token, cmd):
 def main():
     start_total = time.time()
     
-    # Đọc danh sách portal
     if not os.path.exists("Mac_list.txt"):
         print("Error: Mac_list.txt not found.")
         sys.exit(1)
@@ -279,23 +276,20 @@ def main():
     genres = get_genres(best["server_url"], best["mac"], best["token"])
     print(f"Retrieved {len(channels)} channels, {len(genres)} genres")
     
-    # Lọc kênh thể thao
     sports_candidates = []
     for ch in channels:
         if is_sports_channel(ch, genres):
             sports_candidates.append(ch)
     print(f"Found {len(sports_candidates)} sports channels before HD filter")
     
-    # Lọc kênh Full HD
     hd_sports = [ch for ch in sports_candidates if is_hd_channel(ch)]
     print(f"Found {len(hd_sports)} sports channels after HD filter")
     
-    # Lấy domain từ portal URL để thay thế localhost
+    # Lấy domain từ portal URL để thay localhost
     base_url = best['url'].rstrip('/')
     domain_match = re.search(r'https?://([^/]+)', base_url)
     portal_domain = domain_match.group(1) if domain_match else None
     
-    # Tạo M3U
     m3u_content = "#EXTM3U\n"
     total_streams = 0
     for idx, ch in enumerate(hd_sports):
@@ -307,12 +301,9 @@ def main():
         
         # Làm sạch cmd (bỏ ffmpeg, ffrt)
         clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-        
-        # Ưu tiên dùng clean_cmd nếu nó là http
         if clean_cmd.startswith("http"):
             stream_url = clean_cmd
         else:
-            # Nếu không, thử create_link
             stream_url = create_link(best["server_url"], best["mac"], best["token"], cmd)
             if stream_url:
                 stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
@@ -320,11 +311,10 @@ def main():
         if not stream_url:
             continue
         
-        # Thay thế localhost nếu có
+        # Thay localhost bằng domain portal nếu có
         if "localhost" in stream_url and portal_domain:
             stream_url = stream_url.replace("localhost", portal_domain)
         
-        # Đảm bảo URL bắt đầu bằng http
         if not stream_url.startswith("http"):
             continue
         
