@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Stalker Portal to M3U Converter for Premium Sports Channels
+Stalker Portal to M3U Converter for Sports Channels
 - Kiểm tra portal, chọn portal có hạn dài nhất
-- Lọc kênh: bóng đá các giải cao cấp, tennis, golf, F1, Olympic
+- Lọc kênh thể thao (loại trừ một số môn và giải trẻ, hạng dưới)
 - Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
 - Xuất M3U với URL stream trực tiếp (bỏ tiền tố ffmpeg/ffrt)
 """
@@ -11,7 +11,6 @@ import requests
 import json
 import sys
 import time
-import re
 from datetime import datetime
 from urllib.parse import quote
 import os
@@ -34,39 +33,23 @@ HEADERS = {
     "X-Requested-With": "XMLHttpRequest"
 }
 
-# ========== DANH SÁCH TỪ KHÓA LỌC THỂ THAO ==========
-# Bóng đá các giải cao cấp (ưu tiên tên giải)
-FOOTBALL_LEAGUES = {
-    "premier league": ["premier league", "epl", "english premier league"],
-    "bundesliga": ["bundesliga", "german bundesliga"],
-    "la liga": ["la liga", "laliga", "spanish la liga"],
-    "ligue 1": ["ligue 1", "french ligue 1"],
-    "serie a": ["serie a", "italian serie a"],
-    "champions league": ["champions league", "ucl", "uefa champions league"],
-    "europa league": ["europa league", "uel", "uefa europa league"],
-    "conference league": ["conference league", "uefa conference league", "europa conference"],
-    "euro": ["euro", "european championship", "uefa euro"],
-    "world cup": ["world cup", "fifa world cup"],
-    "friendly top20": ["friendly", "international friendly", "national team friendly"]
-}
+# ========== TỪ KHÓA LỌC THỂ THAO ==========
+SPORTS_KEYWORDS = [
+    "sport", "sports", "football", "soccer", "tennis", "golf",
+    "motorsport", "formula 1", "f1", "boxing", "ufc", "mma",
+    "bóng đá", "thể thao"
+]
 
-# Tennis
-TENNIS_KEYWORDS = ["tennis", "wta", "atp", "grand slam", "australian open", "roland garros", "wimbledon", "us open", "davis cup", "billie jean king cup"]
-
-# Golf
-GOLF_KEYWORDS = ["golf", "masters", "pga championship", "us open golf", "the open championship", "ryder cup"]
-
-# F1
-F1_KEYWORDS = ["f1", "formula 1", "formula one", "grand prix"]
-
-# Olympic
-OLYMPIC_KEYWORDS = ["olympic", "olympics"]
+# Từ khóa loại trừ (môn không mong muốn, giải trẻ, giải hạng dưới)
+EXCLUDE_KEYWORDS = [
+    "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
+    "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
+    "u23", "u21", "u19", "youth", "junior", "reserve",
+    "second division", "liga 2", "serie b", "2. bundesliga", "championship"
+]
 
 # Các từ khóa độ phân giải cao
 HD_KEYWORDS = ["fhd", "full hd", "1080p", "1080", "4k", "uhd", "2160p"]
-
-# Từ khóa loại trừ (giải trẻ, cấp thấp)
-EXCLUDE_LEVELS = ["u23", "u21", "u19", "youth", "junior", "reserve", "second division", "liga 2", "serie b", "2. bundesliga", "championship"]
 
 # ==================== CÁC HÀM CHÍNH ====================
 def clean_url(base_url):
@@ -174,34 +157,16 @@ def is_sports_channel(channel, genres):
     genre_id = str(channel.get("tv_genre_id", ""))
     genre_title = genres.get(genre_id, "").lower()
     text = title + " " + genre_title
-    
-    # Loại trừ các giải trẻ, cấp thấp
-    for ex in EXCLUDE_LEVELS:
+
+    # Kiểm tra thể thao
+    if not any(kw in text for kw in SPORTS_KEYWORDS):
+        return False
+
+    # Loại trừ các từ khóa không mong muốn
+    for ex in EXCLUDE_KEYWORDS:
         if ex in text:
             return False
-    
-    # Bóng đá theo giải
-    for league, patterns in FOOTBALL_LEAGUES.items():
-        if any(p in text for p in patterns):
-            # Với giao hữu top20, tạm thời giữ lại tất cả friendly
-            if league == "friendly top20":
-                return True
-            return True
-    
-    # Tennis
-    if any(kw in text for kw in TENNIS_KEYWORDS):
-        return True
-    # Golf
-    if any(kw in text for kw in GOLF_KEYWORDS):
-        return True
-    # F1
-    if any(kw in text for kw in F1_KEYWORDS):
-        return True
-    # Olympic
-    if any(kw in text for kw in OLYMPIC_KEYWORDS):
-        return True
-    
-    return False
+    return True
 
 def is_hd_channel(channel):
     name = channel.get("name", "").lower()
@@ -270,7 +235,6 @@ def main():
                 continue
             print(f"  Expiry: {expiry_str} ({days_left} days left)")
         
-        # Lấy thông tin chi tiết
         channels = get_channels(server_url, mac, token)
         categories = get_categories(server_url, mac, token)
         print(f"  Channels: {len(channels)}, Categories: {len(categories)}")
@@ -292,13 +256,11 @@ def main():
         print("No valid portal found.")
         sys.exit(1)
     
-    # Chọn portal có thời gian sống dài nhất
     best = max(valid_portals, key=lambda p: p["days_left"])
     print(f"\nSelected portal: {best['url']} (expires {best['expiry_str']}, {best['days_left']} days)")
     print(f"Channels: {best['channels_count']}, Categories: {best['categories_count']}")
     print(f"Check time: {best['check_time']:.2f}s")
     
-    # Lấy danh sách kênh và thể loại chi tiết
     channels = get_channels(best["server_url"], best["mac"], best["token"])
     genres = get_genres(best["server_url"], best["mac"], best["token"])
     print(f"Retrieved {len(channels)} channels, {len(genres)} genres")
@@ -314,7 +276,7 @@ def main():
     hd_sports = [ch for ch in sports_candidates if is_hd_channel(ch)]
     print(f"Found {len(hd_sports)} sports channels after HD filter")
     
-    # Tạo M3U (không kiểm tra stream)
+    # Tạo M3U
     m3u_content = "#EXTM3U\n"
     total_streams = 0
     base_url = best['url'].rstrip('/')
@@ -337,7 +299,6 @@ def main():
         m3u_content += f"{stream_url}\n"
         total_streams += 1
     
-    # Ghi file
     with open("Mac_playlist.m3u", "w", encoding="utf-8") as f:
         f.write(m3u_content)
     
