@@ -35,8 +35,7 @@ HEADERS = {
 # Từ khóa thể thao (giữ lại)
 SPORTS_KEYWORDS = [
     "sport", "sports", "football", "soccer", "tennis", "golf",
-    "motorsport", "formula 1", "f1", "boxing", "ufc", "mma",
-    "bóng đá", "thể thao", "champions league", "europa league"
+    "motorsport", "formula 1", "f1", "champions league", "europa league"
 ]
 
 # Từ khóa thể thao cần loại trừ
@@ -158,28 +157,6 @@ def get_genres(server_url, mac, token):
         print(f"  Genres error: {e}")
     return {}
 
-def create_link(server_url, mac, token, cmd):
-    """Tạo URL stream từ cmd"""
-    params = {
-        "type": "itv",
-        "action": "create_link",
-        "cmd": cmd,
-        "JsHttpRequest": "1-xml"
-    }
-    headers = HEADERS.copy()
-    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
-    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
-    headers["Authorization"] = f"Bearer {token}"
-    try:
-        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-        if "js" in data and "cmd" in data["js"]:
-            return data["js"]["cmd"]
-    except Exception as e:
-        print(f"  Create link error: {e}")
-    return None
-
 def parse_expiry(expiry_str):
     """Chuyển chuỗi ngày hết hạn thành đối tượng datetime"""
     if not expiry_str or expiry_str.strip() == "":
@@ -206,14 +183,17 @@ def is_sports_channel(channel, genres):
     excluded = any(ex in text for ex in EXCLUDE_SPORTS)
     return not excluded
 
-def clean_stream_url(url):
-    """Loại bỏ các tiền tố không mong muốn (ffmpeg, ffrt)"""
-    if not url:
-        return url
-    # Loại bỏ ffmpeg, ffrt và khoảng trắng
-    url = url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-    # Nếu URL bắt đầu bằng "http" thì giữ nguyên, nếu không thì thêm http? (thực tế nó sẽ là http)
-    return url
+def get_stream_url_from_cmd(cmd, base_url):
+    """Lấy URL stream từ cmd (theo cách của FluxStream)"""
+    if not cmd:
+        return None
+    # Loại bỏ các tiền tố ffmpeg, ffrt
+    cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+    if cmd.startswith("http"):
+        return cmd
+    else:
+        # Nếu không phải http, có thể là đường dẫn tương đối
+        return base_url.rstrip('/') + '/' + cmd.lstrip('/')
 
 # ==================== HÀM CHÍNH ====================
 def main():
@@ -299,25 +279,19 @@ def main():
     sports_channels = [ch for ch in channels if is_sports_channel(ch, genres)]
     print(f"Found {len(sports_channels)} sports channels after filtering.")
 
-    # Tạo M3U playlist (chỉ tạo link cho các kênh thể thao)
+    # Tạo M3U playlist
     m3u_content = "#EXTM3U\n"
     total_streams = 0
+    base_url = best['url'].rstrip('/')
     for idx, ch in enumerate(sports_channels):
         if idx % 10 == 0:
             print(f"Processing stream {idx}/{len(sports_channels)}...")
         cmd = ch.get("cmd")
         if not cmd:
             continue
-        stream_url = create_link(best["server_url"], best["mac"], best["token"], cmd)
+        stream_url = get_stream_url_from_cmd(cmd, base_url)
         if not stream_url:
-            # Fallback nếu create_link không trả về URL (có thể cmd đã là URL)
-            if cmd.startswith("http"):
-                stream_url = cmd
-            else:
-                continue
-        stream_url = clean_stream_url(stream_url)
-        if not stream_url.startswith("http"):
-            continue  # Bỏ qua nếu không phải URL hợp lệ
+            continue
 
         tvg_id = ch.get("id", "")
         tvg_name = ch.get("name", "")
