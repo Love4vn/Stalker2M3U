@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Stalker Portal to M3U Converter for Sports Channels
-- Đọc Mac_list.txt, kiểm tra portal, chọn 3 portal sống tốt nhất
-- Lọc kênh thể thao theo danh sách từ khóa (bóng đá cao cấp, tennis, golf, F1)
-- Chỉ lấy kênh Full HD trở lên (FHD, 1080p, 4K, UHD)
-- Xuất M3U tổng hợp từ 3 portal với URL stream thực tế (create_link)
+- Đọc danh sách portal từ Mac_list.txt (URL, MAC)
+- Kiểm tra portal sống, chọn 3 portal đầu tiên còn sống
+- Lấy kênh thể thao (theo từ khóa mới) và lọc HD
+- Tổng hợp thành một file Mac_playlist.m3u
 """
 
 import requests
@@ -34,7 +34,7 @@ HEADERS = {
     "X-Requested-With": "XMLHttpRequest"
 }
 
-# ========== TỪ KHÓA LỌC THỂ THAO (mới) ==========
+# ========== TỪ KHÓA LỌC THỂ THAO ==========
 SPORTS_KEYWORDS = [
     "sport", "sports", "football", "soccer", "tennis", "golf",
     "motorsport", "formula 1", "f1", "hub premier", "premier league",
@@ -138,9 +138,6 @@ def get_genres(server_url, mac, token):
         pass
     return {}
 
-def get_categories(server_url, mac, token):
-    return get_genres(server_url, mac, token)
-
 def parse_expiry(expiry_str):
     if not expiry_str or expiry_str.strip() == "":
         return None
@@ -197,11 +194,55 @@ def create_link(server_url, mac, token, cmd):
         pass
     return None
 
+def process_portal(url, mac, token, server_url):
+    """Xử lý một portal: lấy kênh thể thao HD, trả về danh sách các dòng M3U"""
+    print(f"Processing portal: {url}")
+    channels = get_channels(server_url, mac, token)
+    genres = get_genres(server_url, mac, token)
+    if not channels:
+        print("  No channels retrieved.")
+        return []
+    print(f"  Retrieved {len(channels)} channels, {len(genres)} genres")
+    sports = [ch for ch in channels if is_sports_channel(ch, genres)]
+    print(f"  Found {len(sports)} sports channels")
+    hd = [ch for ch in sports if is_hd_channel(ch)]
+    print(f"  Found {len(hd)} HD sports channels")
+    m3u_lines = []
+    portal_base = url.rstrip('/')
+    domain_match = re.search(r'https?://([^/]+)', portal_base)
+    portal_domain = domain_match.group(1) if domain_match else None
+    for ch in hd:
+        cmd = ch.get("cmd")
+        if not cmd:
+            continue
+        stream_url = create_link(server_url, mac, token, cmd)
+        if stream_url:
+            stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+            if "localhost" in stream_url and portal_domain:
+                stream_url = stream_url.replace("localhost", portal_domain)
+        else:
+            clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+            if clean_cmd.startswith("http"):
+                stream_url = clean_cmd
+                if "localhost" in stream_url and portal_domain:
+                    stream_url = stream_url.replace("localhost", portal_domain)
+            else:
+                continue
+        if not stream_url or not stream_url.startswith("http"):
+            continue
+        tvg_id = ch.get("id", "")
+        tvg_name = ch.get("name", "")
+        tvg_logo = ch.get("logo", "")
+        genre_id = str(ch.get("tv_genre_id", ""))
+        group_title = genres.get(genre_id, "Sports")
+        m3u_lines.append(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}')
+        m3u_lines.append(stream_url)
+    return m3u_lines
+
 # ==================== HÀM CHÍNH ====================
 def main():
     start_total = time.time()
     
-    # Đọc danh sách portal
     if not os.path.exists("Mac_list.txt"):
         print("Error: Mac_list.txt not found.")
         sys.exit(1)
@@ -222,21 +263,19 @@ def main():
         print("No portals found in Mac_list.txt")
         sys.exit(1)
     
-    valid_portals = []
+    # Kiểm tra từng portal và lấy thông tin
+    valid_portals = []  # lưu dict gồm url, mac, token, server_url
     for url, mac in portals:
         print(f"\nChecking: {url} - MAC: {mac}")
-        t0 = time.time()
         server_url = clean_url(url)
         token, random = handshake(server_url, mac)
         if not token:
             print("  Handshake failed")
             continue
-        
         expiry_str = get_profile(server_url, mac, token, random)
         if not expiry_str:
             print("  Could not retrieve expiry")
             continue
-        
         expiry_date = parse_expiry(expiry_str)
         if expiry_date is None:
             days_left = 999999
@@ -247,97 +286,34 @@ def main():
                 print(f"  Expiry: {expiry_str} (expired, {days_left} days)")
                 continue
             print(f"  Expiry: {expiry_str} ({days_left} days left)")
-        
-        channels = get_channels(server_url, mac, token)
-        categories = get_categories(server_url, mac, token)
-        print(f"  Channels: {len(channels)}, Categories: {len(categories)}")
-        
         valid_portals.append({
             "url": url,
             "mac": mac,
             "token": token,
-            "random": random,
-            "server_url": server_url,
-            "expiry_str": expiry_str,
-            "days_left": days_left,
-            "channels_count": len(channels),
-            "categories_count": len(categories),
-            "check_time": time.time() - t0
+            "server_url": server_url
         })
     
-    if not valid_portals:
+    # Chọn 3 portal đầu tiên còn sống
+    selected = valid_portals[:3]
+    if not selected:
         print("No valid portal found.")
         sys.exit(1)
-    
-    # Sắp xếp theo days_left giảm dần (ưu tiên vô hạn)
-    valid_portals.sort(key=lambda p: p["days_left"], reverse=True)
-    # Lấy 3 portal đầu tiên
-    selected = valid_portals[:3]
-    print(f"\nSelected {len(selected)} portals:")
-    for idx, p in enumerate(selected):
-        print(f"  {idx+1}. {p['url']} (expires {p['expiry_str']}, {p['days_left']} days)")
+    print(f"\nSelected {len(selected)} portal(s):")
+    for p in selected:
+        print(f"  {p['url']}")
     
     # Tổng hợp M3U
-    m3u_content = "#EXTM3U\n"
-    total_streams = 0
-    for portal in selected:
-        print(f"\nProcessing portal: {portal['url']}")
-        channels = get_channels(portal["server_url"], portal["mac"], portal["token"])
-        genres = get_genres(portal["server_url"], portal["mac"], portal["token"])
-        print(f"  Retrieved {len(channels)} channels, {len(genres)} genres")
-        
-        sports_candidates = []
-        for ch in channels:
-            if is_sports_channel(ch, genres):
-                sports_candidates.append(ch)
-        print(f"  Found {len(sports_candidates)} sports channels before HD filter")
-        
-        hd_sports = [ch for ch in sports_candidates if is_hd_channel(ch)]
-        print(f"  Found {len(hd_sports)} sports channels after HD filter")
-        
-        # Lấy domain từ portal URL để thay localhost
-        base_url = portal['url'].rstrip('/')
-        domain_match = re.search(r'https?://([^/]+)', base_url)
-        portal_domain = domain_match.group(1) if domain_match else None
-        
-        for idx, ch in enumerate(hd_sports):
-            if idx % 10 == 0:
-                print(f"    Processing stream {idx}/{len(hd_sports)}...")
-            cmd = ch.get("cmd")
-            if not cmd:
-                continue
-            
-            stream_url = create_link(portal["server_url"], portal["mac"], portal["token"], cmd)
-            if not stream_url:
-                # Fallback: clean cmd
-                clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-                if clean_cmd.startswith("http"):
-                    stream_url = clean_cmd
-            if not stream_url:
-                continue
-            
-            stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-            if "localhost" in stream_url and portal_domain:
-                stream_url = stream_url.replace("localhost", portal_domain)
-            
-            if not stream_url.startswith("http"):
-                continue
-            
-            tvg_id = ch.get("id", "")
-            tvg_name = ch.get("name", "")
-            tvg_logo = ch.get("logo", "")
-            genre_id = str(ch.get("tv_genre_id", ""))
-            group_title = genres.get(genre_id, "Sports")
-            m3u_content += f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}\n'
-            m3u_content += f"{stream_url}\n"
-            total_streams += 1
-        
-        print(f"  Added {len(hd_sports)} streams from this portal")
+    all_m3u_lines = ["#EXTM3U"]
+    for p in selected:
+        lines = process_portal(p["url"], p["mac"], p["token"], p["server_url"])
+        if lines:
+            all_m3u_lines.extend(lines)
     
+    # Ghi file
     with open("Mac_playlist.m3u", "w", encoding="utf-8") as f:
-        f.write(m3u_content)
+        f.write("\n".join(all_m3u_lines))
     
-    print(f"\nPlaylist generated: Mac_playlist.m3u with {total_streams} streams.")
+    print(f"\nPlaylist generated: Mac_playlist.m3u with {len(all_m3u_lines)//2} streams.")
     print(f"Total time: {time.time()-start_total:.2f}s")
 
 if __name__ == "__main__":
