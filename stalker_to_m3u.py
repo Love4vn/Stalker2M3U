@@ -4,6 +4,7 @@ Stalker Portal to M3U Converter for Sports Channels
 - Kiểm tra portal, chọn portal có hạn dài nhất
 - Lọc kênh thể thao (loại trừ một số môn và giải trẻ, hạng dưới)
 - Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
+- Luôn gọi create_link để lấy URL stream thực tế
 - Xuất M3U với URL stream trực tiếp (bỏ tiền tố ffmpeg/ffrt, sửa localhost)
 """
 
@@ -299,23 +300,23 @@ def main():
         if not cmd:
             continue
         
-        # Làm sạch cmd (bỏ ffmpeg, ffrt)
-        clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-        if clean_cmd.startswith("http"):
-            stream_url = clean_cmd
+        # Gọi create_link trước
+        stream_url = create_link(best["server_url"], best["mac"], best["token"], cmd)
+        if stream_url:
+            stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+            if "localhost" in stream_url and portal_domain:
+                stream_url = stream_url.replace("localhost", portal_domain)
         else:
-            stream_url = create_link(best["server_url"], best["mac"], best["token"], cmd)
-            if stream_url:
-                stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+            # Fallback: dùng clean_cmd
+            clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+            if clean_cmd.startswith("http"):
+                stream_url = clean_cmd
+                if "localhost" in stream_url and portal_domain:
+                    stream_url = stream_url.replace("localhost", portal_domain)
+            else:
+                continue
         
-        if not stream_url:
-            continue
-        
-        # Thay localhost bằng domain portal nếu có
-        if "localhost" in stream_url and portal_domain:
-            stream_url = stream_url.replace("localhost", portal_domain)
-        
-        if not stream_url.startswith("http"):
+        if not stream_url or not stream_url.startswith("http"):
             continue
         
         tvg_id = ch.get("id", "")
