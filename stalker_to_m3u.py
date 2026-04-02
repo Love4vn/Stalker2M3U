@@ -1,320 +1,446 @@
-#!/usr/bin/env python3
-"""
-Stalker Portal to M3U Converter for Sports Channels
-- Đọc danh sách portal từ Mac_list.txt (URL, MAC)
-- Kiểm tra portal sống, chọn 3 portal đầu tiên còn sống
-- Lấy kênh thể thao (theo từ khóa mới) và lọc HD
-- Tổng hợp thành một file Mac_playlist.m3u
-"""
-
 import requests
 import json
-import sys
 import time
 import re
 from datetime import datetime
-from urllib.parse import quote
+from typing import Optional, List, Dict, Any
+import sys
 import os
 
-# ==================== CONFIGURATION ====================
-REQUEST_TIMEOUT = 10
-SESSION = requests.Session()
+class StalkerLite:
+    def __init__(self, url: str, mac: str, model: str = 'MAG250', extras: Optional[Dict] = None, existing_token: str = ''):
+        self.mac = mac.upper().strip()
+        self.model = model
+        self.token = existing_token
+        self.extras = extras or {}
+        self.clean_url = self.sanitize_url(url)
+        self.server_url = self.build_server_url(self.clean_url)
+        self.portal_base = self.build_portal_base(self.clean_url)
+        self.device_info = self.make_device_info()
+        self.headers = self.make_headers()
+        self.session = requests.Session()
 
-# Device parameters
-DEFAULT_SERIAL = "0000000000000000"
-DEFAULT_DEVICE_ID1 = "0000000000000000"
-DEFAULT_DEVICE_ID2 = "0000000000000000"
-DEFAULT_SIGNATURE = "0000000000000000"
+    def sanitize_url(self, url: str) -> str:
+        url = url.rstrip('/')
+        url = re.sub(r'/c/?$', '', url)
+        url = re.sub(r'/stalker_portal/?$', '', url)
+        return url
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3",
-    "X-User-Agent": "Model: MAG250; Link: WiFi",
-    "Accept": "application/json, text/javascript, */*; q=0.01",
-    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-    "X-Requested-With": "XMLHttpRequest"
-}
+    def build_server_url(self, clean: str) -> str:
+        if '/stalker_portal' in clean:
+            return clean + '/server/load.php'
+        else:
+            return clean + '/stalker_portal/server/load.php'
 
-# ========== TỪ KHÓA LỌC THỂ THAO ==========
-SPORTS_KEYWORDS = [
-    "sport", "sports", "football", "soccer", "tennis", "golf",
-    "motorsport", "formula 1", "f1", "hub premier", "premier league",
-    "monomax", "astro arena", "spotv", "epl", "soccer", "tsn", "la liga", "laliga", "bundesliga",
-    "seriea", "serie a", "uefa"
-]
+    def build_portal_base(self, clean: str) -> str:
+        if '/stalker_portal' in clean:
+            return clean + '/c/'
+        else:
+            return clean + '/stalker_portal/c/'
 
-# Từ khóa loại trừ (môn không mong muốn, giải trẻ, giải hạng dưới)
-EXCLUDE_KEYWORDS = [
-    "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
-    "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
-    "u23", "u21", "u19", "youth", "junior", "reserve",
-    "second division", "liga 2", "serie b", "2. bundesliga", "championship"
-]
+    def make_device_info(self) -> Dict[str, str]:
+        mac = self.mac
+        import hashlib
+        sn = hashlib.md5(mac.encode()).hexdigest().upper()
+        sn_cut = self.extras.get('sn_cut', sn[:13])
+        device_id = self.extras.get('device_id', hashlib.sha256(mac.encode()).hexdigest().upper())
+        device_id2 = self.extras.get('device_id2', device_id)
+        signature = self.extras.get('signature', hashlib.sha256((sn_cut + mac).encode()).hexdigest().upper())
+        return {
+            'mac': mac,
+            'sn': sn,
+            'snCut': sn_cut,
+            'deviceId': device_id,
+            'deviceId2': device_id2,
+            'signature': signature,
+            'model': self.model
+        }
 
-# Các từ khóa độ phân giải cao
-HD_KEYWORDS = ["fhd", "full hd", "1080p", "1080", "4k", "uhd", "2160p"]
+    def make_headers(self) -> Dict[str, str]:
+        return {
+            'User-Agent': 'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
+            'X-User-Agent': f'Model: {self.model}; Link: WiFi',
+            'Accept': '*/*',
+            'Accept-Encoding': 'gzip, deflate',
+            'Connection': 'Keep-Alive',
+            'Cookie': f'mac={self.mac}; stb_lang=en; timezone=GMT',
+            'Referer': self.portal_base,
+        }
 
-# ==================== CÁC HÀM CHÍNH ====================
-def clean_url(base_url):
-    base_url = base_url.rstrip('/')
-    if not base_url.endswith('/c'):
-        base_url += '/c'
-    return base_url.replace('/c', '/server/load.php')
+    def auth_headers(self) -> Dict[str, str]:
+        h = self.headers.copy()
+        if self.token:
+            h['Authorization'] = f'Bearer {self.token}'
+        return h
 
-def handshake(server_url, mac):
-    params = {"type": "stb", "action": "handshake", "token": "", "JsHttpRequest": "1-xml"}
-    headers = HEADERS.copy()
-    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
-    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
-    try:
-        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-        if "js" in data:
-            return data["js"].get("token"), data["js"].get("random")
-    except:
-        pass
-    return None, None
+    def _get(self, url: str, timeout: int = 20, use_auth: bool = True) -> Optional[Dict]:
+        headers = self.auth_headers() if use_auth else self.headers
+        try:
+            resp = self.session.get(url, headers=headers, timeout=timeout)
+            if resp.status_code != 200:
+                return None
+            # decode json; but response may be JSONP-like? They use JsHttpRequest, but response is JSON.
+            data = resp.json()
+            # The data may have 'js' key
+            if 'js' in data:
+                return data['js']
+            return data
+        except Exception as e:
+            return None
 
-def get_profile(server_url, mac, token, random):
-    params = {
-        "type": "stb", "action": "get_profile", "hd": "1",
-        "ver": quote("ImageDescription: 0.2.18-r14-pub-250; ImageDate: Fri Jan 15 15:20:44 EET 2016; PORTAL version: 5.1.0; API Version: JS API version: 328; STB API version: 134; Player Engine version: 0x566"),
-        "num_banks": "2", "sn": DEFAULT_SERIAL, "stb_type": "MAG250", "image_version": "218",
-        "video_out": "hdmi", "device_id": DEFAULT_DEVICE_ID1, "device_id2": DEFAULT_DEVICE_ID2,
-        "signature": DEFAULT_SIGNATURE, "auth_second_step": "1", "hw_version": "1.7-BD-00",
-        "not_valid_token": "0", "client_type": "STB",
-        "hw_version_2": "36da041e6358ee8f8801105e36a63474", "timestamp": int(time.time()),
-        "api_signature": "263",
-        "metrics": json.dumps({"mac": mac, "sn": DEFAULT_SERIAL, "model": "MAG250", "type": "STB", "uid": "", "random": random}),
-        "JsHttpRequest": "1-xml"
-    }
-    headers = HEADERS.copy()
-    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
-    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
-    headers["Authorization"] = f"Bearer {token}"
-    try:
-        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-        if "js" in data:
-            return data["js"].get("expirydate") or data["js"].get("expire_billing_date")
-    except:
-        pass
-    return None
+    def handshake(self) -> Dict[str, Any]:
+        url = f"{self.server_url}?type=stb&action=handshake&prehash={self.mac}&token=&JsHttpRequest=1-xml"
+        data = self._get(url)
+        if not data:
+            return {'success': False, 'error': 'Handshake failed'}
+        token = data.get('token') or ''
+        if not token:
+            return {'success': False, 'error': 'No token received', 'raw': data}
+        self.token = token
+        return {'success': True, 'token': token, 'random': data.get('random', '')}
 
-def get_channels(server_url, mac, token):
-    params = {"type": "itv", "action": "get_all_channels", "JsHttpRequest": "1-xml"}
-    headers = HEADERS.copy()
-    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
-    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
-    headers["Authorization"] = f"Bearer {token}"
-    try:
-        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-        if "js" in data and "data" in data["js"]:
-            return data["js"]["data"]
-    except:
-        pass
-    return []
+    def get_profile(self) -> Dict[str, str]:
+        if not self.token:
+            return {}
+        di = self.device_info
+        params = {
+            'type': 'stb',
+            'action': 'get_profile',
+            'hd': '1',
+            'sn': di['snCut'],
+            'stb_type': di['model'],
+            'device_id': di['deviceId'],
+            'device_id2': di['deviceId2'],
+            'signature': di['signature'],
+            'timestamp': int(time.time()),
+            'metrics': json.dumps({'mac': di['mac'], 'sn': di['sn'], 'model': di['model'], 'type': 'STB'}),
+            'JsHttpRequest': '1-xml'
+        }
+        url = f"{self.server_url}?{requests.compat.urlencode(params)}"
+        data = self._get(url)
+        if not data:
+            return {}
+        return {
+            'login': data.get('login', ''),
+            'id': str(data.get('id', '')),
+            'name': data.get('name') or data.get('fname', ''),
+            'expiry': data.get('expire_billing_date', '') or data.get('phone', ''),
+            'tariff': data.get('tariff_plan', {}).get('name', '') if isinstance(data.get('tariff_plan'), dict) else ''
+        }
 
-def get_genres(server_url, mac, token):
-    params = {"type": "itv", "action": "get_genres", "JsHttpRequest": "1-xml"}
-    headers = HEADERS.copy()
-    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
-    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
-    headers["Authorization"] = f"Bearer {token}"
-    try:
-        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-        genres = {}
-        if "js" in data and isinstance(data["js"], list):
-            for g in data["js"]:
-                if "id" in g and "title" in g:
-                    genres[str(g["id"])] = g["title"]
-        return genres
-    except:
-        pass
-    return {}
+    def ensure_token(self) -> bool:
+        if self.token:
+            # verify token by calling get_profile
+            prof = self.get_profile()
+            if prof.get('id') or prof.get('login') or prof.get('name'):
+                return True
+            self.token = ''
+        hs = self.handshake()
+        if hs['success']:
+            self.get_profile()
+            return True
+        return False
 
-def parse_expiry(expiry_str):
-    if not expiry_str or expiry_str.strip() == "":
+    def get_genres(self) -> Dict[str, str]:
+        if not self.ensure_token():
+            return {}
+        endpoints = [
+            '?type=itv&action=get_genres&JsHttpRequest=1-xml',
+            '?type=itv&action=get_all_genres&JsHttpRequest=1-xml'
+        ]
+        for ep in endpoints:
+            data = self._get(self.server_url + ep, timeout=30)
+            if data:
+                genres_list = data.get('data') or data
+                if isinstance(genres_list, list):
+                    out = {}
+                    for g in genres_list:
+                        if isinstance(g, dict):
+                            gid = str(g.get('id') or g.get('genre_id', '0'))
+                            title = g.get('title') or g.get('name', 'General')
+                            out[gid] = title
+                    return out
+        return {}
+
+    def get_channels(self) -> List[Dict[str, Any]]:
+        if not self.ensure_token():
+            return []
+        genres = self.get_genres()
+        # try get_all_channels
+        data = self._get(self.server_url + '?type=itv&action=get_all_channels&JsHttpRequest=1-xml', timeout=120)
+        raw_channels = []
+        if data:
+            # The data may be directly the list or under 'data'
+            if 'data' in data:
+                raw_channels = data['data']
+            elif isinstance(data, list):
+                raw_channels = data
+            else:
+                # try to find list
+                for v in data.values():
+                    if isinstance(v, list):
+                        raw_channels = v
+                        break
+        if not raw_channels:
+            # fallback to paginated
+            raw_channels = self.fetch_channels_paginated()
+        channels = []
+        for i, ch in enumerate(raw_channels):
+            if not isinstance(ch, dict):
+                continue
+            gid = str(ch.get('tv_genre_id') or ch.get('genre_id', '0'))
+            name = ch.get('name') or ch.get('title', f'Channel {i+1}')
+            cmd = ch.get('cmd', '')
+            logo = ch.get('logo', '')
+            number = ch.get('number', i)
+            channels.append({
+                'id': str(ch.get('id') or ch.get('channel_id', i)),
+                'name': name.strip(),
+                'cmd': cmd,
+                'logo': self.build_logo_url(logo),
+                'genre_id': gid,
+                'genre_name': genres.get(gid, 'General'),
+                'number': int(number)
+            })
+        return channels
+
+    def fetch_channels_paginated(self) -> List[Dict]:
+        all_channels = []
+        page = 0
+        page_size = 500
+        while True:
+            params = {
+                'type': 'itv',
+                'action': 'get_ordered_list',
+                'genre': '*',
+                'force_ch_link_check': '',
+                'fav': '0',
+                'sortby': 'number',
+                'p': page,
+                'JsHttpRequest': '1-xml'
+            }
+            url = f"{self.server_url}?{requests.compat.urlencode(params)}"
+            data = self._get(url, timeout=60)
+            if not data:
+                break
+            ch_list = data.get('data', [])
+            if not ch_list:
+                break
+            all_channels.extend(ch_list)
+            total = int(data.get('total_items') or data.get('max_page_items', 0))
+            if total and len(all_channels) >= total:
+                break
+            page += 1
+            if page > 100:
+                break
+        return all_channels
+
+    def create_link(self, cmd: str) -> str:
+        cmd = cmd.strip()
+        # Strip ffmpeg prefix
+        if cmd.lower().startswith('ffmpeg '):
+            cmd = cmd[7:].strip()
+        # If it's already an HTTP URL (and not ffrt), return as is
+        if re.match(r'^https?://', cmd, re.I) and not cmd.lower().startswith('ffrt'):
+            # extract the URL (remove any trailing quotes or spaces)
+            m = re.search(r'(https?://[^\s"\']+)', cmd, re.I)
+            if m:
+                return m.group(1)
+            return cmd
+        # Call create_link API
+        params = {
+            'type': 'itv',
+            'action': 'create_link',
+            'cmd': cmd,
+            'forced_storage': 'undefined',
+            'disable_ad': '1',
+            'JsHttpRequest': '1-xml'
+        }
+        url = f"{self.server_url}?{requests.compat.urlencode(params)}"
+        data = self._get(url, timeout=15)
+        if data:
+            stream = data.get('cmd') or data.get('url', '')
+            if stream:
+                if stream.lower().startswith('ffmpeg '):
+                    stream = stream[7:].strip()
+                m = re.search(r'(https?://[^\s"\']+)', stream, re.I)
+                if m:
+                    return m.group(1)
+                return stream
+        return ''
+
+    def build_logo_url(self, logo: str) -> str:
+        if not logo:
+            return ''
+        if re.match(r'^https?://', logo, re.I):
+            return logo
+        base = re.sub(r'/server/load\.php$', '', self.server_url).rstrip('/')
+        return f"{base}/misc/logos/320/{logo.lstrip('/')}"
+
+    def connect(self) -> Dict[str, Any]:
+        hs = self.handshake()
+        if not hs['success']:
+            return {'success': False, 'error': hs.get('error', 'Handshake failed')}
+        profile = self.get_profile()
+        return {
+            'success': True,
+            'token': hs['token'],
+            'random': hs.get('random', ''),
+            'device': self.device_info,
+            'server_url': self.server_url,
+            'portal_base': self.portal_base,
+            'profile': profile,
+            'saved_at': datetime.now().isoformat()
+        }
+
+# Helper functions
+
+def parse_mac_list(filename: str) -> List[tuple]:
+    """Parse mac_list.txt, each line: url,mac"""
+    portals = []
+    with open(filename, 'r') as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            parts = line.split(',')
+            if len(parts) >= 2:
+                url = parts[0].strip()
+                mac = parts[1].strip()
+                portals.append((url, mac))
+    return portals
+
+def get_expiry_date(profile: dict) -> Optional[datetime]:
+    expiry_str = profile.get('expiry', '')
+    if not expiry_str:
         return None
-    expiry_str = expiry_str.strip()
-    if expiry_str.startswith("0000-00-00"):
-        return None
-    for fmt in ["%Y-%m-%d", "%Y-%m-%d %H:%M:%S", "%d/%m/%Y", "%d-%m-%Y", "%m/%d/%Y"]:
+    # Try to parse common formats: "2025-12-31", "31/12/2025", timestamp?
+    for fmt in ('%Y-%m-%d', '%d/%m/%Y', '%Y/%m/%d', '%d-%m-%Y'):
         try:
             return datetime.strptime(expiry_str, fmt)
         except:
             continue
-    return None
-
-def is_sports_channel(channel, genres):
-    title = channel.get("name", "").lower()
-    genre_id = str(channel.get("tv_genre_id", ""))
-    genre_title = genres.get(genre_id, "").lower()
-    text = title + " " + genre_title
-
-    if not any(kw in text for kw in SPORTS_KEYWORDS):
-        return False
-
-    for ex in EXCLUDE_KEYWORDS:
-        if ex in text:
-            return False
-    return True
-
-def is_hd_channel(channel):
-    name = channel.get("name", "").lower()
-    for kw in HD_KEYWORDS:
-        if kw in name:
-            return True
-    return False
-
-def create_link(server_url, mac, token, cmd):
-    """Tạo URL stream từ cmd (gọi API portal)"""
-    params = {
-        "type": "itv",
-        "action": "create_link",
-        "cmd": cmd,
-        "JsHttpRequest": "1-xml"
-    }
-    headers = HEADERS.copy()
-    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
-    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
-    headers["Authorization"] = f"Bearer {token}"
+    # If it's a Unix timestamp (int)
     try:
-        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-        if "js" in data and "cmd" in data["js"]:
-            return data["js"]["cmd"]
+        return datetime.fromtimestamp(int(expiry_str))
     except:
         pass
     return None
 
-def process_portal(url, mac, token, server_url):
-    """Xử lý một portal: lấy kênh thể thao HD, trả về danh sách các dòng M3U"""
-    print(f"Processing portal: {url}")
-    channels = get_channels(server_url, mac, token)
-    genres = get_genres(server_url, mac, token)
-    if not channels:
-        print("  No channels retrieved.")
-        return []
-    print(f"  Retrieved {len(channels)} channels, {len(genres)} genres")
-    sports = [ch for ch in channels if is_sports_channel(ch, genres)]
-    print(f"  Found {len(sports)} sports channels")
-    hd = [ch for ch in sports if is_hd_channel(ch)]
-    print(f"  Found {len(hd)} HD sports channels")
-    m3u_lines = []
-    portal_base = url.rstrip('/')
-    domain_match = re.search(r'https?://([^/]+)', portal_base)
-    portal_domain = domain_match.group(1) if domain_match else None
-    for ch in hd:
-        cmd = ch.get("cmd")
-        if not cmd:
-            continue
-        stream_url = create_link(server_url, mac, token, cmd)
-        if stream_url:
-            stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-            if "localhost" in stream_url and portal_domain:
-                stream_url = stream_url.replace("localhost", portal_domain)
-        else:
-            clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-            if clean_cmd.startswith("http"):
-                stream_url = clean_cmd
-                if "localhost" in stream_url and portal_domain:
-                    stream_url = stream_url.replace("localhost", portal_domain)
-            else:
-                continue
-        if not stream_url or not stream_url.startswith("http"):
-            continue
-        tvg_id = ch.get("id", "")
-        tvg_name = ch.get("name", "")
-        tvg_logo = ch.get("logo", "")
-        genre_id = str(ch.get("tv_genre_id", ""))
-        group_title = genres.get(genre_id, "Sports")
-        m3u_lines.append(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" group-title="{group_title}",{tvg_name}')
-        m3u_lines.append(stream_url)
-    return m3u_lines
+def test_portal(url: str, mac: str) -> Optional[dict]:
+    """Test portal, return dict with token, profile, expiry date if valid"""
+    stalker = StalkerLite(url, mac)
+    try:
+        result = stalker.connect()
+        if not result['success']:
+            return None
+        expiry_dt = get_expiry_date(result['profile'])
+        if expiry_dt and expiry_dt < datetime.now():
+            return None  # expired
+        return {
+            'url': url,
+            'mac': mac,
+            'stalker': stalker,
+            'profile': result['profile'],
+            'expiry_date': expiry_dt
+        }
+    except Exception as e:
+        print(f"Error testing {url} {mac}: {e}")
+        return None
 
-# ==================== HÀM CHÍNH ====================
+def generate_playlist(portals: List[dict], output_file: str):
+    """Generate M3U from the list of portals (already tested and have stalker instance)"""
+    # Keywords for filtering
+    SPORTS_KEYWORDS = [
+        "sport", "sports", "football", "soccer", "tennis", "golf",
+        "motorsport", "formula 1", "f1", "hub premier", "premier league",
+        "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
+        "seriea", "serie a", "uefa"
+    ]
+    EXCLUDE_KEYWORDS = [
+        "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
+        "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
+        "u23", "u21", "u19", "youth", "junior", "reserve",
+        "second division", "liga 2", "serie b", "2. bundesliga", "championship"
+    ]
+    # We'll just include channels that match any SPORTS_KEYWORDS and not EXCLUDE_KEYWORDS
+    # We'll also prioritize HD, but that's optional.
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write('#EXTM3U\n')
+        f.write('# Generated by Stalker to M3U converter\n')
+        f.write(f'# Generated at {datetime.now().isoformat()}\n')
+        f.write('\n')
+        for portal in portals:
+            print(f"Processing portal {portal['url']}")
+            stalker = portal['stalker']
+            try:
+                channels = stalker.get_channels()
+                print(f"  Total channels: {len(channels)}")
+                sport_channels = []
+                for ch in channels:
+                    name = ch['name'].lower()
+                    # Check exclude first
+                    if any(kw.lower() in name for kw in EXCLUDE_KEYWORDS):
+                        continue
+                    if any(kw.lower() in name for kw in SPORTS_KEYWORDS):
+                        sport_channels.append(ch)
+                print(f"  Sport channels: {len(sport_channels)}")
+                for ch in sport_channels:
+                    # Get stream URL
+                    stream_url = stalker.create_link(ch['cmd'])
+                    if not stream_url:
+                        print(f"    Failed to create link for {ch['name']}")
+                        continue
+                    # Write #EXTINF line
+                    # tvg-id, tvg-name, tvg-logo, group-title, tvg-chno
+                    tvg_id = ch['id']
+                    tvg_name = ch['name']
+                    tvg_logo = ch['logo']
+                    group_title = "Sports"  # or use ch['genre_name'] if it's sports related, but we already filtered
+                    # We can set group_title to something like "Sports - {portal['url']}" to differentiate
+                    group_title = f"Sports ({portal['url']})"
+                    tvg_chno = ch['number']
+                    # Escape special characters in attributes
+                    def esc(s):
+                        return s.replace('"', '&quot;')
+                    f.write(f'#EXTINF:-1 tvg-id="{esc(tvg_id)}" tvg-name="{esc(tvg_name)}" tvg-logo="{esc(tvg_logo)}" group-title="{esc(group_title)}" tvg-chno="{tvg_chno}",{esc(tvg_name)}\n')
+                    f.write(f'{stream_url}\n')
+            except Exception as e:
+                print(f"Error processing portal {portal['url']}: {e}")
+        # Done
+
 def main():
-    start_total = time.time()
-    
-    if not os.path.exists("Mac_list.txt"):
-        print("Error: Mac_list.txt not found.")
+    if len(sys.argv) > 1:
+        mac_file = sys.argv[1]
+    else:
+        mac_file = 'Mac_list.txt'
+    if not os.path.exists(mac_file):
+        print(f"Error: {mac_file} not found.")
         sys.exit(1)
-    
-    portals = []
-    with open("Mac_list.txt", "r") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            parts = line.split(',')
-            if len(parts) >= 2:
-                portals.append((parts[0].strip(), parts[1].strip()))
-            else:
-                print(f"Skipping invalid line: {line}")
-    
-    if not portals:
-        print("No portals found in Mac_list.txt")
-        sys.exit(1)
-    
-    # Kiểm tra từng portal và lấy thông tin
-    valid_portals = []  # lưu dict gồm url, mac, token, server_url
+    portals = parse_mac_list(mac_file)
+    print(f"Found {len(portals)} portals in {mac_file}")
+    # Test each portal
+    valid_portals = []
     for url, mac in portals:
-        print(f"\nChecking: {url} - MAC: {mac}")
-        server_url = clean_url(url)
-        token, random = handshake(server_url, mac)
-        if not token:
-            print("  Handshake failed")
-            continue
-        expiry_str = get_profile(server_url, mac, token, random)
-        if not expiry_str:
-            print("  Could not retrieve expiry")
-            continue
-        expiry_date = parse_expiry(expiry_str)
-        if expiry_date is None:
-            days_left = 999999
-            print(f"  Expiry: {expiry_str} (unlimited)")
+        print(f"Testing {url} {mac}")
+        res = test_portal(url, mac)
+        if res:
+            valid_portals.append(res)
+            expiry = res['expiry_date'].strftime('%Y-%m-%d') if res['expiry_date'] else 'unknown'
+            print(f"  -> Active, expiry: {expiry}")
         else:
-            days_left = (expiry_date - datetime.now()).days
-            if days_left < 0:
-                print(f"  Expiry: {expiry_str} (expired, {days_left} days)")
-                continue
-            print(f"  Expiry: {expiry_str} ({days_left} days left)")
-        valid_portals.append({
-            "url": url,
-            "mac": mac,
-            "token": token,
-            "server_url": server_url
-        })
-    
-    # Chọn 3 portal đầu tiên còn sống
-    selected = valid_portals[:3]
-    if not selected:
-        print("No valid portal found.")
-        sys.exit(1)
-    print(f"\nSelected {len(selected)} portal(s):")
-    for p in selected:
-        print(f"  {p['url']}")
-    
-    # Tổng hợp M3U
-    all_m3u_lines = ["#EXTM3U"]
-    for p in selected:
-        lines = process_portal(p["url"], p["mac"], p["token"], p["server_url"])
-        if lines:
-            all_m3u_lines.extend(lines)
-    
-    # Ghi file
-    with open("Mac_playlist.m3u", "w", encoding="utf-8") as f:
-        f.write("\n".join(all_m3u_lines))
-    
-    print(f"\nPlaylist generated: Mac_playlist.m3u with {len(all_m3u_lines)//2} streams.")
-    print(f"Total time: {time.time()-start_total:.2f}s")
+            print("  -> Failed or expired")
+    # Sort by expiry date descending (longest remaining)
+    valid_portals.sort(key=lambda x: x['expiry_date'] if x['expiry_date'] else datetime.min, reverse=True)
+    # Take top 3
+    top_three = valid_portals[:3]
+    print(f"Selected top {len(top_three)} portals:")
+    for p in top_three:
+        print(f"  {p['url']} - expiry: {p['expiry_date']}")
+    # Generate playlist
+    output = 'Mac_playlist.m3u'
+    generate_playlist(top_three, output)
+    print(f"Playlist saved to {output}")
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
