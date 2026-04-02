@@ -38,15 +38,19 @@ HEADERS = {
 SPORTS_KEYWORDS = [
     "sport", "sports", "football", "soccer", "tennis", "golf",
     "motorsport", "formula 1", "f1", "hub premier", "premier league",
-    "mono max", "astro arena", "spotv", "epl", "soccer", "tsn", "la liga", "laliga", "bundesliga",
-    "seriea", "serie a", "uefa"
+    "monomax", "astro arena", "spotv", "epl", "soccer", "tsn", "la liga", "laliga", "bundesliga",
+    "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
+    "brentford", "brighton", "chelsea", "crystal palace", "everton", "fulham", "leeds united", "liverpool",
+    "manchester city", "manchester united", "newcastle", "nottingham forest", "sunderland", "tottenham hotspur",
+    "west ham united", "wolverhampton", "bayern", "bayern munich", "borussia dortmund", "bayer leverkusen", "inter milan",
+    "ac milan", "napoli", "barcelona", "real madrid", "atlético", "atletico madrid", "psg", "paris saint-germain", "olympique marseille"
 ]
 
 # Từ khóa loại trừ (môn không mong muốn, giải trẻ, giải hạng dưới)
 EXCLUDE_KEYWORDS = [
     "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
     "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
-    "u23", "u21", "u19", "youth", "junior", "reserve",
+    "u23", "u21", "u19", "youth", "junior", "reserve", "mma",
     "second division", "liga 2", "serie b", "2. bundesliga", "championship"
 ]
 
