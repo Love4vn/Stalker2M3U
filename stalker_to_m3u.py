@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Reads a list of portals (URL, MAC) from Mac_list.txt,
-tests each, picks the three with the longest remaining subscription, fetches
-sports channels, and outputs a playlist (Mac_playlist.m3u).
+Stalker to M3U converter – Robust portal detection, channel sync, sports filtering.
+Reads Mac_list.txt (url,mac), tests each portal, picks the three with the longest expiry,
+fetches channels, filters sports, and outputs Mac_playlist.m3u.
 """
 
 import hashlib
@@ -11,7 +11,6 @@ import os
 import re
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from typing import Dict, List, Optional, Any, Tuple
 
@@ -36,9 +35,6 @@ class StalkerLite:
         self.headers = self._make_headers()
         self.session = requests.Session()
 
-    # ------------------------------------------------------------------
-    # Private helpers
-    # ------------------------------------------------------------------
     def _sanitize_url(self, url: str) -> str:
         url = url.rstrip("/")
         url = re.sub(r"/c/?$", "", url)
@@ -101,16 +97,12 @@ class StalkerLite:
             if resp.status_code != 200:
                 return None
             data = resp.json()
-            # Many Stalker responses wrap data in a "js" object
             if isinstance(data, dict) and "js" in data:
                 return data["js"]
             return data
         except Exception:
             return None
 
-    # ------------------------------------------------------------------
-    # Public API
-    # ------------------------------------------------------------------
     def handshake(self) -> Dict[str, Any]:
         url = f"{self.server_url}?type=stb&action=handshake&prehash={self.mac}&token=&JsHttpRequest=1-xml"
         data = self._get(url)
@@ -193,7 +185,6 @@ class StalkerLite:
             return []
         genres = self.get_genres()
 
-        # try the fast all‑channels endpoint
         data = self._get(
             self.server_url + "?type=itv&action=get_all_channels&JsHttpRequest=1-xml",
             timeout=120,
@@ -205,7 +196,6 @@ class StalkerLite:
             elif isinstance(data, list):
                 raw_channels = data
             else:
-                # fallback: search for any list in the data
                 for v in data.values():
                     if isinstance(v, list):
                         raw_channels = v
@@ -239,7 +229,6 @@ class StalkerLite:
     def _fetch_channels_paginated(self) -> List[Dict]:
         all_channels = []
         page = 0
-        page_size = 500
         while True:
             params = {
                 "type": "itv",
@@ -263,21 +252,18 @@ class StalkerLite:
             if total and len(all_channels) >= total:
                 break
             page += 1
-            if page > 100:  # safety
+            if page > 100:
                 break
         return all_channels
 
     def create_link(self, cmd: str) -> str:
         cmd = cmd.strip()
-        # strip ffmpeg prefix
         if cmd.lower().startswith("ffmpeg "):
             cmd = cmd[7:].strip()
-        # if it is already a direct HTTP URL (and not ffrt)
         if re.match(r"^https?://", cmd, re.I) and not cmd.lower().startswith("ffrt"):
             m = re.search(r"(https?://[^\s\"']+)", cmd, re.I)
             return m.group(1) if m else cmd
 
-        # call create_link API
         params = {
             "type": "itv",
             "action": "create_link",
@@ -325,10 +311,9 @@ class StalkerLite:
 
 
 # ----------------------------------------------------------------------
-# Portal testing helpers (robust handshake detection)
+# Portal testing helpers (robust endpoint probing)
 # ----------------------------------------------------------------------
 def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
-    """Read Mac_list.txt, each line: url,mac"""
     portals = []
     with open(filename, "r") as f:
         for line in f:
@@ -347,13 +332,11 @@ def get_expiry_date(profile: dict) -> Optional[datetime]:
     expiry_str = profile.get("expiry", "")
     if not expiry_str:
         return None
-    # try common date formats
     for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%Y/%m/%d", "%d-%m-%Y"):
         try:
             return datetime.strptime(expiry_str, fmt)
         except ValueError:
             continue
-    # try as Unix timestamp (seconds)
     try:
         return datetime.fromtimestamp(int(expiry_str))
     except (ValueError, TypeError):
@@ -361,40 +344,75 @@ def get_expiry_date(profile: dict) -> Optional[datetime]:
     return None
 
 
-def get_token_and_server(url: str, mac: str) -> Tuple[Optional[str], Optional[str]]:
-    """Try multiple handshake endpoints to obtain a token and return (token, base_url) or (None, None)."""
-    base = url.rstrip('/')
-    # Common handshake patterns
-    patterns = [
-        ('/stalker_portal/server/load.php', 
-         f"{base}/stalker_portal/server/load.php?type=stb&action=handshake&prehash={mac}&token=&JsHttpRequest=1-xml"),
-        ('/server/load.php', 
-         f"{base}/server/load.php?type=stb&action=handshake&prehash={mac}&token=&JsHttpRequest=1-xml"),
-        ('/portal.php', 
-         f"{base}/portal.php?type=stb&action=handshake&prehash={mac}&token=&JsHttpRequest=1-xml"),
-    ]
+def try_endpoint(base_url: str, endpoint: str, mac: str, token: str = "") -> Optional[Tuple[str, Dict]]:
     headers = {
         'User-Agent': 'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
         'X-User-Agent': 'Model: MAG250; Link: WiFi',
         'Cookie': f'mac={mac}; stb_lang=en; timezone=Europe/Kiev'
     }
-    for path, handshake_url in patterns:
-        try:
-            resp = requests.get(handshake_url, headers=headers, timeout=5)
-            if resp.status_code == 200:
-                data = resp.json()
-                token = data.get('js', {}).get('token') or data.get('token')
-                if token:
-                    # Return token and the original base URL
-                    return token, base
-        except Exception:
-            continue
+    if token:
+        headers['Authorization'] = f'Bearer {token}'
+
+    url = base_url.rstrip('/') + endpoint
+    try:
+        resp = requests.get(url, headers=headers, timeout=5)
+        if resp.status_code != 200:
+            return None
+        data = resp.json()
+        # Look for token in various places
+        new_token = (data.get('js', {}).get('token') or
+                     data.get('token') or
+                     data.get('auth_token'))
+        if new_token:
+            return new_token, data
+        # If no token but we have account data, we are authenticated (token already valid)
+        if 'id' in data or 'login' in data or 'expire_billing_date' in data:
+            return token, data
+    except Exception:
+        pass
+    return None
+
+
+def get_token_and_base(url: str, mac: str) -> Tuple[Optional[str], Optional[str]]:
+    """Try multiple endpoints to obtain a valid token and the base URL that worked."""
+    base = url.rstrip('/')
+    # List of candidate endpoints (handshake and account info)
+    endpoints = [
+        '/stalker_portal/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+        '/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+        '/portal.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+        '/portal.php?type=account_info&action=get_main_info&JsHttpRequest=1-xml',
+        '/portal.php?type=account_info&action=get_profile&JsHttpRequest=1-xml',
+        '/server/load.php?type=account_info&action=get_main_info',
+    ]
+
+    for ep in endpoints:
+        result = try_endpoint(base, ep, mac)
+        if result:
+            token, data = result
+            if token:
+                return token, base
+            # If no token but data contains account info, we might have a session (rare)
+            # In that case, we try to get a token from a handshake with this base
+            # For simplicity, we'll try a handshake now
+            if any(k in data for k in ('id', 'login', 'expire_billing_date')):
+                # Try handshake with this base
+                hs_url = base + '/stalker_portal/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml'
+                try:
+                    resp = requests.get(hs_url, headers=headers, timeout=5)
+                    if resp.status_code == 200:
+                        hs_data = resp.json()
+                        token = hs_data.get('js', {}).get('token') or hs_data.get('token')
+                        if token:
+                            return token, base
+                except:
+                    pass
     return None, None
 
 
 def test_portal(url: str, mac: str) -> Optional[Dict]:
     """Test a portal; if active, return dict with stalker instance and expiry date."""
-    token, base = get_token_and_server(url, mac)
+    token, base = get_token_and_base(url, mac)
     if not token:
         return None
 
@@ -424,7 +442,6 @@ def test_portal(url: str, mac: str) -> Optional[Dict]:
 # Playlist generation
 # ----------------------------------------------------------------------
 def generate_playlist(portals: List[Dict], output_file: str):
-    """Generate M3U playlist from the selected portals."""
     SPORTS_KEYWORDS = [
         "sport", "sports", "football", "soccer", "tennis", "golf",
         "motorsport", "formula 1", "f1", "hub premier", "premier league",
@@ -451,10 +468,8 @@ def generate_playlist(portals: List[Dict], output_file: str):
                 sport_channels = []
                 for ch in channels:
                     name_lower = ch["name"].lower()
-                    # Exclude
                     if any(kw.lower() in name_lower for kw in EXCLUDE_KEYWORDS):
                         continue
-                    # Include
                     if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS):
                         sport_channels.append(ch)
 
@@ -497,7 +512,6 @@ def main():
     portals = parse_mac_list(mac_file)
     print(f"Found {len(portals)} portals in {mac_file}")
 
-    # Test each portal
     valid_portals = []
     for url, mac in portals:
         print(f"Testing {url} {mac}")
@@ -509,7 +523,7 @@ def main():
         else:
             print("  -> Failed or expired")
 
-    # Sort by remaining time (longest first)
+    # Sort by expiry (longest first)
     valid_portals.sort(
         key=lambda x: x["expiry_date"] if x["expiry_date"] else datetime.min, reverse=True
     )
@@ -523,7 +537,6 @@ def main():
         print("No active portals found. Exiting.")
         sys.exit(0)
 
-    # Generate playlist
     output = "Mac_playlist.m3u"
     generate_playlist(top_three, output)
     print(f"\nPlaylist saved to {output}")
