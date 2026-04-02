@@ -51,7 +51,7 @@ EXCLUDE_KEYWORDS = [
     "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
     "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
     "u23", "u21", "u19", "youth", "junior", "reserve", "mma",
-    "second division", "liga 2", "serie b", "2. bundesliga", "championship"
+    "second division", "liga 2", "serie b", "2. bundesliga", "championship", "national league", "replay", "film", "movie", "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse"
 ]
 
 # Các từ khóa độ phân giải cao
