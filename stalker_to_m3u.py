@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Sửa lỗi URL cho các portal dạng /c/
+Stalker to M3U converter – Sửa lỗi xử lý response dạng list.
 """
 
 import hashlib
@@ -10,13 +10,13 @@ import re
 import sys
 import time
 from datetime import datetime
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Any, Tuple, Union
 
 import requests
 
 
 # ----------------------------------------------------------------------
-# StalkerLite – Sửa lỗi xây dựng URL cho các portal có /c/
+# StalkerLite – Sửa lỗi xử lý response (list/dict)
 # ----------------------------------------------------------------------
 class StalkerLite:
     def __init__(self, url: str, mac: str, model: str = "MAG250",
@@ -26,7 +26,6 @@ class StalkerLite:
         self.token = existing_token
         self.extras = extras or {}
 
-        # Xác định cấu trúc URL
         self.original_url = url.rstrip('/')
         self._detect_server_path()
         self.device_info = self._make_device_info()
@@ -34,23 +33,15 @@ class StalkerLite:
         self.session = requests.Session()
 
     def _detect_server_path(self):
-        """Phát hiện đúng đường dẫn server load.php dựa trên URL đầu vào"""
-        # Nếu URL kết thúc bằng /c hoặc /c/
         if self.original_url.endswith('/c') or self.original_url.endswith('/c/'):
-            # Dạng: http://domain.com/c
-            self.base_url = self.original_url.rstrip('/')  # giữ /c
+            self.base_url = self.original_url.rstrip('/')
             self.server_url = self.base_url + '/server/load.php'
             self.portal_base = self.base_url + '/'
         else:
-            # Dạng cũ: http://domain.com/stalker_portal/c
             clean = re.sub(r'/stalker_portal/?$', '', self.original_url)
             self.base_url = clean
             self.server_url = clean + '/stalker_portal/server/load.php'
             self.portal_base = clean + '/stalker_portal/c/'
-
-        # Debug
-        print(f"    [StalkerLite] base_url={self.base_url}")
-        print(f"    [StalkerLite] server_url={self.server_url}")
 
     def _make_device_info(self) -> Dict[str, str]:
         mac = self.mac
@@ -91,15 +82,17 @@ class StalkerLite:
             h["Authorization"] = f"Bearer {self.token}"
         return h
 
-    def _get(self, url: str, timeout: int = 20, use_auth: bool = True) -> Optional[Any]:
+    def _get(self, url: str, timeout: int = 20, use_auth: bool = True) -> Optional[Union[Dict, List]]:
         headers = self._auth_headers() if use_auth else self.headers
         try:
             resp = self.session.get(url, headers=headers, timeout=timeout)
             if resp.status_code != 200:
                 return None
             data = resp.json()
+            # Nếu response có trường "js" (cấu trúc chuẩn của Stalker)
             if isinstance(data, dict) and "js" in data:
                 return data["js"]
+            # Nếu là list hoặc dict khác thì trả về nguyên bản
             return data
         except Exception:
             return None
@@ -107,7 +100,7 @@ class StalkerLite:
     def handshake(self) -> Dict[str, Any]:
         url = f"{self.server_url}?type=stb&action=handshake&prehash={self.mac}&token=&JsHttpRequest=1-xml"
         data = self._get(url)
-        if not data:
+        if not data or not isinstance(data, dict):
             return {"success": False, "error": "Handshake failed"}
         token = data.get("token", "")
         if not token:
@@ -136,7 +129,7 @@ class StalkerLite:
         }
         url = f"{self.server_url}?{requests.compat.urlencode(params)}"
         data = self._get(url)
-        if not data:
+        if not data or not isinstance(data, dict):
             return {}
         return {
             "login": data.get("login", ""),
@@ -169,16 +162,25 @@ class StalkerLite:
         ]
         for ep in endpoints:
             data = self._get(self.server_url + ep, timeout=30)
-            if data:
+            if data is None:
+                continue
+            # data có thể là list hoặc dict
+            if isinstance(data, list):
+                genres_list = data
+            elif isinstance(data, dict):
                 genres_list = data.get("data") or data
-                if isinstance(genres_list, list):
-                    out = {}
-                    for g in genres_list:
-                        if isinstance(g, dict):
-                            gid = str(g.get("id") or g.get("genre_id", "0"))
-                            title = g.get("title") or g.get("name", "General")
-                            out[gid] = title
-                    return out
+                if not isinstance(genres_list, list):
+                    continue
+            else:
+                continue
+            out = {}
+            for g in genres_list:
+                if isinstance(g, dict):
+                    gid = str(g.get("id") or g.get("genre_id", "0"))
+                    title = g.get("title") or g.get("name", "General")
+                    out[gid] = title
+            if out:
+                return out
         return {}
 
     def get_channels(self) -> List[Dict[str, Any]]:
@@ -191,16 +193,19 @@ class StalkerLite:
             timeout=120,
         )
         raw_channels = []
-        if data:
-            if "data" in data:
-                raw_channels = data["data"]
-            elif isinstance(data, list):
+        if data is not None:
+            if isinstance(data, list):
                 raw_channels = data
-            else:
-                for v in data.values():
-                    if isinstance(v, list):
-                        raw_channels = v
-                        break
+            elif isinstance(data, dict):
+                # Có thể có wrapper "data" hoặc "js"
+                if "data" in data:
+                    raw_channels = data["data"]
+                else:
+                    # Thử tìm bất kỳ giá trị nào là list
+                    for v in data.values():
+                        if isinstance(v, list):
+                            raw_channels = v
+                            break
 
         if not raw_channels:
             raw_channels = self._fetch_channels_paginated()
@@ -245,11 +250,20 @@ class StalkerLite:
             data = self._get(url, timeout=60)
             if not data:
                 break
-            ch_list = data.get("data", [])
+            # data có thể là list hoặc dict
+            if isinstance(data, list):
+                ch_list = data
+            elif isinstance(data, dict):
+                ch_list = data.get("data", [])
+            else:
+                break
             if not ch_list:
                 break
             all_channels.extend(ch_list)
-            total = int(data.get("total_items") or data.get("max_page_items", 0))
+            # Kiểm tra tổng số nếu có
+            total = 0
+            if isinstance(data, dict):
+                total = int(data.get("total_items") or data.get("max_page_items", 0))
             if total and len(all_channels) >= total:
                 break
             page += 1
@@ -275,7 +289,7 @@ class StalkerLite:
         }
         url = f"{self.server_url}?{requests.compat.urlencode(params)}"
         data = self._get(url, timeout=15)
-        if data:
+        if data and isinstance(data, dict):
             stream = data.get("cmd") or data.get("url", "")
             if stream:
                 if stream.lower().startswith("ffmpeg "):
@@ -312,7 +326,7 @@ class StalkerLite:
 
 
 # ----------------------------------------------------------------------
-# Phần còn lại giữ nguyên (parse_mac_list, get_expiry_date, try_endpoint, ...)
+# Các hàm hỗ trợ (giữ nguyên)
 # ----------------------------------------------------------------------
 def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
     portals = []
@@ -362,14 +376,14 @@ def try_endpoint(base_url: str, endpoint: str, mac: str, token: str = "", debug:
         if resp.status_code != 200:
             return None
         data = resp.json()
-        new_token = (data.get('js', {}).get('token') or
-                     data.get('token') or
-                     data.get('auth_token'))
+        new_token = None
+        if isinstance(data, dict):
+            new_token = data.get('js', {}).get('token') or data.get('token') or data.get('auth_token')
         if new_token:
             if debug:
                 print(f"      Got token: {new_token[:20]}...")
             return new_token, data
-        if 'id' in data or 'login' in data or 'expire_billing_date' in data:
+        if isinstance(data, dict) and ('id' in data or 'login' in data or 'expire_billing_date' in data):
             if debug:
                 print("      Got account data (no token)")
             return token, data
@@ -381,7 +395,6 @@ def try_endpoint(base_url: str, endpoint: str, mac: str, token: str = "", debug:
 
 def get_token_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Optional[str], Optional[str]]:
     base = url.rstrip('/')
-    # Nếu URL đã có /c ở cuối, thử endpoint trực tiếp /server/load.php trước
     endpoints = []
     if base.endswith('/c'):
         endpoints.append('/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml')
@@ -440,9 +453,6 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
     }
 
 
-# ----------------------------------------------------------------------
-# Playlist generation (giữ nguyên)
-# ----------------------------------------------------------------------
 def generate_playlist(portals: List[Dict], output_file: str):
     SPORTS_KEYWORDS = [
         "sport", "sports", "football", "soccer", "tennis", "golf",
@@ -498,9 +508,6 @@ def generate_playlist(portals: List[Dict], output_file: str):
                 print(f"  Error while processing portal: {e}")
 
 
-# ----------------------------------------------------------------------
-# Main
-# ----------------------------------------------------------------------
 def main():
     debug = True
     if len(sys.argv) > 1:
