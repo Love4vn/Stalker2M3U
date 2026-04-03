@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Hoàn thiện: tự động phát hiện endpoint, lấy danh sách kênh, lọc thể thao, xuất M3U.
+Stalker to M3U converter – Hoàn thiện: sửa lỗi 'ellipsis', thêm header cho stream.
 """
 
 import hashlib
@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Any, Tuple, Union
 
 import requests
 
-DETAILED_DEBUG = False   # Tắt debug chi tiết để log gọn gàng
+DETAILED_DEBUG = False
 
 class StalkerLite:
     def __init__(self, url: str, mac: str, handshake_path: str, token: str,
@@ -168,6 +168,7 @@ class StalkerLite:
             raw_channels = self._fetch_channels_paginated()
         channels = []
         for i, ch in enumerate(raw_channels):
+            # Bỏ qua nếu ch không phải dict
             if not isinstance(ch, dict):
                 continue
             gid = str(ch.get("tv_genre_id") or ch.get("genre_id", "0"))
@@ -200,7 +201,10 @@ class StalkerLite:
                 break
             if not ch_list:
                 break
-            all_channels.extend(ch_list)
+            # Lọc chỉ lấy dict
+            for ch in ch_list:
+                if isinstance(ch, dict):
+                    all_channels.append(ch)
             total = 0
             if isinstance(data, dict):
                 total = int(data.get("total_items") or data.get("max_page_items", 0))
@@ -354,8 +358,18 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
 
 
 def generate_playlist(portals: List[Dict], output_file: str):
-    SPORTS_KEYWORDS = [...]
-    EXCLUDE_KEYWORDS = [...]
+    SPORTS_KEYWORDS = [
+        "sport", "sports", "football", "soccer", "tennis", "golf",
+        "motorsport", "formula 1", "f1", "hub premier", "premier league",
+        "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga",
+        "bundesliga", "seriea", "serie a", "uefa"
+    ]
+    EXCLUDE_KEYWORDS = [
+        "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
+        "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
+        "u23", "u21", "u19", "youth", "junior", "reserve",
+        "second division", "liga 2", "serie b", "2. bundesliga", "championship"
+    ]
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
@@ -364,12 +378,17 @@ def generate_playlist(portals: List[Dict], output_file: str):
         for portal in portals:
             print(f"Processing portal: {portal['url']}")
             stalker = portal["stalker"]
+            mac = portal["mac"]
+            token = stalker.token
             try:
                 channels = stalker.get_channels()
                 print(f"  Total channels: {len(channels)}")
                 sport_channels = []
                 for ch in channels:
-                    name_lower = ch["name"].lower()
+                    # Đảm bảo ch là dict
+                    if not isinstance(ch, dict):
+                        continue
+                    name_lower = ch.get("name", "").lower()
                     if any(kw.lower() in name_lower for kw in EXCLUDE_KEYWORDS):
                         continue
                     if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS):
@@ -377,38 +396,32 @@ def generate_playlist(portals: List[Dict], output_file: str):
 
                 print(f"  Sport channels: {len(sport_channels)}")
                 for ch in sport_channels:
-                    stream_url = stalker.create_link(ch["cmd"])
+                    stream_url = stalker.create_link(ch.get("cmd", ""))
                     if not stream_url:
-                        print(f"    Failed to get stream URL for {ch['name']}")
+                        print(f"    Failed to get stream URL for {ch.get('name')}")
                         continue
 
-                    # --- Thêm header cần thiết cho stream ---
-                    # User-Agent giả làm thiết bị MAG
+                    # Header cần thiết
                     user_agent = "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3"
-                    # Cookie chứa MAC
-                    cookie = f"mac={portal['mac']}; stb_lang=en; timezone=GMT"
-                    # Authorization Bearer token (nếu có)
-                    auth_header = f"Bearer {stalker.token}" if stalker.token else ""
+                    cookie = f"mac={mac}; stb_lang=en; timezone=GMT"
+                    auth_header = f"Bearer {token}" if token else ""
 
-                    # Viết #EXTINF
                     def esc(s: str) -> str:
                         return s.replace('"', "&quot;")
 
                     group_title = f"Sports ({portal['url']})"
                     f.write(
-                        f'#EXTINF:-1 tvg-id="{esc(ch["id"])}" '
-                        f'tvg-name="{esc(ch["name"])}" '
-                        f'tvg-logo="{esc(ch["logo"])}" '
+                        f'#EXTINF:-1 tvg-id="{esc(ch.get("id", ""))}" '
+                        f'tvg-name="{esc(ch.get("name", ""))}" '
+                        f'tvg-logo="{esc(ch.get("logo", ""))}" '
                         f'group-title="{esc(group_title)}" '
-                        f'tvg-chno="{ch["number"]}",{esc(ch["name"])}\n'
+                        f'tvg-chno="{ch.get("number", 0)}",{esc(ch.get("name", ""))}\n'
                     )
-
-                    # Thêm các dòng header (hỗ trợ VLC, TiviMate, OTT Navigator)
+                    # Thêm header cho VLC/TiviMate
                     f.write(f'#EXTVLCOPT:http-user-agent={user_agent}\n')
                     f.write(f'#EXTVLCOPT:http-cookie={cookie}\n')
                     if auth_header:
                         f.write(f'#EXTVLCOPT:http-header=Authorization: {auth_header}\n')
-
                     f.write(f"{stream_url}\n")
             except Exception as e:
                 print(f"  Error while processing portal: {e}")
@@ -416,7 +429,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
 
 def main():
     global DETAILED_DEBUG
-    DETAILED_DEBUG = False  # Tắt debug chi tiết, chỉ hiển thị chính
+    DETAILED_DEBUG = False
     mac_file = sys.argv[1] if len(sys.argv) > 1 else "Mac_list.txt"
     if not os.path.exists(mac_file):
         print(f"Error: {mac_file} not found.")
