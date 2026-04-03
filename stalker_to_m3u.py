@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Hoàn thiện: sửa lỗi 'ellipsis', thêm header cho stream.
+Stalker to M3U converter – Hoàn thiện: lọc theo group-title, giữ nguyên group gốc, thêm tiền tố portal.
 """
 
 import hashlib
@@ -168,7 +168,6 @@ class StalkerLite:
             raw_channels = self._fetch_channels_paginated()
         channels = []
         for i, ch in enumerate(raw_channels):
-            # Bỏ qua nếu ch không phải dict
             if not isinstance(ch, dict):
                 continue
             gid = str(ch.get("tv_genre_id") or ch.get("genre_id", "0"))
@@ -201,7 +200,6 @@ class StalkerLite:
                 break
             if not ch_list:
                 break
-            # Lọc chỉ lấy dict
             for ch in ch_list:
                 if isinstance(ch, dict):
                     all_channels.append(ch)
@@ -242,6 +240,9 @@ class StalkerLite:
         return f"{base}/misc/logos/320/{logo.lstrip('/')}"
 
 
+# ----------------------------------------------------------------------
+# Các hàm hỗ trợ
+# ----------------------------------------------------------------------
 def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
     portals = []
     with open(filename, "r") as f:
@@ -358,17 +359,25 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
 
 
 def generate_playlist(portals: List[Dict], output_file: str):
+    # ========== TỪ KHÓA LỌC THỂ THAO ==========
     SPORTS_KEYWORDS = [
         "sport", "sports", "football", "soccer", "tennis", "golf",
         "motorsport", "formula 1", "f1", "hub premier", "premier league",
-        "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga",
-        "bundesliga", "seriea", "serie a", "uefa"
+        "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
+        "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
+        "brentford", "brighton", "chelsea", "crystal palace", "everton", "fulham", "leeds united", "liverpool",
+        "manchester city", "manchester united", "newcastle", "nottingham forest", "sunderland", "tottenham hotspur",
+        "west ham united", "wolverhampton", "bayern", "bayern munich", "borussia dortmund", "bayer leverkusen", "inter milan",
+        "ac milan", "napoli", "barcelona", "real madrid", "atlético", "atletico madrid", "psg", "paris saint-germain", "olympique marseille"
     ]
+
+    # Từ khóa loại trừ (môn không mong muốn, giải trẻ, giải hạng dưới, và group-title)
     EXCLUDE_KEYWORDS = [
         "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
         "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
-        "u23", "u21", "u19", "youth", "junior", "reserve",
-        "second division", "liga 2", "serie b", "2. bundesliga", "championship"
+        "u23", "u21", "u19", "youth", "junior", "reserve", "mma",
+        "second division", "liga 2", "serie b", "2. bundesliga", "championship", "national league", "replay", "film", "movie",
+        "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse"
     ]
 
     with open(output_file, "w", encoding="utf-8") as f:
@@ -380,18 +389,22 @@ def generate_playlist(portals: List[Dict], output_file: str):
             stalker = portal["stalker"]
             mac = portal["mac"]
             token = stalker.token
+            # Lấy tên portal ngắn gọn để thêm vào group-title
+            portal_short = portal['url'].replace('http://', '').replace('https://', '').split('/')[0].replace(':80', '')
             try:
                 channels = stalker.get_channels()
                 print(f"  Total channels: {len(channels)}")
                 sport_channels = []
                 for ch in channels:
-                    # Đảm bảo ch là dict
                     if not isinstance(ch, dict):
                         continue
                     name_lower = ch.get("name", "").lower()
-                    if any(kw.lower() in name_lower for kw in EXCLUDE_KEYWORDS):
+                    group_lower = ch.get("genre_name", "").lower()
+                    # Loại trừ nếu tên hoặc group chứa từ khóa loại trừ
+                    if any(kw.lower() in name_lower for kw in EXCLUDE_KEYWORDS) or any(kw.lower() in group_lower for kw in EXCLUDE_KEYWORDS):
                         continue
-                    if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS):
+                    # Giữ lại nếu tên hoặc group chứa từ khóa thể thao
+                    if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS) or any(kw.lower() in group_lower for kw in SPORTS_KEYWORDS):
                         sport_channels.append(ch)
 
                 print(f"  Sport channels: {len(sport_channels)}")
@@ -401,7 +414,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
                         print(f"    Failed to get stream URL for {ch.get('name')}")
                         continue
 
-                    # Header cần thiết
+                    # Header cần thiết cho stream
                     user_agent = "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3"
                     cookie = f"mac={mac}; stb_lang=en; timezone=GMT"
                     auth_header = f"Bearer {token}" if token else ""
@@ -409,15 +422,17 @@ def generate_playlist(portals: List[Dict], output_file: str):
                     def esc(s: str) -> str:
                         return s.replace('"', "&quot;")
 
-                    group_title = f"Sports ({portal['url']})"
+                    # Giữ nguyên group-title gốc, thêm tiền tố [tên_portal]
+                    original_group = ch.get("genre_name", "General")
+                    new_group = f"[{portal_short}] {original_group}"
+
                     f.write(
                         f'#EXTINF:-1 tvg-id="{esc(ch.get("id", ""))}" '
                         f'tvg-name="{esc(ch.get("name", ""))}" '
                         f'tvg-logo="{esc(ch.get("logo", ""))}" '
-                        f'group-title="{esc(group_title)}" '
+                        f'group-title="{esc(new_group)}" '
                         f'tvg-chno="{ch.get("number", 0)}",{esc(ch.get("name", ""))}\n'
                     )
-                    # Thêm header cho VLC/TiviMate
                     f.write(f'#EXTVLCOPT:http-user-agent={user_agent}\n')
                     f.write(f'#EXTVLCOPT:http-cookie={cookie}\n')
                     if auth_header:
