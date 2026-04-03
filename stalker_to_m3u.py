@@ -4,6 +4,7 @@ Stalker Portal to M3U Converter for Sports Channels
 - Đọc Mac_list.txt, kiểm tra và chọn 3 portal sống tốt nhất (URL khác nhau)
 - Lọc kênh thể thao (loại trừ môn, giải trẻ, và group-title không mong muốn)
 - Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
+- Kiểm tra stream hoạt động bằng cách thử tải một kênh mẫu
 - Xuất M3U tổng hợp từ 3 portal
 """
 
@@ -165,11 +166,9 @@ def is_sports_channel(channel, genres):
     group_title = genres.get(genre_id, "").lower()
     text = title + " " + group_title
 
-    # Kiểm tra thể thao (ít nhất một từ khóa)
     if not any(kw in text for kw in SPORTS_KEYWORDS):
         return False
 
-    # Loại trừ các từ khóa không mong muốn (kể cả group_title)
     for ex in EXCLUDE_KEYWORDS:
         if ex in text or ex in group_title:
             return False
@@ -202,8 +201,36 @@ def get_stream_url_from_cmd(cmd, portal_url):
             base += '/c'
         return base.rstrip('/') + '/' + cmd.lstrip('/')
 
+def check_sample_stream(streams, portal_url, mac, token):
+    """Kiểm tra một vài stream mẫu xem có trả về nội dung video không"""
+    if not streams:
+        return False
+    # Lấy tối đa 3 stream để thử
+    test_streams = streams[:3]
+    for s in test_streams:
+        try:
+            # Gửi HEAD request để kiểm tra status và content-type
+            resp = SESSION.head(s["url"], timeout=5, allow_redirects=True)
+            if resp.status_code == 200:
+                content_type = resp.headers.get("content-type", "").lower()
+                if any(ct in content_type for ct in ["video/", "application/vnd.apple.mpegurl", "application/x-mpegurl"]):
+                    return True
+                # Nếu không có content-type nhưng URL kết thúc bằng .ts/.m3u8/.m2ts thì coi như ok
+                if s["url"].endswith((".ts", ".m3u8", ".m2ts")):
+                    return True
+            else:
+                # Thử GET với range nhỏ để xem có phải video không
+                resp2 = SESSION.get(s["url"], headers={"Range": "bytes=0-1024"}, timeout=5, stream=True)
+                if resp2.status_code in (200, 206):
+                    chunk = resp2.raw.read(1024)
+                    if chunk and (b"ID3" in chunk or b"GST" in chunk or b"ftyp" in chunk):
+                        return True
+        except:
+            continue
+    return False
+
 def get_portal_info(url, mac):
-    """Kiểm tra portal, trả về thông tin và danh sách stream đã lọc thể thao HD"""
+    """Kiểm tra portal, trả về thông tin và danh sách stream đã lọc thể thao HD (chỉ nếu có stream hoạt động)"""
     print(f"\nChecking: {url} - MAC: {mac}")
     t0 = time.time()
     server_url = clean_url(url)
@@ -256,7 +283,6 @@ def get_portal_info(url, mac):
         stream_url = get_stream_url_from_cmd(cmd, url)
         if not stream_url:
             continue
-        # Kiểm tra lại group_title (phòng trường hợp lọc chưa kỹ)
         genre_id = str(ch.get("tv_genre_id", ""))
         group_title = genres.get(genre_id, "Sports")
         if any(ex in group_title.lower() for ex in EXCLUDE_KEYWORDS):
@@ -269,6 +295,15 @@ def get_portal_info(url, mac):
             "group_title": group_title,
             "url": stream_url
         })
+
+    # Kiểm tra xem có ít nhất một stream hoạt động không
+    if not stream_list:
+        print("  No HD sports streams found")
+        return None
+    if not check_sample_stream(stream_list, url, mac, token):
+        print("  Sample stream test failed (HTTP 458 or no video content)")
+        return None
+    print("  Sample stream OK")
 
     return {
         "url": url,
@@ -314,7 +349,7 @@ def main():
             portal_infos.append(info)
 
     if not portal_infos:
-        print("No valid portal found.")
+        print("No valid portal found (all failed sample stream test).")
         sys.exit(1)
 
     # Loại bỏ các portal trùng URL (giữ cái có nhiều kênh HD nhất)
@@ -328,7 +363,7 @@ def main():
     # Sắp xếp theo số kênh HD giảm dần, chọn tối đa 3 portal
     unique_portals.sort(key=lambda p: p["hd_sports_count"], reverse=True)
     selected = unique_portals[:3]
-    print(f"\nSelected {len(selected)} portals (unique URLs):")
+    print(f"\nSelected {len(selected)} portals (unique URLs) with working streams:")
     for p in selected:
         print(f"  {p['url']} - {p['hd_sports_count']} HD sports channels")
 
