@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Robust portal detection, channel sync, sports filtering.
-Reads Mac_list.txt (url,mac), tests each portal, picks the three with the longest expiry,
-fetches channels, filters sports, and outputs Mac_playlist.m3u.
+Stalker to M3U converter – Sửa lỗi URL cho các portal dạng /c/
 """
 
 import hashlib
@@ -18,7 +16,7 @@ import requests
 
 
 # ----------------------------------------------------------------------
-# StalkerLite – Minimal Stalker Portal Engine
+# StalkerLite – Sửa lỗi xây dựng URL cho các portal có /c/
 # ----------------------------------------------------------------------
 class StalkerLite:
     def __init__(self, url: str, mac: str, model: str = "MAG250",
@@ -28,30 +26,31 @@ class StalkerLite:
         self.token = existing_token
         self.extras = extras or {}
 
-        clean_url = self._sanitize_url(url)
-        self.server_url = self._build_server_url(clean_url)
-        self.portal_base = self._build_portal_base(clean_url)
+        # Xác định cấu trúc URL
+        self.original_url = url.rstrip('/')
+        self._detect_server_path()
         self.device_info = self._make_device_info()
         self.headers = self._make_headers()
         self.session = requests.Session()
 
-    def _sanitize_url(self, url: str) -> str:
-        url = url.rstrip("/")
-        url = re.sub(r"/c$", "", url)
-        url = re.sub(r"/c/$", "", url)
-        url = re.sub(r"/stalker_portal$", "", url)
-        url = re.sub(r"/stalker_portal/$", "", url)
-        return url
+    def _detect_server_path(self):
+        """Phát hiện đúng đường dẫn server load.php dựa trên URL đầu vào"""
+        # Nếu URL kết thúc bằng /c hoặc /c/
+        if self.original_url.endswith('/c') or self.original_url.endswith('/c/'):
+            # Dạng: http://domain.com/c
+            self.base_url = self.original_url.rstrip('/')  # giữ /c
+            self.server_url = self.base_url + '/server/load.php'
+            self.portal_base = self.base_url + '/'
+        else:
+            # Dạng cũ: http://domain.com/stalker_portal/c
+            clean = re.sub(r'/stalker_portal/?$', '', self.original_url)
+            self.base_url = clean
+            self.server_url = clean + '/stalker_portal/server/load.php'
+            self.portal_base = clean + '/stalker_portal/c/'
 
-    def _build_server_url(self, clean: str) -> str:
-        if "/stalker_portal" in clean:
-            return clean + "/server/load.php"
-        return clean + "/stalker_portal/server/load.php"
-
-    def _build_portal_base(self, clean: str) -> str:
-        if "/stalker_portal" in clean:
-            return clean + "/c/"
-        return clean + "/stalker_portal/c/"
+        # Debug
+        print(f"    [StalkerLite] base_url={self.base_url}")
+        print(f"    [StalkerLite] server_url={self.server_url}")
 
     def _make_device_info(self) -> Dict[str, str]:
         mac = self.mac
@@ -95,20 +94,14 @@ class StalkerLite:
     def _get(self, url: str, timeout: int = 20, use_auth: bool = True) -> Optional[Any]:
         headers = self._auth_headers() if use_auth else self.headers
         try:
-            print(f"    [DEBUG] GET {url[:120]}...")
             resp = self.session.get(url, headers=headers, timeout=timeout)
-            print(f"    [DEBUG] Status: {resp.status_code}")
             if resp.status_code != 200:
                 return None
-            # In preview response
-            preview = resp.text[:200].replace('\n', ' ')
-            print(f"    [DEBUG] Response: {preview}")
             data = resp.json()
             if isinstance(data, dict) and "js" in data:
                 return data["js"]
             return data
-        except Exception as e:
-            print(f"    [DEBUG] Exception: {e}")
+        except Exception:
             return None
 
     def handshake(self) -> Dict[str, Any]:
@@ -190,12 +183,13 @@ class StalkerLite:
 
     def get_channels(self) -> List[Dict[str, Any]]:
         if not self.ensure_token():
-            print("  [DEBUG] ensure_token failed, no channels")
             return []
         genres = self.get_genres()
-        # Thử get_all_channels
-        url = self.server_url + "?type=itv&action=get_all_channels&JsHttpRequest=1-xml"
-        data = self._get(url, timeout=120)
+
+        data = self._get(
+            self.server_url + "?type=itv&action=get_all_channels&JsHttpRequest=1-xml",
+            timeout=120,
+        )
         raw_channels = []
         if data:
             if "data" in data:
@@ -207,13 +201,9 @@ class StalkerLite:
                     if isinstance(v, list):
                         raw_channels = v
                         break
-        if not raw_channels:
-            print("  [DEBUG] get_all_channels returned empty, trying paginated...")
-            raw_channels = self._fetch_channels_paginated()
 
         if not raw_channels:
-            print("  [DEBUG] No channels found at all.")
-            return []
+            raw_channels = self._fetch_channels_paginated()
 
         channels = []
         for i, ch in enumerate(raw_channels):
@@ -322,7 +312,7 @@ class StalkerLite:
 
 
 # ----------------------------------------------------------------------
-# Portal testing helpers (robust endpoint probing)
+# Phần còn lại giữ nguyên (parse_mac_list, get_expiry_date, try_endpoint, ...)
 # ----------------------------------------------------------------------
 def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
     portals = []
@@ -391,17 +381,16 @@ def try_endpoint(base_url: str, endpoint: str, mac: str, token: str = "", debug:
 
 def get_token_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Optional[str], Optional[str]]:
     base = url.rstrip('/')
-    endpoints = [
+    # Nếu URL đã có /c ở cuối, thử endpoint trực tiếp /server/load.php trước
+    endpoints = []
+    if base.endswith('/c'):
+        endpoints.append('/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml')
+    endpoints.extend([
         '/stalker_portal/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
         '/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
         '/portal.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
         '/c/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
-        '/portal.php?type=account_info&action=get_main_info&JsHttpRequest=1-xml',
-        '/portal.php?type=account_info&action=get_profile&JsHttpRequest=1-xml',
-        '/server/load.php?type=account_info&action=get_main_info',
-        '/stalker_portal/server/load.php?type=account_info&action=get_main_info',
-        '/stalker_portal/server/load.php?type=itv&action=get_all_channels&JsHttpRequest=1-xml',
-    ]
+    ])
 
     for ep in endpoints:
         result = try_endpoint(base, ep, mac, "", debug)
@@ -409,18 +398,6 @@ def get_token_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Optiona
             token, data = result
             if token:
                 return token, base
-            if any(k in data for k in ('id', 'login', 'expire_billing_date')):
-                # Thử handshake lại
-                hs_url = base + '/stalker_portal/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml'
-                try:
-                    resp = requests.get(hs_url, headers=headers, timeout=5)
-                    if resp.status_code == 200:
-                        hs_data = resp.json()
-                        token = hs_data.get('js', {}).get('token') or hs_data.get('token')
-                        if token:
-                            return token, base
-                except:
-                    pass
     return None, None
 
 
@@ -464,7 +441,7 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
 
 
 # ----------------------------------------------------------------------
-# Playlist generation
+# Playlist generation (giữ nguyên)
 # ----------------------------------------------------------------------
 def generate_playlist(portals: List[Dict], output_file: str):
     SPORTS_KEYWORDS = [
