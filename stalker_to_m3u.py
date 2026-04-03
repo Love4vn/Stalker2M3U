@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Stalker Portal to M3U Converter for Sports Channels
-- Đọc Mac_list.txt, kiểm tra và chọn 3 portal sống tốt nhất
-- Lọc kênh thể thao (loại trừ một số môn và giải trẻ, hạng dưới)
+- Đọc Mac_list.txt, kiểm tra và chọn 3 portal sống tốt nhất (URL khác nhau)
+- Lọc kênh thể thao (loại trừ môn, giải trẻ, và group-title không mong muốn)
 - Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
 - Xuất M3U tổng hợp từ 3 portal
 """
@@ -38,7 +38,7 @@ HEADERS = {
 SPORTS_KEYWORDS = [
     "sport", "sports", "football", "soccer", "tennis", "golf",
     "motorsport", "formula 1", "f1", "hub premier", "premier league",
-    "monomax", "astro arena", "spotv", "epl", "soccer", "tsn", "la liga", "laliga", "bundesliga",
+    "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
     "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
     "brentford", "brighton", "chelsea", "crystal palace", "everton", "fulham", "leeds united", "liverpool",
     "manchester city", "manchester united", "newcastle", "nottingham forest", "sunderland", "tottenham hotspur",
@@ -46,12 +46,13 @@ SPORTS_KEYWORDS = [
     "ac milan", "napoli", "barcelona", "real madrid", "atlético", "atletico madrid", "psg", "paris saint-germain", "olympique marseille"
 ]
 
-# Từ khóa loại trừ (môn không mong muốn, giải trẻ, giải hạng dưới)
+# Từ khóa loại trừ (môn không mong muốn, giải trẻ, giải hạng dưới, và group-title)
 EXCLUDE_KEYWORDS = [
     "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
     "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
     "u23", "u21", "u19", "youth", "junior", "reserve", "mma",
-    "second division", "liga 2", "serie b", "2. bundesliga", "championship", "national league", "replay", "film", "movie", "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse"
+    "second division", "liga 2", "serie b", "2. bundesliga", "championship", "national league", "replay", "film", "movie",
+    "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse"
 ]
 
 # Các từ khóa độ phân giải cao
@@ -161,14 +162,16 @@ def parse_expiry(expiry_str):
 def is_sports_channel(channel, genres):
     title = channel.get("name", "").lower()
     genre_id = str(channel.get("tv_genre_id", ""))
-    genre_title = genres.get(genre_id, "").lower()
-    text = title + " " + genre_title
+    group_title = genres.get(genre_id, "").lower()
+    text = title + " " + group_title
 
+    # Kiểm tra thể thao (ít nhất một từ khóa)
     if not any(kw in text for kw in SPORTS_KEYWORDS):
         return False
 
+    # Loại trừ các từ khóa không mong muốn (kể cả group_title)
     for ex in EXCLUDE_KEYWORDS:
-        if ex in text:
+        if ex in text or ex in group_title:
             return False
     return True
 
@@ -253,12 +256,17 @@ def get_portal_info(url, mac):
         stream_url = get_stream_url_from_cmd(cmd, url)
         if not stream_url:
             continue
+        # Kiểm tra lại group_title (phòng trường hợp lọc chưa kỹ)
+        genre_id = str(ch.get("tv_genre_id", ""))
+        group_title = genres.get(genre_id, "Sports")
+        if any(ex in group_title.lower() for ex in EXCLUDE_KEYWORDS):
+            continue
         stream_list.append({
             "id": ch.get("id", ""),
             "name": ch.get("name", ""),
             "logo": ch.get("logo", ""),
-            "genre_id": str(ch.get("tv_genre_id", "")),
-            "group_title": genres.get(str(ch.get("tv_genre_id", "")), "Sports"),
+            "genre_id": genre_id,
+            "group_title": group_title,
             "url": stream_url
         })
 
@@ -309,10 +317,18 @@ def main():
         print("No valid portal found.")
         sys.exit(1)
 
+    # Loại bỏ các portal trùng URL (giữ cái có nhiều kênh HD nhất)
+    unique_urls = {}
+    for p in portal_infos:
+        url = p["url"]
+        if url not in unique_urls or p["hd_sports_count"] > unique_urls[url]["hd_sports_count"]:
+            unique_urls[url] = p
+    unique_portals = list(unique_urls.values())
+
     # Sắp xếp theo số kênh HD giảm dần, chọn tối đa 3 portal
-    portal_infos.sort(key=lambda p: p["hd_sports_count"], reverse=True)
-    selected = portal_infos[:3]
-    print(f"\nSelected {len(selected)} portals:")
+    unique_portals.sort(key=lambda p: p["hd_sports_count"], reverse=True)
+    selected = unique_portals[:3]
+    print(f"\nSelected {len(selected)} portals (unique URLs):")
     for p in selected:
         print(f"  {p['url']} - {p['hd_sports_count']} HD sports channels")
 
