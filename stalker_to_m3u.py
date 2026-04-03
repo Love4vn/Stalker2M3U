@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Stalker Portal to M3U Converter for Sports Channels
-- Đọc Mac_list.txt, kiểm tra và chọn 3 portal sống tốt nhất (URL khác nhau)
-- Lọc kênh thể thao (loại trừ môn, giải trẻ, và group-title không mong muốn)
-- Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD) trở lên
-- Kiểm tra stream hoạt động bằng cách thử tải một kênh mẫu
+- Đọc Mac_list.txt, kiểm tra portal thông qua stream thực tế
+- Chọn 3 portal có URL khác nhau và stream hoạt động
+- Lọc kênh thể thao theo từ khóa, loại trừ môn không mong muốn
+- Chỉ lấy kênh Full HD (FHD, 1080p, 4K, UHD)
 - Xuất M3U tổng hợp từ 3 portal
 """
 
@@ -181,56 +181,83 @@ def is_hd_channel(channel):
             return True
     return False
 
-def get_stream_url_from_cmd(cmd, portal_url):
-    """Chuyển cmd thành URL stream thực tế, thay localhost nếu có"""
+def get_stream_url_from_cmd(cmd, portal_url, mac, token=None):
+    """
+    Tạo URL stream từ cmd.
+    Nếu cmd chứa ffmpeg/ffrt, loại bỏ.
+    Nếu cmd bắt đầu bằng http, dùng trực tiếp (có thể thay localhost).
+    Nếu không, thử gọi create_link để lấy URL có token.
+    """
     if not cmd:
         return None
-    cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
-    if not cmd:
-        return None
-    if cmd.startswith("http"):
-        if "localhost" in cmd:
+    # Làm sạch cmd
+    clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+    if clean_cmd.startswith("http"):
+        # Nếu có localhost, thay bằng domain portal
+        if "localhost" in clean_cmd:
             domain_match = re.search(r'https?://([^/]+)', portal_url)
             if domain_match:
                 domain = domain_match.group(1)
-                cmd = cmd.replace("localhost", domain)
-        return cmd
+                clean_cmd = clean_cmd.replace("localhost", domain)
+        return clean_cmd
     else:
-        base = portal_url.rstrip('/')
-        if not base.endswith('/c'):
-            base += '/c'
-        return base.rstrip('/') + '/' + cmd.lstrip('/')
+        # Nếu không, cần tạo link qua API (nếu có token)
+        if token:
+            # Gọi create_link (cần server_url, mac, token)
+            # Lưu ý: cần server_url (dạng /server/load.php) và token
+            # Hàm này sẽ được gọi từ bên ngoài khi có token
+            return None  # Sẽ được xử lý riêng
+        else:
+            # Fallback: nối với base URL
+            base = portal_url.rstrip('/')
+            if not base.endswith('/c'):
+                base += '/c'
+            return base.rstrip('/') + '/' + clean_cmd.lstrip('/')
 
-def check_sample_stream(streams, portal_url, mac, token):
-    """Kiểm tra một vài stream mẫu xem có trả về nội dung video không"""
-    if not streams:
-        return False
-    # Lấy tối đa 3 stream để thử
-    test_streams = streams[:3]
-    for s in test_streams:
-        try:
-            # Gửi HEAD request để kiểm tra status và content-type
-            resp = SESSION.head(s["url"], timeout=5, allow_redirects=True)
-            if resp.status_code == 200:
-                content_type = resp.headers.get("content-type", "").lower()
-                if any(ct in content_type for ct in ["video/", "application/vnd.apple.mpegurl", "application/x-mpegurl"]):
-                    return True
-                # Nếu không có content-type nhưng URL kết thúc bằng .ts/.m3u8/.m2ts thì coi như ok
-                if s["url"].endswith((".ts", ".m3u8", ".m2ts")):
-                    return True
-            else:
-                # Thử GET với range nhỏ để xem có phải video không
-                resp2 = SESSION.get(s["url"], headers={"Range": "bytes=0-1024"}, timeout=5, stream=True)
-                if resp2.status_code in (200, 206):
-                    chunk = resp2.raw.read(1024)
-                    if chunk and (b"ID3" in chunk or b"GST" in chunk or b"ftyp" in chunk):
-                        return True
-        except:
-            continue
+def create_link(server_url, mac, token, cmd):
+    """Gọi API create_link để lấy URL stream thực"""
+    params = {
+        "type": "itv",
+        "action": "create_link",
+        "cmd": cmd,
+        "JsHttpRequest": "1-xml"
+    }
+    headers = HEADERS.copy()
+    headers["Referer"] = server_url.replace("/server/load.php", "/c/")
+    headers["Cookie"] = f"mac={mac}; stb_lang=en; timezone=GMT"
+    headers["Authorization"] = f"Bearer {token}"
+    try:
+        resp = SESSION.get(server_url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        data = resp.json()
+        if "js" in data and "cmd" in data["js"]:
+            return data["js"]["cmd"]
+    except:
+        pass
+    return None
+
+def test_stream_url(url):
+    """Kiểm tra URL stream có trả về video không (HEAD request)"""
+    try:
+        # Dùng HEAD để kiểm tra content-type
+        resp = SESSION.head(url, timeout=5, allow_redirects=True)
+        if resp.status_code == 200:
+            content_type = resp.headers.get('Content-Type', '').lower()
+            if any(t in content_type for t in ['video', 'mp2t', 'mpegurl', 'octet-stream']):
+                return True
+        # Nếu HEAD không đủ, thử GET với range nhỏ
+        headers = {'Range': 'bytes=0-1024'}
+        resp = SESSION.get(url, headers=headers, timeout=5, stream=True)
+        if resp.status_code in (200, 206):
+            content_type = resp.headers.get('Content-Type', '').lower()
+            if any(t in content_type for t in ['video', 'mp2t', 'mpegurl', 'octet-stream']):
+                return True
+    except:
+        pass
     return False
 
 def get_portal_info(url, mac):
-    """Kiểm tra portal, trả về thông tin và danh sách stream đã lọc thể thao HD (chỉ nếu có stream hoạt động)"""
+    """Kiểm tra portal, trả về thông tin nếu có ít nhất một stream hoạt động"""
     print(f"\nChecking: {url} - MAC: {mac}")
     t0 = time.time()
     server_url = clean_url(url)
@@ -263,47 +290,101 @@ def get_portal_info(url, mac):
 
     print(f"  Channels total: {len(channels)}, Genres: {len(genres)}")
 
-    # Lọc thể thao
+    # Lọc thể thao và HD
     sports = []
     for ch in channels:
-        if is_sports_channel(ch, genres):
+        if is_sports_channel(ch, genres) and is_hd_channel(ch):
             sports.append(ch)
-    print(f"  Sports channels: {len(sports)}")
+    print(f"  HD sports channels: {len(sports)}")
 
-    # Lọc HD
-    hd_sports = [ch for ch in sports if is_hd_channel(ch)]
-    print(f"  HD sports channels: {len(hd_sports)}")
+    if not sports:
+        print("  No HD sports channels found")
+        return None
 
-    # Tạo danh sách stream với URL đã xử lý
+    # Thử lấy stream của kênh đầu tiên để kiểm tra hoạt động
+    test_ch = sports[0]
+    cmd = test_ch.get("cmd")
+    if not cmd:
+        print("  No cmd for test channel")
+        return None
+
+    # Tạo URL stream (ưu tiên create_link)
+    stream_url = create_link(server_url, mac, token, cmd)
+    if stream_url:
+        stream_url = stream_url.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+        if "localhost" in stream_url:
+            domain_match = re.search(r'https?://([^/]+)', url)
+            if domain_match:
+                stream_url = stream_url.replace("localhost", domain_match.group(1))
+    else:
+        # Fallback: dùng cmd đã làm sạch
+        clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+        if clean_cmd.startswith("http"):
+            stream_url = clean_cmd
+            if "localhost" in stream_url:
+                domain_match = re.search(r'https?://([^/]+)', url)
+                if domain_match:
+                    stream_url = stream_url.replace("localhost", domain_match.group(1))
+        else:
+            # Tạo URL từ base
+            base = url.rstrip('/')
+            if not base.endswith('/c'):
+                base += '/c'
+            stream_url = base.rstrip('/') + '/' + clean_cmd.lstrip('/')
+
+    if not stream_url:
+        print("  Could not generate test stream URL")
+        return None
+
+    print(f"  Testing stream: {stream_url[:100]}...")
+    if not test_stream_url(stream_url):
+        print("  Sample stream test failed (not a valid video)")
+        return None
+
+    print("  Sample stream OK")
+
+    # Nếu vượt qua, tiến hành lấy tất cả stream
     stream_list = []
-    for ch in hd_sports:
+    for ch in sports:
         cmd = ch.get("cmd")
         if not cmd:
             continue
-        stream_url = get_stream_url_from_cmd(cmd, url)
-        if not stream_url:
+        # Tạo URL cho từng kênh
+        url_stream = create_link(server_url, mac, token, cmd)
+        if url_stream:
+            url_stream = url_stream.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+            if "localhost" in url_stream:
+                domain_match = re.search(r'https?://([^/]+)', url)
+                if domain_match:
+                    url_stream = url_stream.replace("localhost", domain_match.group(1))
+        else:
+            # Fallback
+            clean_cmd = cmd.replace("ffmpeg ", "").replace("ffrt ", "").strip()
+            if clean_cmd.startswith("http"):
+                url_stream = clean_cmd
+                if "localhost" in url_stream:
+                    domain_match = re.search(r'https?://([^/]+)', url)
+                    if domain_match:
+                        url_stream = url_stream.replace("localhost", domain_match.group(1))
+            else:
+                base = url.rstrip('/')
+                if not base.endswith('/c'):
+                    base += '/c'
+                url_stream = base.rstrip('/') + '/' + clean_cmd.lstrip('/')
+        if not url_stream:
             continue
         genre_id = str(ch.get("tv_genre_id", ""))
         group_title = genres.get(genre_id, "Sports")
+        # Kiểm tra lại group_title không bị loại trừ
         if any(ex in group_title.lower() for ex in EXCLUDE_KEYWORDS):
             continue
         stream_list.append({
             "id": ch.get("id", ""),
             "name": ch.get("name", ""),
             "logo": ch.get("logo", ""),
-            "genre_id": genre_id,
             "group_title": group_title,
-            "url": stream_url
+            "url": url_stream
         })
-
-    # Kiểm tra xem có ít nhất một stream hoạt động không
-    if not stream_list:
-        print("  No HD sports streams found")
-        return None
-    if not check_sample_stream(stream_list, url, mac, token):
-        print("  Sample stream test failed (HTTP 458 or no video content)")
-        return None
-    print("  Sample stream OK")
 
     return {
         "url": url,
@@ -311,8 +392,7 @@ def get_portal_info(url, mac):
         "expiry_str": expiry_str,
         "days_left": days_left,
         "channels_count": len(channels),
-        "sports_count": len(sports),
-        "hd_sports_count": len(hd_sports),
+        "hd_sports_count": len(stream_list),
         "streams": stream_list,
         "check_time": time.time() - t0
     }
@@ -341,15 +421,15 @@ def main():
         print("No portals found in Mac_list.txt")
         sys.exit(1)
 
-    # Lấy thông tin từng portal
+    # Lấy thông tin từng portal (chỉ lấy portal có stream hoạt động)
     portal_infos = []
     for url, mac in portals:
         info = get_portal_info(url, mac)
-        if info:
+        if info and info["hd_sports_count"] > 0:
             portal_infos.append(info)
 
     if not portal_infos:
-        print("No valid portal found (all failed sample stream test).")
+        print("No valid portal with working streams found.")
         sys.exit(1)
 
     # Loại bỏ các portal trùng URL (giữ cái có nhiều kênh HD nhất)
