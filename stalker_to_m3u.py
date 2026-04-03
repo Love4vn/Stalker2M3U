@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Sửa lỗi xử lý response dạng list.
+Stalker to M3U converter – Hoàn thiện: hỗ trợ nhiều endpoint, lấy expiry, tạo playlist.
 """
 
 import hashlib
@@ -16,61 +16,48 @@ import requests
 
 
 # ----------------------------------------------------------------------
-# StalkerLite – Sửa lỗi xử lý response (list/dict)
+# StalkerLite – Linh hoạt với handshake_path
 # ----------------------------------------------------------------------
 class StalkerLite:
-    def __init__(self, url: str, mac: str, model: str = "MAG250",
-                 extras: Optional[Dict] = None, existing_token: str = ""):
+    def __init__(self, url: str, mac: str, handshake_path: str, token: str,
+                 model: str = "MAG250", extras: Optional[Dict] = None):
         self.mac = mac.upper().strip()
         self.model = model
-        self.token = existing_token
+        self.token = token
         self.extras = extras or {}
+        self.handshake_path = handshake_path  # e.g. '/portal.php' or '/server/load.php'
 
-        self.original_url = url.rstrip('/')
-        self._detect_server_path()
+        # Chuẩn hóa base URL (bỏ /c cuối nếu có)
+        base = url.rstrip('/')
+        if base.endswith('/c'):
+            base = base[:-2]
+        self.base_url = base
+        self.server_url = self.base_url + self.handshake_path
+        self.portal_base = self.base_url + '/c/' if '/c' in url else self.base_url + '/stalker_portal/c/'
+
         self.device_info = self._make_device_info()
         self.headers = self._make_headers()
         self.session = requests.Session()
-
-    def _detect_server_path(self):
-        if self.original_url.endswith('/c') or self.original_url.endswith('/c/'):
-            self.base_url = self.original_url.rstrip('/')
-            self.server_url = self.base_url + '/server/load.php'
-            self.portal_base = self.base_url + '/'
-        else:
-            clean = re.sub(r'/stalker_portal/?$', '', self.original_url)
-            self.base_url = clean
-            self.server_url = clean + '/stalker_portal/server/load.php'
-            self.portal_base = clean + '/stalker_portal/c/'
+        print(f"    [StalkerLite] server_url={self.server_url}")
 
     def _make_device_info(self) -> Dict[str, str]:
         mac = self.mac
         sn = hashlib.md5(mac.encode()).hexdigest().upper()
         sn_cut = self.extras.get("sn_cut", sn[:13])
-        device_id = self.extras.get(
-            "device_id", hashlib.sha256(mac.encode()).hexdigest().upper()
-        )
+        device_id = self.extras.get("device_id", hashlib.sha256(mac.encode()).hexdigest().upper())
         device_id2 = self.extras.get("device_id2", device_id)
-        signature = self.extras.get(
-            "signature", hashlib.sha256((sn_cut + mac).encode()).hexdigest().upper()
-        )
+        signature = self.extras.get("signature", hashlib.sha256((sn_cut + mac).encode()).hexdigest().upper())
         return {
-            "mac": mac,
-            "sn": sn,
-            "snCut": sn_cut,
-            "deviceId": device_id,
-            "deviceId2": device_id2,
-            "signature": signature,
-            "model": self.model,
+            "mac": mac, "sn": sn, "snCut": sn_cut,
+            "deviceId": device_id, "deviceId2": device_id2,
+            "signature": signature, "model": self.model,
         }
 
     def _make_headers(self) -> Dict[str, str]:
         return {
-            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 "
-                          "(KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3",
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3",
             "X-User-Agent": f"Model: {self.model}; Link: WiFi",
-            "Accept": "*/*",
-            "Accept-Encoding": "gzip, deflate",
+            "Accept": "*/*", "Accept-Encoding": "gzip, deflate",
             "Connection": "Keep-Alive",
             "Cookie": f"mac={self.mac}; stb_lang=en; timezone=GMT",
             "Referer": self.portal_base,
@@ -86,85 +73,56 @@ class StalkerLite:
         headers = self._auth_headers() if use_auth else self.headers
         try:
             resp = self.session.get(url, headers=headers, timeout=timeout)
+            # print(f"      [DEBUG] GET {url} -> status {resp.status_code}")  # bỏ comment nếu cần debug sâu
             if resp.status_code != 200:
                 return None
             data = resp.json()
-            # Nếu response có trường "js" (cấu trúc chuẩn của Stalker)
             if isinstance(data, dict) and "js" in data:
                 return data["js"]
-            # Nếu là list hoặc dict khác thì trả về nguyên bản
             return data
         except Exception:
             return None
-
-    def handshake(self) -> Dict[str, Any]:
-        url = f"{self.server_url}?type=stb&action=handshake&prehash={self.mac}&token=&JsHttpRequest=1-xml"
-        data = self._get(url)
-        if not data or not isinstance(data, dict):
-            return {"success": False, "error": "Handshake failed"}
-        token = data.get("token", "")
-        if not token:
-            return {"success": False, "error": "No token received", "raw": data}
-        self.token = token
-        return {"success": True, "token": token, "random": data.get("random", "")}
 
     def get_profile(self) -> Dict[str, str]:
         if not self.token:
             return {}
         di = self.device_info
         params = {
-            "type": "stb",
-            "action": "get_profile",
-            "hd": "1",
-            "sn": di["snCut"],
-            "stb_type": di["model"],
-            "device_id": di["deviceId"],
-            "device_id2": di["deviceId2"],
-            "signature": di["signature"],
-            "timestamp": int(time.time()),
-            "metrics": json.dumps(
-                {"mac": di["mac"], "sn": di["sn"], "model": di["model"], "type": "STB"}
-            ),
+            "type": "stb", "action": "get_profile", "hd": "1",
+            "sn": di["snCut"], "stb_type": di["model"],
+            "device_id": di["deviceId"], "device_id2": di["deviceId2"],
+            "signature": di["signature"], "timestamp": int(time.time()),
+            "metrics": json.dumps({"mac": di["mac"], "sn": di["sn"], "model": di["model"], "type": "STB"}),
             "JsHttpRequest": "1-xml",
         }
-        url = f"{self.server_url}?{requests.compat.urlencode(params)}"
+        base_path = self.server_url.split('?')[0]
+        url = f"{base_path}?{requests.compat.urlencode(params)}"
         data = self._get(url)
         if not data or not isinstance(data, dict):
             return {}
+        # Thử nhiều trường expiry
+        expiry = data.get("expire_billing_date") or data.get("expiry_date") or data.get("phone") or ""
         return {
             "login": data.get("login", ""),
             "id": str(data.get("id", "")),
             "name": data.get("name") or data.get("fname", ""),
-            "expiry": data.get("expire_billing_date", "") or data.get("phone", ""),
-            "tariff": data.get("tariff_plan", {}).get("name", "")
-            if isinstance(data.get("tariff_plan"), dict)
-            else "",
+            "expiry": expiry,
+            "tariff": data.get("tariff_plan", {}).get("name", "") if isinstance(data.get("tariff_plan"), dict) else "",
         }
 
     def ensure_token(self) -> bool:
-        if self.token:
-            prof = self.get_profile()
-            if prof.get("id") or prof.get("login") or prof.get("name"):
-                return True
-            self.token = ""
-        hs = self.handshake()
-        if hs["success"]:
-            self.get_profile()
-            return True
-        return False
+        # Token đã có, chỉ cần kiểm tra profile có dữ liệu không
+        prof = self.get_profile()
+        return bool(prof.get("id") or prof.get("login") or prof.get("name"))
 
     def get_genres(self) -> Dict[str, str]:
         if not self.ensure_token():
             return {}
-        endpoints = [
-            "?type=itv&action=get_genres&JsHttpRequest=1-xml",
-            "?type=itv&action=get_all_genres&JsHttpRequest=1-xml",
-        ]
-        for ep in endpoints:
+        for ep in ["?type=itv&action=get_genres&JsHttpRequest=1-xml",
+                   "?type=itv&action=get_all_genres&JsHttpRequest=1-xml"]:
             data = self._get(self.server_url + ep, timeout=30)
             if data is None:
                 continue
-            # data có thể là list hoặc dict
             if isinstance(data, list):
                 genres_list = data
             elif isinstance(data, dict):
@@ -188,24 +146,13 @@ class StalkerLite:
             return []
         genres = self.get_genres()
 
-        data = self._get(
-            self.server_url + "?type=itv&action=get_all_channels&JsHttpRequest=1-xml",
-            timeout=120,
-        )
+        data = self._get(self.server_url + "?type=itv&action=get_all_channels&JsHttpRequest=1-xml", timeout=120)
         raw_channels = []
         if data is not None:
             if isinstance(data, list):
                 raw_channels = data
             elif isinstance(data, dict):
-                # Có thể có wrapper "data" hoặc "js"
-                if "data" in data:
-                    raw_channels = data["data"]
-                else:
-                    # Thử tìm bất kỳ giá trị nào là list
-                    for v in data.values():
-                        if isinstance(v, list):
-                            raw_channels = v
-                            break
+                raw_channels = data.get("data") or next((v for v in data.values() if isinstance(v, list)), [])
 
         if not raw_channels:
             raw_channels = self._fetch_channels_paginated()
@@ -215,42 +162,28 @@ class StalkerLite:
             if not isinstance(ch, dict):
                 continue
             gid = str(ch.get("tv_genre_id") or ch.get("genre_id", "0"))
-            name = ch.get("name") or ch.get("title", f"Channel {i+1}")
-            cmd = ch.get("cmd", "")
-            logo = ch.get("logo", "")
-            number = ch.get("number", i)
-            channels.append(
-                {
-                    "id": str(ch.get("id") or ch.get("channel_id", i)),
-                    "name": name.strip(),
-                    "cmd": cmd,
-                    "logo": self._build_logo_url(logo),
-                    "genre_id": gid,
-                    "genre_name": genres.get(gid, "General"),
-                    "number": int(number),
-                }
-            )
+            channels.append({
+                "id": str(ch.get("id") or ch.get("channel_id", i)),
+                "name": (ch.get("name") or ch.get("title", f"Channel {i+1}")).strip(),
+                "cmd": ch.get("cmd", ""),
+                "logo": self._build_logo_url(ch.get("logo", "")),
+                "genre_id": gid,
+                "genre_name": genres.get(gid, "General"),
+                "number": int(ch.get("number", i)),
+            })
         return channels
 
     def _fetch_channels_paginated(self) -> List[Dict]:
         all_channels = []
         page = 0
         while True:
-            params = {
-                "type": "itv",
-                "action": "get_ordered_list",
-                "genre": "*",
-                "force_ch_link_check": "",
-                "fav": "0",
-                "sortby": "number",
-                "p": page,
-                "JsHttpRequest": "1-xml",
-            }
+            params = {"type": "itv", "action": "get_ordered_list", "genre": "*",
+                      "force_ch_link_check": "", "fav": "0", "sortby": "number",
+                      "p": page, "JsHttpRequest": "1-xml"}
             url = f"{self.server_url}?{requests.compat.urlencode(params)}"
             data = self._get(url, timeout=60)
             if not data:
                 break
-            # data có thể là list hoặc dict
             if isinstance(data, list):
                 ch_list = data
             elif isinstance(data, dict):
@@ -260,7 +193,6 @@ class StalkerLite:
             if not ch_list:
                 break
             all_channels.extend(ch_list)
-            # Kiểm tra tổng số nếu có
             total = 0
             if isinstance(data, dict):
                 total = int(data.get("total_items") or data.get("max_page_items", 0))
@@ -279,14 +211,8 @@ class StalkerLite:
             m = re.search(r"(https?://[^\s\"']+)", cmd, re.I)
             return m.group(1) if m else cmd
 
-        params = {
-            "type": "itv",
-            "action": "create_link",
-            "cmd": cmd,
-            "forced_storage": "undefined",
-            "disable_ad": "1",
-            "JsHttpRequest": "1-xml",
-        }
+        params = {"type": "itv", "action": "create_link", "cmd": cmd,
+                  "forced_storage": "undefined", "disable_ad": "1", "JsHttpRequest": "1-xml"}
         url = f"{self.server_url}?{requests.compat.urlencode(params)}"
         data = self._get(url, timeout=15)
         if data and isinstance(data, dict):
@@ -295,38 +221,75 @@ class StalkerLite:
                 if stream.lower().startswith("ffmpeg "):
                     stream = stream[7:].strip()
                 m = re.search(r"(https?://[^\s\"']+)", stream, re.I)
-                if m:
-                    return m.group(1)
-                return stream
+                return m.group(1) if m else stream
         return ""
 
     def _build_logo_url(self, logo: str) -> str:
-        if not logo:
-            return ""
-        if re.match(r"^https?://", logo, re.I):
+        if not logo or re.match(r"^https?://", logo, re.I):
             return logo
-        base = re.sub(r"/server/load\.php$", "", self.server_url).rstrip("/")
+        base = re.sub(r"/server/load\.php$", "", self.server_url)
+        base = re.sub(r"/portal\.php$", "", base)
         return f"{base}/misc/logos/320/{logo.lstrip('/')}"
-
-    def connect(self) -> Dict[str, Any]:
-        hs = self.handshake()
-        if not hs["success"]:
-            return {"success": False, "error": hs.get("error", "Handshake failed")}
-        profile = self.get_profile()
-        return {
-            "success": True,
-            "token": hs["token"],
-            "random": hs.get("random", ""),
-            "device": self.device_info,
-            "server_url": self.server_url,
-            "portal_base": self.portal_base,
-            "profile": profile,
-            "saved_at": datetime.now().isoformat(),
-        }
 
 
 # ----------------------------------------------------------------------
-# Các hàm hỗ trợ (giữ nguyên)
+# Hàm lấy token và đường dẫn handshake
+# ----------------------------------------------------------------------
+def try_endpoint(base_url: str, endpoint: str, mac: str, debug: bool = False) -> Optional[Tuple[str, str]]:
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
+        'X-User-Agent': 'Model: MAG250; Link: WiFi',
+        'Cookie': f'mac={mac}; stb_lang=en; timezone=Europe/Kiev'
+    }
+    url = base_url.rstrip('/') + endpoint
+    try:
+        resp = requests.get(url, headers=headers, timeout=5)
+        if debug:
+            print(f"    Trying {url} -> status {resp.status_code}")
+        if resp.status_code != 200:
+            return None
+        data = resp.json()
+        token = None
+        if isinstance(data, dict):
+            token = data.get('js', {}).get('token') or data.get('token') or data.get('auth_token')
+        if token:
+            path = endpoint.split('?')[0]
+            if debug:
+                print(f"      Got token: {token[:20]}... via {path}")
+            return token, path
+    except Exception:
+        pass
+    return None
+
+
+def get_token_path_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+    base = url.rstrip('/')
+    # Danh sách endpoint thử
+    endpoints = [
+        '/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+        '/stalker_portal/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+        '/portal.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+        '/c/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+    ]
+    # Thử với base gốc
+    for ep in endpoints:
+        res = try_endpoint(base, ep, mac, debug)
+        if res:
+            token, path = res
+            return token, path, base
+    # Nếu không, thử với base bỏ /c
+    if base.endswith('/c'):
+        base2 = base[:-2]
+        for ep in endpoints:
+            res = try_endpoint(base2, ep, mac, debug)
+            if res:
+                token, path = res
+                return token, path, base2
+    return None, None, None
+
+
+# ----------------------------------------------------------------------
+# Các hàm tiện ích
 # ----------------------------------------------------------------------
 def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
     portals = []
@@ -337,9 +300,7 @@ def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
                 continue
             parts = line.split(",")
             if len(parts) >= 2:
-                url = parts[0].strip()
-                mac = parts[1].strip()
-                portals.append((url, mac))
+                portals.append((parts[0].strip(), parts[1].strip()))
     return portals
 
 
@@ -349,83 +310,32 @@ def get_expiry_date(profile: dict) -> Optional[datetime]:
         return None
     for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%Y/%m/%d", "%d-%m-%Y"):
         try:
-            return datetime.strptime(expiry_str, fmt)
+            dt = datetime.strptime(expiry_str, fmt)
+            if dt.year > 1970:
+                return dt
         except ValueError:
             continue
     try:
-        return datetime.fromtimestamp(int(expiry_str))
-    except (ValueError, TypeError):
+        ts = int(expiry_str)
+        if ts > 0:
+            return datetime.fromtimestamp(ts)
+    except:
         pass
     return None
-
-
-def try_endpoint(base_url: str, endpoint: str, mac: str, token: str = "", debug: bool = False) -> Optional[Tuple[str, Dict]]:
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
-        'X-User-Agent': 'Model: MAG250; Link: WiFi',
-        'Cookie': f'mac={mac}; stb_lang=en; timezone=Europe/Kiev'
-    }
-    if token:
-        headers['Authorization'] = f'Bearer {token}'
-
-    url = base_url.rstrip('/') + endpoint
-    try:
-        resp = requests.get(url, headers=headers, timeout=5)
-        if debug:
-            print(f"    Trying {url} -> status {resp.status_code}")
-        if resp.status_code != 200:
-            return None
-        data = resp.json()
-        new_token = None
-        if isinstance(data, dict):
-            new_token = data.get('js', {}).get('token') or data.get('token') or data.get('auth_token')
-        if new_token:
-            if debug:
-                print(f"      Got token: {new_token[:20]}...")
-            return new_token, data
-        if isinstance(data, dict) and ('id' in data or 'login' in data or 'expire_billing_date' in data):
-            if debug:
-                print("      Got account data (no token)")
-            return token, data
-    except Exception as e:
-        if debug:
-            print(f"      Exception: {e}")
-    return None
-
-
-def get_token_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Optional[str], Optional[str]]:
-    base = url.rstrip('/')
-    endpoints = []
-    if base.endswith('/c'):
-        endpoints.append('/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml')
-    endpoints.extend([
-        '/stalker_portal/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
-        '/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
-        '/portal.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
-        '/c/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
-    ])
-
-    for ep in endpoints:
-        result = try_endpoint(base, ep, mac, "", debug)
-        if result:
-            token, data = result
-            if token:
-                return token, base
-    return None, None
 
 
 def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
     if debug:
         print(f"  Getting token for {url}")
-    token, base = get_token_and_base(url, mac, debug)
+    token, handshake_path, base = get_token_path_and_base(url, mac, debug)
     if not token:
         if debug:
             print("  No token obtained")
         return None
 
     if debug:
-        print(f"  Token obtained, creating StalkerLite")
-    stalker = StalkerLite(url, mac, existing_token=token)
+        print(f"  Token obtained via {handshake_path}, creating StalkerLite")
+    stalker = StalkerLite(url, mac, handshake_path, token)
 
     try:
         if debug:
@@ -443,13 +353,9 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
 
     profile = stalker.get_profile()
     expiry_dt = get_expiry_date(profile)
-
     return {
-        "url": url,
-        "mac": mac,
-        "stalker": stalker,
-        "profile": profile,
-        "expiry_date": expiry_dt,
+        "url": url, "mac": mac, "stalker": stalker,
+        "profile": profile, "expiry_date": expiry_dt,
     }
 
 
@@ -510,11 +416,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
 
 def main():
     debug = True
-    if len(sys.argv) > 1:
-        mac_file = sys.argv[1]
-    else:
-        mac_file = "Mac_list.txt"
-
+    mac_file = sys.argv[1] if len(sys.argv) > 1 else "Mac_list.txt"
     if not os.path.exists(mac_file):
         print(f"Error: {mac_file} not found.")
         sys.exit(1)
@@ -522,32 +424,30 @@ def main():
     portals = parse_mac_list(mac_file)
     print(f"Found {len(portals)} portals in {mac_file}")
 
-    valid_portals = []
+    valid = []
     for url, mac in portals:
         print(f"Testing {url} {mac}")
         res = test_portal(url, mac, debug)
         if res:
-            valid_portals.append(res)
+            valid.append(res)
             expiry = res["expiry_date"].strftime("%Y-%m-%d") if res["expiry_date"] else "unknown"
             print(f"  -> Active, expiry: {expiry}")
         else:
             print("  -> Failed or expired")
 
-    valid_portals.sort(
-        key=lambda x: x["expiry_date"] if x["expiry_date"] else datetime.min, reverse=True
-    )
-    top_three = valid_portals[:3]
-    print(f"\nSelected {len(top_three)} portal(s):")
-    for p in top_three:
+    valid.sort(key=lambda x: x["expiry_date"] if x["expiry_date"] else datetime.min, reverse=True)
+    top = valid[:3]
+    print(f"\nSelected {len(top)} portal(s):")
+    for p in top:
         expiry_str = p["expiry_date"].strftime("%Y-%m-%d") if p["expiry_date"] else "unknown"
         print(f"  {p['url']} – expires {expiry_str}")
 
-    if not top_three:
+    if not top:
         print("No active portals found. Exiting.")
         sys.exit(0)
 
     output = "Mac_playlist.m3u"
-    generate_playlist(top_three, output)
+    generate_playlist(top, output)
     print(f"\nPlaylist saved to {output}")
 
 
