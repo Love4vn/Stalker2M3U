@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Tự động thử nhiều server URL cho các API.
+Stalker to M3U converter – Hoàn thiện: tự động phát hiện endpoint, lấy danh sách kênh, lọc thể thao, xuất M3U.
 """
 
 import hashlib
@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Any, Tuple, Union
 
 import requests
 
-DETAILED_DEBUG = True
+DETAILED_DEBUG = False   # Tắt debug chi tiết để log gọn gàng
 
 class StalkerLite:
     def __init__(self, url: str, mac: str, handshake_path: str, token: str,
@@ -23,27 +23,22 @@ class StalkerLite:
         self.model = model
         self.token = token
         self.extras = extras or {}
-        self.handshake_path = handshake_path  # e.g. '/portal.php'
+        self.handshake_path = handshake_path
 
         base = url.rstrip('/')
         if base.endswith('/c'):
             base = base[:-2]
         self.base_url = base
-        # Danh sách các server URL khả dụng (sẽ thử lần lượt)
         self.server_urls = self._build_server_urls()
         self.portal_base = self.base_url + '/c/' if '/c' in url else self.base_url + '/stalker_portal/c/'
 
         self.device_info = self._make_device_info()
         self.headers = self._make_headers()
         self.session = requests.Session()
-        print(f"    [StalkerLite] Possible server URLs: {self.server_urls}")
 
     def _build_server_urls(self) -> List[str]:
-        """Tạo danh sách các URL có thể dùng cho API (get_profile, get_channels, ...)"""
         urls = []
-        # 1. Dùng chính handshake_path (ví dụ /portal.php)
         urls.append(self.base_url + self.handshake_path)
-        # 2. Thử các biến thể phổ biến
         if 'portal.php' in self.handshake_path:
             urls.append(self.base_url + '/server/load.php')
             urls.append(self.base_url + '/stalker_portal/server/load.php')
@@ -51,7 +46,6 @@ class StalkerLite:
         else:
             urls.append(self.base_url + '/portal.php')
             urls.append(self.base_url + '/stalker_portal/server/load.php')
-        # Loại bỏ trùng
         return list(dict.fromkeys(urls))
 
     def _make_device_info(self) -> Dict[str, str]:
@@ -83,33 +77,24 @@ class StalkerLite:
             h["Authorization"] = f"Bearer {self.token}"
         return h
 
-    def _get(self, url: str, timeout: int = 20, use_auth: bool = True) -> Optional[Union[Dict, List]]:
-        headers = self._auth_headers() if use_auth else self.headers
-        if DETAILED_DEBUG:
-            print(f"      [DEBUG] GET {url}")
+    def _get(self, url: str, timeout: int = 20) -> Optional[Union[Dict, List]]:
+        headers = self._auth_headers()
         try:
             resp = self.session.get(url, headers=headers, timeout=timeout)
-            if DETAILED_DEBUG:
-                print(f"      [DEBUG] Status: {resp.status_code}")
             if resp.status_code != 200:
                 return None
             data = resp.json()
-            if DETAILED_DEBUG:
-                print(f"      [DEBUG] Response type: {type(data)}")
             if isinstance(data, dict) and "js" in data:
                 return data["js"]
             return data
-        except Exception as e:
-            if DETAILED_DEBUG:
-                print(f"      [DEBUG] Exception: {e}")
+        except Exception:
             return None
 
-    def _call_api(self, endpoint: str, params: Dict, timeout: int = 20) -> Optional[Union[Dict, List]]:
-        """Thử gọi API trên tất cả các server_url khả dụng, trả về kết quả đầu tiên thành công."""
+    def _call_api(self, params: Dict, timeout: int = 20) -> Optional[Union[Dict, List]]:
         for server_url in self.server_urls:
             base = server_url.split('?')[0]
             url = f"{base}?{requests.compat.urlencode(params)}"
-            data = self._get(url, timeout, use_auth=True)
+            data = self._get(url, timeout)
             if data is not None:
                 return data
         return None
@@ -126,7 +111,7 @@ class StalkerLite:
             "metrics": json.dumps({"mac": di["mac"], "sn": di["sn"], "model": di["model"], "type": "STB"}),
             "JsHttpRequest": "1-xml",
         }
-        data = self._call_api("get_profile", params)
+        data = self._call_api(params)
         if not data or not isinstance(data, dict):
             return {}
         expiry = data.get("expire_billing_date") or data.get("expiry_date") or data.get("phone") or ""
@@ -135,7 +120,6 @@ class StalkerLite:
             "id": str(data.get("id", "")),
             "name": data.get("name") or data.get("fname", ""),
             "expiry": expiry,
-            "tariff": data.get("tariff_plan", {}).get("name", "") if isinstance(data.get("tariff_plan"), dict) else "",
         }
 
     def ensure_token(self) -> bool:
@@ -146,10 +130,10 @@ class StalkerLite:
         if not self.ensure_token():
             return {}
         params = {"type": "itv", "action": "get_genres", "JsHttpRequest": "1-xml"}
-        data = self._call_api("get_genres", params, timeout=30)
+        data = self._call_api(params, timeout=30)
         if data is None:
             params["action"] = "get_all_genres"
-            data = self._call_api("get_all_genres", params, timeout=30)
+            data = self._call_api(params, timeout=30)
         if data is None:
             return {}
         if isinstance(data, list):
@@ -170,23 +154,18 @@ class StalkerLite:
 
     def get_channels(self) -> List[Dict[str, Any]]:
         if not self.ensure_token():
-            print("      [DEBUG] ensure_token failed, no channels")
             return []
         genres = self.get_genres()
-
         params = {"type": "itv", "action": "get_all_channels", "JsHttpRequest": "1-xml"}
-        data = self._call_api("get_all_channels", params, timeout=120)
+        data = self._call_api(params, timeout=120)
         raw_channels = []
         if data is not None:
             if isinstance(data, list):
                 raw_channels = data
             elif isinstance(data, dict):
                 raw_channels = data.get("data") or next((v for v in data.values() if isinstance(v, list)), [])
-
         if not raw_channels:
-            print("      [DEBUG] get_all_channels returned empty, trying paginated")
             raw_channels = self._fetch_channels_paginated()
-
         channels = []
         for i, ch in enumerate(raw_channels):
             if not isinstance(ch, dict):
@@ -210,7 +189,7 @@ class StalkerLite:
             params = {"type": "itv", "action": "get_ordered_list", "genre": "*",
                       "force_ch_link_check": "", "fav": "0", "sortby": "number",
                       "p": page, "JsHttpRequest": "1-xml"}
-            data = self._call_api("get_ordered_list", params, timeout=60)
+            data = self._call_api(params, timeout=60)
             if not data:
                 break
             if isinstance(data, list):
@@ -239,10 +218,9 @@ class StalkerLite:
         if re.match(r"^https?://", cmd, re.I) and not cmd.lower().startswith("ffrt"):
             m = re.search(r"(https?://[^\s\"']+)", cmd, re.I)
             return m.group(1) if m else cmd
-
         params = {"type": "itv", "action": "create_link", "cmd": cmd,
                   "forced_storage": "undefined", "disable_ad": "1", "JsHttpRequest": "1-xml"}
-        data = self._call_api("create_link", params, timeout=15)
+        data = self._call_api(params, timeout=15)
         if data and isinstance(data, dict):
             stream = data.get("cmd") or data.get("url", "")
             if stream:
@@ -255,15 +233,44 @@ class StalkerLite:
     def _build_logo_url(self, logo: str) -> str:
         if not logo or re.match(r"^https?://", logo, re.I):
             return logo
-        # Lấy base từ server_url đầu tiên
         base = re.sub(r"/server/load\.php$", "", self.server_urls[0])
         base = re.sub(r"/portal\.php$", "", base)
         return f"{base}/misc/logos/320/{logo.lstrip('/')}"
 
 
-# ----------------------------------------------------------------------
-# Các hàm hỗ trợ (giữ nguyên)
-# ----------------------------------------------------------------------
+def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
+    portals = []
+    with open(filename, "r") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            parts = line.split(",")
+            if len(parts) >= 2:
+                portals.append((parts[0].strip(), parts[1].strip()))
+    return portals
+
+
+def get_expiry_date(profile: dict) -> Optional[datetime]:
+    expiry_str = profile.get("expiry", "")
+    if not expiry_str:
+        return None
+    for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%Y/%m/%d", "%d-%m-%Y"):
+        try:
+            dt = datetime.strptime(expiry_str, fmt)
+            if dt.year > 1970:
+                return dt
+        except ValueError:
+            continue
+    try:
+        ts = int(expiry_str)
+        if ts > 0:
+            return datetime.fromtimestamp(ts)
+    except:
+        pass
+    return None
+
+
 def try_endpoint(base_url: str, endpoint: str, mac: str, debug: bool = False) -> Optional[Tuple[str, str]]:
     headers = {
         'User-Agent': 'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
@@ -314,39 +321,6 @@ def get_token_path_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Op
     return None, None, None
 
 
-def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
-    portals = []
-    with open(filename, "r") as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith("#"):
-                continue
-            parts = line.split(",")
-            if len(parts) >= 2:
-                portals.append((parts[0].strip(), parts[1].strip()))
-    return portals
-
-
-def get_expiry_date(profile: dict) -> Optional[datetime]:
-    expiry_str = profile.get("expiry", "")
-    if not expiry_str:
-        return None
-    for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%Y/%m/%d", "%d-%m-%Y"):
-        try:
-            dt = datetime.strptime(expiry_str, fmt)
-            if dt.year > 1970:
-                return dt
-        except ValueError:
-            continue
-    try:
-        ts = int(expiry_str)
-        if ts > 0:
-            return datetime.fromtimestamp(ts)
-    except:
-        pass
-    return None
-
-
 def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
     if debug:
         print(f"  Getting token for {url}")
@@ -355,11 +329,9 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
         if debug:
             print("  No token obtained")
         return None
-
     if debug:
         print(f"  Token obtained via {handshake_path}, creating StalkerLite")
     stalker = StalkerLite(url, mac, handshake_path, token)
-
     try:
         if debug:
             print("  Fetching channels...")
@@ -373,7 +345,6 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
     except Exception as e:
         print(f"Channel fetch failed for {url}: {e}")
         return None
-
     profile = stalker.get_profile()
     expiry_dt = get_expiry_date(profile)
     return {
@@ -395,11 +366,9 @@ def generate_playlist(portals: List[Dict], output_file: str):
         "u23", "u21", "u19", "youth", "junior", "reserve",
         "second division", "liga 2", "serie b", "2. bundesliga", "championship"
     ]
-
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write(f"# Generated at {datetime.now().isoformat()}\n\n")
-
         for portal in portals:
             print(f"Processing portal: {portal['url']}")
             stalker = portal["stalker"]
@@ -413,17 +382,14 @@ def generate_playlist(portals: List[Dict], output_file: str):
                         continue
                     if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS):
                         sport_channels.append(ch)
-
                 print(f"  Sport channels: {len(sport_channels)}")
                 for ch in sport_channels:
                     stream_url = stalker.create_link(ch["cmd"])
                     if not stream_url:
                         print(f"    Failed to get stream URL for {ch['name']}")
                         continue
-
                     def esc(s: str) -> str:
                         return s.replace('"', "&quot;")
-
                     group_title = f"Sports ({portal['url']})"
                     f.write(
                         f'#EXTINF:-1 tvg-id="{esc(ch["id"])}" '
@@ -439,37 +405,32 @@ def generate_playlist(portals: List[Dict], output_file: str):
 
 def main():
     global DETAILED_DEBUG
-    DETAILED_DEBUG = True
+    DETAILED_DEBUG = False  # Tắt debug chi tiết, chỉ hiển thị chính
     mac_file = sys.argv[1] if len(sys.argv) > 1 else "Mac_list.txt"
     if not os.path.exists(mac_file):
         print(f"Error: {mac_file} not found.")
         sys.exit(1)
-
     portals = parse_mac_list(mac_file)
     print(f"Found {len(portals)} portals in {mac_file}")
-
     valid = []
     for url, mac in portals:
         print(f"Testing {url} {mac}")
-        res = test_portal(url, mac, True)
+        res = test_portal(url, mac, debug=True)
         if res:
             valid.append(res)
             expiry = res["expiry_date"].strftime("%Y-%m-%d") if res["expiry_date"] else "unknown"
             print(f"  -> Active, expiry: {expiry}")
         else:
             print("  -> Failed or expired")
-
     valid.sort(key=lambda x: x["expiry_date"] if x["expiry_date"] else datetime.min, reverse=True)
     top = valid[:3]
     print(f"\nSelected {len(top)} portal(s):")
     for p in top:
         expiry_str = p["expiry_date"].strftime("%Y-%m-%d") if p["expiry_date"] else "unknown"
         print(f"  {p['url']} – expires {expiry_str}")
-
     if not top:
         print("No active portals found. Exiting.")
         sys.exit(0)
-
     output = "Mac_playlist.m3u"
     generate_playlist(top, output)
     print(f"\nPlaylist saved to {output}")
