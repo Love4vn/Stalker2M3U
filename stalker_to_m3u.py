@@ -18,7 +18,7 @@ import requests
 
 
 # ----------------------------------------------------------------------
-# StalkerLite – Minimal Stalker Portal Engine (PHP‑like translation)
+# StalkerLite – Minimal Stalker Portal Engine
 # ----------------------------------------------------------------------
 class StalkerLite:
     def __init__(self, url: str, mac: str, model: str = "MAG250",
@@ -28,6 +28,7 @@ class StalkerLite:
         self.token = existing_token
         self.extras = extras or {}
 
+        # Chuẩn hóa URL: thêm / nếu cần và loại bỏ /c/ hoặc /stalker_portal
         clean_url = self._sanitize_url(url)
         self.server_url = self._build_server_url(clean_url)
         self.portal_base = self._build_portal_base(clean_url)
@@ -37,8 +38,11 @@ class StalkerLite:
 
     def _sanitize_url(self, url: str) -> str:
         url = url.rstrip("/")
-        url = re.sub(r"/c/?$", "", url)
-        url = re.sub(r"/stalker_portal/?$", "", url)
+        # Nếu URL kết thúc bằng /c thì xóa /c
+        url = re.sub(r"/c$", "", url)
+        url = re.sub(r"/c/$", "", url)
+        url = re.sub(r"/stalker_portal$", "", url)
+        url = re.sub(r"/stalker_portal/$", "", url)
         return url
 
     def _build_server_url(self, clean: str) -> str:
@@ -344,7 +348,7 @@ def get_expiry_date(profile: dict) -> Optional[datetime]:
     return None
 
 
-def try_endpoint(base_url: str, endpoint: str, mac: str, token: str = "") -> Optional[Tuple[str, Dict]]:
+def try_endpoint(base_url: str, endpoint: str, mac: str, token: str = "", debug: bool = False) -> Optional[Tuple[str, Dict]]:
     headers = {
         'User-Agent': 'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
         'X-User-Agent': 'Model: MAG250; Link: WiFi',
@@ -356,47 +360,55 @@ def try_endpoint(base_url: str, endpoint: str, mac: str, token: str = "") -> Opt
     url = base_url.rstrip('/') + endpoint
     try:
         resp = requests.get(url, headers=headers, timeout=5)
+        if debug:
+            print(f"    Trying {url} -> status {resp.status_code}")
         if resp.status_code != 200:
             return None
         data = resp.json()
-        # Look for token in various places
         new_token = (data.get('js', {}).get('token') or
                      data.get('token') or
                      data.get('auth_token'))
         if new_token:
+            if debug:
+                print(f"      Got token: {new_token[:20]}...")
             return new_token, data
-        # If no token but we have account data, we are authenticated (token already valid)
         if 'id' in data or 'login' in data or 'expire_billing_date' in data:
+            if debug:
+                print("      Got account data (no token)")
             return token, data
-    except Exception:
-        pass
+    except Exception as e:
+        if debug:
+            print(f"      Exception: {e}")
     return None
 
 
-def get_token_and_base(url: str, mac: str) -> Tuple[Optional[str], Optional[str]]:
-    """Try multiple endpoints to obtain a valid token and the base URL that worked."""
+def get_token_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Optional[str], Optional[str]]:
     base = url.rstrip('/')
-    # List of candidate endpoints (handshake and account info)
+    # Thêm / nếu base không kết thúc bằng / và không có cổng rõ ràng? Thực tế không cần vì endpoint bắt đầu bằng /
+    # Danh sách endpoint mở rộng
     endpoints = [
+        # Handshake endpoints
         '/stalker_portal/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
         '/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
         '/portal.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+        '/c/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
+        # Account info endpoints (có thể trả về token trong header hoặc body)
         '/portal.php?type=account_info&action=get_main_info&JsHttpRequest=1-xml',
         '/portal.php?type=account_info&action=get_profile&JsHttpRequest=1-xml',
         '/server/load.php?type=account_info&action=get_main_info',
+        '/stalker_portal/server/load.php?type=account_info&action=get_main_info',
+        # Thử với action=get_all_channels (đôi khi trả về token)
+        '/stalker_portal/server/load.php?type=itv&action=get_all_channels&JsHttpRequest=1-xml',
     ]
 
     for ep in endpoints:
-        result = try_endpoint(base, ep, mac)
+        result = try_endpoint(base, ep, mac, "", debug)
         if result:
             token, data = result
             if token:
                 return token, base
-            # If no token but data contains account info, we might have a session (rare)
-            # In that case, we try to get a token from a handshake with this base
-            # For simplicity, we'll try a handshake now
+            # Nếu có account data nhưng không token, thử handshake lại với base này
             if any(k in data for k in ('id', 'login', 'expire_billing_date')):
-                # Try handshake with this base
                 hs_url = base + '/stalker_portal/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml'
                 try:
                     resp = requests.get(hs_url, headers=headers, timeout=5)
@@ -410,18 +422,30 @@ def get_token_and_base(url: str, mac: str) -> Tuple[Optional[str], Optional[str]
     return None, None
 
 
-def test_portal(url: str, mac: str) -> Optional[Dict]:
+def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
     """Test a portal; if active, return dict with stalker instance and expiry date."""
-    token, base = get_token_and_base(url, mac)
+    if debug:
+        print(f"  Getting token for {url}")
+    token, base = get_token_and_base(url, mac, debug)
     if not token:
+        if debug:
+            print("  No token obtained")
         return None
 
+    if debug:
+        print(f"  Token obtained, creating StalkerLite")
     stalker = StalkerLite(url, mac, existing_token=token)
 
     try:
+        if debug:
+            print("  Fetching channels...")
         channels = stalker.get_channels()
         if not channels:
+            if debug:
+                print("  No channels returned")
             return None
+        if debug:
+            print(f"  Got {len(channels)} channels")
     except Exception as e:
         print(f"Channel fetch failed for {url}: {e}")
         return None
@@ -500,6 +524,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
 # Main
 # ----------------------------------------------------------------------
 def main():
+    debug = True   # Bật debug để xem chi tiết
     if len(sys.argv) > 1:
         mac_file = sys.argv[1]
     else:
@@ -515,7 +540,7 @@ def main():
     valid_portals = []
     for url, mac in portals:
         print(f"Testing {url} {mac}")
-        res = test_portal(url, mac)
+        res = test_portal(url, mac, debug)
         if res:
             valid_portals.append(res)
             expiry = res["expiry_date"].strftime("%Y-%m-%d") if res["expiry_date"] else "unknown"
