@@ -354,21 +354,13 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
 
 
 def generate_playlist(portals: List[Dict], output_file: str):
-    SPORTS_KEYWORDS = [
-        "sport", "sports", "football", "soccer", "tennis", "golf",
-        "motorsport", "formula 1", "f1", "hub premier", "premier league",
-        "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga",
-        "bundesliga", "seriea", "serie a", "uefa"
-    ]
-    EXCLUDE_KEYWORDS = [
-        "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
-        "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
-        "u23", "u21", "u19", "youth", "junior", "reserve",
-        "second division", "liga 2", "serie b", "2. bundesliga", "championship"
-    ]
+    SPORTS_KEYWORDS = [...]
+    EXCLUDE_KEYWORDS = [...]
+
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write(f"# Generated at {datetime.now().isoformat()}\n\n")
+
         for portal in portals:
             print(f"Processing portal: {portal['url']}")
             stalker = portal["stalker"]
@@ -382,14 +374,26 @@ def generate_playlist(portals: List[Dict], output_file: str):
                         continue
                     if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS):
                         sport_channels.append(ch)
+
                 print(f"  Sport channels: {len(sport_channels)}")
                 for ch in sport_channels:
                     stream_url = stalker.create_link(ch["cmd"])
                     if not stream_url:
                         print(f"    Failed to get stream URL for {ch['name']}")
                         continue
+
+                    # --- Thêm header cần thiết cho stream ---
+                    # User-Agent giả làm thiết bị MAG
+                    user_agent = "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3"
+                    # Cookie chứa MAC
+                    cookie = f"mac={portal['mac']}; stb_lang=en; timezone=GMT"
+                    # Authorization Bearer token (nếu có)
+                    auth_header = f"Bearer {stalker.token}" if stalker.token else ""
+
+                    # Viết #EXTINF
                     def esc(s: str) -> str:
                         return s.replace('"', "&quot;")
+
                     group_title = f"Sports ({portal['url']})"
                     f.write(
                         f'#EXTINF:-1 tvg-id="{esc(ch["id"])}" '
@@ -398,6 +402,13 @@ def generate_playlist(portals: List[Dict], output_file: str):
                         f'group-title="{esc(group_title)}" '
                         f'tvg-chno="{ch["number"]}",{esc(ch["name"])}\n'
                     )
+
+                    # Thêm các dòng header (hỗ trợ VLC, TiviMate, OTT Navigator)
+                    f.write(f'#EXTVLCOPT:http-user-agent={user_agent}\n')
+                    f.write(f'#EXTVLCOPT:http-cookie={cookie}\n')
+                    if auth_header:
+                        f.write(f'#EXTVLCOPT:http-header=Authorization: {auth_header}\n')
+
                     f.write(f"{stream_url}\n")
             except Exception as e:
                 print(f"  Error while processing portal: {e}")
