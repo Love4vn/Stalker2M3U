@@ -21,7 +21,7 @@ from typing import Dict, List, Optional, Any, Tuple, Union
 import requests
 
 # ========== CẤU HÌNH ==========
-DETAILED_DEBUG = False   # Bật True để xem response chi tiết (hữu ích khi gỡ lỗi expiry)
+DETAILED_DEBUG = True   # Bật True để xem response chi tiết (hữu ích khi gỡ lỗi expiry)
 
 # ========== LỚP STALKER LITE ==========
 class StalkerLite:
