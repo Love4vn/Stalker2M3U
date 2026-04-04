@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Hoàn thiện: lọc theo group-title, giữ nguyên group gốc, thêm tiền tố portal.
+Stalker to M3U converter – Hoàn chỉnh
+- Đọc danh sách portal từ Mac_list.txt (url,mac)
+- Tự động handshake, lấy token, lấy danh sách kênh
+- Lọc kênh thể thao, loại bỏ kênh SD, loại trừ từ khóa (tên và group)
+- Giữ nguyên group-title gốc, thêm tiền tố [tên_portal]
+- Thêm header #EXTVLCOPT (User-Agent, Cookie, Bearer token)
+- Xuất M3U playlist
 """
 
 import hashlib
@@ -14,8 +20,10 @@ from typing import Dict, List, Optional, Any, Tuple, Union
 
 import requests
 
-DETAILED_DEBUG = False
+# ========== CẤU HÌNH ==========
+DETAILED_DEBUG = False   # Bật True để xem response chi tiết (hữu ích khi gỡ lỗi expiry)
 
+# ========== LỚP STALKER LITE ==========
 class StalkerLite:
     def __init__(self, url: str, mac: str, handshake_path: str, token: str,
                  model: str = "MAG250", extras: Optional[Dict] = None):
@@ -25,6 +33,7 @@ class StalkerLite:
         self.extras = extras or {}
         self.handshake_path = handshake_path
 
+        # Chuẩn hóa URL
         base = url.rstrip('/')
         if base.endswith('/c'):
             base = base[:-2]
@@ -112,9 +121,13 @@ class StalkerLite:
             "JsHttpRequest": "1-xml",
         }
         data = self._call_api(params)
+        if DETAILED_DEBUG and data:
+            print(f"      [DEBUG] Profile response: {json.dumps(data, indent=2)[:1000]}")
         if not data or not isinstance(data, dict):
             return {}
-        expiry = data.get("expire_billing_date") or data.get("expiry_date") or data.get("phone") or ""
+        # Thử nhiều trường expiry
+        expiry = (data.get("expire_billing_date") or data.get("expire_date") or
+                  data.get("account_expire") or data.get("expiry") or data.get("phone") or "")
         return {
             "login": data.get("login", ""),
             "id": str(data.get("id", "")),
@@ -240,10 +253,9 @@ class StalkerLite:
         return f"{base}/misc/logos/320/{logo.lstrip('/')}"
 
 
-# ----------------------------------------------------------------------
-# Các hàm hỗ trợ
-# ----------------------------------------------------------------------
+# ========== CÁC HÀM HỖ TRỢ ==========
 def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
+    """Đọc file Mac_list.txt (mỗi dòng: url,mac)"""
     portals = []
     with open(filename, "r") as f:
         for line in f:
@@ -257,6 +269,7 @@ def parse_mac_list(filename: str) -> List[Tuple[str, str]]:
 
 
 def get_expiry_date(profile: dict) -> Optional[datetime]:
+    """Chuyển đổi chuỗi expiry thành datetime"""
     expiry_str = profile.get("expiry", "")
     if not expiry_str:
         return None
@@ -277,6 +290,7 @@ def get_expiry_date(profile: dict) -> Optional[datetime]:
 
 
 def try_endpoint(base_url: str, endpoint: str, mac: str, debug: bool = False) -> Optional[Tuple[str, str]]:
+    """Thử một endpoint handshake, trả về (token, path) nếu thành công"""
     headers = {
         'User-Agent': 'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
         'X-User-Agent': 'Model: MAG250; Link: WiFi',
@@ -304,6 +318,7 @@ def try_endpoint(base_url: str, endpoint: str, mac: str, debug: bool = False) ->
 
 
 def get_token_path_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+    """Duyệt nhiều endpoint để lấy token và đường dẫn handshake"""
     base = url.rstrip('/')
     endpoints = [
         '/server/load.php?type=stb&action=handshake&prehash=' + mac + '&token=&JsHttpRequest=1-xml',
@@ -327,6 +342,7 @@ def get_token_path_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Op
 
 
 def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
+    """Kiểm tra portal: handshake, lấy kênh, trả về thông tin"""
     if debug:
         print(f"  Getting token for {url}")
     token, handshake_path, base = get_token_path_and_base(url, mac, debug)
@@ -359,7 +375,8 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
 
 
 def generate_playlist(portals: List[Dict], output_file: str):
-    # ========== TỪ KHÓA LỌC THỂ THAO ==========
+    """Tạo file M3U từ danh sách portal đã chọn"""
+    # ========== TỪ KHÓA LỌC ==========
     SPORTS_KEYWORDS = [
         "sport", "sports", "football", "soccer", "tennis", "golf",
         "motorsport", "formula 1", "f1", "hub premier", "premier league",
@@ -370,8 +387,6 @@ def generate_playlist(portals: List[Dict], output_file: str):
         "west ham united", "wolverhampton", "bayern", "bayern munich", "borussia dortmund", "bayer leverkusen", "inter milan",
         "ac milan", "napoli", "barcelona", "real madrid", "atlético", "atletico madrid", "psg", "paris saint-germain", "olympique marseille"
     ]
-
-    # Từ khóa loại trừ (môn không mong muốn, giải trẻ, giải hạng dưới, và group-title)
     EXCLUDE_KEYWORDS = [
         "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
         "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
@@ -379,6 +394,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
         "second division", "liga 2", "serie b", "2. bundesliga", "championship", "national league", "replay", "film", "movie",
         "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse"
     ]
+    SD_KEYWORDS = ["sd", "576p", "480p", "360p"]   # Loại bỏ kênh SD
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
@@ -389,7 +405,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
             stalker = portal["stalker"]
             mac = portal["mac"]
             token = stalker.token
-            # Lấy tên portal ngắn gọn để thêm vào group-title
+            # Rút gọn tên portal để làm tiền tố group-title
             portal_short = portal['url'].replace('http://', '').replace('https://', '').split('/')[0].replace(':80', '')
             try:
                 channels = stalker.get_channels()
@@ -398,23 +414,28 @@ def generate_playlist(portals: List[Dict], output_file: str):
                 for ch in channels:
                     if not isinstance(ch, dict):
                         continue
-                    name_lower = ch.get("name", "").lower()
+                    name = ch.get("name", "")
+                    name_lower = name.lower()
                     group_lower = ch.get("genre_name", "").lower()
-                    # Loại trừ nếu tên hoặc group chứa từ khóa loại trừ
+
+                    # Loại trừ theo từ khóa chung
                     if any(kw.lower() in name_lower for kw in EXCLUDE_KEYWORDS) or any(kw.lower() in group_lower for kw in EXCLUDE_KEYWORDS):
                         continue
-                    # Giữ lại nếu tên hoặc group chứa từ khóa thể thao
+                    # Loại trừ kênh SD
+                    if any(sd in name_lower for sd in SD_KEYWORDS):
+                        continue
+                    # Chỉ giữ kênh thể thao
                     if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS) or any(kw.lower() in group_lower for kw in SPORTS_KEYWORDS):
                         sport_channels.append(ch)
 
-                print(f"  Sport channels: {len(sport_channels)}")
+                print(f"  Sport channels (after filtering): {len(sport_channels)}")
                 for ch in sport_channels:
                     stream_url = stalker.create_link(ch.get("cmd", ""))
                     if not stream_url:
                         print(f"    Failed to get stream URL for {ch.get('name')}")
                         continue
 
-                    # Header cần thiết cho stream
+                    # Header cho stream
                     user_agent = "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3"
                     cookie = f"mac={mac}; stb_lang=en; timezone=GMT"
                     auth_header = f"Bearer {token}" if token else ""
@@ -422,7 +443,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
                     def esc(s: str) -> str:
                         return s.replace('"', "&quot;")
 
-                    # Giữ nguyên group-title gốc, thêm tiền tố [tên_portal]
+                    # Group-title: giữ nguyên gốc, thêm tiền tố [tên_portal]
                     original_group = ch.get("genre_name", "General")
                     new_group = f"[{portal_short}] {original_group}"
 
@@ -442,15 +463,19 @@ def generate_playlist(portals: List[Dict], output_file: str):
                 print(f"  Error while processing portal: {e}")
 
 
+# ========== MAIN ==========
 def main():
     global DETAILED_DEBUG
-    DETAILED_DEBUG = False
+    DETAILED_DEBUG = False   # Đổi thành True nếu muốn xem response profile
+
     mac_file = sys.argv[1] if len(sys.argv) > 1 else "Mac_list.txt"
     if not os.path.exists(mac_file):
         print(f"Error: {mac_file} not found.")
         sys.exit(1)
+
     portals = parse_mac_list(mac_file)
     print(f"Found {len(portals)} portals in {mac_file}")
+
     valid = []
     for url, mac in portals:
         print(f"Testing {url} {mac}")
@@ -461,15 +486,19 @@ def main():
             print(f"  -> Active, expiry: {expiry}")
         else:
             print("  -> Failed or expired")
+
+    # Sắp xếp theo expiry (dài nhất trước)
     valid.sort(key=lambda x: x["expiry_date"] if x["expiry_date"] else datetime.min, reverse=True)
     top = valid[:3]
     print(f"\nSelected {len(top)} portal(s):")
     for p in top:
         expiry_str = p["expiry_date"].strftime("%Y-%m-%d") if p["expiry_date"] else "unknown"
         print(f"  {p['url']} – expires {expiry_str}")
+
     if not top:
         print("No active portals found. Exiting.")
         sys.exit(0)
+
     output = "Mac_playlist.m3u"
     generate_playlist(top, output)
     print(f"\nPlaylist saved to {output}")
