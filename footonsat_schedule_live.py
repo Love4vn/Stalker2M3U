@@ -1,8 +1,9 @@
 """
 footonsat_schedule_live.py
 ================================
-LẤY LỊCH TRỰC TIẾP TỪ footonsat-api
-Tích hợp M3U với matching thông minh
+LẤY LỊCH TRỰC TIẾP TỪ footonsat-api (Premier League, Serie A, La Liga, Bundesliga, Ligue 1,
+Champions League, Europa League, Conference League)
+Tích hợp M3U với matching thông minh (tên kênh + mã quốc gia)
 Xuất ra live_schedule.m3u
 """
 
@@ -96,21 +97,26 @@ def similar(a: str, b: str) -> float:
 
 def normalize_channel_name(name: str) -> str:
     name = name.lower()
+    # Loại bỏ ký tự đặc biệt
     name = re.sub(r'[ᴬᴭᴮᴰᴱᴲᴳᴴᴵᴶᴷᴸᴹᴺᴻᴼᴾᴿᵀᵁⱽᵂᵡᵞᵟᵠᵡᵢᵣᵤᵥᵦᵧᵨᵩᵪᵫᵬᵭᵮᵯᵰᵱᵲᵳᵴᵵᵶᵷᵸᵹᵺᵻᵼᵽᵾᵿ]', '', name)
     name = re.sub(r'┃[^┃]*┃', '', name)
     name = re.sub(r'[²³⁴⁵⁶⁷⁸⁹]', '', name)
     name = re.sub(r'\([^)]*\)', '', name)
     name = re.sub(r'\[[^\]]*\]', '', name)
     name = re.sub(r'\{[^}]*\}', '', name)
+    # Loại bỏ từ chung
     name = re.sub(r'\b(hd|uhd|4k|fhd|vip|plus|extra|tv|channel|network|sports?|premium|maximo?|4mbps|4g|mbps|kbps|bitrate|stream|live|online)\b', '', name)
+    # Loại bỏ cờ
     name = re.sub(r'[🇬🇧🇺🇸🇨🇦🇦🇺🇩🇪🇫🇷🇮🇹🇪🇸🇵🇹🇳🇱🇧🇪🇨🇭🇦🇹🇸🇪🇳🇴🇩🇰🇫🇮🇵🇱🇨🇿🇭🇺🇷🇴🇧🇬🇬🇷🇹🇷]', '', name)
     
+    # Xử lý tiền tố quốc gia (dạng NL|, UK -, DE:)
     prefix_match = re.match(r'^([a-z]{2,3})[| :\-]+', name)
     country_code = None
     if prefix_match:
         country_code = prefix_match.group(1).upper()
         name = name[prefix_match.end():]
     
+    # Thay thế tên quốc gia bằng mã
     for full_name, code in COUNTRY_CODE_MAP.items():
         if full_name in name:
             name = name.replace(full_name, code)
@@ -119,8 +125,11 @@ def normalize_channel_name(name: str) -> str:
     if country_code and not name.endswith(f" {country_code}"):
         name = name.strip() + f" {country_code}"
     
+    # Xóa ký tự đặc biệt còn sót
     name = re.sub(r'[^\w\s]', ' ', name)
+    # Chuẩn hóa khoảng trắng
     name = ' '.join(name.split())
+    # Bỏ dấu
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
     return name.strip()
 
@@ -131,7 +140,8 @@ def is_channel_match(ch_name: str, m3u_name: str) -> bool:
     m3u_norm = normalize_channel_name(m3u_name)
     if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
         return ch_norm == m3u_norm
-    return similar(ch_norm, m3u_norm) >= 0.9
+    # Hạ ngưỡng từ 0.9 xuống 0.85 để match linh hoạt hơn
+    return similar(ch_norm, m3u_norm) >= 0.85
 
 # ================== FOOTONSAT API ==================
 def fetch_footonsat_json(url: str) -> Optional[dict]:
@@ -272,7 +282,6 @@ def parse_m3u(content):
 async def main():
     start = time.time()
     vn_now = datetime.now(TIMEZONE)
-    # Dùng UTC để so sánh thời gian trận đấu
     now_utc = datetime.now(ZoneInfo("UTC"))
     now_ts_utc = int(now_utc.timestamp())
     max_ts_utc = now_ts_utc + 86400
@@ -281,12 +290,16 @@ async def main():
     all_games = load_all_footonsat_games(now_ts_utc, max_ts_utc)
     print(f"   ✅ Tổng số trận trong 24h tới (UTC): {len(all_games)}")
 
-    # Lọc bỏ trận đã qua (dựa trên giờ VN để hiển thị)
-    filtered = []
-    for g in all_games:
-        kick_vn = datetime.fromtimestamp(g['kick_utc']).astimezone(TIMEZONE)
-        if kick_vn > vn_now:
-            filtered.append(g)
+    # In danh sách trận để kiểm tra
+    if all_games:
+        print("   📋 Danh sách trận đã lấy:")
+        for g in all_games:
+            print(f"      {g['time']} | {g['league']} | {g['match']}")
+    else:
+        print("   ⚠️ Không có trận nào.")
+
+    # Lọc bỏ trận đã qua theo giờ VN
+    filtered = [g for g in all_games if datetime.fromtimestamp(g['kick_utc']).astimezone(TIMEZONE) > vn_now]
     all_games = filtered
     print(f"   ✅ Sau lọc quá khứ (theo giờ VN): {len(all_games)} trận")
 
