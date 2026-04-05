@@ -68,7 +68,6 @@ COUNTRY_CODE_MAP = {
     "israel": "IL",
 }
 
-# Sửa URL đúng: ConferenceLeague.json viết hoa C và L
 FOOTONSAT_URLS = [
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/premierleague.json",
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/seriea.json",
@@ -77,7 +76,7 @@ FOOTONSAT_URLS = [
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ligue1.json",
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/championsleague.json",
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/europaleague.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ConferenceLeague.json",  # sửa đúng tên
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ConferenceLeague.json",
 ]
 
 # ================== HELPER ==================
@@ -97,13 +96,6 @@ def similar(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
 def normalize_channel_name(name: str) -> str:
-    """
-    Chuẩn hóa tên kênh:
-    - Phát hiện và tách mã quốc gia từ tiền tố (NL|, UK -, DE:) hoặc tên quốc gia (Nederland)
-    - Thêm mã quốc gia vào cuối (nếu có)
-    - Loại bỏ các từ thừa (HD, VIP, ...)
-    - Nếu không có mã quốc gia, chỉ loại bỏ từ thừa và ký tự đặc biệt
-    """
     name = name.lower()
     # Loại bỏ ký tự mũ, cờ, nội dung trong ngoặc
     name = re.sub(r'[ᴬᴭᴮᴰᴱᴲᴳᴴᴵᴶᴷᴸᴹᴺᴻᴼᴾᴿᵀᵁⱽᵂᵡᵞᵟᵠᵡᵢᵣᵤᵥᵦᵧᵨᵩᵪᵫᵬᵭᵮᵯᵰᵱᵲᵳᵴᵵᵶᵷᵸᵹᵺᵻᵼᵽᵾᵿ]', '', name)
@@ -128,13 +120,11 @@ def normalize_channel_name(name: str) -> str:
     for full_name, code in COUNTRY_CODE_MAP.items():
         if full_name in name:
             name = name.replace(full_name, code)
-            country_code = code  # ưu tiên mã vừa thay
+            country_code = code
     
-    # Nếu có mã quốc gia, thêm vào cuối (nếu chưa có)
     if country_code and not name.endswith(f" {country_code}"):
         name = name.strip() + f" {country_code}"
     
-    # Loại bỏ ký tự đặc biệt còn sót
     name = re.sub(r'[^\w\s]', ' ', name)
     name = ' '.join(name.split())
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
@@ -161,15 +151,13 @@ def fetch_footonsat_json(url: str) -> Optional[dict]:
 
 def parse_footonsat_data(data: dict) -> List[Dict]:
     """
-    Parse dữ liệu từ JSON của footonsat (cấu trúc có key "footnotes").
-    Trả về danh sách các trận đấu (mỗi trận có league, match, kick_utc, time, channels).
+    Parse dữ liệu từ JSON của footonsat (key "footonsat").
     """
     games = []
-    # Sửa key chính xác là "footnotes"
-    if not data or "footnotes" not in data:
+    if not data or "footonsat" not in data:
         return games
     
-    items = data["footnotes"]
+    items = data["footonsat"]
     if not isinstance(items, list) or len(items) == 0:
         return games
     
@@ -186,7 +174,6 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
         print("   Không tìm thấy thông tin trận đấu trong JSON")
         return games
     
-    # Xác định league từ compet
     compet = match_info.get("compet", "").lower()
     league = None
     for key, val in COMPET_MAPPING.items():
@@ -197,13 +184,12 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
         print(f"   Không xác định được league cho compet: {compet}")
         return games
     
-    # Xử lý thời gian: giả sử date + time là UTC+0
     date_str = match_info.get("date")
     time_str = match_info.get("time")
     if not date_str or not time_str:
         return games
     try:
-        # Kết hợp date và time, parse thành datetime (UTC)
+        # Giả sử date và time là UTC
         dt_utc = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
         dt_utc = dt_utc.replace(tzinfo=ZoneInfo("UTC"))
         kick_utc = int(dt_utc.timestamp())
@@ -211,15 +197,17 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
         print(f"   Lỗi parse thời gian: {e}")
         return games
     
-    match_name = match_info.get("match", "")
+    match_name = match_info.get("match", "").strip()
     
-    # Lấy danh sách kênh: lọc các channel có related_to khớp với match_name (hoặc không có related_to)
+    # Lấy danh sách kênh: lọc các channel có related_to khớp với match_name
     channels = []
     for ch_item in channel_items:
-        related = ch_item.get("related_to", "")
+        related = ch_item.get("related_to", "").strip()
         if not related or similar(normalize(related), normalize(match_name)) >= 0.7:
             channel_name = ch_item.get("channel")
             if channel_name:
+                # Loại bỏ icon 📺 nếu có
+                channel_name = re.sub(r'[📺]', '', channel_name).strip()
                 channels.append(channel_name)
     
     if not channels:
@@ -386,7 +374,7 @@ async def main():
             print(f"   Lỗi xử lý trận {g.get('match', '')}: {e}")
             continue
 
-    # Xử lý trùng kênh (cùng URL, cùng league)
+    # Xử lý trùng kênh
     seen = {}
     dedup_events = []
     for ev in live_events:
