@@ -1,9 +1,8 @@
 """
 footonsat_schedule_live.py
 ================================
-LẤY LỊCH TRỰC TIẾP TỪ footonsat-api (Premier League, Serie A, La Liga, Bundesliga, Ligue 1,
-Champions League, Europa League, Conference League)
-Tích hợp M3U với matching thông minh (tên kênh + mã quốc gia)
+LẤY LỊCH TRỰC TIẾP TỪ footonsat-api
+Tích hợp M3U với matching thông minh
 Xuất ra live_schedule.m3u
 """
 
@@ -145,10 +144,6 @@ def fetch_footonsat_json(url: str) -> Optional[dict]:
         return None
 
 def parse_footonsat_data(data: dict) -> List[Dict]:
-    """
-    Parse dữ liệu từ JSON footonsat (cấu trúc mảng xen kẽ trận và kênh)
-    Trả về danh sách các trận đấu.
-    """
     games = []
     if not data or "footonsat" not in data:
         return games
@@ -160,10 +155,8 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
     i = 0
     while i < len(items):
         item = items[i]
-        # Kiểm tra nếu là object trận (có "match", "time", "date")
         if isinstance(item, dict) and "match" in item and "time" in item and "date" in item:
             match_info = item
-            # Xác định league
             compet = match_info.get("compet", "").lower()
             league = None
             for key, val in COMPET_MAPPING.items():
@@ -180,7 +173,7 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
                 i += 1
                 continue
             try:
-                # Parse datetime UTC (giả sử giờ trong JSON là UTC)
+                # Giả sử giờ trong JSON là UTC
                 dt_utc = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
                 dt_utc = dt_utc.replace(tzinfo=ZoneInfo("UTC"))
                 kick_utc = int(dt_utc.timestamp())
@@ -191,7 +184,7 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
             
             match_name = match_info.get("match", "").strip()
             
-            # Thu thập các kênh theo sau cho đến khi gặp trận tiếp theo
+            # Thu thập các kênh phía sau
             channels = []
             j = i + 1
             while j < len(items):
@@ -214,27 +207,25 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
                     "kick_utc": kick_utc,
                     "time": vn_time(kick_utc),
                     "channels": channels,
-                    "source": "footonsat"
                 })
-            i = j  # nhảy đến sau các kênh
+            i = j
         else:
             i += 1
-    
     return games
 
-def load_all_footonsat_games(now_ts: int, max_ts: int) -> List[Dict]:
+def load_all_footonsat_games(now_ts_utc: int, max_ts_utc: int) -> List[Dict]:
     all_games = []
     for url in FOOTONSAT_URLS:
         print(f"   Đang tải {url}")
         data = fetch_footonsat_json(url)
         if data:
             games = parse_footonsat_data(data)
-            # Lọc theo khung thời gian
             for g in games:
-                if now_ts <= g['kick_utc'] <= max_ts:
+                if now_ts_utc <= g['kick_utc'] <= max_ts_utc:
                     all_games.append(g)
             if games:
-                print(f"      -> Tìm thấy {len(games)} trận, giữ lại {len([g for g in games if now_ts <= g['kick_utc'] <= max_ts])} trận trong 24h tới")
+                kept = len([g for g in games if now_ts_utc <= g['kick_utc'] <= max_ts_utc])
+                print(f"      -> Tìm thấy {len(games)} trận, giữ lại {kept} trận trong 24h tới")
             else:
                 print(f"      -> Không có trận nào")
         else:
@@ -281,17 +272,23 @@ def parse_m3u(content):
 async def main():
     start = time.time()
     vn_now = datetime.now(TIMEZONE)
-    now_ts = int(datetime.now(TIMEZONE).timestamp())
-    max_ts = now_ts + 86400
+    # Dùng UTC để so sánh thời gian trận đấu
+    now_utc = datetime.now(ZoneInfo("UTC"))
+    now_ts_utc = int(now_utc.timestamp())
+    max_ts_utc = now_ts_utc + 86400
 
-    print("🔄 Bắt đầu lấy lịch 24 GIỜ TỚI từ footonsat-api...")
-    all_games = load_all_footonsat_games(now_ts, max_ts)
-    print(f"   ✅ Tổng số trận trong 24h tới: {len(all_games)}")
+    print("🔄 Bắt đầu lấy lịch 24 GIỜ TỚI (theo UTC)...")
+    all_games = load_all_footonsat_games(now_ts_utc, max_ts_utc)
+    print(f"   ✅ Tổng số trận trong 24h tới (UTC): {len(all_games)}")
 
-    # Lọc bỏ trận đã qua (lần nữa để chắc chắn)
-    filtered = [g for g in all_games if datetime.fromtimestamp(g['kick_utc']).astimezone(TIMEZONE) > vn_now]
+    # Lọc bỏ trận đã qua (dựa trên giờ VN để hiển thị)
+    filtered = []
+    for g in all_games:
+        kick_vn = datetime.fromtimestamp(g['kick_utc']).astimezone(TIMEZONE)
+        if kick_vn > vn_now:
+            filtered.append(g)
     all_games = filtered
-    print(f"   ✅ Sau lọc quá khứ: {len(all_games)} trận")
+    print(f"   ✅ Sau lọc quá khứ (theo giờ VN): {len(all_games)} trận")
 
     if not all_games:
         print("⚠️ Không có trận nào trong 24h tới. Thoát.")
