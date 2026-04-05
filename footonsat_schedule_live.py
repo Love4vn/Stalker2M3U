@@ -68,6 +68,7 @@ COUNTRY_CODE_MAP = {
     "israel": "IL",
 }
 
+# Sửa URL đúng: ConferenceLeague.json viết hoa C và L
 FOOTONSAT_URLS = [
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/premierleague.json",
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/seriea.json",
@@ -76,7 +77,7 @@ FOOTONSAT_URLS = [
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ligue1.json",
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/championsleague.json",
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/europaleague.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/conferenceleague.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ConferenceLeague.json",  # sửa đúng tên
 ]
 
 # ================== HELPER ==================
@@ -159,13 +160,20 @@ def fetch_footonsat_json(url: str) -> Optional[dict]:
         return None
 
 def parse_footonsat_data(data: dict) -> List[Dict]:
+    """
+    Parse dữ liệu từ JSON của footonsat (cấu trúc có key "footnotes").
+    Trả về danh sách các trận đấu (mỗi trận có league, match, kick_utc, time, channels).
+    """
     games = []
-    if not data or "footonsat" not in data:
+    # Sửa key chính xác là "footnotes"
+    if not data or "footnotes" not in data:
         return games
-    items = data["footonsat"]
+    
+    items = data["footnotes"]
     if not isinstance(items, list) or len(items) == 0:
         return games
     
+    # Tìm object chứa thông tin trận đấu (có "match", "time", "date")
     match_info = None
     channel_items = []
     for item in items:
@@ -175,8 +183,10 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
             channel_items.append(item)
     
     if not match_info:
+        print("   Không tìm thấy thông tin trận đấu trong JSON")
         return games
     
+    # Xác định league từ compet
     compet = match_info.get("compet", "").lower()
     league = None
     for key, val in COMPET_MAPPING.items():
@@ -184,20 +194,26 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
             league = val
             break
     if not league:
+        print(f"   Không xác định được league cho compet: {compet}")
         return games
     
+    # Xử lý thời gian: giả sử date + time là UTC+0
     date_str = match_info.get("date")
     time_str = match_info.get("time")
     if not date_str or not time_str:
         return games
     try:
+        # Kết hợp date và time, parse thành datetime (UTC)
         dt_utc = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
         dt_utc = dt_utc.replace(tzinfo=ZoneInfo("UTC"))
         kick_utc = int(dt_utc.timestamp())
-    except:
+    except Exception as e:
+        print(f"   Lỗi parse thời gian: {e}")
         return games
     
     match_name = match_info.get("match", "")
+    
+    # Lấy danh sách kênh: lọc các channel có related_to khớp với match_name (hoặc không có related_to)
     channels = []
     for ch_item in channel_items:
         related = ch_item.get("related_to", "")
@@ -207,6 +223,7 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
                 channels.append(channel_name)
     
     if not channels:
+        print(f"   Không tìm thấy kênh cho trận {match_name}")
         return games
     
     games.append({
@@ -222,12 +239,17 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
 def load_all_footonsat_games(now_ts: int, max_ts: int) -> List[Dict]:
     all_games = []
     for url in FOOTONSAT_URLS:
+        print(f"   Đang tải {url}")
         data = fetch_footonsat_json(url)
         if data:
             games = parse_footonsat_data(data)
             for g in games:
                 if now_ts <= g['kick_utc'] <= max_ts:
                     all_games.append(g)
+            if games:
+                print(f"      -> Tìm thấy {len(games)} trận từ {url}")
+        else:
+            print(f"      -> Không tải được dữ liệu từ {url}")
     return all_games
 
 # ================== M3U PARSER ==================
@@ -275,11 +297,15 @@ async def main():
 
     print("🔄 Bắt đầu lấy lịch 24 GIỜ TỚI từ footonsat-api...")
     all_games = load_all_footonsat_games(now_ts, max_ts)
-    print(f"   ✅ Tổng số trận: {len(all_games)}")
+    print(f"   ✅ Tổng số trận (chưa lọc quá khứ): {len(all_games)}")
 
     filtered = [g for g in all_games if datetime.fromtimestamp(g['kick_utc']).astimezone(TIMEZONE) > vn_now]
     all_games = filtered
     print(f"   ✅ Sau lọc quá khứ: {len(all_games)} trận")
+
+    if not all_games:
+        print("⚠️ Không có trận nào trong 24h tới. Thoát.")
+        return
 
     print("📥 Đang tải và phân tích M3U...")
     m3u_links = []
@@ -360,6 +386,7 @@ async def main():
             print(f"   Lỗi xử lý trận {g.get('match', '')}: {e}")
             continue
 
+    # Xử lý trùng kênh (cùng URL, cùng league)
     seen = {}
     dedup_events = []
     for ev in live_events:
