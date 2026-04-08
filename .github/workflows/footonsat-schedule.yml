@@ -22,6 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install curl_cffi pycountry
+          pip install aiohttp pyyaml
 
       - name: Run script
         run: python footonsat_schedule_live.py
