@@ -23,7 +23,7 @@ TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 M3U_LIST_FILE = "M3U_list.txt"
 LIVE_M3U = "live_schedule.m3u"
 
-# Danh sách giải tennis được phép (ATP và Grand Slam)
+# Danh sách giải tennis được phép
 ALLOWED_TENNIS_TOURNAMENTS = {
     "atp", "atp tour", "atp world tour", "grand slam", "australian open",
     "roland garros", "french open", "wimbledon", "us open", "nitto atp finals",
@@ -38,7 +38,7 @@ ALLOWED_FOOTBALL_LEAGUES = {
     "UEFA Euro", "FA Cup", "League Cup"
 }
 
-# Danh sách đội Premier League dùng chung cho các giải Anh
+# Danh sách đội Premier League
 PREMIER_LEAGUE_TEAMS = {
     "arsenal", "aston villa", "bournemouth", "brentford", "brighton", "chelsea",
     "crystal palace", "everton", "fulham", "leeds united", "liverpool", "manchester city",
@@ -46,7 +46,6 @@ PREMIER_LEAGUE_TEAMS = {
     "west ham united", "wolverhampton"
 }
 
-# Danh sách đội riêng từng giải (tên chuẩn, viết thường)
 ALLOWED_TEAMS_PER_LEAGUE = {
     "Premier League": PREMIER_LEAGUE_TEAMS,
     "Serie A": {"inter milan", "ac milan", "napoli", "juventus", "roma", "atalanta", "lazio"},
@@ -57,7 +56,6 @@ ALLOWED_TEAMS_PER_LEAGUE = {
     "League Cup": PREMIER_LEAGUE_TEAMS
 }
 
-# Group title tương ứng cho từng giải
 LEAGUE_GROUP_NAME = {
     "Premier League": "Live Premier League",
     "Serie A": "Live Serie A",
@@ -75,15 +73,15 @@ LEAGUE_GROUP_NAME = {
     "International Friendly": "Live International Friendly"
 }
 
-# Các mã quốc gia thường gặp (dùng cho prefix trong tên kênh)
+# Mã quốc gia thường gặp (dùng cho prefix trong tên kênh)
 COUNTRY_CODES = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
     "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn",
-    "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk"
+    "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "ie"
 }
 
-# Mapping tên quốc gia (từ JSON) sang mã code (viết thường)
+# Mapping tên quốc gia (từ JSON) sang mã code (viết thường) - BỔ SUNG
 COUNTRY_NAME_TO_CODE = {
     "united states": "us", "usa": "us", "uk": "uk", "united kingdom": "uk",
     "viet nam": "vn", "vietnam": "vn", "korea, republic of": "kr", "south korea": "kr",
@@ -95,7 +93,10 @@ COUNTRY_NAME_TO_CODE = {
     "sweden": "se", "norway": "no", "denmark": "dk", "finland": "fi", "poland": "pl",
     "czechia": "cz", "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr",
     "turkey": "tr", "israel": "il", "australia": "au", "canada": "ca", "new zealand": "nz",
-    "ireland": "ie", "indonesia": "id", "malaysia": "my", "singapore": "sg", "thailand": "th"
+    "ireland": "ie", "indonesia": "id", "malaysia": "my", "singapore": "sg", "thailand": "th",
+    "egypt": "eg", "morocco": "ma", "algeria": "dz", "tunisia": "tn", "libya": "ly",
+    "sudan": "sd", "ethiopia": "et", "kenya": "ke", "nigeria": "ng", "ghana": "gh",
+    "senegal": "sn", "côte d'ivoire": "ci", "cameroon": "cm", "angola": "ao"
 }
 
 # URL nguồn footonsat
@@ -110,7 +111,6 @@ FOOTONSAT_URLS = [
     "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ConferenceLeague.json",
 ]
 
-# URL nguồn Love4vn
 LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/schedule.json"
 
 # ================== HELPER ==================
@@ -130,18 +130,15 @@ def similar(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
-    """
-    Tách mã quốc gia / vùng (nếu có) khỏi tên kênh.
-    Trả về (mã, tên_đã_xóa_tiền_tố).
-    """
+    """Tách mã quốc gia / vùng (nếu có) khỏi tên kênh (chỉ xử lý prefix đầu)."""
     name_lower = name.lower()
     patterns = [
-        (r'^\|\s*([a-z]{2,3})\s*\|\s*', 1),    # | ES |
-        (r'^([a-z]{2,3})\:\s*', 1),            # UK:
-        (r'^([a-z]{2,3})\s*-\s*', 1),          # FR -
-        (r'^([a-z]{2,3})\|\s*', 1),            # NL|
-        (r'^\[([a-z]{2,3})\]\s*', 1),          # [UK]
-        (r'^\(([a-z]{2,3})\)\s*', 1),          # (UK)
+        (r'^\|\s*([a-z]{2,3})\s*\|\s*', 1),
+        (r'^([a-z]{2,3})\:\s*', 1),
+        (r'^([a-z]{2,3})\s*-\s*', 1),
+        (r'^([a-z]{2,3})\|\s*', 1),
+        (r'^\[([a-z]{2,3})\]\s*', 1),
+        (r'^\(([a-z]{2,3})\)\s*', 1),
     ]
     for pat, group in patterns:
         m = re.match(pat, name_lower)
@@ -151,7 +148,6 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
                 remaining = name_lower[m.end():]
                 remaining = re.sub(r'^[\|\:\-\s]+', '', remaining)
                 return code, remaining.strip()
-    # Không có tiền tố, loại bỏ ký tự đặc biệt đầu
     cleaned = re.sub(r'^[\|\s\:\-]+', '', name_lower)
     return None, cleaned
 
@@ -166,8 +162,18 @@ def normalize_channel_name(name: str) -> str:
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
     return name
 
+def has_critical_mismatch(name1: str, name2: str) -> bool:
+    """Kiểm tra xem hai tên có chứa các từ khóa quan trọng mâu thuẫn không."""
+    n1_lower = name1.lower()
+    n2_lower = name2.lower()
+    # Tránh nhầm "main event" với "max"
+    if ("main event" in n1_lower and "max" in n2_lower) or ("main event" in n2_lower and "max" in n1_lower):
+        return True
+    # Có thể thêm các cặp mâu thuẫn khác nếu cần
+    return False
+
 def is_channel_match(ch_name: str, m3u_name: str) -> bool:
-    """So khớp kênh không có thông tin quốc gia (dùng cho footonsat)"""
+    """So khớp kênh không có thông tin quốc gia (dùng cho footonsat)."""
     if not ch_name or not m3u_name:
         return False
     ch_code, ch_clean = extract_prefix_and_name(ch_name)
@@ -181,19 +187,24 @@ def is_channel_match(ch_name: str, m3u_name: str) -> bool:
             return True
         if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
             return ch_norm == m3u_norm
+        if has_critical_mismatch(ch_norm, m3u_norm):
+            return False
         return similar(ch_norm, m3u_norm) >= 0.9
     else:
         if ch_norm == m3u_norm:
             return True
         if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
             return ch_norm == m3u_norm
-        return similar(ch_norm, m3u_norm) >= 0.9
+        if has_critical_mismatch(ch_norm, m3u_norm):
+            return False
+        # Nâng ngưỡng lên 0.95 để tránh nhầm lẫn
+        return similar(ch_norm, m3u_norm) >= 0.95
 
 def is_channel_match_with_country(m3u_name: str, target_country_code: Optional[str], target_channel_name: str) -> bool:
     """
     So khớp kênh M3U với kênh đích có thể kèm mã quốc gia.
     target_country_code: mã quốc gia (viết thường) hoặc None (chỉ match tên)
-    target_channel_name: tên kênh đã chuẩn hóa (không có prefix)
+    target_channel_name: tên kênh đã chuẩn hóa (không có prefix, đã loại bỏ tên nước)
     """
     if not m3u_name or not target_channel_name:
         return False
@@ -201,42 +212,55 @@ def is_channel_match_with_country(m3u_name: str, target_country_code: Optional[s
     m3u_norm = normalize_channel_name(m3u_clean)
     target_norm = normalize_channel_name(target_channel_name)
 
-    # Nếu có yêu cầu mã quốc gia
     if target_country_code:
         if not m3u_code or m3u_code != target_country_code:
             return False
-        # Mã giống, so sánh tên
         if m3u_norm == target_norm:
             return True
         if len(m3u_norm) <= 3 or len(target_norm) <= 3:
             return m3u_norm == target_norm
+        if has_critical_mismatch(m3u_norm, target_norm):
+            return False
         return similar(m3u_norm, target_norm) >= 0.9
     else:
-        # Không yêu cầu mã, chỉ so tên
         if m3u_norm == target_norm:
             return True
         if len(m3u_norm) <= 3 or len(target_norm) <= 3:
             return m3u_norm == target_norm
-        return similar(m3u_norm, target_norm) >= 0.9
+        if has_critical_mismatch(m3u_norm, target_norm):
+            return False
+        # Nâng ngưỡng lên 0.95
+        return similar(m3u_norm, target_norm) >= 0.95
 
 def get_country_code_from_name(country_name: str) -> Optional[str]:
-    """Chuyển đổi tên quốc gia (từ JSON) thành mã code viết thường, nếu có."""
+    """Chuyển đổi tên quốc gia (từ JSON) thành mã code viết thường."""
     if not country_name:
         return None
     name_clean = country_name.lower().strip()
-    # Trực tiếp trong mapping
     if name_clean in COUNTRY_NAME_TO_CODE:
         return COUNTRY_NAME_TO_CODE[name_clean]
-    # Xử lý các trường hợp đặc biệt như "United States" -> "us"
-    # Thử tìm kiếm từ khóa
+    # Tìm kiếm từ khóa một lần nữa
     for full_name, code in COUNTRY_NAME_TO_CODE.items():
         if full_name in name_clean or name_clean in full_name:
             return code
     return None
 
+def remove_country_from_channel_name(channel_name: str, country_name: str) -> str:
+    """Loại bỏ tên quốc gia khỏi tên kênh (nếu có)."""
+    if not country_name:
+        return channel_name
+    country_lower = country_name.lower().strip()
+    # Tìm và loại bỏ tên quốc gia trong tên kênh (không phân biệt hoa thường)
+    # Ví dụ: "Premier Sports 1 Ireland HD" -> "Premier Sports 1 HD"
+    # Chỉ loại bỏ nếu country_name là từ riêng biệt
+    pattern = re.compile(r'\b' + re.escape(country_lower) + r'\b', re.IGNORECASE)
+    cleaned = pattern.sub('', channel_name).strip()
+    # Xoá khoảng trắng thừa
+    cleaned = re.sub(r'\s+', ' ', cleaned)
+    return cleaned
+
 # ================== LỌC GIẢI ĐẤU & ĐỘI ==================
 def is_tennis_allowed(match_name: str) -> bool:
-    """Kiểm tra trận tennis có nằm trong danh sách giải được phép không."""
     if not match_name:
         return False
     match_lower = match_name.lower()
@@ -246,19 +270,15 @@ def is_tennis_allowed(match_name: str) -> bool:
     return False
 
 def is_football_allowed(league: str, match_name: str) -> bool:
-    """Kiểm tra trận bóng đá có được phép dựa trên giải đấu và đội bóng."""
     if league not in ALLOWED_FOOTBALL_LEAGUES:
         return False
-    # Nếu giải có danh sách đội yêu cầu, kiểm tra match name có chứa ít nhất một đội
     if league in ALLOWED_TEAMS_PER_LEAGUE:
         allowed_teams = ALLOWED_TEAMS_PER_LEAGUE[league]
         match_lower = match_name.lower()
         for team in allowed_teams:
             if team in match_lower:
                 return True
-        # Nếu không có đội nào, bỏ qua trận (chỉ lấy trận có đội lớn)
         return False
-    # Các giải không yêu cầu đội cụ thể (Champions League, Euro,...) thì cho phép
     return True
 
 # ================== FOOTONSAT API ==================
@@ -279,7 +299,6 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
     if not isinstance(items, list):
         return games
 
-    # Mapping compet -> league (giữ nguyên từ code cũ)
     COMPET_MAPPING = {
         "english premier league": "Premier League",
         "serie a": "Serie A",
@@ -335,17 +354,15 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
                             channels.append(ch_name)
                 j += 1
 
-            if channels:
-                # Kiểm tra lọc bóng đá
-                if is_football_allowed(league, match_name):
-                    games.append({
-                        "league": league,
-                        "match": match_name,
-                        "kick_utc": kick_utc,
-                        "time": vn_time(kick_utc),
-                        "channels": channels,  # list tên kênh (không country)
-                        "source": "footonsat"
-                    })
+            if channels and is_football_allowed(league, match_name):
+                games.append({
+                    "league": league,
+                    "match": match_name,
+                    "kick_utc": kick_utc,
+                    "time": vn_time(kick_utc),
+                    "channels": channels,
+                    "source": "footonsat"
+                })
             i = j
         else:
             i += 1
@@ -370,15 +387,12 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
         for game in day_info.get("games", []):
             league = game.get("league", "")
             match_name = game.get("match", "").strip()
-            # Lấy kick_utc từ json (đã có sẵn)
             kick_utc = game.get("kick_utc")
             if not kick_utc:
                 continue
-            # Lọc thời gian
             if not (start_ts_utc <= kick_utc <= end_ts_utc):
                 continue
 
-            # Lọc theo giải đấu
             if league == "Tennis":
                 if not is_tennis_allowed(match_name):
                     continue
@@ -386,67 +400,71 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
                 if not is_football_allowed(league, match_name):
                     continue
 
-            # Xử lý danh sách kênh từ tv_channels
             channel_sources = []
             tv_channels = game.get("tv_channels", [])
             for entry in tv_channels:
                 country_name = entry.get("country", "")
                 channels_list = entry.get("channels", [])
-                # Xác định mã quốc gia (nếu có)
-                country_code = None
-                # Nếu country_name là tên quốc gia thực sự (không phải "Wheresthematch", "livesportsontv", "ausport")
                 non_country_names = {"wheresthematch", "livesportsontv", "ausport", "livesportsontv", "ausport"}
-                if country_name.lower() not in non_country_names:
+                if country_name.lower() in non_country_names:
+                    country_code = None
+                    # Không loại bỏ tên nước vì không phải tên nước thật
+                    for ch_name in channels_list:
+                        if ch_name:
+                            channel_sources.append({
+                                "country_code": country_code,
+                                "channel_name": ch_name
+                            })
+                else:
                     country_code = get_country_code_from_name(country_name)
-                for ch_name in channels_list:
-                    if ch_name:
+                    for ch_name in channels_list:
+                        if not ch_name:
+                            continue
+                        # Loại bỏ tên quốc gia khỏi tên kênh (nếu có)
+                        cleaned_name = remove_country_from_channel_name(ch_name, country_name)
                         channel_sources.append({
                             "country_code": country_code,
-                            "channel_name": ch_name
+                            "channel_name": cleaned_name
                         })
             if channel_sources:
                 games.append({
                     "league": league,
                     "match": match_name,
                     "kick_utc": kick_utc,
-                    "time": game.get("time", vn_time(kick_utc)),  # time đã là VN
-                    "channels": channel_sources,  # list các dict {country_code, channel_name}
+                    "time": game.get("time", vn_time(kick_utc)),
+                    "channels": channel_sources,
                     "source": "love4vn"
                 })
     return games
 
 # ================== MERGE CÁC TRÙNG NHAU ==================
 def merge_games(games_list: List[Dict]) -> List[Dict]:
-    """Hợp nhất các trận đấu giống nhau từ nhiều nguồn (cùng league, match name, kick_utc chênh <= 5 phút)"""
     merged = []
     used = set()
     for i, g in enumerate(games_list):
         if i in used:
             continue
         base = g.copy()
-        # Chuẩn hóa match name để so sánh
         base_match_norm = normalize(base['match'])
         for j, other in enumerate(games_list[i+1:], i+1):
             if j in used:
                 continue
             if base['league'] != other['league']:
                 continue
-            if abs(base['kick_utc'] - other['kick_utc']) > 300:  # chênh lệch > 5 phút
+            if abs(base['kick_utc'] - other['kick_utc']) > 300:
                 continue
             match_norm = normalize(other['match'])
             if similar(base_match_norm, match_norm) < 0.8:
                 continue
-            # Trùng -> hợp nhất channels
+            # Hợp nhất channels
             if 'channels' in base and 'channels' in other:
-                # Nếu base là footonsat (channels là list string) và other là love4vn (channels là list dict)
-                # Cần chuyển đổi về dạng chung: list dict với country_code=None cho footonsat
-                if isinstance(base['channels'][0], str):
+                # Chuyển footonsat (list string) sang format dict nếu cần
+                if base.get('source') == 'footonsat' and isinstance(base['channels'][0], str):
                     base['channels'] = [{"country_code": None, "channel_name": ch} for ch in base['channels']]
-                if isinstance(other['channels'][0], str):
+                if other.get('source') == 'footonsat' and isinstance(other['channels'][0], str):
                     other_channels = [{"country_code": None, "channel_name": ch} for ch in other['channels']]
                 else:
                     other_channels = other['channels']
-                # Hợp nhất, tránh trùng lặp (dựa trên country_code + channel_name)
                 existing_keys = {(c['country_code'], c['channel_name']) for c in base['channels']}
                 for c in other_channels:
                     key = (c['country_code'], c['channel_name'])
@@ -503,13 +521,13 @@ async def main():
     vn_now = datetime.now(TIMEZONE)
     now_utc = datetime.now(ZoneInfo("UTC"))
     now_ts_utc = int(now_utc.timestamp())
-    start_ts_utc = now_ts_utc - 7200   # lùi 2 giờ
-    end_ts_utc = now_ts_utc + 86400    # 24 giờ tới
+    start_ts_utc = now_ts_utc - 7200
+    end_ts_utc = now_ts_utc + 86400
 
     print("🔄 Bắt đầu lấy lịch (lùi 2h đến 24h tới)...")
     all_games = []
 
-    # 1. Tải footonsat
+    # Footonsat
     print("📡 Đang tải footonsat...")
     footonsat_games = []
     for url in FOOTONSAT_URLS:
@@ -518,19 +536,18 @@ async def main():
         if data:
             games = parse_footonsat_data(data)
             footonsat_games.extend(games)
-    # Lọc thời gian cho footonsat
     footonsat_games = [g for g in footonsat_games if start_ts_utc <= g['kick_utc'] <= end_ts_utc]
     print(f"   Footonsat: {len(footonsat_games)} trận")
     all_games.extend(footonsat_games)
 
-    # 2. Tải Love4VN
+    # Love4VN
     print("📡 Đang tải Love4VN...")
     love4vn_data = fetch_love4vn_json()
     love4vn_games = parse_love4vn_data(love4vn_data, start_ts_utc, end_ts_utc) if love4vn_data else []
     print(f"   Love4VN: {len(love4vn_games)} trận")
     all_games.extend(love4vn_games)
 
-    # 3. Merge các trận trùng nhau
+    # Merge
     all_games = merge_games(all_games)
     print(f"✅ Tổng số trận sau merge: {len(all_games)}")
 
@@ -538,12 +555,11 @@ async def main():
         print("⚠️ Không có trận nào. Thoát.")
         return
 
-    # In danh sách trận
     print("   📋 Danh sách trận:")
     for g in all_games:
         print(f"      {g['time']} | {g['league']} | {g['match']} (nguồn: {g.get('source','merged')})")
 
-    # Lọc trận đã kết thúc quá 2h (theo giờ VN)
+    # Lọc trận chưa kết thúc quá 2h
     filtered = []
     for g in all_games:
         kick_vn = datetime.fromtimestamp(g['kick_utc']).astimezone(TIMEZONE)
@@ -568,7 +584,6 @@ async def main():
         print(f"   📋 Tìm thấy {len(m3u_links)} URL")
     except Exception as e:
         print(f"   ❌ Lỗi đọc M3U_list.txt: {e}")
-        m3u_links = []
 
     def fetch_text_sync(url):
         try:
@@ -597,12 +612,11 @@ async def main():
     unique_ch = list({ch['url']: ch for ch in all_ch if ch.get('url')}.values())
     print(f"   ✅ Đã tải {len(unique_ch)} kênh")
 
-    # In mẫu 50 kênh đầu
     print("   📺 50 kênh đầu tiên:")
     for i, ch in enumerate(unique_ch[:50]):
         print(f"      {i+1}. {ch['name']}")
 
-    # Matching kênh
+    # Matching
     print("🔄 Đang match kênh...")
     live_events = []
     for g in all_games:
@@ -610,7 +624,6 @@ async def main():
         channels_info = g.get('channels', [])
         for ch_info in channels_info:
             if isinstance(ch_info, str):
-                # Trường hợp footonsat cũ (chỉ có tên kênh, không country)
                 target_country = None
                 target_name = ch_info
             else:
@@ -618,7 +631,6 @@ async def main():
                 target_name = ch_info.get('channel_name')
             if not target_name:
                 continue
-            # Tìm kênh phù hợp trong M3U
             matching = []
             for ch in unique_ch:
                 if target_country is not None:
@@ -643,7 +655,7 @@ async def main():
                     "league": g["league"]
                 })
 
-    # Loại trùng kênh (cùng url và league)
+    # Loại trùng kênh
     seen = {}
     dedup = []
     for ev in live_events:
@@ -661,7 +673,6 @@ async def main():
             ch = ev["channel"]
             group = LEAGUE_GROUP_NAME.get(ev["league"])
             if not group:
-                # Nếu không có group, bỏ qua
                 continue
             extinf = f'#EXTINF:-1 tvg-id="{ch["params"].get("tvg-id","")}" group-title="{group}"'
             if ch["params"].get("tvg-logo"):
