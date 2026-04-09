@@ -1,269 +1,359 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="707005" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12307.jpg?76030",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=707005&extension=ts&play_token=VInh6d0tdk
-#EXTINF:-1 tvg-id="1290241" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?72698",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1290241&extension=ts&play_token=G1DmfeN4lc
-#EXTINF:-1 tvg-id="1167174" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKY SPORT TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167174&extension=ts&play_token=vEnEiDD6Vy
-#EXTINF:-1 tvg-id="621656" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12268.jpg?58725",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621656&extension=ts&play_token=RDBANRg24D
-#EXTINF:-1 tvg-id="1312176" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312176&extension=ts&play_token=tuQ1eVDmvi
-#EXTINF:-1 tvg-id="1312033" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312033&extension=ts&play_token=eljpimQPgn
-#EXTINF:-1 tvg-id="1167175" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKY SPORT TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167175&extension=ts&play_token=ByPAP197Bd
-#EXTINF:-1 tvg-id="707004" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12307.jpg?76030",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=707004&extension=ts&play_token=od6dzDORV7
-#EXTINF:-1 tvg-id="394549" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=394549&extension=ts&play_token=X4lnFKs8zQ
-#EXTINF:-1 tvg-id="1312049" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312049&extension=ts&play_token=zBuY6cywAA
-#EXTINF:-1 tvg-id="285218" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?22366",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285218&extension=ts&play_token=a2gQMKA6Do
-#EXTINF:-1 tvg-id="1312008" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS RAW DOLBY/SKY SPORTS MAIN.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312008&extension=ts&play_token=CRrRZ1h0R6
-#EXTINF:-1 tvg-id="686543" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686543&extension=ts&play_token=cZFdHb1Gzc
-#EXTINF:-1 tvg-id="706975" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12307.jpg?76030",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706975&extension=ts&play_token=BcKXEhZ5ny
-#EXTINF:-1 tvg-id="1290315" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?72698",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1290315&extension=ts&play_token=xOlsDP0jy7
-#EXTINF:-1 tvg-id="686547" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686547&extension=ts&play_token=QFLVSfRS2y
-#EXTINF:-1 tvg-id="42913" group-title="Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN5.png",09/04 04:00 PM | Monte-Carlo Masters (TSN5)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/42913
-#EXTINF:-1 tvg-id="348315" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyamainevent.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348315
-#EXTINF:-1 tvg-id="1312043" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312043&extension=ts&play_token=VewTY8bIAt
-#EXTINF:-1 tvg-id="310967" group-title="Live Tennis" tvg-logo="https://go4.pw/germany/sky_teniss2.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/310967
 #EXTINF:-1 tvg-id="1149459" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/GERMANY/SKY SPORT/SKY SPORT TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
 http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1149459&extension=ts&play_token=NgsRE1b6G5
-#EXTINF:-1 tvg-id="900938" group-title="Live Tennis" tvg-logo="https://go4.pw/ITALY/skysporttennis.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTINF:-1 tvg-id="1167175" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKY SPORT TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/900938
-#EXTINF:-1 tvg-id="1281430" group-title="Live Tennis" tvg-logo="https://go4.pw/VIP/4k_ultra.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167175&extension=ts&play_token=ByPAP197Bd
+#EXTINF:-1 tvg-id="1312049" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281430
-#EXTINF:-1 tvg-id="664451" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skysportste.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312049&extension=ts&play_token=zBuY6cywAA
+#EXTINF:-1 tvg-id="1312033" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/664451
-#EXTINF:-1 tvg-id="1281427" group-title="Live Tennis" tvg-logo="https://go4.pw/VIP/4k_ultra.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312033&extension=ts&play_token=eljpimQPgn
+#EXTINF:-1 tvg-id="1149433" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/GERMANY/SKY SPORT/SKY SPORT TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281427
-#EXTINF:-1 tvg-id="974991" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1149433&extension=ts&play_token=UkYeIEFTjB
+#EXTINF:-1 tvg-id="588046" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?31368",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974991
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=588046&extension=ts&play_token=Sw05A6pxOX
+#EXTINF:-1 tvg-id="1290306" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12307.jpg?31976",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1290306&extension=ts&play_token=Sc8qw7Hge1
+#EXTINF:-1 tvg-id="479817" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?ver=68923",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=479817&extension=ts&play_token=2ybU1krskO
+#EXTINF:-1 tvg-id="1312008" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS RAW DOLBY/SKY SPORTS MAIN.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312008&extension=ts&play_token=CRrRZ1h0R6
+#EXTINF:-1 tvg-id="394549" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=394549&extension=ts&play_token=X4lnFKs8zQ
+#EXTINF:-1 tvg-id="1312026" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312026&extension=ts&play_token=JiT8SW3qAv
+#EXTINF:-1 tvg-id="1312186" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312186&extension=ts&play_token=6ut4LEIEDx
+#EXTINF:-1 tvg-id="1290232" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12307.jpg?31976",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1290232&extension=ts&play_token=SVynRwGGgl
+#EXTINF:-1 tvg-id="285218" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?22366",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285218&extension=ts&play_token=a2gQMKA6Do
+#EXTINF:-1 tvg-id="588072" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?72698",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=588072&extension=ts&play_token=lzXOLqW7P8
+#EXTINF:-1 tvg-id="621656" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12268.jpg?58725",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621656&extension=ts&play_token=RDBANRg24D
 #EXTINF:-1 tvg-id="498032" group-title="Live Tennis" tvg-logo="https://go4.pw/germany/sky_teniss2.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/498032
-#EXTINF:-1 tvg-id="30353" group-title="Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN5.png",09/04 04:00 PM | Monte-Carlo Masters (TSN5)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/30353
-#EXTINF:-1 tvg-id="973137" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/973137
 #EXTINF:-1 tvg-id="365037" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyamainevent.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/365037
-#EXTINF:-1 tvg-id="1281426" group-title="Live Tennis" tvg-logo="https://go4.pw/VIP/4k_ultra.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTINF:-1 tvg-id="310967" group-title="Live Tennis" tvg-logo="https://go4.pw/germany/sky_teniss2.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281426
-#EXTINF:-1 tvg-id="974989" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/310967
+#EXTINF:-1 tvg-id="974991" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974989
-#EXTINF:-1 tvg-id="664452" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skysportste.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974991
+#EXTINF:-1 tvg-id="42913" group-title="Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN5.png",09/04 04:00 PM | Monte-Carlo Masters (TSN5)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/664452
-#EXTINF:-1 tvg-id="1312185" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312185&extension=ts&play_token=sfErxnaKFz
-#EXTINF:-1 tvg-id="1312028" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312028&extension=ts&play_token=izJa96deiE
-#EXTINF:-1 tvg-id="974999" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/42913
+#EXTINF:-1 tvg-id="1281427" group-title="Live Tennis" tvg-logo="https://go4.pw/VIP/4k_ultra.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974999
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281427
+#EXTINF:-1 tvg-id="348315" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyamainevent.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348315
+#EXTINF:-1 tvg-id="900938" group-title="Live Tennis" tvg-logo="https://go4.pw/ITALY/skysporttennis.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/900938
+#EXTINF:-1 tvg-id="973137" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/973137
+#EXTINF:-1 tvg-id="1281430" group-title="Live Tennis" tvg-logo="https://go4.pw/VIP/4k_ultra.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Main Event)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281430
+#EXTINF:-1 tvg-id="30353" group-title="Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN5.png",09/04 04:00 PM | Monte-Carlo Masters (TSN5)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/30353
 #EXTINF:-1 tvg-id="973139" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/973139
-#EXTINF:-1 tvg-id="870313" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=870313&extension=ts&play_token=vrsSkGZDo3
-#EXTINF:-1 tvg-id="49352" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 1.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTINF:-1 tvg-id="664452" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skysportste.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/49352
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/664452
+#EXTINF:-1 tvg-id="1281426" group-title="Live Tennis" tvg-logo="https://go4.pw/VIP/4k_ultra.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281426
+#EXTINF:-1 tvg-id="707005" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12307.jpg?76030",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=707005&extension=ts&play_token=VInh6d0tdk
+#EXTINF:-1 tvg-id="975021" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975021
+#EXTINF:-1 tvg-id="380131" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6440.png?35996",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A81B635984361DC3EFE589E3EC8F1D2C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=380131&extension=ts&play_token=1qwnblzi1N
+#EXTINF:-1 tvg-id="664451" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skysportste.png",09/04 07:00 PM | WTA Linz Open (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/664451
 #EXTINF:-1 tvg-id="1312050" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
 http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312050&extension=ts&play_token=t0YkxvDKbr
-#EXTINF:-1 tvg-id="974997" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTINF:-1 tvg-id="1312185" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312185&extension=ts&play_token=sfErxnaKFz
+#EXTINF:-1 tvg-id="870313" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=870313&extension=ts&play_token=vrsSkGZDo3
+#EXTINF:-1 tvg-id="974992" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974997
-#EXTINF:-1 tvg-id="772596" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 5.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/772596
-#EXTINF:-1 tvg-id="975007" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975007
-#EXTINF:-1 tvg-id="576857" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/AFC111.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/576857
-#EXTINF:-1 tvg-id="56580" group-title="Live Tennis" tvg-logo="https://go4.pw/EUROPE/FRANCE/BEIN_SPORTS_1.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/56580
-#EXTINF:-1 tvg-id="211992" group-title="Live Tennis" tvg-logo="https://go4.pw/EUROPE/FRANCE/SPORTS_MAX_10.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/211992
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974992
 #EXTINF:-1 tvg-id="39562" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/39562
-#EXTINF:-1 tvg-id="986973" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_1.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTINF:-1 tvg-id="49352" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 1.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986973
-#EXTINF:-1 tvg-id="974993" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/49352
+#EXTINF:-1 tvg-id="975004" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974993
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975004
+#EXTINF:-1 tvg-id="975009" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975009
+#EXTINF:-1 tvg-id="39559" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 1.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/39559
+#EXTINF:-1 tvg-id="39560" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 4.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/39560
+#EXTINF:-1 tvg-id="974990" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974990
+#EXTINF:-1 tvg-id="772596" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 5.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/772596
+#EXTINF:-1 tvg-id="271226" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_NBA.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/271226
+#EXTINF:-1 tvg-id="1312028" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312028&extension=ts&play_token=izJa96deiE
+#EXTINF:-1 tvg-id="552068" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/552068
+#EXTINF:-1 tvg-id="975014" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975014
+#EXTINF:-1 tvg-id="552074" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_5.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/552074
+#EXTINF:-1 tvg-id="331736" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/AFC111.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/331736
+#EXTINF:-1 tvg-id="975016" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975016
+#EXTINF:-1 tvg-id="552078" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_9.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/552078
+#EXTINF:-1 tvg-id="211992" group-title="Live Tennis" tvg-logo="https://go4.pw/EUROPE/FRANCE/SPORTS_MAX_10.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/211992
+#EXTINF:-1 tvg-id="418597" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_9.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/418597
+#EXTINF:-1 tvg-id="551272" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_1.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/551272
+#EXTINF:-1 tvg-id="975023" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975023
+#EXTINF:-1 tvg-id="551275" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_4.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/551275
 #EXTINF:-1 tvg-id="271227" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_NBA.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/271227
-#EXTINF:-1 tvg-id="974996" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTINF:-1 tvg-id="551278" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974996
-#EXTINF:-1 tvg-id="673514" group-title="Live Tennis" tvg-logo="https://go4.pw/bein/principal_bein.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/551278
+#EXTINF:-1 tvg-id="941422" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/673514
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941422&extension=ts&play_token=6AOJxnITww
+#EXTINF:-1 tvg-id="941421" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941421&extension=ts&play_token=cVXpttA4E8
 #EXTINF:-1 tvg-id="78139" group-title="Live Tennis" tvg-logo="https://go4.pw/bein/Bein_Sports_HD_3.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/78139
+#EXTINF:-1 tvg-id="941420" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941420&extension=ts&play_token=i4ZRKTzBHK
+#EXTINF:-1 tvg-id="988854" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988854&extension=ts&play_token=AhhR1lQYEo
+#EXTINF:-1 tvg-id="743" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=743&extension=ts&play_token=eYVbzHQili
+#EXTINF:-1 tvg-id="988863" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988863&extension=ts&play_token=vdKlEVwJwC
+#EXTINF:-1 tvg-id="988882" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988882&extension=ts&play_token=x29PTusGYd
+#EXTINF:-1 tvg-id="974989" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974989
+#EXTINF:-1 tvg-id="798773" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798773&extension=ts&play_token=qMFZ0ckizp
 #EXTINF:-1 tvg-id="988875" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
@@ -274,66 +364,16 @@ http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988875&ex
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
 http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988855&extension=ts&play_token=q5pmVxPMgG
-#EXTINF:-1 tvg-id="988863" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988863&extension=ts&play_token=vdKlEVwJwC
-#EXTINF:-1 tvg-id="941420" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941420&extension=ts&play_token=i4ZRKTzBHK
-#EXTINF:-1 tvg-id="988882" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988882&extension=ts&play_token=x29PTusGYd
-#EXTINF:-1 tvg-id="941421" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941421&extension=ts&play_token=cVXpttA4E8
-#EXTINF:-1 tvg-id="988854" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988854&extension=ts&play_token=AhhR1lQYEo
-#EXTINF:-1 tvg-id="242241" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=242241&extension=ts&play_token=RAiUzHq5cX
-#EXTINF:-1 tvg-id="941422" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941422&extension=ts&play_token=6AOJxnITww
-#EXTINF:-1 tvg-id="958742" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/AFRICA/CANAL+ AFRICA/BEIN SPORTS 2.png",09/04 11:00 PM | Karolina Pliskova vs Ekaterina Alexandrova (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 22B11F334DB005B3AB96A5169464B75E
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=958742&extension=ts&play_token=EuVq0J7B7x
-#EXTINF:-1 tvg-id="975020" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975020
-#EXTINF:-1 tvg-id="974994" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974994
 #EXTINF:-1 tvg-id="975006" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975006
-#EXTINF:-1 tvg-id="974990" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
+#EXTINF:-1 tvg-id="974998" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",09/04 07:00 PM | WTA Linz Open (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974990
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974998
 #EXTINF:-1 tvg-id="853546" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Canal+ Foot HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -344,51 +384,46 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/853546
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311116
-#EXTINF:-1 tvg-id="1026644" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/SPAIN/LALIGATVBAR.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (LaLiga TV Bar HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1026644
-#EXTINF:-1 tvg-id="54946" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/cosmotesport.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Cosmote Sport 2 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/54946
-#EXTINF:-1 tvg-id="311117" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Canal+ Foot HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311117
 #EXTINF:-1 tvg-id="1275731" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Polsat Sport Premium 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275731
+#EXTINF:-1 tvg-id="311117" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Canal+ Foot HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311117
 #EXTINF:-1 tvg-id="288868" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/SPAIN/LALIGATVBAR.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (LaLiga TV Bar HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/288868
+#EXTINF:-1 tvg-id="54946" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/cosmotesport.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Cosmote Sport 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/54946
+#EXTINF:-1 tvg-id="1026644" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/SPAIN/LALIGATVBAR.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (LaLiga TV Bar HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1026644
 #EXTINF:-1 tvg-id="1275732" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Polsat Sport Premium 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275732
-#EXTINF:-1 tvg-id="366309" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportcalcio.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Sky Sport Calcio HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/366309
 #EXTINF:-1 tvg-id="900937" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportcalcio.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Sky Sport Calcio HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/900937
-#EXTINF:-1 tvg-id="846015" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/UK/tntsports.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (TNT Sports 4 HD)
+#EXTINF:-1 tvg-id="366309" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportcalcio.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Sky Sport Calcio HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/846015
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/366309
 #EXTINF:-1 tvg-id="311555" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/UK/tntsports.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (TNT Sports 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -409,36 +444,16 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1034935
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/17281
-#EXTINF:-1 tvg-id="980407" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/UK/tntsports.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (TNT Sports 4)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/980407
 #EXTINF:-1 tvg-id="348297" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/UK/tntsports.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (TNT Sports 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348297
-#EXTINF:-1 tvg-id="348298" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/UK/tntsports.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (TNT Sports 4)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348298
 #EXTINF:-1 tvg-id="311557" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/UK/tntsports.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (TNT Sports 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311557
-#EXTINF:-1 tvg-id="980406" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/UK/tntsports.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (TNT Sports 4)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/980406
-#EXTINF:-1 tvg-id="1030401" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/germany/sky-sport-mix.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Sky Sport Mix)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1030401
 #EXTINF:-1 tvg-id="17279" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/UK/tntsports.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (TNT Sports 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -449,11 +464,6 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/17279
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/498002
-#EXTINF:-1 tvg-id="310971" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/germany/sky-sport-mix.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Sky Sport Mix)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/310971
 #EXTINF:-1 tvg-id="522547" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/BULGARIA/MAXSPORT.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (MAX Sport 3)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -484,6 +494,11 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275733
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275734
+#EXTINF:-1 tvg-id="310971" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/germany/sky-sport-mix.png",09/04 11:45 PM | Rayo Vallecano vs AEK Athens (Sky Sport Mix)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/310971
 #EXTINF:-1 tvg-id="54945" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/cosmotesport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Cosmote Sport 3 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -499,26 +514,26 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/366309
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/900937
-#EXTINF:-1 tvg-id="17281" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/17281
 #EXTINF:-1 tvg-id="348285" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/supersport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (SuperSport Football HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348285
-#EXTINF:-1 tvg-id="348297" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1 HD)
+#EXTINF:-1 tvg-id="17281" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348297
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/17281
 #EXTINF:-1 tvg-id="846012" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/846012
+#EXTINF:-1 tvg-id="348297" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348297
 #EXTINF:-1 tvg-id="1027861" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/Africa/vip.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (SuperSport Premier League)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -534,31 +549,31 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/39562
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/149614
-#EXTINF:-1 tvg-id="56654" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/BEIN_SPORTS_2.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/56654
 #EXTINF:-1 tvg-id="56579" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/BEIN_SPORTS_2.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/56579
+#EXTINF:-1 tvg-id="56654" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/BEIN_SPORTS_2.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/56654
 #EXTINF:-1 tvg-id="83132" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_2.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/83132
-#EXTINF:-1 tvg-id="986974" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_2.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986974
 #EXTINF:-1 tvg-id="213920" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/AMERICA/USA/CBS.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (CBS Sports Network)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/213920
+#EXTINF:-1 tvg-id="986974" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_2.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986974
 #EXTINF:-1 tvg-id="71938" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/AMERICA/USA/CBS.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (CBS Sports Network)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -574,11 +589,11 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/765626
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/67799
-#EXTINF:-1 tvg-id="1275731" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Polsat Sport Premium 1)
+#EXTINF:-1 tvg-id="1275732" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Polsat Sport Premium 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275731
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275732
 #EXTINF:-1 tvg-id="1275733" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Polsat Sport Premium 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -589,46 +604,26 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275733
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275734
-#EXTINF:-1 tvg-id="1275732" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Polsat Sport Premium 1)
+#EXTINF:-1 tvg-id="1275731" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Polsat Sport Premium 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275732
-#EXTINF:-1 tvg-id="980406" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/980406
-#EXTINF:-1 tvg-id="980407" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/980407
-#EXTINF:-1 tvg-id="348298" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348298
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275731
 #EXTINF:-1 tvg-id="17279" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/17279
-#EXTINF:-1 tvg-id="311555" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311555
 #EXTINF:-1 tvg-id="311557" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311557
-#EXTINF:-1 tvg-id="1034935" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/NEDERLAND/ziggosport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Ziggo Sport 3)
+#EXTINF:-1 tvg-id="311555" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1034935
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311555
 #EXTINF:-1 tvg-id="1069964" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/canal[1].png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Canal+ Live 5)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -639,6 +634,11 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1069964
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/324971
+#EXTINF:-1 tvg-id="1034935" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/NEDERLAND/ziggosport.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Ziggo Sport 3)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1034935
 #EXTINF:-1 tvg-id="324973" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (Cytavision Sports 4K 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -654,21 +654,16 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1086
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311116
-#EXTINF:-1 tvg-id="311117" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",10/04 02:00 AM | Bologna vs Aston Villa (Canal+ Foot HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311117
 #EXTINF:-1 tvg-id="853546" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",10/04 02:00 AM | Bologna vs Aston Villa (Canal+ Foot HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/853546
-#EXTINF:-1 tvg-id="49352" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
+#EXTINF:-1 tvg-id="311117" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",10/04 02:00 AM | Bologna vs Aston Villa (Canal+ Foot HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/49352
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311117
 #EXTINF:-1 tvg-id="39559" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -684,41 +679,51 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/149613
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/203885
-#EXTINF:-1 tvg-id="211992" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/SPORTS_MAX_10.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/211992
-#EXTINF:-1 tvg-id="56655" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/BEIN_SPORTS_1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/56655
 #EXTINF:-1 tvg-id="56580" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/BEIN_SPORTS_1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/56580
+#EXTINF:-1 tvg-id="980406" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/980406
 #EXTINF:-1 tvg-id="73354" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/73354
-#EXTINF:-1 tvg-id="986973" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
+#EXTINF:-1 tvg-id="56655" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/BEIN_SPORTS_1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986973
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/56655
 #EXTINF:-1 tvg-id="78137" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/bein/Bein_Sports_HD_1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/78137
-#EXTINF:-1 tvg-id="816230" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/BULGARIA/MAXSPORT.png",10/04 02:00 AM | Bologna vs Aston Villa (MAX Sport 3)
+#EXTINF:-1 tvg-id="211992" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/SPORTS_MAX_10.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/816230
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/211992
+#EXTINF:-1 tvg-id="980407" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/980407
+#EXTINF:-1 tvg-id="986973" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_1.png",10/04 02:00 AM | Bologna vs Aston Villa (beIN SPORTS 1)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986973
+#EXTINF:-1 tvg-id="348298" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | FC Porto vs Nottingham Forest (TNT Sports 1)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348298
 #EXTINF:-1 tvg-id="522547" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/BULGARIA/MAXSPORT.png",10/04 02:00 AM | Bologna vs Aston Villa (MAX Sport 3)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -729,16 +734,16 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/522547
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/76636
+#EXTINF:-1 tvg-id="816230" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/BULGARIA/MAXSPORT.png",10/04 02:00 AM | Bologna vs Aston Villa (MAX Sport 3)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/816230
 #EXTINF:-1 tvg-id="76675" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ITALY/skysportuno.png",10/04 02:00 AM | Bologna vs Aston Villa (Sky Sport Uno)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/76675
-#EXTINF:-1 tvg-id="324974" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | Bologna vs Aston Villa (Cytavision Sports 4K 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/324974
 #EXTINF:-1 tvg-id="324972" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | Bologna vs Aston Villa (Cytavision Sports 3HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -749,16 +754,21 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/324972
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/71936
-#EXTINF:-1 tvg-id="1059854" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EXYU/a.10.png",10/04 02:00 AM | Bologna vs Aston Villa (Arena Sport Premium 1)
+#EXTINF:-1 tvg-id="324974" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | Bologna vs Aston Villa (Cytavision Sports 4K 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1059854
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/324974
 #EXTINF:-1 tvg-id="907015" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/EXYU/EXYO/arena_sport_rs_1-1.png",10/04 02:00 AM | Bologna vs Aston Villa (Arena Sport Premium 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/907015
+#EXTINF:-1 tvg-id="1059854" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EXYU/a.10.png",10/04 02:00 AM | Bologna vs Aston Villa (Arena Sport Premium 1)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1059854
 #EXTINF:-1 tvg-id="985146" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EXYU/arena-sports(1).png",10/04 02:00 AM | Bologna vs Aston Villa (Arena Sport Premium 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -784,16 +794,16 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/497254
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1059855
-#EXTINF:-1 tvg-id="1059850" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EXYU/a-6.png",10/04 02:00 AM | Bologna vs Aston Villa (Arena Sport Premium 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1059850
 #EXTINF:-1 tvg-id="1059851" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EXYU/a.7.png",10/04 02:00 AM | Bologna vs Aston Villa (Arena Sport Premium 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1059851
+#EXTINF:-1 tvg-id="1059850" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EXYU/a-6.png",10/04 02:00 AM | Bologna vs Aston Villa (Arena Sport Premium 1)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1059850
 #EXTINF:-1 tvg-id="1059852" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EXYU/a.8.png",10/04 02:00 AM | Bologna vs Aston Villa (Arena Sport Premium 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -804,26 +814,21 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1059852
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1059853
-#EXTINF:-1 tvg-id="348288" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/supersport.png",10/04 02:00 AM | Freiburg vs Celta Vigo (SuperSport Variety 3 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348288
 #EXTINF:-1 tvg-id="288868" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/SPAIN/LALIGATVBAR.png",10/04 02:00 AM | Freiburg vs Celta Vigo (LaLiga TV Bar HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/288868
-#EXTINF:-1 tvg-id="348287" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/supersport.png",10/04 02:00 AM | Freiburg vs Celta Vigo (SuperSport Variety 3 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348287
 #EXTINF:-1 tvg-id="1026644" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/SPAIN/LALIGATVBAR.png",10/04 02:00 AM | Freiburg vs Celta Vigo (LaLiga TV Bar HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1026644
+#EXTINF:-1 tvg-id="846015" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/UK/tntsports.png",10/04 02:00 AM | Freiburg vs Celta Vigo (TNT Sports 4 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/846015
 #EXTINF:-1 tvg-id="772596" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 5.png",10/04 02:00 AM | Freiburg vs Celta Vigo (beIN SPORTS 5)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -859,36 +864,31 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/72387
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/220314
-#EXTINF:-1 tvg-id="1069963" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/canal[1].png",10/04 02:00 AM | Freiburg vs Celta Vigo (Canal+ Live 4)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1069963
 #EXTINF:-1 tvg-id="1019735" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/canal[1].png",10/04 02:00 AM | Freiburg vs Celta Vigo (Canal+ Live 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1019735
+#EXTINF:-1 tvg-id="1069963" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/canal[1].png",10/04 02:00 AM | Freiburg vs Celta Vigo (Canal+ Live 4)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1069963
 #EXTINF:-1 tvg-id="324968" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | Freiburg vs Celta Vigo (Cytavision Sports 7HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/324968
-#EXTINF:-1 tvg-id="1285444" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | Mainz 05 vs Strasbourg (Cytavision Sports 8HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1285444
 #EXTINF:-1 tvg-id="1019745" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/EUROPE/FRANCE/canal[1].png",10/04 02:00 AM | Freiburg vs Celta Vigo (Canal+ Live 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1019745
-#EXTINF:-1 tvg-id="76638" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportarena.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (Sky Sport Arena)
+#EXTINF:-1 tvg-id="1285444" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | Mainz 05 vs Strasbourg (Cytavision Sports 8HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/76638
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1285444
 #EXTINF:-1 tvg-id="1281083" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/VIP/4k_ultra.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (TNT Sports Ultimate UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -899,21 +899,26 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281083
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/76677
-#EXTINF:-1 tvg-id="324969" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (Cytavision Sports 6HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/324969
-#EXTINF:-1 tvg-id="348309" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportarena.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (Sky Sport Arena)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348309
 #EXTINF:-1 tvg-id="17291" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportarena.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (Sky Sport Arena)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/17291
+#EXTINF:-1 tvg-id="348309" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportarena.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (Sky Sport Arena)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348309
+#EXTINF:-1 tvg-id="324969" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/EUROPE/cytavision.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (Cytavision Sports 6HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/324969
+#EXTINF:-1 tvg-id="980426" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportarena.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (Sky Sport Arena)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/980426
 #EXTINF:-1 tvg-id="200924" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/USA/fubonet.png",10/04 02:00 AM | Nottingham Forest vs Porto (Fubo Sports)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -934,13 +939,3 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/140336
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1028371
-#EXTINF:-1 tvg-id="1027869" group-title="Live UEFA Europa League" tvg-logo="https://go4.pw/Africa/vip.png",10/04 02:00 AM | Freiburg vs Celta Vigo (SuperSport Variety 3 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1027869
-#EXTINF:-1 tvg-id="980426" group-title="Live UEFA Conference League" tvg-logo="https://go4.pw/ITALY/skysportarena.png",10/04 02:00 AM | Crystal Palace vs Fiorentina (Sky Sport Arena)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer EC1085A6B4B9EEB62889DEFA9D2B7414
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/980426
