@@ -3,7 +3,8 @@ footonsat_schedule_live.py
 ================================
 LẤY LỊCH TRỰC TIẾP TỪ footonsat-api VÀ Love4vn/Live-Schedue
 Tích hợp M3U với matching thông minh (tách mã quốc gia, hỗ trợ tên trận trong kênh)
-KIỂM TRA LINK STREAM VỚI HEADER ĐẦY ĐỦ (User-Agent, Cookie, Authorization)
+KIỂM TRA LINK STREAM VỚI HEADER ĐẶC BIỆT (EXTVLCOPT)
+XUẤT RA live_schedule.m3u
 """
 
 import asyncio
@@ -18,7 +19,6 @@ from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 from typing import List, Dict, Optional, Tuple
-import ssl
 
 # ================== CẤU HÌNH ==================
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
@@ -29,6 +29,7 @@ VALIDATION_CONCURRENT = 50
 VALIDATION_TIMEOUT = 5
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
+# ================== DANH SÁCH GIẢI ĐẤU ==================
 ALLOWED_FOOTBALL_LEAGUES = {
     "Premier League", "Serie A", "La Liga", "Bundesliga", "Ligue 1",
     "UEFA Champions League", "UEFA Europa League", "UEFA Europa Conference League",
@@ -69,6 +70,7 @@ LEAGUE_GROUP_NAME = {
     "International Friendly": "Live International Friendly"
 }
 
+# ================== MAPPING QUỐC GIA ==================
 COUNTRY_CODES = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
@@ -81,16 +83,19 @@ COUNTRY_NAME_TO_CODE = {
     "viet nam": "vn", "vietnam": "vn", "korea, republic of": "kr", "south korea": "kr",
     "japan": "jp", "china": "cn", "brazil": "br", "argentina": "ar", "mexico": "mx",
     "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
-    "serbia": "rs", "croatia": "hr", "slovenia": "si", "slovakia": "sk",
-    "france": "fr", "germany": "de", "italy": "it", "spain": "es", "portugal": "pt",
-    "netherlands": "nl", "belgium": "be", "switzerland": "ch", "austria": "at",
-    "sweden": "se", "norway": "no", "denmark": "dk", "finland": "fi", "poland": "pl",
-    "czechia": "cz", "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr",
-    "turkey": "tr", "israel": "il", "australia": "au", "canada": "ca", "new zealand": "nz",
-    "ireland": "ie", "indonesia": "id", "malaysia": "my", "singapore": "sg", "thailand": "th",
+    "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr", "slovenia": "si", "slovakia": "sk",
+    "france": "fr", "french": "fr", "germany": "de", "italy": "it", "spain": "es", "espana": "es",
+    "portugal": "pt", "netherlands": "nl", "nederland": "nl", "belgium": "be", "switzerland": "ch", "austria": "at",
+    "sweden": "se", "sverige": "se", "norway": "no", "norge": "no", "denmark": "dk", "danmark": "dk",
+    "finland": "fi", "suomi": "fi", "poland": "pl", "polska": "pl", "czechia": "cz", "czech": "cz",
+    "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr", "turkey": "tr", "türkiye": "tr",
+    "israel": "il", "australia": "au", "canada": "ca", "new zealand": "nz", "ireland": "ie",
+    "indonesia": "id", "malaysia": "my", "singapore": "sg", "thailand": "th",
     "egypt": "eg", "morocco": "ma", "algeria": "dz", "tunisia": "tn", "libya": "ly",
     "sudan": "sd", "ethiopia": "et", "kenya": "ke", "nigeria": "ng", "ghana": "gh",
-    "senegal": "sn", "côte d'ivoire": "ci", "cameroon": "cm", "angola": "ao"
+    "senegal": "sn", "côte d'ivoire": "ci", "cameroon": "cm", "angola": "ao",
+    "albania": "al", "great britain": "gb", "england": "gb", "scotland": "gb", "wales": "gb", "northern ireland": "gb",
+    "chile": "cl", "sur": "sr", "suriname": "sr"
 }
 
 FOOTONSAT_URLS = [
@@ -145,8 +150,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
-    # Loại bỏ các từ phổ biến
-    name = re.sub(r'\b(hd|uhd|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc)\b', '', name)
+    name = re.sub(r'\b(hd|uhd|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|fhd|full hd|ultra hd)\b', '', name)
     name = name.replace('plus', '+')
     name = name.replace(' and ', ' & ')
     name = re.sub(r'[^\w\s\+]', ' ', name)
@@ -157,47 +161,14 @@ def normalize_channel_name(name: str) -> str:
 def has_critical_mismatch(name1: str, name2: str) -> bool:
     n1_lower = name1.lower()
     n2_lower = name2.lower()
-    # Tránh nhầm beIN SPORTS 1 với beIN SPORTS MAX 10
-    if ("max" in n1_lower and "max" not in n2_lower and len(n2_lower) < 20) or \
-       ("max" in n2_lower and "max" not in n1_lower and len(n1_lower) < 20):
-        return True
-    if ("extra" in n1_lower and "extra" not in n2_lower) or ("extra" in n2_lower and "extra" not in n1_lower):
-        return True
-    if ("premium" in n1_lower and "premium" not in n2_lower) or ("premium" in n2_lower and "premium" not in n1_lower):
-        return True
-    # Tránh nhầm "main event" với "max"
     if ("main event" in n1_lower and "max" in n2_lower) or ("main event" in n2_lower and "max" in n1_lower):
         return True
-    return False
-
-def extract_team_names(match_name: str) -> List[str]:
-    """Trích xuất tên đội từ tên trận đấu (ví dụ 'Real Madrid vs FC Bayern München')"""
-    parts = re.split(r'\s+[vV][sS]\s+|\s+[-–]\s+', match_name)
-    if len(parts) >= 2:
-        return [parts[0].strip().lower(), parts[1].strip().lower()]
-    return []
-
-def channel_name_contains_match(channel_name: str, match_name: str) -> bool:
-    """Kiểm tra tên kênh (đã chuẩn hóa) có chứa tên trận đấu hoặc tên đội không."""
-    channel_norm = normalize_channel_name(channel_name)
-    match_norm = normalize(match_name)
-    # Nếu tên kênh chứa toàn bộ tên trận (sau khi loại bỏ dấu)
-    if match_norm in channel_norm:
+    if (re.search(r'\b1\b', n1_lower) and re.search(r'\b(max|extra|premium)\b', n2_lower)) or \
+       (re.search(r'\b1\b', n2_lower) and re.search(r'\b(max|extra|premium)\b', n1_lower)):
         return True
-    # Trích xuất tên đội
-    teams = extract_team_names(match_name)
-    if len(teams) == 2:
-        team1, team2 = teams
-        # Nếu tên kênh chứa cả hai đội (có thể viết tắt)
-        if team1 in channel_norm and team2 in channel_norm:
-            return True
-        # Nếu chỉ một đội nhưng đội kia có thể viết tắt? Ta coi như match nếu có ít nhất 1 đội và channel name dài
-        if (team1 in channel_norm or team2 in channel_norm) and len(channel_norm) > 10:
-            return True
     return False
 
-def is_channel_match(ch_name: str, m3u_name: str, league: str = None, match_name: str = None) -> bool:
-    """So khớp kênh, hỗ trợ thêm match dựa trên tên trận đấu."""
+def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     if not ch_name or not m3u_name:
         return False
     ch_code, ch_clean = extract_prefix_and_name(ch_name)
@@ -205,14 +176,6 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None, match_name
     ch_norm = normalize_channel_name(ch_clean)
     m3u_norm = normalize_channel_name(m3u_clean)
     threshold = 0.85 if league == "Tennis" else 0.95
-
-    # Nếu có match_name và tên kênh M3U chứa tên trận/đội thì match (ưu tiên)
-    if match_name and channel_name_contains_match(m3u_name, match_name):
-        # Kiểm tra thêm country code nếu có yêu cầu
-        if ch_code and m3u_code and ch_code != m3u_code:
-            return False
-        return True
-
     if ch_code and m3u_code:
         if ch_code != m3u_code:
             return False
@@ -232,20 +195,13 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None, match_name
             return False
         return similar(ch_norm, m3u_norm) >= threshold
 
-def is_channel_match_with_country(m3u_name: str, target_country_code: Optional[str], target_channel_name: str, league: str = None, match_name: str = None) -> bool:
+def is_channel_match_with_country(m3u_name: str, target_country_code: Optional[str], target_channel_name: str, league: str = None) -> bool:
     if not m3u_name or not target_channel_name:
         return False
     m3u_code, m3u_clean = extract_prefix_and_name(m3u_name)
     m3u_norm = normalize_channel_name(m3u_clean)
     target_norm = normalize_channel_name(target_channel_name)
     threshold = 0.85 if league == "Tennis" else 0.95
-
-    # Ưu tiên match theo tên trận
-    if match_name and channel_name_contains_match(m3u_name, match_name):
-        if target_country_code and m3u_code and m3u_code != target_country_code:
-            return False
-        return True
-
     if target_country_code:
         if not m3u_code or m3u_code != target_country_code:
             return False
@@ -274,20 +230,52 @@ def get_country_code_from_name(country_name: str) -> Optional[str]:
     for full_name, code in COUNTRY_NAME_TO_CODE.items():
         if full_name in name_clean or name_clean in full_name:
             return code
+    if "baltics" in name_clean:
+        return None
     return None
 
 def remove_country_from_channel_name(channel_name: str, country_name: str) -> str:
     if not country_name:
         return channel_name
     country_lower = country_name.lower().strip()
-    # Chỉ loại bỏ tên đầy đủ, không loại bỏ viết tắt
     pattern = re.compile(r'\b' + re.escape(country_lower) + r'\b', re.IGNORECASE)
     cleaned = pattern.sub('', channel_name).strip()
     cleaned = re.sub(r'\s+', ' ', cleaned)
     return cleaned
 
+def extract_match_from_m3u_name(m3u_name: str) -> Optional[str]:
+    """Trích xuất tên trận đấu từ tên kênh M3U"""
+    _, name = extract_prefix_and_name(m3u_name)
+    name = re.sub(r'\b(\d{1,2}:\d{2}\s*(?:AM|PM|CET|EST|UTC|GMT)?)\b', '', name, flags=re.I)
+    name = re.sub(r'\b(apr|may|jun|jul|aug|sep|oct|nov|dec)\s+\d{1,2}\b', '', name, flags=re.I)
+    name = re.sub(r'\b(?:today|tomorrow|yesterday)\b', '', name, flags=re.I)
+    name = re.sub(r'^(?:next\s*\|\s*|ao\s+vivo\s*:\s*)', '', name, flags=re.I)
+    name = re.sub(r'\s*(?:8k\s+exclusive|exclusive|ppv\s+\d+|hd|fhd|uhd|4k)\s*', ' ', name, flags=re.I)
+    name = re.sub(r'\s+', ' ', name).strip()
+    if len(name) < 5:
+        return None
+    return name
+
+def is_match_name_similar(match_name: str, m3u_name: str) -> bool:
+    extracted = extract_match_from_m3u_name(m3u_name)
+    if not extracted:
+        return False
+    match_norm = normalize(match_name)
+    extracted_norm = normalize(extracted)
+    match_clean = re.sub(r'\b(vs|v\.|versus)\b', ' ', match_norm)
+    extracted_clean = re.sub(r'\b(vs|v\.|versus)\b', ' ', extracted_norm)
+    if similar(match_clean, extracted_clean) >= 0.7:
+        return True
+    teams = re.split(r'\s+vs\s+|\s+v\.?\s+|\s+versus\s+', match_norm)
+    if len(teams) == 2:
+        team1, team2 = teams
+        if team1 in extracted_norm and team2 in extracted_norm:
+            return True
+    return False
+
+# ================== LỌC GIẢI ĐẤU ==================
 def is_tennis_allowed(match_name: str) -> bool:
-    return True  # Cho phép tất cả tennis
+    return True
 
 def is_football_allowed(league: str, match_name: str) -> bool:
     if league not in ALLOWED_FOOTBALL_LEAGUES:
@@ -416,7 +404,6 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
             if league == "Tennis":
                 if not match_name:
                     match_name = "Tennis match"
-                # Cho phép tất cả
             else:
                 if not is_football_allowed(league, match_name):
                     continue
@@ -493,7 +480,7 @@ def merge_games(games_list: List[Dict]) -> List[Dict]:
         used.add(i)
     return merged
 
-# ================== M3U PARSER (có lọc kênh ###) ==================
+# ================== M3U PARSER ==================
 def parse_m3u(content):
     channels = []
     current = {}
@@ -503,93 +490,75 @@ def parse_m3u(content):
         if not line:
             continue
         if line.startswith('#EXTINF'):
-            # Kiểm tra dòng #EXTINF có chứa ### không
-            if '###' in line:
-                current = {}
-                extra = []
-                continue
             if current.get('name') and current.get('url'):
                 if extra:
                     current['extra'] = extra[:]
                 channels.append(current)
             current = {}
             extra = []
+            if '###' in line:
+                current = None
+                continue
             params = re.findall(r'([a-zA-Z-]+)="([^"]*)"', line)
-            current['params'] = {k.lower(): v for k, v in params}
+            current = {'params': {k.lower(): v for k, v in params}}
             parts = line.split(',')
             if len(parts) > 1:
-                name = parts[-1].strip()
-                # Kiểm tra tên kênh có chứa ### không
-                if '###' in name:
-                    current = {}
-                    extra = []
-                    continue
-                current['name'] = name
+                current['name'] = parts[-1].strip()
             else:
                 current['name'] = "Unknown"
+            if '###' in current['name']:
+                current = None
+                continue
         elif line.startswith('http'):
-            if current:
+            if current and current.get('name'):
                 current['url'] = line
                 if extra:
                     current['extra'] = extra[:]
                 channels.append(current)
                 current = {}
                 extra = []
+        elif line.startswith('#EXTVLCOPT'):
+            if current:
+                extra.append(line)
         elif line.startswith('#'):
             extra.append(line)
-    if current.get('name') and current.get('url'):
-        if '###' not in current['name']:
-            if extra:
-                current['extra'] = extra[:]
-            channels.append(current)
+    if current and current.get('name') and current.get('url'):
+        if extra:
+            current['extra'] = extra[:]
+        channels.append(current)
     return channels
 
-# ================== STREAM VALIDATION VỚI HEADER ĐẦY ĐỦ ==================
+# ================== STREAM VALIDATION ==================
 def extract_headers_from_extra(extra_lines: List[str]) -> Dict:
-    """Trích xuất các header từ dòng #EXTVLCOPT"""
-    headers = {
-        "User-Agent": USER_AGENT,
-        "Accept": "video/*, application/vnd.apple.mpegurl, */*",
-        "Accept-Language": "en-US,en;q=0.9,vi;q=0.8"
-    }
-    cookie = None
-    auth = None
+    headers = {}
     for line in extra_lines:
         if line.startswith('#EXTVLCOPT:http-user-agent='):
             ua = line.split('=', 1)[1].strip()
-            headers["User-Agent"] = ua
+            headers['User-Agent'] = ua
         elif line.startswith('#EXTVLCOPT:http-cookie='):
             cookie = line.split('=', 1)[1].strip()
+            headers['Cookie'] = cookie
         elif line.startswith('#EXTVLCOPT:http-header=Authorization:'):
-            auth = line.split(':', 2)[2].strip()
-    if cookie:
-        headers["Cookie"] = cookie
-    if auth:
-        headers["Authorization"] = auth
+            auth = line.split(':', 1)[1].strip()
+            headers['Authorization'] = auth
     return headers
 
 def validate_url_sync(url: str, extra_headers: Dict = None) -> Tuple[bool, Optional[str]]:
     if url.startswith("udp://"):
         return True, None
-    # Blacklist
     url_lower = url.lower()
     if "cinehub24.com" in url_lower or url_lower.endswith(".mp4") or ".mp4?" in url_lower:
         return False, "Blacklisted"
     try:
-        headers = extra_headers if extra_headers else {}
-        # Ensure required headers
-        if "User-Agent" not in headers:
-            headers["User-Agent"] = USER_AGENT
-        if "Accept" not in headers:
-            headers["Accept"] = "video/*, application/vnd.apple.mpegurl, */*"
-        if "Accept-Language" not in headers:
-            headers["Accept-Language"] = "en-US,en;q=0.9,vi;q=0.8"
-        # Thêm Range để chỉ lấy đầu
-        headers["Range"] = "bytes=0-1024"
-        req = urllib.request.Request(url, headers=headers)
-        # Bỏ qua SSL verify cho gọn
-        context = ssl._create_unverified_context()
-        with urllib.request.urlopen(req, timeout=VALIDATION_TIMEOUT, context=context) as resp:
+        req = urllib.request.Request(url)
+        req.add_header('User-Agent', USER_AGENT)
+        req.add_header('Accept', 'video/*, application/vnd.apple.mpegurl, */*')
+        req.add_header('Accept-Language', 'en-US,en;q=0.9,vi;q=0.8')
+        req.add_header('Range', 'bytes=0-1024')
+        if extra_headers:
+            for k, v in extra_headers.items():
+                req.add_header(k, v)
+        with urllib.request.urlopen(req, timeout=VALIDATION_TIMEOUT) as resp:
             status = resp.getcode()
             body = resp.read(20000).decode('utf-8', errors='ignore')
             if status in (200, 206):
@@ -600,25 +569,22 @@ def validate_url_sync(url: str, extra_headers: Dict = None) -> Tuple[bool, Optio
                         return False, "Invalid HLS"
                 else:
                     if "<html" in body.lower() or "<body" in body.lower():
-                        # Kiểm tra lỗi
-                        if "401" in body or "unauthorized" in body.lower() or "access denied" in body.lower():
+                        if "401" in body or "unauthorized" in body.lower():
                             return False, "HTTP 401 Unauthorized"
-                        return False, "HTML page"
+                        if "access denied" in body.lower():
+                            return False, "Access Denied"
+                        return False, "HTML error"
                     else:
                         return True, None
             else:
-                # Lỗi status
-                if status == 401:
-                    return False, "HTTP 401 Unauthorized"
-                elif status == 403:
-                    return False, "HTTP 403 Forbidden"
-                else:
-                    return False, f"HTTP {status}"
+                return False, f"HTTP {status}"
     except urllib.error.HTTPError as e:
         if e.code == 401:
             return False, "HTTP 401 Unauthorized"
         elif e.code == 403:
             return False, "HTTP 403 Forbidden"
+        elif e.code == 404:
+            return False, "HTTP 404 Not Found"
         else:
             return False, f"HTTP {e.code}"
     except urllib.error.URLError as e:
@@ -637,9 +603,8 @@ def validate_events_batch(events: List[Dict]) -> List[Dict]:
     with ThreadPoolExecutor(max_workers=VALIDATION_CONCURRENT) as executor:
         future_to_event = {}
         for ev in events:
-            ch = ev['channel']
-            extra_headers = extract_headers_from_extra(ch.get('extra', [])) if 'extra' in ch else None
-            future = executor.submit(validate_url_sync, ch['url'], extra_headers)
+            extra_headers = extract_headers_from_extra(ev['channel'].get('extra', []))
+            future = executor.submit(validate_url_sync, ev['channel']['url'], extra_headers)
             future_to_event[future] = ev
         for future in as_completed(future_to_event):
             event = future_to_event[future]
@@ -650,7 +615,7 @@ def validate_events_batch(events: List[Dict]) -> List[Dict]:
                 else:
                     print(f"   ❌ Bỏ kênh: {event['name'][:80]} - {error}")
             except Exception as e:
-                print(f"   ❌ Bỏ kênh (lỗi ngoại lệ): {event['name'][:80]} - {str(e)}")
+                print(f"   ❌ Bỏ kênh (lỗi): {event['name'][:80]} - {str(e)}")
     print(f"   ✅ Kết thúc kiểm tra: {len(valid_events)}/{len(events)} luồng hợp lệ")
     return valid_events
 
@@ -695,7 +660,6 @@ async def main():
     for g in all_games:
         print(f"      {g['time']} | {g['league']} | {g['match']} (nguồn: {g.get('source','merged')})")
 
-    # Lọc trận chưa kết thúc quá 2h
     filtered = []
     for g in all_games:
         kick_vn = datetime.fromtimestamp(g['kick_utc']).astimezone(TIMEZONE)
@@ -708,7 +672,6 @@ async def main():
         print("⚠️ Không có trận nào sau lọc. Thoát.")
         return
 
-    # Tải M3U
     print("📥 Đang tải M3U...")
     m3u_links = []
     try:
@@ -747,12 +710,10 @@ async def main():
 
     unique_ch = list({ch['url']: ch for ch in all_ch if ch.get('url')}.values())
     print(f"   ✅ Đã tải {len(unique_ch)} kênh")
-
     print("   📺 50 kênh đầu tiên:")
     for i, ch in enumerate(unique_ch[:50]):
         print(f"      {i+1}. {ch['name']}")
 
-    # Matching
     print("🔄 Đang match kênh...")
     live_events = []
     for g in all_games:
@@ -769,12 +730,17 @@ async def main():
                 continue
             matching = []
             for ch in unique_ch:
+                matched = False
                 if target_country is not None:
-                    if is_channel_match_with_country(ch['name'], target_country, target_name, g['league'], g['match']):
-                        matching.append(ch)
+                    if is_channel_match_with_country(ch['name'], target_country, target_name, g['league']):
+                        matched = True
                 else:
-                    if is_channel_match(target_name, ch['name'], g['league'], g['match']):
-                        matching.append(ch)
+                    if is_channel_match(target_name, ch['name'], g['league']):
+                        matched = True
+                if not matched and is_match_name_similar(g['match'], ch['name']):
+                    matched = True
+                if matched:
+                    matching.append(ch)
             if matching:
                 print(f"   ✅ Match: {g['match']} - {target_name} (country={target_country}) -> {len(matching)} kênh")
             for ch in matching:
@@ -791,7 +757,6 @@ async def main():
                     "league": g["league"]
                 })
 
-    # Loại trùng
     seen = {}
     dedup = []
     for ev in live_events:
@@ -802,11 +767,9 @@ async def main():
     live_events = dedup
     live_events.sort(key=lambda x: x["datetime"])
 
-    # Kiểm tra luồng
     print(f"\n📊 Tổng số kênh sau khi match (chưa kiểm tra): {len(live_events)}")
     live_events = validate_events_batch(live_events)
 
-    # Ghi file
     with open(LIVE_M3U, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for ev in live_events:
