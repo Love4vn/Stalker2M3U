@@ -483,21 +483,22 @@ def merge_games(games_list: List[Dict]) -> List[Dict]:
 # ================== M3U PARSER ==================
 def parse_m3u(content):
     channels = []
-    current = {}
+    current = None
     extra = []
     for line in content.split('\n'):
         line = line.strip()
         if not line:
             continue
         if line.startswith('#EXTINF'):
-            if current.get('name') and current.get('url'):
+            # Lưu kênh trước đó nếu có
+            if current is not None and current.get('name') and current.get('url'):
                 if extra:
                     current['extra'] = extra[:]
                 channels.append(current)
-            current = {}
-            extra = []
+            # Khởi tạo current mới
             if '###' in line:
                 current = None
+                extra = []
                 continue
             params = re.findall(r'([a-zA-Z-]+)="([^"]*)"', line)
             current = {'params': {k.lower(): v for k, v in params}}
@@ -508,21 +509,24 @@ def parse_m3u(content):
                 current['name'] = "Unknown"
             if '###' in current['name']:
                 current = None
+                extra = []
                 continue
+            extra = []
         elif line.startswith('http'):
-            if current and current.get('name'):
+            if current is not None and current.get('name'):
                 current['url'] = line
                 if extra:
                     current['extra'] = extra[:]
                 channels.append(current)
-                current = {}
+                current = None
                 extra = []
         elif line.startswith('#EXTVLCOPT'):
-            if current:
+            if current is not None:
                 extra.append(line)
         elif line.startswith('#'):
             extra.append(line)
-    if current and current.get('name') and current.get('url'):
+    # Sau vòng lặp, nếu còn current chưa được lưu
+    if current is not None and current.get('name') and current.get('url'):
         if extra:
             current['extra'] = extra[:]
         channels.append(current)
