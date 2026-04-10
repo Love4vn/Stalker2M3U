@@ -84,8 +84,9 @@ COUNTRY_NAME_TO_CODE = {
     "japan": "jp", "china": "cn", "brazil": "br", "argentina": "ar", "mexico": "mx",
     "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
     "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr", "slovenia": "si", "slovakia": "sk",
-    "france": "fr", "french": "fr", "germany": "de", "italy": "it", "spain": "es", "espana": "es",
-    "portugal": "pt", "netherlands": "nl", "nederland": "nl", "belgium": "be", "switzerland": "ch", "austria": "at",
+    "france": "fr", "french": "fr", "germany": "de", "deutschland": "de", "italy": "it", "italia": "it",
+    "spain": "es", "espana": "es", "portugal": "pt", "netherlands": "nl", "nederland": "nl",
+    "belgium": "be", "belgie": "be", "switzerland": "ch", "austria": "at", "österreich": "at",
     "sweden": "se", "sverige": "se", "norway": "no", "norge": "no", "denmark": "dk", "danmark": "dk",
     "finland": "fi", "suomi": "fi", "poland": "pl", "polska": "pl", "czechia": "cz", "czech": "cz",
     "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr", "turkey": "tr", "türkiye": "tr",
@@ -242,6 +243,23 @@ def remove_country_from_channel_name(channel_name: str, country_name: str) -> st
     cleaned = pattern.sub('', channel_name).strip()
     cleaned = re.sub(r'\s+', ' ', cleaned)
     return cleaned
+
+def extract_country_from_channel_name(channel_name: str) -> Optional[str]:
+    """Trích xuất mã quốc gia từ tên kênh (ví dụ 'Srbija' -> 'rs')"""
+    name_lower = channel_name.lower()
+    # Ưu tiên tìm prefix
+    code, _ = extract_prefix_and_name(channel_name)
+    if code:
+        return code
+    # Tìm trong các từ
+    for word in name_lower.split():
+        if word in COUNTRY_NAME_TO_CODE:
+            return COUNTRY_NAME_TO_CODE[word]
+        # Xử lý trường hợp "france" trong "beIN Sports France 1 HD"
+        for key, val in COUNTRY_NAME_TO_CODE.items():
+            if key in word:
+                return val
+    return None
 
 def extract_match_from_m3u_name(m3u_name: str) -> Optional[str]:
     """Trích xuất tên trận đấu từ tên kênh M3U"""
@@ -418,9 +436,15 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
                     country_code = None
                     for ch_name in channels_list:
                         if ch_name:
+                            # Xử lý tên kênh: loại bỏ country_name nếu có (nhưng country_name là nguồn ảo, không phải tên nước)
+                            cleaned_name = ch_name
+                            # Thử tìm country code từ chính tên kênh
+                            inferred_code = extract_country_from_channel_name(cleaned_name)
+                            if inferred_code:
+                                country_code = inferred_code
                             channel_sources.append({
                                 "country_code": country_code,
-                                "channel_name": ch_name
+                                "channel_name": cleaned_name
                             })
                 else:
                     country_code = get_country_code_from_name(country_name)
@@ -428,6 +452,11 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
                         if not ch_name:
                             continue
                         cleaned_name = remove_country_from_channel_name(ch_name, country_name)
+                        # Nếu vẫn chưa có country_code, thử suy từ tên kênh
+                        if country_code is None:
+                            inferred_code = extract_country_from_channel_name(cleaned_name)
+                            if inferred_code:
+                                country_code = inferred_code
                         channel_sources.append({
                             "country_code": country_code,
                             "channel_name": cleaned_name
