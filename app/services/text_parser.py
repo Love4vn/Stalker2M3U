@@ -10,7 +10,10 @@ def extract_portal_mac_pairs(text: str) -> List[Tuple[str, str]]:
     """
     Extract portal URL and MAC address pairs from text.
 
-    Handles various formats including emojis, arrows, and labels.
+    Handles various formats including:
+    - Labeled: PORTAL : http://... MAC : 00:1A:...
+    - CSV: http://example.com/c/,00:1A:79:xx:xx:xx
+    - Space-separated: http://example.com/c/ 00:1A:79:xx:xx:xx
 
     Args:
         text: Text containing portal URLs and MAC addresses
@@ -18,10 +21,11 @@ def extract_portal_mac_pairs(text: str) -> List[Tuple[str, str]]:
     Returns:
         List of tuples (url, mac_address)
     """
+    pairs = []
+
+    # Pattern 1: Labeled format (PORTAL/MAC with separators)
     url_pattern = r"(?:PORTAL|Panel|Server|Host|URL|🛰|╭─•)\s*[:➤\- ]+\s*(https?://\S+)"
     mac_pattern = r"(?:MAC|Mac|ID|✅|├─•)\s*[:➤\- ]+\s*([0-9A-Fa-f:]{17}|(?:[0-9A-Fa-f]{2}[:-]){5}[0-9A-Fa-f]{2})"
-
-    pairs = []
 
     url_matches = list(re.finditer(url_pattern, text, re.IGNORECASE))
     mac_matches = list(re.finditer(mac_pattern, text, re.IGNORECASE))
@@ -59,18 +63,47 @@ def extract_portal_mac_pairs(text: str) -> List[Tuple[str, str]]:
                 if best_mac:
                     pairs.append((url, best_mac))
 
-    if not pairs:
-        generic_pattern = r"(https?://\S+)\s+((?:[0-9A-Fa-f]{2}[:-]){5}[0-9A-Fa-f]{2})"
-        generic_matches = re.findall(generic_pattern, text, re.IGNORECASE)
-        for u, m in generic_matches:
-            pairs.append((u.rstrip("/"), m.upper().replace("-", ":")))
+    # Pattern 2: CSV or space-separated on each line (supports comments)
+    lines = text.splitlines()
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith('#'):
+            continue
 
-    if not pairs:
-        urls = [m.group(1).rstrip("/") for m in url_matches]
-        macs = [m.group(1).upper().replace("-", ":") for m in mac_matches]
-        pairs = list(zip(urls, macs))
+        # Try CSV: URL,MAC
+        if ',' in line:
+            parts = line.split(',', 1)
+            if len(parts) == 2:
+                url_part = parts[0].strip()
+                mac_part = parts[1].strip()
+                if url_part.startswith('http') and re.match(r'^([0-9A-Fa-f]{2}[:-]?){5}[0-9A-Fa-f]{2}$', mac_part.replace(':', '')):
+                    mac_clean = mac_part.upper().replace('-', ':').replace(':', '')
+                    if len(mac_clean) == 12:
+                        mac_formatted = ':'.join(mac_clean[i:i+2] for i in range(0, 12, 2))
+                        pairs.append((url_part.rstrip('/'), mac_formatted))
 
-    return list(dict.fromkeys(pairs))
+        # Try space-separated: URL MAC
+        else:
+            parts = line.split()
+            if len(parts) >= 2:
+                url_part = parts[0]
+                mac_part = parts[1]
+                if url_part.startswith('http') and re.match(r'^([0-9A-Fa-f]{2}[:-]?){5}[0-9A-Fa-f]{2}$', mac_part.replace(':', '')):
+                    mac_clean = mac_part.upper().replace('-', ':').replace(':', '')
+                    if len(mac_clean) == 12:
+                        mac_formatted = ':'.join(mac_clean[i:i+2] for i in range(0, 12, 2))
+                        pairs.append((url_part.rstrip('/'), mac_formatted))
+
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_pairs = []
+    for url, mac in pairs:
+        key = f"{url}:{mac}"
+        if key not in seen:
+            seen.add(key)
+            unique_pairs.append((url, mac))
+
+    return unique_pairs
 
 
 def clean_stalker_url(raw_url: str, portal_url: Optional[str] = None) -> Optional[str]:
