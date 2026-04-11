@@ -2,7 +2,7 @@ name: STBcheck - Update IPTV Playlist
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # Mỗi 6 giờ
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -20,14 +20,21 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Generate M3U playlist
-        env:
-          PROXY_BASE_URL: ${{ secrets.PROXY_BASE_URL }}
+      - name: Generate M3U playlist (no proxy)
         run: |
-          #python generate_playlist.py --no-proxy
           python generate_playlist.py --no-proxy --input Mac_list.txt --output S_playlist.m3u
 
+      - name: Check if playlist was created
+        id: check_file
+        run: |
+          if [ -f S_playlist.m3u ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Commit updated playlist
+        if: steps.check_file.outputs.exists == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
