@@ -5,7 +5,7 @@ generate_playlist.py - Tạo M3U playlist từ danh sách Stalker portal trong M
 Sử dụng:
     python generate_playlist.py [--input Mac_list.txt] [--output S_playlist.m3u] 
                               [--proxy-base https://your-proxy.com] [--no-proxy]
-                              [--concurrency 5]
+                              [--concurrency 5] [--max-channels 2000]
 """
 
 import asyncio
@@ -16,7 +16,6 @@ from pathlib import Path
 from typing import List, Dict, Optional
 import argparse
 
-# Thêm thư mục hiện tại vào sys.path để import app
 sys.path.insert(0, str(Path(__file__).parent))
 
 from app.services.stalker_async import StalkerClient
@@ -32,10 +31,17 @@ logger = logging.getLogger(__name__)
 
 
 class M3UGenerator:
-    def __init__(self, proxy_base_url: Optional[str] = None, use_proxy: bool = True, concurrency: int = 5):
+    def __init__(
+        self,
+        proxy_base_url: Optional[str] = None,
+        use_proxy: bool = True,
+        concurrency: int = 5,
+        max_channels_per_portal: int = 2000
+    ):
         self.proxy_base = proxy_base_url.rstrip("/") if proxy_base_url else None
         self.use_proxy = use_proxy
         self.concurrency = concurrency
+        self.max_channels = max_channels_per_portal
         self.semaphore = asyncio.Semaphore(concurrency)
 
         if self.use_proxy and not self.proxy_base:
@@ -70,6 +76,11 @@ class M3UGenerator:
                     logger.warning(f"No channels found for {url}")
                     return None
 
+                # Giới hạn số kênh
+                if len(all_channels) > self.max_channels:
+                    logger.info(f"Limiting channels from {len(all_channels)} to {self.max_channels} for {url}")
+                    all_channels = all_channels[:self.max_channels]
+
                 # Lấy genres (không bắt buộc)
                 genres_raw = await client.get_genres() or await client.get_itv_groups()
                 genres = []
@@ -86,13 +97,17 @@ class M3UGenerator:
                         if gid:
                             genre_map[gid] = title
 
-                processed_channels = []
-                for ch in all_channels:
+                # Xử lý từng kênh song song
+                sem = asyncio.Semaphore(20)  # Giới hạn đồng thời tạo link
+
+                async def process_channel(ch: Dict) -> Optional[Dict]:
                     if not isinstance(ch, dict):
-                        continue
+                        return None
+                    cmd = ch.get("cmd", "")
+                    if not cmd:
+                        return None
 
                     name = ch.get("name", "Unknown")
-                    cmd = ch.get("cmd", "")
                     logo = ch.get("logo", "")
 
                     cat_id = "0"
@@ -103,9 +118,11 @@ class M3UGenerator:
                             break
                     group_title = genre_map.get(cat_id, "Uncategorized")
 
-                    stream_url = await self._build_stream_url(client, cmd, url, mac_norm)
+                    async with sem:
+                        stream_url = await self._build_stream_url(client, cmd, url, mac_norm)
+
                     if not stream_url:
-                        continue
+                        return None
 
                     logo_url = None
                     if logo and not logo.startswith("data:"):
@@ -120,14 +137,26 @@ class M3UGenerator:
                         else:
                             logo_url = logo
 
-                    processed_channels.append({
+                    return {
                         "name": name,
                         "stream_url": stream_url,
                         "logo": logo_url,
                         "group": group_title
-                    })
+                    }
 
-                logger.info(f"✅ {url}: {len(processed_channels)} channels, expiry: {expiry}")
+                tasks = [process_channel(ch) for ch in all_channels]
+                logger.info(f"Processing {len(tasks)} channels for {url}...")
+
+                results = await asyncio.gather(*tasks, return_exceptions=True)
+
+                processed_channels = []
+                for res in results:
+                    if isinstance(res, dict):
+                        processed_channels.append(res)
+                    elif isinstance(res, Exception):
+                        logger.debug(f"Channel processing error: {res}")
+
+                logger.info(f"✅ {url}: {len(processed_channels)} channels ready, expiry: {expiry}")
                 return {
                     "url": url,
                     "mac": mac_norm,
@@ -207,7 +236,8 @@ async def main():
     parser.add_argument("--output", default="S_playlist.m3u")
     parser.add_argument("--proxy-base", help="Base URL of the STBcheck proxy server")
     parser.add_argument("--no-proxy", action="store_true", help="Disable proxy streaming")
-    parser.add_argument("--concurrency", type=int, default=5)
+    parser.add_argument("--concurrency", type=int, default=5, help="Max concurrent portal checks")
+    parser.add_argument("--max-channels", type=int, default=2000, help="Max channels per portal")
     args = parser.parse_args()
 
     use_proxy = not args.no_proxy
@@ -217,7 +247,12 @@ async def main():
         logger.error("PROXY_BASE_URL is required when using proxy mode.")
         sys.exit(1)
 
-    generator = M3UGenerator(proxy_base_url=proxy_base, use_proxy=use_proxy, concurrency=args.concurrency)
+    generator = M3UGenerator(
+        proxy_base_url=proxy_base,
+        use_proxy=use_proxy,
+        concurrency=args.concurrency,
+        max_channels_per_portal=args.max_channels
+    )
     await generator.generate(Path(args.input), Path(args.output))
 
 
