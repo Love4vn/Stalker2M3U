@@ -5,11 +5,18 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+# Cấp quyền ghi cho GITHUB_TOKEN
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}   # Sử dụng token có quyền ghi
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,22 +29,12 @@ jobs:
 
       - name: Generate M3U playlist (no proxy)
         run: |
-          python generate_playlist.py --no-proxy --max-channels 2000 --input Mac_list.txt --output S_playlist.m3u
-
-      - name: Check if playlist was created
-        id: check_file
-        run: |
-          if [ -f S_playlist.m3u ]; then
-            echo "exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "exists=false" >> $GITHUB_OUTPUT
-          fi
+          python generate_playlist.py --no-proxy --input Mac_list.txt --output S_playlist.m3u
 
       - name: Commit updated playlist
-        if: steps.check_file.outputs.exists == 'true'
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add S_playlist.m3u
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update S_playlist.m3u $(date -u +'%Y-%m-%d %H:%M')"
+          git diff --staged --quiet || git commit -m "Auto-update S_playlist.m3u $(date -u +'%Y-%m-%d %H:%M')"
           git push
