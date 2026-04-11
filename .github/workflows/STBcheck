@@ -1,0 +1,36 @@
+name: STBcheck - Update IPTV Playlist
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # Mỗi 6 giờ
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Generate M3U playlist
+        env:
+          PROXY_BASE_URL: ${{ secrets.PROXY_BASE_URL }}
+        run: |
+          #python generate_playlist.py --no-proxy
+          python generate_playlist.py --no-proxy --input Mac_list.txt --output S_playlist.m3u
+
+      - name: Commit updated playlist
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add S_playlist.m3u
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update S_playlist.m3u $(date -u +'%Y-%m-%d %H:%M')"
+          git push
