@@ -24,8 +24,8 @@ jobs:
         env:
           PROXY_BASE_URL: ${{ secrets.PROXY_BASE_URL }}
         run: |
-          python generate_playlist.py --no-proxy
-          python generate_playlist.py --input Mac_list.txt --output S_playlist.m3u
+          #python generate_playlist.py --no-proxy
+          python generate_playlist.py --no-proxy --input Mac_list.txt --output S_playlist.m3u
 
       - name: Commit updated playlist
         run: |
