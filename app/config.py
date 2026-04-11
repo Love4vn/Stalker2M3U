@@ -7,22 +7,15 @@ from typing import List, Optional
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-class Settings(BaseSettings):
-    """Application settings with environment variable support.
 
-    All fields can be configured via environment variables.
-    Default values match the original hardcoded values for backward compatibility.
-    """
-    proxy_base_url: Optional[str] = Field(
-        default=None,
-        description="Base URL of the STBcheck proxy server (used in M3U generation)",
-        alias="PROXY_BASE_URL",
-    )
+class Settings(BaseSettings):
+    """Application settings with environment variable support."""
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
         case_sensitive=False,
-        extra="ignore",  # Allow extra env variables without errors
+        extra="ignore",
     )
 
     # =============================================================================
@@ -82,11 +75,6 @@ class Settings(BaseSettings):
     )
 
     def get_cors_origins_list(self) -> List[str]:
-        """Parse CORS_ORIGINS string into a list of origins.
-
-        Returns:
-            List of allowed origins, or ["*"] if set to wildcard.
-        """
         if self.cors_origins == "*":
             return ["*"]
         return [
@@ -140,7 +128,7 @@ class Settings(BaseSettings):
     # =============================================================================
     expiry_field_priority: List[str] = Field(
         default=[
-            "expire_billing_date",  # Stalker priority
+            "expire_billing_date",
             "expire_date",
             "exp_date",
             "max_view_date",
@@ -162,19 +150,128 @@ class Settings(BaseSettings):
         description="Ordered list of field names to check for expiry dates",
         alias="EXPIRY_FIELD_PRIORITY",
     )
-
     date_parsing_timezone: str = Field(
         default="UTC",
         description="Default timezone for date parsing",
         alias="DATE_PARSING_TIMEZONE",
     )
 
+    # =============================================================================
+    # SSL Verification
+    # =============================================================================
+    verify_ssl: bool = Field(
+        default=True,
+        description="Verify SSL certificates when making HTTPS requests",
+        alias="VERIFY_SSL",
+    )
+
+    # =============================================================================
+    # Logo Cache Configuration
+    # =============================================================================
+    logo_cache_maxsize: int = Field(
+        default=1000,
+        description="Maximum number of logo entries in memory cache",
+        alias="LOGO_CACHE_MAXSIZE",
+    )
+    logo_cache_ttl: int = Field(
+        default=300,  # 5 minutes
+        description="Time-to-live for cached logos (seconds)",
+        alias="LOGO_CACHE_TTL",
+    )
+    logo_chunk_size: int = Field(
+        default=8192,
+        description="Chunk size for streaming logo downloads",
+        alias="LOGO_CHUNK_SIZE",
+    )
+
+    # =============================================================================
+    # Stream Proxy Configuration
+    # =============================================================================
+    stream_chunk_size: int = Field(
+        default=65536,  # 64 KB
+        description="Chunk size for streaming video content",
+        alias="STREAM_CHUNK_SIZE",
+    )
     max_redirects: int = Field(
         default=10,
         description="Maximum number of redirects to follow when proxying streams",
         alias="MAX_REDIRECTS",
     )
+    stream_auth_cache_ttl: int = Field(
+        default=180,  # 3 minutes
+        description="TTL for cached stream authentication cookies (seconds)",
+        alias="STREAM_AUTH_CACHE_TTL",
+    )
+
+    # =============================================================================
+    # Circuit Breaker Configuration
+    # =============================================================================
+    circuit_breaker_threshold: int = Field(
+        default=3,
+        description="Number of consecutive failures before opening circuit",
+        alias="CIRCUIT_BREAKER_THRESHOLD",
+    )
+    circuit_breaker_duration: int = Field(
+        default=300,  # 5 minutes
+        description="How long circuit stays open (seconds)",
+        alias="CIRCUIT_BREAKER_DURATION",
+    )
+
+    # =============================================================================
+    # Rate Limiting Configuration
+    # =============================================================================
+    rate_limit_proxy_logo: str = Field(
+        default="60/minute",
+        description="Rate limit for proxy_logo endpoint",
+        alias="RATE_LIMIT_PROXY_LOGO",
+    )
+    rate_limit_stream_ops: str = Field(
+        default="30/minute",
+        description="Rate limit for stream operations (get_link, check_stream, proxy_stream)",
+        alias="RATE_LIMIT_STREAM_OPS",
+    )
+    rate_limit_portal_check: str = Field(
+        default="20/minute",
+        description="Rate limit for portal check endpoint",
+        alias="RATE_LIMIT_PORTAL_CHECK",
+    )
+
+    # =============================================================================
+    # Redis Configuration (Optional)
+    # =============================================================================
+    redis_url: Optional[str] = Field(
+        default=None,
+        description="Redis URL for shared cache (e.g., redis://localhost:6379/0)",
+        alias="REDIS_URL",
+    )
+
+    # =============================================================================
+    # Vercel Compatibility
+    # =============================================================================
+    vercel_compatible_mode: bool = Field(
+        default=False,
+        description="Enable reduced timeouts for Vercel serverless environment",
+        alias="VERCEL_COMPATIBLE_MODE",
+    )
+
+    # =============================================================================
+    # Proxy Base URL (for M3U generation)
+    # =============================================================================
+    proxy_base_url: Optional[str] = Field(
+        default=None,
+        description="Base URL of the STBcheck proxy server (used in M3U generation)",
+        alias="PROXY_BASE_URL",
+    )
+
+    # =============================================================================
+    # Default Timezone (for STB emulation)
+    # =============================================================================
+    default_timezone: str = Field(
+        default="Europe/London",
+        description="Default timezone string for STB emulation",
+        alias="DEFAULT_TIMEZONE",
+    )
 
 
-# Global settings instance - imported by other modules
+# Global settings instance
 settings = Settings()
