@@ -3,10 +3,9 @@ Configuration management for STBcheck app using Pydantic Settings.
 All configuration values can be set via environment variables.
 """
 
-from typing import List
+from typing import List, Optional
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
 
 class Settings(BaseSettings):
     """Application settings with environment variable support.
