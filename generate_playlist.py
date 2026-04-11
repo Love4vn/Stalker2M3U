@@ -6,9 +6,6 @@ Sử dụng:
     python generate_playlist.py [--input Mac_list.txt] [--output S_playlist.m3u] 
                               [--proxy-base https://your-proxy.com] [--no-proxy]
                               [--concurrency 5]
-
-Nếu không dùng proxy (--no-proxy), link stream sẽ là URL gốc. Bạn phải tự cấu hình
-ứng dụng IPTV để thêm các header: User-Agent, X-User-Agent, Referer, Cookie.
 """
 
 import asyncio
@@ -16,9 +13,10 @@ import base64
 import logging
 import sys
 from pathlib import Path
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional
 import argparse
 
+# Thêm thư mục hiện tại vào sys.path để import app
 sys.path.insert(0, str(Path(__file__).parent))
 
 from app.services.stalker_async import StalkerClient
@@ -72,7 +70,7 @@ class M3UGenerator:
                     logger.warning(f"No channels found for {url}")
                     return None
 
-                # Lấy genres để phân loại (tuỳ chọn)
+                # Lấy genres (không bắt buộc)
                 genres_raw = await client.get_genres() or await client.get_itv_groups()
                 genres = []
                 if isinstance(genres_raw, dict) and "data" in genres_raw:
@@ -97,7 +95,6 @@ class M3UGenerator:
                     cmd = ch.get("cmd", "")
                     logo = ch.get("logo", "")
 
-                    # Xác định group
                     cat_id = "0"
                     for key in ["tv_genre_id", "category_id", "genre_id", "group_id"]:
                         val = ch.get(key)
@@ -106,12 +103,10 @@ class M3UGenerator:
                             break
                     group_title = genre_map.get(cat_id, "Uncategorized")
 
-                    # Tạo stream link (proxy hoặc trực tiếp)
                     stream_url = await self._build_stream_url(client, cmd, url, mac_norm)
                     if not stream_url:
                         continue
 
-                    # Logo qua proxy nếu có proxy base và không phải data URI
                     logo_url = None
                     if logo and not logo.startswith("data:"):
                         if logo.startswith("/"):
@@ -123,7 +118,7 @@ class M3UGenerator:
                             logo_b64 = base64.b64encode(logo.encode()).decode()
                             logo_url = f"{self.proxy_base}/api/proxy_logo?target={logo_b64}"
                         else:
-                            logo_url = logo   # dùng trực tiếp (có thể bị chặn CORS)
+                            logo_url = logo
 
                     processed_channels.append({
                         "name": name,
@@ -145,11 +140,9 @@ class M3UGenerator:
                 return None
 
     async def _build_stream_url(self, client: StalkerClient, cmd: str, portal_url: str, mac: str) -> Optional[str]:
-        """Tạo URL stream cuối cùng (proxy hoặc trực tiếp)."""
         if not cmd:
             return None
 
-        # Nếu cmd đã là URL đầy đủ
         if cmd.startswith("http://") or cmd.startswith("https://"):
             stream_target = cmd
         else:
@@ -170,7 +163,6 @@ class M3UGenerator:
             origin_b64 = base64.b64encode(portal_url.encode()).decode()
             return f"{self.proxy_base}/api/proxy_stream?target={target_b64}&mac={mac}&origin={origin_b64}"
         else:
-            # Trả về link gốc – người dùng phải tự cấu hình header
             return clean_target
 
     async def generate(self, input_file: Path, output_file: Path):
@@ -186,10 +178,7 @@ class M3UGenerator:
 
         logger.info(f"Found {len(pairs)} pairs. Starting checks (concurrency={self.concurrency})...")
 
-        tasks = []
-        for url, mac in pairs:
-            tasks.append(self.process_portal(url, mac))
-
+        tasks = [self.process_portal(url, mac) for url, mac in pairs]
         results = []
         for coro in asyncio.as_completed(tasks):
             res = await coro
@@ -214,18 +203,18 @@ class M3UGenerator:
 
 async def main():
     parser = argparse.ArgumentParser(description="Generate M3U playlist from Stalker portals")
-    parser.add_argument("--input", default="Mac_list.txt", help="Input file with portal/MAC pairs")
-    parser.add_argument("--output", default="S_playlist.m3u", help="Output M3U file")
-    parser.add_argument("--proxy-base", help="Base URL of the STBcheck proxy server (required if --use-proxy)")
-    parser.add_argument("--no-proxy", action="store_true", help="Disable proxy streaming (use direct URLs)")
-    parser.add_argument("--concurrency", type=int, default=5, help="Max concurrent portal checks")
+    parser.add_argument("--input", default="Mac_list.txt")
+    parser.add_argument("--output", default="S_playlist.m3u")
+    parser.add_argument("--proxy-base", help="Base URL of the STBcheck proxy server")
+    parser.add_argument("--no-proxy", action="store_true", help="Disable proxy streaming")
+    parser.add_argument("--concurrency", type=int, default=5)
     args = parser.parse_args()
 
     use_proxy = not args.no_proxy
     proxy_base = args.proxy_base or getattr(settings, "proxy_base_url", None)
 
     if use_proxy and not proxy_base:
-        logger.error("PROXY_BASE_URL is required when using proxy mode. Set via --proxy-base or environment variable.")
+        logger.error("PROXY_BASE_URL is required when using proxy mode.")
         sys.exit(1)
 
     generator = M3UGenerator(proxy_base_url=proxy_base, use_proxy=use_proxy, concurrency=args.concurrency)
