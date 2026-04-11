@@ -14,7 +14,11 @@ class Settings(BaseSettings):
     All fields can be configured via environment variables.
     Default values match the original hardcoded values for backward compatibility.
     """
-
+    proxy_base_url: Optional[str] = Field(
+        default=None,
+        description="Base URL of the STBcheck proxy server (used in M3U generation)",
+        alias="PROXY_BASE_URL",
+    )
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
