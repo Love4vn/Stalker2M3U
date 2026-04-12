@@ -1,8 +1,8 @@
 name: STBcheck - Update IPTV Playlist
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'
+  #schedule:
+  #  - cron: '0 */6 * * *'
   workflow_dispatch:
 
 # Cấp quyền ghi cho GITHUB_TOKEN
