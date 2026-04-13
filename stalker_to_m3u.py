@@ -4,6 +4,7 @@ Stalker to M3U converter – Hoàn chỉnh
 - Đọc danh sách portal từ Mac_list.txt (url,mac)
 - Tự động handshake, lấy token, lấy danh sách kênh
 - Lọc kênh thể thao, loại bỏ kênh SD, loại trừ từ khóa (tên và group)
+- Sắp xếp kênh theo thứ tự ưu tiên: Anh → Mỹ → Úc → New Zealand → khác
 - Giữ nguyên group-title gốc, thêm tiền tố [tên_portal]
 - Thêm header #EXTVLCOPT (User-Agent, Cookie, Bearer token)
 - Xuất M3U playlist
@@ -21,7 +22,7 @@ from typing import Dict, List, Optional, Any, Tuple, Union
 import requests
 
 # ========== CẤU HÌNH ==========
-DETAILED_DEBUG = True   # Bật True để xem response chi tiết (hữu ích khi gỡ lỗi expiry)
+DETAILED_DEBUG = False   # Bật True để xem response chi tiết (hữu ích khi gỡ lỗi expiry)
 
 # ========== LỚP STALKER LITE ==========
 class StalkerLite:
@@ -379,7 +380,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
     # ========== TỪ KHÓA LỌC ==========
     SPORTS_KEYWORDS = [
         "sport", "sports", "football", "soccer", "tennis", "golf",
-        "motorsport", "formula 1", "f1", "hub premier", "premier league", "Paramount+", "tudn", "dazn", "rds 2", "prima play", "disney+ premium", "discovery+", "viaplay",
+        "motorsport", "formula 1", "f1", "hub premier", "premier league",
         "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
         "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
         "brentford", "brighton", "chelsea", "crystal palace", "everton", "fulham", "leeds united", "liverpool",
@@ -392,9 +393,26 @@ def generate_playlist(portals: List[Dict], output_file: str):
         "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
         "u23", "u21", "u19", "youth", "junior", "reserve", "mma",
         "second division", "liga 2", "serie b", "2. bundesliga", "championship", "national league", "replay", "film", "movie",
-        "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "pakistan", "saudi", "oman", "cinema", "entertainment", "horse", "hindi", "azam east africa", "burkina faso", "nigeria", "cineplay", "bangla", "philipine", "philippine", "caribbean", "caribbiean", "basket", "de efl", "scottish", "de gfl", "de chl", "de free", "de del", "costa rica", "uruguay", "venezuela", "fanduel sports network", "flo college", "flo football", "flow", "azam network", "som iptv", "bolivia", "colombia" "south korea", "ecuador", "comedy", "reality", "netflix on air", "oneplay", "abc 6", "milb", "nfhs", "24/7", "bbc iplayer", "cameroon", "chile", "jordan", "palestine", "andere", "cw (wpsg)", "flo sports", "flo ⱽᴵᴾ ppv", "PBS NETWORK", "bally", "cineplex", "PBS INDIANAPOLIS", "PBS NETWORK", "pluto", "SPECTRUM NETWORK"
+        "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse"
     ]
     SD_KEYWORDS = ["sd", "576p", "480p", "360p"]   # Loại bỏ kênh SD
+
+    def get_country_priority(channel_name: str, group_name: str) -> int:
+        """Trả về mức độ ưu tiên: 0 cao nhất (Anh), 1 (Mỹ), 2 (Úc), 3 (New Zealand), 4 (khác)"""
+        text = (channel_name + " " + group_name).lower()
+        # Anh
+        if any(kw in text for kw in ["uk", "england", "british", "bbc", "itv", "sky sports uk"]):
+            return 0
+        # Mỹ
+        if any(kw in text for kw in ["us", "usa", "america", "american", "espn", "nbc", "cbs", "abc", "fox sports"]):
+            return 1
+        # Úc
+        if any(kw in text for kw in ["australia", "aussie", "foxtel", "optus"]):
+            return 2
+        # New Zealand
+        if any(kw in text for kw in ["new zealand", "nz", "spark sport"]):
+            return 3
+        return 4
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
@@ -428,7 +446,10 @@ def generate_playlist(portals: List[Dict], output_file: str):
                     if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS) or any(kw.lower() in group_lower for kw in SPORTS_KEYWORDS):
                         sport_channels.append(ch)
 
-                print(f"  Sport channels (after filtering): {len(sport_channels)}")
+                # Sắp xếp kênh theo thứ tự ưu tiên quốc gia (Anh → Mỹ → Úc → New Zealand → khác)
+                sport_channels.sort(key=lambda ch: get_country_priority(ch.get("name", ""), ch.get("genre_name", "")))
+
+                print(f"  Sport channels (after filtering & sorting): {len(sport_channels)}")
                 for ch in sport_channels:
                     stream_url = stalker.create_link(ch.get("cmd", ""))
                     if not stream_url:
