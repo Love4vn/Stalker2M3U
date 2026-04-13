@@ -379,8 +379,8 @@ def generate_playlist(portals: List[Dict], output_file: str):
     """Tạo file M3U từ danh sách portal, sắp xếp toàn bộ kênh theo thứ tự ưu tiên quốc gia"""
     # ========== TỪ KHÓA LỌC ==========
     SPORTS_KEYWORDS = [
-        "sport", "sports", "football", "soccer", "tennis", "golf", tudn,
-        "motorsport", "formula 1", "f1", "hub premier", "premier league",
+        "sport", "sports", "football", "soccer", "tennis", "golf", "tudn", "telemundo", "usa network", "paramount+",
+        "motorsport", "formula 1", "f1", "hub premier", "premier league", "viaplay", "disney+ premium",
         "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
         "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
         "brentford", "brighton", "chelsea", "crystal palace", "everton", "fulham", "leeds united", "liverpool",
@@ -393,7 +393,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
         "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
         "u23", "u21", "u19", "youth", "junior", "reserve", "mma",
         "second division", "liga 2", "serie b", "2. bundesliga", "championship", "national league", "replay", "film", "movie",
-        "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse", cineplex, hindi
+        "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse", "hindi", "azam east africa", "burkina faso", "nigeria", "cineplay", "bangla", "philipine", "caribbean", "caribbiean", "basket", "de efl", "scottish", "de gfl", "de chl", "de free", "de del", "costa rica", "uruguay", "venezuela", "fanduel sports network", "flo college", "flo football", "flow", "azam network", "som iptv", "bolivia", "south korea", "ecuador", "comedy", "reality", "netflix on air", "oneplay", "abc 6", "milb", "nfhs", "24/7", "bbc iplayer", "cameroon", "chile", "jordan", "palestine", "andere", "cineplex"
     ]
     SD_KEYWORDS = ["sd", "576p", "480p", "360p"]
 
