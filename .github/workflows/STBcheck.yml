@@ -1,8 +1,8 @@
 name: Update Sports Playlist
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'   # Mỗi 6 giờ
+  #schedule:
+  #  - cron: '0 */6 * * *'   # Mỗi 6 giờ
   workflow_dispatch:
 
 permissions:
