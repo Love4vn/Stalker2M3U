@@ -4,7 +4,7 @@ Stalker to M3U converter – Hoàn chỉnh
 - Đọc danh sách portal từ Mac_list.txt (url,mac)
 - Tự động handshake, lấy token, lấy danh sách kênh
 - Lọc kênh thể thao, loại bỏ kênh SD, loại trừ từ khóa (tên và group)
-- Sắp xếp kênh theo thứ tự ưu tiên: Anh → Mỹ → Úc → New Zealand → khác
+- Sắp xếp toàn bộ kênh từ tất cả portal theo thứ tự ưu tiên: Anh → Mỹ → Úc → New Zealand → khác
 - Giữ nguyên group-title gốc, thêm tiền tố [tên_portal]
 - Thêm header #EXTVLCOPT (User-Agent, Cookie, Bearer token)
 - Xuất M3U playlist
@@ -376,10 +376,10 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
 
 
 def generate_playlist(portals: List[Dict], output_file: str):
-    """Tạo file M3U từ danh sách portal đã chọn"""
+    """Tạo file M3U từ danh sách portal, sắp xếp toàn bộ kênh theo thứ tự ưu tiên quốc gia"""
     # ========== TỪ KHÓA LỌC ==========
     SPORTS_KEYWORDS = [
-        "sport", "sports", "football", "soccer", "tennis", "golf",
+        "sport", "sports", "football", "soccer", "tennis", "golf", tudn,
         "motorsport", "formula 1", "f1", "hub premier", "premier league",
         "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
         "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
@@ -393,95 +393,109 @@ def generate_playlist(portals: List[Dict], output_file: str):
         "handball", "bóng ném", "hockey", "khúc côn cầu", "bóng bầu dục",
         "u23", "u21", "u19", "youth", "junior", "reserve", "mma",
         "second division", "liga 2", "serie b", "2. bundesliga", "championship", "national league", "replay", "film", "movie",
-        "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse"
+        "kurd", "iran", "iraq", "libya", "egypt", "peru", "afghanistan", "kuwait", "saudi", "oman", "cinema", "entertainment", "horse", cineplex, hindi
     ]
-    SD_KEYWORDS = ["sd", "576p", "480p", "360p"]   # Loại bỏ kênh SD
+    SD_KEYWORDS = ["sd", "576p", "480p", "360p"]
 
     def get_country_priority(channel_name: str, group_name: str) -> int:
-        """Trả về mức độ ưu tiên: 0 cao nhất (Anh), 1 (Mỹ), 2 (Úc), 3 (New Zealand), 4 (khác)"""
+        """Trả về mức độ ưu tiên: 0 (Anh), 1 (Mỹ), 2 (Úc), 3 (New Zealand), 4 (khác)"""
         text = (channel_name + " " + group_name).lower()
-        # Anh
         if any(kw in text for kw in ["uk", "england", "british", "bbc", "itv", "sky sports uk"]):
             return 0
-        # Mỹ
         if any(kw in text for kw in ["us", "usa", "america", "american", "espn", "nbc", "cbs", "abc", "fox sports"]):
             return 1
-        # Úc
         if any(kw in text for kw in ["australia", "aussie", "foxtel", "optus"]):
             return 2
-        # New Zealand
         if any(kw in text for kw in ["new zealand", "nz", "spark sport"]):
             return 3
         return 4
 
+    # Danh sách chứa tất cả kênh thể thao từ các portal
+    all_sport_items = []
+
+    for portal in portals:
+        print(f"Processing portal: {portal['url']}")
+        stalker = portal["stalker"]
+        mac = portal["mac"]
+        token = stalker.token
+        portal_short = portal['url'].replace('http://', '').replace('https://', '').split('/')[0].replace(':80', '')
+        try:
+            channels = stalker.get_channels()
+            print(f"  Total channels: {len(channels)}")
+            sport_channels = []
+            for ch in channels:
+                if not isinstance(ch, dict):
+                    continue
+                name = ch.get("name", "")
+                name_lower = name.lower()
+                group_lower = ch.get("genre_name", "").lower()
+
+                if any(kw.lower() in name_lower for kw in EXCLUDE_KEYWORDS) or any(kw.lower() in group_lower for kw in EXCLUDE_KEYWORDS):
+                    continue
+                if any(sd in name_lower for sd in SD_KEYWORDS):
+                    continue
+                if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS) or any(kw.lower() in group_lower for kw in SPORTS_KEYWORDS):
+                    sport_channels.append(ch)
+
+            print(f"  Sport channels (after filtering): {len(sport_channels)}")
+            for ch in sport_channels:
+                all_sport_items.append({
+                    "channel": ch,
+                    "stalker": stalker,
+                    "mac": mac,
+                    "token": token,
+                    "portal_short": portal_short
+                })
+        except Exception as e:
+            print(f"  Error while processing portal: {e}")
+
+    # Sắp xếp toàn bộ danh sách theo thứ tự ưu tiên quốc gia
+    all_sport_items.sort(key=lambda item: get_country_priority(
+        item["channel"].get("name", ""),
+        item["channel"].get("genre_name", "")
+    ))
+
+    # Ghi file M3U
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write(f"# Generated at {datetime.now().isoformat()}\n\n")
 
-        for portal in portals:
-            print(f"Processing portal: {portal['url']}")
-            stalker = portal["stalker"]
-            mac = portal["mac"]
-            token = stalker.token
-            # Rút gọn tên portal để làm tiền tố group-title
-            portal_short = portal['url'].replace('http://', '').replace('https://', '').split('/')[0].replace(':80', '')
-            try:
-                channels = stalker.get_channels()
-                print(f"  Total channels: {len(channels)}")
-                sport_channels = []
-                for ch in channels:
-                    if not isinstance(ch, dict):
-                        continue
-                    name = ch.get("name", "")
-                    name_lower = name.lower()
-                    group_lower = ch.get("genre_name", "").lower()
+        for item in all_sport_items:
+            ch = item["channel"]
+            stalker = item["stalker"]
+            mac = item["mac"]
+            token = item["token"]
+            portal_short = item["portal_short"]
 
-                    # Loại trừ theo từ khóa chung
-                    if any(kw.lower() in name_lower for kw in EXCLUDE_KEYWORDS) or any(kw.lower() in group_lower for kw in EXCLUDE_KEYWORDS):
-                        continue
-                    # Loại trừ kênh SD
-                    if any(sd in name_lower for sd in SD_KEYWORDS):
-                        continue
-                    # Chỉ giữ kênh thể thao
-                    if any(kw.lower() in name_lower for kw in SPORTS_KEYWORDS) or any(kw.lower() in group_lower for kw in SPORTS_KEYWORDS):
-                        sport_channels.append(ch)
+            stream_url = stalker.create_link(ch.get("cmd", ""))
+            if not stream_url:
+                print(f"    Failed to get stream URL for {ch.get('name')}")
+                continue
 
-                # Sắp xếp kênh theo thứ tự ưu tiên quốc gia (Anh → Mỹ → Úc → New Zealand → khác)
-                sport_channels.sort(key=lambda ch: get_country_priority(ch.get("name", ""), ch.get("genre_name", "")))
+            user_agent = "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3"
+            cookie = f"mac={mac}; stb_lang=en; timezone=GMT"
+            auth_header = f"Bearer {token}" if token else ""
 
-                print(f"  Sport channels (after filtering & sorting): {len(sport_channels)}")
-                for ch in sport_channels:
-                    stream_url = stalker.create_link(ch.get("cmd", ""))
-                    if not stream_url:
-                        print(f"    Failed to get stream URL for {ch.get('name')}")
-                        continue
+            def esc(s: str) -> str:
+                return s.replace('"', "&quot;")
 
-                    # Header cho stream
-                    user_agent = "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3"
-                    cookie = f"mac={mac}; stb_lang=en; timezone=GMT"
-                    auth_header = f"Bearer {token}" if token else ""
+            original_group = ch.get("genre_name", "General")
+            new_group = f"[{portal_short}] {original_group}"
 
-                    def esc(s: str) -> str:
-                        return s.replace('"', "&quot;")
+            f.write(
+                f'#EXTINF:-1 tvg-id="{esc(ch.get("id", ""))}" '
+                f'tvg-name="{esc(ch.get("name", ""))}" '
+                f'tvg-logo="{esc(ch.get("logo", ""))}" '
+                f'group-title="{esc(new_group)}" '
+                f'tvg-chno="{ch.get("number", 0)}",{esc(ch.get("name", ""))}\n'
+            )
+            f.write(f'#EXTVLCOPT:http-user-agent={user_agent}\n')
+            f.write(f'#EXTVLCOPT:http-cookie={cookie}\n')
+            if auth_header:
+                f.write(f'#EXTVLCOPT:http-header=Authorization: {auth_header}\n')
+            f.write(f"{stream_url}\n")
 
-                    # Group-title: giữ nguyên gốc, thêm tiền tố [tên_portal]
-                    original_group = ch.get("genre_name", "General")
-                    new_group = f"[{portal_short}] {original_group}"
-
-                    f.write(
-                        f'#EXTINF:-1 tvg-id="{esc(ch.get("id", ""))}" '
-                        f'tvg-name="{esc(ch.get("name", ""))}" '
-                        f'tvg-logo="{esc(ch.get("logo", ""))}" '
-                        f'group-title="{esc(new_group)}" '
-                        f'tvg-chno="{ch.get("number", 0)}",{esc(ch.get("name", ""))}\n'
-                    )
-                    f.write(f'#EXTVLCOPT:http-user-agent={user_agent}\n')
-                    f.write(f'#EXTVLCOPT:http-cookie={cookie}\n')
-                    if auth_header:
-                        f.write(f'#EXTVLCOPT:http-header=Authorization: {auth_header}\n')
-                    f.write(f"{stream_url}\n")
-            except Exception as e:
-                print(f"  Error while processing portal: {e}")
+    print(f"Total sport channels across all portals: {len(all_sport_items)}")
 
 
 # ========== MAIN ==========
