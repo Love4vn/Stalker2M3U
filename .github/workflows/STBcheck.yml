@@ -1,11 +1,10 @@
-name: STBcheck - Update IPTV Playlist
+name: Update Sports Playlist
 
 on:
-  #schedule:
-  #  - cron: '0 */6 * * *'
+  schedule:
+    - cron: '0 */6 * * *'   # Mỗi 6 giờ
   workflow_dispatch:
 
-# Cấp quyền ghi cho GITHUB_TOKEN
 permissions:
   contents: write
 
@@ -16,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}   # Sử dụng token có quyền ghi
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,9 +26,9 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Generate M3U playlist (no proxy)
+      - name: Generate M3U playlist (sports only, no proxy)
         run: |
-          python generate_playlist.py --no-proxy --input Mac_list.txt --output S_playlist.m3u
+          python generate_playlist.py --no-proxy --sports-only --input Mac_list.txt --output S_playlist.m3u --concurrency 10
 
       - name: Commit updated playlist
         run: |
