@@ -5,7 +5,7 @@ generate_playlist.py - Tạo M3U playlist từ danh sách Stalker portal trong M
 Sử dụng:
     python generate_playlist.py [--input Mac_list.txt] [--output S_playlist.m3u] 
                               [--proxy-base https://your-proxy.com] [--no-proxy]
-                              [--concurrency 5] [--max-channels 2000]
+                              [--concurrency 5] [--sports-only]
 """
 
 import asyncio
@@ -13,14 +13,14 @@ import base64
 import logging
 import sys
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Set
 import argparse
 
 sys.path.insert(0, str(Path(__file__).parent))
 
 from app.services.stalker_async import StalkerClient
 from app.services.text_parser import extract_portal_mac_pairs, clean_stalker_url
-from app.services.base import normalize_mac
+from app.services.base import normalize_mac, MAG200_USER_AGENT, MAG250_XUA
 from app.config import settings
 
 logging.basicConfig(
@@ -29,19 +29,28 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Từ khóa nhận diện kênh thể thao (không phân biệt hoa thường)
+SPORTS_KEYWORDS = [
+    "sport", "espn", "sky sports", "bt sport", "bein", "dazn", "nba", "nfl", "mlb",
+    "nhl", "premier league", "la liga", "serie a", "bundesliga", "champions league",
+    "europa league", "world cup", "tennis", "atp", "wta", "grand slam", "f1", "motogp",
+    "nascar", "ufc", "wwe", "boxing", "golf", "olympic", "thể thao", "bóng đá",
+    "vtc", "k+", "fox sports", "star sports", "arena sport", "sport tv"
+]
+
+def is_sports_channel(name: str, group: str) -> bool:
+    """Kiểm tra xem kênh có phải thể thao dựa trên tên hoặc nhóm."""
+    text = f"{name} {group}".lower()
+    return any(keyword in text for keyword in SPORTS_KEYWORDS)
+
 
 class M3UGenerator:
-    def __init__(
-        self,
-        proxy_base_url: Optional[str] = None,
-        use_proxy: bool = True,
-        concurrency: int = 5,
-        max_channels_per_portal: int = 2000
-    ):
+    def __init__(self, proxy_base_url: Optional[str] = None, use_proxy: bool = True,
+                 concurrency: int = 5, sports_only: bool = False):
         self.proxy_base = proxy_base_url.rstrip("/") if proxy_base_url else None
         self.use_proxy = use_proxy
         self.concurrency = concurrency
-        self.max_channels = max_channels_per_portal
+        self.sports_only = sports_only
         self.semaphore = asyncio.Semaphore(concurrency)
 
         if self.use_proxy and not self.proxy_base:
@@ -54,6 +63,20 @@ class M3UGenerator:
                 if not await client.handshake():
                     logger.warning(f"Handshake failed: {url} ({mac})")
                     return None
+
+                # Lấy token và cookies để dùng cho header khi không dùng proxy
+                portal_headers = {}
+                if not self.use_proxy:
+                    # Lấy token từ client (đã có sau handshake)
+                    token = client._token
+                    # Lấy cookie từ session cookie jar
+                    cookies = {}
+                    if client._session and client._session.cookie_jar:
+                        for cookie in client._session.cookie_jar:
+                            cookies[cookie.key] = cookie.value
+                    # Build header options
+                    portal_headers["token"] = token
+                    portal_headers["cookies"] = cookies
 
                 exp_info = await client.get_expiration_info()
                 expiry = exp_info.expiration or "Unlimited"
@@ -76,11 +99,6 @@ class M3UGenerator:
                     logger.warning(f"No channels found for {url}")
                     return None
 
-                # Giới hạn số kênh
-                if len(all_channels) > self.max_channels:
-                    logger.info(f"Limiting channels from {len(all_channels)} to {self.max_channels} for {url}")
-                    all_channels = all_channels[:self.max_channels]
-
                 # Lấy genres (không bắt buộc)
                 genres_raw = await client.get_genres() or await client.get_itv_groups()
                 genres = []
@@ -97,17 +115,13 @@ class M3UGenerator:
                         if gid:
                             genre_map[gid] = title
 
-                # Xử lý từng kênh song song
-                sem = asyncio.Semaphore(20)  # Giới hạn đồng thời tạo link
-
-                async def process_channel(ch: Dict) -> Optional[Dict]:
+                processed_channels = []
+                for ch in all_channels:
                     if not isinstance(ch, dict):
-                        return None
-                    cmd = ch.get("cmd", "")
-                    if not cmd:
-                        return None
+                        continue
 
-                    name = ch.get("name", "Unknown")
+                    name = str(ch.get("name", "Unknown")).strip()
+                    cmd = ch.get("cmd", "")
                     logo = ch.get("logo", "")
 
                     cat_id = "0"
@@ -118,11 +132,14 @@ class M3UGenerator:
                             break
                     group_title = genre_map.get(cat_id, "Uncategorized")
 
-                    async with sem:
-                        stream_url = await self._build_stream_url(client, cmd, url, mac_norm)
+                    # Lọc kênh thể thao nếu yêu cầu
+                    if self.sports_only and not is_sports_channel(name, group_title):
+                        continue
 
-                    if not stream_url:
-                        return None
+                    # Tạo stream link (proxy hoặc trực tiếp)
+                    stream_info = await self._build_stream_info(client, cmd, url, mac_norm, portal_headers)
+                    if not stream_info:
+                        continue
 
                     logo_url = None
                     if logo and not logo.startswith("data:"):
@@ -137,26 +154,15 @@ class M3UGenerator:
                         else:
                             logo_url = logo
 
-                    return {
+                    processed_channels.append({
                         "name": name,
-                        "stream_url": stream_url,
+                        "stream_url": stream_info["url"],
                         "logo": logo_url,
-                        "group": group_title
-                    }
+                        "group": group_title,
+                        "extvlc_opts": stream_info.get("extvlc_opts", [])
+                    })
 
-                tasks = [process_channel(ch) for ch in all_channels]
-                logger.info(f"Processing {len(tasks)} channels for {url}...")
-
-                results = await asyncio.gather(*tasks, return_exceptions=True)
-
-                processed_channels = []
-                for res in results:
-                    if isinstance(res, dict):
-                        processed_channels.append(res)
-                    elif isinstance(res, Exception):
-                        logger.debug(f"Channel processing error: {res}")
-
-                logger.info(f"✅ {url}: {len(processed_channels)} channels ready, expiry: {expiry}")
+                logger.info(f"✅ {url}: {len(processed_channels)} channels (filtered), expiry: {expiry}")
                 return {
                     "url": url,
                     "mac": mac_norm,
@@ -168,7 +174,11 @@ class M3UGenerator:
                 logger.error(f"Error processing {url}: {e}")
                 return None
 
-    async def _build_stream_url(self, client: StalkerClient, cmd: str, portal_url: str, mac: str) -> Optional[str]:
+    async def _build_stream_info(self, client: StalkerClient, cmd: str, portal_url: str,
+                                 mac: str, portal_headers: Dict) -> Optional[Dict]:
+        """
+        Trả về dict với 'url' và danh sách 'extvlc_opts' nếu không dùng proxy.
+        """
         if not cmd:
             return None
 
@@ -190,9 +200,31 @@ class M3UGenerator:
         if self.use_proxy:
             target_b64 = base64.b64encode(clean_target.encode()).decode()
             origin_b64 = base64.b64encode(portal_url.encode()).decode()
-            return f"{self.proxy_base}/api/proxy_stream?target={target_b64}&mac={mac}&origin={origin_b64}"
+            return {"url": f"{self.proxy_base}/api/proxy_stream?target={target_b64}&mac={mac}&origin={origin_b64}"}
         else:
-            return clean_target
+            # Xây dựng các EXTVLCOPT
+            extvlc_opts = []
+            # User-Agent
+            extvlc_opts.append(f"#EXTVLCOPT:http-user-agent={MAG200_USER_AGENT}")
+            # X-User-Agent (nếu cần, nhưng VLC có thể không hỗ trợ custom header khác)
+            # Ta có thể thêm bằng http-header (VLC 3.0+)
+            # X-User-Agent không bắt buộc, nhưng thêm vào cũng không sao
+            extvlc_opts.append(f"#EXTVLCOPT:http-header=X-User-Agent: {MAG250_XUA}")
+            # Cookie
+            cookie_parts = []
+            if portal_headers.get("cookies"):
+                for k, v in portal_headers["cookies"].items():
+                    cookie_parts.append(f"{k}={v}")
+            if cookie_parts:
+                cookie_str = "; ".join(cookie_parts)
+                extvlc_opts.append(f"#EXTVLCOPT:http-cookie={cookie_str}")
+            # Authorization
+            if portal_headers.get("token"):
+                extvlc_opts.append(f"#EXTVLCOPT:http-header=Authorization: Bearer {portal_headers['token']}")
+            # Referer
+            extvlc_opts.append(f"#EXTVLCOPT:http-referrer={portal_url.rstrip('/')}/")
+
+            return {"url": clean_target, "extvlc_opts": extvlc_opts}
 
     async def generate(self, input_file: Path, output_file: Path):
         if not input_file.exists():
@@ -214,7 +246,7 @@ class M3UGenerator:
             if res and res.get("channels"):
                 results.append(res)
 
-        logger.info(f"Successfully processed {len(results)} portals.")
+        logger.info(f"Successfully processed {len(results)} portals with channels.")
 
         if not results:
             logger.warning("No working portals with channels. M3U not created.")
@@ -224,7 +256,12 @@ class M3UGenerator:
             f.write("#EXTM3U\n")
             for portal in results:
                 for ch in portal["channels"]:
+                    # Dòng thông tin kênh
                     f.write(f'#EXTINF:-1 tvg-logo="{ch["logo"] or ""}" group-title="{ch["group"]}",{ch["name"]}\n')
+                    # Thêm các EXTVLCOPT nếu có
+                    if not self.use_proxy and ch.get("extvlc_opts"):
+                        for opt in ch["extvlc_opts"]:
+                            f.write(opt + "\n")
                     f.write(f"{ch['stream_url']}\n")
 
         logger.info(f"M3U playlist saved to {output_file}")
@@ -236,8 +273,8 @@ async def main():
     parser.add_argument("--output", default="S_playlist.m3u")
     parser.add_argument("--proxy-base", help="Base URL of the STBcheck proxy server")
     parser.add_argument("--no-proxy", action="store_true", help="Disable proxy streaming")
-    parser.add_argument("--concurrency", type=int, default=5, help="Max concurrent portal checks")
-    parser.add_argument("--max-channels", type=int, default=2000, help="Max channels per portal")
+    parser.add_argument("--concurrency", type=int, default=5)
+    parser.add_argument("--sports-only", action="store_true", help="Only include sports channels")
     args = parser.parse_args()
 
     use_proxy = not args.no_proxy
@@ -251,7 +288,7 @@ async def main():
         proxy_base_url=proxy_base,
         use_proxy=use_proxy,
         concurrency=args.concurrency,
-        max_channels_per_portal=args.max_channels
+        sports_only=args.sports_only
     )
     await generator.generate(Path(args.input), Path(args.output))
 
