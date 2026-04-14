@@ -1,5 +1,5 @@
 """
-footonsat_schedule_live.py - FIXED FOOTONSAT COUNTRY CODE
+footonsat_schedule_live.py - FULL MATCH (no optimization loss)
 """
 
 import asyncio
@@ -68,7 +68,7 @@ LEAGUE_GROUP_NAME = {
     "International Friendly": "Live International Friendly"
 }
 
-# ================== MAPPING QUỐC GIA ==================
+# ================== MAPPING QUỐC GIA MỞ RỘNG ==================
 COUNTRY_CODES = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
@@ -244,17 +244,12 @@ def remove_country_from_channel_name(channel_name: str, country_name: str) -> st
     return cleaned
 
 def extract_country_from_channel_name(channel_name: str) -> Optional[str]:
-    """Trích xuất mã quốc gia từ tên kênh (in debug)"""
     name_lower = channel_name.lower()
-    # Ưu tiên prefix
     code, _ = extract_prefix_and_name(channel_name)
     if code:
-        print(f"   DEBUG: Prefix '{code}' in '{channel_name}'")
         return code
-    # Tìm từ khóa
     for keyword, code in COUNTRY_NAME_TO_CODE.items():
         if keyword in name_lower:
-            print(f"   DEBUG: Found '{keyword}' -> '{code}' in '{channel_name}'")
             return code
     return None
 
@@ -303,7 +298,7 @@ def is_football_allowed(league: str, match_name: str) -> bool:
         return False
     return True
 
-# ================== FOOTONSAT API (ĐÃ SỬA) ==================
+# ================== FOOTONSAT API ==================
 def fetch_footonsat_json(url: str) -> Optional[dict]:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -478,7 +473,6 @@ def merge_games(games_list: List[Dict]) -> List[Dict]:
             if similar(base_match_norm, match_norm) < 0.8:
                 continue
             if 'channels' in base and 'channels' in other:
-                # Chuyển đổi nếu cần
                 if isinstance(base['channels'][0], str):
                     base['channels'] = [{"country_code": extract_country_from_channel_name(ch), "channel_name": ch} for ch in base['channels']]
                 if isinstance(other['channels'][0], str):
@@ -746,6 +740,7 @@ async def main():
             if not target_name:
                 continue
             matching = []
+            # Duyệt toàn bộ kênh M3U (không index, để đảm bảo match đầy đủ)
             for ch in unique_ch:
                 matched = False
                 if target_country is not None:
