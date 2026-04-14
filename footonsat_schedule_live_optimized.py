@@ -1,6 +1,7 @@
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 Cải tiến: Parallel M3U parsing, Faster string matching, Batch operations
++ Bổ sung log chi tiết quá trình match kênh
 """
 
 import asyncio
@@ -424,7 +425,8 @@ def validate_url_sync(url: str) -> Tuple[bool, Optional[str]]:
             if resp.getcode() not in (200, 206):
                 return False, f"HTTP {resp.getcode()}"
             
-            if url.includes('.m3u8'):
+            # FIX: use 'in' instead of .includes()
+            if '.m3u8' in url:
                 body = resp.read(5000).decode('utf-8', errors='ignore')
                 return "#EXTM3U" in body or "#EXTINF" in body, "Invalid HLS"
             
@@ -532,30 +534,58 @@ async def main():
     
     print(f"   ✅ {len(channels)} kênh")
     
-    # Match channels
-    print("🔄 Match kênh...")
+    # ================== MATCH CHANNELS WITH DETAILED LOG ==================
+    print("\n🔍 QUÁ TRÌNH MATCH KÊNH:")
     live_events = []
     used_urls = set()
-    
+    total_requested_channels = 0
+    total_matched_channels = 0
+
     for game in all_games:
-        for ch_info in game.get('channels', []):
+        league = game['league']
+        match_name = game['match']
+        kick_time = game['time']
+        kick_utc = game['kick_utc']
+
+        print(f"\n🏆 [{league}] {match_name} | {kick_time} (UTC {kick_utc})")
+
+        channels_from_json = game.get('channels', [])
+        if not channels_from_json:
+            print("   ⚠️  Không có kênh nào từ JSON")
+            continue
+
+        for ch_info in channels_from_json:
             target_name = ch_info.get('channel_name')
             if not target_name:
                 continue
-            
-            matching = [ch for ch in channels if is_channel_match(target_name, ch['name'], game['league'])]
-            
+
+            total_requested_channels += 1
+            print(f"   📡 Yêu cầu: {target_name}")
+
+            # Tìm kênh M3U khớp
+            matching = [ch for ch in channels if is_channel_match(target_name, ch['name'], league)]
+
             if matching:
-                ch = matching[0]
-                if ch['url'] not in used_urls:
-                    used_urls.add(ch['url'])
+                best_match = matching[0]
+                print(f"      ✅ Khớp với M3U: {best_match['name']}")
+
+                if best_match['url'] not in used_urls:
+                    used_urls.add(best_match['url'])
+                    total_matched_channels += 1
                     live_events.append({
-                        "datetime": datetime.fromtimestamp(game['kick_utc']).astimezone(TIMEZONE),
-                        "name": f"{game['time']} | {game['match']} ({ch['name']})",
-                        "channel": ch,
-                        "league": game["league"]
+                        "datetime": datetime.fromtimestamp(kick_utc).astimezone(TIMEZONE),
+                        "name": f"{kick_time} | {match_name} ({best_match['name']})",
+                        "channel": best_match,
+                        "league": league
                     })
-    
+                else:
+                    print("      ⚠️ URL đã dùng cho trận khác, bỏ qua")
+            else:
+                print("      ❌ Không tìm thấy kênh M3U phù hợp")
+
+    print(f"\n📊 TỔNG KẾT MATCH: {total_matched_channels}/{total_requested_channels} kênh khớp thành công")
+
+    # Sort events
     live_events.sort(key=lambda x: x["datetime"])
     
     # Validate
