@@ -1,9 +1,9 @@
 name: Update Live M3U
 
 on:
-  schedule:
+  #schedule:
     # Chạy mỗi 6 giờ một lần (UTC)
-    - cron: '0 */6 * * *'
+   # - cron: '0 */6 * * *'
   workflow_dispatch:   # Cho phép chạy thủ công
 
 permissions:
