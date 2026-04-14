@@ -54,28 +54,28 @@ ALLOWED_TEAMS_PER_LEAGUE = {
 }
 
 LEAGUE_GROUP_NAME = {
-    "Premier League": "⚽️Live Premier League🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "Serie A": "⚽️Live Serie A🇮🇹",
-    "Bundesliga": "⚽️Live Bundesliga🇩🇪",
-    "La Liga": "⚽️Live La Liga🇪🇸",
-    "Ligue 1": "⚽️Live Ligue 1🇨🇵",
-    "UEFA Champions League": "🏆Live UEFA Champions League",
+    "Premier League": "Live Premier League",
+    "Serie A": "Live Serie A",
+    "Bundesliga": "Live Bundesliga",
+    "La Liga": "Live La Liga",
+    "Ligue 1": "Live Ligue 1",
+    "UEFA Champions League": "Live UEFA Champions League",
     "UEFA Europa League": "Live UEFA Europa League",
     "UEFA Europa Conference League": "Live UEFA Conference League",
     "UEFA Euro": "Live Euro",
     "FA Cup": "Live FA, League Cup",
     "League Cup": "Live FA, League Cup",
-    "Tennis": "🎾Live Tennis",
+    "Tennis": "Live Tennis",
     "FIFA World Cup": "Live Fifa World Cup",
     "International Friendly": "Live International Friendly"
 }
 
-# ================== MAPPING QUỐC GIA ==================
+# ================== MAPPING QUỐC GIA MỞ RỘNG ==================
 COUNTRY_CODES = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
     "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn",
-    "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "ie"
+    "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "ie", "am"
 }
 
 COUNTRY_NAME_TO_CODE = {
@@ -88,7 +88,7 @@ COUNTRY_NAME_TO_CODE = {
     "spain": "es", "espana": "es", "portugal": "pt", "netherlands": "nl", "nederland": "nl",
     "belgium": "be", "belgie": "be", "switzerland": "ch", "austria": "at", "österreich": "at",
     "sweden": "se", "sverige": "se", "norway": "no", "norge": "no", "denmark": "dk", "danmark": "dk",
-    "finland": "fi", "suomi": "fi", "poland": "pl", "polska": "pl", "czechia": "cz", "czech": "cz",
+    "finland": "fi", "suomi": "fi", "poland": "pl", "polska": "pl", "czech republic": "cz", "czechia": "cz", "czech": "cz",
     "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr", "turkey": "tr", "türkiye": "tr",
     "israel": "il", "australia": "au", "canada": "ca", "new zealand": "nz", "ireland": "ie",
     "indonesia": "id", "malaysia": "my", "singapore": "sg", "thailand": "th",
@@ -96,7 +96,8 @@ COUNTRY_NAME_TO_CODE = {
     "sudan": "sd", "ethiopia": "et", "kenya": "ke", "nigeria": "ng", "ghana": "gh",
     "senegal": "sn", "côte d'ivoire": "ci", "cameroon": "cm", "angola": "ao",
     "albania": "al", "great britain": "gb", "england": "gb", "scotland": "gb", "wales": "gb", "northern ireland": "gb",
-    "chile": "cl", "sur": "sr", "suriname": "sr"
+    "chile": "cl", "sur": "sr", "suriname": "sr",
+    "armenia": "am", "georgia": "ge", "azerbaijan": "az", "kazakhstan": "kz"
 }
 
 FOOTONSAT_URLS = [
@@ -231,8 +232,6 @@ def get_country_code_from_name(country_name: str) -> Optional[str]:
     for full_name, code in COUNTRY_NAME_TO_CODE.items():
         if full_name in name_clean or name_clean in full_name:
             return code
-    if "baltics" in name_clean:
-        return None
     return None
 
 def remove_country_from_channel_name(channel_name: str, country_name: str) -> str:
@@ -245,22 +244,23 @@ def remove_country_from_channel_name(channel_name: str, country_name: str) -> st
     return cleaned
 
 def extract_country_from_channel_name(channel_name: str) -> Optional[str]:
+    """Trích xuất mã quốc gia từ tên kênh (ví dụ 'Srbija' -> 'rs')"""
     name_lower = channel_name.lower()
+    # Ưu tiên tìm prefix
     code, _ = extract_prefix_and_name(channel_name)
     if code:
         return code
-    for word in name_lower.split():
+    # Tìm trong các từ
+    words = name_lower.split()
+    for word in words:
         if word in COUNTRY_NAME_TO_CODE:
-            print(f"DEBUG: Found country {word} -> {COUNTRY_NAME_TO_CODE[word]} in {channel_name}")
             return COUNTRY_NAME_TO_CODE[word]
         for key, val in COUNTRY_NAME_TO_CODE.items():
             if key in word:
-                print(f"DEBUG: Found country {key} -> {val} in {channel_name}")
                 return val
     return None
 
 def extract_match_from_m3u_name(m3u_name: str) -> Optional[str]:
-    """Trích xuất tên trận đấu từ tên kênh M3U"""
     _, name = extract_prefix_and_name(m3u_name)
     name = re.sub(r'\b(\d{1,2}:\d{2}\s*(?:AM|PM|CET|EST|UTC|GMT)?)\b', '', name, flags=re.I)
     name = re.sub(r'\b(apr|may|jun|jul|aug|sep|oct|nov|dec)\s+\d{1,2}\b', '', name, flags=re.I)
@@ -431,28 +431,24 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
                 channels_list = entry.get("channels", [])
                 is_virtual_source = any(v in country_name.lower() for v in ["wheresthematch", "livesportsontv", "ausport"])
                 if is_virtual_source:
-                    # Nguồn ảo: không có country_name thật, suy từ tên kênh
                     for ch_name in channels_list:
                         if not ch_name:
                             continue
-                        # Lấy country code từ tên kênh
                         country_code = extract_country_from_channel_name(ch_name)
                         channel_sources.append({
                             "country_code": country_code,
                             "channel_name": ch_name
                         })
                 else:
-                    # Có country_name thật (ví dụ "United States")
                     country_code = get_country_code_from_name(country_name)
                     for ch_name in channels_list:
                         if not ch_name:
                             continue
                         cleaned_name = remove_country_from_channel_name(ch_name, country_name)
-                        # Nếu vẫn chưa có country_code, thử suy từ tên kênh đã clean
                         if country_code is None:
-                            inferred_code = extract_country_from_channel_name(cleaned_name)
-                            if inferred_code:
-                                country_code = inferred_code
+                            inferred = extract_country_from_channel_name(cleaned_name)
+                            if inferred:
+                                country_code = inferred
                         channel_sources.append({
                             "country_code": country_code,
                             "channel_name": cleaned_name
@@ -515,12 +511,10 @@ def parse_m3u(content):
         if not line:
             continue
         if line.startswith('#EXTINF'):
-            # Lưu kênh trước đó nếu có
             if current is not None and current.get('name') and current.get('url'):
                 if extra:
                     current['extra'] = extra[:]
                 channels.append(current)
-            # Khởi tạo current mới
             if '###' in line:
                 current = None
                 extra = []
@@ -550,7 +544,6 @@ def parse_m3u(content):
                 extra.append(line)
         elif line.startswith('#'):
             extra.append(line)
-    # Sau vòng lặp, nếu còn current chưa được lưu
     if current is not None and current.get('name') and current.get('url'):
         if extra:
             current['extra'] = extra[:]
