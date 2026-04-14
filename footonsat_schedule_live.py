@@ -1,5 +1,5 @@
 """
-footonsat_schedule_live.py - FULL MATCH (no optimization loss)
+footonsat_schedule_live.py - FINAL WITH UK/ENGLISH PRIORITY
 """
 
 import asyncio
@@ -740,7 +740,6 @@ async def main():
             if not target_name:
                 continue
             matching = []
-            # Duyệt toàn bộ kênh M3U (không index, để đảm bảo match đầy đủ)
             for ch in unique_ch:
                 matched = False
                 if target_country is not None:
@@ -754,14 +753,22 @@ async def main():
                 if matched:
                     matching.append(ch)
             if matching:
+                # Sắp xếp ưu tiên: UK/GB trước, sau đó English, rồi còn lại
+                def priority_key(ch):
+                    name_lower = ch['name'].lower()
+                    m3u_code, _ = extract_prefix_and_name(ch['name'])
+                    if m3u_code in ('uk', 'gb'):
+                        return (0, 0)
+                    if 'english' in name_lower:
+                        return (1, 0)
+                    return (2, 0)
+                matching.sort(key=priority_key)
                 print(f"   ✅ Match: {g['match']} - {target_name} (country={target_country}) -> {len(matching)} kênh")
             for ch in matching:
                 if ch['url'] in used_urls:
                     continue
                 used_urls.add(ch['url'])
-                display_name = f"{g['time']} | {g['match']}"
-                if target_name:
-                    display_name += f" ({target_name})"
+                display_name = f"{g['time']} | {g['match']} ({ch['name']})"
                 live_events.append({
                     "datetime": datetime.fromtimestamp(g['kick_utc']).astimezone(TIMEZONE),
                     "name": display_name,
