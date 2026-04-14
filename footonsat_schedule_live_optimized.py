@@ -5,7 +5,7 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
   + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
 - Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó).
-- Khớp country code nếu cả hai bên đều có.
+- Xử lý country code ở đầu hoặc cuối tên kênh, bắt buộc khớp nếu cả hai đều có.
 """
 
 import asyncio
@@ -38,7 +38,7 @@ SKIP_VALIDATION = "--skip-validation" in sys.argv
 M3U_FETCH_WORKERS = 40
 
 # ================== PRE-COMPILED PATTERNS ==================
-PATTERN_COUNTRY_CODE = [
+PATTERN_COUNTRY_CODE_PREFIX = [
     re.compile(r'^\|\s*([a-z]{2,3})\s*\|\s*', re.I),
     re.compile(r'^([a-z]{2,3})\:\s*', re.I),
     re.compile(r'^([a-z]{2,3})\s*-\s*', re.I),
@@ -46,6 +46,7 @@ PATTERN_COUNTRY_CODE = [
     re.compile(r'^\[([a-z]{2,3})\]\s*', re.I),
     re.compile(r'^\(([a-z]{2,3})\)\s*', re.I),
 ]
+PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
 PATTERN_QUALITY = re.compile(r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', re.I)
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
 
@@ -162,21 +163,37 @@ def similar(a: str, b: str) -> float:
     return 1 - (dp[-1] / max(len_a, len_b))
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
-    name_lower = name.lower()
-    for pat in PATTERN_COUNTRY_CODE:
+    """
+    Extract country code from beginning or end of the channel name.
+    Returns (country_code, cleaned_name_without_code).
+    """
+    name_lower = name.lower().strip()
+    
+    # 1. Check for country code at the beginning
+    for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
             code = m.group(1)
             if code in COUNTRY_CODES:
                 remaining = name_lower[m.end():].lstrip('|:-\\s ')
                 return code, remaining.strip()
+    
+    # 2. Check for country code at the end
+    m_suffix = PATTERN_COUNTRY_CODE_SUFFIX.search(name_lower)
+    if m_suffix:
+        code = m_suffix.group(1)
+        if code in COUNTRY_CODES:
+            remaining = name_lower[:m_suffix.start()].strip()
+            return code, remaining
+    
+    # No country code found
     cleaned = re.sub(r'^[\|\s\:\-]+', '', name_lower)
-    return None, cleaned
+    return None, cleaned.strip()
 
 def extract_channel_number(name: str) -> Optional[str]:
     """
     Extract the most relevant channel number.
-    Removes quality keywords (HD, FHD, 4K, etc.) first, then finds the last numeric token.
+    Removes quality keywords first, then finds the last numeric token.
     """
     name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd)\b', '', name, flags=re.I)
     name_clean = name_clean.strip()
@@ -202,7 +219,7 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     """
     Check if two channel names match.
     - Strict number matching: if target has a number, M3U MUST have the same number.
-    - Country code must match if present in both.
+    - Country code must match if present in both (and different).
     - Then compare normalized names with similarity threshold.
     """
     if not ch_name or not m3u_name:
@@ -219,7 +236,7 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
         if m3u_num is None or ch_num != m3u_num:
             return False
 
-    # Country code check
+    # Country code check: if both have a code, they must match
     if ch_code and m3u_code and ch_code != m3u_code:
         return False
 
@@ -549,7 +566,7 @@ async def main():
 
     print(f"   ✅ {len(channels)} kênh")
 
-    # Pre-compute M3U channel attributes for fast matching
+    # Pre-compute M3U channel attributes
     for ch in channels:
         code, clean = extract_prefix_and_name(ch['name'])
         ch['_code'] = code
@@ -557,11 +574,11 @@ async def main():
         ch['_norm'] = normalize_channel_name(clean)
         ch['_num'] = extract_channel_number(clean)
 
-    # ================== MATCH WITH DETAILED LOG ==================
+    # ================== MATCH ==================
     print("\n🔍 QUÁ TRÌNH MATCH KÊNH (giữ tất cả kênh khớp, chống trùng theo quy tắc):")
 
-    used_urls_per_match = defaultdict(set)   # key: match_key (league, match, kick_utc) hoặc "TENNIS_ALL"
-    used_urls_tennis = set()                 # riêng cho tennis để kiểm tra toàn cục
+    used_urls_per_match = defaultdict(set)
+    used_urls_tennis = set()
 
     live_events = []
     total_requested_channels = 0
@@ -593,15 +610,13 @@ async def main():
             total_requested_channels += 1
             print(f"   📡 Yêu cầu: {target_name}")
 
-            # Extract target attributes
             target_code, target_clean = extract_prefix_and_name(target_name)
             target_num = extract_channel_number(target_clean)
             target_norm = normalize_channel_name(target_clean)
 
-            # Find all matching M3U channels
             matching = []
             for ch in channels:
-                # Quick pre-filters (optimization)
+                # Pre-filters
                 if target_code and ch['_code'] and target_code != ch['_code']:
                     continue
                 if target_num is not None:
@@ -643,14 +658,11 @@ async def main():
 
     print(f"\n📊 TỔNG KẾT MATCH: {total_matched_entries} kênh được thêm từ {total_requested_channels} yêu cầu")
 
-    # Sort events by time
     live_events.sort(key=lambda x: x["datetime"])
 
-    # Validate URLs (unless skipped)
     if not SKIP_VALIDATION:
         live_events = await validate_events_batch(live_events)
 
-    # Write M3U output
     with open(LIVE_M3U, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for ev in live_events:
