@@ -1,5 +1,5 @@
 """
-footonsat_schedule_live.py - FINAL FIX
+footonsat_schedule_live.py - FIXED FOOTONSAT COUNTRY CODE
 """
 
 import asyncio
@@ -68,7 +68,7 @@ LEAGUE_GROUP_NAME = {
     "International Friendly": "Live International Friendly"
 }
 
-# ================== MAPPING QUỐC GIA MỞ RỘNG ==================
+# ================== MAPPING QUỐC GIA ==================
 COUNTRY_CODES = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
@@ -76,7 +76,6 @@ COUNTRY_CODES = {
     "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "ie", "am"
 }
 
-# MAPPING TỪ KHÓA -> MÃ QUỐC GIA (THÊM NHIỀU)
 COUNTRY_NAME_TO_CODE = {
     "united states": "us", "usa": "us", "uk": "uk", "united kingdom": "uk",
     "viet nam": "vn", "vietnam": "vn", "korea": "kr", "south korea": "kr",
@@ -244,13 +243,18 @@ def remove_country_from_channel_name(channel_name: str, country_name: str) -> st
     cleaned = re.sub(r'\s+', ' ', cleaned)
     return cleaned
 
-# HÀM TRÍCH XUẤT COUNTRY CODE TỪ TÊN KÊNH - ĐƠN GIẢN VÀ IN DEBUG
 def extract_country_from_channel_name(channel_name: str) -> Optional[str]:
+    """Trích xuất mã quốc gia từ tên kênh (in debug)"""
     name_lower = channel_name.lower()
-    # Duyệt tất cả các từ khóa
+    # Ưu tiên prefix
+    code, _ = extract_prefix_and_name(channel_name)
+    if code:
+        print(f"   DEBUG: Prefix '{code}' in '{channel_name}'")
+        return code
+    # Tìm từ khóa
     for keyword, code in COUNTRY_NAME_TO_CODE.items():
         if keyword in name_lower:
-            print(f"   DEBUG: Found '{keyword}' -> '{code}' in '{channel_name}'")  # In ra để kiểm tra
+            print(f"   DEBUG: Found '{keyword}' -> '{code}' in '{channel_name}'")
             return code
     return None
 
@@ -299,7 +303,7 @@ def is_football_allowed(league: str, match_name: str) -> bool:
         return False
     return True
 
-# ================== FOOTONSAT API ==================
+# ================== FOOTONSAT API (ĐÃ SỬA) ==================
 def fetch_footonsat_json(url: str) -> Optional[dict]:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -369,7 +373,11 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
                         ch_name = next_item.get("channel")
                         if ch_name:
                             ch_name = re.sub(r'[📺]', '', ch_name).strip()
-                            channels.append(ch_name)
+                            country_code = extract_country_from_channel_name(ch_name)
+                            channels.append({
+                                "country_code": country_code,
+                                "channel_name": ch_name
+                            })
                 j += 1
 
             if channels and is_football_allowed(league, match_name):
@@ -386,7 +394,7 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
             i += 1
     return games
 
-# ================== LOVE4VN API (ĐÃ SỬA LẦN CUỐI) ==================
+# ================== LOVE4VN API ==================
 def fetch_love4vn_json() -> Optional[dict]:
     try:
         req = urllib.request.Request(LOVE4VN_URL, headers={"User-Agent": USER_AGENT})
@@ -424,16 +432,13 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
                 country_name = entry.get("country", "")
                 channels_list = entry.get("channels", [])
                 is_virtual = any(v in country_name.lower() for v in ["wheresthematch", "livesportsontv", "ausport"])
-                # Lấy country code từ country_name nếu không phải nguồn ảo
                 base_code = None if is_virtual else get_country_code_from_name(country_name)
                 for ch_name in channels_list:
                     if not ch_name:
                         continue
                     final_code = base_code
                     if final_code is None:
-                        # Trích xuất từ tên kênh
                         final_code = extract_country_from_channel_name(ch_name)
-                    # Làm sạch tên kênh
                     if not is_virtual and country_name:
                         cleaned_name = remove_country_from_channel_name(ch_name, country_name)
                     else:
@@ -473,10 +478,11 @@ def merge_games(games_list: List[Dict]) -> List[Dict]:
             if similar(base_match_norm, match_norm) < 0.8:
                 continue
             if 'channels' in base and 'channels' in other:
-                if base.get('source') == 'footonsat' and isinstance(base['channels'][0], str):
-                    base['channels'] = [{"country_code": None, "channel_name": ch} for ch in base['channels']]
-                if other.get('source') == 'footonsat' and isinstance(other['channels'][0], str):
-                    other_channels = [{"country_code": None, "channel_name": ch} for ch in other['channels']]
+                # Chuyển đổi nếu cần
+                if isinstance(base['channels'][0], str):
+                    base['channels'] = [{"country_code": extract_country_from_channel_name(ch), "channel_name": ch} for ch in base['channels']]
+                if isinstance(other['channels'][0], str):
+                    other_channels = [{"country_code": extract_country_from_channel_name(ch), "channel_name": ch} for ch in other['channels']]
                 else:
                     other_channels = other['channels']
                 existing_keys = {(c['country_code'], c['channel_name']) for c in base['channels']}
