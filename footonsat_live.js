@@ -590,9 +590,23 @@ async function main() {
       const matching = channels.filter(ch => 
         isChannelMatch(targetName, ch.name, game.league)
       );
-      
+      // 🔍 Log chi tiết quá trình match
+console.log(`\n🎯 Tìm kênh cho: "${targetName}" (${game.league})`);
+
+const matching = channels.filter(ch => {
+  const isMatch = isChannelMatch(targetName, ch.name, game.league);
+  if (isMatch) {
+    console.log(`   ✅ Khớp: "${ch.name}"`);
+  }
+  return isMatch;
+});
+
+if (matching.length === 0) {
+  console.log(`   ❌ Không tìm thấy kênh phù hợp.`);
+}
       if (matching.length > 0) {
         const ch = matching[0];
+        console.log(`   📺 Chọn: "${ch.name}" (${ch.url.substring(0, 60)}...)`);
         if (!usedUrls.has(ch.url)) {
           usedUrls.add(ch.url);
           liveEvents.push({
