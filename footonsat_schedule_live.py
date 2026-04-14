@@ -206,6 +206,14 @@ def has_critical_mismatch(name1: str, name2: str) -> bool:
         return True
     return False
 
+def extract_number_suffix(name: str) -> Optional[str]:
+    """Trích xuất số ở cuối tên kênh (sau khi chuẩn hóa), ví dụ 'bein sports 1' -> '1', 'sky sports+' -> None"""
+    # Tìm số ở cuối (có thể có khoảng trắng)
+    match = re.search(r'\b(\d+)\s*$', name)
+    if match:
+        return match.group(1)
+    return None
+
 def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     if not ch_name or not m3u_name:
         return False
@@ -213,6 +221,18 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     m3u_code, m3u_clean = extract_prefix_and_name(m3u_name)
     ch_norm = normalize_channel_name(ch_clean)
     m3u_norm = normalize_channel_name(m3u_clean)
+    
+    # Kiểm tra số
+    ch_num = extract_number_suffix(ch_norm)
+    m3u_num = extract_number_suffix(m3u_norm)
+    if ch_num is not None and m3u_num is not None:
+        if ch_num != m3u_num:
+            return False
+    elif ch_num is not None and m3u_num is None:
+        return False
+    elif ch_num is None and m3u_num is not None:
+        return False
+    
     threshold = 0.85 if league == "Tennis" else 0.95
     if ch_code and m3u_code:
         if ch_code != m3u_code:
@@ -232,6 +252,44 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
         if has_critical_mismatch(ch_norm, m3u_norm):
             return False
         return similar(ch_norm, m3u_norm) >= threshold
+
+def is_channel_match_with_country(m3u_name: str, target_country_code: Optional[str], target_channel_name: str, league: str = None) -> bool:
+    if not m3u_name or not target_channel_name:
+        return False
+    m3u_code, m3u_clean = extract_prefix_and_name(m3u_name)
+    m3u_norm = normalize_channel_name(m3u_clean)
+    target_norm = normalize_channel_name(target_channel_name)
+    
+    # Kiểm tra số
+    target_num = extract_number_suffix(target_norm)
+    m3u_num = extract_number_suffix(m3u_norm)
+    if target_num is not None and m3u_num is not None:
+        if target_num != m3u_num:
+            return False
+    elif target_num is not None and m3u_num is None:
+        return False
+    elif target_num is None and m3u_num is not None:
+        return False
+    
+    threshold = 0.85 if league == "Tennis" else 0.95
+    if target_country_code:
+        if not m3u_code or m3u_code != target_country_code:
+            return False
+        if m3u_norm == target_norm:
+            return True
+        if len(m3u_norm) <= 3 or len(target_norm) <= 3:
+            return m3u_norm == target_norm
+        if has_critical_mismatch(m3u_norm, target_norm):
+            return False
+        return similar(m3u_norm, target_norm) >= 0.9
+    else:
+        if m3u_norm == target_norm:
+            return True
+        if len(m3u_norm) <= 3 or len(target_norm) <= 3:
+            return m3u_norm == target_norm
+        if has_critical_mismatch(m3u_norm, target_norm):
+            return False
+        return similar(m3u_norm, target_norm) >= threshold
 
 def is_channel_match_with_country(m3u_name: str, target_country_code: Optional[str], target_channel_name: str, league: str = None) -> bool:
     if not m3u_name or not target_channel_name:
