@@ -5,7 +5,8 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
   + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
 - Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó).
-- Xử lý country code ở đầu hoặc cuối tên kênh, bắt buộc khớp nếu cả hai đều có.
+- Xử lý country code ở đầu/cuối tên kênh, hỗ trợ chuyển đổi tên quốc gia sang mã.
+- Phân nhóm theo giải đấu với tên nhóm tùy chỉnh.
 """
 
 import asyncio
@@ -64,6 +65,30 @@ COUNTRY_CODES: Set[str] = {
     "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "am"
 }
 
+COUNTRY_NAME_TO_CODE = {
+    "united states": "us", "usa": "us", "uk": "uk", "united kingdom": "uk",
+    "viet nam": "vn", "vietnam": "vn", "korea": "kr", "south korea": "kr",
+    "japan": "jp", "china": "cn", "brazil": "br", "argentina": "ar", "mexico": "mx",
+    "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
+    "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr", "slovenia": "si", "slovakia": "sk",
+    "france": "fr", "french": "fr", "germany": "de", "deutsch": "de", "deutschland": "de",
+    "italy": "it", "italia": "it", "spain": "es", "espana": "es", "portugal": "pt",
+    "netherlands": "nl", "nederland": "nl", "belgium": "be", "belgie": "be",
+    "switzerland": "ch", "austria": "at", "österreich": "at",
+    "sweden": "se", "sverige": "se", "norway": "no", "norge": "no",
+    "denmark": "dk", "danmark": "dk", "finland": "fi", "suomi": "fi",
+    "poland": "pl", "polska": "pl", "czech": "cz", "czech republic": "cz", "czechia": "cz",
+    "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr",
+    "turkey": "tr", "türkiye": "tr", "israel": "il", "australia": "au",
+    "canada": "ca", "new zealand": "nz", "ireland": "ie",
+    "indonesia": "id", "malaysia": "my", "singapore": "sg", "thailand": "th",
+    "egypt": "eg", "morocco": "ma", "algeria": "dz", "tunisia": "tn", "libya": "ly",
+    "sudan": "sd", "ethiopia": "et", "kenya": "ke", "nigeria": "ng", "ghana": "gh",
+    "senegal": "sn", "côte d'ivoire": "ci", "cameroon": "cm", "angola": "ao",
+    "albania": "al", "great britain": "gb", "england": "gb", "scotland": "gb", "wales": "gb",
+    "chile": "cl", "suriname": "sr", "armenia": "am", "georgia": "ge", "azerbaijan": "az", "kazakhstan": "kz"
+}
+
 LEAGUE_MAPPING = {
     "english premier league": "Premier League",
     "serie a": "Serie A",
@@ -102,6 +127,24 @@ FOOTONSAT_URLS = [
 ]
 
 LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/schedule.json"
+
+# ================== GROUP TITLES ==================
+LEAGUE_GROUP_NAME = {
+    "Premier League": "⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League",
+    "Serie A": "⚽️🇮🇹|Live Serie A",
+    "Bundesliga": "⚽️🇩🇪|Live Bundesliga",
+    "La Liga": "⚽️🇪🇦|Live La Liga",
+    "Ligue 1": "⚽️🇨🇵|Live Ligue 1",
+    "UEFA Champions League": "Live UEFA Champions League",
+    "UEFA Europa League": "Live UEFA Europa League",
+    "UEFA Europa Conference League": "Live UEFA Conference League",
+    "UEFA Euro": "Live Euro",
+    "FA Cup": "Live FA, League Cup",
+    "League Cup": "Live FA, League Cup",
+    "Tennis": "🎾|Live Tennis",
+    "FIFA World Cup": "Live Fifa World Cup",
+    "International Friendly": "Live International Friendly"
+}
 
 # ================== CACHE ==================
 class CacheManager:
@@ -162,14 +205,22 @@ def similar(a: str, b: str) -> float:
 
     return 1 - (dp[-1] / max(len_a, len_b))
 
+def extract_country_code_from_name(name: str) -> Optional[str]:
+    """Try to find a country name in the string and return its code."""
+    name_lower = name.lower()
+    for country_name, code in COUNTRY_NAME_TO_CODE.items():
+        if country_name in name_lower:
+            return code
+    return None
+
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     """
-    Extract country code from beginning or end of the channel name.
+    Extract country code from beginning, end, or inside the channel name.
     Returns (country_code, cleaned_name_without_code).
     """
     name_lower = name.lower().strip()
     
-    # 1. Check for country code at the beginning
+    # 1. Check prefix patterns
     for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
@@ -178,13 +229,20 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
                 remaining = name_lower[m.end():].lstrip('|:-\\s ')
                 return code, remaining.strip()
     
-    # 2. Check for country code at the end
+    # 2. Check suffix pattern
     m_suffix = PATTERN_COUNTRY_CODE_SUFFIX.search(name_lower)
     if m_suffix:
         code = m_suffix.group(1)
         if code in COUNTRY_CODES:
             remaining = name_lower[:m_suffix.start()].strip()
             return code, remaining
+    
+    # 3. Try to extract country name and map to code
+    # We don't remove it from the name to avoid over-complication, just extract the code
+    code_from_name = extract_country_code_from_name(name_lower)
+    if code_from_name:
+        # We still return the original name unchanged because removing country name is ambiguous
+        return code_from_name, name_lower
     
     # No country code found
     cleaned = re.sub(r'^[\|\s\:\-]+', '', name_lower)
@@ -624,7 +682,11 @@ async def main():
                         continue
 
                 if is_channel_match(target_name, ch['name'], league):
-                    score = similar(ch['_norm'], target_norm)
+                    # Determine score
+                    if ch['_norm'] == target_norm:
+                        score = 1.0
+                    else:
+                        score = similar(ch['_norm'], target_norm)
                     matching.append((score, ch))
 
             if matching:
@@ -663,11 +725,14 @@ async def main():
     if not SKIP_VALIDATION:
         live_events = await validate_events_batch(live_events)
 
+    # Write M3U with proper group titles
     with open(LIVE_M3U, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for ev in live_events:
             ch = ev["channel"]
-            extinf = f'#EXTINF:-1 tvg-id="{ch["params"].get("tvg-id","")}" group-title="Live Football"'
+            league = ev["league"]
+            group = LEAGUE_GROUP_NAME.get(league, "Live Football")  # fallback
+            extinf = f'#EXTINF:-1 tvg-id="{ch["params"].get("tvg-id","")}" group-title="{group}"'
             if ch["params"].get("tvg-logo"):
                 extinf += f' tvg-logo="{ch["params"]["tvg-logo"]}"'
             extinf += f',{ev["name"]}'
