@@ -22,7 +22,7 @@ jobs:
           node-version: '20'
 
       - name: Run script
-        run: npm start
+        run: node footonsat_live.js
 
       - name: Commit updated files
         run: |
