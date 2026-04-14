@@ -1,5 +1,5 @@
 """
-footonsat_schedule_live.py - FINAL WITH UK/ENGLISH PRIORITY
+footonsat_schedule_live.py - OPTIMIZED VERSION
 """
 
 import asyncio
@@ -10,22 +10,27 @@ import urllib.request
 import urllib.error
 import time
 import sys
+import os
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 from typing import List, Dict, Optional, Tuple
+import hashlib
 
 # ================== CẤU HÌNH ==================
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 M3U_LIST_FILE = "M3U_list.txt"
 LIVE_M3U = "live_schedule.m3u"
+CACHE_FILE = ".m3u_cache.json"
+CACHE_EXPIRY = 3600  # 1 giờ
 
-VALIDATION_CONCURRENT = 50
-VALIDATION_TIMEOUT = 5
+VALIDATION_CONCURRENT = 25  # Giảm từ 50
+VALIDATION_TIMEOUT = 3      # Giảm từ 5
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 SKIP_VALIDATION = "--skip-validation" in sys.argv
+M3U_FETCH_WORKERS = 20  # Tăng từ 10 để tải M3U nhanh hơn
 
 # ================== DANH SÁCH GIẢI ĐẤU ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -113,14 +118,46 @@ FOOTONSAT_URLS = [
 
 LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/schedule.json"
 
+# ================== CACHING ==================
+class CacheManager:
+    @staticmethod
+    def get_cache() -> Optional[Dict]:
+        if os.path.exists(CACHE_FILE):
+            try:
+                with open(CACHE_FILE, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    if time.time() - data.get('timestamp', 0) < CACHE_EXPIRY:
+                        return data.get('channels', [])
+            except:
+                pass
+        return None
+    
+    @staticmethod
+    def save_cache(channels: List[Dict]):
+        try:
+            with open(CACHE_FILE, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'timestamp': time.time(),
+                    'channels': channels
+                }, f)
+        except:
+            pass
+
 # ================== HELPER ==================
+_normalize_cache = {}
+
 def is_low_resolution(name: str) -> bool:
     n = name.lower()
     return any(x in n for x in ["sd", "360p", "480p", "576p", "low res", "low quality"])
 
 def normalize(s: str) -> str:
-    s = unicodedata.normalize("NFD", s.lower())
-    return " ".join(c for c in s if unicodedata.category(c) != "Mn")
+    if s in _normalize_cache:
+        return _normalize_cache[s]
+    s_lower = s.lower()
+    s_nfd = unicodedata.normalize("NFD", s_lower)
+    result = " ".join(c for c in s_nfd if unicodedata.category(c) != "Mn")
+    _normalize_cache[s] = result
+    return result
 
 def vn_time(timestamp: int) -> str:
     dt = datetime.fromtimestamp(timestamp, tz=ZoneInfo("UTC")).astimezone(TIMEZONE)
@@ -152,9 +189,8 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
-    name = re.sub(r'\b(hd|uhd|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|fhd|full hd|ultra hd)\b', '', name)
-    name = name.replace('plus', '+')
-    name = name.replace(' and ', ' & ')
+    name = re.sub(r'\b(hd|uhd|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', '', name)
+    name = name.replace('plus', '+').replace(' and ', ' & ')
     name = re.sub(r'[^\w\s\+]', ' ', name)
     name = ' '.join(name.split())
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
@@ -283,9 +319,6 @@ def is_match_name_similar(match_name: str, m3u_name: str) -> bool:
     return False
 
 # ================== LỌC GIẢI ĐẤU ==================
-def is_tennis_allowed(match_name: str) -> bool:
-    return True
-
 def is_football_allowed(league: str, match_name: str) -> bool:
     if league not in ALLOWED_FOOTBALL_LEAGUES:
         return False
@@ -302,7 +335,7 @@ def is_football_allowed(league: str, match_name: str) -> bool:
 def fetch_footonsat_json(url: str) -> Optional[dict]:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=15) as r:
+        with urllib.request.urlopen(req, timeout=10) as r:
             return json.loads(r.read().decode('utf-8'))
     except Exception as e:
         print(f"   Lỗi tải {url}: {e}")
@@ -393,7 +426,7 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
 def fetch_love4vn_json() -> Optional[dict]:
     try:
         req = urllib.request.Request(LOVE4VN_URL, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=15) as r:
+        with urllib.request.urlopen(req, timeout=10) as r:
             return json.loads(r.read().decode('utf-8'))
     except Exception as e:
         print(f"   Lỗi tải Love4VN: {e}")
@@ -549,9 +582,6 @@ def extract_headers_from_extra(extra_lines: List[str]) -> Dict:
         elif line.startswith('#EXTVLCOPT:http-cookie='):
             cookie = line.split('=', 1)[1].strip()
             headers['Cookie'] = cookie
-        elif line.startswith('#EXTVLCOPT:http-header=Authorization:'):
-            auth = line.split(':', 1)[1].strip()
-            headers['Authorization'] = auth
     return headers
 
 def validate_url_sync(url: str, extra_headers: Dict = None) -> Tuple[bool, Optional[str]]:
@@ -564,7 +594,6 @@ def validate_url_sync(url: str, extra_headers: Dict = None) -> Tuple[bool, Optio
         req = urllib.request.Request(url)
         req.add_header('User-Agent', USER_AGENT)
         req.add_header('Accept', 'video/*, application/vnd.apple.mpegurl, */*')
-        req.add_header('Accept-Language', 'en-US,en;q=0.9,vi;q=0.8')
         req.add_header('Range', 'bytes=0-1024')
         if extra_headers:
             for k, v in extra_headers.items():
@@ -581,7 +610,7 @@ def validate_url_sync(url: str, extra_headers: Dict = None) -> Tuple[bool, Optio
                 else:
                     if "<html" in body.lower() or "<body" in body.lower():
                         if "401" in body or "unauthorized" in body.lower():
-                            return False, "HTTP 401 Unauthorized"
+                            return False, "HTTP 401"
                         if "access denied" in body.lower():
                             return False, "Access Denied"
                         return False, "HTML error"
@@ -590,21 +619,11 @@ def validate_url_sync(url: str, extra_headers: Dict = None) -> Tuple[bool, Optio
             else:
                 return False, f"HTTP {status}"
     except urllib.error.HTTPError as e:
-        if e.code == 401:
-            return False, "HTTP 401 Unauthorized"
-        elif e.code == 403:
-            return False, "HTTP 403 Forbidden"
-        elif e.code == 404:
-            return False, "HTTP 404 Not Found"
-        else:
-            return False, f"HTTP {e.code}"
+        return False, f"HTTP {e.code}"
     except urllib.error.URLError as e:
-        if isinstance(e.reason, TimeoutError):
-            return False, "Timeout"
-        else:
-            return False, f"URL error: {str(e.reason)}"
+        return False, "URL error"
     except Exception as e:
-        return False, f"Error: {str(e)}"
+        return False, "Timeout/Error"
 
 def validate_events_batch(events: List[Dict]) -> List[Dict]:
     if not events:
@@ -623,14 +642,21 @@ def validate_events_batch(events: List[Dict]) -> List[Dict]:
                 is_valid, error = future.result()
                 if is_valid:
                     valid_events.append(event)
-                else:
-                    print(f"   ❌ Bỏ kênh: {event['name'][:80]} - {error}")
-            except Exception as e:
-                print(f"   ❌ Bỏ kênh (lỗi): {event['name'][:80]} - {str(e)}")
+            except Exception:
+                pass
     print(f"   ✅ Kết thúc kiểm tra: {len(valid_events)}/{len(events)} luồng hợp lệ")
     return valid_events
 
 # ================== MAIN ==================
+async def fetch_api_parallel(url: str, is_json: bool = True) -> Optional[dict]:
+    """Tải API theo async (nhưng dùng sync urllib vì khó convert)"""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            return json.loads(r.read().decode('utf-8'))
+    except Exception:
+        return None
+
 async def main():
     start = time.time()
     vn_now = datetime.now(TIMEZONE)
@@ -642,11 +668,16 @@ async def main():
     print("🔄 Bắt đầu lấy lịch (lùi 2h đến 24h tới)...")
     all_games = []
 
-    print("📡 Đang tải footonsat...")
+    # ===== TẢI API SONG SONG =====
+    print("📡 Đang tải footonsat + Love4VN song song...")
+    footonsat_tasks = [fetch_api_parallel(url) for url in FOOTONSAT_URLS]
+    love4vn_task = fetch_api_parallel(LOVE4VN_URL)
+    
+    footonsat_results = await asyncio.gather(*footonsat_tasks)
+    love4vn_data = await love4vn_task
+
     footonsat_games = []
-    for url in FOOTONSAT_URLS:
-        print(f"   Đang tải {url}")
-        data = fetch_footonsat_json(url)
+    for data in footonsat_results:
         if data:
             games = parse_footonsat_data(data)
             footonsat_games.extend(games)
@@ -654,8 +685,6 @@ async def main():
     print(f"   Footonsat: {len(footonsat_games)} trận")
     all_games.extend(footonsat_games)
 
-    print("📡 Đang tải Love4VN...")
-    love4vn_data = fetch_love4vn_json()
     love4vn_games = parse_love4vn_data(love4vn_data, start_ts_utc, end_ts_utc) if love4vn_data else []
     print(f"   Love4VN: {len(love4vn_games)} trận")
     all_games.extend(love4vn_games)
@@ -695,35 +724,43 @@ async def main():
     except Exception as e:
         print(f"   ❌ Lỗi đọc M3U_list.txt: {e}")
 
-    def fetch_text_sync(url):
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-            with urllib.request.urlopen(req, timeout=15) as r:
-                return r.read().decode('utf-8', errors='ignore')
-        except Exception as e:
-            print(f"   Lỗi tải {url[:50]}...: {e}")
-            return None
-
-    all_ch = []
-    if m3u_links:
-        with ThreadPoolExecutor(max_workers=10) as ex:
-            futures = {ex.submit(fetch_text_sync, url): url for url in m3u_links}
-            for fut in as_completed(futures):
-                content = fut.result()
-                if content:
-                    chs = parse_m3u(content)
-                    for ch in chs:
-                        if is_low_resolution(ch.get('name', '')):
-                            continue
-                        all_ch.append(ch)
+    # ===== TRY CACHE =====
+    cached_channels = CacheManager.get_cache()
+    if cached_channels:
+        print(f"   ✅ Tải từ cache: {len(cached_channels)} kênh")
+        unique_ch = cached_channels
     else:
-        print("   ⚠️ Không có link M3U")
+        def fetch_text_sync(url):
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+                with urllib.request.urlopen(req, timeout=15) as r:
+                    return r.read().decode('utf-8', errors='ignore')
+            except Exception:
+                return None
 
-    unique_ch = list({ch['url']: ch for ch in all_ch if ch.get('url')}.values())
+        all_ch = []
+        if m3u_links:
+            with ThreadPoolExecutor(max_workers=M3U_FETCH_WORKERS) as ex:
+                futures = {ex.submit(fetch_text_sync, url): url for url in m3u_links}
+                completed = 0
+                for fut in as_completed(futures):
+                    completed += 1
+                    content = fut.result()
+                    if content:
+                        chs = parse_m3u(content)
+                        for ch in chs:
+                            if is_low_resolution(ch.get('name', '')):
+                                continue
+                            all_ch.append(ch)
+                    if completed % 5 == 0:
+                        print(f"      Đã tải {completed}/{len(m3u_links)} URL...")
+        else:
+            print("   ⚠️ Không có link M3U")
+
+        unique_ch = list({ch['url']: ch for ch in all_ch if ch.get('url')}.values())
+        CacheManager.save_cache(unique_ch)
+
     print(f"   ✅ Đã tải {len(unique_ch)} kênh")
-    print("   📺 50 kênh đầu tiên:")
-    for i, ch in enumerate(unique_ch[:50]):
-        print(f"      {i+1}. {ch['name']}")
 
     print("🔄 Đang match kênh...")
     live_events = []
@@ -753,7 +790,6 @@ async def main():
                 if matched:
                     matching.append(ch)
             if matching:
-                # Sắp xếp ưu tiên: UK/GB trước, sau đó English, rồi còn lại
                 def priority_key(ch):
                     name_lower = ch['name'].lower()
                     m3u_code, _ = extract_prefix_and_name(ch['name'])
@@ -763,7 +799,6 @@ async def main():
                         return (1, 0)
                     return (2, 0)
                 matching.sort(key=priority_key)
-                print(f"   ✅ Match: {g['match']} - {target_name} (country={target_country}) -> {len(matching)} kênh")
             for ch in matching:
                 if ch['url'] in used_urls:
                     continue
@@ -810,7 +845,9 @@ async def main():
                         f.write(line + "\n")
             f.write(ch['url'] + "\n")
 
+    elapsed = time.time() - start
     print(f"\n🎉 HOÀN THÀNH! {len(live_events)} kênh hợp lệ trong {LIVE_M3U}")
+    print(f"⏱️ Thời gian chạy: {elapsed:.1f}s")
 
 if __name__ == "__main__":
     asyncio.run(main())
