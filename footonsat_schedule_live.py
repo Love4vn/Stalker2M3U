@@ -189,7 +189,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
-    name = re.sub(r'\b(hd|uhd|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', '', name)
+    name = re.sub(r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', '', name)
     name = name.replace('plus', '+').replace(' and ', ' & ')
     name = re.sub(r'[^\w\s\+]', ' ', name)
     name = ' '.join(name.split())
