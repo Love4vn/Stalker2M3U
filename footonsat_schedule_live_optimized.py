@@ -1,4 +1,3 @@
-name=footonsat_schedule_live_optimized.py
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 Cải tiến: Parallel M3U parsing, Faster string matching, Batch operations
