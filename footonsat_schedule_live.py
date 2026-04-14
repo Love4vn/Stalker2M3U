@@ -2,8 +2,8 @@
 footonsat_schedule_live.py
 ================================
 LẤY LỊCH TRỰC TIẾP TỪ footonsat-api VÀ Love4vn/Live-Schedue
-Tích hợp M3U với matching thông minh (tách mã quốc gia, hỗ trợ tên trận trong kênh)
-KIỂM TRA LINK STREAM VỚI HEADER ĐẶC BIỆT (EXTVLCOPT)
+Tích hợp M3U với matching thông minh (tách mã quốc gia)
+KIỂM TRA LINK STREAM (có thể tắt bằng --skip-validation)
 XUẤT RA live_schedule.m3u
 """
 
@@ -14,6 +14,7 @@ import unicodedata
 import urllib.request
 import urllib.error
 import time
+import sys
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -28,6 +29,9 @@ LIVE_M3U = "live_schedule.m3u"
 VALIDATION_CONCURRENT = 50
 VALIDATION_TIMEOUT = 5
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# Kiểm tra tham số dòng lệnh
+SKIP_VALIDATION = "--skip-validation" in sys.argv
 
 # ================== DANH SÁCH GIẢI ĐẤU ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -80,24 +84,26 @@ COUNTRY_CODES = {
 
 COUNTRY_NAME_TO_CODE = {
     "united states": "us", "usa": "us", "uk": "uk", "united kingdom": "uk",
-    "viet nam": "vn", "vietnam": "vn", "korea, republic of": "kr", "south korea": "kr",
+    "viet nam": "vn", "vietnam": "vn", "korea": "kr", "south korea": "kr",
     "japan": "jp", "china": "cn", "brazil": "br", "argentina": "ar", "mexico": "mx",
     "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
     "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr", "slovenia": "si", "slovakia": "sk",
-    "france": "fr", "french": "fr", "germany": "de", "deutschland": "de", "italy": "it", "italia": "it",
-    "spain": "es", "espana": "es", "portugal": "pt", "netherlands": "nl", "nederland": "nl",
-    "belgium": "be", "belgie": "be", "switzerland": "ch", "austria": "at", "österreich": "at",
-    "sweden": "se", "sverige": "se", "norway": "no", "norge": "no", "denmark": "dk", "danmark": "dk",
-    "finland": "fi", "suomi": "fi", "poland": "pl", "polska": "pl", "czech republic": "cz", "czechia": "cz", "czech": "cz",
-    "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr", "turkey": "tr", "türkiye": "tr",
-    "israel": "il", "australia": "au", "canada": "ca", "new zealand": "nz", "ireland": "ie",
+    "france": "fr", "french": "fr", "germany": "de", "deutsch": "de", "deutschland": "de",
+    "italy": "it", "italia": "it", "spain": "es", "espana": "es", "portugal": "pt",
+    "netherlands": "nl", "nederland": "nl", "belgium": "be", "belgie": "be",
+    "switzerland": "ch", "austria": "at", "österreich": "at",
+    "sweden": "se", "sverige": "se", "norway": "no", "norge": "no",
+    "denmark": "dk", "danmark": "dk", "finland": "fi", "suomi": "fi",
+    "poland": "pl", "polska": "pl", "czech": "cz", "czech republic": "cz", "czechia": "cz",
+    "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr",
+    "turkey": "tr", "türkiye": "tr", "israel": "il", "australia": "au",
+    "canada": "ca", "new zealand": "nz", "ireland": "ie",
     "indonesia": "id", "malaysia": "my", "singapore": "sg", "thailand": "th",
     "egypt": "eg", "morocco": "ma", "algeria": "dz", "tunisia": "tn", "libya": "ly",
     "sudan": "sd", "ethiopia": "et", "kenya": "ke", "nigeria": "ng", "ghana": "gh",
     "senegal": "sn", "côte d'ivoire": "ci", "cameroon": "cm", "angola": "ao",
-    "albania": "al", "great britain": "gb", "england": "gb", "scotland": "gb", "wales": "gb", "northern ireland": "gb",
-    "chile": "cl", "sur": "sr", "suriname": "sr",
-    "armenia": "am", "georgia": "ge", "azerbaijan": "az", "kazakhstan": "kz"
+    "albania": "al", "great britain": "gb", "england": "gb", "scotland": "gb", "wales": "gb",
+    "chile": "cl", "suriname": "sr", "armenia": "am", "georgia": "ge", "azerbaijan": "az", "kazakhstan": "kz"
 }
 
 FOOTONSAT_URLS = [
@@ -244,20 +250,26 @@ def remove_country_from_channel_name(channel_name: str, country_name: str) -> st
     return cleaned
 
 def extract_country_from_channel_name(channel_name: str) -> Optional[str]:
-    """Trích xuất mã quốc gia từ tên kênh (ví dụ 'Srbija' -> 'rs')"""
-    name_lower = channel_name.lower()
-    # Ưu tiên tìm prefix
+    """Trích xuất mã quốc gia từ tên kênh (ưu tiên prefix, sau đó tìm từ khóa)"""
+    # Thử prefix trước
     code, _ = extract_prefix_and_name(channel_name)
     if code:
         return code
-    # Tìm trong các từ
-    words = name_lower.split()
+    # Tìm trong tên gốc (không normalize)
+    name_lower = channel_name.lower()
+    # Tách từ
+    words = re.findall(r'\b[a-z]{2,}\b', name_lower)
     for word in words:
         if word in COUNTRY_NAME_TO_CODE:
             return COUNTRY_NAME_TO_CODE[word]
+        # Kiểm tra nếu từ khóa dài hơn và chứa trong mapping
         for key, val in COUNTRY_NAME_TO_CODE.items():
             if key in word:
                 return val
+    # Xử lý đặc biệt: "Srbija", "Hrvatska", "Polska"...
+    for key, val in COUNTRY_NAME_TO_CODE.items():
+        if key in name_lower:
+            return val
     return None
 
 def extract_match_from_m3u_name(m3u_name: str) -> Optional[str]:
@@ -392,7 +404,7 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
             i += 1
     return games
 
-# ================== LOVE4VN API ==================
+# ================== LOVE4VN API (ĐÃ SỬA) ==================
 def fetch_love4vn_json() -> Optional[dict]:
     try:
         req = urllib.request.Request(LOVE4VN_URL, headers={"User-Agent": USER_AGENT})
@@ -429,30 +441,25 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
             for entry in tv_channels:
                 country_name = entry.get("country", "")
                 channels_list = entry.get("channels", [])
-                is_virtual_source = any(v in country_name.lower() for v in ["wheresthematch", "livesportsontv", "ausport"])
-                if is_virtual_source:
-                    for ch_name in channels_list:
-                        if not ch_name:
-                            continue
-                        country_code = extract_country_from_channel_name(ch_name)
-                        channel_sources.append({
-                            "country_code": country_code,
-                            "channel_name": ch_name
-                        })
-                else:
-                    country_code = get_country_code_from_name(country_name)
-                    for ch_name in channels_list:
-                        if not ch_name:
-                            continue
+                # Xác định country code từ country_name nếu có (chỉ nếu không phải nguồn ảo)
+                is_virtual = any(v in country_name.lower() for v in ["wheresthematch", "livesportsontv", "ausport"])
+                base_country_code = None if is_virtual else get_country_code_from_name(country_name)
+                for ch_name in channels_list:
+                    if not ch_name:
+                        continue
+                    # Xác định country code cuối cùng: ưu tiên base_country_code, nếu không thì suy từ tên kênh
+                    final_country_code = base_country_code
+                    if final_country_code is None:
+                        final_country_code = extract_country_from_channel_name(ch_name)
+                    # Loại bỏ tên quốc gia khỏi tên kênh để chuẩn hóa (chỉ khi country_name không phải nguồn ảo)
+                    if not is_virtual and country_name:
                         cleaned_name = remove_country_from_channel_name(ch_name, country_name)
-                        if country_code is None:
-                            inferred = extract_country_from_channel_name(cleaned_name)
-                            if inferred:
-                                country_code = inferred
-                        channel_sources.append({
-                            "country_code": country_code,
-                            "channel_name": cleaned_name
-                        })
+                    else:
+                        cleaned_name = ch_name
+                    channel_sources.append({
+                        "country_code": final_country_code,
+                        "channel_name": cleaned_name
+                    })
             if channel_sources:
                 games.append({
                     "league": league,
@@ -789,8 +796,11 @@ async def main():
     live_events = dedup
     live_events.sort(key=lambda x: x["datetime"])
 
-    print(f"\n📊 Tổng số kênh sau khi match (chưa kiểm tra): {len(live_events)}")
-    live_events = validate_events_batch(live_events)
+    if SKIP_VALIDATION:
+        print("\n⚠️ Bỏ qua kiểm tra luồng (--skip-validation)")
+    else:
+        print(f"\n📊 Tổng số kênh sau khi match (chưa kiểm tra): {len(live_events)}")
+        live_events = validate_events_batch(live_events)
 
     with open(LIVE_M3U, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
