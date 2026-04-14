@@ -1,9 +1,11 @@
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
-Cải tiến: Parallel M3U parsing, Faster string matching, Batch operations
-+ Giữ tất cả kênh M3U khớp cho mỗi yêu cầu (khác link)
-+ Phân biệt chống trùng link theo trận (bóng đá) hoặc toàn bộ tennis
-+ Cải thiện khớp số kênh (channel number) chính xác
+- Giữ tất cả kênh M3U khớp (có URL khác nhau) cho mỗi yêu cầu từ lịch trận.
+- Chống trùng link:
+  + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
+  + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
+- Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó).
+- Khớp country code nếu cả hai bên đều có.
 """
 
 import asyncio
@@ -46,7 +48,6 @@ PATTERN_COUNTRY_CODE = [
 ]
 PATTERN_QUALITY = re.compile(r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', re.I)
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
-PATTERN_CHANNEL_NUMBER = re.compile(r'\b(\d+)\b(?:\s*(?:hd|fhd|uhd)?)?$', re.I)  # số ở cuối tên (có thể có hậu tố HD)
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -114,7 +115,7 @@ class CacheManager:
         except:
             pass
         return None
-    
+
     @staticmethod
     def save_cache(channels: List[Dict]):
         try:
@@ -145,11 +146,11 @@ def similar(a: str, b: str) -> float:
         return 1.0
     if not a or not b:
         return 0.0
-    
+
     len_a, len_b = len(a), len(b)
     if abs(len_a - len_b) > max(len_a, len_b) * 0.3:
         return 0.0
-    
+
     dp = list(range(len_b + 1))
     for i in range(1, len_a + 1):
         new_dp = [i]
@@ -157,7 +158,7 @@ def similar(a: str, b: str) -> float:
             cost = 0 if a[i-1] == b[j-1] else 1
             new_dp.append(min(dp[j] + 1, new_dp[j-1] + 1, dp[j-1] + cost))
         dp = new_dp
-    
+
     return 1 - (dp[-1] / max(len_a, len_b))
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
@@ -173,10 +174,16 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     return None, cleaned
 
 def extract_channel_number(name: str) -> Optional[str]:
-    """Extract channel number (e.g., '1', '2', 'HD1' -> '1') from the end of the name."""
-    match = PATTERN_CHANNEL_NUMBER.search(name)
-    if match:
-        return match.group(1)
+    """
+    Extract the most relevant channel number.
+    Removes quality keywords (HD, FHD, 4K, etc.) first, then finds the last numeric token.
+    """
+    name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd)\b', '', name, flags=re.I)
+    name_clean = name_clean.strip()
+    tokens = name_clean.split()
+    for token in reversed(tokens):
+        if token.isdigit():
+            return token
     return None
 
 def normalize_channel_name(name: str) -> str:
@@ -194,37 +201,36 @@ def is_low_resolution(name: str) -> bool:
 def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     """
     Check if two channel names match.
+    - Strict number matching: if target has a number, M3U MUST have the same number.
     - Country code must match if present in both.
-    - Channel number must match if present in both (e.g., 'Sky Sports 1' vs 'Sky Sports 2' -> false).
     - Then compare normalized names with similarity threshold.
     """
     if not ch_name or not m3u_name:
         return False
-    
-    # Extract country codes
+
     ch_code, ch_clean = extract_prefix_and_name(ch_name)
     m3u_code, m3u_clean = extract_prefix_and_name(m3u_name)
-    
-    # Extract channel numbers
+
     ch_num = extract_channel_number(ch_clean)
     m3u_num = extract_channel_number(m3u_clean)
-    
-    # If both have a channel number, they must be equal
-    if ch_num is not None and m3u_num is not None and ch_num != m3u_num:
-        return False
-    
+
+    # Strict number matching
+    if ch_num is not None:
+        if m3u_num is None or ch_num != m3u_num:
+            return False
+
     # Country code check
     if ch_code and m3u_code and ch_code != m3u_code:
         return False
-    
+
     ch_norm = normalize_channel_name(ch_clean)
     m3u_norm = normalize_channel_name(m3u_clean)
-    
+
     if ch_norm == m3u_norm:
         return True
     if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
         return ch_norm == m3u_norm
-    
+
     threshold = 0.85 if league == "Tennis" else 0.92
     return similar(ch_norm, m3u_norm) >= threshold
 
@@ -263,35 +269,35 @@ def parse_m3u_fast(content: str) -> List[Dict]:
     channels = []
     lines = content.split('\n')
     i = 0
-    
+
     while i < len(lines):
         line = lines[i].strip()
-        
+
         if line.startswith('#EXTINF'):
             if '###' in line:
                 i += 1
                 continue
-            
+
             params = {}
             for k, v in re.findall(r'([a-zA-Z-]+)="([^"]*)"', line):
                 params[k.lower()] = v
-            
+
             parts = line.split(',')
             name = parts[-1].strip() if len(parts) > 1 else "Unknown"
-            
+
             if '###' in name:
                 i += 1
                 continue
-            
+
             extra = []
             i += 1
-            
+
             while i < len(lines) and not lines[i].strip().startswith('http'):
                 extra_line = lines[i].strip()
                 if extra_line.startswith('#EXTVLCOPT') or extra_line.startswith('#'):
                     extra.append(extra_line)
                 i += 1
-            
+
             if i < len(lines):
                 url = lines[i].strip()
                 if url.startswith('http'):
@@ -304,7 +310,7 @@ def parse_m3u_fast(content: str) -> List[Dict]:
             i += 1
         else:
             i += 1
-    
+
     return channels
 
 # ================== FOOTONSAT PARSER ==================
@@ -312,47 +318,47 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
     games = []
     if not data or "footonsat" not in data or not isinstance(data["footonsat"], list):
         return games
-    
+
     items = data["footonsat"]
     i = 0
-    
+
     while i < len(items):
         item = items[i]
         if not isinstance(item, dict) or "match" not in item:
             i += 1
             continue
-        
+
         compet = (item.get("compet") or "").lower()
         league = None
         for key, val in LEAGUE_MAPPING.items():
             if key in compet:
                 league = val
                 break
-        
+
         if not league:
             i += 1
             continue
-        
+
         try:
             date_str = item.get("date")
             time_str = item.get("time")
             if not date_str or not time_str:
                 i += 1
                 continue
-            
+
             dt_utc = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
             dt_utc = dt_utc.replace(tzinfo=ZoneInfo("UTC"))
             kick_utc = int(dt_utc.timestamp())
-            
+
             if kick_utc < start_ts or kick_utc > end_ts:
                 i += 1
                 continue
-            
+
             match_name = item.get("match", "").strip()
             if not is_football_allowed(league, match_name):
                 i += 1
                 continue
-            
+
             channels = []
             j = i + 1
             while j < len(items):
@@ -367,7 +373,7 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                             "channel_name": ch_name
                         })
                 j += 1
-            
+
             if channels:
                 games.append({
                     "league": league,
@@ -380,7 +386,7 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
             i = j
         except:
             i += 1
-    
+
     return games
 
 # ================== LOVE4VN PARSER ==================
@@ -388,19 +394,19 @@ def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
     games = []
     if not data or "days" not in data:
         return games
-    
+
     for day_info in data["days"].values():
         for game in day_info.get("games", []):
             kick_utc = game.get("kick_utc")
             if not kick_utc or kick_utc < start_ts or kick_utc > end_ts:
                 continue
-            
+
             league = game.get("league", "")
             match_name = game.get("match", "").strip()
-            
+
             if league != "Tennis" and not is_football_allowed(league, match_name):
                 continue
-            
+
             channels = []
             for entry in game.get("tv_channels", []):
                 for ch_name in entry.get("channels", []):
@@ -409,7 +415,7 @@ def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                             "country_code": None,
                             "channel_name": ch_name
                         })
-            
+
             if channels:
                 games.append({
                     "league": league,
@@ -419,31 +425,31 @@ def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                     "channels": channels,
                     "source": "love4vn"
                 })
-    
+
     return games
 
 # ================== VALIDATION ==================
 def validate_url_sync(url: str) -> Tuple[bool, Optional[str]]:
     if url.startswith("udp://"):
         return True, None
-    
+
     url_lower = url.lower()
     if "cinehub24.com" in url_lower or url_lower.endswith(".mp4"):
         return False, "Blacklisted"
-    
+
     try:
         req = urllib.request.Request(url)
         req.add_header('User-Agent', USER_AGENT)
         req.add_header('Range', 'bytes=0-1024')
-        
+
         with urllib.request.urlopen(req, timeout=VALIDATION_TIMEOUT) as resp:
             if resp.getcode() not in (200, 206):
                 return False, f"HTTP {resp.getcode()}"
-            
+
             if '.m3u8' in url:
                 body = resp.read(5000).decode('utf-8', errors='ignore')
                 return "#EXTM3U" in body or "#EXTINF" in body, "Invalid HLS"
-            
+
             return True, None
     except:
         return False, "Error"
@@ -451,61 +457,61 @@ def validate_url_sync(url: str) -> Tuple[bool, Optional[str]]:
 async def validate_events_batch(events: List[Dict]) -> List[Dict]:
     if not events:
         return []
-    
+
     print(f"\n🔬 Kiểm tra {len(events)} kênh (concurrent={VALIDATION_CONCURRENT})...")
-    
+
     loop = asyncio.get_event_loop()
     with ThreadPoolExecutor(max_workers=VALIDATION_CONCURRENT) as executor:
         tasks = [
             loop.run_in_executor(executor, validate_url_sync, ev['channel']['url'])
             for ev in events
         ]
-        
+
         results = await asyncio.gather(*tasks, return_exceptions=True)
         valid_events = [
             ev for ev, result in zip(events, results)
             if result and result[0] is True
         ]
-    
+
     print(f"   ✅ {len(valid_events)}/{len(events)} hợp lệ")
     return valid_events
 
 # ================== MAIN ==================
 async def main():
     start = time.time()
-    
+
     now_utc = datetime.now(ZoneInfo("UTC"))
     now_ts = int(now_utc.timestamp())
     start_ts = now_ts - 7200
     end_ts = now_ts + 86400
-    
+
     print("🔄 Bắt đầu...")
-    
+
     # Fetch APIs
     print("📡 Tải APIs...")
     footonsat_tasks = [fetch_json_async(url) for url in FOOTONSAT_URLS]
     love4vn_task = fetch_json_async(LOVE4VN_URL)
-    
+
     footonsat_results = await asyncio.gather(*footonsat_tasks)
     love4vn_data = await love4vn_task
-    
+
     all_games = []
     for data in footonsat_results:
         if data:
             all_games.extend(parse_footonsat_data(data, start_ts, end_ts))
-    
+
     if love4vn_data:
         all_games.extend(parse_love4vn_data(love4vn_data, start_ts, end_ts))
-    
+
     print(f"✅ Tổng: {len(all_games)} trận")
     if not all_games:
         print("⚠️ Không có trận nào.")
         return
-    
+
     # Load M3U
     print("📥 Tải M3U...")
     cached = CacheManager.get_cache()
-    
+
     if cached:
         print(f"   Từ cache: {len(cached)} kênh")
         channels = cached
@@ -516,12 +522,12 @@ async def main():
                 m3u_links = [line.strip() for line in f if line.strip().startswith('http')]
         except:
             pass
-        
+
         print(f"   {len(m3u_links)} URLs")
-        
+
         loop = asyncio.get_event_loop()
         all_channels = []
-        
+
         batch_size = M3U_FETCH_WORKERS
         for i in range(0, len(m3u_links), batch_size):
             batch = m3u_links[i:i+batch_size]
@@ -530,83 +536,86 @@ async def main():
                     loop.run_in_executor(ex, fetch_text_sync, url)
                     for url in batch
                 ])
-            
+
             for content in contents:
                 if content:
                     parsed = parse_m3u_fast(content)
                     all_channels.extend([ch for ch in parsed if not is_low_resolution(ch.get('name', ''))])
-            
+
             print(f"      {min(i + batch_size, len(m3u_links))}/{len(m3u_links)}")
-        
+
         channels = list({ch['url']: ch for ch in all_channels}.values())
         CacheManager.save_cache(channels)
-    
+
     print(f"   ✅ {len(channels)} kênh")
-    
-    # Pre-compute normalized names and channel numbers for all M3U channels
+
+    # Pre-compute M3U channel attributes for fast matching
     for ch in channels:
-        ch['_norm'] = normalize_channel_name(extract_prefix_and_name(ch['name'])[1])
-        ch['_num'] = extract_channel_number(ch['name'])
-    
-    # ================== MATCH WITH NEW RULES ==================
+        code, clean = extract_prefix_and_name(ch['name'])
+        ch['_code'] = code
+        ch['_clean'] = clean
+        ch['_norm'] = normalize_channel_name(clean)
+        ch['_num'] = extract_channel_number(clean)
+
+    # ================== MATCH WITH DETAILED LOG ==================
     print("\n🔍 QUÁ TRÌNH MATCH KÊNH (giữ tất cả kênh khớp, chống trùng theo quy tắc):")
-    
-    used_urls_per_match = defaultdict(set)
-    used_urls_tennis = set()
-    
+
+    used_urls_per_match = defaultdict(set)   # key: match_key (league, match, kick_utc) hoặc "TENNIS_ALL"
+    used_urls_tennis = set()                 # riêng cho tennis để kiểm tra toàn cục
+
     live_events = []
     total_requested_channels = 0
     total_matched_entries = 0
-    
+
     for game in all_games:
         league = game['league']
         match_name = game['match']
         kick_utc = game['kick_utc']
         kick_time = game['time']
-        
+
         if league == "Tennis":
             match_key = "TENNIS_ALL"
         else:
             match_key = (league, match_name, kick_utc)
-        
+
         print(f"\n🏆 [{league}] {match_name} | {kick_time} (UTC {kick_utc})")
-        
+
         channels_from_json = game.get('channels', [])
         if not channels_from_json:
             print("   ⚠️  Không có kênh nào từ JSON")
             continue
-        
+
         for ch_info in channels_from_json:
             target_name = ch_info.get('channel_name')
             if not target_name:
                 continue
-            
+
             total_requested_channels += 1
             print(f"   📡 Yêu cầu: {target_name}")
-            
-            # Extract info from target for detailed matching
+
+            # Extract target attributes
             target_code, target_clean = extract_prefix_and_name(target_name)
             target_num = extract_channel_number(target_clean)
             target_norm = normalize_channel_name(target_clean)
-            
+
+            # Find all matching M3U channels
             matching = []
             for ch in channels:
-                # Quick pre-filter: country code mismatch? (if both present)
-                if target_code and ch.get('_code') and target_code != ch['_code']:
+                # Quick pre-filters (optimization)
+                if target_code and ch['_code'] and target_code != ch['_code']:
                     continue
-                # Channel number mismatch? (if both present)
-                if target_num is not None and ch['_num'] is not None and target_num != ch['_num']:
-                    continue
-                
-                # Use full is_channel_match for final decision
+                if target_num is not None:
+                    if ch['_num'] is None or target_num != ch['_num']:
+                        continue
+
                 if is_channel_match(target_name, ch['name'], league):
                     score = similar(ch['_norm'], target_norm)
                     matching.append((score, ch))
-            
+
             if matching:
                 matching.sort(key=lambda x: x[0], reverse=True)
                 print(f"      🔍 Tìm thấy {len(matching)} kênh M3U khớp")
-                
+
                 for score, ch in matching:
                     url = ch['url']
                     if league == "Tennis":
@@ -620,7 +629,7 @@ async def main():
                             print(f"         ⚠️ Bỏ qua {ch['name']} (score={score:.3f}) - URL đã dùng trong trận này")
                             continue
                         used_urls_per_match[match_key].add(url)
-                    
+
                     total_matched_entries += 1
                     live_events.append({
                         "datetime": datetime.fromtimestamp(kick_utc).astimezone(TIMEZONE),
@@ -631,17 +640,17 @@ async def main():
                     print(f"         ✅ Thêm kênh: {ch['name']} (score={score:.3f})")
             else:
                 print("      ❌ Không tìm thấy kênh M3U phù hợp")
-    
+
     print(f"\n📊 TỔNG KẾT MATCH: {total_matched_entries} kênh được thêm từ {total_requested_channels} yêu cầu")
-    
-    # Sort events
+
+    # Sort events by time
     live_events.sort(key=lambda x: x["datetime"])
-    
-    # Validate
+
+    # Validate URLs (unless skipped)
     if not SKIP_VALIDATION:
         live_events = await validate_events_batch(live_events)
-    
-    # Write output
+
+    # Write M3U output
     with open(LIVE_M3U, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for ev in live_events:
@@ -654,7 +663,7 @@ async def main():
             if ch.get('extra'):
                 f.write('\n'.join(ch['extra']) + "\n")
             f.write(ch['url'] + "\n")
-    
+
     elapsed = time.time() - start
     print(f"\n🎉 HOÀN THÀNH! {len(live_events)} kênh trong {elapsed:.1f}s")
 
