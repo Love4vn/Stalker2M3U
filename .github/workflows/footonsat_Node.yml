@@ -1,0 +1,45 @@
+name: Footonsat Schedule Live
+
+on:
+  schedule:
+    # Chạy mỗi 6 giờ
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --production
+        # (nếu cần - hiện tại script không phụ thuộc npm packages)
+
+      - name: Run footonsat scheduler
+        #run: node footonsat_schedule_live.js
+        # Hoặc bỏ qua validation để nhanh hơn:
+        run: node footonsat_schedule_live.js --skip-validation
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add live_schedule_Node.m3u .m3u_cache.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📺 Update live schedule - $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
