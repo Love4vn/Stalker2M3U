@@ -1,0 +1,14 @@
+{
+  "name": "stalker2m3u",
+  "version": "1.0.0",
+  "description": "Footonsat Live Schedule Generator",
+  "main": "footonsat_schedule_live.js",
+  "type": "module",
+  "scripts": {
+    "start": "node footonsat_schedule_live.js",
+    "start:skip-validation": "node footonsat_schedule_live.js --skip-validation"
+  },
+  "keywords": ["m3u", "footonsat", "iptv"],
+  "author": "Love4vn",
+  "license": "MIT"
+}
