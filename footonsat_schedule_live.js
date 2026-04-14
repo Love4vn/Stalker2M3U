@@ -9,7 +9,7 @@ const http = require('http');
 // ================== CONFIG ==================
 const CONFIG = {
   M3U_LIST_FILE: 'M3U_list.txt',
-  LIVE_M3U: 'live_schedule.m3u',
+  LIVE_M3U: 'live_schedule_Node.m3u',
   CACHE_FILE: '.m3u_cache.json',
   CACHE_EXPIRY: 3600,
   VALIDATION_CONCURRENT: 50,
