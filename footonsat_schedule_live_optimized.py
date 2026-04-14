@@ -3,6 +3,7 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 Cải tiến: Parallel M3U parsing, Faster string matching, Batch operations
 + Giữ tất cả kênh M3U khớp cho mỗi yêu cầu (khác link)
 + Phân biệt chống trùng link theo trận (bóng đá) hoặc toàn bộ tennis
++ Cải thiện khớp số kênh (channel number) chính xác
 """
 
 import asyncio
@@ -20,7 +21,6 @@ from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from typing import List, Dict, Optional, Tuple, Set
-import hashlib
 
 # ================== CONFIG ==================
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
@@ -34,7 +34,6 @@ VALIDATION_TIMEOUT = 2
 USER_AGENT = "Mozilla/5.0"
 SKIP_VALIDATION = "--skip-validation" in sys.argv
 M3U_FETCH_WORKERS = 40
-REGEX_COMPILE_CACHE = {}
 
 # ================== PRE-COMPILED PATTERNS ==================
 PATTERN_COUNTRY_CODE = [
@@ -47,10 +46,7 @@ PATTERN_COUNTRY_CODE = [
 ]
 PATTERN_QUALITY = re.compile(r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', re.I)
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
-PATTERN_TIME = re.compile(r'\b(\d{1,2}:\d{2}\s*(?:AM|PM|CET|EST|UTC|GMT)?)\b', re.I)
-PATTERN_MONTH = re.compile(r'\b(apr|may|jun|jul|aug|sep|oct|nov|dec)\s+\d{1,2}\b', re.I)
-PATTERN_TIME_WORD = re.compile(r'\b(?:today|tomorrow|yesterday)\b', re.I)
-PATTERN_EXTINF = re.compile(r'#EXTINF:-1\s*(.*)')
+PATTERN_CHANNEL_NUMBER = re.compile(r'\b(\d+)\b(?:\s*(?:hd|fhd|uhd)?)?$', re.I)  # số ở cuối tên (có thể có hậu tố HD)
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -176,6 +172,13 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     cleaned = re.sub(r'^[\|\s\:\-]+', '', name_lower)
     return None, cleaned
 
+def extract_channel_number(name: str) -> Optional[str]:
+    """Extract channel number (e.g., '1', '2', 'HD1' -> '1') from the end of the name."""
+    match = PATTERN_CHANNEL_NUMBER.search(name)
+    if match:
+        return match.group(1)
+    return None
+
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
     name = PATTERN_QUALITY.sub('', name)
@@ -189,11 +192,31 @@ def is_low_resolution(name: str) -> bool:
     return bool(PATTERN_LOW_RES.search(name))
 
 def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
+    """
+    Check if two channel names match.
+    - Country code must match if present in both.
+    - Channel number must match if present in both (e.g., 'Sky Sports 1' vs 'Sky Sports 2' -> false).
+    - Then compare normalized names with similarity threshold.
+    """
     if not ch_name or not m3u_name:
         return False
     
+    # Extract country codes
     ch_code, ch_clean = extract_prefix_and_name(ch_name)
     m3u_code, m3u_clean = extract_prefix_and_name(m3u_name)
+    
+    # Extract channel numbers
+    ch_num = extract_channel_number(ch_clean)
+    m3u_num = extract_channel_number(m3u_clean)
+    
+    # If both have a channel number, they must be equal
+    if ch_num is not None and m3u_num is not None and ch_num != m3u_num:
+        return False
+    
+    # Country code check
+    if ch_code and m3u_code and ch_code != m3u_code:
+        return False
+    
     ch_norm = normalize_channel_name(ch_clean)
     m3u_norm = normalize_channel_name(m3u_clean)
     
@@ -201,8 +224,6 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
         return True
     if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
         return ch_norm == m3u_norm
-    if ch_code and m3u_code and ch_code != m3u_code:
-        return False
     
     threshold = 0.85 if league == "Tennis" else 0.92
     return similar(ch_norm, m3u_norm) >= threshold
@@ -522,22 +543,20 @@ async def main():
     
     print(f"   ✅ {len(channels)} kênh")
     
+    # Pre-compute normalized names and channel numbers for all M3U channels
+    for ch in channels:
+        ch['_norm'] = normalize_channel_name(extract_prefix_and_name(ch['name'])[1])
+        ch['_num'] = extract_channel_number(ch['name'])
+    
     # ================== MATCH WITH NEW RULES ==================
     print("\n🔍 QUÁ TRÌNH MATCH KÊNH (giữ tất cả kênh khớp, chống trùng theo quy tắc):")
     
-    # Data structures for duplicate prevention
-    used_urls_per_match = defaultdict(set)   # key = match_key (league, match, kick_utc)
-    used_urls_tennis = set()                 # for all tennis matches
+    used_urls_per_match = defaultdict(set)
+    used_urls_tennis = set()
     
     live_events = []
     total_requested_channels = 0
     total_matched_entries = 0
-    
-    # Pre-calculate normalized names for all M3U channels to speed up matching
-    for ch in channels:
-        if '_norm' not in ch:
-            _, ch_clean = extract_prefix_and_name(ch['name'])
-            ch['_norm'] = normalize_channel_name(ch_clean)
     
     for game in all_games:
         league = game['league']
@@ -545,9 +564,8 @@ async def main():
         kick_utc = game['kick_utc']
         kick_time = game['time']
         
-        # Define match_key (for football, unique per match; for tennis, we'll use a special key)
         if league == "Tennis":
-            match_key = "TENNIS_ALL"  # all tennis share same key
+            match_key = "TENNIS_ALL"
         else:
             match_key = (league, match_name, kick_utc)
         
@@ -566,29 +584,35 @@ async def main():
             total_requested_channels += 1
             print(f"   📡 Yêu cầu: {target_name}")
             
-            # Find all matching M3U channels (similarity >= threshold)
-            matching = []
-            target_norm = normalize_channel_name(extract_prefix_and_name(target_name)[1])
+            # Extract info from target for detailed matching
+            target_code, target_clean = extract_prefix_and_name(target_name)
+            target_num = extract_channel_number(target_clean)
+            target_norm = normalize_channel_name(target_clean)
             
+            matching = []
             for ch in channels:
+                # Quick pre-filter: country code mismatch? (if both present)
+                if target_code and ch.get('_code') and target_code != ch['_code']:
+                    continue
+                # Channel number mismatch? (if both present)
+                if target_num is not None and ch['_num'] is not None and target_num != ch['_num']:
+                    continue
+                
+                # Use full is_channel_match for final decision
                 if is_channel_match(target_name, ch['name'], league):
-                    # Calculate similarity score for logging
                     score = similar(ch['_norm'], target_norm)
                     matching.append((score, ch))
             
             if matching:
-                # Sort by similarity descending
                 matching.sort(key=lambda x: x[0], reverse=True)
                 print(f"      🔍 Tìm thấy {len(matching)} kênh M3U khớp")
                 
                 for score, ch in matching:
                     url = ch['url']
-                    # Check duplicate rule
                     if league == "Tennis":
                         if url in used_urls_tennis:
                             print(f"         ⚠️ Bỏ qua {ch['name']} (score={score:.3f}) - URL đã dùng trong tennis")
                             continue
-                        # Add to tennis global set and per-match set
                         used_urls_tennis.add(url)
                         used_urls_per_match[match_key].add(url)
                     else:
@@ -597,7 +621,6 @@ async def main():
                             continue
                         used_urls_per_match[match_key].add(url)
                     
-                    # Add event
                     total_matched_entries += 1
                     live_events.append({
                         "datetime": datetime.fromtimestamp(kick_utc).astimezone(TIMEZONE),
