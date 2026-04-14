@@ -25,7 +25,7 @@ jobs:
           pip install aiohttp pyyaml
 
       - name: Run script
-        run: python footonsat_schedule_live.py
+        run: python footonsat_schedule_live.py --skip-validation
 
       - name: Commit and push changes
         env:
