@@ -1,856 +1,376 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="479817" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?ver=68923",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTINF:-1 tvg-id="284838" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?92364",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=479817&extension=ts&play_token=8Ly2qa8Ii0
-#EXTINF:-1 tvg-id="1312186" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284838&extension=ts&play_token=vvfT8o5CcU
+#EXTINF:-1 tvg-id="1312026" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312186&extension=ts&play_token=EmQRKk2CXr
-#EXTINF:-1 tvg-id="1149433" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/GERMANY/SKY SPORT/SKY SPORT TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312026&extension=ts&play_token=nNhEgmlVyM
+#EXTINF:-1 tvg-id="1149433" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/GERMANY/SKY SPORT/SKY SPORT TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1149433&extension=ts&play_token=HVnlc1VKGq
-#EXTINF:-1 tvg-id="1167174" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKY SPORT TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1149433&extension=ts&play_token=o1xYcIYFrz
+#EXTINF:-1 tvg-id="1149459" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/GERMANY/SKY SPORT/SKY SPORT TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167174&extension=ts&play_token=sw6dgCi0fg
-#EXTINF:-1 tvg-id="1312176" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312176&extension=ts&play_token=Qf7M7wt4cZ
-#EXTINF:-1 tvg-id="1312049" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312049&extension=ts&play_token=h13kPDspUa
-#EXTINF:-1 tvg-id="1167175" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKY SPORT TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167175&extension=ts&play_token=E8nShMXIjR
-#EXTINF:-1 tvg-id="380131" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6440.png?35996",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1149459&extension=ts&play_token=z2UYLNOWW6
+#EXTINF:-1 tvg-id="284679" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?48044",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=380131&extension=ts&play_token=SgS9g1nEKB
-#EXTINF:-1 tvg-id="1312008" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS RAW DOLBY/SKY SPORTS MAIN.png",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284679&extension=ts&play_token=GKZqMoCUxh
+#EXTINF:-1 tvg-id="1167175" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKY SPORT TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312008&extension=ts&play_token=jLqVEhMI5i
-#EXTINF:-1 tvg-id="1527638" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?92793",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167175&extension=ts&play_token=y3bzgpzda2
+#EXTINF:-1 tvg-id="1167174" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKY SPORT TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167174&extension=ts&play_token=vBzOVInClf
+#EXTINF:-1 tvg-id="1312043" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312043&extension=ts&play_token=zXQc0sGGeF
+#EXTINF:-1 tvg-id="686546" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1527638&extension=ts&play_token=p9J8GvhsEA
-#EXTINF:-1 tvg-id="686562" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686546&extension=ts&play_token=3OeTJ1dzsU
+#EXTINF:-1 tvg-id="394553" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=394553&extension=ts&play_token=uL974zNMsY
+#EXTINF:-1 tvg-id="686547" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686562&extension=ts&play_token=VLhzy0HTxC
-#EXTINF:-1 tvg-id="284679" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?48044",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686547&extension=ts&play_token=oGUt815vYg
+#EXTINF:-1 tvg-id="668111" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8496.jpg?80093",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284679&extension=ts&play_token=vlgCInAYaI
-#EXTINF:-1 tvg-id="686541" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=668111&extension=ts&play_token=YVObISAntG
+#EXTINF:-1 tvg-id="707005" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12307.jpg?76030",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686541&extension=ts&play_token=0gLCeQTFD0
-#EXTINF:-1 tvg-id="310967" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/germany/sky_teniss2.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=707005&extension=ts&play_token=49PjXxcIp8
+#EXTINF:-1 tvg-id="380131" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6440.png?35996",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=380131&extension=ts&play_token=W1xluKjiqP
+#EXTINF:-1 tvg-id="686562" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686562&extension=ts&play_token=Ya2LGcqNUV
+#EXTINF:-1 tvg-id="707004" group-title="Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12307.jpg?76030",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer B9AD27A12A327F4263330353F95E080C
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=707004&extension=ts&play_token=KBCtp70qqe
+#EXTINF:-1 tvg-id="1312186" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312186&extension=ts&play_token=NQUzkSciMN
+#EXTINF:-1 tvg-id="900938" group-title="Live Tennis" tvg-logo="https://go4.pw/ITALY/skysporttennis.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/310967
-#EXTINF:-1 tvg-id="316458" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/316458
-#EXTINF:-1 tvg-id="365037" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyamainevent.png",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/365037
-#EXTINF:-1 tvg-id="316455" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/316455
-#EXTINF:-1 tvg-id="664452" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skysportste.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/664452
-#EXTINF:-1 tvg-id="900938" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ITALY/skysporttennis.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/900938
-#EXTINF:-1 tvg-id="348315" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyamainevent.png",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
+#EXTINF:-1 tvg-id="76634" group-title="Live Tennis" tvg-logo="https://go4.pw/EUROPE/ITALY/SUPERTENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348315
-#EXTINF:-1 tvg-id="498032" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/germany/sky_teniss2.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/498032
-#EXTINF:-1 tvg-id="664451" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skysportste.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/664451
-#EXTINF:-1 tvg-id="1281430" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/VIP/4k_ultra.png",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281430
-#EXTINF:-1 tvg-id="76634" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/EUROPE/ITALY/SUPERTENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/76634
-#EXTINF:-1 tvg-id="42914" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN4.png",14/04 04:00 PM | Barcelona Open Banc Sabadell (TSN4)
+#EXTINF:-1 tvg-id="664451" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skysportste.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/42914
-#EXTINF:-1 tvg-id="668111" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8496.jpg?80093",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=668111&extension=ts&play_token=a2E0TGyp5p
-#EXTINF:-1 tvg-id="285216" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?22366",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285216&extension=ts&play_token=SNZFx8OWC1
-#EXTINF:-1 tvg-id="621656" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12268.jpg?58725",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621656&extension=ts&play_token=3tTf5XCzZw
-#EXTINF:-1 tvg-id="1290315" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?72698",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1290315&extension=ts&play_token=DdKmgiVKeS
-#EXTINF:-1 tvg-id="588072" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?72698",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=588072&extension=ts&play_token=BBuOV6vwGG
-#EXTINF:-1 tvg-id="621634" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?74672",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621634&extension=ts&play_token=WbhGW5cK7o
-#EXTINF:-1 tvg-id="1290241" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?72698",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1290241&extension=ts&play_token=oMQSFjPQVA
-#EXTINF:-1 tvg-id="588046" group-title="🎾Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12232.jpg?31368",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4635DC2FB664A3A6FB78FB0454921A65
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=588046&extension=ts&play_token=0SrKbjubXP
-#EXTINF:-1 tvg-id="30354" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN4.png",14/04 04:00 PM | Barcelona Open Banc Sabadell (TSN4)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/664451
+#EXTINF:-1 tvg-id="974993" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/30354
-#EXTINF:-1 tvg-id="973139" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974993
+#EXTINF:-1 tvg-id="394549" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=394549&extension=ts&play_token=uSok75TqMj
+#EXTINF:-1 tvg-id="973139" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/973139
-#EXTINF:-1 tvg-id="973137" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
+#EXTINF:-1 tvg-id="42914" group-title="Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN4.png",14/04 04:00 PM | Barcelona Open Banc Sabadell (TSN4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/973137
-#EXTINF:-1 tvg-id="974999" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/42914
+#EXTINF:-1 tvg-id="310967" group-title="Live Tennis" tvg-logo="https://go4.pw/germany/sky_teniss2.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974999
-#EXTINF:-1 tvg-id="1312033" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS MAIN EVENT.png",14/04 04:00 PM | ATP Tennis (Sky Sports Main Event)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/310967
+#EXTINF:-1 tvg-id="1312185" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312033&extension=ts&play_token=RgpiZzaCJZ
-#EXTINF:-1 tvg-id="1312043" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS TENNIS.png",14/04 04:00 PM | ATP Tennis (Sky Sports Tennis)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312185&extension=ts&play_token=Fn8VjsacDu
+#EXTINF:-1 tvg-id="1312028" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312043&extension=ts&play_token=49w4iu15b0
-#EXTINF:-1 tvg-id="974989" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312028&extension=ts&play_token=fKOpgtLhnx
+#EXTINF:-1 tvg-id="1312050" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312050&extension=ts&play_token=8hE6rRKaYx
+#EXTINF:-1 tvg-id="870313" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=870313&extension=ts&play_token=5TEw8Hxfdk
+#EXTINF:-1 tvg-id="974989" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974989
-#EXTINF:-1 tvg-id="1312028" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312028&extension=ts&play_token=Cpc5M9xckR
-#EXTINF:-1 tvg-id="1312185" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312185&extension=ts&play_token=Bu5pnVpHb3
-#EXTINF:-1 tvg-id="316460" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTINF:-1 tvg-id="316461" group-title="Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/316460
-#EXTINF:-1 tvg-id="316464" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/316461
+#EXTINF:-1 tvg-id="1290147" group-title="Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/316464
-#EXTINF:-1 tvg-id="1312050" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312050&extension=ts&play_token=LKVrNk0yOj
-#EXTINF:-1 tvg-id="892879" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1290147
+#EXTINF:-1 tvg-id="1290150" group-title="Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/892879
-#EXTINF:-1 tvg-id="892871" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1290150
+#EXTINF:-1 tvg-id="974994" group-title="Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/892871
-#EXTINF:-1 tvg-id="975011" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974994
+#EXTINF:-1 tvg-id="363834" group-title="Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975011
-#EXTINF:-1 tvg-id="892873" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/892873
-#EXTINF:-1 tvg-id="975017" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975017
-#EXTINF:-1 tvg-id="72388" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/BEIN/BeinSports/bein-sportshd4.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/72388
-#EXTINF:-1 tvg-id="870313" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/SKY SPORTS+.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=870313&extension=ts&play_token=mkw62VeLH1
-#EXTINF:-1 tvg-id="1182987" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1182987
-#EXTINF:-1 tvg-id="1290137" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1290137
-#EXTINF:-1 tvg-id="1288092" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1288092
-#EXTINF:-1 tvg-id="974996" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974996
-#EXTINF:-1 tvg-id="975028" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/975028
-#EXTINF:-1 tvg-id="974992" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974992
-#EXTINF:-1 tvg-id="974998" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/UK/skyspns.png",14/04 04:00 PM | ATP Tennis (Sky Sports+)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/974998
-#EXTINF:-1 tvg-id="1150139" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150139
-#EXTINF:-1 tvg-id="1292006" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292006
-#EXTINF:-1 tvg-id="1150138" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150138
-#EXTINF:-1 tvg-id="1150133" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150133
-#EXTINF:-1 tvg-id="1150127" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150127
-#EXTINF:-1 tvg-id="1096005" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1096005
-#EXTINF:-1 tvg-id="1274765" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1274765
-#EXTINF:-1 tvg-id="1274770" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1274770
-#EXTINF:-1 tvg-id="1042309" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1042309
-#EXTINF:-1 tvg-id="1150171" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150171
-#EXTINF:-1 tvg-id="1095981" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1095981
-#EXTINF:-1 tvg-id="1039871" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1039871
-#EXTINF:-1 tvg-id="363853" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363853
-#EXTINF:-1 tvg-id="363863" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363863
-#EXTINF:-1 tvg-id="363831" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363831
-#EXTINF:-1 tvg-id="1024111" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1024111
-#EXTINF:-1 tvg-id="363838" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363838
-#EXTINF:-1 tvg-id="1033743" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1033743
-#EXTINF:-1 tvg-id="363834" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363834
-#EXTINF:-1 tvg-id="1104763" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTINF:-1 tvg-id="363841" group-title="Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1104763
-#EXTINF:-1 tvg-id="363830" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363830
-#EXTINF:-1 tvg-id="363852" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363852
-#EXTINF:-1 tvg-id="1024434" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1024434
-#EXTINF:-1 tvg-id="1096003" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/champions.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1096003
-#EXTINF:-1 tvg-id="363857" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363857
-#EXTINF:-1 tvg-id="363860" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363860
-#EXTINF:-1 tvg-id="363809" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363809
-#EXTINF:-1 tvg-id="682948" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/682948
-#EXTINF:-1 tvg-id="363855" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363855
-#EXTINF:-1 tvg-id="1033751" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1033751
-#EXTINF:-1 tvg-id="363826" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363826
-#EXTINF:-1 tvg-id="363856" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363856
-#EXTINF:-1 tvg-id="363839" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363839
-#EXTINF:-1 tvg-id="1262145" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1262145
-#EXTINF:-1 tvg-id="363841" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363841
-#EXTINF:-1 tvg-id="1104757" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTINF:-1 tvg-id="363838" group-title="Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1104757
-#EXTINF:-1 tvg-id="1104766" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363838
+#EXTINF:-1 tvg-id="363857" group-title="Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1104766
-#EXTINF:-1 tvg-id="1104764" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363857
+#EXTINF:-1 tvg-id="1091818" group-title="Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1104764
-#EXTINF:-1 tvg-id="363824" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1091818
+#EXTINF:-1 tvg-id="1139940" group-title="Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/363824
-#EXTINF:-1 tvg-id="1015548" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/59.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1139940
+#EXTINF:-1 tvg-id="1015555" group-title="Live Tennis" tvg-logo="https://go4.pw/59.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1015548
-#EXTINF:-1 tvg-id="1015551" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/59.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1015551
-#EXTINF:-1 tvg-id="1033760" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1033760
-#EXTINF:-1 tvg-id="1015547" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/59.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1015547
-#EXTINF:-1 tvg-id="1104762" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1104762
-#EXTINF:-1 tvg-id="1033748" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1033748
-#EXTINF:-1 tvg-id="1024473" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/champ/europaleague.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1024473
-#EXTINF:-1 tvg-id="1100776" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/58.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1100776
-#EXTINF:-1 tvg-id="1015837" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/58.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1015837
-#EXTINF:-1 tvg-id="1018105" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/55.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1018105
-#EXTINF:-1 tvg-id="1100780" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/58.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1100780
-#EXTINF:-1 tvg-id="1018094" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/55.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1018094
-#EXTINF:-1 tvg-id="1015820" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/58.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1015820
-#EXTINF:-1 tvg-id="1018097" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/55.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1018097
-#EXTINF:-1 tvg-id="1017982" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/56.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1017982
-#EXTINF:-1 tvg-id="1017976" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/56.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1017976
-#EXTINF:-1 tvg-id="1017974" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/56.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1017974
-#EXTINF:-1 tvg-id="1017967" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/56.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1017967
-#EXTINF:-1 tvg-id="1029741" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/56.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1029741
-#EXTINF:-1 tvg-id="39560" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 4.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/39560
-#EXTINF:-1 tvg-id="39559" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/39559
-#EXTINF:-1 tvg-id="1015555" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/59.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1015555
-#EXTINF:-1 tvg-id="576857" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/AFC111.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTINF:-1 tvg-id="1033737" group-title="Live Tennis" tvg-logo="https://go4.pw/58.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/576857
-#EXTINF:-1 tvg-id="552078" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_9.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1033737
+#EXTINF:-1 tvg-id="1100780" group-title="Live Tennis" tvg-logo="https://go4.pw/58.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/552078
-#EXTINF:-1 tvg-id="56654" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/EUROPE/FRANCE/BEIN_SPORTS_2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1100780
+#EXTINF:-1 tvg-id="1028731" group-title="Live Tennis" tvg-logo="https://go4.pw/55.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/56654
-#EXTINF:-1 tvg-id="986980" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_8.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1028731
+#EXTINF:-1 tvg-id="62497" group-title="Live Tennis" tvg-logo="https://go4.pw/EUROPE/FRANCE/SPORTS_MAX_9.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986980
-#EXTINF:-1 tvg-id="986976" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_4.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/62497
+#EXTINF:-1 tvg-id="941420" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941420&extension=ts&play_token=rjAQeLJ1SC
+#EXTINF:-1 tvg-id="739" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=739&extension=ts&play_token=44Pwx2hM15
+#EXTINF:-1 tvg-id="941421" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941421&extension=ts&play_token=r4lzK1Gxsc
+#EXTINF:-1 tvg-id="988854" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988854&extension=ts&play_token=bee1Qf7c0w
+#EXTINF:-1 tvg-id="749" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=749&extension=ts&play_token=6rdlAn381y
+#EXTINF:-1 tvg-id="798796" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798796&extension=ts&play_token=O0OPp4nUCX
+#EXTINF:-1 tvg-id="988863" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988863&extension=ts&play_token=LJGgNO08tJ
+#EXTINF:-1 tvg-id="798773" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798773&extension=ts&play_token=PixgwqFjJv
+#EXTINF:-1 tvg-id="1100777" group-title="Live Tennis" tvg-logo="https://go4.pw/58.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986976
-#EXTINF:-1 tvg-id="988875" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988875&extension=ts&play_token=kSM9EkgqX5
-#EXTINF:-1 tvg-id="941421" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941421&extension=ts&play_token=gqqw635Knk
-#EXTINF:-1 tvg-id="941420" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941420&extension=ts&play_token=NUk7UFpuWn
-#EXTINF:-1 tvg-id="988863" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988863&extension=ts&play_token=dvAa4VZ8l6
-#EXTINF:-1 tvg-id="206322" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=206322&extension=ts&play_token=jjN7X9Aht3
-#EXTINF:-1 tvg-id="988854" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988854&extension=ts&play_token=HV0ykY1hrT
-#EXTINF:-1 tvg-id="941422" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941422&extension=ts&play_token=NZKdYpJ2JA
-#EXTINF:-1 tvg-id="331737" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/AFC111.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1100777
+#EXTINF:-1 tvg-id="418590" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_9.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/418590
+#EXTINF:-1 tvg-id="988855" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988855&extension=ts&play_token=JtZF4EbwJY
+#EXTINF:-1 tvg-id="941422" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941422&extension=ts&play_token=syOSvFH5Iu
+#EXTINF:-1 tvg-id="331737" group-title="Live Tennis" tvg-logo="https://go4.pw/ARABE/AFC111.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 592F66377A5B72C40A79B47A3DA0EE3C
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/331737
-#EXTINF:-1 tvg-id="576808" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/AFC111.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/576808
-#EXTINF:-1 tvg-id="988882" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTINF:-1 tvg-id="944685" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/AUSTRALIA/AU AUSTRALIA LOGOS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988882&extension=ts&play_token=DjMXUQVwMq
-#EXTINF:-1 tvg-id="27898" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/27898
-#EXTINF:-1 tvg-id="27896" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_3.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/27896
-#EXTINF:-1 tvg-id="27894" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_5.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/27894
-#EXTINF:-1 tvg-id="986994" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986994
-#EXTINF:-1 tvg-id="27895" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_4.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/27895
-#EXTINF:-1 tvg-id="27893" group-title="🎾Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_6.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/27893
-#EXTINF:-1 tvg-id="988855" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 2.png",14/04 04:00 PM | Tennis match (beIN SPORTS 2)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=944685&extension=ts&play_token=u13SrfN8Hv
+#EXTINF:-1 tvg-id="941418" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988855&extension=ts&play_token=sJhQzTr3Fb
-#EXTINF:-1 tvg-id="944685" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/AUSTRALIA/AU AUSTRALIA LOGOS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941418&extension=ts&play_token=l2bcrw4k0q
+#EXTINF:-1 tvg-id="988850" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=944685&extension=ts&play_token=hAI5i52Qqg
-#EXTINF:-1 tvg-id="941418" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988850&extension=ts&play_token=ejqZtErpsR
+#EXTINF:-1 tvg-id="941417" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941418&extension=ts&play_token=bglQWn70L8
-#EXTINF:-1 tvg-id="941432" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS MAX 10.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941417&extension=ts&play_token=SDwQhJVELe
+#EXTINF:-1 tvg-id="988851" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941432&extension=ts&play_token=DAazpZLgAf
-#EXTINF:-1 tvg-id="941417" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988851&extension=ts&play_token=2QAOppiNj3
+#EXTINF:-1 tvg-id="988849" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941417&extension=ts&play_token=4uPfXlcdGJ
-#EXTINF:-1 tvg-id="941419" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988849&extension=ts&play_token=mLPhZByrOj
+#EXTINF:-1 tvg-id="941432" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS MAX 10.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941419&extension=ts&play_token=53TN1iN8iw
-#EXTINF:-1 tvg-id="988849" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941432&extension=ts&play_token=8NlMgbd7Cp
+#EXTINF:-1 tvg-id="988853" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988849&extension=ts&play_token=ku5g8E73DL
-#EXTINF:-1 tvg-id="988852" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988853&extension=ts&play_token=kinJAIzz8t
+#EXTINF:-1 tvg-id="988862" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988852&extension=ts&play_token=TG35stoeyY
-#EXTINF:-1 tvg-id="988881" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988862&extension=ts&play_token=5TOid3m2Pk
+#EXTINF:-1 tvg-id="988852" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988881&extension=ts&play_token=5l4d7YSnH8
-#EXTINF:-1 tvg-id="988862" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988852&extension=ts&play_token=BZjONAZFP2
+#EXTINF:-1 tvg-id="206321" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988862&extension=ts&play_token=Jpo31v4nx1
-#EXTINF:-1 tvg-id="750" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=206321&extension=ts&play_token=MwserUACJ9
+#EXTINF:-1 tvg-id="744" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=750&extension=ts&play_token=eca53FHBPg
-#EXTINF:-1 tvg-id="988879" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=744&extension=ts&play_token=thygUBasOO
+#EXTINF:-1 tvg-id="941419" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/France/FR BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988879&extension=ts&play_token=PhaozGTrNU
-#EXTINF:-1 tvg-id="744" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=941419&extension=ts&play_token=BoZ8pMDIB6
+#EXTINF:-1 tvg-id="798772" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=744&extension=ts&play_token=aNKPnPj0Zs
-#EXTINF:-1 tvg-id="798795" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798772&extension=ts&play_token=td3Q5FBf10
+#EXTINF:-1 tvg-id="740" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS MAX 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798795&extension=ts&play_token=MqYldJxLop
-#EXTINF:-1 tvg-id="798772" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=740&extension=ts&play_token=dvDngk7Ywy
+#EXTINF:-1 tvg-id="988881" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798772&extension=ts&play_token=bxDtszMjy5
-#EXTINF:-1 tvg-id="988851" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988881&extension=ts&play_token=Gu8ys0LOFg
+#EXTINF:-1 tvg-id="958741" group-title="Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/AFRICA/CANAL+ AFRICA/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988851&extension=ts&play_token=44yJQHW5pt
-#EXTINF:-1 tvg-id="958741" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/AFRICA/CANAL+ AFRICA/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=958741&extension=ts&play_token=rXh9941dZC
-#EXTINF:-1 tvg-id="988853" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988853&extension=ts&play_token=idi2bPXWEc
-#EXTINF:-1 tvg-id="988850" group-title="🎾Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BEIN SPORTS/BEIN SPORTS 1.png",14/04 04:00 PM | Tennis match (beIN SPORTS 1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5F70DA2B20C4949B75AE3770247DC7EA
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=988850&extension=ts&play_token=ItoNCPfyvo
-#EXTINF:-1 tvg-id="1292008" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/champ/champions.png",15/04 02:00 AM | Atlético Madrid vs Barcelona (Arena Premium 2 Srbija HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292008
-#EXTINF:-1 tvg-id="1292015" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/champ/champions.png",15/04 02:00 AM | Atlético Madrid vs Barcelona (Arena Premium 2 Srbija HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292015
-#EXTINF:-1 tvg-id="1292020" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/champ/champions.png",15/04 02:00 AM | Atlético Madrid vs Barcelona (Arena Premium 2 Srbija HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292020
-#EXTINF:-1 tvg-id="846012" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/UK/tntsports.png",15/04 02:00 AM | Atlético Madrid vs Barcelona (TNT Sports 1 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/846012
-#EXTINF:-1 tvg-id="348297" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/UK/tntsports.png",15/04 02:00 AM | Atlético Madrid vs Barcelona (TNT Sports 1 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/348297
-#EXTINF:-1 tvg-id="17281" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/UK/tntsports.png",15/04 02:00 AM | Atlético Madrid vs Barcelona (TNT Sports 1 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/17281
-#EXTINF:-1 tvg-id="853546" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",15/04 02:00 AM | Liverpool vs Paris St Germain (Canal+ Foot HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/853546
-#EXTINF:-1 tvg-id="311116" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",15/04 02:00 AM | Liverpool vs Paris St Germain (Canal+ Foot HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311116
-#EXTINF:-1 tvg-id="311117" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/EUROPE/FRANCE/CANAL+FOOT.png",15/04 02:00 AM | Liverpool vs Paris St Germain (Canal+ Foot HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/311117
-#EXTINF:-1 tvg-id="1274757" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/champ/champions.png",15/04 02:00 AM | Atlético Madrid vs Barcelona (Arena Premium 2 Srbija HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1274757
-#EXTINF:-1 tvg-id="1086" group-title="🏆Live UEFA Champions League" tvg-logo="https://go4.pw/NEDERLAND/ziggosport.png",15/04 02:00 AM | Liverpool vs Paris St Germain (Ziggo Sport HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E22CBB60DFD9E29C3C14BFA0E402D125
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1086
+#EXTVLCOPT:http-header=Authorization: Bearer 3F5CAD3D90BA03EF9BC4A48C28CAB8D0
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=958741&extension=ts&play_token=iyolm5ohHr
