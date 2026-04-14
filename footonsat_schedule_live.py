@@ -57,18 +57,18 @@ ALLOWED_TEAMS_PER_LEAGUE = {
 }
 
 LEAGUE_GROUP_NAME = {
-    "Premier League": "Live Premier League",
-    "Serie A": "Live Serie A",
-    "Bundesliga": "Live Bundesliga",
-    "La Liga": "Live La Liga",
-    "Ligue 1": "Live Ligue 1",
+    "Premier League": "⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League",
+    "Serie A": "⚽️🇮🇹|Live Serie A",
+    "Bundesliga": "⚽️🇩🇪|Live Bundesliga",
+    "La Liga": "⚽️🇪🇦|Live La Liga",
+    "Ligue 1": "⚽️🇨🇵|Live Ligue 1",
     "UEFA Champions League": "Live UEFA Champions League",
     "UEFA Europa League": "Live UEFA Europa League",
     "UEFA Europa Conference League": "Live UEFA Conference League",
     "UEFA Euro": "Live Euro",
     "FA Cup": "Live FA, League Cup",
     "League Cup": "Live FA, League Cup",
-    "Tennis": "Live Tennis",
+    "Tennis": "🎾|Live Tennis",
     "FIFA World Cup": "Live Fifa World Cup",
     "International Friendly": "Live International Friendly"
 }
