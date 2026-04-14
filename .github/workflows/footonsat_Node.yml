@@ -1,45 +1,33 @@
-name: Footonsat Schedule Live
+name: Update Live M3U
 
 on:
   schedule:
-    # Chạy mỗi 6 giờ
+    # Chạy mỗi 6 giờ một lần (UTC)
     - cron: '0 */6 * * *'
-  workflow_dispatch:
+  workflow_dispatch:   # Cho phép chạy thủ công
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install --production
-        # (nếu cần - hiện tại script không phụ thuộc npm packages)
+      - name: Run script
+        run: npm start
 
-      - name: Run footonsat scheduler
-        #run: node footonsat_schedule_live.js
-        # Hoặc bỏ qua validation để nhanh hơn:
-        run: node footonsat_schedule_live.js --skip-validation
-
-      - name: Commit and push changes
+      - name: Commit updated files
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add live_schedule_Node.m3u .m3u_cache.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "📺 Update live schedule - $(date '+%Y-%m-%d %H:%M:%S')"
-            git push
-          fi
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add footonsat_live_Node.m3u .m3u_cache.json
+          git diff --staged --quiet || git commit -m "🔄 Auto-update live M3U [skip ci]"
+          git push
