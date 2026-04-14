@@ -1,5 +1,5 @@
 """
-footonsat_schedule_live.py - FIXED FOOTONSAT COUNTRY CODE
+footonsat_schedule_live.py - FINAL OPTIMIZED
 """
 
 import asyncio
@@ -68,7 +68,7 @@ LEAGUE_GROUP_NAME = {
     "International Friendly": "Live International Friendly"
 }
 
-# ================== MAPPING QUỐC GIA ==================
+# ================== MAPPING QUỐC GIA MỞ RỘNG ==================
 COUNTRY_CODES = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
@@ -244,17 +244,12 @@ def remove_country_from_channel_name(channel_name: str, country_name: str) -> st
     return cleaned
 
 def extract_country_from_channel_name(channel_name: str) -> Optional[str]:
-    """Trích xuất mã quốc gia từ tên kênh (in debug)"""
     name_lower = channel_name.lower()
-    # Ưu tiên prefix
     code, _ = extract_prefix_and_name(channel_name)
     if code:
-        print(f"   DEBUG: Prefix '{code}' in '{channel_name}'")
         return code
-    # Tìm từ khóa
     for keyword, code in COUNTRY_NAME_TO_CODE.items():
         if keyword in name_lower:
-            print(f"   DEBUG: Found '{keyword}' -> '{code}' in '{channel_name}'")
             return code
     return None
 
@@ -303,7 +298,7 @@ def is_football_allowed(league: str, match_name: str) -> bool:
         return False
     return True
 
-# ================== FOOTONSAT API (ĐÃ SỬA) ==================
+# ================== FOOTONSAT API ==================
 def fetch_footonsat_json(url: str) -> Optional[dict]:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -478,7 +473,6 @@ def merge_games(games_list: List[Dict]) -> List[Dict]:
             if similar(base_match_norm, match_norm) < 0.8:
                 continue
             if 'channels' in base and 'channels' in other:
-                # Chuyển đổi nếu cần
                 if isinstance(base['channels'][0], str):
                     base['channels'] = [{"country_code": extract_country_from_channel_name(ch), "channel_name": ch} for ch in base['channels']]
                 if isinstance(other['channels'][0], str):
@@ -544,6 +538,55 @@ def parse_m3u(content):
             current['extra'] = extra[:]
         channels.append(current)
     return channels
+
+# ================== TỐI ƯU MATCH KÊNH ==================
+def build_channel_index(channels: List[Dict]) -> Dict[str, List[Dict]]:
+    index = {}
+    for ch in channels:
+        _, clean = extract_prefix_and_name(ch['name'])
+        norm_name = normalize_channel_name(clean)
+        if norm_name not in index:
+            index[norm_name] = []
+        index[norm_name].append(ch)
+        # Thêm tên gốc viết thường để fallback
+        if ch['name'].lower() not in index:
+            index[ch['name'].lower()] = []
+        index[ch['name'].lower()].append(ch)
+    return index
+
+# ================== THAY THẾ HÀM MATCH_CHANNEL_FAST ==================
+def match_channel_fast(target_name: str, target_country: Optional[str], 
+                       channel_index: Dict[str, List[Dict]], all_channels: List[Dict], 
+                       league: str = None) -> List[Dict]:
+    matched = []
+    # Chuẩn hóa target
+    _, target_clean = extract_prefix_and_name(target_name)
+    target_norm = normalize_channel_name(target_clean)
+    # 1. Tìm chính xác trong index (nhanh)
+    if target_norm in channel_index:
+        for ch in channel_index[target_norm]:
+            if target_country:
+                m3u_code, _ = extract_prefix_and_name(ch['name'])
+                if m3u_code == target_country:
+                    matched.append(ch)
+            else:
+                matched.append(ch)
+        if matched:
+            return matched
+    # 2. Nếu không có chính xác, duyệt toàn bộ (đảm bảo không bỏ sót)
+    threshold = 0.85 if league == "Tennis" else 0.95
+    for ch in all_channels:
+        m3u_code, m3u_clean = extract_prefix_and_name(ch['name'])
+        m3u_norm = normalize_channel_name(m3u_clean)
+        if target_country:
+            if m3u_code != target_country:
+                continue
+            if similar(target_norm, m3u_norm) >= 0.9:
+                matched.append(ch)
+        else:
+            if similar(target_norm, m3u_norm) >= threshold:
+                matched.append(ch)
+    return matched
 
 # ================== STREAM VALIDATION ==================
 def extract_headers_from_extra(extra_lines: List[str]) -> Dict:
@@ -731,6 +774,11 @@ async def main():
     for i, ch in enumerate(unique_ch[:50]):
         print(f"      {i+1}. {ch['name']}")
 
+    # Xây dựng index
+    print("🔄 Xây dựng index kênh...")
+    channel_index = build_channel_index(unique_ch)
+    print(f"   ✅ Index có {len(channel_index)} keys")
+
     print("🔄 Đang match kênh...")
     live_events = []
     for g in all_games:
@@ -745,19 +793,7 @@ async def main():
                 target_name = ch_info.get('channel_name')
             if not target_name:
                 continue
-            matching = []
-            for ch in unique_ch:
-                matched = False
-                if target_country is not None:
-                    if is_channel_match_with_country(ch['name'], target_country, target_name, g['league']):
-                        matched = True
-                else:
-                    if is_channel_match(target_name, ch['name'], g['league']):
-                        matched = True
-                if not matched and is_match_name_similar(g['match'], ch['name']):
-                    matched = True
-                if matched:
-                    matching.append(ch)
+            matching = match_channel_fast(target_name, target_country, channel_index, unique_ch, g['league'])
             if matching:
                 print(f"   ✅ Match: {g['match']} - {target_name} (country={target_country}) -> {len(matching)} kênh")
             for ch in matching:
