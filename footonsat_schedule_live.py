@@ -1,10 +1,5 @@
 """
-footonsat_schedule_live.py
-================================
-LẤY LỊCH TRỰC TIẾP TỪ footonsat-api VÀ Love4vn/Live-Schedue
-Tích hợp M3U với matching thông minh (tách mã quốc gia)
-KIỂM TRA LINK STREAM (có thể tắt bằng --skip-validation)
-XUẤT RA live_schedule.m3u
+footonsat_schedule_live.py - FINAL FIX
 """
 
 import asyncio
@@ -30,7 +25,6 @@ VALIDATION_CONCURRENT = 50
 VALIDATION_TIMEOUT = 5
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
-# Kiểm tra tham số dòng lệnh
 SKIP_VALIDATION = "--skip-validation" in sys.argv
 
 # ================== DANH SÁCH GIẢI ĐẤU ==================
@@ -82,6 +76,7 @@ COUNTRY_CODES = {
     "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "ie", "am"
 }
 
+# MAPPING TỪ KHÓA -> MÃ QUỐC GIA (THÊM NHIỀU)
 COUNTRY_NAME_TO_CODE = {
     "united states": "us", "usa": "us", "uk": "uk", "united kingdom": "uk",
     "viet nam": "vn", "vietnam": "vn", "korea": "kr", "south korea": "kr",
@@ -249,27 +244,14 @@ def remove_country_from_channel_name(channel_name: str, country_name: str) -> st
     cleaned = re.sub(r'\s+', ' ', cleaned)
     return cleaned
 
+# HÀM TRÍCH XUẤT COUNTRY CODE TỪ TÊN KÊNH - ĐƠN GIẢN VÀ IN DEBUG
 def extract_country_from_channel_name(channel_name: str) -> Optional[str]:
-    """Trích xuất mã quốc gia từ tên kênh (ưu tiên prefix, sau đó tìm từ khóa)"""
-    # Thử prefix trước
-    code, _ = extract_prefix_and_name(channel_name)
-    if code:
-        return code
-    # Tìm trong tên gốc (không normalize)
     name_lower = channel_name.lower()
-    # Tách từ
-    words = re.findall(r'\b[a-z]{2,}\b', name_lower)
-    for word in words:
-        if word in COUNTRY_NAME_TO_CODE:
-            return COUNTRY_NAME_TO_CODE[word]
-        # Kiểm tra nếu từ khóa dài hơn và chứa trong mapping
-        for key, val in COUNTRY_NAME_TO_CODE.items():
-            if key in word:
-                return val
-    # Xử lý đặc biệt: "Srbija", "Hrvatska", "Polska"...
-    for key, val in COUNTRY_NAME_TO_CODE.items():
-        if key in name_lower:
-            return val
+    # Duyệt tất cả các từ khóa
+    for keyword, code in COUNTRY_NAME_TO_CODE.items():
+        if keyword in name_lower:
+            print(f"   DEBUG: Found '{keyword}' -> '{code}' in '{channel_name}'")  # In ra để kiểm tra
+            return code
     return None
 
 def extract_match_from_m3u_name(m3u_name: str) -> Optional[str]:
@@ -404,7 +386,7 @@ def parse_footonsat_data(data: dict) -> List[Dict]:
             i += 1
     return games
 
-# ================== LOVE4VN API (ĐÃ SỬA) ==================
+# ================== LOVE4VN API (ĐÃ SỬA LẦN CUỐI) ==================
 def fetch_love4vn_json() -> Optional[dict]:
     try:
         req = urllib.request.Request(LOVE4VN_URL, headers={"User-Agent": USER_AGENT})
@@ -441,23 +423,23 @@ def parse_love4vn_data(data: dict, start_ts_utc: int, end_ts_utc: int) -> List[D
             for entry in tv_channels:
                 country_name = entry.get("country", "")
                 channels_list = entry.get("channels", [])
-                # Xác định country code từ country_name nếu có (chỉ nếu không phải nguồn ảo)
                 is_virtual = any(v in country_name.lower() for v in ["wheresthematch", "livesportsontv", "ausport"])
-                base_country_code = None if is_virtual else get_country_code_from_name(country_name)
+                # Lấy country code từ country_name nếu không phải nguồn ảo
+                base_code = None if is_virtual else get_country_code_from_name(country_name)
                 for ch_name in channels_list:
                     if not ch_name:
                         continue
-                    # Xác định country code cuối cùng: ưu tiên base_country_code, nếu không thì suy từ tên kênh
-                    final_country_code = base_country_code
-                    if final_country_code is None:
-                        final_country_code = extract_country_from_channel_name(ch_name)
-                    # Loại bỏ tên quốc gia khỏi tên kênh để chuẩn hóa (chỉ khi country_name không phải nguồn ảo)
+                    final_code = base_code
+                    if final_code is None:
+                        # Trích xuất từ tên kênh
+                        final_code = extract_country_from_channel_name(ch_name)
+                    # Làm sạch tên kênh
                     if not is_virtual and country_name:
                         cleaned_name = remove_country_from_channel_name(ch_name, country_name)
                     else:
                         cleaned_name = ch_name
                     channel_sources.append({
-                        "country_code": final_country_code,
+                        "country_code": final_code,
                         "channel_name": cleaned_name
                     })
             if channel_sources:
