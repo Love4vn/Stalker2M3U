@@ -1,7 +1,8 @@
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 Cải tiến: Parallel M3U parsing, Faster string matching, Batch operations
-+ Bổ sung log chi tiết quá trình match kênh
++ Giữ tất cả kênh M3U khớp cho mỗi yêu cầu (khác link)
++ Phân biệt chống trùng link theo trận (bóng đá) hoặc toàn bộ tennis
 """
 
 import asyncio
@@ -13,9 +14,10 @@ import urllib.error
 import time
 import sys
 import os
+from collections import defaultdict
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from typing import List, Dict, Optional, Tuple, Set
 import hashlib
@@ -27,11 +29,11 @@ LIVE_M3U = "live_schedule_Optimize.m3u"
 CACHE_FILE = ".m3u_cache.json"
 CACHE_EXPIRY = 3600
 
-VALIDATION_CONCURRENT = 50  # Tăng từ 25
-VALIDATION_TIMEOUT = 2      # Giảm từ 3
+VALIDATION_CONCURRENT = 50
+VALIDATION_TIMEOUT = 2
 USER_AGENT = "Mozilla/5.0"
 SKIP_VALIDATION = "--skip-validation" in sys.argv
-M3U_FETCH_WORKERS = 40      # Tăng từ 20
+M3U_FETCH_WORKERS = 40
 REGEX_COMPILE_CACHE = {}
 
 # ================== PRE-COMPILED PATTERNS ==================
@@ -129,8 +131,6 @@ class CacheManager:
             pass
 
 # ================== HELPERS ==================
-_normalize_cache: Dict[str, str] = {}
-
 @lru_cache(maxsize=10000)
 def normalize(s: str) -> str:
     """Normalize string for comparison (cached)"""
@@ -154,7 +154,6 @@ def similar(a: str, b: str) -> float:
     if abs(len_a - len_b) > max(len_a, len_b) * 0.3:
         return 0.0
     
-    # BK-tree fallback
     dp = list(range(len_b + 1))
     for i in range(1, len_a + 1):
         new_dp = [i]
@@ -219,7 +218,6 @@ def is_football_allowed(league: str, match_name: str) -> bool:
 
 # ================== HTTP ==================
 async def fetch_json_async(url: str) -> Optional[dict]:
-    """Async JSON fetch"""
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, fetch_json_sync, url)
 
@@ -241,7 +239,6 @@ def fetch_text_sync(url: str) -> Optional[str]:
 
 # ================== M3U PARSER ==================
 def parse_m3u_fast(content: str) -> List[Dict]:
-    """Ultra-fast M3U parser"""
     channels = []
     lines = content.split('\n')
     i = 0
@@ -268,7 +265,6 @@ def parse_m3u_fast(content: str) -> List[Dict]:
             extra = []
             i += 1
             
-            # Collect extra lines
             while i < len(lines) and not lines[i].strip().startswith('http'):
                 extra_line = lines[i].strip()
                 if extra_line.startswith('#EXTVLCOPT') or extra_line.startswith('#'):
@@ -284,7 +280,6 @@ def parse_m3u_fast(content: str) -> List[Dict]:
                         'params': params,
                         'extra': extra if extra else None
                     })
-            
             i += 1
         else:
             i += 1
@@ -361,7 +356,6 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                     "channels": channels,
                     "source": "footonsat"
                 })
-            
             i = j
         except:
             i += 1
@@ -425,7 +419,6 @@ def validate_url_sync(url: str) -> Tuple[bool, Optional[str]]:
             if resp.getcode() not in (200, 206):
                 return False, f"HTTP {resp.getcode()}"
             
-            # FIX: use 'in' instead of .includes()
             if '.m3u8' in url:
                 body = resp.read(5000).decode('utf-8', errors='ignore')
                 return "#EXTM3U" in body or "#EXTINF" in body, "Invalid HLS"
@@ -435,7 +428,6 @@ def validate_url_sync(url: str) -> Tuple[bool, Optional[str]]:
         return False, "Error"
 
 async def validate_events_batch(events: List[Dict]) -> List[Dict]:
-    """Parallel validation"""
     if not events:
         return []
     
@@ -468,7 +460,7 @@ async def main():
     
     print("🔄 Bắt đầu...")
     
-    # Fetch APIs in parallel
+    # Fetch APIs
     print("📡 Tải APIs...")
     footonsat_tasks = [fetch_json_async(url) for url in FOOTONSAT_URLS]
     love4vn_task = fetch_json_async(LOVE4VN_URL)
@@ -476,7 +468,6 @@ async def main():
     footonsat_results = await asyncio.gather(*footonsat_tasks)
     love4vn_data = await love4vn_task
     
-    # Parse games
     all_games = []
     for data in footonsat_results:
         if data:
@@ -486,7 +477,6 @@ async def main():
         all_games.extend(parse_love4vn_data(love4vn_data, start_ts, end_ts))
     
     print(f"✅ Tổng: {len(all_games)} trận")
-    
     if not all_games:
         print("⚠️ Không có trận nào.")
         return
@@ -511,7 +501,6 @@ async def main():
         loop = asyncio.get_event_loop()
         all_channels = []
         
-        # Batch fetch
         batch_size = M3U_FETCH_WORKERS
         for i in range(0, len(m3u_links), batch_size):
             batch = m3u_links[i:i+batch_size]
@@ -528,63 +517,100 @@ async def main():
             
             print(f"      {min(i + batch_size, len(m3u_links))}/{len(m3u_links)}")
         
-        # Deduplicate by URL
         channels = list({ch['url']: ch for ch in all_channels}.values())
         CacheManager.save_cache(channels)
     
     print(f"   ✅ {len(channels)} kênh")
     
-    # ================== MATCH CHANNELS WITH DETAILED LOG ==================
-    print("\n🔍 QUÁ TRÌNH MATCH KÊNH:")
+    # ================== MATCH WITH NEW RULES ==================
+    print("\n🔍 QUÁ TRÌNH MATCH KÊNH (giữ tất cả kênh khớp, chống trùng theo quy tắc):")
+    
+    # Data structures for duplicate prevention
+    used_urls_per_match = defaultdict(set)   # key = match_key (league, match, kick_utc)
+    used_urls_tennis = set()                 # for all tennis matches
+    
     live_events = []
-    used_urls = set()
     total_requested_channels = 0
-    total_matched_channels = 0
-
+    total_matched_entries = 0
+    
+    # Pre-calculate normalized names for all M3U channels to speed up matching
+    for ch in channels:
+        if '_norm' not in ch:
+            _, ch_clean = extract_prefix_and_name(ch['name'])
+            ch['_norm'] = normalize_channel_name(ch_clean)
+    
     for game in all_games:
         league = game['league']
         match_name = game['match']
-        kick_time = game['time']
         kick_utc = game['kick_utc']
-
+        kick_time = game['time']
+        
+        # Define match_key (for football, unique per match; for tennis, we'll use a special key)
+        if league == "Tennis":
+            match_key = "TENNIS_ALL"  # all tennis share same key
+        else:
+            match_key = (league, match_name, kick_utc)
+        
         print(f"\n🏆 [{league}] {match_name} | {kick_time} (UTC {kick_utc})")
-
+        
         channels_from_json = game.get('channels', [])
         if not channels_from_json:
             print("   ⚠️  Không có kênh nào từ JSON")
             continue
-
+        
         for ch_info in channels_from_json:
             target_name = ch_info.get('channel_name')
             if not target_name:
                 continue
-
+            
             total_requested_channels += 1
             print(f"   📡 Yêu cầu: {target_name}")
-
-            # Tìm kênh M3U khớp
-            matching = [ch for ch in channels if is_channel_match(target_name, ch['name'], league)]
-
+            
+            # Find all matching M3U channels (similarity >= threshold)
+            matching = []
+            target_norm = normalize_channel_name(extract_prefix_and_name(target_name)[1])
+            
+            for ch in channels:
+                if is_channel_match(target_name, ch['name'], league):
+                    # Calculate similarity score for logging
+                    score = similar(ch['_norm'], target_norm)
+                    matching.append((score, ch))
+            
             if matching:
-                best_match = matching[0]
-                print(f"      ✅ Khớp với M3U: {best_match['name']}")
-
-                if best_match['url'] not in used_urls:
-                    used_urls.add(best_match['url'])
-                    total_matched_channels += 1
+                # Sort by similarity descending
+                matching.sort(key=lambda x: x[0], reverse=True)
+                print(f"      🔍 Tìm thấy {len(matching)} kênh M3U khớp")
+                
+                for score, ch in matching:
+                    url = ch['url']
+                    # Check duplicate rule
+                    if league == "Tennis":
+                        if url in used_urls_tennis:
+                            print(f"         ⚠️ Bỏ qua {ch['name']} (score={score:.3f}) - URL đã dùng trong tennis")
+                            continue
+                        # Add to tennis global set and per-match set
+                        used_urls_tennis.add(url)
+                        used_urls_per_match[match_key].add(url)
+                    else:
+                        if url in used_urls_per_match[match_key]:
+                            print(f"         ⚠️ Bỏ qua {ch['name']} (score={score:.3f}) - URL đã dùng trong trận này")
+                            continue
+                        used_urls_per_match[match_key].add(url)
+                    
+                    # Add event
+                    total_matched_entries += 1
                     live_events.append({
                         "datetime": datetime.fromtimestamp(kick_utc).astimezone(TIMEZONE),
-                        "name": f"{kick_time} | {match_name} ({best_match['name']})",
-                        "channel": best_match,
+                        "name": f"{kick_time} | {match_name} ({ch['name']})",
+                        "channel": ch,
                         "league": league
                     })
-                else:
-                    print("      ⚠️ URL đã dùng cho trận khác, bỏ qua")
+                    print(f"         ✅ Thêm kênh: {ch['name']} (score={score:.3f})")
             else:
                 print("      ❌ Không tìm thấy kênh M3U phù hợp")
-
-    print(f"\n📊 TỔNG KẾT MATCH: {total_matched_channels}/{total_requested_channels} kênh khớp thành công")
-
+    
+    print(f"\n📊 TỔNG KẾT MATCH: {total_matched_entries} kênh được thêm từ {total_requested_channels} yêu cầu")
+    
     # Sort events
     live_events.sort(key=lambda x: x["datetime"])
     
