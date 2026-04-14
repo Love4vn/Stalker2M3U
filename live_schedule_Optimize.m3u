@@ -414,6 +414,11 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1254750
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 0A825E2930576844C515D64C460B1C53
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=842709&extension=ts&play_token=CXVasvGKk8
+#EXTINF:-1 tvg-id="2443" group-title="Live Football" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3763.jpg?82975",15/04 02:00 AM | Atlético Madrid vs FC Barcelona (HR: Arena Sport 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0A825E2930576844C515D64C460B1C53
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2443&extension=ts&play_token=2pO7GmSW4s
 #EXTINF:-1 tvg-id="281062" group-title="Live Football" tvg-logo="https://go4.pw/BULGARIA/MAXSPORT.png",15/04 02:00 AM | Atlético Madrid vs FC Barcelona (BG - MAX SPORT 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -474,11 +479,6 @@ http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=314732&extens
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 0A825E2930576844C515D64C460B1C53
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2617&extension=ts&play_token=XvATOFDdS2
-#EXTINF:-1 tvg-id="2443" group-title="Live Football" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3763.jpg?82975",15/04 02:00 AM | Atlético Madrid vs FC Barcelona (HR: Arena Sport 2 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0A825E2930576844C515D64C460B1C53
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2443&extension=ts&play_token=2pO7GmSW4s
 #EXTINF:-1 tvg-id="272366" group-title="Live Football" tvg-logo="https://go4.pw/EXYU/ARENA1.png",15/04 02:00 AM | Atlético Madrid vs FC Barcelona (SI - ARENA SPORTS 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -504,6 +504,11 @@ http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621661&extens
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 0A825E2930576844C515D64C460B1C53
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621639&extension=ts&play_token=0Wd9bHP6hf
+#EXTINF:-1 tvg-id="985157" group-title="Live Football" tvg-logo="https://go4.pw/EUROPE/SWEDEN/TV3 HD.png",15/04 02:00 AM | Atlético Madrid vs FC Barcelona (SK -TV3 Sport HD SK)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 87C73D1EC15D6B201C2595EF614A33EB
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/985157
 #EXTINF:-1 tvg-id="1225799" group-title="Live Football" tvg-logo="https://go4.pw/EUROPE/DENMARK/TV3_Sport.png",15/04 02:00 AM | Atlético Madrid vs FC Barcelona (DK - TV3 SPORT 8K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
