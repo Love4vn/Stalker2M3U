@@ -1,12 +1,6 @@
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
-- Giữ tất cả kênh M3U khớp (có URL khác nhau) cho mỗi yêu cầu từ lịch trận.
-- Chống trùng link:
-  + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
-  + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
-- Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó), hỗ trợ số liền kề chữ.
-- Xử lý country code ở đầu/cuối tên kênh, loại bỏ tên quốc gia khỏi tên kênh.
-- Phân nhóm theo giải đấu với tên nhóm tùy chỉnh.
+...
 """
 
 import asyncio
@@ -46,6 +40,8 @@ PATTERN_COUNTRY_CODE_PREFIX = [
     re.compile(r'^([a-z]{2,3})\|\s*', re.I),
     re.compile(r'^\[([a-z]{2,3})\]\s*', re.I),
     re.compile(r'^\(([a-z]{2,3})\)\s*', re.I),
+    re.compile(r'^┃([a-z]{2,3})┃\s*', re.I),               # ┃RO┃ format
+    re.compile(r'^([a-z]{2,3})\s+', re.I),                 # "RO " at start
 ]
 PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
 PATTERN_QUALITY = re.compile(
@@ -54,6 +50,7 @@ PATTERN_QUALITY = re.compile(
 )
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
 PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂʰᵉᵛᶜᵗᵛᴴᴰᵁᴴᴰ³⁸⁴⁰ᴾ⁵⁰ᶠᵖˢ◉┃]')
+PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')  # Bỏ qua kênh quảng cáo
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -83,7 +80,7 @@ COUNTRY_NAME_TO_CODE = {
     "sweden": "se", "sverige": "se", "norway": "no", "norge": "no",
     "denmark": "dk", "danmark": "dk", "finland": "fi", "suomi": "fi",
     "poland": "pl", "polska": "pl", "czech": "cz", "czech republic": "cz", "czechia": "cz",
-    "hungary": "hu", "romania": "ro", "ro": "ro", "Romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr",
+    "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr",
     "turkey": "tr", "türkiye": "tr", "israel": "il", "australia": "au",
     "canada": "ca", "new zealand": "nz", "ireland": "ie",
     "indonesia": "id", "malaysia": "my", "singapore": "sg", "thailand": "th",
@@ -228,13 +225,13 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     """
     name_lower = name.lower().strip()
     
-    # 1. Check prefix patterns
+    # 1. Check prefix patterns (including ┃RO┃)
     for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
             code = m.group(1)
             if code in COUNTRY_CODES:
-                remaining = name_lower[m.end():].lstrip('|:-\\s ')
+                remaining = name_lower[m.end():].lstrip('|:-\\s ┃')
                 return code, remaining.strip()
     
     # 2. Check suffix pattern
@@ -248,15 +245,12 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     # 3. Try to extract country name and map to code, then remove the country name from the string
     code_from_name, country_name = extract_country_code_from_name(name_lower)
     if code_from_name and country_name:
-        # Remove the country name (case-insensitive) from the string
         pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
         cleaned = pattern.sub('', name_lower).strip()
-        # Also clean up any double spaces left
         cleaned = re.sub(r'\s+', ' ', cleaned)
         return code_from_name, cleaned
     
-    # No country code found
-    cleaned = re.sub(r'^[\|\s\:\-]+', '', name_lower)
+    cleaned = re.sub(r'^[\|\s\:\-┃]+', '', name_lower)
     return None, cleaned.strip()
 
 def extract_channel_number(name: str) -> Optional[str]:
@@ -269,14 +263,11 @@ def extract_channel_number(name: str) -> Optional[str]:
     tokens = name_clean.split()
     if tokens:
         last_token = tokens[-1]
-        # Find trailing digits (e.g., "TSN4")
         match = re.search(r'(\d+)$', last_token)
         if match:
             return match.group(1)
-        # If token is all digits
         if last_token.isdigit():
             return last_token
-    # Fallback: iterate reversed tokens to find any all-digit token
     for token in reversed(tokens):
         if token.isdigit():
             return token
@@ -284,13 +275,11 @@ def extract_channel_number(name: str) -> Optional[str]:
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
-    # Remove special Unicode tags like ⱽᴵᴾ ᴿᴬᵂ
     name = PATTERN_SPECIAL_TAGS.sub(' ', name)
     name = PATTERN_QUALITY.sub('', name)
     name = name.replace('plus', '+').replace(' and ', ' & ')
     name = re.sub(r'[^\w\s\+]', ' ', name)
     name = ' '.join(name.split())
-    # Convert to ASCII, ignore non-ASCII characters
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
     return name.strip()
 
@@ -298,13 +287,6 @@ def is_low_resolution(name: str) -> bool:
     return bool(PATTERN_LOW_RES.search(name))
 
 def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
-    """
-    Check if two channel names match.
-    - Strict number matching: if target has a number, M3U MUST have the same number.
-    - Country code must match if present in both (and different).
-    - Then compare normalized names with similarity threshold.
-    - Extra check: if names match after removing all spaces, return True.
-    """
     if not ch_name or not m3u_name:
         return False
 
@@ -314,22 +296,18 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     ch_num = extract_channel_number(ch_clean)
     m3u_num = extract_channel_number(m3u_clean)
 
-    # Strict number matching
     if ch_num is not None:
         if m3u_num is None or ch_num != m3u_num:
             return False
 
-    # Country code check: if both have a code, they must match
     if ch_code and m3u_code and ch_code != m3u_code:
         return False
 
     ch_norm = normalize_channel_name(ch_clean)
     m3u_norm = normalize_channel_name(m3u_clean)
 
-    # Exact match after normalization
     if ch_norm == m3u_norm:
         return True
-    # Match after removing all spaces (handles "TSN4" vs "TSN 4")
     if ch_norm.replace(' ', '') == m3u_norm.replace(' ', ''):
         return True
     if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
@@ -389,6 +367,14 @@ def parse_m3u_fast(content: str) -> List[Dict]:
             parts = line.split(',')
             name = parts[-1].strip() if len(parts) > 1 else "Unknown"
 
+            # Bỏ qua kênh quảng cáo
+            if PATTERN_AD_CHANNEL.search(name):
+                i += 1
+                while i < len(lines) and not lines[i].strip().startswith('http'):
+                    i += 1
+                i += 1
+                continue
+
             if '###' in name:
                 i += 1
                 continue
@@ -418,6 +404,8 @@ def parse_m3u_fast(content: str) -> List[Dict]:
     return channels
 
 # ================== FOOTONSAT PARSER ==================
+# (Giữ nguyên như code của bạn)
+
 def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
     games = []
     if not data or "footonsat" not in data or not isinstance(data["footonsat"], list):
@@ -580,6 +568,25 @@ async def validate_events_batch(events: List[Dict]) -> List[Dict]:
     print(f"   ✅ {len(valid_events)}/{len(events)} hợp lệ")
     return valid_events
 
+# ================== SORTING HELPER ==================
+def channel_priority(channel_name: str, code: Optional[str]) -> int:
+    """
+    Trả về giá trị ưu tiên sắp xếp (càng nhỏ càng lên đầu).
+    UK = 0, English-speaking (US, CA, AU, NZ, IE, GB, EN) = 1, còn lại = 2.
+    """
+    name_lower = channel_name.lower()
+    # UK ưu tiên cao nhất
+    if code == 'uk' or name_lower.startswith('uk ') or name_lower.startswith('uk:'):
+        return 0
+    # Nhóm nói tiếng Anh
+    english_codes = {'us', 'ca', 'au', 'nz', 'ie', 'gb', 'en'}
+    if code in english_codes:
+        return 1
+    # Nếu tên có chứa "english"
+    if 'english' in name_lower:
+        return 1
+    return 2
+
 # ================== MAIN ==================
 async def main():
     start = time.time()
@@ -741,7 +748,8 @@ async def main():
                         "datetime": datetime.fromtimestamp(kick_utc).astimezone(TIMEZONE),
                         "name": f"{kick_time} | {match_name} ({ch['name']})",
                         "channel": ch,
-                        "league": league
+                        "league": league,
+                        "match_key": match_key  # để nhóm sau
                     })
                     print(f"         ✅ Thêm kênh: {ch['name']} (score={score:.3f})")
             else:
@@ -749,7 +757,26 @@ async def main():
 
     print(f"\n📊 TỔNG KẾT MATCH: {total_matched_entries} kênh được thêm từ {total_requested_channels} yêu cầu")
 
-    live_events.sort(key=lambda x: x["datetime"])
+    # Sắp xếp: theo thời gian, sau đó trong mỗi trận sắp theo ưu tiên UK > English > khác
+    # Gom nhóm theo match_key
+    events_by_match = defaultdict(list)
+    for ev in live_events:
+        events_by_match[ev["match_key"]].append(ev)
+
+    sorted_events = []
+    # Sắp xếp các trận theo thời gian của trận (lấy thời gian từ event đầu tiên)
+    for match_key, evs in events_by_match.items():
+        evs.sort(key=lambda x: channel_priority(x["channel"]["name"], x["channel"]["_code"]))
+        sorted_events.extend(evs)
+
+    # Sắp xếp toàn bộ theo datetime của trận (lấy datetime từ event đầu tiên của mỗi trận)
+    # Để đảm bảo thứ tự trận đấu, ta sắp xếp match_keys trước
+    sorted_match_keys = sorted(events_by_match.keys(), key=lambda k: min(ev["datetime"] for ev in events_by_match[k]))
+    final_events = []
+    for mk in sorted_match_keys:
+        final_events.extend(events_by_match[mk])
+
+    live_events = final_events
 
     if not SKIP_VALIDATION:
         live_events = await validate_events_batch(live_events)
@@ -760,7 +787,7 @@ async def main():
         for ev in live_events:
             ch = ev["channel"]
             league = ev["league"]
-            group = LEAGUE_GROUP_NAME.get(league, "Live Football")  # fallback
+            group = LEAGUE_GROUP_NAME.get(league, "Live Football")
             extinf = f'#EXTINF:-1 tvg-id="{ch["params"].get("tvg-id","")}" group-title="{group}"'
             if ch["params"].get("tvg-logo"):
                 extinf += f' tvg-logo="{ch["params"]["tvg-logo"]}"'
