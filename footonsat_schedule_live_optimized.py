@@ -60,6 +60,7 @@ PATTERN_QUALITY = re.compile(
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
 PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂʰᵉᵛᶜᵗᵛᴴᴰᵁᴴᴰ³⁸⁴⁰ᴾ⁵⁰ᶠᵖˢ◉┃]')
 PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')
+PATTERN_GENERIC_PREFIX = re.compile(r'^([a-z]{2,3})\:\s*', re.I)  # Dùng để loại bỏ các tiền tố không phải country code
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -223,8 +224,14 @@ def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[s
     return None, None
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
+    """
+    Extract country code from beginning, end, or inside the channel name.
+    Returns (country_code, cleaned_name_without_code).
+    Also removes generic prefixes like "GO:", "VIP:" if they are not valid country codes.
+    """
     name_lower = name.lower().strip()
     
+    # 1. Check prefix patterns that include country codes
     for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
@@ -233,6 +240,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
                 remaining = name_lower[m.end():].lstrip('|:-\\s ┃')
                 return code, remaining.strip()
     
+    # 2. Check suffix pattern
     m_suffix = PATTERN_COUNTRY_CODE_SUFFIX.search(name_lower)
     if m_suffix:
         code = m_suffix.group(1)
@@ -244,6 +252,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
             remaining = name_lower[:m_suffix.start()].strip()
             return mapped, remaining
     
+    # 3. Try to extract country name and map to code, then remove the country name
     code_from_name, country_name = extract_country_code_from_name(name_lower)
     if code_from_name and country_name:
         pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
@@ -251,6 +260,14 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
         cleaned = re.sub(r'\s+', ' ', cleaned)
         return code_from_name, cleaned
     
+    # 4. Remove generic prefixes like "GO:", "VIP:" (2-3 letters + colon) that are not country codes
+    m_generic = PATTERN_GENERIC_PREFIX.match(name_lower)
+    if m_generic:
+        # Only remove if it's NOT a valid country code (already handled above)
+        remaining = name_lower[m_generic.end():].strip()
+        return None, remaining
+    
+    # 5. Remove leading punctuation/spaces if nothing else matched
     cleaned = re.sub(r'^[\|\s\:\-┃]+', '', name_lower)
     return None, cleaned.strip()
 
