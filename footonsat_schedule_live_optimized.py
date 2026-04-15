@@ -54,7 +54,7 @@ PATTERN_COUNTRY_CODE_PREFIX = [
 ]
 PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
 PATTERN_QUALITY = re.compile(
-    r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|motion|fibra|stream|live|online|vip|ppv|hevc|full hd|ultra hd|raw|3840p|30fps|60fps|50fps|ᴴᴰ|ᵁᴴᴰ|⁵⁰ᶠᵖˢ|⁶⁰ᶠᵖˢ|³⁸⁴⁰ᴾ|◉)\b',
+    r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|motion|fibra|stream|live|online|vip|ppv|hevc|full hd|ultra hd|raw|3840p|30fps|60fps|50fps|ᴴᴰ|ᵁᴴᴰ|⁵⁰ᶠᵖˢ|⁶⁰ᶠᵖˢ|³⁸⁴⁰ᴾ|◉|hdr)\b',
     re.I
 )
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
@@ -225,7 +225,6 @@ def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[s
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     name_lower = name.lower().strip()
     
-    # 1. Check prefix patterns
     for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
@@ -234,20 +233,17 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
                 remaining = name_lower[m.end():].lstrip('|:-\\s ┃')
                 return code, remaining.strip()
     
-    # 2. Check suffix pattern
     m_suffix = PATTERN_COUNTRY_CODE_SUFFIX.search(name_lower)
     if m_suffix:
         code = m_suffix.group(1)
         if code in COUNTRY_CODES:
             remaining = name_lower[:m_suffix.start()].strip()
             return code, remaining
-        # Nếu code không có trong COUNTRY_CODES, thử map qua COUNTRY_NAME_TO_CODE
         mapped = COUNTRY_NAME_TO_CODE.get(code, None)
         if mapped:
             remaining = name_lower[:m_suffix.start()].strip()
             return mapped, remaining
     
-    # 3. Try to extract country name and map to code, then remove the country name
     code_from_name, country_name = extract_country_code_from_name(name_lower)
     if code_from_name and country_name:
         pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
@@ -259,11 +255,14 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     return None, cleaned.strip()
 
 def extract_channel_number(name: str) -> Optional[str]:
-    name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd)\b', '', name, flags=re.I)
-    name_clean = name_clean.strip()
+    # Loại bỏ quality keywords trước
+    name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd|hdr|raw)\b', '', name, flags=re.I)
+    name_clean = re.sub(r'[^\w\s]', ' ', name_clean)  # Thay thế ký tự đặc biệt bằng khoảng trắng
+    name_clean = ' '.join(name_clean.split())
     tokens = name_clean.split()
     if tokens:
         last_token = tokens[-1]
+        # Tìm số ở cuối token (có thể dính chữ)
         match = re.search(r'(\d+)$', last_token)
         if match:
             return match.group(1)
@@ -279,7 +278,8 @@ def normalize_channel_name(name: str) -> str:
     name = PATTERN_SPECIAL_TAGS.sub(' ', name)
     name = PATTERN_QUALITY.sub('', name)
     name = name.replace('plus', '+').replace(' and ', ' & ')
-    name = re.sub(r'[^\w\s\+]', ' ', name)
+    # Loại bỏ tất cả ký tự không phải chữ cái, số, khoảng trắng (kể cả dấu +)
+    name = re.sub(r'[^\w\s]', ' ', name)
     name = ' '.join(name.split())
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
     return name.strip()
@@ -327,9 +327,6 @@ def is_football_allowed(league: str, match_name: str) -> bool:
     return True
 
 def preprocess_target_channel(name: str) -> str:
-    """
-    Tiền xử lý tên kênh từ JSON để tăng khả năng khớp với M3U.
-    """
     if not name:
         return name
     name_clean = name.strip()
@@ -337,8 +334,8 @@ def preprocess_target_channel(name: str) -> str:
     # ART Motion Sport -> ART Sport
     name_clean = re.sub(r'\bART Motion Sport\b', 'ART Sport', name_clean, flags=re.I)
     
-    # M+ Liga de Campeones -> M+ LaLiga de Campeones
-    name_clean = re.sub(r'M\+ Liga de Campeones', 'M+ LaLiga de Campeones', name_clean, flags=re.I)
+    # M+ Liga de Campeones -> M+ LaLiga de Campeones (linh hoạt khoảng trắng)
+    name_clean = re.sub(r'M\+\s*Liga\s+de\s+Campeones', 'M+ LaLiga de Campeones', name_clean, flags=re.I)
     
     # Prima Sport RO -> Prima Sport Romania
     name_clean = re.sub(r'\bPrima Sport RO\b', 'Prima Sport Romania', name_clean, flags=re.I)
@@ -716,7 +713,6 @@ async def main():
             if not target_name_raw:
                 continue
 
-            # TIỀN XỬ LÝ TÊN KÊNH
             target_name = preprocess_target_channel(target_name_raw)
 
             total_requested_channels += 1
@@ -776,7 +772,6 @@ async def main():
 
     print(f"\n📊 TỔNG KẾT MATCH: {total_matched_entries} kênh được thêm từ {total_requested_channels} yêu cầu")
 
-    # Gom nhóm và sắp xếp
     events_by_match = defaultdict(list)
     for ev in live_events:
         events_by_match[ev["match_key"]].append(ev)
