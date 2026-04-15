@@ -1,8 +1,8 @@
 name: FootOnSat Optimize
 
 on:
-  #schedule:
-  #  - cron: '10 */2 * * *'
+  schedule:
+    - cron: '20 */2 * * *'
   workflow_dispatch:
 
 permissions:
