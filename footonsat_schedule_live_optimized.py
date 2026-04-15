@@ -48,7 +48,7 @@ PATTERN_COUNTRY_CODE_PREFIX = [
     re.compile(r'^\(([a-z]{2,3})\)\s*', re.I),
 ]
 PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
-PATTERN_QUALITY = re.compile(r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', re.I)
+PATTERN_QUALITY = re.compile(r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|motion|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', re.I)
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
 
 # ================== CONSTANTS ==================
@@ -59,7 +59,7 @@ ALLOWED_FOOTBALL_LEAGUES = {
 }
 
 COUNTRY_CODES: Set[str] = {
-    "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at",
+    "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at", "ba",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
     "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn",
     "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "am"
@@ -70,7 +70,7 @@ COUNTRY_NAME_TO_CODE = {
     "viet nam": "vn", "vietnam": "vn", "korea": "kr", "south korea": "kr",
     "japan": "jp", "china": "cn", "brazil": "br", "argentina": "ar", "mexico": "mx",
     "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
-    "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr", "slovenia": "si", "slovakia": "sk",
+    "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr", "slovenia": "si", "slovakia": "sk", "bosnia and herzegovina": "ba", "bih": "ba",
     "france": "fr", "french": "fr", "germany": "de", "deutsch": "de", "deutschland": "de",
     "italy": "it", "italia": "it", "spain": "es", "espana": "es", "portugal": "pt",
     "netherlands": "nl", "nederland": "nl", "belgium": "be", "belgie": "be",
