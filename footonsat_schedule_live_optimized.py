@@ -1,6 +1,15 @@
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
-...
+- Giữ tất cả kênh M3U khớp (có URL khác nhau) cho mỗi yêu cầu từ lịch trận.
+- Chống trùng link:
+  + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
+  + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
+- Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó), hỗ trợ số liền kề chữ.
+- Xử lý country code ở đầu/cuối tên kênh, loại bỏ tên quốc gia khỏi tên kênh.
+- Tiền xử lý tên kênh từ JSON để tăng khả năng khớp (ART Motion Sport, M+ Liga, Prima Sport RO, SportKlub).
+- Phân nhóm theo giải đấu với tên nhóm tùy chỉnh.
+- Sắp xếp kênh trong trận: UK trước, English sau, còn lại cuối.
+- Bỏ qua kênh quảng cáo chứa #, =, ☰.
 """
 
 import asyncio
@@ -40,8 +49,8 @@ PATTERN_COUNTRY_CODE_PREFIX = [
     re.compile(r'^([a-z]{2,3})\|\s*', re.I),
     re.compile(r'^\[([a-z]{2,3})\]\s*', re.I),
     re.compile(r'^\(([a-z]{2,3})\)\s*', re.I),
-    re.compile(r'^┃([a-z]{2,3})┃\s*', re.I),               # ┃RO┃ format
-    re.compile(r'^([a-z]{2,3})\s+', re.I),                 # "RO " at start
+    re.compile(r'^┃([a-z]{2,3})┃\s*', re.I),
+    re.compile(r'^([a-z]{2,3})\s+', re.I),
 ]
 PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
 PATTERN_QUALITY = re.compile(
@@ -50,7 +59,7 @@ PATTERN_QUALITY = re.compile(
 )
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
 PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂʰᵉᵛᶜᵗᵛᴴᴰᵁᴴᴰ³⁸⁴⁰ᴾ⁵⁰ᶠᵖˢ◉┃]')
-PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')  # Bỏ qua kênh quảng cáo
+PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -72,7 +81,8 @@ COUNTRY_NAME_TO_CODE = {
     "japan": "jp", "china": "cn", "brazil": "br", "argentina": "ar", "mexico": "mx",
     "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
     "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr",
-    "slovenia": "si","slovenija": "si", "slovakia": "sk", "bosnia and herzegovina": "ba", "bih": "ba",
+    "slovenia": "si", "slovenija": "si", "slo": "si", "slovakia": "sk",
+    "bosnia and herzegovina": "ba", "bih": "ba",
     "france": "fr", "french": "fr", "germany": "de", "deutsch": "de", "deutschland": "de",
     "italy": "it", "italia": "it", "spain": "es", "espana": "es", "portugal": "pt",
     "netherlands": "nl", "nederland": "nl", "belgium": "be", "belgie": "be",
@@ -176,7 +186,6 @@ class CacheManager:
 # ================== HELPERS ==================
 @lru_cache(maxsize=10000)
 def normalize(s: str) -> str:
-    """Normalize string for comparison (cached)"""
     s_lower = s.lower()
     s_nfd = unicodedata.normalize("NFD", s_lower)
     return "".join(c for c in s_nfd if unicodedata.category(c) != "Mn")
@@ -187,7 +196,6 @@ def vn_time(timestamp: int) -> str:
 
 @lru_cache(maxsize=5000)
 def similar(a: str, b: str) -> float:
-    """Quick similarity check - optimized Levenshtein"""
     if a == b:
         return 1.0
     if not a or not b:
@@ -208,9 +216,6 @@ def similar(a: str, b: str) -> float:
     return 1 - (dp[-1] / max(len_a, len_b))
 
 def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[str]]:
-    """
-    Try to find a country name in the string and return its code and the name of the country found.
-    """
     name_lower = name.lower()
     for country_name, code in COUNTRY_NAME_TO_CODE.items():
         if country_name in name_lower:
@@ -218,14 +223,9 @@ def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[s
     return None, None
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
-    """
-    Extract country code from beginning, end, or inside the channel name.
-    Returns (country_code, cleaned_name_without_code).
-    If country name is found and removed, the returned cleaned_name will have that substring removed.
-    """
     name_lower = name.lower().strip()
     
-    # 1. Check prefix patterns (including ┃RO┃)
+    # 1. Check prefix patterns
     for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
@@ -241,8 +241,13 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
         if code in COUNTRY_CODES:
             remaining = name_lower[:m_suffix.start()].strip()
             return code, remaining
+        # Nếu code không có trong COUNTRY_CODES, thử map qua COUNTRY_NAME_TO_CODE
+        mapped = COUNTRY_NAME_TO_CODE.get(code, None)
+        if mapped:
+            remaining = name_lower[:m_suffix.start()].strip()
+            return mapped, remaining
     
-    # 3. Try to extract country name and map to code, then remove the country name from the string
+    # 3. Try to extract country name and map to code, then remove the country name
     code_from_name, country_name = extract_country_code_from_name(name_lower)
     if code_from_name and country_name:
         pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
@@ -254,10 +259,6 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     return None, cleaned.strip()
 
 def extract_channel_number(name: str) -> Optional[str]:
-    """
-    Extract the most relevant channel number.
-    Removes quality keywords first, then finds the last numeric token or number at end of token.
-    """
     name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd)\b', '', name, flags=re.I)
     name_clean = name_clean.strip()
     tokens = name_clean.split()
@@ -325,6 +326,34 @@ def is_football_allowed(league: str, match_name: str) -> bool:
         return any(team in match_lower for team in allowed_teams)
     return True
 
+def preprocess_target_channel(name: str) -> str:
+    """
+    Tiền xử lý tên kênh từ JSON để tăng khả năng khớp với M3U.
+    """
+    if not name:
+        return name
+    name_clean = name.strip()
+    
+    # ART Motion Sport -> ART Sport
+    name_clean = re.sub(r'\bART Motion Sport\b', 'ART Sport', name_clean, flags=re.I)
+    
+    # M+ Liga de Campeones -> M+ LaLiga de Campeones
+    name_clean = re.sub(r'M\+ Liga de Campeones', 'M+ LaLiga de Campeones', name_clean, flags=re.I)
+    
+    # Prima Sport RO -> Prima Sport Romania
+    name_clean = re.sub(r'\bPrima Sport RO\b', 'Prima Sport Romania', name_clean, flags=re.I)
+    
+    # SportKlub -> Sport Klub
+    name_clean = re.sub(r'SportKlub', 'Sport Klub', name_clean, flags=re.I)
+    
+    # " SLO" ở cuối -> " Slovenia"
+    name_clean = re.sub(r'\s+SLO$', ' Slovenia', name_clean, flags=re.I)
+    
+    # "Slovenija" -> "Slovenia"
+    name_clean = re.sub(r'\bSlovenija\b', 'Slovenia', name_clean, flags=re.I)
+    
+    return name_clean
+
 # ================== HTTP ==================
 async def fetch_json_async(url: str) -> Optional[dict]:
     loop = asyncio.get_event_loop()
@@ -367,7 +396,6 @@ def parse_m3u_fast(content: str) -> List[Dict]:
             parts = line.split(',')
             name = parts[-1].strip() if len(parts) > 1 else "Unknown"
 
-            # Bỏ qua kênh quảng cáo
             if PATTERN_AD_CHANNEL.search(name):
                 i += 1
                 while i < len(lines) and not lines[i].strip().startswith('http'):
@@ -404,8 +432,6 @@ def parse_m3u_fast(content: str) -> List[Dict]:
     return channels
 
 # ================== FOOTONSAT PARSER ==================
-# (Giữ nguyên như code của bạn)
-
 def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
     games = []
     if not data or "footonsat" not in data or not isinstance(data["footonsat"], list):
@@ -570,19 +596,12 @@ async def validate_events_batch(events: List[Dict]) -> List[Dict]:
 
 # ================== SORTING HELPER ==================
 def channel_priority(channel_name: str, code: Optional[str]) -> int:
-    """
-    Trả về giá trị ưu tiên sắp xếp (càng nhỏ càng lên đầu).
-    UK = 0, English-speaking (US, CA, AU, NZ, IE, GB, EN) = 1, còn lại = 2.
-    """
     name_lower = channel_name.lower()
-    # UK ưu tiên cao nhất
     if code == 'uk' or name_lower.startswith('uk ') or name_lower.startswith('uk:'):
         return 0
-    # Nhóm nói tiếng Anh
     english_codes = {'us', 'ca', 'au', 'nz', 'ie', 'gb', 'en'}
     if code in english_codes:
         return 1
-    # Nếu tên có chứa "english"
     if 'english' in name_lower:
         return 1
     return 2
@@ -598,7 +617,6 @@ async def main():
 
     print("🔄 Bắt đầu...")
 
-    # Fetch APIs
     print("📡 Tải APIs...")
     footonsat_tasks = [fetch_json_async(url) for url in FOOTONSAT_URLS]
     love4vn_task = fetch_json_async(LOVE4VN_URL)
@@ -619,7 +637,6 @@ async def main():
         print("⚠️ Không có trận nào.")
         return
 
-    # Load M3U
     print("📥 Tải M3U...")
     cached = CacheManager.get_cache()
 
@@ -660,7 +677,6 @@ async def main():
 
     print(f"   ✅ {len(channels)} kênh")
 
-    # Pre-compute M3U channel attributes
     for ch in channels:
         code, clean = extract_prefix_and_name(ch['name'])
         ch['_code'] = code
@@ -668,7 +684,6 @@ async def main():
         ch['_norm'] = normalize_channel_name(clean)
         ch['_num'] = extract_channel_number(clean)
 
-    # ================== MATCH ==================
     print("\n🔍 QUÁ TRÌNH MATCH KÊNH (giữ tất cả kênh khớp, chống trùng theo quy tắc):")
 
     used_urls_per_match = defaultdict(set)
@@ -697,12 +712,18 @@ async def main():
             continue
 
         for ch_info in channels_from_json:
-            target_name = ch_info.get('channel_name')
-            if not target_name:
+            target_name_raw = ch_info.get('channel_name')
+            if not target_name_raw:
                 continue
 
+            # TIỀN XỬ LÝ TÊN KÊNH
+            target_name = preprocess_target_channel(target_name_raw)
+
             total_requested_channels += 1
-            print(f"   📡 Yêu cầu: {target_name}")
+            if target_name != target_name_raw:
+                print(f"   📡 Yêu cầu: {target_name_raw} -> đã đổi thành: {target_name}")
+            else:
+                print(f"   📡 Yêu cầu: {target_name}")
 
             target_code, target_clean = extract_prefix_and_name(target_name)
             target_num = extract_channel_number(target_clean)
@@ -710,7 +731,6 @@ async def main():
 
             matching = []
             for ch in channels:
-                # Pre-filters
                 if target_code and ch['_code'] and target_code != ch['_code']:
                     continue
                 if target_num is not None:
@@ -718,7 +738,6 @@ async def main():
                         continue
 
                 if is_channel_match(target_name, ch['name'], league):
-                    # Determine score
                     if ch['_norm'] == target_norm or ch['_norm'].replace(' ', '') == target_norm.replace(' ', ''):
                         score = 1.0
                     else:
@@ -749,7 +768,7 @@ async def main():
                         "name": f"{kick_time} | {match_name} ({ch['name']})",
                         "channel": ch,
                         "league": league,
-                        "match_key": match_key  # để nhóm sau
+                        "match_key": match_key
                     })
                     print(f"         ✅ Thêm kênh: {ch['name']} (score={score:.3f})")
             else:
@@ -757,31 +776,24 @@ async def main():
 
     print(f"\n📊 TỔNG KẾT MATCH: {total_matched_entries} kênh được thêm từ {total_requested_channels} yêu cầu")
 
-    # Sắp xếp: theo thời gian, sau đó trong mỗi trận sắp theo ưu tiên UK > English > khác
-    # Gom nhóm theo match_key
+    # Gom nhóm và sắp xếp
     events_by_match = defaultdict(list)
     for ev in live_events:
         events_by_match[ev["match_key"]].append(ev)
 
-    sorted_events = []
-    # Sắp xếp các trận theo thời gian của trận (lấy thời gian từ event đầu tiên)
-    for match_key, evs in events_by_match.items():
-        evs.sort(key=lambda x: channel_priority(x["channel"]["name"], x["channel"]["_code"]))
-        sorted_events.extend(evs)
-
-    # Sắp xếp toàn bộ theo datetime của trận (lấy datetime từ event đầu tiên của mỗi trận)
-    # Để đảm bảo thứ tự trận đấu, ta sắp xếp match_keys trước
-    sorted_match_keys = sorted(events_by_match.keys(), key=lambda k: min(ev["datetime"] for ev in events_by_match[k]))
+    sorted_match_keys = sorted(events_by_match.keys(),
+                               key=lambda k: min(ev["datetime"] for ev in events_by_match[k]))
     final_events = []
     for mk in sorted_match_keys:
-        final_events.extend(events_by_match[mk])
+        evs = events_by_match[mk]
+        evs.sort(key=lambda x: channel_priority(x["channel"]["name"], x["channel"]["_code"]))
+        final_events.extend(evs)
 
     live_events = final_events
 
     if not SKIP_VALIDATION:
         live_events = await validate_events_batch(live_events)
 
-    # Write M3U with proper group titles
     with open(LIVE_M3U, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for ev in live_events:
