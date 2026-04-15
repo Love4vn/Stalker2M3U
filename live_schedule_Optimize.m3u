@@ -2174,6 +2174,11 @@ http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=944685&ex
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 2436226CD7D85808B3D06CAF65F1C179
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=441313&extension=ts&play_token=Qm5p4tqsUn
+#EXTINF:-1 tvg-id="575120" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2319.png?74375",16/04 02:00 AM | Bayern Munich vs Real Madrid (NZ: CBC SPORT)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2436226CD7D85808B3D06CAF65F1C179
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=575120&extension=ts&play_token=UcAni8MWmD
 #EXTINF:-1 tvg-id="1115" group-title="Live UEFA Champions League" tvg-logo="http://picon.tivi-ott.net:25461/picon/BOSNA/Arena_sport_logo.png",16/04 02:00 AM | Bayern Munich vs Real Madrid (┃HR┃ ARENA SPORT 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
@@ -2639,6 +2644,11 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1069960
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer B62F4036CBF031632AAEEA8A6BC8C820
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1019732
+#EXTINF:-1 tvg-id="619642" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2319.png?32670",16/04 02:00 AM | Bayern Munich vs Real Madrid (AZ: CBC SPORT)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2436226CD7D85808B3D06CAF65F1C179
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=619642&extension=ts&play_token=XwaTzabtJv
 #EXTINF:-1 tvg-id="54946" group-title="Live UEFA Champions League" tvg-logo="https://go4.pw/EUROPE/cosmotesport.png",16/04 02:00 AM | Bayern Munich vs Real Madrid (GR - COSMOTE SPORT 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -2844,6 +2854,26 @@ http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1444100&e
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 2436226CD7D85808B3D06CAF65F1C179
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=441418&extension=ts&play_token=mJ8xYC0Vo3
+#EXTINF:-1 tvg-id="1695104" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13966.png?ver=93757",16/04 02:00 AM | Bayern Munich vs Real Madrid (MEO: SPORT TV + ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2436226CD7D85808B3D06CAF65F1C179
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1695104&extension=ts&play_token=mCn2whxgJs
+#EXTINF:-1 tvg-id="1407314" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13972.jpg?ver=58092",16/04 02:00 AM | Bayern Munich vs Real Madrid (VO: SPORT TV+ ᴴᴰ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2436226CD7D85808B3D06CAF65F1C179
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1407314&extension=ts&play_token=JVfz3gIWZF
+#EXTINF:-1 tvg-id="1688744" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14268.png?62836",16/04 02:00 AM | Bayern Munich vs Real Madrid (VIP: SPORT TV+ ᴴᴰ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2436226CD7D85808B3D06CAF65F1C179
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1688744&extension=ts&play_token=pGkyVwHjsR
+#EXTINF:-1 tvg-id="1688743" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14268.png?62836",16/04 02:00 AM | Bayern Munich vs Real Madrid (VIP: SPORT TV+ ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2436226CD7D85808B3D06CAF65F1C179
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1688743&extension=ts&play_token=CLsMgbbrP6
 #EXTINF:-1 tvg-id="1027869" group-title="Live UEFA Champions League" tvg-logo="https://go4.pw/Africa/vip.png",16/04 02:00 AM | Bayern Munich vs Real Madrid (VIP - SUPERSPORT VARIETY 3 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
