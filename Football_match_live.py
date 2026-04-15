@@ -137,7 +137,7 @@ def is_football_allowed(league: str, match_name: str) -> bool:
 
 def clean_channel_name(name: str) -> str:
     """Loại bỏ các ký tự đặc biệt, chuẩn hóa để dễ match."""
-    # Xóa các tag như HD, FHD, v.v. (không cần thiết nhưng giúp match sạch hơn)
+    # Xóa các tag như HD, FHD, v.v.
     name = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd|hdr|raw)\b', '', name, flags=re.I)
     name = re.sub(r'[^\w\s]', ' ', name)  # Thay dấu câu bằng space
     name = ' '.join(name.split())
@@ -148,12 +148,8 @@ def build_match_pattern(match_name: str) -> re.Pattern:
     Tạo regex pattern để tìm tên trận trong tên kênh.
     Ví dụ: "Arsenal vs Sporting CP" -> pattern bắt các dạng:
     Arsenal vs Sporting, Arsenal v Sporting, Arsenal - Sporting, Arsenal @ Sporting, v.v.
-    Có thể có thêm "CP" hoặc "Lisbon".
     """
-    # Tách hai đội dựa trên các từ khóa phân cách phổ biến
     separators = r'(?:\s+(?:vs|v|[-@])\s+)'
-    # Tìm vị trí phân cách trong match_name
-    # Dùng regex để tách
     parts = re.split(separators, match_name, flags=re.I)
     if len(parts) < 2:
         # Không tìm thấy, fallback: dùng nguyên cụm
@@ -162,18 +158,34 @@ def build_match_pattern(match_name: str) -> re.Pattern:
     team1 = parts[0].strip()
     team2 = parts[1].strip()
     
-    # Escape regex đặc biệt
     team1_re = re.escape(team1)
     team2_re = re.escape(team2)
     
-    # Tạo pattern cho team2 có thể có thêm hậu tố như "CP", "Lisbon", v.v.
-    # Ta cho phép sau team2 có thể có thêm từ (tuỳ chọn)
-    team2_re = team2_re + r'(?:\s+\w+)*'  # cho phép thêm từ như "CP", "Lisbon"
+    # Cho phép team2 có thêm hậu tố như "CP", "Lisbon"
+    team2_re = team2_re + r'(?:\s+\w+)*'
     
-    # Pattern tổng: team1 + separator + team2 (với các separator được phép)
     sep_pattern = r'\s+(?:vs|v|[-@])\s+'
     pattern_str = rf'{team1_re}{sep_pattern}{team2_re}'
     return re.compile(pattern_str, re.I)
+
+def channel_priority(channel_name: str) -> int:
+    """Ưu tiên: UK (0), English (1), còn lại (2)."""
+    name_lower = channel_name.lower()
+    # UK indicators: country code hoặc từ khóa
+    uk_pattern = r'\b(uk|gb|england|united kingdom)\b'
+    if re.search(uk_pattern, name_lower) or name_lower.startswith('uk ') or name_lower.startswith('uk:'):
+        return 0
+    # English language indicators: US, CA, AU, NZ, IE, EN, hoặc từ "english"
+    english_codes = {'us', 'ca', 'au', 'nz', 'ie', 'en'}
+    # Tìm country code dạng |US|, US:, v.v.
+    code_match = re.search(r'(?:^|\|)([a-z]{2,3})(?:\||:|\s|$)', name_lower)
+    if code_match:
+        code = code_match.group(1)
+        if code in english_codes:
+            return 1
+    if 'english' in name_lower:
+        return 1
+    return 2
 
 # ================== HTTP ==================
 async def fetch_json_async(url: str) -> Optional[dict]:
@@ -217,7 +229,7 @@ def parse_m3u_fast(content: str) -> List[Dict]:
             parts = line.split(',')
             name = parts[-1].strip() if len(parts) > 1 else "Unknown"
 
-            # Bỏ qua kênh có ký tự quảng cáo (#, =, ☰) - giữ từ code cũ
+            # Bỏ qua kênh có ký tự quảng cáo (#, =, ☰)
             if re.search(r'[#=☰]', name):
                 i += 1
                 while i < len(lines) and not lines[i].strip().startswith('http'):
@@ -271,7 +283,7 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                 league = val
                 break
 
-        if not league:
+        if not league or league not in ALLOWED_FOOTBALL_LEAGUES:
             i += 1
             continue
 
@@ -291,11 +303,13 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                 continue
 
             match_name = item.get("match", "").strip()
+            if not match_name:
+                i += 1
+                continue
             if not is_football_allowed(league, match_name):
                 i += 1
                 continue
 
-            # Bỏ qua phần channels từ JSON, chỉ lấy thông tin trận
             games.append({
                 "league": league,
                 "match": match_name,
@@ -303,7 +317,7 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                 "time": vn_time(kick_utc),
                 "source": "footonsat"
             })
-            # Nhảy qua các dòng channel nếu có (vì ta không dùng)
+            # Nhảy qua các dòng channel
             j = i + 1
             while j < len(items):
                 next_item = items[j]
@@ -330,9 +344,13 @@ def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
 
             league = game.get("league", "")
             match_name = game.get("match", "").strip()
-
+            
             # Chỉ lấy bóng đá
-            if league != "Tennis" and not is_football_allowed(league, match_name):
+            if league not in ALLOWED_FOOTBALL_LEAGUES:
+                continue
+            if not match_name:
+                continue
+            if not is_football_allowed(league, match_name):
                 continue
 
             games.append({
@@ -465,7 +483,7 @@ async def main():
 
     print(f"   ✅ {len(channels)} kênh")
 
-    # Chuẩn bị tên kênh đã làm sạch cho việc match nhanh
+    # Chuẩn bị tên kênh đã làm sạch
     for ch in channels:
         ch['_clean_name'] = clean_channel_name(ch['name'])
 
@@ -482,15 +500,12 @@ async def main():
 
         print(f"\n🏆 [{league}] {match_name} | {kick_time}")
 
-        # Tạo pattern regex cho trận này
         pattern = build_match_pattern(match_name)
 
-        # Tìm kênh khớp
         matched_for_game = []
-        seen_urls = set()  # tránh trùng URL trong cùng trận
+        seen_urls = set()
 
         for ch in channels:
-            # Kiểm tra nhanh: tên kênh đã clean có match pattern không
             if pattern.search(ch['_clean_name']):
                 url = ch['url']
                 if url not in seen_urls:
@@ -498,6 +513,8 @@ async def main():
                     matched_for_game.append(ch)
 
         if matched_for_game:
+            # Sắp xếp kênh trong trận: UK trước, English sau, còn lại cuối
+            matched_for_game.sort(key=lambda ch: channel_priority(ch['name']))
             print(f"   ✅ Tìm thấy {len(matched_for_game)} kênh")
             for ch in matched_for_game:
                 live_events.append({
@@ -519,7 +536,6 @@ async def main():
     # Sắp xếp theo thời gian trận đấu
     live_events.sort(key=lambda x: x["datetime"])
 
-    # Validation (nếu không skip)
     if not SKIP_VALIDATION:
         live_events = await validate_events_batch(live_events)
 
