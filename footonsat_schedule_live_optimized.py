@@ -5,7 +5,7 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
   + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
 - Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó).
-- Xử lý country code ở đầu/cuối tên kênh, hỗ trợ chuyển đổi tên quốc gia sang mã.
+- Xử lý country code ở đầu/cuối tên kênh, hỗ trợ chuyển đổi tên quốc gia sang mã và loại bỏ tên quốc gia khỏi tên kênh.
 - Phân nhóm theo giải đấu với tên nhóm tùy chỉnh.
 """
 
@@ -48,8 +48,12 @@ PATTERN_COUNTRY_CODE_PREFIX = [
     re.compile(r'^\(([a-z]{2,3})\)\s*', re.I),
 ]
 PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
-PATTERN_QUALITY = re.compile(r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|motion|stream|live|online|vip|ppv|hevc|full hd|ultra hd)\b', re.I)
+PATTERN_QUALITY = re.compile(
+    r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|motion|stream|live|online|vip|ppv|hevc|full hd|ultra hd|raw|ᴴᴰ|◉)\b',
+    re.I
+)
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
+PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂ◉┃]')  # Các ký tự đặc biệt thường gặp
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -70,7 +74,8 @@ COUNTRY_NAME_TO_CODE = {
     "viet nam": "vn", "vietnam": "vn", "korea": "kr", "south korea": "kr",
     "japan": "jp", "china": "cn", "brazil": "br", "argentina": "ar", "mexico": "mx",
     "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
-    "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr", "slovenia": "si", "slovakia": "sk", "bosnia and herzegovina": "ba", "bih": "ba",
+    "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr",
+    "slovenia": "si", "slovakia": "sk", "bosnia and herzegovina": "ba", "bih": "ba",
     "france": "fr", "french": "fr", "germany": "de", "deutsch": "de", "deutschland": "de",
     "italy": "it", "italia": "it", "spain": "es", "espana": "es", "portugal": "pt",
     "netherlands": "nl", "nederland": "nl", "belgium": "be", "belgie": "be",
@@ -205,18 +210,21 @@ def similar(a: str, b: str) -> float:
 
     return 1 - (dp[-1] / max(len_a, len_b))
 
-def extract_country_code_from_name(name: str) -> Optional[str]:
-    """Try to find a country name in the string and return its code."""
+def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[str]]:
+    """
+    Try to find a country name in the string and return its code and the name of the country found.
+    """
     name_lower = name.lower()
     for country_name, code in COUNTRY_NAME_TO_CODE.items():
         if country_name in name_lower:
-            return code
-    return None
+            return code, country_name
+    return None, None
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     """
     Extract country code from beginning, end, or inside the channel name.
     Returns (country_code, cleaned_name_without_code).
+    If country name is found and removed, the returned cleaned_name will have that substring removed.
     """
     name_lower = name.lower().strip()
     
@@ -237,12 +245,15 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
             remaining = name_lower[:m_suffix.start()].strip()
             return code, remaining
     
-    # 3. Try to extract country name and map to code
-    # We don't remove it from the name to avoid over-complication, just extract the code
-    code_from_name = extract_country_code_from_name(name_lower)
-    if code_from_name:
-        # We still return the original name unchanged because removing country name is ambiguous
-        return code_from_name, name_lower
+    # 3. Try to extract country name and map to code, then remove the country name from the string
+    code_from_name, country_name = extract_country_code_from_name(name_lower)
+    if code_from_name and country_name:
+        # Remove the country name (case-insensitive) from the string
+        pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
+        cleaned = pattern.sub('', name_lower).strip()
+        # Also clean up any double spaces left
+        cleaned = re.sub(r'\s+', ' ', cleaned)
+        return code_from_name, cleaned
     
     # No country code found
     cleaned = re.sub(r'^[\|\s\:\-]+', '', name_lower)
@@ -263,10 +274,13 @@ def extract_channel_number(name: str) -> Optional[str]:
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
+    # Remove special Unicode tags like ⱽᴵᴾ ᴿᴬᵂ
+    name = PATTERN_SPECIAL_TAGS.sub(' ', name)
     name = PATTERN_QUALITY.sub('', name)
     name = name.replace('plus', '+').replace(' and ', ' & ')
     name = re.sub(r'[^\w\s\+]', ' ', name)
     name = ' '.join(name.split())
+    # Convert to ASCII, ignore non-ASCII characters
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
     return name.strip()
 
