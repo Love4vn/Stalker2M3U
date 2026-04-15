@@ -4,8 +4,8 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Chống trùng link:
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
   + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
-- Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó).
-- Xử lý country code ở đầu/cuối tên kênh, hỗ trợ chuyển đổi tên quốc gia sang mã và loại bỏ tên quốc gia khỏi tên kênh.
+- Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó), hỗ trợ số liền kề chữ.
+- Xử lý country code ở đầu/cuối tên kênh, loại bỏ tên quốc gia khỏi tên kênh.
 - Phân nhóm theo giải đấu với tên nhóm tùy chỉnh.
 """
 
@@ -49,11 +49,11 @@ PATTERN_COUNTRY_CODE_PREFIX = [
 ]
 PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
 PATTERN_QUALITY = re.compile(
-    r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|motion|stream|live|online|vip|ppv|hevc|full hd|ultra hd|raw|ᴴᴰ|◉)\b',
+    r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|motion|fibra|stream|live|online|vip|ppv|hevc|full hd|ultra hd|raw|3840p|30fps|60fps|50fps|ᴴᴰ|ᵁᴴᴰ|⁵⁰ᶠᵖˢ|⁶⁰ᶠᵖˢ|³⁸⁴⁰ᴾ|◉)\b',
     re.I
 )
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
-PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂ◉┃]')  # Các ký tự đặc biệt thường gặp
+PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂʰᵉᵛᶜᵗᵛᴴᴰᵁᴴᴰ³⁸⁴⁰ᴾ⁵⁰ᶠᵖˢ◉┃]')
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -262,11 +262,21 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
 def extract_channel_number(name: str) -> Optional[str]:
     """
     Extract the most relevant channel number.
-    Removes quality keywords first, then finds the last numeric token.
+    Removes quality keywords first, then finds the last numeric token or number at end of token.
     """
     name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd)\b', '', name, flags=re.I)
     name_clean = name_clean.strip()
     tokens = name_clean.split()
+    if tokens:
+        last_token = tokens[-1]
+        # Find trailing digits (e.g., "TSN4")
+        match = re.search(r'(\d+)$', last_token)
+        if match:
+            return match.group(1)
+        # If token is all digits
+        if last_token.isdigit():
+            return last_token
+    # Fallback: iterate reversed tokens to find any all-digit token
     for token in reversed(tokens):
         if token.isdigit():
             return token
@@ -293,6 +303,7 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     - Strict number matching: if target has a number, M3U MUST have the same number.
     - Country code must match if present in both (and different).
     - Then compare normalized names with similarity threshold.
+    - Extra check: if names match after removing all spaces, return True.
     """
     if not ch_name or not m3u_name:
         return False
@@ -315,7 +326,11 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     ch_norm = normalize_channel_name(ch_clean)
     m3u_norm = normalize_channel_name(m3u_clean)
 
+    # Exact match after normalization
     if ch_norm == m3u_norm:
+        return True
+    # Match after removing all spaces (handles "TSN4" vs "TSN 4")
+    if ch_norm.replace(' ', '') == m3u_norm.replace(' ', ''):
         return True
     if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
         return ch_norm == m3u_norm
@@ -697,7 +712,7 @@ async def main():
 
                 if is_channel_match(target_name, ch['name'], league):
                     # Determine score
-                    if ch['_norm'] == target_norm:
+                    if ch['_norm'] == target_norm or ch['_norm'].replace(' ', '') == target_norm.replace(' ', ''):
                         score = 1.0
                     else:
                         score = similar(ch['_norm'], target_norm)
