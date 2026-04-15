@@ -358,7 +358,7 @@ def preprocess_target_channel(name: str) -> str:
     name_clean = re.sub(r'\bPrima Sport RO\b', 'Prima Sport Romania', name_clean, flags=re.I)
     
     # SportKlub -> Sport Klub
-    name_clean = re.sub(r'SportKlub', 'Sport Klub', name_clean, flags=re.I)
+    #name_clean = re.sub(r'SportKlub', 'Sport Klub', name_clean, flags=re.I)
     
     # " SLO" ở cuối -> " Slovenia"
     name_clean = re.sub(r'\s+SLO$', ' Slovenia', name_clean, flags=re.I)
