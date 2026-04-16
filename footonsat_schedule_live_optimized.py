@@ -54,7 +54,7 @@ PATTERN_COUNTRY_CODE_PREFIX = [
 ]
 PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
 PATTERN_QUALITY = re.compile(
-    r'\b(hd|uhd|8k|4k|fhd|sd|tv|channel|network|premium|extra|plus|max|motion|fibra|stream|live|online|vip|ppv|hevc|full hd|ultra hd|raw|3840p|30fps|60fps|50fps|ᴴᴰ|ᵁᴴᴰ|⁵⁰ᶠᵖˢ|⁶⁰ᶠᵖˢ|³⁸⁴⁰ᴾ|◉|hdr)\b',
+    r'\b(hd|uhd|8k|4k|fhd|sd|channel|fibra|stream|online|vip|ppv|hevc|full hd|ultra hd|raw|3840p|30fps|60fps|50fps|ᴴᴰ|ᵁᴴᴰ|⁵⁰ᶠᵖˢ|⁶⁰ᶠᵖˢ|³⁸⁴⁰ᴾ|◉|hdr)\b',
     re.I
 )
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
@@ -72,24 +72,24 @@ ALLOWED_FOOTBALL_LEAGUES = {
 COUNTRY_CODES: Set[str] = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at", "ba",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
-    "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn",
+    "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn", "arg", "irl",
     "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "am"
 }
 
 COUNTRY_NAME_TO_CODE = {
     "united states": "us", "usa": "us", "uk": "uk", "united kingdom": "uk",
     "viet nam": "vn", "vietnam": "vn", "korea": "kr", "south korea": "kr",
-    "japan": "jp", "china": "cn", "brazil": "br", "argentina": "ar", "mexico": "mx",
+    "japan": "jp", "china": "cn", "brazil": "br", "argentina": "arg", "mexico": "mx",
     "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
     "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr",
-    "slovenia": "si", "slovenija": "si", "slo": "si", "slovakia": "sk",
-    "bosnia and herzegovina": "ba", "bih": "ba",
+    "slovenia": "si", "slovenija": "si", "slo": "si", "slovakia": "sk", "arabia": "ar",
+    "bosnia and herzegovina": "ba", "bih": "ba", "roireland": "irl",
     "france": "fr", "french": "fr", "germany": "de", "deutsch": "de", "deutschland": "de",
     "italy": "it", "italia": "it", "spain": "es", "espana": "es", "portugal": "pt",
     "netherlands": "nl", "nederland": "nl", "belgium": "be", "belgie": "be",
     "switzerland": "ch", "austria": "at", "österreich": "at",
     "sweden": "se", "sverige": "se", "norway": "no", "norge": "no",
-    "denmark": "dk", "danmark": "dk", "finland": "fi", "suomi": "fi",
+    "denmark": "dk", "dansk": "dk", "danmark": "dk", "finland": "fi", "suomi": "fi",
     "poland": "pl", "polska": "pl", "czech": "cz", "czech republic": "cz", "czechia": "cz",
     "hungary": "hu", "romania": "ro", "bulgaria": "bg", "greece": "gr", "hellas": "gr",
     "turkey": "tr", "türkiye": "tr", "israel": "il", "australia": "au",
@@ -355,12 +355,30 @@ def preprocess_target_channel(name: str) -> str:
         return name
     name_clean = name.strip()
     
+    # ART Motion Sport -> ART Sport
     name_clean = re.sub(r'\bART Motion Sport\b', 'ART Sport', name_clean, flags=re.I)
+    
+    # M+ Liga de Campeones -> M+ LaLiga de Campeones
     name_clean = re.sub(r'M\+\s*Liga\s+de\s+Campeones', 'M+ LaLiga de Campeones', name_clean, flags=re.I)
+    
+    # Prima Sport RO -> Prima Sport Romania
     name_clean = re.sub(r'\bPrima Sport RO\b', 'Prima Sport Romania', name_clean, flags=re.I)
+    
+    # SportKlub -> Sport Klub
     name_clean = re.sub(r'SportKlub', 'Sport Klub', name_clean, flags=re.I)
+    
+    # " SLO" ở cuối -> " Slovenia"
     name_clean = re.sub(r'\s+SLO$', ' Slovenia', name_clean, flags=re.I)
+    
+    # "Slovenija" -> "Slovenia"
     name_clean = re.sub(r'\bSlovenija\b', 'Slovenia', name_clean, flags=re.I)
+    
+    # --- Bổ sung mới ---
+    # Arena Sport 1 SRB -> Arena Sport 1 Serbia
+    name_clean = re.sub(r'\b(Arena Sport \d+) SRB\b', r'\1 Serbia', name_clean, flags=re.I)
+    
+    # Premier Sports ROI -> Premier Sports RoIreland
+    name_clean = re.sub(r'\bPremier Sports ROI\b', 'Premier Sports RoIreland', name_clean, flags=re.I)
     
     return name_clean
 
