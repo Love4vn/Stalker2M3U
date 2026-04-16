@@ -128,7 +128,14 @@ ALLOWED_TEAMS_PER_LEAGUE = {
 }
 
 FOOTONSAT_URLS = [
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/premierleague.json"
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/premierleague.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/seriea.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/laliga.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/bundesliga.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ligue1.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/championsleague.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/europaleague.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ConferenceLeague.json",
 ]
 
 LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/schedule.json"
@@ -291,18 +298,11 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     ch_num = extract_channel_number(ch_clean)
     m3u_num = extract_channel_number(m3u_clean)
 
-    # Nếu target có số, M3U phải có số giống hệt
     if ch_num is not None:
         if m3u_num is None or ch_num != m3u_num:
-            # Debug: in ra nếu là kênh SportKlub
-            if 'sport' in ch_name.lower():
-                print(f"         [Debug] Number mismatch: target={ch_num}, m3u={m3u_num}")
             return False
 
-    # Nếu cả hai có country code, phải khớp
     if ch_code and m3u_code and ch_code != m3u_code:
-        if 'sport' in ch_name.lower():
-            print(f"         [Debug] Country mismatch: target={ch_code}, m3u={m3u_code}")
         return False
 
     ch_norm = normalize_channel_name(ch_clean)
@@ -316,10 +316,7 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
         return ch_norm == m3u_norm
 
     threshold = 0.85 if league == "Tennis" else 0.92
-    score = similar(ch_norm, m3u_norm)
-    if 'sport' in ch_name.lower() and score < threshold:
-        print(f"         [Debug] Similarity low: target='{ch_norm}', m3u='{m3u_norm}', score={score:.3f}")
-    return score >= threshold
+    return similar(ch_norm, m3u_norm) >= threshold
 
 def is_football_allowed(league: str, match_name: str) -> bool:
     if league not in ALLOWED_FOOTBALL_LEAGUES:
