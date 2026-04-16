@@ -6,11 +6,12 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
   + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
 - Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó), hỗ trợ số liền kề chữ.
 - Xử lý country code ở đầu/cuối tên kênh, loại bỏ tên quốc gia khỏi tên kênh.
-- Tiền xử lý tên kênh từ JSON để tăng khả năng khớp (ART Motion Sport, M+ Liga, Prima Sport RO, SportKlub).
+- Tiền xử lý tên kênh từ JSON để tăng khả năng khớp.
 - Phân nhóm theo giải đấu với tên nhóm tùy chỉnh.
 - Sắp xếp kênh trong trận: UK trước, English sau, còn lại cuối.
 - Bỏ qua kênh quảng cáo chứa #, =, ☰.
 """
+
 import asyncio
 import json
 import re
@@ -224,39 +225,51 @@ def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[s
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     """
-    Robust extraction of country code from the beginning of the channel name.
-    Removes any decorative characters like ┃ and normalizes spacing.
+    Extract country code from beginning, end, or inside the channel name.
     Returns (country_code, cleaned_name_without_code).
+    Also removes generic prefixes like "GO:", "VIP:" if they are not valid country codes.
     """
-    # Đầu tiên, loại bỏ các ký tự đặc biệt không cần thiết ở đầu và cuối
-    name_clean = name.strip()
-    # Thay thế các ký tự trang trí bằng khoảng trắng để dễ tách token
-    name_clean = re.sub(r'[┃\|\[\]\(\)]', ' ', name_clean)
-    name_clean = re.sub(r'\s+', ' ', name_clean).strip()
+    name_lower = name.lower().strip()
     
-    # Tách token đầu tiên
-    tokens = name_clean.split(' ', 1)
-    first_token = tokens[0].lower()
+    # 1. Check prefix patterns that include country codes
+    for pat in PATTERN_COUNTRY_CODE_PREFIX:
+        m = pat.match(name_lower)
+        if m:
+            code = m.group(1)
+            if code in COUNTRY_CODES:
+                # Xóa phần đã khớp khỏi tên, giữ lại phần còn lại
+                remaining = name_lower[m.end():].lstrip('|:-\\s ┃')
+                return code, remaining.strip()
     
-    # Kiểm tra token đầu tiên có phải country code không
-    # Pattern: 2-3 chữ cái, có thể kèm dấu hai chấm (như "SI:")
-    code_match = re.match(r'^([a-z]{2,3}):?$', first_token)
-    if code_match:
-        code = code_match.group(1)
+    # 2. Check suffix pattern
+    m_suffix = PATTERN_COUNTRY_CODE_SUFFIX.search(name_lower)
+    if m_suffix:
+        code = m_suffix.group(1)
         if code in COUNTRY_CODES:
-            remaining = tokens[1] if len(tokens) > 1 else ''
-            return code, remaining.strip()
+            remaining = name_lower[:m_suffix.start()].strip()
+            return code, remaining
+        mapped = COUNTRY_NAME_TO_CODE.get(code, None)
+        if mapped:
+            remaining = name_lower[:m_suffix.start()].strip()
+            return mapped, remaining
     
-    # Nếu token đầu tiên không phải, thử tìm country name trong cả chuỗi
-    code_from_name, country_name = extract_country_code_from_name(name_clean)
+    # 3. Try to extract country name and map to code, then remove the country name
+    code_from_name, country_name = extract_country_code_from_name(name_lower)
     if code_from_name and country_name:
         pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
-        cleaned = pattern.sub('', name_clean).strip()
+        cleaned = pattern.sub('', name_lower).strip()
         cleaned = re.sub(r'\s+', ' ', cleaned)
         return code_from_name, cleaned
     
-    # Nếu không có country code, trả về None và tên đã làm sạch
-    return None, name_clean
+    # 4. Remove generic prefixes like "GO:", "VIP:" (2-3 letters + colon) that are not country codes
+    m_generic = PATTERN_GENERIC_PREFIX.match(name_lower)
+    if m_generic:
+        remaining = name_lower[m_generic.end():].strip()
+        return None, remaining
+    
+    # 5. Remove leading punctuation/spaces if nothing else matched
+    cleaned = re.sub(r'^[\|\s\:\-┃]+', '', name_lower)
+    return None, cleaned.strip()
 
 def extract_channel_number(name: str) -> Optional[str]:
     name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd|hdr|raw)\b', '', name, flags=re.I)
@@ -277,10 +290,11 @@ def extract_channel_number(name: str) -> Optional[str]:
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
+    # Xóa các ký tự đặc biệt Unicode
+    name = re.sub(r'[^\w\s]', ' ', name)
     name = PATTERN_SPECIAL_TAGS.sub(' ', name)
     name = PATTERN_QUALITY.sub('', name)
     name = name.replace('plus', '+').replace(' and ', ' & ')
-    name = re.sub(r'[^\w\s]', ' ', name)
     name = ' '.join(name.split())
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
     return name.strip()
@@ -300,9 +314,14 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
 
     if ch_num is not None:
         if m3u_num is None or ch_num != m3u_num:
+            # Debug cho SportKlub
+            if 'sport' in ch_name.lower() and 'klub' in ch_name.lower():
+                print(f"         [Debug] Number mismatch: target={ch_num}, m3u={m3u_num}")
             return False
 
     if ch_code and m3u_code and ch_code != m3u_code:
+        if 'sport' in ch_name.lower() and 'klub' in ch_name.lower():
+            print(f"         [Debug] Country mismatch: target={ch_code}, m3u={m3u_code}")
         return False
 
     ch_norm = normalize_channel_name(ch_clean)
@@ -316,7 +335,10 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
         return ch_norm == m3u_norm
 
     threshold = 0.85 if league == "Tennis" else 0.92
-    return similar(ch_norm, m3u_norm) >= threshold
+    score = similar(ch_norm, m3u_norm)
+    if 'sport' in ch_name.lower() and 'klub' in ch_name.lower() and score < threshold:
+        print(f"         [Debug] Similarity low: target='{ch_norm}', m3u='{m3u_norm}', score={score:.3f}")
+    return score >= threshold
 
 def is_football_allowed(league: str, match_name: str) -> bool:
     if league not in ALLOWED_FOOTBALL_LEAGUES:
