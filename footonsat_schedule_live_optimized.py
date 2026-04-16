@@ -11,7 +11,6 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Sắp xếp kênh trong trận: UK trước, English sau, còn lại cuối.
 - Bỏ qua kênh quảng cáo chứa #, =, ☰.
 """
-
 import asyncio
 import json
 import re
@@ -49,7 +48,7 @@ PATTERN_COUNTRY_CODE_PREFIX = [
     re.compile(r'^([a-z]{2,3})\|\s*', re.I),
     re.compile(r'^\[([a-z]{2,3})\]\s*', re.I),
     re.compile(r'^\(([a-z]{2,3})\)\s*', re.I),
-    re.compile(r'^┃([a-z]{2,3})┃\s*', re.I),
+    re.compile(r'^' + re.escape('┃') + r'([a-z]{2,3})' + re.escape('┃') + r'\s*', re.I),
     re.compile(r'^([a-z]{2,3})\s+', re.I),
 ]
 PATTERN_COUNTRY_CODE_SUFFIX = re.compile(r'\s+([a-z]{2,3})$', re.I)
@@ -60,7 +59,7 @@ PATTERN_QUALITY = re.compile(
 PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
 PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂʰᵉᵛᶜᵗᵛᴴᴰᵁᴴᴰ³⁸⁴⁰ᴾ⁵⁰ᶠᵖˢ◉┃]')
 PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')
-PATTERN_GENERIC_PREFIX = re.compile(r'^([a-z]{2,3})\:\s*', re.I)  # Dùng để loại bỏ các tiền tố không phải country code
+PATTERN_GENERIC_PREFIX = re.compile(r'^([a-z]{2,3})\:\s*', re.I)
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -272,14 +271,12 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     return None, cleaned.strip()
 
 def extract_channel_number(name: str) -> Optional[str]:
-    # Loại bỏ quality keywords trước
     name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd|hdr|raw)\b', '', name, flags=re.I)
-    name_clean = re.sub(r'[^\w\s]', ' ', name_clean)  # Thay thế ký tự đặc biệt bằng khoảng trắng
+    name_clean = re.sub(r'[^\w\s]', ' ', name_clean)
     name_clean = ' '.join(name_clean.split())
     tokens = name_clean.split()
     if tokens:
         last_token = tokens[-1]
-        # Tìm số ở cuối token (có thể dính chữ)
         match = re.search(r'(\d+)$', last_token)
         if match:
             return match.group(1)
@@ -295,7 +292,6 @@ def normalize_channel_name(name: str) -> str:
     name = PATTERN_SPECIAL_TAGS.sub(' ', name)
     name = PATTERN_QUALITY.sub('', name)
     name = name.replace('plus', '+').replace(' and ', ' & ')
-    # Loại bỏ tất cả ký tự không phải chữ cái, số, khoảng trắng (kể cả dấu +)
     name = re.sub(r'[^\w\s]', ' ', name)
     name = ' '.join(name.split())
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
@@ -348,22 +344,11 @@ def preprocess_target_channel(name: str) -> str:
         return name
     name_clean = name.strip()
     
-    # ART Motion Sport -> ART Sport
     name_clean = re.sub(r'\bART Motion Sport\b', 'ART Sport', name_clean, flags=re.I)
-    
-    # M+ Liga de Campeones -> M+ LaLiga de Campeones (linh hoạt khoảng trắng)
     name_clean = re.sub(r'M\+\s*Liga\s+de\s+Campeones', 'M+ LaLiga de Campeones', name_clean, flags=re.I)
-    
-    # Prima Sport RO -> Prima Sport Romania
     name_clean = re.sub(r'\bPrima Sport RO\b', 'Prima Sport Romania', name_clean, flags=re.I)
-    
-    # SportKlub -> Sport Klub
-    #name_clean = re.sub(r'SportKlub', 'Sport Klub', name_clean, flags=re.I)
-    
-    # " SLO" ở cuối -> " Slovenia"
+    name_clean = re.sub(r'SportKlub', 'Sport Klub', name_clean, flags=re.I)
     name_clean = re.sub(r'\s+SLO$', ' Slovenia', name_clean, flags=re.I)
-    
-    # "Slovenija" -> "Slovenia"
     name_clean = re.sub(r'\bSlovenija\b', 'Slovenia', name_clean, flags=re.I)
     
     return name_clean
