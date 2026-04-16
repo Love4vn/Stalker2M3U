@@ -290,15 +290,11 @@ def extract_channel_number(name: str) -> Optional[str]:
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
-    # 1. Xóa các tag đặc biệt Unicode (như ⱽᴵᴾ, ᴿᴬᵂ, ...) trước
     name = PATTERN_SPECIAL_TAGS.sub(' ', name)
-    # 2. Xóa từ khóa chất lượng (HD, FHD, 4K, ...)
     name = PATTERN_QUALITY.sub('', name)
     name = name.replace('plus', '+').replace(' and ', ' & ')
-    # 3. Xóa tất cả ký tự không phải chữ cái/số/khoảng trắng
     name = re.sub(r'[^\w\s]', ' ', name)
     name = ' '.join(name.split())
-    # 4. Chuẩn hóa Unicode về ASCII
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
     return name.strip()
 
@@ -315,15 +311,16 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     ch_num = extract_channel_number(ch_clean)
     m3u_num = extract_channel_number(m3u_clean)
 
-    # Country code check: if target has a code, M3U MUST have the SAME code
+    # Cả hai phải cùng có số hoặc cùng không có số; nếu có thì số phải bằng nhau
+    if (ch_num is None) != (m3u_num is None):
+        return False
+    if ch_num is not None and ch_num != m3u_num:
+        return False
+
+    # Nếu target có country code, M3U bắt buộc phải có cùng code
     if ch_code is not None:
         if m3u_code is None or ch_code != m3u_code:
             return False
-
-    if ch_code and m3u_code and ch_code != m3u_code:
-        if 'sport' in ch_name.lower() and 'klub' in ch_name.lower():
-            print(f"         [Debug] Country mismatch: target={ch_code}, m3u={m3u_code}")
-        return False
 
     ch_norm = normalize_channel_name(ch_clean)
     m3u_norm = normalize_channel_name(m3u_clean)
@@ -336,10 +333,7 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
         return ch_norm == m3u_norm
 
     threshold = 0.85 if league == "Tennis" else 0.91
-    score = similar(ch_norm, m3u_norm)
-    if 'sport' in ch_name.lower() and 'klub' in ch_name.lower() and score < threshold:
-        print(f"         [Debug] Similarity low: target='{ch_norm}', m3u='{m3u_norm}', score={score:.3f}")
-    return score >= threshold
+    return similar(ch_norm, m3u_norm) >= threshold
 
 def is_football_allowed(league: str, match_name: str) -> bool:
     if league not in ALLOWED_FOOTBALL_LEAGUES:
@@ -758,11 +752,16 @@ async def main():
 
             matching = []
             for ch in channels:
-                if target_code and ch['_code'] and target_code != ch['_code']:
-                    continue
-                if target_num is not None:
-                    if ch['_num'] is None or target_num != ch['_num']:
+                # Country code pre‑filter
+                if target_code is not None:
+                    if ch['_code'] is None or target_code != ch['_code']:
                         continue
+
+                # Number pre‑filter: both must have same "has number" status
+                if (target_num is None) != (ch['_num'] is None):
+                    continue
+                if target_num is not None and target_num != ch['_num']:
+                    continue
 
                 if is_channel_match(target_name, ch['name'], league):
                     if ch['_norm'] == target_norm or ch['_norm'].replace(' ', '') == target_norm.replace(' ', ''):
