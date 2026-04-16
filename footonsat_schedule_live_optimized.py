@@ -315,11 +315,9 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     ch_num = extract_channel_number(ch_clean)
     m3u_num = extract_channel_number(m3u_clean)
 
-    if ch_num is not None:
-        if m3u_num is None or ch_num != m3u_num:
-            # Debug cho SportKlub
-            if 'sport' in ch_name.lower() and 'klub' in ch_name.lower():
-                print(f"         [Debug] Number mismatch: target={ch_num}, m3u={m3u_num}")
+    # Country code check: if target has a code, M3U MUST have the SAME code
+    if ch_code is not None:
+        if m3u_code is None or ch_code != m3u_code:
             return False
 
     if ch_code and m3u_code and ch_code != m3u_code:
