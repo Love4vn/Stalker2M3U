@@ -337,7 +337,7 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
         return ch_norm == m3u_norm
 
-    threshold = 0.85 if league == "Tennis" else 0.92
+    threshold = 0.85 if league == "Tennis" else 0.91
     score = similar(ch_norm, m3u_norm)
     if 'sport' in ch_name.lower() and 'klub' in ch_name.lower() and score < threshold:
         print(f"         [Debug] Similarity low: target='{ch_norm}', m3u='{m3u_norm}', score={score:.3f}")
