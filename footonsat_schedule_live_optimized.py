@@ -290,12 +290,15 @@ def extract_channel_number(name: str) -> Optional[str]:
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
-    # Xóa các ký tự đặc biệt Unicode
-    name = re.sub(r'[^\w\s]', ' ', name)
+    # 1. Xóa các tag đặc biệt Unicode (như ⱽᴵᴾ, ᴿᴬᵂ, ...) trước
     name = PATTERN_SPECIAL_TAGS.sub(' ', name)
+    # 2. Xóa từ khóa chất lượng (HD, FHD, 4K, ...)
     name = PATTERN_QUALITY.sub('', name)
     name = name.replace('plus', '+').replace(' and ', ' & ')
+    # 3. Xóa tất cả ký tự không phải chữ cái/số/khoảng trắng
+    name = re.sub(r'[^\w\s]', ' ', name)
     name = ' '.join(name.split())
+    # 4. Chuẩn hóa Unicode về ASCII
     name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ascii')
     return name.strip()
 
