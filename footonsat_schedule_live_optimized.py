@@ -733,7 +733,7 @@ async def main():
             print("   ⚠️  Không có kênh nào từ JSON")
             continue
 
-                for ch_info in channels_from_json:
+        for ch_info in channels_from_json:
             target_name_raw = ch_info.get('channel_name')
             if not target_name_raw:
                 continue
