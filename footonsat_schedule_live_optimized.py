@@ -128,14 +128,7 @@ ALLOWED_TEAMS_PER_LEAGUE = {
 }
 
 FOOTONSAT_URLS = [
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/premierleague.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/seriea.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/laliga.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/bundesliga.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ligue1.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/championsleague.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/europaleague.json",
-    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/ConferenceLeague.json",
+    "https://raw.githubusercontent.com/fairbird/footonsat-api/refs/heads/main/premierleague.json"
 ]
 
 LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/schedule.json"
