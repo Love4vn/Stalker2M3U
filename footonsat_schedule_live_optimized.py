@@ -71,7 +71,7 @@ ALLOWED_FOOTBALL_LEAGUES = {
 
 COUNTRY_CODES: Set[str] = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at", "ba",
-    "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr",
+    "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr", "al", "in", "sg", "th", "id", "my",
     "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn", "arg", "irl",
     "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "am"
 }
@@ -733,10 +733,29 @@ async def main():
             print("   ⚠️  Không có kênh nào từ JSON")
             continue
 
-        for ch_info in channels_from_json:
+                for ch_info in channels_from_json:
             target_name_raw = ch_info.get('channel_name')
             if not target_name_raw:
                 continue
+
+            # === XỬ LÝ ĐẶC BIỆT CHO TENNIS: beIN Sports -> beIN Sports 7 ===
+            if league == "Tennis":
+                # Pattern: beIN Sports theo sau là số hoặc "connect", không phân biệt hoa thường
+                if re.search(r'\bbein\s*sports?\b', target_name_raw, re.I):
+                    target_name_raw = re.sub(
+                        r'\b(beIN\s*Sports?)\s*(\d+|connect)\b',
+                        r'\1 7',
+                        target_name_raw,
+                        flags=re.I
+                    )
+                    # Nếu không có số/connect thì thêm số 7 vào cuối
+                    if not re.search(r'\bbeIN\s*Sports?\s+\d+\b', target_name_raw, re.I):
+                        target_name_raw = re.sub(
+                            r'\b(beIN\s*Sports?)\b',
+                            r'\1 7',
+                            target_name_raw,
+                            flags=re.I
+                        )
 
             target_name = preprocess_target_channel(target_name_raw)
 
