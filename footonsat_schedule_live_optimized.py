@@ -4,12 +4,13 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Chống trùng link:
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
   + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
-- Khớp chính xác số kênh (nếu yêu cầu có số, M3U phải có số đó), hỗ trợ số liền kề chữ.
-- Xử lý country code ở đầu/cuối tên kênh, loại bỏ tên quốc gia khỏi tên kênh.
-- Tiền xử lý tên kênh từ JSON để tăng khả năng khớp.
-- Phân nhóm theo giải đấu với tên nhóm tùy chỉnh.
-- Sắp xếp kênh trong trận: UK trước, English sau, còn lại cuối.
-- Bỏ qua kênh quảng cáo chứa #, =, ☰.
+- Khớp chính xác số kênh hai chiều.
+- Country code nghiêm ngặt: nếu target có code, M3U bắt buộc cùng code.
+- Tiền xử lý tên kênh từ JSON: MENA→Arabia (trừ khi có English), Arena Sport SRB→Serbia,...
+- Xử lý đặc biệt: beIN Sports English + AR chỉ khớp kênh M3U có "english".
+- Tennis: beIN Sports → beIN Sports 7.
+- Bỏ qua kênh quảng cáo.
+- Sắp xếp kênh: UK trước, English sau, còn lại cuối.
 """
 
 import asyncio
@@ -73,7 +74,7 @@ COUNTRY_CODES: Set[str] = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at", "ba",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr", "al", "in", "sg", "th", "id", "my",
     "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn", "arg", "irl",
-    "br", "ar", "mx", "in", "za", "ru", "ua", "rs", "hr", "si", "sk", "am"
+    "br", "ar", "mx", "za", "ru", "ua", "rs", "hr", "si", "sk", "am"
 }
 
 COUNTRY_NAME_TO_CODE = {
@@ -237,7 +238,6 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
         if m:
             code = m.group(1)
             if code in COUNTRY_CODES:
-                # Xóa phần đã khớp khỏi tên, giữ lại phần còn lại
                 remaining = name_lower[m.end():].lstrip('|:-\\s ┃')
                 return code, remaining.strip()
     
@@ -261,7 +261,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
         cleaned = re.sub(r'\s+', ' ', cleaned)
         return code_from_name, cleaned
     
-    # 4. Remove generic prefixes like "GO:", "VIP:" (2-3 letters + colon) that are not country codes
+    # 4. Remove generic prefixes like "GO:", "VIP:"
     m_generic = PATTERN_GENERIC_PREFIX.match(name_lower)
     if m_generic:
         remaining = name_lower[m_generic.end():].strip()
@@ -367,12 +367,15 @@ def preprocess_target_channel(name: str) -> str:
     # "Slovenija" -> "Slovenia"
     name_clean = re.sub(r'\bSlovenija\b', 'Slovenia', name_clean, flags=re.I)
     
-    # --- Bổ sung mới ---
     # Arena Sport 1 SRB -> Arena Sport 1 Serbia
     name_clean = re.sub(r'\b(Arena Sport \d+) SRB\b', r'\1 Serbia', name_clean, flags=re.I)
     
     # Premier Sports ROI -> Premier Sports RoIreland
     name_clean = re.sub(r'\bPremier Sports ROI\b', 'Premier Sports RoIreland', name_clean, flags=re.I)
+
+    # beIN Sports MENA -> beIN Sports Arabia (CHỈ KHI KHÔNG CÓ "English")
+    if not re.search(r'\benglish\b', name_clean, re.I):
+        name_clean = re.sub(r'\b(beIN\s*Sports?)\s+MENA\b', r'\1 Arabia', name_clean, flags=re.I)
     
     return name_clean
 
@@ -738,9 +741,10 @@ async def main():
             if not target_name_raw:
                 continue
 
+            original_name = target_name_raw
+
             # === XỬ LÝ ĐẶC BIỆT CHO TENNIS: beIN Sports -> beIN Sports 7 ===
             if league == "Tennis":
-                # Pattern: beIN Sports theo sau là số hoặc "connect", không phân biệt hoa thường
                 if re.search(r'\bbein\s*sports?\b', target_name_raw, re.I):
                     target_name_raw = re.sub(
                         r'\b(beIN\s*Sports?)\s*(\d+|connect)\b',
@@ -748,7 +752,6 @@ async def main():
                         target_name_raw,
                         flags=re.I
                     )
-                    # Nếu không có số/connect thì thêm số 7 vào cuối
                     if not re.search(r'\bbeIN\s*Sports?\s+\d+\b', target_name_raw, re.I):
                         target_name_raw = re.sub(
                             r'\b(beIN\s*Sports?)\b',
@@ -769,6 +772,13 @@ async def main():
             target_num = extract_channel_number(target_clean)
             target_norm = normalize_channel_name(target_clean)
 
+            # Kiểm tra trường hợp đặc biệt: beIN Sports English + AR
+            is_bein_english_ar = (
+                target_code == 'ar' and
+                re.search(r'\bbein\s*sports?\b', original_name, re.I) and
+                re.search(r'\benglish\b', original_name, re.I)
+            )
+
             matching = []
             for ch in channels:
                 # Country code pre‑filter
@@ -781,6 +791,11 @@ async def main():
                     continue
                 if target_num is not None and target_num != ch['_num']:
                     continue
+
+                # Trường hợp đặc biệt beIN English AR: M3U cũng phải chứa "english"
+                if is_bein_english_ar:
+                    if 'english' not in ch['_norm']:
+                        continue
 
                 if is_channel_match(target_name, ch['name'], league):
                     if ch['_norm'] == target_norm or ch['_norm'].replace(' ', '') == target_norm.replace(' ', ''):
