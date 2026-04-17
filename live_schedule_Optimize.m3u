@@ -1,271 +1,556 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="42915" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN3.png",17/04 04:00 PM | Barcelona Open Banc Sabadell (CA - VIP TSN 3 HD ◉)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/42915
-#EXTINF:-1 tvg-id="30355" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/CANADA/TSN3.png",17/04 04:00 PM | Barcelona Open Banc Sabadell (CA - TSN 3 HD ◉)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/30355
-#EXTINF:-1 tvg-id="414140" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",17/04 04:00 PM | Barcelona Open Banc Sabadell (CA EN: TSN 3)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=414140&extension=ts&play_token=IXCZhgwdxD
-#EXTINF:-1 tvg-id="1239032" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11146.png?59759",17/04 04:00 PM | Barcelona Open Banc Sabadell (CA: TSN 3 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1239032&extension=ts&play_token=ulhJH90UKT
 #EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325027&extension=ts&play_token=XYXgBWwUcX
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325027&extension=ts&play_token=mY8dseuucn
 #EXTINF:-1 tvg-id="203891" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (AR - BEIN SPORTS 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/203891
 #EXTINF:-1 tvg-id="149619" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (AR - BEIN SPORTS 7 UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/149619
 #EXTINF:-1 tvg-id="73357" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (AR - BEIN SPORTS 7 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/73357
 #EXTINF:-1 tvg-id="986964" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (AR - BEIN SPORTS 7 FHD³)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986964
 #EXTINF:-1 tvg-id="986979" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (AR - BEIN SPORTS 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986979
 #EXTINF:-1 tvg-id="987000" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (AR - BEIN SPORTS 7 HD³)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/987000
 #EXTINF:-1 tvg-id="798792" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (┃AR┃ BEIN SPORTS 7 UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798792&extension=ts&play_token=vn8G7wEMEb
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798792&extension=ts&play_token=tDG7gav4BA
 #EXTINF:-1 tvg-id="798802" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (┃AR┃ BEIN SPORTS 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798802&extension=ts&play_token=Tq2jqXyf2e
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=798802&extension=ts&play_token=T40zIy850D
 #EXTINF:-1 tvg-id="1030242" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ARGENTINA/BEIN SPORTS RAW/BEIN SPORTS 7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (┃AR┃ BEIN SPORTS 7 RAW)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1030242&extension=ts&play_token=s0SeqgLfkm
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1030242&extension=ts&play_token=MTprKfUXW3
 #EXTINF:-1 tvg-id="242236" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (┃AR┃ BEIN SPORTS 7)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=242236&extension=ts&play_token=e5AznRDual
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=242236&extension=ts&play_token=9LLDlUnizU
 #EXTINF:-1 tvg-id="544425" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (8K: beIN SP⚽RTS 7 ᴴᴰ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544425&extension=ts&play_token=3VwfBS9Ky4
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544425&extension=ts&play_token=KPpfRjLvvN
 #EXTINF:-1 tvg-id="544485" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (8K: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544485&extension=ts&play_token=hSZRcKbyhg
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544485&extension=ts&play_token=onHfNBHCEG
 #EXTINF:-1 tvg-id="544448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (8K: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544448&extension=ts&play_token=acejJ6aCL4
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544448&extension=ts&play_token=XtvvtK1TZU
 #EXTINF:-1 tvg-id="706545" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (SS: beIN SP⚽RTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706545&extension=ts&play_token=6gxxZfBm3L
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706545&extension=ts&play_token=JJibb9BWYn
 #EXTINF:-1 tvg-id="706532" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (SS: beIN SP⚽RTS 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706532&extension=ts&play_token=jSlnskVbav
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706532&extension=ts&play_token=oDb6UxQAn6
 #EXTINF:-1 tvg-id="1353002" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (BE: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1353002&extension=ts&play_token=eSOHbVObxV
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1353002&extension=ts&play_token=oyG3o5lazH
 #EXTINF:-1 tvg-id="1352978" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (BE: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1352978&extension=ts&play_token=HQiHDCAirl
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1352978&extension=ts&play_token=6n40Cz18Hs
 #EXTINF:-1 tvg-id="1352964" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (BE: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1352964&extension=ts&play_token=9aVNyd0G2t
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1352964&extension=ts&play_token=wtOIyLN9Ms
 #EXTINF:-1 tvg-id="544829" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (◉: beIN Sp⚽rts 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544829&extension=ts&play_token=mIKs9Mjcf4
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544829&extension=ts&play_token=7Jrn3a4Z8g
 #EXTINF:-1 tvg-id="544815" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (◉: beIN Sp⚽rts 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544815&extension=ts&play_token=FoDRCTqdND
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544815&extension=ts&play_token=FKYAqY1Qba
 #EXTINF:-1 tvg-id="544799" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (◉: beIN Sp⚽rts 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544799&extension=ts&play_token=iaBrMRSd4q
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544799&extension=ts&play_token=rpU8S5Nx96
 #EXTINF:-1 tvg-id="985148" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (ᵁᴴᴰ: beIN Sp⚽rts 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985148&extension=ts&play_token=hiQGaX4ton
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985148&extension=ts&play_token=SlJTUNIEP9
 #EXTINF:-1 tvg-id="985112" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (ᵁᴴᴰ: beIN Sp⚽rts 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985112&extension=ts&play_token=eLkaiAdWcT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985112&extension=ts&play_token=I1pLSAaBr5
 #EXTINF:-1 tvg-id="985094" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (ᵁᴴᴰ: beIN Sp⚽rts 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985094&extension=ts&play_token=OHcu3AOQX1
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985094&extension=ts&play_token=5fr9hSd9Ke
 #EXTINF:-1 tvg-id="1201193" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (NM: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201193&extension=ts&play_token=LJriFrK0U4
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201193&extension=ts&play_token=NPfMEheMPr
 #EXTINF:-1 tvg-id="1201153" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (NM: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201153&extension=ts&play_token=YnvkYeDwgZ
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201153&extension=ts&play_token=zTH6h1F31Z
 #EXTINF:-1 tvg-id="1201135" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (NM: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201135&extension=ts&play_token=9rGmwJnC70
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201135&extension=ts&play_token=wFMhIAsjUN
 #EXTINF:-1 tvg-id="1120425" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (SA: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120425&extension=ts&play_token=GrJsaOQEDa
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120425&extension=ts&play_token=DhycGSepMM
 #EXTINF:-1 tvg-id="1120405" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/04 09:00 PM | Arthur Fils vs Lorenzo Musetti (SA: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120405&extension=ts&play_token=VuVumCtjXQ
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120405&extension=ts&play_token=SjKfxN4MsZ
 #EXTINF:-1 tvg-id="78139" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/bein/Bein_Sports_HD_3.png",18/04 01:45 AM | Inter Milan vs Cagliari (AU - BEIN SPORTS 3 UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/78139
 #EXTINF:-1 tvg-id="944687" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/AUSTRALIA/AU AUSTRALIA LOGOS/BEIN SPORTS 3.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃AU┃ BEIN SPORTS 3 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=944687&extension=ts&play_token=DpknJOMne4
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=944687&extension=ts&play_token=7q1mHv8ARS
 #EXTINF:-1 tvg-id="441311" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/logos/BEIN-SPORTS-3-HD.png",18/04 01:45 AM | Inter Milan vs Cagliari (AU: BEIN SPORTS 3 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=441311&extension=ts&play_token=hXh590lQhu
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=441311&extension=ts&play_token=Tj8GHV94J7
+#EXTINF:-1 tvg-id="1115" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/BOSNA/Arena_sport_logo.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃HR┃ ARENA SPORT 1 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1115&extension=ts&play_token=dcATuXpGYK
+#EXTINF:-1 tvg-id="1460668" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3763.jpg?82975",18/04 01:45 AM | Inter Milan vs Cagliari (HR: ARENA SPORT 1 ⱽᴵᴾ ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1460668&extension=ts&play_token=VmelpgvUaT
+#EXTINF:-1 tvg-id="2444" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3763.jpg?82975",18/04 01:45 AM | Inter Milan vs Cagliari (HR: Arena Sport 1 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2444&extension=ts&play_token=Qqrdp36ysU
+#EXTINF:-1 tvg-id="1099" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/SRBIJA/arenasport2.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃RS┃ ARENA SPORT 2 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1099&extension=ts&play_token=ezjpTeaoGc
+#EXTINF:-1 tvg-id="1098" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/SRBIJA/arenasport2.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃RS┃ ARENA SPORT 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1098&extension=ts&play_token=V1ZHH9sskj
+#EXTINF:-1 tvg-id="2617" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3989.png?28579",18/04 01:45 AM | Inter Milan vs Cagliari (RS: Arena Sport 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2617&extension=ts&play_token=roMzjjjfYC
+#EXTINF:-1 tvg-id="1652476" group-title="⚽️🇮🇹|Live Serie A",18/04 01:45 AM | Inter Milan vs Cagliari (┃AL┃ ART SPORT 1 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1652476&extension=ts&play_token=443sdhyYVx
+#EXTINF:-1 tvg-id="336" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/SPORT/ART SPORT 1.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃AL┃ ART SPORT 1 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=336&extension=ts&play_token=DP1xGBihFf
+#EXTINF:-1 tvg-id="1171626" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3353.png?ver=53648",18/04 01:45 AM | Inter Milan vs Cagliari (AL: ART SPORT 1 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1171626&extension=ts&play_token=m0Pukqn6hP
+#EXTINF:-1 tvg-id="460828" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/logos/EUROPE/cytavision.png",18/04 01:45 AM | Inter Milan vs Cagliari (CY: CYTAVISION SPORTS 3 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=460828&extension=ts&play_token=tO6CrUiVgd
+#EXTINF:-1 tvg-id="324972" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/EUROPE/cytavision.png",18/04 01:45 AM | Inter Milan vs Cagliari (GR - CYTAVISION SPORTS 3 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/324972
+#EXTINF:-1 tvg-id="842682" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10043.jpg?97125",18/04 01:45 AM | Inter Milan vs Cagliari (CY: CYTAVISION SPORT 3 ᴴᴰ ◉)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=842682&extension=ts&play_token=4v6sHtKEJj
+#EXTINF:-1 tvg-id="1651284" group-title="⚽️🇮🇹|Live Serie A",18/04 01:45 AM | Inter Milan vs Cagliari (┃PL┃ ELEVEN SPORTS 1 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1651284&extension=ts&play_token=3OJGtbOORK
+#EXTINF:-1 tvg-id="784840" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11211.png?25103",18/04 01:45 AM | Inter Milan vs Cagliari (PL: ELEVEN SPORTS 1 ᴴᴰ ◉)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=784840&extension=ts&play_token=n0SHPxUHYD
+#EXTINF:-1 tvg-id="784839" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11211.png?25103",18/04 01:45 AM | Inter Milan vs Cagliari (PL: ELEVEN SPORTS 1 ᵁᴴᴰ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=784839&extension=ts&play_token=gouwE8rLIA
+#EXTINF:-1 tvg-id="338033" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8262.jpg?44213",18/04 01:45 AM | Inter Milan vs Cagliari (PL: ELEVEN SPORTS 1 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=338033&extension=ts&play_token=dIu7xrRfSC
+#EXTINF:-1 tvg-id="338226" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8262.jpg?85726",18/04 01:45 AM | Inter Milan vs Cagliari (PL: ELEVEN SPORTS 1 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=338226&extension=ts&play_token=bJCxAkDTpM
+#EXTINF:-1 tvg-id="861058" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13778.jpg?ver=14319",18/04 01:45 AM | Inter Milan vs Cagliari (PL VIP: ELEVEN SPORTS 1 RAW 4K 3840P)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=861058&extension=ts&play_token=I3YI4nFY04
+#EXTINF:-1 tvg-id="337591" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8262.jpg?60304",18/04 01:45 AM | Inter Milan vs Cagliari (PL VIP: ELEVEN SPORTS 1 ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=337591&extension=ts&play_token=wn2hXsLjJo
+#EXTINF:-1 tvg-id="227293" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/POLONIA/Eleven_Sports.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃PL┃ ELEVEN SPORT 1 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=227293&extension=ts&play_token=tzLENb8OpS
+#EXTINF:-1 tvg-id="522547" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/BULGARIA/MAXSPORT.png",18/04 01:45 AM | Inter Milan vs Cagliari (BG - MAX SPORT 3 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/522547
+#EXTINF:-1 tvg-id="816230" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/BULGARIA/MAXSPORT.png",18/04 01:45 AM | Inter Milan vs Cagliari (BG - MAX SPORT 3 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/816230
+#EXTINF:-1 tvg-id="228725" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/BULGARIA/Max-sport-3.-logo.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃BG┃ MAX SPORT 3 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=228725&extension=ts&play_token=pTmV3OCd4p
+#EXTINF:-1 tvg-id="228630" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/BULGARIA/Max-sport-3.-logo.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃BG┃ MAX SPORT 3)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=228630&extension=ts&play_token=0rFukYyPob
+#EXTINF:-1 tvg-id="1460976" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/logos/MAX-SPORT-3-HD.png",18/04 01:45 AM | Inter Milan vs Cagliari (BG: MAX SPORT 3 ⱽᴵᴾ ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1460976&extension=ts&play_token=gU6wUZPtHU
+#EXTINF:-1 tvg-id="441487" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/logos/MAX-SPORT-3-HD.png",18/04 01:45 AM | Inter Milan vs Cagliari (BG: MAX SPORT 3 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=441487&extension=ts&play_token=pOJPMZaq2l
+#EXTINF:-1 tvg-id="441429" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/logos/MAX-SPORT-3-HD.png",18/04 01:45 AM | Inter Milan vs Cagliari (BG: MAX SPORT 3 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=441429&extension=ts&play_token=DVOWuWyq88
+#EXTINF:-1 tvg-id="1275731" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",18/04 01:45 AM | Inter Milan vs Cagliari (PL - POLSAT SPORT 2 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275731
+#EXTINF:-1 tvg-id="1275732" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/EUROPE/polsatsport.png",18/04 01:45 AM | Inter Milan vs Cagliari (PL - POLSAT SPORT 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1275732
+#EXTINF:-1 tvg-id="1651297" group-title="⚽️🇮🇹|Live Serie A",18/04 01:45 AM | Inter Milan vs Cagliari (┃PL┃ POLSAT SPORT 2 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1651297&extension=ts&play_token=VKXuFf1Pev
+#EXTINF:-1 tvg-id="227311" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/POLONIA/Polsat_Sport_Extra_2021_gradient.svg.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃PL┃ POLSAT SPORT 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=227311&extension=ts&play_token=M15284ZESG
+#EXTINF:-1 tvg-id="338020" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/9883.jpg?56801",18/04 01:45 AM | Inter Milan vs Cagliari (PL: POLSAT SPORT 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=338020&extension=ts&play_token=VaSmbAHv8G
+#EXTINF:-1 tvg-id="338213" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/9868.jpg?6678",18/04 01:45 AM | Inter Milan vs Cagliari (PL: POLSAT SPORT 2 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=338213&extension=ts&play_token=wrDdmsjvmn
+#EXTINF:-1 tvg-id="345676" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/9888.jpg?41423",18/04 01:45 AM | Inter Milan vs Cagliari (PL VIP: POLSAT SPORT 2 ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=345676&extension=ts&play_token=ma0ysufKk2
 #EXTINF:-1 tvg-id="366309" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/ITALY/skysportcalcio.png",18/04 01:45 AM | Inter Milan vs Cagliari (IT - SKY SPORT CALCIO UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/366309
 #EXTINF:-1 tvg-id="900937" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/ITALY/skysportcalcio.png",18/04 01:45 AM | Inter Milan vs Cagliari (IT - SKY SPORT CALCIO HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A200B66AC5919D760CD60B683DF5390D
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/900937
 #EXTINF:-1 tvg-id="177695" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKYSPORTCALCIO.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃IT┃ SKY SPORT CALCIO HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=177695&extension=ts&play_token=20uCc04Hjh
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=177695&extension=ts&play_token=pSQABfElKG
 #EXTINF:-1 tvg-id="1167169" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKYSPORTCALCIO.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃IT┃ SKY SPORT CALCIO HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167169&extension=ts&play_token=iF969c71We
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167169&extension=ts&play_token=zbEqDzmh2Z
 #EXTINF:-1 tvg-id="177694" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKYSPORTCALCIO.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃IT┃ SKY SPORT CALCIO FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=177694&extension=ts&play_token=SZltd5P1Xt
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=177694&extension=ts&play_token=VkkLiamBRT
 #EXTINF:-1 tvg-id="284704" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?94258",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT CALCIO UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284704&extension=ts&play_token=cQFBcovwWb
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284704&extension=ts&play_token=4g9cy3zabL
 #EXTINF:-1 tvg-id="284705" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?94258",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT CALCIO 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284705&extension=ts&play_token=rDZmmL3CV1
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284705&extension=ts&play_token=DQ9QzotcxL
 #EXTINF:-1 tvg-id="284850" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?63357",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT CALCIO HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284850&extension=ts&play_token=3PrJCH6UPD
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284850&extension=ts&play_token=QzTqX6LPa2
 #EXTINF:-1 tvg-id="285232" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?22366",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT CALCIO 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285232&extension=ts&play_token=DSSeuj74Zg
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285232&extension=ts&play_token=jXHckrcPj4
 #EXTINF:-1 tvg-id="285233" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?22366",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT CALCIO HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285233&extension=ts&play_token=XjAoWpsCem
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285233&extension=ts&play_token=RIQ39BhN3w
+#EXTINF:-1 tvg-id="76636" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/ITALY/skysportuno.png",18/04 01:45 AM | Inter Milan vs Cagliari (IT - SKY SPORT UNO UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/76636
+#EXTINF:-1 tvg-id="76675" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/ITALY/skysportuno.png",18/04 01:45 AM | Inter Milan vs Cagliari (IT - SKY SPORT UNO HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/76675
+#EXTINF:-1 tvg-id="177685" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKYSPORTUNO.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃IT┃ SKY SPORT UNO HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=177685&extension=ts&play_token=tqFOZMhFfn
+#EXTINF:-1 tvg-id="1167167" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKYSPORTUNO.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃IT┃ SKY SPORT UNO HEVC)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1167167&extension=ts&play_token=Egm4O0gGO6
+#EXTINF:-1 tvg-id="177687" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ITALY/SKYSPORTUNO.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃IT┃ SKY SPORT UNO FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=177687&extension=ts&play_token=iR1iL3AxQu
+#EXTINF:-1 tvg-id="284686" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?45195",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT UNO UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284686&extension=ts&play_token=1BtBfAmS4L
+#EXTINF:-1 tvg-id="284687" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?45195",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT UNO 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284687&extension=ts&play_token=nunaXhyLB9
+#EXTINF:-1 tvg-id="284841" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?92364",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT UNO HEVC)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=284841&extension=ts&play_token=9HnfY9LaDo
+#EXTINF:-1 tvg-id="285256" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?22366",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT UNO 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285256&extension=ts&play_token=H9NURuv1Ey
+#EXTINF:-1 tvg-id="285257" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6437.jpg?22366",18/04 01:45 AM | Inter Milan vs Cagliari (IT: SKY SPORT UNO HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=285257&extension=ts&play_token=bWDIqzLyVd
 #EXTINF:-1 tvg-id="1853522" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://51.158.145.100/picons/logos/AFRICANEW/SUPERSPORTVARIETY.png",18/04 01:45 AM | Inter Milan vs Cagliari (UGA: SUPERSPORT FOOTBALL PLUS)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1853522&extension=ts&play_token=qm6jXQP4bC
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1853522&extension=ts&play_token=36leDaSa67
 #EXTINF:-1 tvg-id="308" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/TRING.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃AL┃ TRING SPORT 1 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=308&extension=ts&play_token=jWQO0T60iK
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=308&extension=ts&play_token=mVnjkKANKh
 #EXTINF:-1 tvg-id="1652483" group-title="⚽️🇮🇹|Live Serie A",18/04 01:45 AM | Inter Milan vs Cagliari (┃AL┃ TRING SPORT 1 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1652483&extension=ts&play_token=TN4aE2XZvn
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1652483&extension=ts&play_token=CtY0S8HWBr
 #EXTINF:-1 tvg-id="317" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/SPORT/TRING SPORT .png",18/04 01:45 AM | Inter Milan vs Cagliari (┃AL┃ TRING SPORT 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 32D67FEBCE7C0933322DDB867AB65BEE
-http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=317&extension=ts&play_token=DttgOQCUfk
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=317&extension=ts&play_token=kRbGacYd22
 #EXTINF:-1 tvg-id="1221377" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13854.jpg?26370",18/04 01:45 AM | Inter Milan vs Cagliari (SAT: TRING SPORT 1 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1221377&extension=ts&play_token=WzNiEC86qf
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1221377&extension=ts&play_token=2eBCZ394I5
 #EXTINF:-1 tvg-id="587377" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3054.png?ver=38866",18/04 01:45 AM | Inter Milan vs Cagliari (AL: TRING SPORT 1 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=587377&extension=ts&play_token=12uAK3Lqog
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=587377&extension=ts&play_token=oAYd6jziGW
 #EXTINF:-1 tvg-id="294784" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3054.png?15228",18/04 01:45 AM | Inter Milan vs Cagliari (AL: TRING SPORT 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F6ADF3819598BF874643AB1EA794EC0D
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=294784&extension=ts&play_token=FtqYWF1jX7
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=294784&extension=ts&play_token=QQXAaDHySL
+#EXTINF:-1 tvg-id="79214" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/EUROPE/DENMARK/TV2-SPORT-X.png",18/04 01:45 AM | Inter Milan vs Cagliari (DK - TV2 SPORT X FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/79214
+#EXTINF:-1 tvg-id="1712490" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10539.png?48361",18/04 01:45 AM | Inter Milan vs Cagliari (DK: TV2 SPORT X ᴴᴰ ⱽᴵᴾ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1712490&extension=ts&play_token=MZEvjRnhs2
+#EXTINF:-1 tvg-id="1712656" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13990.jpg?33383",18/04 01:45 AM | Inter Milan vs Cagliari (SE: TV4 SPORT LIVE 3 ᴴᴰ ⱽᴵᴾ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1712656&extension=ts&play_token=wKYhxAk7lN
+#EXTINF:-1 tvg-id="1052175" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/NEDERLAND/ziggosport.png",18/04 01:45 AM | Inter Milan vs Cagliari (NL - ZIGGO SPORT 2 UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1052175
+#EXTINF:-1 tvg-id="548062" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/ZIGGOSPORTVOETBALHD.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 2 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=548062&extension=ts&play_token=ilpEUi5L0A
+#EXTINF:-1 tvg-id="932997" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/NL ODIDO FHD 50FPS/ZIGGO SPORT VOETBAL.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 2 FHD 50FPS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=932997&extension=ts&play_token=6N8tTefaKq
+#EXTINF:-1 tvg-id="948043" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/NL ODIDO FHD 50FPS/ZIGGO SPORT VOETBAL.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=948043&extension=ts&play_token=Ma15ZByVxR
+#EXTINF:-1 tvg-id="237599" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/ZIGGOSPORTVOETBALHD.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 2 8K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=237599&extension=ts&play_token=2CUz8CdC2P
+#EXTINF:-1 tvg-id="392115" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/ZIGGOSPORTVOETBALHD.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 2 8K+ UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=392115&extension=ts&play_token=qMRdpXiY9W
+#EXTINF:-1 tvg-id="1537610" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",18/04 01:45 AM | Inter Milan vs Cagliari (NL: ZIGGO SPORT 2 ᴿᴬᵂ ◉)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1537610&extension=ts&play_token=KsvaCxV9eb
+#EXTINF:-1 tvg-id="1052178" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="https://go4.pw/NEDERLAND/ziggosport.png",18/04 01:45 AM | Inter Milan vs Cagliari (NL - ZIGGO SPORT 5 UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A1BBE11A4D76069003B24533C2099AAF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1052178
+#EXTINF:-1 tvg-id="548069" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/ZIGGOSPORTDOCUHD.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 5 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=548069&extension=ts&play_token=PDHQ3PJWXJ
+#EXTINF:-1 tvg-id="933002" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/NL ODIDO FHD 50FPS/ZIGGO SPORT DOCU.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 5 FHD 50FPS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=933002&extension=ts&play_token=4WIQgn7Zpi
+#EXTINF:-1 tvg-id="948038" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/NL ODIDO FHD 50FPS/ZIGGO SPORT DOCU.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 5 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=948038&extension=ts&play_token=AY3SKVYayv
+#EXTINF:-1 tvg-id="237602" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/ZIGGOSPORTDOCUHD.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 5 8K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=237602&extension=ts&play_token=1wwTrYArGS
+#EXTINF:-1 tvg-id="392121" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/ZIGGOSPORTDOCUHD.png",18/04 01:45 AM | Inter Milan vs Cagliari (┃NL┃ ZIGGO SPORT 5 8K+ UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5B72EC97E5D0DCDC5581B8614B782BD1
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=392121&extension=ts&play_token=gMm2IOBXXB
+#EXTINF:-1 tvg-id="1537607" group-title="⚽️🇮🇹|Live Serie A" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",18/04 01:45 AM | Inter Milan vs Cagliari (NL: ZIGGO SPORT 5 ᴿᴬᵂ ◉)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6AD4B8DE333D3DB8177485A121E1D97F
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1537607&extension=ts&play_token=M1NpENxdPT
