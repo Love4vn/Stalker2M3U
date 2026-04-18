@@ -9,7 +9,7 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Tiền xử lý tên kênh từ JSON: MENA→Arabia (trừ khi có English), Arena Sport SRB→Serbia,...
 - Xử lý đặc biệt: beIN Sports English + AR chỉ khớp kênh M3U có "english".
 - Tennis: beIN Sports → beIN Sports 7.
-- Bổ sung nguồn live_matches.json (ATP/WTA Tour, Premier League).
+- Bổ sung nguồn live_matches.json (ATP/WTA Tour, Premier League) – giờ đã là giờ VN.
 - Bỏ qua kênh quảng cáo.
 - Sắp xếp kênh: UK trước, English sau, còn lại cuối.
 """
@@ -575,6 +575,10 @@ def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
 
 # ================== LIVE MATCHES PARSER ==================
 def parse_live_matches_data(data: list, start_ts: int, end_ts: int) -> List[Dict]:
+    """
+    Parse dữ liệu từ live_matches.json.
+    Lưu ý: Giờ trong file là giờ Việt Nam (Asia/Ho_Chi_Minh).
+    """
     games = []
     if not data or not isinstance(data, list):
         return games
@@ -592,9 +596,11 @@ def parse_live_matches_data(data: list, start_ts: int, end_ts: int) -> List[Dict
             continue
 
         try:
-            dt_utc = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
-            dt_utc = dt_utc.replace(tzinfo=ZoneInfo("UTC"))
-            kick_utc = int(dt_utc.timestamp())
+            # Parse thành datetime naive, sau đó gán timezone Việt Nam
+            dt_naive = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
+            dt_vn = dt_naive.replace(tzinfo=TIMEZONE)
+            # Chuyển sang UTC timestamp
+            kick_utc = int(dt_vn.astimezone(ZoneInfo("UTC")).timestamp())
 
             if kick_utc < start_ts or kick_utc > end_ts:
                 continue
