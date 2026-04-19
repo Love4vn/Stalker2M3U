@@ -9,7 +9,6 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Tiền xử lý tên kênh từ JSON: MENA→Arabia (trừ khi có English), Arena Sport SRB→Serbia,...
 - Xử lý đặc biệt: beIN Sports English + AR chỉ khớp kênh M3U có "english".
 - Tennis: beIN Sports → beIN Sports 7.
-- Bổ sung nguồn live_matches.json (ATP/WTA Tour, Premier League) – giờ đã là giờ VN.
 - Bỏ qua kênh quảng cáo.
 - Sắp xếp kênh: UK trước, English sau, còn lại cuối.
 """
@@ -142,7 +141,6 @@ FOOTONSAT_URLS = [
 ]
 
 LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/schedule.json"
-LIVE_MATCHES_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/live_matches.json"
 
 # ================== GROUP TITLES ==================
 LEAGUE_GROUP_NAME = {
@@ -573,73 +571,6 @@ def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
 
     return games
 
-# ================== LIVE MATCHES PARSER ==================
-def parse_live_matches_data(data: list, start_ts: int, end_ts: int) -> List[Dict]:
-    """
-    Parse dữ liệu từ live_matches.json.
-    Lưu ý: Giờ trong file là giờ Việt Nam (Asia/Ho_Chi_Minh).
-    """
-    games = []
-    if not data or not isinstance(data, list):
-        return games
-
-    LEAGUE_MAPPING_LIVE_MATCHES = {
-        "Premier League": "Premier League",
-        "ATP Tour 2026": "Tennis",
-        "WTA Tour 2026": "Tennis",
-    }
-
-    for match in data:
-        date_str = match.get("Date")
-        time_str = match.get("Time")
-        if not date_str or not time_str:
-            continue
-
-        try:
-            # Parse thành datetime naive, sau đó gán timezone Việt Nam
-            dt_naive = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
-            dt_vn = dt_naive.replace(tzinfo=TIMEZONE)
-            # Chuyển sang UTC timestamp
-            kick_utc = int(dt_vn.astimezone(ZoneInfo("UTC")).timestamp())
-
-            if kick_utc < start_ts or kick_utc > end_ts:
-                continue
-
-            league_raw = match.get("League", "")
-            league = LEAGUE_MAPPING_LIVE_MATCHES.get(league_raw)
-            if not league:
-                continue
-
-            match_name = match.get("Matchup", "").strip()
-            if not match_name:
-                continue
-
-            if league != "Tennis" and not is_football_allowed(league, match_name):
-                continue
-
-            channels = []
-            services = match.get("Services", [])
-            for ch_name in services:
-                if ch_name:
-                    channels.append({
-                        "country_code": None,
-                        "channel_name": ch_name.strip()
-                    })
-
-            if channels:
-                games.append({
-                    "league": league,
-                    "match": match_name,
-                    "kick_utc": kick_utc,
-                    "time": vn_time(kick_utc),
-                    "channels": channels,
-                    "source": "live_matches"
-                })
-        except Exception:
-            continue
-
-    return games
-
 # ================== VALIDATION ==================
 def validate_url_sync(url: str) -> Tuple[bool, Optional[str]]:
     if url.startswith("udp://"):
@@ -714,11 +645,9 @@ async def main():
     print("📡 Tải APIs...")
     footonsat_tasks = [fetch_json_async(url) for url in FOOTONSAT_URLS]
     love4vn_task = fetch_json_async(LOVE4VN_URL)
-    live_matches_task = fetch_json_async(LIVE_MATCHES_URL)
 
     footonsat_results = await asyncio.gather(*footonsat_tasks)
     love4vn_data = await love4vn_task
-    live_matches_data = await live_matches_task
 
     all_games = []
     for data in footonsat_results:
@@ -727,9 +656,6 @@ async def main():
 
     if love4vn_data:
         all_games.extend(parse_love4vn_data(love4vn_data, start_ts, end_ts))
-
-    if live_matches_data:
-        all_games.extend(parse_live_matches_data(live_matches_data, start_ts, end_ts))
 
     print(f"✅ Tổng: {len(all_games)} trận")
     if not all_games:
