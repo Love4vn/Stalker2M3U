@@ -4,14 +4,15 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Chống trùng link:
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
   + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
-- Khớp chính xác số kênh hai chiều.
+- Khớp chính xác số kênh hai chiều, phân biệt vị trí 4K.
 - Country code nghiêm ngặt: nếu target có code, M3U bắt buộc cùng code.
-- Tiền xử lý tên kênh từ JSON: MENA→Arabia (trừ khi có English), Arena Sport SRB→Serbia,...
+- Tiền xử lý tên kênh từ JSON: MENA→Arabia (trừ khi có English), Arena Sport SRB→Serbia, Now Sports Premier League→Now Premier Sports...
 - Xử lý đặc biệt: beIN Sports English + AR chỉ khớp kênh M3U có "english".
 - Tennis: beIN Sports → beIN Sports 7.
 - Bỏ qua kênh quảng cáo.
-- Sắp xếp kênh: UK trước, English sau, còn lại cuối.
+- Sắp xếp kênh: Hub Sports trước, sau đó Now Sports, UK, English, còn lại.
 """
+
 import asyncio
 import json
 import re
@@ -62,6 +63,7 @@ PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂʰᵉᵛᶜᵗᵛᴴᴰ�
 PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')
 PATTERN_GENERIC_PREFIX = re.compile(r'^([a-z]{2,3})\:\s*', re.I)
 PATTERN_SPORTS_PREFIX = re.compile(r'^SPORTS\s*[-:]\s*', re.I)
+PATTERN_NOW_HK_PREFIX = re.compile(r'^NOW\s+HK\s+', re.I)  # Để loại bỏ "NOW HK " khỏi tên M3U
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -74,7 +76,7 @@ COUNTRY_CODES: Set[str] = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at", "ba",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr", "al", "in", "sg", "th", "id", "my",
     "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn", "arg", "irl",
-    "br", "ar", "mx", "za", "ru", "ua", "rs", "hr", "si", "sk", "am"
+    "br", "ar", "mx", "za", "ru", "ua", "rs", "hr", "si", "sk", "am", "hk"
 }
 
 COUNTRY_NAME_TO_CODE = {
@@ -100,7 +102,8 @@ COUNTRY_NAME_TO_CODE = {
     "sudan": "sd", "ethiopia": "et", "kenya": "ke", "nigeria": "ng", "ghana": "gh",
     "senegal": "sn", "côte d'ivoire": "ci", "cameroon": "cm", "angola": "ao",
     "albania": "al", "great britain": "gb", "england": "gb", "scotland": "gb", "wales": "gb",
-    "chile": "cl", "suriname": "sr", "armenia": "am", "georgia": "ge", "azerbaijan": "az", "kazakhstan": "kz"
+    "chile": "cl", "suriname": "sr", "armenia": "am", "georgia": "ge", "azerbaijan": "az", "kazakhstan": "kz",
+    "hong kong": "hk"
 }
 
 LEAGUE_MAPPING = {
@@ -225,8 +228,14 @@ def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[s
     return None, None
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
+    """
+    Extract country code from beginning, end, or inside the channel name.
+    Returns (country_code, cleaned_name_without_code).
+    Also removes generic prefixes like "GO:", "VIP:", "NOW HK " if they are not valid country codes.
+    """
     name_lower = name.lower().strip()
     
+    # 1. Check prefix patterns that include country codes
     for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
@@ -235,6 +244,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
                 remaining = name_lower[m.end():].lstrip('|:-\\s ┃')
                 return code, remaining.strip()
     
+    # 2. Check suffix pattern
     m_suffix = PATTERN_COUNTRY_CODE_SUFFIX.search(name_lower)
     if m_suffix:
         code = m_suffix.group(1)
@@ -246,6 +256,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
             remaining = name_lower[:m_suffix.start()].strip()
             return mapped, remaining
     
+    # 3. Try to extract country name and map to code, then remove the country name
     code_from_name, country_name = extract_country_code_from_name(name_lower)
     if code_from_name and country_name:
         pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
@@ -253,11 +264,18 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
         cleaned = re.sub(r'\s+', ' ', cleaned)
         return code_from_name, cleaned
     
+    # 4. Remove generic prefixes like "GO:", "VIP:", "NOW HK "
     m_generic = PATTERN_GENERIC_PREFIX.match(name_lower)
     if m_generic:
         remaining = name_lower[m_generic.end():].strip()
         return None, remaining
     
+    m_now_hk = PATTERN_NOW_HK_PREFIX.match(name_lower)
+    if m_now_hk:
+        remaining = name_lower[m_now_hk.end():].strip()
+        return None, remaining
+    
+    # 5. Remove leading punctuation/spaces if nothing else matched
     cleaned = re.sub(r'^[\|\s\:\-┃]+', '', name_lower)
     return None, cleaned.strip()
 
@@ -266,14 +284,17 @@ def extract_channel_info(name: str) -> Tuple[Optional[str], bool]:
     Trả về (channel_number, has_4k_before_number)
     has_4k_before_number = True nếu có '4k' đứng ngay trước số.
     """
-    name_lower = name.lower()
+    # Loại bỏ country code và các tiền tố trước khi tìm số
+    _, clean = extract_prefix_and_name(name)
+    name_lower = clean.lower()
+    
     # Tìm pattern "4k 1", "4k1", "4k-1" ...
     match_4k_before = re.search(r'4k\s*[-:\s]?\s*(\d+)', name_lower)
     if match_4k_before:
         return match_4k_before.group(1), True
 
     # Tìm số ở cuối (sau khi đã loại bỏ chất lượng)
-    name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd|hdr|raw)\b', '', name, flags=re.I)
+    name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd|hdr|raw)\b', '', name_lower, flags=re.I)
     name_clean = re.sub(r'[^\w\s]', ' ', name_clean)
     name_clean = ' '.join(name_clean.split())
     tokens = name_clean.split()
@@ -319,9 +340,7 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     if ch_num is not None:
         if ch_num != m3u_num:
             return False
-        # Nếu có số, vị trí 4K phải giống nhau (trừ khi một bên không có 4K thì vẫn chấp nhận?)
-        # Yêu cầu: Now Sports 4K 1 chỉ khớp với 4K 1 (4K trước), không khớp 1 4K.
-        # Vậy nếu target có 4K trước số thì M3U cũng phải có 4K trước số, và ngược lại.
+        # Nếu có số, vị trí 4K phải giống nhau
         if ch_4k_before != m3u_4k_before:
             return False
 
@@ -337,10 +356,16 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     if ch_norm.replace(' ', '') == m3u_norm.replace(' ', ''):
         return True
 
-    # Xử lý đặc biệt cho Now Sports
-    if 'now sports' in ch_norm and 'now hk' in m3u_norm:
-        if ch_norm.replace('now sports', '') == m3u_norm.replace('now hk now sports', ''):
-            return True
+    # Xử lý đặc biệt cho Now Sports: cho phép khớp với NOW HK Now Sports
+    if 'now sports' in ch_norm:
+        # Nếu M3U có "now hk now sports", coi như khớp
+        if 'now hk now sports' in m3u_norm:
+            # So sánh phần còn lại sau khi bỏ "now hk now sports" và "now sports"
+            m3u_rest = m3u_norm.replace('now hk now sports', '').strip()
+            ch_rest = ch_norm.replace('now sports', '').strip()
+            if ch_rest == m3u_rest:
+                return True
+
     if 'now sports premier league tv' in ch_norm:
         if 'now sports epl' in m3u_norm or 'now sports premier league' in m3u_norm:
             return True
