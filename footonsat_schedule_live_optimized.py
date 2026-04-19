@@ -61,7 +61,7 @@ PATTERN_LOW_RES = re.compile(r'(sd|360p|480p|576p|low res|low quality)', re.I)
 PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂʰᵉᵛᶜᵗᵛᴴᴰᵁᴴᴰ³⁸⁴⁰ᴾ⁵⁰ᶠᵖˢ◉┃]')
 PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')
 PATTERN_GENERIC_PREFIX = re.compile(r'^([a-z]{2,3})\:\s*', re.I)
-PATTERN_SPORTS_PREFIX = re.compile(r'^SPORTS\s*[-:]\s*', re.I)  # "SPORTS - " hoặc "SPORTS: "
+PATTERN_SPORTS_PREFIX = re.compile(r'^SPORTS\s*[-:]\s*', re.I)
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -261,17 +261,18 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     cleaned = re.sub(r'^[\|\s\:\-┃]+', '', name_lower)
     return None, cleaned.strip()
 
-def extract_channel_number(name: str) -> Optional[str]:
+def extract_channel_info(name: str) -> Tuple[Optional[str], bool]:
     """
-    Ưu tiên số đứng sau '4k', nếu không có thì tìm số ở cuối.
+    Trả về (channel_number, has_4k_before_number)
+    has_4k_before_number = True nếu có '4k' đứng ngay trước số.
     """
     name_lower = name.lower()
-    # Tìm pattern "4k 1", "4k1", "4k-1", ...
-    match_4k = re.search(r'4k\s*[-:\s]?\s*(\d+)', name_lower)
-    if match_4k:
-        return match_4k.group(1)
-    
-    # Fallback về cách cũ
+    # Tìm pattern "4k 1", "4k1", "4k-1" ...
+    match_4k_before = re.search(r'4k\s*[-:\s]?\s*(\d+)', name_lower)
+    if match_4k_before:
+        return match_4k_before.group(1), True
+
+    # Tìm số ở cuối (sau khi đã loại bỏ chất lượng)
     name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd|hdr|raw)\b', '', name, flags=re.I)
     name_clean = re.sub(r'[^\w\s]', ' ', name_clean)
     name_clean = ' '.join(name_clean.split())
@@ -280,17 +281,16 @@ def extract_channel_number(name: str) -> Optional[str]:
         last_token = tokens[-1]
         match = re.search(r'(\d+)$', last_token)
         if match:
-            return match.group(1)
+            return match.group(1), False
         if last_token.isdigit():
-            return last_token
+            return last_token, False
     for token in reversed(tokens):
         if token.isdigit():
-            return token
-    return None
+            return token, False
+    return None, False
 
 def normalize_channel_name(name: str) -> str:
     _, name = extract_prefix_and_name(name)
-    # Loại bỏ prefix "SPORTS - " hoặc "SPORTS: "
     name = PATTERN_SPORTS_PREFIX.sub('', name)
     name = PATTERN_SPECIAL_TAGS.sub(' ', name)
     name = PATTERN_QUALITY.sub('', name)
@@ -310,13 +310,20 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     ch_code, ch_clean = extract_prefix_and_name(ch_name)
     m3u_code, m3u_clean = extract_prefix_and_name(m3u_name)
 
-    ch_num = extract_channel_number(ch_clean)
-    m3u_num = extract_channel_number(m3u_clean)
+    ch_num, ch_4k_before = extract_channel_info(ch_clean)
+    m3u_num, m3u_4k_before = extract_channel_info(m3u_clean)
 
+    # Cả hai phải cùng có số hoặc cùng không có số
     if (ch_num is None) != (m3u_num is None):
         return False
-    if ch_num is not None and ch_num != m3u_num:
-        return False
+    if ch_num is not None:
+        if ch_num != m3u_num:
+            return False
+        # Nếu có số, vị trí 4K phải giống nhau (trừ khi một bên không có 4K thì vẫn chấp nhận?)
+        # Yêu cầu: Now Sports 4K 1 chỉ khớp với 4K 1 (4K trước), không khớp 1 4K.
+        # Vậy nếu target có 4K trước số thì M3U cũng phải có 4K trước số, và ngược lại.
+        if ch_4k_before != m3u_4k_before:
+            return False
 
     if ch_code is not None:
         if m3u_code is None or ch_code != m3u_code:
@@ -325,18 +332,15 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     ch_norm = normalize_channel_name(ch_clean)
     m3u_norm = normalize_channel_name(m3u_clean)
 
-    # So sánh trực tiếp
     if ch_norm == m3u_norm:
         return True
     if ch_norm.replace(' ', '') == m3u_norm.replace(' ', ''):
         return True
 
     # Xử lý đặc biệt cho Now Sports
-    # Now Sports X có thể khớp với NOW HK Now Sports X
     if 'now sports' in ch_norm and 'now hk' in m3u_norm:
         if ch_norm.replace('now sports', '') == m3u_norm.replace('now hk now sports', ''):
             return True
-    # Now Sports Premier League TV khớp với EPL
     if 'now sports premier league tv' in ch_norm:
         if 'now sports epl' in m3u_norm or 'now sports premier league' in m3u_norm:
             return True
@@ -638,14 +642,23 @@ async def validate_events_batch(events: List[Dict]) -> List[Dict]:
 # ================== SORTING HELPER ==================
 def channel_priority(channel_name: str, code: Optional[str]) -> int:
     name_lower = channel_name.lower()
-    if code == 'uk' or name_lower.startswith('uk ') or name_lower.startswith('uk:'):
+    # 1. Hub Sports
+    if 'hub sports' in name_lower:
         return 0
+    # 2. Now Sports hoặc Now Premier Sports
+    if 'now sports' in name_lower or 'now premier sports' in name_lower:
+        return 1
+    # 3. UK
+    if code == 'uk' or name_lower.startswith('uk ') or name_lower.startswith('uk:'):
+        return 2
+    # 4. English
     english_codes = {'us', 'ca', 'au', 'nz', 'ie', 'gb', 'en'}
     if code in english_codes:
-        return 1
+        return 3
     if 'english' in name_lower:
-        return 1
-    return 2
+        return 3
+    # 5. Others
+    return 4
 
 # ================== MAIN ==================
 async def main():
@@ -723,7 +736,7 @@ async def main():
         ch['_code'] = code
         ch['_clean'] = clean
         ch['_norm'] = normalize_channel_name(clean)
-        ch['_num'] = extract_channel_number(clean)
+        ch['_num'], ch['_4k_before'] = extract_channel_info(clean)
 
     print("\n🔍 QUÁ TRÌNH MATCH KÊNH (giữ tất cả kênh khớp, chống trùng theo quy tắc):")
 
@@ -785,7 +798,7 @@ async def main():
                 print(f"   📡 Yêu cầu: {target_name}")
 
             target_code, target_clean = extract_prefix_and_name(target_name)
-            target_num = extract_channel_number(target_clean)
+            target_num, target_4k_before = extract_channel_info(target_clean)
             target_norm = normalize_channel_name(target_clean)
 
             # Kiểm tra trường hợp đặc biệt: beIN Sports English + AR
@@ -802,11 +815,14 @@ async def main():
                     if ch['_code'] is None or target_code != ch['_code']:
                         continue
 
-                # Number pre‑filter: both must have same "has number" status
+                # Number pre‑filter (so sánh cả số và vị trí 4K)
                 if (target_num is None) != (ch['_num'] is None):
                     continue
-                if target_num is not None and target_num != ch['_num']:
-                    continue
+                if target_num is not None:
+                    if target_num != ch['_num']:
+                        continue
+                    if target_4k_before != ch['_4k_before']:
+                        continue
 
                 # Trường hợp đặc biệt beIN English AR: M3U cũng phải chứa "english"
                 if is_bein_english_ar:
