@@ -77,17 +77,17 @@ LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads
 
 # Group titles cho M3U output
 LEAGUE_GROUP_NAME = {
-    "Premier League": "⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League",
-    "Serie A": "⚽️🇮🇹|Live Serie A",
-    "Bundesliga": "⚽️🇩🇪|Live Bundesliga",
-    "La Liga": "⚽️🇪🇦|Live La Liga",
-    "Ligue 1": "⚽️🇨🇵|Live Ligue 1",
-    "UEFA Champions League": "Live UEFA Champions League",
-    "UEFA Europa League": "Live UEFA Europa League",
-    "UEFA Europa Conference League": "Live UEFA Conference League",
-    "UEFA Euro": "Live Euro",
-    "FA Cup": "Live FA, League Cup",
-    "League Cup": "Live FA, League Cup",
+    "Premier League": "⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match",
+    "Serie A": "⚽️🇮🇹|Live Serie A-Match",
+    "Bundesliga": "⚽️🇩🇪|Live Bundesliga-Match",
+    "La Liga": "⚽️🇪🇦|Live La Liga-Match",
+    "Ligue 1": "⚽️🇨🇵|Live Ligue 1-Match",
+    "UEFA Champions League": "Live UEFA Champions League-Match",
+    "UEFA Europa League": "Live UEFA Europa League-Match",
+    "UEFA Europa Conference League": "Live UEFA Conference League-Match",
+    "UEFA Euro": "Live Euro-Match",
+    "FA Cup": "Live FA, League Cup-Match",
+    "League Cup": "Live FA, League Cup-Match",
 }
 
 # ================== CACHE ==================
