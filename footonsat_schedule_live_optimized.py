@@ -12,7 +12,6 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Bỏ qua kênh quảng cáo.
 - Sắp xếp kênh: Hub Sports trước, sau đó Now Sports, UK, English, còn lại.
 """
-
 import asyncio
 import json
 import re
@@ -63,7 +62,7 @@ PATTERN_SPECIAL_TAGS = re.compile(r'[ⱽᴵᴾᴿᴬᵂʰᵉᵛᶜᵗᵛᴴᴰ�
 PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')
 PATTERN_GENERIC_PREFIX = re.compile(r'^([a-z]{2,3})\:\s*', re.I)
 PATTERN_SPORTS_PREFIX = re.compile(r'^SPORTS\s*[-:]\s*', re.I)
-PATTERN_NOW_HK_PREFIX = re.compile(r'^NOW\s+HK\s+', re.I)  # Để loại bỏ "NOW HK " khỏi tên M3U
+PATTERN_NOW_HK_PREFIX = re.compile(r'^NOW\s+HK\s+', re.I)
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -228,14 +227,8 @@ def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[s
     return None, None
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
-    """
-    Extract country code from beginning, end, or inside the channel name.
-    Returns (country_code, cleaned_name_without_code).
-    Also removes generic prefixes like "GO:", "VIP:", "NOW HK " if they are not valid country codes.
-    """
     name_lower = name.lower().strip()
     
-    # 1. Check prefix patterns that include country codes
     for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
@@ -244,7 +237,6 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
                 remaining = name_lower[m.end():].lstrip('|:-\\s ┃')
                 return code, remaining.strip()
     
-    # 2. Check suffix pattern
     m_suffix = PATTERN_COUNTRY_CODE_SUFFIX.search(name_lower)
     if m_suffix:
         code = m_suffix.group(1)
@@ -256,7 +248,6 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
             remaining = name_lower[:m_suffix.start()].strip()
             return mapped, remaining
     
-    # 3. Try to extract country name and map to code, then remove the country name
     code_from_name, country_name = extract_country_code_from_name(name_lower)
     if code_from_name and country_name:
         pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
@@ -264,7 +255,6 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
         cleaned = re.sub(r'\s+', ' ', cleaned)
         return code_from_name, cleaned
     
-    # 4. Remove generic prefixes like "GO:", "VIP:", "NOW HK "
     m_generic = PATTERN_GENERIC_PREFIX.match(name_lower)
     if m_generic:
         remaining = name_lower[m_generic.end():].strip()
@@ -275,25 +265,20 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
         remaining = name_lower[m_now_hk.end():].strip()
         return None, remaining
     
-    # 5. Remove leading punctuation/spaces if nothing else matched
     cleaned = re.sub(r'^[\|\s\:\-┃]+', '', name_lower)
     return None, cleaned.strip()
 
 def extract_channel_info(name: str) -> Tuple[Optional[str], bool]:
     """
     Trả về (channel_number, has_4k_before_number)
-    has_4k_before_number = True nếu có '4k' đứng ngay trước số.
     """
-    # Loại bỏ country code và các tiền tố trước khi tìm số
     _, clean = extract_prefix_and_name(name)
     name_lower = clean.lower()
     
-    # Tìm pattern "4k 1", "4k1", "4k-1" ...
     match_4k_before = re.search(r'4k\s*[-:\s]?\s*(\d+)', name_lower)
     if match_4k_before:
         return match_4k_before.group(1), True
 
-    # Tìm số ở cuối (sau khi đã loại bỏ chất lượng)
     name_clean = re.sub(r'\b(?:hd|fhd|uhd|4k|8k|hevc|sd|full hd|ultra hd|hdr|raw)\b', '', name_lower, flags=re.I)
     name_clean = re.sub(r'[^\w\s]', ' ', name_clean)
     name_clean = ' '.join(name_clean.split())
@@ -334,13 +319,11 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     ch_num, ch_4k_before = extract_channel_info(ch_clean)
     m3u_num, m3u_4k_before = extract_channel_info(m3u_clean)
 
-    # Cả hai phải cùng có số hoặc cùng không có số
     if (ch_num is None) != (m3u_num is None):
         return False
     if ch_num is not None:
         if ch_num != m3u_num:
             return False
-        # Nếu có số, vị trí 4K phải giống nhau
         if ch_4k_before != m3u_4k_before:
             return False
 
@@ -356,19 +339,29 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     if ch_norm.replace(' ', '') == m3u_norm.replace(' ', ''):
         return True
 
-    # Xử lý đặc biệt cho Now Sports: cho phép khớp với NOW HK Now Sports
+    # --- Xử lý đặc biệt cho Now Sports ---
+    # 1. Nếu target là Now Sports X (không có "premier league"), cho phép khớp với Now Premier Sports X
+    if 'now sports' in ch_norm and 'now sports premier league' not in ch_norm:
+        # Kiểm tra nếu M3U là Now Premier Sports
+        if 'now premier sports' in m3u_norm:
+            # So sánh phần số và phần còn lại
+            ch_rest = ch_norm.replace('now sports', '').strip()
+            m3u_rest = m3u_norm.replace('now premier sports', '').strip()
+            if ch_rest == m3u_rest:
+                return True
+
+    # 2. Nếu target là Now Sports Premier League TV, cho phép khớp với EPL hoặc Premier League
+    if 'now sports premier league tv' in ch_norm:
+        if 'now sports epl' in m3u_norm or 'now sports premier league' in m3u_norm:
+            return True
+
+    # 3. Cho phép Now Sports khớp với NOW HK Now Sports
     if 'now sports' in ch_norm:
-        # Nếu M3U có "now hk now sports", coi như khớp
         if 'now hk now sports' in m3u_norm:
-            # So sánh phần còn lại sau khi bỏ "now hk now sports" và "now sports"
             m3u_rest = m3u_norm.replace('now hk now sports', '').strip()
             ch_rest = ch_norm.replace('now sports', '').strip()
             if ch_rest == m3u_rest:
                 return True
-
-    if 'now sports premier league tv' in ch_norm:
-        if 'now sports epl' in m3u_norm or 'now sports premier league' in m3u_norm:
-            return True
 
     if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
         return ch_norm == m3u_norm
@@ -418,10 +411,7 @@ def preprocess_target_channel(name: str) -> str:
     if not re.search(r'\benglish\b', name_clean, re.I):
         name_clean = re.sub(r'\b(beIN\s*Sports?)\s+MENA\b', r'\1 Arabia', name_clean, flags=re.I)
 
-    # Now Sports Premier League 1 -> Now Premier Sports 1 (chỉ khi có số)
-    if re.search(r'\bNow Sports Premier League\s+(\d+)\b', name_clean, re.I):
-        name_clean = re.sub(r'\bNow Sports Premier League\s+(\d+)\b', r'Now Premier Sports \1', name_clean, flags=re.I)
-    
+    # Không đổi Now Sports Premier League nữa, giữ nguyên
     return name_clean
 
 # ================== HTTP ==================
@@ -667,22 +657,17 @@ async def validate_events_batch(events: List[Dict]) -> List[Dict]:
 # ================== SORTING HELPER ==================
 def channel_priority(channel_name: str, code: Optional[str]) -> int:
     name_lower = channel_name.lower()
-    # 1. Hub Sports
     if 'hub sports' in name_lower:
         return 0
-    # 2. Now Sports hoặc Now Premier Sports
     if 'now sports' in name_lower or 'now premier sports' in name_lower:
         return 1
-    # 3. UK
     if code == 'uk' or name_lower.startswith('uk ') or name_lower.startswith('uk:'):
         return 2
-    # 4. English
     english_codes = {'us', 'ca', 'au', 'nz', 'ie', 'gb', 'en'}
     if code in english_codes:
         return 3
     if 'english' in name_lower:
         return 3
-    # 5. Others
     return 4
 
 # ================== MAIN ==================
@@ -797,7 +782,7 @@ async def main():
 
             original_name = target_name_raw
 
-            # === XỬ LÝ ĐẶC BIỆT CHO TENNIS: beIN Sports -> beIN Sports 7 ===
+            # === TENNIS SPECIAL: beIN Sports -> beIN Sports 7 ===
             if league == "Tennis":
                 if re.search(r'\bbein\s*sports?\b', target_name_raw, re.I):
                     target_name_raw = re.sub(
@@ -826,7 +811,6 @@ async def main():
             target_num, target_4k_before = extract_channel_info(target_clean)
             target_norm = normalize_channel_name(target_clean)
 
-            # Kiểm tra trường hợp đặc biệt: beIN Sports English + AR
             is_bein_english_ar = (
                 target_code == 'ar' and
                 re.search(r'\bbein\s*sports?\b', original_name, re.I) and
@@ -835,12 +819,10 @@ async def main():
 
             matching = []
             for ch in channels:
-                # Country code pre‑filter
                 if target_code is not None:
                     if ch['_code'] is None or target_code != ch['_code']:
                         continue
 
-                # Number pre‑filter (so sánh cả số và vị trí 4K)
                 if (target_num is None) != (ch['_num'] is None):
                     continue
                 if target_num is not None:
@@ -849,7 +831,6 @@ async def main():
                     if target_4k_before != ch['_4k_before']:
                         continue
 
-                # Trường hợp đặc biệt beIN English AR: M3U cũng phải chứa "english"
                 if is_bein_english_ar:
                     if 'english' not in ch['_norm']:
                         continue
