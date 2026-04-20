@@ -1,4 +1,14 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League",21/04 01:50 AM | West Ham United vs Crystal Palace (┃UK┃ HUB PREMIER 1 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 12D030967A06D1F669544C6F6B634B90
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1314077&extension=ts&play_token=r4KxAXrmHK
+#EXTINF:-1 tvg-id="620786" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1886.jpg?ver=28983",21/04 01:50 AM | West Ham United vs Crystal Palace (HUB PREMIER 1 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=620786&extension=ts&play_token=vMqj71uL7x
 #EXTINF:-1 tvg-id="1556135" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14436.jpg?30348",21/04 02:00 AM | Crystal Palace vs West Ham United (4K: NOW SPORTS PREMIER LEAGUE ᵁᴴᴰ ³⁸⁴⁰ᴾ ᴺᴹ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
@@ -164,6 +174,11 @@ http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325020&extens
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=437219&extension=ts&play_token=ZfEqB43KdT
+#EXTINF:-1 tvg-id="1568586" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14545.PNG?ver=52669",21/04 02:00 AM | Crystal Palace vs West Ham United (GO: USA NETWORK)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1568586&extension=ts&play_token=YoajKBwkbI
 #EXTINF:-1 tvg-id="203886" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_2.png",21/04 02:00 AM | Crystal Palace vs West Ham United (AR - BEIN SPORTS 2 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -374,6 +389,11 @@ http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1027861
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1853518&extension=ts&play_token=GQUWAABn0A
+#EXTINF:-1 tvg-id="1853520" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://51.158.145.100/picons/logos/AFRICANEW/SUPERSPORTVARIETY.png",21/04 02:00 AM | Crystal Palace vs West Ham United (UGA: SUPERSPORT MAXIMO)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1853520&extension=ts&play_token=vSFb6pbNeW
 #EXTINF:-1 tvg-id="75827" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://go4.pw/EUROPE/FRANCE/SPORT_HEVC.png",21/04 02:00 AM | Crystal Palace vs West Ham United (PL - CANAL+ SPORT 3 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -444,11 +464,6 @@ http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1803163&exten
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 706DF704CD3CBEB3D399ABAED1CA8F50
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1027860
-#EXTINF:-1 tvg-id="1853520" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://51.158.145.100/picons/logos/AFRICANEW/SUPERSPORTVARIETY.png",21/04 02:00 AM | Crystal Palace vs West Ham United (UGA: SUPERSPORT MAXIMO)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1853520&extension=ts&play_token=vSFb6pbNeW
 #EXTINF:-1 tvg-id="39562" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 2.png",21/04 02:00 AM | Crystal Palace vs West Ham United (TR - BEIN SPORTS 2 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -734,6 +749,31 @@ http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120430&exten
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120410&extension=ts&play_token=1qgQihZKPa
+#EXTINF:-1 tvg-id="197733" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://go4.pw/LATINO/MEXICO/TNT.png",21/04 02:00 AM | Crystal Palace vs West Ham United (ARG - TNT SPORTS HD ᵛᶦᵖ ◉)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 706DF704CD3CBEB3D399ABAED1CA8F50
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/197733
+#EXTINF:-1 tvg-id="1090608" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://picon.tivi-ott.net:25461/picon/ARGENTINA/CANALES NACIONALES/TNT SPORTS.png",21/04 02:00 AM | Crystal Palace vs West Ham United (┃ARG┃ TNT SPORTS HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 12D030967A06D1F669544C6F6B634B90
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1090608&extension=ts&play_token=W0xkJ0fE5E
+#EXTINF:-1 tvg-id="1090714" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://picon.tivi-ott.net:25461/picon/ARGENTINA/EL FUTBOL/TNT SPORTS.png",21/04 02:00 AM | Crystal Palace vs West Ham United (┃ARG┃ TNT SPORTS FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 12D030967A06D1F669544C6F6B634B90
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1090714&extension=ts&play_token=wPa7P1gqeB
+#EXTINF:-1 tvg-id="1090715" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://picon.tivi-ott.net:25461/picon/ARGENTINA/EL FUTBOL/TNT SPORTS.png",21/04 02:00 AM | Crystal Palace vs West Ham United (┃ARG┃ TNT SPORTS HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 12D030967A06D1F669544C6F6B634B90
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1090715&extension=ts&play_token=RmnG6sXVKQ
+#EXTINF:-1 tvg-id="609208" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1070.png?14922",21/04 02:00 AM | Crystal Palace vs West Ham United (ARG: TNT SPORTS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=609208&extension=ts&play_token=a3bspAifUs
 #EXTINF:-1 tvg-id="1527619" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11103.png?39144",21/04 02:00 AM | Crystal Palace vs West Ham United (NOW: SKY SPORTS+ ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
@@ -1024,3 +1064,18 @@ http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=380130&extens
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
 http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=479828&extension=ts&play_token=GoaAlVEmcC
+#EXTINF:-1 tvg-id="1115" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://picon.tivi-ott.net:25461/picon/BOSNA/Arena_sport_logo.png",21/04 02:00 AM | Crystal Palace vs West Ham United (┃HR┃ ARENA SPORT 1 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 12D030967A06D1F669544C6F6B634B90
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1115&extension=ts&play_token=Tb5QwRuyUr
+#EXTINF:-1 tvg-id="1460668" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3763.jpg?82975",21/04 02:00 AM | Crystal Palace vs West Ham United (HR: ARENA SPORT 1 ⱽᴵᴾ ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1460668&extension=ts&play_token=9i7lP807Wn
+#EXTINF:-1 tvg-id="2444" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3763.jpg?82975",21/04 02:00 AM | Crystal Palace vs West Ham United (HR: Arena Sport 1 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 71073EB5D8B17809CFC7B7C909FFB2CC
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2444&extension=ts&play_token=rr5abNqG7K
