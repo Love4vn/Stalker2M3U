@@ -25,7 +25,7 @@ jobs:
           pip install aiohttp pyyaml
 
       - name: Run script
-        run: python Football_match_live.py --skip-validation
+        run: python Football_match_live.py --no-footonsat --skip-validation
 
       - name: Commit and push changes
         env:
