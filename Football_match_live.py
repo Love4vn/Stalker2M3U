@@ -2,6 +2,11 @@
 Football_match_live.py - Flexible football match-based M3U generator.
 Matches games by team name keywords (order independent).
 Outputs Football_match_live.m3u.
+
+Usage:
+    python Football_match_live.py               # Normal run
+    python Football_match_live.py --no-footonsat  # Skip footonsat sources
+    python Football_match_live.py --skip-validation # Skip URL validation
 """
 
 import asyncio
@@ -30,6 +35,7 @@ VALIDATION_CONCURRENT = 50
 VALIDATION_TIMEOUT = 2
 USER_AGENT = "Mozilla/5.0"
 SKIP_VALIDATION = "--skip-validation" in sys.argv
+USE_FOOTONSAT = "--no-footonsat" not in sys.argv
 M3U_FETCH_WORKERS = 40
 
 # ================== FOOTBALL LEAGUES ==================
@@ -50,7 +56,7 @@ LEAGUE_MAPPING = {
     "uefa conference league": "UEFA Europa Conference League",
 }
 
-# Chỉ dùng để lọc trận có đội mong muốn (giữ nguyên từ code cũ)
+# Filter matches based on teams (optional)
 ALLOWED_TEAMS_PER_LEAGUE = {
     "Premier League": {"arsenal", "aston villa", "bournemouth", "brentford", "brighton", "chelsea",
                        "crystal palace", "everton", "fulham", "leeds", "liverpool", "manchester city",
@@ -75,7 +81,7 @@ FOOTONSAT_URLS = [
 
 LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads/1/schedule.json"
 
-# Group titles cho M3U output
+# Group titles for M3U output
 LEAGUE_GROUP_NAME = {
     "Premier League": "⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League",
     "Serie A": "⚽️🇮🇹|Live Serie A",
@@ -117,7 +123,7 @@ class CacheManager:
 
 # ================== HELPERS ==================
 def normalize(text: str) -> str:
-    """Loại bỏ dấu, chuyển thường."""
+    """Remove accents, convert to lowercase."""
     text = text.lower()
     text = unicodedata.normalize("NFD", text)
     text = "".join(c for c in text if unicodedata.category(c) != "Mn")
@@ -138,13 +144,12 @@ def is_football_allowed(league: str, match_name: str) -> bool:
 
 def extract_team_keywords(team_name: str) -> Set[str]:
     """
-    Trích xuất các từ khóa quan trọng từ tên đội để so khớp linh hoạt.
-    Chỉ loại bỏ các từ dừng không mang ý nghĩa phân biệt.
+    Extract important keywords from a team name for flexible matching.
+    Only minimal stopwords are removed.
     """
     team_norm = normalize(team_name)
-    # Tách từ
     words = team_norm.split()
-    # Loại bỏ các từ dừng (stopwords) tối thiểu
+    # Minimal stopwords
     stopwords = {
         'fc', 'afc', 'cf', 'sc', 'ac', 'as', 'cs', 'cd', 'cf', 'fk', 'if', 'il', 'rc', 'rs', 'sd',
         '&', 'and', 'football', 'club', 'sporting', 'cp', 'lisbon', 'lissabon',
@@ -156,33 +161,31 @@ def extract_team_keywords(team_name: str) -> Set[str]:
     for w in words:
         if w not in stopwords and len(w) > 2:
             keywords.add(w)
-    # Nếu không còn từ khóa nào, giữ nguyên tên đội đã normalize
+    # Fallback: if no keywords, use the whole normalized name without spaces
     if not keywords:
         keywords.add(team_norm.replace(' ', ''))
     return keywords
 
 def extract_match_keywords(match_name: str) -> Tuple[Set[str], Set[str]]:
-    """Trả về hai tập từ khóa của hai đội từ tên trận đấu."""
-    # Hỗ trợ nhiều dấu phân cách: vs, v, @, x, -, –
+    """Return two sets of keywords for the two teams from the match name."""
+    # Support multiple separators: vs, v, @, x, -, –
     separators = r'(?:\s+(?:vs|v|[@x])\s+)|(?:\s*[-–]\s*)'
     parts = re.split(separators, match_name, flags=re.I)
     if len(parts) >= 2:
         team1 = parts[0].strip()
         team2 = parts[1].strip()
         return extract_team_keywords(team1), extract_team_keywords(team2)
-    # Fallback: nếu không có dấu phân cách, thử tách theo danh sách từ khóa đội bóng đã biết
-    # (Đơn giản: tìm vị trí của từ khóa đội thứ hai)
+    # Fallback for missing separator: try known team names (especially La Liga)
     lower_match = match_name.lower()
-    # Các đội bóng La Liga thường gặp
-    teams_la_liga = ['real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves', 'deportivo']
-    for team in teams_la_liga:
+    known_teams = ['real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves', 'deportivo']
+    for team in known_teams:
         if team in lower_match:
             idx = lower_match.find(team)
             if idx > 0:
                 team1 = match_name[:idx].strip()
                 team2 = match_name[idx:].strip()
                 return extract_team_keywords(team1), extract_team_keywords(team2)
-    # Cuối cùng, tách đôi theo từ
+    # Last resort: split by words in the middle
     words = normalize(match_name).split()
     mid = len(words) // 2
     kw1 = extract_team_keywords(' '.join(words[:mid]))
@@ -190,43 +193,40 @@ def extract_match_keywords(match_name: str) -> Tuple[Set[str], Set[str]]:
     return kw1, kw2
 
 def channel_matches_match(channel_clean: str, kw1: Set[str], kw2: Set[str]) -> bool:
-    """
-    Kiểm tra tên kênh đã chuẩn hóa có chứa ít nhất một từ khóa của mỗi đội hay không.
-    """
+    """Check if the cleaned channel name contains at least one keyword from each team."""
     if not kw1 or not kw2:
         return False
     norm_ch = normalize(channel_clean)
-    # Kiểm tra mỗi đội có ít nhất một từ khóa xuất hiện
     match1 = any(kw in norm_ch for kw in kw1)
     match2 = any(kw in norm_ch for kw in kw2)
     return match1 and match2
 
 def clean_display_name(original_name: str) -> str:
     """
-    Làm sạch tên kênh để hiển thị: loại bỏ ngày/giờ/múi giờ, dấu câu thừa,
-    nhưng giữ lại chất lượng video (HD, 4K, 8K, FHD, UHD, v.v.).
+    Clean channel name for display: remove date/time/timezone/punctuation,
+    but keep video quality indicators (HD, 4K, etc.).
     """
     name = original_name
 
-    # Các mẫu cần xóa
+    # Patterns to remove
     patterns_to_remove = [
-        # Ngày tháng năm
+        # Dates
         r'\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b',
         r'\b\d{4}[/-]\d{1,2}[/-]\d{1,2}\b',
         r'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b',
         r'\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}\b',
         r'\b\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b',
-        # Giờ
+        # Times
         r'\b\d{1,2}:\d{2}\s*(?:[AP]M)?\s*(?:[A-Z]{2,4})?\b',
         r'\b\d{1,2}:\d{2}\b',
-        # Múi giờ
+        # Timezones
         r'\b(?:UTC|GMT|CET|CEST|EEST|EET|EST|EDT|PST|PDT|IST|AEST|ACST|AWST)\b',
         r'\bET\b', r'\bUK\b',
-        # Dạng trong ngoặc chứa múi giờ hoặc số
+        # Parentheses with timezone or numbers
         r'\([^)]*\b(?:UTC|GMT|CET|CEST|EEST|ET|UK)\b[^)]*\)',
         r'\(\s*\d{1,2}\s*\)',
         r'\[\s*\d{1,2}\s*\]',
-        # Các cụm từ thừa
+        # Unwanted words (but keep quality like HD, 4K)
         r'\bNEXT\s*[|:-]?\s*',
         r'\bEXCLUSIVE\b',
         r'\bPPV\b',
@@ -236,31 +236,31 @@ def clean_display_name(original_name: str) -> str:
         r'\bEPL\b',
         r'\bLALIGA\b',
         r'\bEA\s*SPORTS\b',
-        # Ngày trong tuần và tháng
+        # Days and months
         r'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b',
         r'\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b',
-        # Các ký tự đặc biệt thừa
+        # Extra punctuation
         r'^\s*[|:-]\s*',
         r'\s*[|:-]\s*$',
         r'\s+[|:-]\s+',
-        # Các từ chỉ giải đấu (có thể xuất hiện ở đầu)
+        # League prefixes
         r'^.*?\b(?:LALIGA|PREMIER\s+LEAGUE|UEFA\s+CHAMPIONS\s+LEAGUE)\b\s*[:]?\s*',
     ]
 
     for pat in patterns_to_remove:
         name = re.sub(pat, ' ', name, flags=re.I)
 
-    # Xóa dấu ngoặc rỗng hoặc chỉ chứa số
+    # Remove empty parentheses/brackets
     name = re.sub(r'\(\s*\d*\s*\)', ' ', name)
     name = re.sub(r'\[\s*\d*\s*\]', ' ', name)
 
-    # Xóa khoảng trắng thừa
+    # Collapse whitespace
     name = ' '.join(name.split())
 
-    # Xóa dấu câu thừa ở đầu/cuối
+    # Trim punctuation
     name = name.strip('|:- ')
 
-    # Nếu trống thì giữ tên gốc đã làm sạch cơ bản
+    # Fallback if empty
     if not name:
         name = re.sub(r'[|:-]', ' ', original_name)
         name = ' '.join(name.split())
@@ -269,17 +269,16 @@ def clean_display_name(original_name: str) -> str:
 
 def channel_priority(channel_name: str) -> int:
     """
-    Ưu tiên: UK (0), English (1), còn lại (2).
-    Dựa trên country code hoặc từ khóa.
+    Priority: UK (0), English (1), others (2).
+    Based on country code or keyword.
     """
     name_lower = channel_name.lower()
     # UK indicators
     uk_pattern = r'\b(uk|gb|england|united kingdom)\b'
     if re.search(uk_pattern, name_lower) or name_lower.startswith('uk ') or name_lower.startswith('uk:'):
         return 0
-    # English language (country codes hoặc từ "english")
+    # English language
     english_codes = {'us', 'ca', 'au', 'nz', 'ie', 'en'}
-    # Tìm country code dạng đầu dòng hoặc sau dấu |
     code_match = re.search(r'(?:^|\|)\s*([a-z]{2,3})\s*(?:\||:|\s|$)', name_lower)
     if code_match:
         code = code_match.group(1)
@@ -331,7 +330,7 @@ def parse_m3u_fast(content: str) -> List[Dict]:
             parts = line.split(',')
             name = parts[-1].strip() if len(parts) > 1 else "Unknown"
 
-            # Bỏ qua kênh có ký tự quảng cáo
+            # Skip ad channels
             if re.search(r'[#=☰]', name):
                 i += 1
                 while i < len(lines) and not lines[i].strip().startswith('http'):
@@ -419,7 +418,7 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                 "time": vn_time(kick_utc),
                 "source": "footonsat"
             })
-            # Nhảy qua các dòng channel
+            # Skip channel entries
             j = i + 1
             while j < len(items):
                 next_item = items[j]
@@ -447,7 +446,7 @@ def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
             league = game.get("league", "")
             match_name = game.get("match", "").strip()
             
-            # Chỉ lấy bóng đá
+            # Only football
             if league not in ALLOWED_FOOTBALL_LEAGUES:
                 continue
             if not match_name:
@@ -525,17 +524,18 @@ async def main():
     print("🔄 Bắt đầu...")
 
     print("📡 Tải APIs...")
-    footonsat_tasks = [fetch_json_async(url) for url in FOOTONSAT_URLS]
-    love4vn_task = fetch_json_async(LOVE4VN_URL)
-
-    footonsat_results = await asyncio.gather(*footonsat_tasks)
-    love4vn_data = await love4vn_task
-
     all_games = []
-    for data in footonsat_results:
-        if data:
-            all_games.extend(parse_footonsat_data(data, start_ts, end_ts))
 
+    if USE_FOOTONSAT:
+        footonsat_tasks = [fetch_json_async(url) for url in FOOTONSAT_URLS]
+        footonsat_results = await asyncio.gather(*footonsat_tasks)
+        for data in footonsat_results:
+            if data:
+                all_games.extend(parse_footonsat_data(data, start_ts, end_ts))
+    else:
+        print("⚠️ Đã tắt nguồn footonsat (--no-footonsat)")
+
+    love4vn_data = await fetch_json_async(LOVE4VN_URL)
     if love4vn_data:
         all_games.extend(parse_love4vn_data(love4vn_data, start_ts, end_ts))
 
@@ -584,9 +584,8 @@ async def main():
 
     print(f"   ✅ {len(channels)} kênh")
 
-    # Chuẩn bị tên kênh đã làm sạch để match
+    # Prepare cleaned name for matching
     for ch in channels:
-        # Làm sạch tên để so khớp: loại bỏ hết các yếu tố phụ
         ch['_clean_match'] = re.sub(r'[|:/-]', ' ', ch['name'])
         ch['_clean_match'] = re.sub(r'\s+', ' ', ch['_clean_match']).strip()
 
@@ -619,7 +618,7 @@ async def main():
                     matched_for_game.append(ch)
 
         if matched_for_game:
-            # Sắp xếp kênh trong trận theo ưu tiên: UK -> English -> còn lại
+            # Sort by priority: UK -> English -> others
             matched_for_game.sort(key=lambda ch: channel_priority(ch['name']))
             print(f"   ✅ Tìm thấy {len(matched_for_game)} kênh")
             for ch in matched_for_game:
@@ -641,7 +640,7 @@ async def main():
         print("⚠️ Không có kênh nào để xuất.")
         return
 
-    # Sắp xếp toàn bộ theo thời gian trận đấu
+    # Sort all events by kick-off time
     live_events.sort(key=lambda x: x["datetime"])
 
     if not SKIP_VALIDATION:
