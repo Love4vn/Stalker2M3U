@@ -63,7 +63,7 @@ ALLOWED_TEAMS_PER_LEAGUE = {
                        "manchester united", "newcastle", "nottingham forest", "sunderland", "tottenham",
                        "west ham", "wolverhampton"},
     "Serie A": {"inter", "milan", "napoli", "juventus", "roma", "atalanta", "lazio"},
-    "La Liga": {"barcelona", "real madrid", "atletico madrid", "alaves", "deportivo"},
+    "La Liga": {"barcelona", "real madrid", "atletico madrid", "alaves", "deportivo", "celta", "vigo"},
     "Bundesliga": {"bayern", "dortmund", "leverkusen"},
     "Ligue 1": {"psg", "paris", "marseille"},
 }
@@ -83,17 +83,17 @@ LOVE4VN_URL = "https://raw.githubusercontent.com/Love4vn/Live-Schedue/refs/heads
 
 # Group titles for M3U output
 LEAGUE_GROUP_NAME = {
-    "Premier League": "⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match",
-    "Serie A": "⚽️🇮🇹|Live Serie A-Match",
-    "Bundesliga": "⚽️🇩🇪|Live Bundesliga-Match",
-    "La Liga": "⚽️🇪🇦|Live La Liga-Match",
-    "Ligue 1": "⚽️🇨🇵|Live Ligue 1-Match",
-    "UEFA Champions League": "Live UEFA Champions League-Match",
-    "UEFA Europa League": "Live UEFA Europa League-Match",
-    "UEFA Europa Conference League": "Live UEFA Conference League-Match",
-    "UEFA Euro": "Live Euro-Match",
-    "FA Cup": "Live FA, League Cup-Match",
-    "League Cup": "Live FA, League Cup-Match",
+    "Premier League": "⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League",
+    "Serie A": "⚽️🇮🇹|Live Serie A",
+    "Bundesliga": "⚽️🇩🇪|Live Bundesliga",
+    "La Liga": "⚽️🇪🇦|Live La Liga",
+    "Ligue 1": "⚽️🇨🇵|Live Ligue 1",
+    "UEFA Champions League": "Live UEFA Champions League",
+    "UEFA Europa League": "Live UEFA Europa League",
+    "UEFA Europa Conference League": "Live UEFA Conference League",
+    "UEFA Euro": "Live Euro",
+    "FA Cup": "Live FA, League Cup",
+    "League Cup": "Live FA, League Cup",
 }
 
 # ================== CACHE ==================
@@ -142,26 +142,39 @@ def is_football_allowed(league: str, match_name: str) -> bool:
         return any(team in match_lower for team in allowed_teams)
     return True
 
+# Team name synonyms mapping
+TEAM_SYNONYMS = {
+    "barca": "barcelona",
+    "fcb": "barcelona",
+    "real": "madrid",
+    "atleti": "atletico",
+    "athletic": "bilbao",
+    "psg": "paris",
+    "bayern": "munich",
+    "dortmund": "borussia",
+}
+
 def extract_team_keywords(team_name: str) -> Set[str]:
     """
     Extract important keywords from a team name for flexible matching.
-    Only minimal stopwords are removed.
+    Very few stopwords are removed; synonyms are added.
     """
     team_norm = normalize(team_name)
     words = team_norm.split()
-    # Minimal stopwords
+    # Minimal stopwords - only truly generic terms
     stopwords = {
         'fc', 'afc', 'cf', 'sc', 'ac', 'as', 'cs', 'cd', 'cf', 'fk', 'if', 'il', 'rc', 'rs', 'sd',
         '&', 'and', 'football', 'club', 'sporting', 'cp', 'lisbon', 'lissabon',
-        'paris', 'saint', 'germain', 'st', 'as', 'roma', 'inter', 'milan', 'ac', 'juventus',
-        'bayern', 'munich', 'atletico', 'madrid', 'barcelona', 'dortmund', 'leverkusen',
-        'napoli', 'lazio', 'atalanta', 'psg'
+        'st', 'as', 'inter', 'milan', 'juventus', 'napoli', 'lazio', 'atalanta', 'roma'
     }
     keywords = set()
     for w in words:
-        if w not in stopwords and len(w) > 2:
+        if w not in stopwords and len(w) > 1:
             keywords.add(w)
-    # Fallback: if no keywords, use the whole normalized name without spaces
+            # Add synonyms
+            if w in TEAM_SYNONYMS:
+                keywords.add(TEAM_SYNONYMS[w])
+    # Fallback: if no keywords, use whole normalized name without spaces
     if not keywords:
         keywords.add(team_norm.replace(' ', ''))
     return keywords
@@ -175,9 +188,15 @@ def extract_match_keywords(match_name: str) -> Tuple[Set[str], Set[str]]:
         team1 = parts[0].strip()
         team2 = parts[1].strip()
         return extract_team_keywords(team1), extract_team_keywords(team2)
-    # Fallback for missing separator: try known team names (especially La Liga)
+    
+    # Fallback for missing separator: try known La Liga teams
     lower_match = match_name.lower()
-    known_teams = ['real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves', 'deportivo']
+    known_teams = [
+        'real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves',
+        'celta vigo', 'celta de vigo', 'athletic bilbao', 'valencia', 'sevilla',
+        'real betis', 'real sociedad', 'villarreal', 'getafe', 'osasuna', 'mallorca',
+        'rayo vallecano', 'espanyol', 'girona', 'las palmas', 'leganes'
+    ]
     for team in known_teams:
         if team in lower_match:
             idx = lower_match.find(team)
@@ -185,6 +204,7 @@ def extract_match_keywords(match_name: str) -> Tuple[Set[str], Set[str]]:
                 team1 = match_name[:idx].strip()
                 team2 = match_name[idx:].strip()
                 return extract_team_keywords(team1), extract_team_keywords(team2)
+    
     # Last resort: split by words in the middle
     words = normalize(match_name).split()
     mid = len(words) // 2
@@ -199,7 +219,12 @@ def channel_matches_match(channel_clean: str, kw1: Set[str], kw2: Set[str]) -> b
     norm_ch = normalize(channel_clean)
     match1 = any(kw in norm_ch for kw in kw1)
     match2 = any(kw in norm_ch for kw in kw2)
-    return match1 and match2
+    if match1 and match2:
+        return True
+    # Fallback: try direct team name matching (normalized full names)
+    # Extract raw team names from the original match name (if available)
+    # Since we don't have original raw strings here, we skip.
+    return False
 
 def clean_display_name(original_name: str) -> str:
     """
@@ -208,25 +233,19 @@ def clean_display_name(original_name: str) -> str:
     """
     name = original_name
 
-    # Patterns to remove
     patterns_to_remove = [
-        # Dates
         r'\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b',
         r'\b\d{4}[/-]\d{1,2}[/-]\d{1,2}\b',
         r'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b',
         r'\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}\b',
         r'\b\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b',
-        # Times
         r'\b\d{1,2}:\d{2}\s*(?:[AP]M)?\s*(?:[A-Z]{2,4})?\b',
         r'\b\d{1,2}:\d{2}\b',
-        # Timezones
         r'\b(?:UTC|GMT|CET|CEST|EEST|EET|EST|EDT|PST|PDT|IST|AEST|ACST|AWST)\b',
         r'\bET\b', r'\bUK\b',
-        # Parentheses with timezone or numbers
         r'\([^)]*\b(?:UTC|GMT|CET|CEST|EEST|ET|UK)\b[^)]*\)',
         r'\(\s*\d{1,2}\s*\)',
         r'\[\s*\d{1,2}\s*\]',
-        # Unwanted words (but keep quality like HD, 4K)
         r'\bNEXT\s*[|:-]?\s*',
         r'\bEXCLUSIVE\b',
         r'\bPPV\b',
@@ -236,48 +255,31 @@ def clean_display_name(original_name: str) -> str:
         r'\bEPL\b',
         r'\bLALIGA\b',
         r'\bEA\s*SPORTS\b',
-        # Days and months
         r'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b',
         r'\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b',
-        # Extra punctuation
         r'^\s*[|:-]\s*',
         r'\s*[|:-]\s*$',
         r'\s+[|:-]\s+',
-        # League prefixes
         r'^.*?\b(?:LALIGA|PREMIER\s+LEAGUE|UEFA\s+CHAMPIONS\s+LEAGUE)\b\s*[:]?\s*',
     ]
 
     for pat in patterns_to_remove:
         name = re.sub(pat, ' ', name, flags=re.I)
 
-    # Remove empty parentheses/brackets
     name = re.sub(r'\(\s*\d*\s*\)', ' ', name)
     name = re.sub(r'\[\s*\d*\s*\]', ' ', name)
-
-    # Collapse whitespace
     name = ' '.join(name.split())
-
-    # Trim punctuation
     name = name.strip('|:- ')
-
-    # Fallback if empty
     if not name:
         name = re.sub(r'[|:-]', ' ', original_name)
         name = ' '.join(name.split())
-
     return name
 
 def channel_priority(channel_name: str) -> int:
-    """
-    Priority: UK (0), English (1), others (2).
-    Based on country code or keyword.
-    """
     name_lower = channel_name.lower()
-    # UK indicators
     uk_pattern = r'\b(uk|gb|england|united kingdom)\b'
     if re.search(uk_pattern, name_lower) or name_lower.startswith('uk ') or name_lower.startswith('uk:'):
         return 0
-    # English language
     english_codes = {'us', 'ca', 'au', 'nz', 'ie', 'en'}
     code_match = re.search(r'(?:^|\|)\s*([a-z]{2,3})\s*(?:\||:|\s|$)', name_lower)
     if code_match:
@@ -330,7 +332,6 @@ def parse_m3u_fast(content: str) -> List[Dict]:
             parts = line.split(',')
             name = parts[-1].strip() if len(parts) > 1 else "Unknown"
 
-            # Skip ad channels
             if re.search(r'[#=☰]', name):
                 i += 1
                 while i < len(lines) and not lines[i].strip().startswith('http'):
@@ -418,7 +419,6 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
                 "time": vn_time(kick_utc),
                 "source": "footonsat"
             })
-            # Skip channel entries
             j = i + 1
             while j < len(items):
                 next_item = items[j]
@@ -446,7 +446,6 @@ def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
             league = game.get("league", "")
             match_name = game.get("match", "").strip()
             
-            # Only football
             if league not in ALLOWED_FOOTBALL_LEAGUES:
                 continue
             if not match_name:
@@ -584,7 +583,6 @@ async def main():
 
     print(f"   ✅ {len(channels)} kênh")
 
-    # Prepare cleaned name for matching
     for ch in channels:
         ch['_clean_match'] = re.sub(r'[|:/-]', ' ', ch['name'])
         ch['_clean_match'] = re.sub(r'\s+', ' ', ch['_clean_match']).strip()
@@ -606,6 +604,8 @@ async def main():
             continue
 
         print(f"\n🏆 [{league}] {match_name} | {kick_time}")
+        print(f"   🔑 Từ khóa đội 1: {kw1}")
+        print(f"   🔑 Từ khóa đội 2: {kw2}")
 
         matched_for_game = []
         seen_urls = set()
@@ -618,7 +618,6 @@ async def main():
                     matched_for_game.append(ch)
 
         if matched_for_game:
-            # Sort by priority: UK -> English -> others
             matched_for_game.sort(key=lambda ch: channel_priority(ch['name']))
             print(f"   ✅ Tìm thấy {len(matched_for_game)} kênh")
             for ch in matched_for_game:
@@ -640,7 +639,6 @@ async def main():
         print("⚠️ Không có kênh nào để xuất.")
         return
 
-    # Sort all events by kick-off time
     live_events.sort(key=lambda x: x["datetime"])
 
     if not SKIP_VALIDATION:
