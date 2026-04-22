@@ -41,6 +41,9 @@ USER_AGENT = "Mozilla/5.0"
 SKIP_VALIDATION = "--skip-validation" in sys.argv
 M3U_FETCH_WORKERS = 40
 
+# === TẮT NGUỒN FOOTONSAT ===
+ENABLE_FOOTONSAT = False   # Đặt True để bật lại
+
 # ================== PRE-COMPILED PATTERNS ==================
 PATTERN_COUNTRY_CODE_PREFIX = [
     re.compile(r'^\|\s*([a-z]{2,3})\s*\|\s*', re.I),
@@ -75,14 +78,15 @@ COUNTRY_CODES: Set[str] = {
     "uk", "us", "fr", "de", "it", "es", "pt", "nl", "be", "ch", "at", "ba",
     "se", "no", "dk", "fi", "pl", "cz", "hu", "ro", "bg", "gr", "tr", "al", "in", "sg", "th", "id", "my",
     "il", "au", "ca", "nz", "ie", "gb", "en", "vn", "kr", "jp", "cn", "arg", "irl",
-    "br", "ar", "mx", "za", "ru", "ua", "rs", "hr", "si", "sk", "am", "hk"
+    "br", "ar", "mx", "za", "ru", "ua", "rs", "hr", "si", "sk", "am", "hk",
+    "ukr", "lt"
 }
 
 COUNTRY_NAME_TO_CODE = {
     "united states": "us", "usa": "us", "uk": "uk", "united kingdom": "uk",
     "viet nam": "vn", "vietnam": "vn", "korea": "kr", "south korea": "kr",
     "japan": "jp", "china": "cn", "brazil": "br", "argentina": "arg", "mexico": "mx",
-    "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ua",
+    "india": "in", "south africa": "za", "russia": "ru", "ukraine": "ukr",
     "serbia": "rs", "srbija": "rs", "croatia": "hr", "hrvatska": "hr",
     "slovenia": "si", "slovenija": "si", "slo": "si", "slovakia": "sk", "arabia": "ar",
     "bosnia and herzegovina": "ba", "bih": "ba", "roireland": "irl",
@@ -102,7 +106,7 @@ COUNTRY_NAME_TO_CODE = {
     "senegal": "sn", "côte d'ivoire": "ci", "cameroon": "cm", "angola": "ao",
     "albania": "al", "great britain": "gb", "england": "gb", "scotland": "gb", "wales": "gb",
     "chile": "cl", "suriname": "sr", "armenia": "am", "georgia": "ge", "azerbaijan": "az", "kazakhstan": "kz",
-    "hong kong": "hk"
+    "hong kong": "hk", "lithuania": "lt", "eurasia": "lt"
 }
 
 LEAGUE_MAPPING = {
@@ -269,9 +273,6 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     return None, cleaned.strip()
 
 def extract_channel_info(name: str) -> Tuple[Optional[str], bool]:
-    """
-    Trả về (channel_number, has_4k_before_number)
-    """
     _, clean = extract_prefix_and_name(name)
     name_lower = clean.lower()
     
@@ -339,29 +340,25 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     if ch_norm.replace(' ', '') == m3u_norm.replace(' ', ''):
         return True
 
-    # --- Xử lý đặc biệt cho Now Sports ---
-    # 1. Nếu target là Now Sports X (không có "premier league"), cho phép khớp với Now Premier Sports X
-    if 'now sports' in ch_norm and 'now sports premier league' not in ch_norm:
-        # Kiểm tra nếu M3U là Now Premier Sports
-        if 'now premier sports' in m3u_norm:
-            # So sánh phần số và phần còn lại
-            ch_rest = ch_norm.replace('now sports', '').strip()
-            m3u_rest = m3u_norm.replace('now premier sports', '').strip()
-            if ch_rest == m3u_rest:
-                return True
-
-    # 2. Nếu target là Now Sports Premier League TV, cho phép khớp với EPL hoặc Premier League
-    if 'now sports premier league tv' in ch_norm:
-        if 'now sports epl' in m3u_norm or 'now sports premier league' in m3u_norm:
+    # Xử lý đặc biệt cho Now Sports Premier League: cho phép khớp với NOW SPORTS 4K X (4K trước số)
+    if 'now sports premier league' in ch_norm:
+        # Nếu M3U là "now sports 4k X" với cùng số
+        if 'now sports 4k' in m3u_norm and ch_num is not None and m3u_num == ch_num and m3u_4k_before:
+            return True
+        # Hoặc khớp trực tiếp "now sports premier league"
+        if 'now sports premier league' in m3u_norm:
             return True
 
-    # 3. Cho phép Now Sports khớp với NOW HK Now Sports
     if 'now sports' in ch_norm:
         if 'now hk now sports' in m3u_norm:
             m3u_rest = m3u_norm.replace('now hk now sports', '').strip()
             ch_rest = ch_norm.replace('now sports', '').strip()
             if ch_rest == m3u_rest:
                 return True
+
+    if 'now sports premier league tv' in ch_norm:
+        if 'now sports epl' in m3u_norm or 'now sports premier league' in m3u_norm:
+            return True
 
     if len(ch_norm) <= 3 or len(m3u_norm) <= 3:
         return ch_norm == m3u_norm
@@ -383,35 +380,22 @@ def preprocess_target_channel(name: str) -> str:
         return name
     name_clean = name.strip()
     
-    # ART Motion Sport -> ART Sport
     name_clean = re.sub(r'\bART Motion Sport\b', 'ART Sport', name_clean, flags=re.I)
-    
-    # M+ Liga de Campeones -> M+ LaLiga de Campeones
     name_clean = re.sub(r'M\+\s*Liga\s+de\s+Campeones', 'M+ LaLiga de Campeones', name_clean, flags=re.I)
-    
-    # Prima Sport RO -> Prima Sport Romania
     name_clean = re.sub(r'\bPrima Sport RO\b', 'Prima Sport Romania', name_clean, flags=re.I)
-    
-    # SportKlub -> Sport Klub
     name_clean = re.sub(r'SportKlub', 'Sport Klub', name_clean, flags=re.I)
-    
-    # " SLO" ở cuối -> " Slovenia"
     name_clean = re.sub(r'\s+SLO$', ' Slovenia', name_clean, flags=re.I)
-    
-    # "Slovenija" -> "Slovenia"
     name_clean = re.sub(r'\bSlovenija\b', 'Slovenia', name_clean, flags=re.I)
-    
-    # Arena Sport 1 SRB -> Arena Sport 1 Serbia
     name_clean = re.sub(r'\b(Arena Sport \d+) SRB\b', r'\1 Serbia', name_clean, flags=re.I)
-    
-    # Premier Sports ROI -> Premier Sports RoIreland
     name_clean = re.sub(r'\bPremier Sports ROI\b', 'Premier Sports RoIreland', name_clean, flags=re.I)
 
-    # beIN Sports MENA -> beIN Sports Arabia (CHỈ KHI KHÔNG CÓ "English")
     if not re.search(r'\benglish\b', name_clean, re.I):
         name_clean = re.sub(r'\b(beIN\s*Sports?)\s+MENA\b', r'\1 Arabia', name_clean, flags=re.I)
 
-    # Không đổi Now Sports Premier League nữa, giữ nguyên
+    # Giữ nguyên Now Sports Premier League (không đổi thành Now Premier Sports nữa)
+    # Thêm quy tắc mới: Sky Sport Premier League DE -> Sky Sport Premier League deutsch
+    name_clean = re.sub(r'\bSky Sport Premier League DE\b', 'Sky Sport Premier League deutsch', name_clean, flags=re.I)
+    
     return name_clean
 
 # ================== HTTP ==================
@@ -682,16 +666,22 @@ async def main():
     print("🔄 Bắt đầu...")
 
     print("📡 Tải APIs...")
-    footonsat_tasks = [fetch_json_async(url) for url in FOOTONSAT_URLS]
+    tasks = []
+    if ENABLE_FOOTONSAT:
+        tasks.extend([fetch_json_async(url) for url in FOOTONSAT_URLS])
     love4vn_task = fetch_json_async(LOVE4VN_URL)
 
-    footonsat_results = await asyncio.gather(*footonsat_tasks)
+    if ENABLE_FOOTONSAT:
+        footonsat_results = await asyncio.gather(*tasks)
+    else:
+        footonsat_results = []
     love4vn_data = await love4vn_task
 
     all_games = []
-    for data in footonsat_results:
-        if data:
-            all_games.extend(parse_footonsat_data(data, start_ts, end_ts))
+    if ENABLE_FOOTONSAT:
+        for data in footonsat_results:
+            if data:
+                all_games.extend(parse_footonsat_data(data, start_ts, end_ts))
 
     if love4vn_data:
         all_games.extend(parse_love4vn_data(love4vn_data, start_ts, end_ts))
@@ -782,7 +772,6 @@ async def main():
 
             original_name = target_name_raw
 
-            # === TENNIS SPECIAL: beIN Sports -> beIN Sports 7 ===
             if league == "Tennis":
                 if re.search(r'\bbein\s*sports?\b', target_name_raw, re.I):
                     target_name_raw = re.sub(
