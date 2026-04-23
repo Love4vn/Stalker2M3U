@@ -1,6 +1,7 @@
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Hỗ trợ cả cấu trúc mảng trực tiếp và "days" trong schedule.json.
+- Parser an toàn, bắt đúng mọi game kể cả có kênh Sport Klub.
 - Giữ tất cả kênh M3U khớp (có URL khác nhau) cho mỗi yêu cầu từ lịch trận.
 - Chống trùng link:
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
@@ -547,73 +548,60 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
 
     return games
 
-# ================== LOVE4VN PARSER (HỖ TRỢ CẢ MẢNG VÀ DAYS) ==================
+# ================== LOVE4VN PARSER (ĐÃ SỬA HOÀN TOÀN) ==================
 def parse_love4vn_data(data, start_ts: int, end_ts: int) -> List[Dict]:
     games = []
     if not data:
         return games
 
-    # Nếu data là list các match (định dạng mới)
-    if isinstance(data, list):
-        for match in data:
-            kick_utc = match.get("kick_utc")
-            if not kick_utc or kick_utc < start_ts or kick_utc > end_ts:
-                continue
-            league = match.get("league", "")
-            match_name = match.get("match", "").strip()
-            if league != "Tennis" and not is_football_allowed(league, match_name):
-                continue
+    # Hàm helper để xử lý một game
+    def process_game(game: dict):
+        kick_utc = game.get("kick_utc")
+        if not kick_utc or kick_utc < start_ts or kick_utc > end_ts:
+            return None
+        league = game.get("league", "")
+        match_name = game.get("match", "").strip()
+        # Tennis không cần kiểm tra đội bóng
+        if league != "Tennis" and not is_football_allowed(league, match_name):
+            return None
 
-            tv_channels = match.get("tv_channels", [])
-            channels = []
-            for entry in tv_channels:
-                # entry có thể là {"country": "...", "channels": [...]}
-                for ch_name in entry.get("channels", []):
-                    if ch_name:
-                        channels.append({
-                            "country_code": None,
-                            "channel_name": ch_name.strip()
-                        })
-            if channels:
-                games.append({
-                    "league": league,
-                    "match": match_name,
-                    "kick_utc": kick_utc,
-                    "time": vn_time(kick_utc),
-                    "channels": channels,
-                    "source": "love4vn"
-                })
+        channels = []
+        for entry in game.get("tv_channels", []):
+            for ch_name in entry.get("channels", []):
+                if ch_name:
+                    channels.append({
+                        "country_code": None,
+                        "channel_name": ch_name.strip()
+                    })
+        if not channels:
+            return None
+        return {
+            "league": league,
+            "match": match_name if match_name else league,  # nếu match rỗng thì dùng tên league
+            "kick_utc": kick_utc,
+            "time": vn_time(kick_utc),
+            "channels": channels,
+            "source": game.get("source", "love4vn")
+        }
+
+    # 1. Nếu data là list (định dạng mới nhất)
+    if isinstance(data, list):
+        for item in data:
+            g = process_game(item)
+            if g:
+                games.append(g)
         return games
 
-    # Nếu data có key "days" (định dạng cũ)
+    # 2. Nếu data có key "days"
     if "days" in data:
         for day_info in data["days"].values():
             for game in day_info.get("games", []):
-                kick_utc = game.get("kick_utc")
-                if not kick_utc or kick_utc < start_ts or kick_utc > end_ts:
-                    continue
-                league = game.get("league", "")
-                match_name = game.get("match", "").strip()
-                if league != "Tennis" and not is_football_allowed(league, match_name):
-                    continue
-
-                channels = []
-                for entry in game.get("tv_channels", []):
-                    for ch_name in entry.get("channels", []):
-                        if ch_name:
-                            channels.append({
-                                "country_code": None,
-                                "channel_name": ch_name
-                            })
-                if channels:
-                    games.append({
-                        "league": league,
-                        "match": match_name,
-                        "kick_utc": kick_utc,
-                        "time": game.get("time", vn_time(kick_utc)),
-                        "channels": channels,
-                        "source": "love4vn"
-                    })
+                g = process_game(game)
+                if g:
+                    # DEBUG: In ra nếu có kênh Sport Klub
+                    if any("sport klub" in ch["channel_name"].lower() for ch in g["channels"]):
+                        print(f"[DEBUG] Found Sport Klub game: {g['match']} | channels: {[c['channel_name'] for c in g['channels']]}")
+                    games.append(g)
         return games
 
     return games
