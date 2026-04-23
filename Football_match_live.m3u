@@ -1,156 +1,531 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="234311" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/USA/ES+.png",23/04 02:30 AM | US ESPN PLUS 35 EN ESPAÑOL: FC BARCELONA @ CELTA DE VIGO – /
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer DB48DFE9DE26FD3188D21745863A29AC
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/234311
-#EXTINF:-1 tvg-id="234315" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/USA/ES+.png",23/04 02:30 AM | US ESPN PLUS 39 FC BARCELONA @ CELTA DE VIGO – /
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer DB48DFE9DE26FD3188D21745863A29AC
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/234315
-#EXTINF:-1 tvg-id="1119223" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/CANADA/tsn.png",23/04 02:30 AM | CA TSN+ 36 : BARCELONA @ CELTA – /
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer DB48DFE9DE26FD3188D21745863A29AC
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1119223
-#EXTINF:-1 tvg-id="1924699" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",23/04 02:30 AM | LIVE EN ESPAÑOL-FC BARCELONA VS. CELTA DE VIGO (US) 8K US: ESPN+ 31
+#EXTINF:-1 tvg-id="1535960" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",25/04 02:00 AM | AU (STAN 02) Sunderland v Nottingham Forest 2025/2026 ( :12)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1924699&extension=ts&play_token=hZ4zR3urih
-#EXTINF:-1 tvg-id="1601684" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",23/04 02:30 AM | US (ESPN+ 035) En Español_FC Barcelona vs. Celta de Vigo ( :20)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1601684&extension=ts&play_token=Er8RNI2TAQ
-#EXTINF:-1 tvg-id="1601680" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",23/04 02:30 AM | US (ESPN+ 039) FC Barcelona vs. Celta de Vigo ( :40)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1601680&extension=ts&play_token=RlvpmfVAIr
-#EXTINF:-1 tvg-id="1100772" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",23/04 02:30 AM | EN BARCELONA VS CELTA DE VIGO
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535960&extension=ts&play_token=kJsfDWJYrW
+#EXTINF:-1 tvg-id="282875" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/AUSTRALIA/Stan-EVENT.png",25/04 02:00 AM | AU STAN EVENT 04 REAL MADRID @ ANADOLU EFES – – /
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer DB48DFE9DE26FD3188D21745863A29AC
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/282875
+#EXTINF:-1 tvg-id="1312810" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/REAL MADRID TV.png",25/04 02:00 AM | ┃ ┃ REAL MADRID TV HEVC FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312810&extension=ts&play_token=DSSID2IUxh
+#EXTINF:-1 tvg-id="1312811" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/REAL MADRID TV.png",25/04 02:00 AM | ┃ ┃ REAL MADRID TV HEVC HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312811&extension=ts&play_token=gKrMFO8PzE
+#EXTINF:-1 tvg-id="1312822" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/REAL MADRID TV.png",25/04 02:00 AM | ┃ ┃ REAL MADRID TV FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312822&extension=ts&play_token=iDY4ttpzpW
+#EXTINF:-1 tvg-id="1312833" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS HD/REAL MADRID TV.png",25/04 02:00 AM | ┃ ┃ REAL MADRID TV HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1312833&extension=ts&play_token=5soJjxdlXm
+#EXTINF:-1 tvg-id="1314038" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK LA LIGA TEAMS/REAL MADRID.png",25/04 02:00 AM | ┃ ┃ LA LIGA REAL MADRID FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1314038&extension=ts&play_token=Lwog465Vag
+#EXTINF:-1 tvg-id="1314025" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK LA LIGA TEAMS/ATLETICO MADRID.png",25/04 02:00 AM | ┃ ┃ LA LIGA ATLETICO MADRID FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1314025&extension=ts&play_token=MwbbbKYtsQ
+#EXTINF:-1 tvg-id="1314043" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK LA LIGA TEAMS/VILLAREAL.png",25/04 02:00 AM | ┃ ┃ LA LIGA VILLAREAL FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1314043&extension=ts&play_token=M9yaJG5sJO
+#EXTINF:-1 tvg-id="1314037" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK LA LIGA TEAMS/REAL BETIS.png",25/04 02:00 AM | ┃ ┃ LA LIGA REAL BETIS FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1314037&extension=ts&play_token=FzEyJvyq49
+#EXTINF:-1 tvg-id="1314040" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK LA LIGA TEAMS/REAL OVIEDO.png",25/04 02:00 AM | ┃ ┃ LA LIGA REAL OVIEDO FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1314040&extension=ts&play_token=PNb6fD0bOn
+#EXTINF:-1 tvg-id="1314039" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK LA LIGA TEAMS/REAL SOCIEDAD.png",25/04 02:00 AM | ┃ ┃ LA LIGA REAL SOCIEDAD FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1314039&extension=ts&play_token=C2qkBtewW3
+#EXTINF:-1 tvg-id="621407" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",25/04 02:00 AM | LA LIGA REAL MADRID 4K
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621407&extension=ts&play_token=bY09v6HpWb
+#EXTINF:-1 tvg-id="621405" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",25/04 02:00 AM | LA LIGA ATLETICO MADRID 4K
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621405&extension=ts&play_token=aAFP1Nhzox
+#EXTINF:-1 tvg-id="621402" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",25/04 02:00 AM | LA LIGA REAL BETIS 4K
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621402&extension=ts&play_token=YK7gXndSkd
+#EXTINF:-1 tvg-id="621403" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",25/04 02:00 AM | LA LIGA REAL SOCIEDAD 4K
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621403&extension=ts&play_token=X4Fnill045
+#EXTINF:-1 tvg-id="621401" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",25/04 02:00 AM | LA LIGA VILLAREAL 4K
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621401&extension=ts&play_token=OEOCvWTEuh
+#EXTINF:-1 tvg-id="1100772" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",25/04 02:00 AM | EN REAL OVIEDO VS VILLARREAL
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1100772
-#EXTINF:-1 tvg-id="1825975" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",23/04 02:30 AM | BARCELONA CELTA (SE) 8K SE: PLAY+ 28
+#EXTINF:-1 tvg-id="830051" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",25/04 02:00 AM | UEFA 18 Manchester United vs Atletico Madrid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=830051&extension=ts&play_token=taE25YNw8v
+#EXTINF:-1 tvg-id="993042" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",25/04 02:00 AM | UEFA 18 Manchester United vs Atletico Madrid
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1825975&extension=ts&play_token=rjL8XnXLSH
-#EXTINF:-1 tvg-id="1005961" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14003.jpg?5075",23/04 02:30 AM | BARCELONA CELTA (SE) 8K SE: TV4 PLAY 5
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=993042&extension=ts&play_token=a3csmYbQpJ
+#EXTINF:-1 tvg-id="1500729" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Tjen J @ Madrid :Tennis 22
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1005961&extension=ts&play_token=SqxTTYF1Wi
-#EXTINF:-1 tvg-id="1918813" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",23/04 02:30 AM | Barcelona vs. Celta Vigo all | 8K DE: SOCCER 64
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500729&extension=ts&play_token=UbDqKymWNy
+#EXTINF:-1 tvg-id="1367492" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://img.clipartlook.com/soccer-ball-clipart-soccer-ball-clip-art-598_598.gif",25/04 02:00 AM | USA Soccer07: Europe : Atlético Madrid vs Internazionale @
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1367492&extension=ts&play_token=2gtQUmoSRg
+#EXTINF:-1 tvg-id="1367493" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://img.clipartlook.com/soccer-ball-clipart-soccer-ball-clip-art-598_598.gif",25/04 02:00 AM | USA Soccer08: Europe : Olympiakos Piraeus vs Real Madrid @
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=1367493&extension=ts&play_token=2c7ICLBqg3
+#EXTINF:-1 tvg-id="933183" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/PARAMOUNT+ SPORT/PARAMOUNT+ SPORT.png",25/04 02:00 AM | ┃USA┃ PARAMOUNT+ SPORT 21 UEFA CONFERENCE LEAGUE REAL BETIS VS CELJE
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=933183&extension=ts&play_token=Dl2avE9oDM
+#EXTINF:-1 tvg-id="933197" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/PARAMOUNT+ SPORT/PARAMOUNT+ SPORT.png",25/04 02:00 AM | ┃USA┃ PARAMOUNT+ SPORT 35 UEFA EUROPA LEAGUE VIKTORIA PLZEŇ VS REAL SOCIEDAD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=933197&extension=ts&play_token=YdIOObTDB4
+#EXTINF:-1 tvg-id="1825978" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",25/04 02:00 AM | LA LIGA: REAL OVIEDO VILLARREAL (SE) 8K SE: PLAY+ 25
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918813&extension=ts&play_token=L3yxwq0e4Z
-#EXTINF:-1 tvg-id="1881222" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",23/04 02:30 AM | FC Barcelona Celta Vigo | 8K DE: DAZN 14
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1825978&extension=ts&play_token=x7Seeg0bUO
+#EXTINF:-1 tvg-id="1918872" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",25/04 02:00 AM | Live 2026 Mutua Madrid Open Tennis all 8K DE: SOCCER 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1881222&extension=ts&play_token=yFro43jHvB
-#EXTINF:-1 tvg-id="1893254" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",23/04 02:30 AM | FC Barcelona Celta Vigo | 8K AT: DAZN 14
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918872&extension=ts&play_token=DJeVJ9UmTV
+#EXTINF:-1 tvg-id="1918871" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",25/04 02:00 AM | Live 2026 Mutua Madrid Open Tennis all 8K DE: SOCCER 6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1893254&extension=ts&play_token=Ercn5bNzND
-#EXTINF:-1 tvg-id="1893371" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",23/04 02:30 AM | Barcelona x Celta Vigo | 8K PT: DAZN 10
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918871&extension=ts&play_token=r0GabaF3mc
+#EXTINF:-1 tvg-id="1918844" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",25/04 02:00 AM | Oviedo vs. Villarreal all | 8K DE: SOCCER 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1893371&extension=ts&play_token=8EDpQZCZn5
-#EXTINF:-1 tvg-id="1027265" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13832.png?ver=61261",23/04 02:30 AM | FC BARCELONA-CELTA VIGO (DK) 8K DK: PLAY TV2 11
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918844&extension=ts&play_token=HxkVdxSk0S
+#EXTINF:-1 tvg-id="1881214" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",25/04 02:00 AM | Oviedo Villarreal | 8K DE: DAZN 22
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1027265&extension=ts&play_token=DIVSluE5vN
-#EXTINF:-1 tvg-id="942815" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13735.png?ver=81838",23/04 02:30 AM | BARCELONA – CELTA (NO) 8K NO: TV2 PLAY 29
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1881214&extension=ts&play_token=kJHQxkOldF
+#EXTINF:-1 tvg-id="1893246" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",25/04 02:00 AM | Oviedo Villarreal | 8K AT: DAZN 22
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=942815&extension=ts&play_token=d705tKg2Jh
-#EXTINF:-1 tvg-id="1242772" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12878.png?ver=93333",23/04 02:30 AM | BARCELONA CELTA VIGO (NO) 8K NO: VIAPLAY 17
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1893246&extension=ts&play_token=cGlAtie7Fn
+#EXTINF:-1 tvg-id="1881128" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",25/04 02:00 AM | Live Real Oviedo Villarreal CF | 8K ES: DAZN 8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1242772&extension=ts&play_token=duirxwSfd4
-#EXTINF:-1 tvg-id="1665536" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14665.png?ver=4488",23/04 02:30 AM | BARCELONA CELTA VIGO (FI) 8K FI: MTV 4
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1881128&extension=ts&play_token=W7K0hcxU4U
+#EXTINF:-1 tvg-id="924170" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13794.png?ver=89391",25/04 02:00 AM | LIVE REAL OVIEDO VILLARREAL CF 2025/26 JORNADA 33 (ES) 8K ES: MAX 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1665536&extension=ts&play_token=QP6GZ4Mb5J
-#EXTINF:-1 tvg-id="1881021" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",23/04 02:30 AM | Barcelona Celta de Vigo | 8K BE: DAZN 15
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=924170&extension=ts&play_token=9b2jvc8Z8y
+#EXTINF:-1 tvg-id="1242776" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12878.png?ver=93333",25/04 02:00 AM | OVIEDO VILLARREAL (NO) 8K NO: VIAPLAY 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1881021&extension=ts&play_token=Fm5U0P9VJl
-#EXTINF:-1 tvg-id="1924695" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",23/04 02:30 AM | LIVE FC BARCELONA VS. CELTA DE VIGO (US) 8K US: ESPN+ 35
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1242776&extension=ts&play_token=nqBJnzMT15
+#EXTINF:-1 tvg-id="1881010" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",25/04 02:00 AM | Real Oviedo Villarreal | 8K BE: DAZN 26
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1924695&extension=ts&play_token=RNoWQGg7Yj
-#EXTINF:-1 tvg-id="1939928" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",23/04 02:30 AM | Live Barcelona vs. Celta Vigo all 8K CA: SOCCER 28
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1881010&extension=ts&play_token=p4FAo2Nhss
+#EXTINF:-1 tvg-id="1536493" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13797.png?ver=39230",25/04 02:00 AM | PRIME: REAL MADRID TV ᴿᴬᵂ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1939928&extension=ts&play_token=BcoSDV1b2b
-#EXTINF:-1 tvg-id="1905974" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962",23/04 02:30 AM | BARCELONA VS. CELTA DE VIGO -02 (BR) 8K BR: DISNEY+ 41
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1536493&extension=ts&play_token=fkrGY4aMgl
+#EXTINF:-1 tvg-id="1548307" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14491.png?ver=79983",25/04 02:00 AM | TUBI: REAL MADRID ᴿᴬᵂ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1905974&extension=ts&play_token=nOUoLDKxMP
-#EXTINF:-1 tvg-id="1010150" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13824.jpeg?ver=46195",23/04 02:30 AM | BARCELONA CELTA VIGO (IS) 8K IS: LIVEY 6
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1548307&extension=ts&play_token=vjv9r4W0Xp
+#EXTINF:-1 tvg-id="1025263" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",25/04 02:00 AM | UEFA 18 Manchester United vs Atletico Madrid
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1010150&extension=ts&play_token=PT90lj9L4X
-#EXTINF:-1 tvg-id="1100775" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",23/04 02:30 AM | FR BARCELONA VS CELTA DE VIGO
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1025263&extension=ts&play_token=RglRQOfRgw
+#EXTINF:-1 tvg-id="615727" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",25/04 02:00 AM | Flo (FLSP) 74: 2025 Laval-Montreal Rousseau vs Magog 22/10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615727&extension=ts&play_token=liQRcy9hcJ
+#EXTINF:-1 tvg-id="1500750" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Marton @ Madrid :Tennis 01
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500750&extension=ts&play_token=dEA55aOuF3
+#EXTINF:-1 tvg-id="1500749" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Elina @ Madrid :Tennis 02
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500749&extension=ts&play_token=qaTSzyeYY6
+#EXTINF:-1 tvg-id="1500748" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Petra @ Madrid :Tennis 03
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500748&extension=ts&play_token=zThR4b6Xqk
+#EXTINF:-1 tvg-id="1500747" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Miomir @ Madrid :Tennis 04
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500747&extension=ts&play_token=9nFOSqrlI3
+#EXTINF:-1 tvg-id="1500746" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Jaqueline @ Madrid :Tennis 05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500746&extension=ts&play_token=FipgyP0WF4
+#EXTINF:-1 tvg-id="1500745" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Alexander @ Madrid :Tennis 06
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500745&extension=ts&play_token=ifOsI3ITpF
+#EXTINF:-1 tvg-id="1500744" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Stollar F @ Madrid :Tennis 07
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500744&extension=ts&play_token=xYLH1fNrqE
+#EXTINF:-1 tvg-id="1500743" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Marcos @ Madrid :Tennis 08
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500743&extension=ts&play_token=kxaX4AgQZ0
+#EXTINF:-1 tvg-id="1500742" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Alexander @ Madrid :Tennis 09
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500742&extension=ts&play_token=6CfMYguDPW
+#EXTINF:-1 tvg-id="1500741" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Diana @ Madrid :Tennis 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500741&extension=ts&play_token=0HgebE4lwU
+#EXTINF:-1 tvg-id="1500740" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Ethan @ Madrid :Tennis 11
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500740&extension=ts&play_token=U0G7z1RbL6
+#EXTINF:-1 tvg-id="1500739" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Mariano @ Madrid :Tennis 12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500739&extension=ts&play_token=BJFqc0RVBq
+#EXTINF:-1 tvg-id="1500738" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Laura @ Madrid :Tennis 13
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500738&extension=ts&play_token=VDUFGBgGZU
+#EXTINF:-1 tvg-id="1500737" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Martin @ Madrid :Tennis 14
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500737&extension=ts&play_token=9GdSWxfMKE
+#EXTINF:-1 tvg-id="1500736" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Daria @ Madrid :Tennis 15
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500736&extension=ts&play_token=MWJX7CyUfm
+#EXTINF:-1 tvg-id="1500735" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Anna @ Madrid :Tennis 16
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500735&extension=ts&play_token=nh112n4C0p
+#EXTINF:-1 tvg-id="1500734" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Grigor @ Madrid :Tennis 17
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500734&extension=ts&play_token=nQaSqKbBt6
+#EXTINF:-1 tvg-id="1500733" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Stefanos @ Madrid :Tennis 18
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500733&extension=ts&play_token=cok7YyV42j
+#EXTINF:-1 tvg-id="1500732" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Jasmine @ Madrid :Tennis 19
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500732&extension=ts&play_token=q49KCEw8bC
+#EXTINF:-1 tvg-id="1500731" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Sebastian @ Madrid :Tennis 20
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500731&extension=ts&play_token=GTLDS4rwMK
+#EXTINF:-1 tvg-id="1500730" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Marie vs R64P6 @ Madrid :Tennis 21
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500730&extension=ts&play_token=Zc3q3ZRHzP
+#EXTINF:-1 tvg-id="1500728" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Peyton @ Madrid :Tennis 23
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500728&extension=ts&play_token=rXIRqieBU1
+#EXTINF:-1 tvg-id="1500727" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Ann @ Madrid :Tennis 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500727&extension=ts&play_token=Jv9ygm0GV0
+#EXTINF:-1 tvg-id="1500726" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Daniel @ Madrid :Tennis 25
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500726&extension=ts&play_token=SEwdjnApO9
+#EXTINF:-1 tvg-id="1500725" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Iva @ Madrid :Tennis 26
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500725&extension=ts&play_token=C2c4dmVYWF
+#EXTINF:-1 tvg-id="1500724" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Juan Manuel @ Madrid :Tennis 27
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500724&extension=ts&play_token=YfSuxqweMJ
+#EXTINF:-1 tvg-id="1500723" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Olmos G @ Madrid :Tennis 28
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500723&extension=ts&play_token=cI28LSRneV
+#EXTINF:-1 tvg-id="1500722" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Kalinskaya A @ Madrid :Tennis 29
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500722&extension=ts&play_token=bygkNR3spU
+#EXTINF:-1 tvg-id="1500721" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Gael @ Madrid :Tennis 30
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1500721&extension=ts&play_token=bLH0UDVvv4
+#EXTINF:-1 tvg-id="1501837" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Julia @ Madrid :Tennis 31
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1501837&extension=ts&play_token=R6FDJ3uKR1
+#EXTINF:-1 tvg-id="1501836" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Reilly @ Madrid :Tennis 32
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1501836&extension=ts&play_token=TmIMN9QX2D
+#EXTINF:-1 tvg-id="1501835" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Kaitlin @ Madrid :Tennis 33
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1501835&extension=ts&play_token=0CbhDfrJjb
+#EXTINF:-1 tvg-id="1501834" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Townsend T @ Madrid :Tennis 34
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1501834&extension=ts&play_token=SrZSMOonlW
+#EXTINF:-1 tvg-id="1501833" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Naomi @ Madrid :Tennis 35
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1501833&extension=ts&play_token=0iHzywoLMO
+#EXTINF:-1 tvg-id="1501832" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Adam @ Madrid :Tennis 36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1501832&extension=ts&play_token=xA009YNn3w
+#EXTINF:-1 tvg-id="1501831" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13801.png?ver=71063",25/04 02:00 AM | Panna @ Madrid :Tennis 37
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1501831&extension=ts&play_token=UY1s3gKZpB
+#EXTINF:-1 tvg-id="1939952" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",25/04 02:00 AM | End Madrid Open Day 3 all | 8K CA: SOCCER 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1939952&extension=ts&play_token=U6yFnjkp3j
+#EXTINF:-1 tvg-id="1939929" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",25/04 02:00 AM | Live Oviedo vs. Villarreal all 8K CA: SOCCER 27
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1939929&extension=ts&play_token=H61xJHyNZT
+#EXTINF:-1 tvg-id="1488473" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",25/04 02:00 AM | REAL KYPER & BOURNE: APRIL 23 (CA) 8K CA: SPORTSNET 11
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1488473&extension=ts&play_token=Gx8JNAuGS4
+#EXTINF:-1 tvg-id="1168797" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13794.png?ver=89391",25/04 02:00 AM | ENDED BAYERN DE MUNIQUE X REAL MADRID -02 (BR) 8K BR: MAX 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1168797&extension=ts&play_token=HhwbLh9HOm
+#EXTINF:-1 tvg-id="1168793" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13794.png?ver=89391",25/04 02:00 AM | BAYERN DE MUNIQUE X REAL MADRID -02 (BR) 8K BR: MAX 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1168793&extension=ts&play_token=ppGN1w4p6m
+#EXTINF:-1 tvg-id="1100775" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",25/04 02:00 AM | FR REAL OVIEDO VS VILLARREAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer DB48DFE9DE26FD3188D21745863A29AC
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1100775
-#EXTINF:-1 tvg-id="1033758" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",23/04 02:30 AM | AR BARCELONA VS CELTA DE VIGO
+#EXTINF:-1 tvg-id="1033758" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",25/04 02:00 AM | AR REAL OVIEDO VS VILLARREAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer DB48DFE9DE26FD3188D21745863A29AC
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1033758
-#EXTINF:-1 tvg-id="1015834" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",23/04 02:30 AM | ALB BARCELONA VS CELTA DE VIGO
+#EXTINF:-1 tvg-id="1100779" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",25/04 02:00 AM | ES REAL OVIEDO VS VILLARREAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer DB48DFE9DE26FD3188D21745863A29AC
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1100779
+#EXTINF:-1 tvg-id="1015834" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/58.png",25/04 02:00 AM | ALB REAL OVIEDO VS VILLARREAL
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1015834
-#EXTINF:-1 tvg-id="1704124" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",23/04 02:30 AM | Barcelona vs Celta @ :TeliaPlay SE 28
+#EXTINF:-1 tvg-id="977974" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/SPAIN/realmadrid.png",25/04 02:00 AM | ES REAL MADRID TV FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/977974
+#EXTINF:-1 tvg-id="1029281" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/SPAIN/realmadrid.png",25/04 02:00 AM | ES REAL MADRID TV HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1029281
+#EXTINF:-1 tvg-id="1360054" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/SPAIN/rakutentv.png",25/04 02:00 AM | ES REAL MADRID TV FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1360054
+#EXTINF:-1 tvg-id="1278986" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/SPAIN/realmadrid.png",25/04 02:00 AM | MX Real Madrid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1278986
+#EXTINF:-1 tvg-id="1349096" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://go4.pw/SPAIN/VIX.png",25/04 02:00 AM | ES VIX REAL MADRID TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 62663B90CEF26D87E3A4A4ADE85C58D0
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1349096
+#EXTINF:-1 tvg-id="587511" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/SPAIN/REALMADRID.png",25/04 02:00 AM | ┃ES┃ REAL MADRID TV FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=587511&extension=ts&play_token=OwEeuLKNem
+#EXTINF:-1 tvg-id="897453" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/SPAIN/REALMADRID.png",25/04 02:00 AM | ┃ES┃ REAL MADRID TV HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=897453&extension=ts&play_token=avmPwwBwm4
+#EXTINF:-1 tvg-id="897454" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://picon.tivi-ott.net:25461/picon/SPAIN/REALMADRID.png",25/04 02:00 AM | ┃ES┃ REAL MADRID TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B6:4E:F2; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 4AA283D476EA1DC789ED84C618DC763E
+http://line.tivi-ott.net:80/play/live.php?mac=00:1A:79:B6:4E:F2&stream=897454&extension=ts&play_token=5ZppeuG4gV
+#EXTINF:-1 tvg-id="1704126" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",25/04 02:00 AM | La Liga: Real Oviedo vs Villarreal @ :TeliaPlay SE 26
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1704124&extension=ts&play_token=bOi1nYzH62
-#EXTINF:-1 tvg-id="1704019" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14003.jpg?5075",23/04 02:30 AM | Barcelona Celta :Tv4 Play SE 12
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1704126&extension=ts&play_token=ivg3xvk2gD
+#EXTINF:-1 tvg-id="1954563" group-title="⚽️🇪🇦|Live La Liga",25/04 02:00 AM | TV: REAL MADRID TV ᴿᴬᵂ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1704019&extension=ts&play_token=Any7snrzGc
-#EXTINF:-1 tvg-id="1702985" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12878.png?ver=93333",23/04 02:30 AM | Barcelona vs Celta Vigo @ :Viaplay NO 17
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1954563&extension=ts&play_token=7jVsfyLOXa
+#EXTINF:-1 tvg-id="1677840" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11366.jpg?73286",25/04 02:00 AM | GO: REAL MADRID ᴿᴬᵂ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1702985&extension=ts&play_token=aRRagQfkhH
-#EXTINF:-1 tvg-id="1704235" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",23/04 02:30 AM | Barcelona vs Celta Vigo @ :Telia FI 18
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1677840&extension=ts&play_token=1LZNbYHI5p
+#EXTINF:-1 tvg-id="1680798" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11366.jpg?67353",25/04 02:00 AM | VO: REAL MADRID ᴴᴰ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1704235&extension=ts&play_token=DsPQE8zVc7
-#EXTINF:-1 tvg-id="1704294" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14665.png?ver=4488",23/04 02:30 AM | Barcelona Celta Vigo :MTV FI 10
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1680798&extension=ts&play_token=feR54mJqeG
+#EXTINF:-1 tvg-id="1683594" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11366.jpg?73286",25/04 02:00 AM | M+: REAL MADRID TV ᴿᴬᵂ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1704294&extension=ts&play_token=Ps5Am7Wohc
-#EXTINF:-1 tvg-id="1611007" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",23/04 02:30 AM | Barcelona vs Celta @ :TSN+ 50
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1683594&extension=ts&play_token=5ye7hFZueX
+#EXTINF:-1 tvg-id="1340217" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13781.png?ver=99080",25/04 02:00 AM | ES: REAL MADRID TV ᴴᴰ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E31B63BA1ECBFB3DBD77B405DED20B16
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1611007&extension=ts&play_token=nm3CWIcXOO
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1340217&extension=ts&play_token=ZAWwbuqDiB
+#EXTINF:-1 tvg-id="840271" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11366.jpg?73286",25/04 02:00 AM | ES: REAL MADRID TV ᴴᴰ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=840271&extension=ts&play_token=Z1b6eOyNZt
+#EXTINF:-1 tvg-id="840229" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11366.jpg?11661",25/04 02:00 AM | ES: REAL MADRID TV ᵁᴴᴰ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=840229&extension=ts&play_token=JVnWwE9iv8
+#EXTINF:-1 tvg-id="1702991" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12878.png?ver=93333",25/04 02:00 AM | Oviedo vs Villarreal @ :Viaplay NO 11
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1702991&extension=ts&play_token=FVwZ7jZzXm
+#EXTINF:-1 tvg-id="1704233" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",25/04 02:00 AM | La Liga: Oviedo vs Villarreal @ :Telia FI 20
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1704233&extension=ts&play_token=4BWjHsRzCA
+#EXTINF:-1 tvg-id="1610991" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",25/04 02:00 AM | Real Oviedo vs Villarreal @ :TSN+ 66
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1610991&extension=ts&play_token=Iow0GD8zmm
+#EXTINF:-1 tvg-id="1538120" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",25/04 02:00 AM | Real Kyper & Bourne @ :Sportsnet+ 05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1538120&extension=ts&play_token=5Uiy7sIQF4
+#EXTINF:-1 tvg-id="1541375" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13715.png?ver=71621",25/04 02:00 AM | VD: REAL MADRID TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1541375&extension=ts&play_token=EuSLMnAfN1
+#EXTINF:-1 tvg-id="1535960" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",25/04 02:00 AM | AU (STAN 02) Sunderland v Nottingham Forest 2025/2026 ( :12)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 41B451359FBF01646A7A81F1433BC2BD
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535960&extension=ts&play_token=kJsfDWJYrW
