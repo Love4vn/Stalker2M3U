@@ -1,17 +1,18 @@
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
+- Hỗ trợ cả cấu trúc mảng trực tiếp và "days" trong schedule.json.
 - Giữ tất cả kênh M3U khớp (có URL khác nhau) cho mỗi yêu cầu từ lịch trận.
 - Chống trùng link:
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
   + Tennis: coi toàn bộ tennis là một trận, không trùng URL.
 - Khớp chính xác số kênh hai chiều, phân biệt vị trí 4K.
 - Country code nghiêm ngặt: nếu target có code, M3U bắt buộc cùng code.
-- Tiền xử lý tên kênh từ JSON: MENA→Arabia (trừ khi có English), Arena Sport SRB→Serbia, Now Sports Premier League→Now Premier Sports...
-- Xử lý đặc biệt: beIN Sports English + AR chỉ khớp kênh M3U có "english".
+- Tiền xử lý tên kênh từ JSON: MENA→Arabia (trừ khi có English), Arena Sport SRB→Serbia,...
 - Tennis: beIN Sports → beIN Sports 7.
 - Bỏ qua kênh quảng cáo.
 - Sắp xếp kênh: Hub Sports trước, sau đó Now Sports, UK, English, còn lại.
 """
+
 import asyncio
 import json
 import re
@@ -340,12 +341,9 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
     if ch_norm.replace(' ', '') == m3u_norm.replace(' ', ''):
         return True
 
-    # Xử lý đặc biệt cho Now Sports Premier League: cho phép khớp với NOW SPORTS 4K X (4K trước số)
     if 'now sports premier league' in ch_norm:
-        # Nếu M3U là "now sports 4k X" với cùng số
         if 'now sports 4k' in m3u_norm and ch_num is not None and m3u_num == ch_num and m3u_4k_before:
             return True
-        # Hoặc khớp trực tiếp "now sports premier league"
         if 'now sports premier league' in m3u_norm:
             return True
 
@@ -392,8 +390,6 @@ def preprocess_target_channel(name: str) -> str:
     if not re.search(r'\benglish\b', name_clean, re.I):
         name_clean = re.sub(r'\b(beIN\s*Sports?)\s+MENA\b', r'\1 Arabia', name_clean, flags=re.I)
 
-    # Giữ nguyên Now Sports Premier League (không đổi thành Now Premier Sports nữa)
-    # Thêm quy tắc mới: Sky Sport Premier League DE -> Sky Sport Premier League deutsch
     name_clean = re.sub(r'\bSky Sport Premier League DE\b', 'Sky Sport Premier League deutsch', name_clean, flags=re.I)
     
     return name_clean
@@ -551,42 +547,74 @@ def parse_footonsat_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
 
     return games
 
-# ================== LOVE4VN PARSER ==================
-def parse_love4vn_data(data: dict, start_ts: int, end_ts: int) -> List[Dict]:
+# ================== LOVE4VN PARSER (HỖ TRỢ CẢ MẢNG VÀ DAYS) ==================
+def parse_love4vn_data(data, start_ts: int, end_ts: int) -> List[Dict]:
     games = []
-    if not data or "days" not in data:
+    if not data:
         return games
 
-    for day_info in data["days"].values():
-        for game in day_info.get("games", []):
-            kick_utc = game.get("kick_utc")
+    # Nếu data là list các match (định dạng mới)
+    if isinstance(data, list):
+        for match in data:
+            kick_utc = match.get("kick_utc")
             if not kick_utc or kick_utc < start_ts or kick_utc > end_ts:
                 continue
-
-            league = game.get("league", "")
-            match_name = game.get("match", "").strip()
-
+            league = match.get("league", "")
+            match_name = match.get("match", "").strip()
             if league != "Tennis" and not is_football_allowed(league, match_name):
                 continue
 
+            tv_channels = match.get("tv_channels", [])
             channels = []
-            for entry in game.get("tv_channels", []):
+            for entry in tv_channels:
+                # entry có thể là {"country": "...", "channels": [...]}
                 for ch_name in entry.get("channels", []):
                     if ch_name:
                         channels.append({
                             "country_code": None,
-                            "channel_name": ch_name
+                            "channel_name": ch_name.strip()
                         })
-
             if channels:
                 games.append({
                     "league": league,
                     "match": match_name,
                     "kick_utc": kick_utc,
-                    "time": game.get("time", vn_time(kick_utc)),
+                    "time": vn_time(kick_utc),
                     "channels": channels,
                     "source": "love4vn"
                 })
+        return games
+
+    # Nếu data có key "days" (định dạng cũ)
+    if "days" in data:
+        for day_info in data["days"].values():
+            for game in day_info.get("games", []):
+                kick_utc = game.get("kick_utc")
+                if not kick_utc or kick_utc < start_ts or kick_utc > end_ts:
+                    continue
+                league = game.get("league", "")
+                match_name = game.get("match", "").strip()
+                if league != "Tennis" and not is_football_allowed(league, match_name):
+                    continue
+
+                channels = []
+                for entry in game.get("tv_channels", []):
+                    for ch_name in entry.get("channels", []):
+                        if ch_name:
+                            channels.append({
+                                "country_code": None,
+                                "channel_name": ch_name
+                            })
+                if channels:
+                    games.append({
+                        "league": league,
+                        "match": match_name,
+                        "kick_utc": kick_utc,
+                        "time": game.get("time", vn_time(kick_utc)),
+                        "channels": channels,
+                        "source": "love4vn"
+                    })
+        return games
 
     return games
 
