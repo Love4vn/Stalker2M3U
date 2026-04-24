@@ -1,7 +1,6 @@
 """
 footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
-- Hỗ trợ cả cấu trúc mảng trực tiếp và "days" trong schedule.json.
-- Parser an toàn, bắt đúng mọi game kể cả có kênh Sport Klub.
+- Gộp các trận bóng đá trùng lặp (cùng giờ, cùng cặp đội bất kể thứ tự).
 - Giữ tất cả kênh M3U khớp (có URL khác nhau) cho mỗi yêu cầu từ lịch trận.
 - Chống trùng link:
   + Bóng đá: trong cùng một trận không trùng URL; các trận khác nhau được phép trùng.
@@ -686,6 +685,39 @@ async def main():
 
     if love4vn_data:
         all_games.extend(parse_love4vn_data(love4vn_data, start_ts, end_ts))
+
+    # ================== GỘP TRẬN BÓNG ĐÁ TRÙNG LẶP ==================
+    def extract_teams(match_name):
+        # Tách theo " vs ", " vs. ", " v "
+        parts = re.split(r'\s+vs\.?\s+|\s+v\s+', match_name, flags=re.I)
+        if len(parts) == 2:
+            return {parts[0].strip().lower(), parts[1].strip().lower()}
+        return {match_name.strip().lower()}
+
+    merged_games = {}
+    for game in all_games:
+        league = game['league']
+        kick_utc = game['kick_utc']
+        if league in ALLOWED_FOOTBALL_LEAGUES:
+            team_set = frozenset(extract_teams(game['match']))
+            key = (league, kick_utc, team_set)
+        else:
+            # Tennis hoặc các giải khác: gộp theo tên trận đấu (vì có thể có nhiều nguồn giống hệt)
+            key = (league, kick_utc, game['match'].strip().lower())
+        
+        if key not in merged_games:
+            merged_games[key] = game.copy()
+            merged_games[key]['channels'] = list(game['channels'])  # copy list
+        else:
+            # Hợp nhất kênh, tránh trùng tên
+            existing_names = {ch['channel_name'] for ch in merged_games[key]['channels']}
+            for ch in game['channels']:
+                if ch['channel_name'] not in existing_names:
+                    merged_games[key]['channels'].append(ch)
+                    existing_names.add(ch['channel_name'])
+    
+    all_games = list(merged_games.values())
+    # =============================================================
 
     print(f"✅ Tổng: {len(all_games)} trận")
     if not all_games:
