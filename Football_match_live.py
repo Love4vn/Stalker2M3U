@@ -512,7 +512,7 @@ def extract_match_keywords(match_name: str) -> Tuple[Set[str], Set[str]]:
         'real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves',
         'celta vigo', 'celta de vigo', 'athletic bilbao', 'valencia', 'sevilla',
         'real betis', 'real sociedad', 'villarreal', 'getafe', 'osasuna', 'mallorca',
-        'rayo vallecano', 'espanyol', 'girona', 'las palmas', 'leganes'
+        'rayo vallecano', 'espanyol', 'girona', 'las palmas', 'leganes', 'paris st germain', 'paris-saint-germain', 'bayern münchen', 'bayern-munich', 'bayern munich', 'atletico-madrid'
     ]
     for team in known_teams:
         if team in lower_match:
@@ -834,7 +834,7 @@ async def main():
 
     now_utc = datetime.now(ZoneInfo("UTC"))
     now_ts = int(now_utc.timestamp())
-    start_ts = now_ts - 7200
+    start_ts = now_ts - 14400
     end_ts = now_ts + 86400
 
     print("🔄 Bắt đầu...")
