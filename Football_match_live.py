@@ -156,7 +156,10 @@ TEAM_SYNONYMS = {
     "bayern munich": "bayern",
     "bayern munich": "bayern münchen",
     "bayern": "bayern munich",
-    "psg": "Paris St Germain",
+    "bayern münchen": "bayern",
+    "psg": "paris st germain",
+    "paris st": "psg",
+    "paris-saint": "psg",
     # Bảng ánh xạ tên đội chuẩn (canonical) và các biến thể
     # Premier League
     "manchester united": "Manchester United",
