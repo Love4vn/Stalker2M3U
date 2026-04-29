@@ -433,35 +433,46 @@ def get_team_keywords(canonical_name: str) -> Set[str]:
 def extract_match_keywords(match_name: str) -> Tuple[Set[str], Set[str], str, str]:
     """
     Return two keyword sets and canonical team names.
+    Uses only reliable separators: 'vs', 'v', '@', 'x' (with optional spaces)
+    and ' - ' with spaces around dash as last resort.
     """
-    # Support multiple separators
-    separators = r'(?:\s+(?:vs|v|[@x])\s+)|(?:\s*[-–]\s*)'
-    parts = re.split(separators, match_name, flags=re.I)
+    # Try primary separators (with or without spaces)
+    primary_seps = r'(?:\s+(?:vs|v|[@x])\s+)'
+    parts = re.split(primary_seps, match_name, flags=re.I)
     if len(parts) >= 2:
         team1_raw = parts[0].strip()
         team2_raw = parts[1].strip()
     else:
-        # Fallback: try known teams
-        lower_match = match_name.lower()
-        known_teams = [
-            'real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves',
-            'celta vigo', 'celta de vigo', 'athletic bilbao', 'valencia', 'sevilla',
-            'real betis', 'real sociedad', 'villarreal', 'getafe', 'osasuna', 'mallorca',
-            'rayo vallecano', 'espanyol', 'girona', 'las palmas', 'leganes'
-        ]
-        for team in known_teams:
-            if team in lower_match:
-                idx = lower_match.find(team)
-                if idx > 0:
-                    team1_raw = match_name[:idx].strip()
-                    team2_raw = match_name[idx:].strip()
-                    break
+        # Try ' - ' with spaces
+        dash_sep = r'\s+[-–]\s+'
+        parts = re.split(dash_sep, match_name, flags=re.I)
+        if len(parts) >= 2:
+            team1_raw = parts[0].strip()
+            team2_raw = parts[1].strip()
         else:
-            # Last resort
-            words = normalize(match_name).split()
-            mid = len(words) // 2
-            team1_raw = ' '.join(words[:mid])
-            team2_raw = ' '.join(words[mid:])
+            # Fallback: search for known La Liga teams
+            lower_match = match_name.lower()
+            known_teams = [
+                'real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves',
+                'celta vigo', 'celta de vigo', 'athletic bilbao', 'valencia', 'sevilla',
+                'real betis', 'real sociedad', 'villarreal', 'getafe', 'osasuna', 'mallorca',
+                'rayo vallecano', 'espanyol', 'girona', 'las palmas', 'leganes'
+            ]
+            found = False
+            for team in known_teams:
+                if team in lower_match:
+                    idx = lower_match.find(team)
+                    if idx > 0:
+                        team1_raw = match_name[:idx].strip()
+                        team2_raw = match_name[idx:].strip()
+                        found = True
+                        break
+            if not found:
+                # Last resort: split by words in the middle (better than nothing)
+                words = normalize(match_name).split()
+                mid = len(words) // 2
+                team1_raw = ' '.join(words[:mid])
+                team2_raw = ' '.join(words[mid:])
 
     team1_canon = normalize_team_name(team1_raw)
     team2_canon = normalize_team_name(team2_raw)
