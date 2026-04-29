@@ -1,7 +1,7 @@
 """
 Football_match_live.py - Flexible football match-based M3U generator.
 Matches games by team name keywords (order independent).
-Outputs Football_match_live.m3u.
+Merges duplicate matches from different sources.
 
 Usage:
     python Football_match_live.py               # Normal run
@@ -96,6 +96,255 @@ LEAGUE_GROUP_NAME = {
     "League Cup": "Live FA, League Cup-Match",
 }
 
+# ================== TEAM NAME MAPPING ==================
+# Variant -> Canonical name
+TEAM_NAME_MAPPING = {
+    # --- Premier League ---
+    "manchester united": "Manchester United",
+    "man utd": "Manchester United",
+    "man united": "Manchester United",
+    "manchester city": "Manchester City",
+    "man city": "Manchester City",
+    "arsenal": "Arsenal",
+    "arsenal london": "Arsenal",
+    "chelsea": "Chelsea",
+    "liverpool": "Liverpool",
+    "lfc": "Liverpool",
+    "tottenham hotspur": "Tottenham Hotspur",
+    "tottenham": "Tottenham Hotspur",
+    "spurs": "Tottenham Hotspur",
+    "aston villa": "Aston Villa",
+    "villa": "Aston Villa",
+    "newcastle united": "Newcastle United",
+    "newcastle": "Newcastle United",
+    "west ham united": "West Ham United",
+    "west ham": "West Ham United",
+    "everton": "Everton",
+    "fulham": "Fulham",
+    "crystal palace": "Crystal Palace",
+    "palace": "Crystal Palace",
+    "brighton & hove albion": "Brighton & Hove Albion",
+    "brighton": "Brighton & Hove Albion",
+    "brighton and hove albion": "Brighton & Hove Albion",
+    "brentford": "Brentford",
+    "leeds united": "Leeds United",
+    "leeds": "Leeds United",
+    "wolverhampton wanderers": "Wolverhampton Wanderers",
+    "wolves": "Wolverhampton Wanderers",
+    "wolverhampton": "Wolverhampton Wanderers",
+    "nottingham forest": "Nottingham Forest",
+    "forest": "Nottingham Forest",
+    "sunderland": "Sunderland",
+    "leicester city": "Leicester City",
+    "leicester": "Leicester City",
+    "southampton": "Southampton",
+    "saints": "Southampton",
+    "burnley": "Burnley",
+    "west bromwich albion": "West Brom",
+    "west brom": "West Brom",
+
+    # --- Bundesliga ---
+    "bayern munich": "Bayern Munich",
+    "bayern münchen": "Bayern Munich",
+    "bayern": "Bayern Munich",
+    "borussia dortmund": "Borussia Dortmund",
+    "dortmund": "Borussia Dortmund",
+    "bvb": "Borussia Dortmund",
+    "bayer leverkusen": "Bayer Leverkusen",
+    "leverkusen": "Bayer Leverkusen",
+    "rb leipzig": "RB Leipzig",
+    "leipzig": "RB Leipzig",
+    "borussia mönchengladbach": "Borussia Mönchengladbach",
+    "mönchengladbach": "Borussia Mönchengladbach",
+    "gladbach": "Borussia Mönchengladbach",
+    "1. fc köln": "1. FC Köln",
+    "fc köln": "FC Köln",
+    "fc cologne": "FC Köln",
+    "köln": "FC Köln",
+    "cologne": "FC Köln",
+    "eintracht frankfurt": "Eintracht Frankfurt",
+    "frankfurt": "Eintracht Frankfurt",
+    "vfb stuttgart": "VfB Stuttgart",
+    "stuttgart": "VfB Stuttgart",
+    "werder bremen": "Werder Bremen",
+    "bremen": "Werder Bremen",
+    "fc augsburg": "FC Augsburg",
+    "augsburg": "FC Augsburg",
+    "1899 hoffenheim": "1899 Hoffenheim",
+    "hoffenheim": "1899 Hoffenheim",
+    "fsv mainz 05": "Mainz 05",
+    "mainz 05": "Mainz 05",
+    "mainz": "Mainz 05",
+    "hertha berlin": "Hertha Berlin",
+    "hertha bsc": "Hertha Berlin",
+    "union berlin": "Union Berlin",
+    "vfl wolfsburg": "Wolfsburg",
+    "wolfsburg": "Wolfsburg",
+    "vfl bochum": "Bochum",
+    "bochum": "Bochum",
+    "darmstadt 98": "Darmstadt 98",
+    "darmstadt": "Darmstadt 98",
+    "fc heidenheim": "Heidenheim",
+    "heidenheim": "Heidenheim",
+
+    # --- La Liga ---
+    "real madrid": "Real Madrid",
+    "madrid": "Real Madrid",
+    "los blancos": "Real Madrid",
+    "fc barcelona": "Barcelona",
+    "barcelona": "Barcelona",
+    "barça": "Barcelona",
+    "atletico madrid": "Atletico Madrid",
+    "atlético madrid": "Atletico Madrid",
+    "atletico": "Atletico Madrid",
+    "atleti": "Atletico Madrid",
+    "real sociedad": "Real Sociedad",
+    "real betis": "Real Betis",
+    "betis": "Real Betis",
+    "athletic bilbao": "Athletic Bilbao",
+    "bilbao": "Athletic Bilbao",
+    "valencia": "Valencia",
+    "valencia cf": "Valencia",
+    "villarreal": "Villarreal",
+    "sevilla": "Sevilla",
+    "sevilla fc": "Sevilla",
+    "getafe": "Getafe",
+    "getafe cf": "Getafe",
+    "espanyol": "Espanyol",
+    "osasuna": "Osasuna",
+    "granada": "Granada",
+    "cadiz": "Cadiz",
+    "rayo vallecano": "Rayo Vallecano",
+    "rayo": "Rayo Vallecano",
+    "elche": "Elche",
+    "alaves": "Alaves",
+    "deportivo alaves": "Alaves",
+    "deportivo alavés": "Alaves",
+    "mallorca": "Mallorca",
+    "girona": "Girona",
+    "celta vigo": "Celta Vigo",
+    "celta de vigo": "Celta Vigo",
+    "celta": "Celta Vigo",
+    "rc celta": "Celta Vigo",
+
+    # --- Serie A ---
+    "ac milan": "AC Milan",
+    "milan": "AC Milan",
+    "rossoneri": "AC Milan",
+    "inter milan": "Inter Milan",
+    "inter": "Inter Milan",
+    "nerazzurri": "Inter Milan",
+    "juventus": "Juventus",
+    "juve": "Juventus",
+    "bianconeri": "Juventus",
+    "napoli": "Napoli",
+    "ssc napoli": "Napoli",
+    "roma": "Roma",
+    "as roma": "Roma",
+    "lazio": "Lazio",
+    "ss lazio": "Lazio",
+    "atalanta": "Atalanta",
+    "fiorentina": "Fiorentina",
+    "viola": "Fiorentina",
+    "torino": "Torino",
+    "bologna": "Bologna",
+    "udinese": "Udinese",
+    "genoa": "Genoa",
+    "sampdoria": "Sampdoria",
+    "verona": "Hellas Verona",
+    "hellas verona": "Hellas Verona",
+    "lecce": "Lecce",
+    "salernitana": "Salernitana",
+    "monza": "Monza",
+    "cremonese": "Cremonese",
+    "empoli": "Empoli",
+    "spezia": "Spezia",
+
+    # --- Ligue 1 ---
+    "psg": "Paris Saint-Germain",
+    "paris saint-germain": "Paris Saint-Germain",
+    "paris st germain": "Paris Saint-Germain",
+    "paris sg": "Paris Saint-Germain",
+    "olympique marseille": "Marseille",
+    "marseille": "Marseille",
+    "om": "Marseille",
+    "olympique lyon": "Lyon",
+    "lyon": "Lyon",
+    "ol": "Lyon",
+    "as monaco": "Monaco",
+    "monaco": "Monaco",
+    "losc lille": "Lille",
+    "lille": "Lille",
+    "ogc nice": "Nice",
+    "nice": "Nice",
+    "fc nantes": "Nantes",
+    "nantes": "Nantes",
+    "rc lens": "Lens",
+    "lens": "Lens",
+    "stade rennais": "Rennes",
+    "rennes": "Rennes",
+    "montpellier": "Montpellier",
+    "clermont foot": "Clermont",
+    "clermont": "Clermont",
+    "strasbourg": "Strasbourg",
+    "angers": "Angers",
+    "brest": "Brest",
+    "toulouse": "Toulouse",
+    "stade de reims": "Reims",
+    "reims": "Reims",
+    "fc metz": "Metz",
+    "metz": "Metz",
+    "ajaccio": "Ajaccio",
+    "auxerre": "Auxerre",
+
+    # --- National teams (common) ---
+    "germany": "Germany",
+    "deutschland": "Germany",
+    "france": "France",
+    "les bleus": "France",
+    "england": "England",
+    "three lions": "England",
+    "spain": "Spain",
+    "la roja": "Spain",
+    "italy": "Italy",
+    "azzurri": "Italy",
+    "portugal": "Portugal",
+    "netherlands": "Netherlands",
+    "holland": "Netherlands",
+    "belgium": "Belgium",
+    "red devils": "Belgium",
+    "croatia": "Croatia",
+    "argentina": "Argentina",
+    "albiceleste": "Argentina",
+    "brazil": "Brazil",
+    "selecao": "Brazil",
+    "japan": "Japan",
+    "south korea": "South Korea",
+    "usa": "United States",
+    "usmnt": "United States",
+    "austria": "Austria",
+    "czech republic": "Czech Republic",
+    "czechia": "Czech Republic",
+    "denmark": "Denmark",
+    "poland": "Poland",
+    "sweden": "Sweden",
+    "switzerland": "Switzerland",
+    "turkey": "Turkey",
+    "russia": "Russia",
+    "ukraine": "Ukraine",
+    "serbia": "Serbia",
+    "greece": "Greece",
+    "scotland": "Scotland",
+    "wales": "Wales",
+}
+
+# Build reverse mapping: canonical -> [variants]
+CANONICAL_TO_VARIANTS = defaultdict(set)
+for variant, canonical in TEAM_NAME_MAPPING.items():
+    CANONICAL_TO_VARIANTS[canonical].add(variant)
+    # Also add the canonical itself
+    CANONICAL_TO_VARIANTS[canonical].add(canonical.lower())
+
 # ================== CACHE ==================
 class CacheManager:
     @staticmethod
@@ -142,75 +391,83 @@ def is_football_allowed(league: str, match_name: str) -> bool:
         return any(team in match_lower for team in allowed_teams)
     return True
 
-# Team name synonyms mapping
-TEAM_SYNONYMS = {
-    "barca": "barcelona",
-    "fcb": "barcelona",
-    "real": "madrid",
-    "atleti": "atletico",
-    "athletic": "bilbao",
-    "psg": "paris",
-    "bayern": "munich",
-    "dortmund": "borussia",
-}
+def normalize_team_name(name: str) -> str:
+    """Convert team name to its canonical form."""
+    name_norm = normalize(name)
+    # Direct match in mapping
+    if name_norm in TEAM_NAME_MAPPING:
+        return TEAM_NAME_MAPPING[name_norm]
+    # Try partial matches? Not needed for now.
+    # Return original name if no mapping found
+    return name.title()
 
-def extract_team_keywords(team_name: str) -> Set[str]:
+def get_team_keywords(canonical_name: str) -> Set[str]:
     """
-    Extract important keywords from a team name for flexible matching.
-    Very few stopwords are removed; synonyms are added.
+    Return a set of keywords for a team, including canonical name tokens
+    and all known variants.
     """
-    team_norm = normalize(team_name)
-    words = team_norm.split()
-    # Minimal stopwords - only truly generic terms
-    stopwords = {
-        'fc', 'afc', 'cf', 'sc', 'ac', 'as', 'cs', 'cd', 'cf', 'fk', 'if', 'il', 'rc', 'rs', 'sd',
-        '&', 'and', 'football', 'club', 'sporting', 'cp', 'lisbon', 'lissabon',
-        'st', 'as', 'inter', 'milan', 'juventus', 'napoli', 'lazio', 'atalanta', 'roma'
-    }
+    canonical = canonical_name
+    canonical_norm = normalize(canonical)
     keywords = set()
-    for w in words:
-        if w not in stopwords and len(w) > 1:
-            keywords.add(w)
-            # Add synonyms
-            if w in TEAM_SYNONYMS:
-                keywords.add(TEAM_SYNONYMS[w])
-    # Fallback: if no keywords, use whole normalized name without spaces
-    if not keywords:
-        keywords.add(team_norm.replace(' ', ''))
+    # Add individual words from canonical (excluding stopwords)
+    stopwords = {'fc', 'afc', 'cf', 'sc', 'ac', 'as', 'cs', 'cd', 'cf', 'fk', 'if', 'il', 'rc', 'rs', 'sd',
+                 '&', 'and', 'football', 'club', 'sporting', 'cp', 'lisbon', 'lissabon',
+                 'st', 'as'}
+    for word in canonical_norm.split():
+        if word not in stopwords and len(word) > 1:
+            keywords.add(word)
+    # Add all known variants (including canonical) as whole strings
+    if canonical in CANONICAL_TO_VARIANTS:
+        for variant in CANONICAL_TO_VARIANTS[canonical]:
+            # Normalize variant: remove accents, lowercase
+            var_norm = normalize(variant)
+            keywords.add(var_norm)
+            # Also add variant without spaces/hyphens to catch merged names
+            var_compact = re.sub(r'[\s-]', '', var_norm)
+            if var_compact:
+                keywords.add(var_compact)
+    # Ensure canonical full name is present
+    keywords.add(canonical_norm.replace(' ', ''))
     return keywords
 
-def extract_match_keywords(match_name: str) -> Tuple[Set[str], Set[str]]:
-    """Return two sets of keywords for the two teams from the match name."""
-    # Support multiple separators: vs, v, @, x, -, –
+def extract_match_keywords(match_name: str) -> Tuple[Set[str], Set[str], str, str]:
+    """
+    Return two keyword sets and canonical team names.
+    """
+    # Support multiple separators
     separators = r'(?:\s+(?:vs|v|[@x])\s+)|(?:\s*[-–]\s*)'
     parts = re.split(separators, match_name, flags=re.I)
     if len(parts) >= 2:
-        team1 = parts[0].strip()
-        team2 = parts[1].strip()
-        return extract_team_keywords(team1), extract_team_keywords(team2)
-    
-    # Fallback for missing separator: try known La Liga teams
-    lower_match = match_name.lower()
-    known_teams = [
-        'real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves',
-        'celta vigo', 'celta de vigo', 'athletic bilbao', 'valencia', 'sevilla',
-        'real betis', 'real sociedad', 'villarreal', 'getafe', 'osasuna', 'mallorca',
-        'rayo vallecano', 'espanyol', 'girona', 'las palmas', 'leganes'
-    ]
-    for team in known_teams:
-        if team in lower_match:
-            idx = lower_match.find(team)
-            if idx > 0:
-                team1 = match_name[:idx].strip()
-                team2 = match_name[idx:].strip()
-                return extract_team_keywords(team1), extract_team_keywords(team2)
-    
-    # Last resort: split by words in the middle
-    words = normalize(match_name).split()
-    mid = len(words) // 2
-    kw1 = extract_team_keywords(' '.join(words[:mid]))
-    kw2 = extract_team_keywords(' '.join(words[mid:]))
-    return kw1, kw2
+        team1_raw = parts[0].strip()
+        team2_raw = parts[1].strip()
+    else:
+        # Fallback: try known teams
+        lower_match = match_name.lower()
+        known_teams = [
+            'real madrid', 'barcelona', 'atletico madrid', 'alaves', 'deportivo alaves',
+            'celta vigo', 'celta de vigo', 'athletic bilbao', 'valencia', 'sevilla',
+            'real betis', 'real sociedad', 'villarreal', 'getafe', 'osasuna', 'mallorca',
+            'rayo vallecano', 'espanyol', 'girona', 'las palmas', 'leganes'
+        ]
+        for team in known_teams:
+            if team in lower_match:
+                idx = lower_match.find(team)
+                if idx > 0:
+                    team1_raw = match_name[:idx].strip()
+                    team2_raw = match_name[idx:].strip()
+                    break
+        else:
+            # Last resort
+            words = normalize(match_name).split()
+            mid = len(words) // 2
+            team1_raw = ' '.join(words[:mid])
+            team2_raw = ' '.join(words[mid:])
+
+    team1_canon = normalize_team_name(team1_raw)
+    team2_canon = normalize_team_name(team2_raw)
+    kw1 = get_team_keywords(team1_canon)
+    kw2 = get_team_keywords(team2_canon)
+    return kw1, kw2, team1_canon, team2_canon
 
 def channel_matches_match(channel_clean: str, kw1: Set[str], kw2: Set[str]) -> bool:
     """Check if the cleaned channel name contains at least one keyword from each team."""
@@ -219,12 +476,7 @@ def channel_matches_match(channel_clean: str, kw1: Set[str], kw2: Set[str]) -> b
     norm_ch = normalize(channel_clean)
     match1 = any(kw in norm_ch for kw in kw1)
     match2 = any(kw in norm_ch for kw in kw2)
-    if match1 and match2:
-        return True
-    # Fallback: try direct team name matching (normalized full names)
-    # Extract raw team names from the original match name (if available)
-    # Since we don't have original raw strings here, we skip.
-    return False
+    return match1 and match2
 
 def clean_display_name(original_name: str) -> str:
     """
@@ -232,7 +484,6 @@ def clean_display_name(original_name: str) -> str:
     but keep video quality indicators (HD, 4K, etc.).
     """
     name = original_name
-
     patterns_to_remove = [
         r'\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b',
         r'\b\d{4}[/-]\d{1,2}[/-]\d{1,2}\b',
@@ -538,10 +789,57 @@ async def main():
     if love4vn_data:
         all_games.extend(parse_love4vn_data(love4vn_data, start_ts, end_ts))
 
-    print(f"✅ Tổng: {len(all_games)} trận bóng đá")
+    print(f"✅ Tổng: {len(all_games)} trận bóng đá (trước khi gộp)")
     if not all_games:
         print("⚠️ Không có trận nào.")
         return
+
+        # -------- Merge duplicate matches (30-minute window) --------
+    unique_games = {}
+    for game in all_games:
+        league = game['league']
+        match_name = game['match']
+        kick_utc = game['kick_utc']
+        # Extract canonical team names
+        kw1, kw2, team1_canon, team2_canon = extract_match_keywords(match_name)
+        # Create sorted pair to ignore order
+        team_pair = tuple(sorted([team1_canon, team2_canon]))
+        # Group by league and team pair
+        base_key = (league, team_pair)
+        if base_key not in unique_games:
+            unique_games[base_key] = []
+        unique_games[base_key].append((kick_utc, game, team1_canon, team2_canon))
+
+    # Merge groups within 30 minutes
+    merged_games = []
+    for base_key, game_entries in unique_games.items():
+        # Sort by kick_utc
+        game_entries.sort(key=lambda x: x[0])
+        # Cluster within 30 minutes of the first entry in the cluster
+        clusters = []
+        current_cluster = [game_entries[0]]
+        for entry in game_entries[1:]:
+            if entry[0] - current_cluster[0][0] <= 1800:  # within 30 minutes
+                current_cluster.append(entry)
+            else:
+                clusters.append(current_cluster)
+                current_cluster = [entry]
+        clusters.append(current_cluster)
+        
+        for cluster in clusters:
+            # Keep earliest game as representative
+            best_entry = cluster[0]
+            _, game, team1_canon, team2_canon = best_entry
+            game['match_display'] = f"{team1_canon} vs {team2_canon}"
+            game['team1_canon'] = team1_canon
+            game['team2_canon'] = team2_canon
+            # Update kick_utc and time to earliest
+            game['kick_utc'] = best_entry[0]
+            game['time'] = vn_time(best_entry[0])
+            merged_games.append(game)
+
+    all_games = merged_games
+    print(f"✅ Sau khi gộp: {len(all_games)} trận bóng đá duy nhất")
 
     print("📥 Tải M3U...")
     cached = CacheManager.get_cache()
@@ -594,18 +892,27 @@ async def main():
 
     for game in all_games:
         league = game['league']
-        match_name = game['match']
+        match_display = game.get('match_display', game['match'])
         kick_utc = game['kick_utc']
         kick_time = game['time']
+        # Get keywords and canonical names (already computed during merge)
+        team1_canon = game.get('team1_canon')
+        team2_canon = game.get('team2_canon')
+        if not team1_canon or not team2_canon:
+            kw1, kw2, team1_canon, team2_canon = extract_match_keywords(game['match'])
+            game['team1_canon'] = team1_canon
+            game['team2_canon'] = team2_canon
+            game['match_display'] = f"{team1_canon} vs {team2_canon}"
+        kw1 = get_team_keywords(team1_canon)
+        kw2 = get_team_keywords(team2_canon)
 
-        kw1, kw2 = extract_match_keywords(match_name)
         if not kw1 or not kw2:
-            print(f"\n⚠️ Bỏ qua trận không rõ hai đội: [{league}] {match_name}")
+            print(f"\n⚠️ Bỏ qua trận không rõ hai đội: [{league}] {match_display}")
             continue
 
-        print(f"\n🏆 [{league}] {match_name} | {kick_time}")
-        print(f"   🔑 Từ khóa đội 1: {kw1}")
-        print(f"   🔑 Từ khóa đội 2: {kw2}")
+        print(f"\n🏆 [{league}] {match_display} | {kick_time}")
+        print(f"   🔑 Từ khóa đội 1 ({team1_canon}): {sorted(kw1)}")
+        print(f"   🔑 Từ khóa đội 2 ({team2_canon}): {sorted(kw2)}")
 
         matched_for_game = []
         seen_urls = set()
