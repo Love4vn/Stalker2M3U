@@ -399,8 +399,9 @@ TEAM_NAME_MAPPING = {
 # Build reverse mapping: canonical -> [variants]
 CANONICAL_TO_VARIANTS = defaultdict(set)
 for variant, canonical in TEAM_NAME_MAPPING.items():
+    if canonical is None:  # bỏ qua giá trị None
+        continue
     CANONICAL_TO_VARIANTS[canonical].add(variant)
-    # Also add the canonical itself
     CANONICAL_TO_VARIANTS[canonical].add(canonical.lower())
 
 # ================== CACHE ==================
