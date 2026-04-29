@@ -1,11 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1535853" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14456.jpg?ver=20107",01/05 02:00 AM | ES (VIX 08) Shakhtar Donetsk vs. Crystal Palace ( :00)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 7EFF6FD04D13C47442A2C3100B2FFC8A
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535853&extension=ts&play_token=mJeBIH7TlP
 #EXTINF:-1 tvg-id="1535855" group-title="Live UEFA Europa League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14456.jpg?ver=20107",01/05 02:00 AM | ES (VIX 06) Braga vs. Sport_Club Freiburg ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 7EFF6FD04D13C47442A2C3100B2FFC8A
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535855&extension=ts&play_token=goioFTOLam
+#EXTVLCOPT:http-header=Authorization: Bearer D62C13F3282A61820EBFB9801B3D1959
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535855&extension=ts&play_token=DudJekFOav
+#EXTINF:-1 tvg-id="1535853" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14456.jpg?ver=20107",01/05 02:00 AM | ES (VIX 08) Shakhtar Donetsk vs. Crystal Palace ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D62C13F3282A61820EBFB9801B3D1959
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535853&extension=ts&play_token=i5rr51zVf6
+#EXTINF:-1 tvg-id="1535855" group-title="Live UEFA Europa League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14456.jpg?ver=20107",01/05 02:00 AM | ES (VIX 06) Braga vs. Sport_Club Freiburg ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D62C13F3282A61820EBFB9801B3D1959
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535855&extension=ts&play_token=DudJekFOav
