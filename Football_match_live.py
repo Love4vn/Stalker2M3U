@@ -187,6 +187,9 @@ TEAM_NAME_MAPPING = {
     "darmstadt": "Darmstadt 98",
     "fc heidenheim": "Heidenheim",
     "heidenheim": "Heidenheim",
+    "sc freiburg": "Freiburg",
+    "sport-club freiburg": "Freiburg",
+    "sc-freiburg": "Freiburg",
 
     # --- La Liga ---
     "real madrid": "Real Madrid",
@@ -395,6 +398,8 @@ TEAM_NAME_MAPPING = {
     "west-brom": "West Brom",
     "west-bromwich-albion": "West Brom",
     "brighton-and-hove-albion": "Brighton & Hove Albion",
+    "sporting-braga": "Sporting Braga",
+    "braga": "Sporting Braga",
 }
 
 # Build reverse mapping: canonical -> [variants]
