@@ -133,6 +133,7 @@ TEAM_NAME_MAPPING = {
     "wolves": "Wolverhampton Wanderers",
     "wolverhampton": "Wolverhampton Wanderers",
     "nottingham forest": "Nottingham Forest",
+    "nottingham": "Nottingham Forest",
     "forest": "Nottingham Forest",
     "sunderland": "Sunderland",
     "leicester city": "Leicester City",
