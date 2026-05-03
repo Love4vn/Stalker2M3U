@@ -145,6 +145,10 @@ TEAM_NAME_MAPPING = {
     "burnley": "Burnley",
     "west bromwich albion": "West Brom",
     "west brom": "West Brom",
+    "afc bournemouth": "Bournemouth",
+    "afc-bournemouth": "Bournemouth",
+    "bournemouth afc": "Bournemouth",
+    "bournemouth-afc": "Bournemouth",
 
     # --- Bundesliga ---
     "bayern munich": "Bayern Munich",
