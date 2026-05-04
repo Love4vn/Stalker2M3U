@@ -524,7 +524,7 @@ def main():
 
     # Sắp xếp theo expiry (dài nhất trước)
     valid.sort(key=lambda x: x["expiry_date"] if x["expiry_date"] else datetime.min, reverse=True)
-    top = valid[:3]
+    top = valid[:4]
     print(f"\nSelected {len(top)} portal(s):")
     for p in top:
         expiry_str = p["expiry_date"].strftime("%Y-%m-%d") if p["expiry_date"] else "unknown"
