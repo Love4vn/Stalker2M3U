@@ -11,6 +11,7 @@ footonsat_schedule_live_optimized.py - ULTRA OPTIMIZED VERSION
 - Tennis: beIN Sports → beIN Sports 7.
 - Bỏ qua kênh quảng cáo.
 - Sắp xếp kênh: Hub Sports trước, sau đó Now Sports, UK, English, còn lại.
+- Xử lý tiền tố "NOWTV" (có dấu |) trong tên kênh M3U.
 """
 import asyncio
 import json
@@ -66,6 +67,7 @@ PATTERN_AD_CHANNEL = re.compile(r'[#=☰]')
 PATTERN_GENERIC_PREFIX = re.compile(r'^([a-z]{2,3})\:\s*', re.I)
 PATTERN_SPORTS_PREFIX = re.compile(r'^SPORTS\s*[-:]\s*', re.I)
 PATTERN_NOW_HK_PREFIX = re.compile(r'^NOW\s+HK\s+', re.I)
+PATTERN_NOWTV_PREFIX = re.compile(r'^NOWTV[\|\s]*', re.I)   # NEW
 
 # ================== CONSTANTS ==================
 ALLOWED_FOOTBALL_LEAGUES = {
@@ -231,16 +233,25 @@ def extract_country_code_from_name(name: str) -> Tuple[Optional[str], Optional[s
     return None, None
 
 def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
+    """
+    Extract country code from beginning, end, or inside the channel name.
+    Returns (country_code, cleaned_name_without_code).
+    Also removes generic prefixes like "GO:", "VIP:", "NOW HK", "NOWTV|", etc.
+    """
     name_lower = name.lower().strip()
     
+    # 1. Check prefix patterns that include country codes
     for pat in PATTERN_COUNTRY_CODE_PREFIX:
         m = pat.match(name_lower)
         if m:
             code = m.group(1)
             if code in COUNTRY_CODES:
                 remaining = name_lower[m.end():].lstrip('|:-\\s ┃')
+                # Sau khi lấy country code, loại bỏ NOWTV nếu có
+                remaining = PATTERN_NOWTV_PREFIX.sub('', remaining).strip()
                 return code, remaining.strip()
     
+    # 2. Check suffix pattern
     m_suffix = PATTERN_COUNTRY_CODE_SUFFIX.search(name_lower)
     if m_suffix:
         code = m_suffix.group(1)
@@ -252,6 +263,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
             remaining = name_lower[:m_suffix.start()].strip()
             return mapped, remaining
     
+    # 3. Try to extract country name and map to code, then remove the country name
     code_from_name, country_name = extract_country_code_from_name(name_lower)
     if code_from_name and country_name:
         pattern = re.compile(r'\b' + re.escape(country_name) + r'\b', re.I)
@@ -259,6 +271,7 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
         cleaned = re.sub(r'\s+', ' ', cleaned)
         return code_from_name, cleaned
     
+    # 4. Remove generic prefixes like "GO:", "VIP:", "NOW HK"
     m_generic = PATTERN_GENERIC_PREFIX.match(name_lower)
     if m_generic:
         remaining = name_lower[m_generic.end():].strip()
@@ -268,7 +281,11 @@ def extract_prefix_and_name(name: str) -> Tuple[Optional[str], str]:
     if m_now_hk:
         remaining = name_lower[m_now_hk.end():].strip()
         return None, remaining
+
+    # 5. Remove NOWTV prefix (có thể không có country code)
+    name_lower = PATTERN_NOWTV_PREFIX.sub('', name_lower).strip()
     
+    # 6. Remove leading punctuation/spaces if nothing else matched
     cleaned = re.sub(r'^[\|\s\:\-┃]+', '', name_lower)
     return None, cleaned.strip()
 
@@ -342,10 +359,8 @@ def is_channel_match(ch_name: str, m3u_name: str, league: str = None) -> bool:
 
     # Xử lý đặc biệt cho Now Sports Premier League: cho phép khớp với NOW SPORTS 4K X (4K trước số)
     if 'now sports premier league' in ch_norm:
-        # Nếu M3U là "now sports 4k X" với cùng số
         if 'now sports 4k' in m3u_norm and ch_num is not None and m3u_num == ch_num and m3u_4k_before:
             return True
-        # Hoặc khớp trực tiếp "now sports premier league"
         if 'now sports premier league' in m3u_norm:
             return True
 
@@ -392,8 +407,6 @@ def preprocess_target_channel(name: str) -> str:
     if not re.search(r'\benglish\b', name_clean, re.I):
         name_clean = re.sub(r'\b(beIN\s*Sports?)\s+MENA\b', r'\1 Arabia', name_clean, flags=re.I)
 
-    # Giữ nguyên Now Sports Premier League (không đổi thành Now Premier Sports nữa)
-    # Thêm quy tắc mới: Sky Sport Premier League DE -> Sky Sport Premier League deutsch
     name_clean = re.sub(r'\bSky Sport Premier League DE\b', 'Sky Sport Premier League deutsch', name_clean, flags=re.I)
     
     return name_clean
@@ -688,7 +701,6 @@ async def main():
 
     # ================== GỘP TRẬN BÓNG ĐÁ TRÙNG LẶP ==================
     def extract_teams(match_name):
-        # Tách theo " vs ", " vs. ", " v "
         parts = re.split(r'\s+vs\.?\s+|\s+v\s+', match_name, flags=re.I)
         if len(parts) == 2:
             return {parts[0].strip().lower(), parts[1].strip().lower()}
@@ -702,14 +714,12 @@ async def main():
             team_set = frozenset(extract_teams(game['match']))
             key = (league, kick_utc, team_set)
         else:
-            # Tennis hoặc các giải khác: gộp theo tên trận đấu (vì có thể có nhiều nguồn giống hệt)
             key = (league, kick_utc, game['match'].strip().lower())
         
         if key not in merged_games:
             merged_games[key] = game.copy()
-            merged_games[key]['channels'] = list(game['channels'])  # copy list
+            merged_games[key]['channels'] = list(game['channels'])
         else:
-            # Hợp nhất kênh, tránh trùng tên
             existing_names = {ch['channel_name'] for ch in merged_games[key]['channels']}
             for ch in game['channels']:
                 if ch['channel_name'] not in existing_names:
