@@ -173,6 +173,7 @@ TEAM_NAME_MAPPING = {
     "eintracht frankfurt": "Eintracht Frankfurt",
     "frankfurt": "Eintracht Frankfurt",
     "vfb stuttgart": "VfB Stuttgart",
+    "vfb-stuttgart": "VfB Stuttgart",
     "stuttgart": "VfB Stuttgart",
     "werder bremen": "Werder Bremen",
     "bremen": "Werder Bremen",
