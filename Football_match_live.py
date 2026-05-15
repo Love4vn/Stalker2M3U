@@ -201,6 +201,12 @@ TEAM_NAME_MAPPING = {
     "sc freiburg": "Freiburg",
     "sport-club freiburg": "Freiburg",
     "sc-freiburg": "Freiburg",
+    "hamburger sport-verein": "Hamburg",
+    "hamburger-sport-verein": "Hamburg",
+    "hamburger sv": "Hamburg",
+    "hamburger-sv": "Hamburg",
+    "hamburg sv": "Hamburg",
+    "hamburger-sv": "Hamburg",
 
     # --- La Liga ---
     "real madrid": "Real Madrid",
