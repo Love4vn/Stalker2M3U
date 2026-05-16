@@ -1,536 +1,961 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1918787" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 12:45 AM | Al-Nassr Gamba Osaka Final all | 8K DE: SOCCER 90
+#EXTINF:-1 tvg-id="1918787" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 12:45 AM | Live Al-Nassr Gamba Osaka Final all 8K DE: SOCCER 90
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1918787&extension=ts&play_token=XC5xwB2rPt
-#EXTINF:-1 tvg-id="2054962" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 12:45 AM | Al-Nassr Gamba Osaka Final all | 8K DE: SOCCER 90
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1918787&extension=ts&play_token=qeSeEI2M9p
+#EXTINF:-1 tvg-id="2054962" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 12:45 AM | Live Al-Nassr Gamba Osaka Final all 8K DE: SOCCER 90
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2054962&extension=ts&play_token=dcNItO3GFj
-#EXTINF:-1 tvg-id="1910733" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 05:30 PM | US (Paramount 009) Genoa vs. Milan ( :10)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910733&extension=ts&play_token=pZmYYG8ugC
-#EXTINF:-1 tvg-id="1910735" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 05:30 PM | US (Paramount 007) Juventus vs. Fiorentina ( :00)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910735&extension=ts&play_token=6ZOzImHH5f
-#EXTINF:-1 tvg-id="1910734" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 05:30 PM | US (Paramount 008) Pisa vs. Napoli ( :05)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910734&extension=ts&play_token=DhDNLLv561
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2054962&extension=ts&play_token=7sSoPvzXOo
 #EXTINF:-1 tvg-id="1910732" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 05:30 PM | US (Paramount 010) Roma vs. Lazio ( :15)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910732&extension=ts&play_token=EhC44IOqd2
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910732&extension=ts&play_token=nEMHQD393W
+#EXTINF:-1 tvg-id="1910735" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 05:30 PM | US (Paramount 007) Juventus vs. Fiorentina ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910735&extension=ts&play_token=UbKfSskz5G
+#EXTINF:-1 tvg-id="1910734" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 05:30 PM | US (Paramount 008) Pisa vs. Napoli ( :05)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910734&extension=ts&play_token=qZpxj2ceP8
+#EXTINF:-1 tvg-id="1910733" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 05:30 PM | US (Paramount 009) Genoa vs. Milan ( :10)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910733&extension=ts&play_token=FNwpfmWKCl
 #EXTINF:-1 tvg-id="1454430" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 06:30 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454430&extension=ts&play_token=CjWdJPaBhY
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454430&extension=ts&play_token=XvTIOeX617
 #EXTINF:-1 tvg-id="1454429" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 06:30 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454429&extension=ts&play_token=94YsavEOil
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454429&extension=ts&play_token=MgTYblCnEG
 #EXTINF:-1 tvg-id="1454428" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 06:30 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454428&extension=ts&play_token=A1pCKCZCbU
-#EXTINF:-1 tvg-id="1910733" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 009) Genoa vs. Milan ( :10)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910733&extension=ts&play_token=pZmYYG8ugC
-#EXTINF:-1 tvg-id="1910735" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 007) Juventus vs. Fiorentina ( :00)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910735&extension=ts&play_token=6ZOzImHH5f
-#EXTINF:-1 tvg-id="1910734" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 008) Pisa vs. Napoli ( :05)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910734&extension=ts&play_token=DhDNLLv561
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454428&extension=ts&play_token=5j8JDFQmWh
 #EXTINF:-1 tvg-id="1910732" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 010) Roma vs. Lazio ( :15)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910732&extension=ts&play_token=EhC44IOqd2
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910732&extension=ts&play_token=nEMHQD393W
+#EXTINF:-1 tvg-id="1910735" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 007) Juventus vs. Fiorentina ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910735&extension=ts&play_token=UbKfSskz5G
+#EXTINF:-1 tvg-id="1910734" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 008) Pisa vs. Napoli ( :05)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910734&extension=ts&play_token=qZpxj2ceP8
+#EXTINF:-1 tvg-id="1910733" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 009) Genoa vs. Milan ( :10)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910733&extension=ts&play_token=FNwpfmWKCl
 #EXTINF:-1 tvg-id="1910729" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 013) Atalanta vs. Bologna ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910729&extension=ts&play_token=GUYbT1GJ5P
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910729&extension=ts&play_token=8xTK0ZRMvb
 #EXTINF:-1 tvg-id="1910730" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 08:00 PM | US (Paramount 012) Inter vs. Hellas Verona ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910730&extension=ts&play_token=dgm9VKZ7Uf
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910730&extension=ts&play_token=gqy9gTlHIY
 #EXTINF:-1 tvg-id="1454427" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 08:50 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454427&extension=ts&play_token=Ph6sOnFKsw
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454427&extension=ts&play_token=yPpJrVPewU
 #EXTINF:-1 tvg-id="1454426" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 08:50 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454426&extension=ts&play_token=9cHrvYvOaI
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454426&extension=ts&play_token=GXMvTyD1kp
 #EXTINF:-1 tvg-id="1454425" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 08:50 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454425&extension=ts&play_token=EUgbwfZqbf
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454425&extension=ts&play_token=BrgL22saLa
 #EXTINF:-1 tvg-id="1454430" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454430&extension=ts&play_token=CjWdJPaBhY
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454430&extension=ts&play_token=XvTIOeX617
 #EXTINF:-1 tvg-id="1454429" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454429&extension=ts&play_token=94YsavEOil
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454429&extension=ts&play_token=MgTYblCnEG
 #EXTINF:-1 tvg-id="1454428" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454428&extension=ts&play_token=A1pCKCZCbU
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454428&extension=ts&play_token=5j8JDFQmWh
 #EXTINF:-1 tvg-id="234285" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/USA/ES+.png",17/05 09:00 PM | US ESPN PLUS 09 WEST HAM UNITED @ MANCHESTER CITY – /
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer B23CDBD810B5EC84FCEF58462176F27A
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/234285
 #EXTINF:-1 tvg-id="234286" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/USA/ES+.png",17/05 09:00 PM | US ESPN PLUS 10 EN ESPAÑOL: WEST HAM UNITED @ MANCHESTER CITY – /
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer B23CDBD810B5EC84FCEF58462176F27A
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/234286
 #EXTINF:-1 tvg-id="234288" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/USA/ES+.png",17/05 09:00 PM | US ESPN PLUS 12 CHELSEA @ MANCHESTER UNITED – /
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer B23CDBD810B5EC84FCEF58462176F27A
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/234288
 #EXTINF:-1 tvg-id="1119291" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/CANADA/sn.png",17/05 09:00 PM | CA SN+ 4 CHELSEA @ MANCHESTER UNITED – /
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer B23CDBD810B5EC84FCEF58462176F27A
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1119291
 #EXTINF:-1 tvg-id="1119295" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/CANADA/sn.png",17/05 09:00 PM | CA SN+ 8 WEST HAM UNITED @ MANCHESTER CITY – /
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer B23CDBD810B5EC84FCEF58462176F27A
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1119295
+#EXTINF:-1 tvg-id="1940066" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 09:00 PM | End New England Revolution vs. Minnesota United all | 8K US: SOCCER 91
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940066&extension=ts&play_token=Wk69nwNodh
 #EXTINF:-1 tvg-id="588059" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13414.png?60345",17/05 09:00 PM | MANCHESTER UNITED ᴴᴰ ◉
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=588059&extension=ts&play_token=PoCBUiGfjX
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=588059&extension=ts&play_token=pErKipY40p
 #EXTINF:-1 tvg-id="661423" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10757.png?64981",17/05 09:00 PM | SHEFFIELD UNITED
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=661423&extension=ts&play_token=7HSiDJEeW7
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=661423&extension=ts&play_token=95o7aBGEhm
 #EXTINF:-1 tvg-id="678598" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13744.png?ver=9390",17/05 09:00 PM | FA Player 01 Chelsea vs Manchester United // //
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=678598&extension=ts&play_token=r9AO1qnrzo
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=678598&extension=ts&play_token=ZUOwNBcMZV
+#EXTINF:-1 tvg-id="2062039" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 09:00 PM | End New England Revolution vs. Minnesota United all | 8K US: SOCCER 91
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062039&extension=ts&play_token=3GnLfeLCeI
 #EXTINF:-1 tvg-id="725954" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/MANCHESTERUNITED.png",17/05 09:00 PM | MANCHESTER UNITED HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=725954&extension=ts&play_token=UgHNvfLkHW
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=725954&extension=ts&play_token=TS1l784CFr
 #EXTINF:-1 tvg-id="1429570" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.95/images/1429570.png",17/05 09:00 PM | FA Player 01 Chelsea vs Manchester United // //
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1429570&extension=ts&play_token=WuuyCkpEKI
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1429570&extension=ts&play_token=pLXR2H1sEy
 #EXTINF:-1 tvg-id="725954" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/MANCHESTERUNITED.png",17/05 09:00 PM | MANCHESTER UNITED HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:32:34:34; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer BEB0724CBD3B08D9571395FC477F1EED
-http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=725954&extension=ts&play_token=OG8f4YfT2S
+#EXTVLCOPT:http-header=Authorization: Bearer 5950ADF5564D3DAC84F94742DF95E3E9
+http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=725954&extension=ts&play_token=TMlZPwUJjl
 #EXTINF:-1 tvg-id="1429570" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.95/images/1429570.png",17/05 09:00 PM | FA Player 01 Chelsea vs Manchester United // //
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:32:34:34; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer BEB0724CBD3B08D9571395FC477F1EED
-http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=1429570&extension=ts&play_token=rOggXuKEQF
+#EXTVLCOPT:http-header=Authorization: Bearer 5950ADF5564D3DAC84F94742DF95E3E9
+http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=1429570&extension=ts&play_token=wLaPrhi85E
 #EXTINF:-1 tvg-id="1924720" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 09:00 PM | ENDED EN ESPAÑOL-WEST HAM UNITED VS. MANCHESTER CITY (US) 8K US: ESPN+ 10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924720&extension=ts&play_token=yvdKEYpLHh
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924720&extension=ts&play_token=Bq6yN5h1vj
 #EXTINF:-1 tvg-id="1601710" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 09:00 PM | US (ESPN+ 009) West Ham United vs. Manchester City ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601710&extension=ts&play_token=8JDqnjxgJ3
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601710&extension=ts&play_token=cha5Ex9GXC
 #EXTINF:-1 tvg-id="1601709" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 09:00 PM | US (ESPN+ 010) En Español_West Ham United vs. Manchester City ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601709&extension=ts&play_token=kcX5yUfOOc
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601709&extension=ts&play_token=peT1YOZYnX
 #EXTINF:-1 tvg-id="1601707" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 09:00 PM | US (ESPN+ 012) Chelsea vs. Manchester United ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601707&extension=ts&play_token=TKm5T2gehv
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601707&extension=ts&play_token=OCc8MkdY82
 #EXTINF:-1 tvg-id="1910724" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 09:00 PM | US (Paramount 018) Orlando City SC vs. Atlanta United FC ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910724&extension=ts&play_token=hhqjHUpTvO
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910724&extension=ts&play_token=Ka14QHk0yV
 #EXTINF:-1 tvg-id="2058128" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 09:00 PM | ENDED EN ESPAÑOL-WEST HAM UNITED VS. MANCHESTER CITY (US) 8K US: ESPN+ 10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058128&extension=ts&play_token=0RyosfZrjS
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058128&extension=ts&play_token=JNZ5tWqH8W
 #EXTINF:-1 tvg-id="1949903" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 09:00 PM | US (ESPN+ 009) West Ham United vs. Manchester City ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949903&extension=ts&play_token=j4EjyqhrqU
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949903&extension=ts&play_token=JU9FsGrLdJ
 #EXTINF:-1 tvg-id="1949902" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 09:00 PM | US (ESPN+ 010) En Español_West Ham United vs. Manchester City ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949902&extension=ts&play_token=t2sryjUyH2
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949902&extension=ts&play_token=GWqqHSOXWv
 #EXTINF:-1 tvg-id="1949900" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 09:00 PM | US (ESPN+ 012) Chelsea vs. Manchester United ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949900&extension=ts&play_token=WYmmsOu8Ax
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949900&extension=ts&play_token=5QKNNqCjvn
 #EXTINF:-1 tvg-id="1909765" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Sportsnet-SN.png",17/05 09:00 PM | CA (SN+ 004) Chelsea vs. Manchester United ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1909765&extension=ts&play_token=AO46yUfwEQ
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1909765&extension=ts&play_token=F62V5OTXdt
 #EXTINF:-1 tvg-id="1909761" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Sportsnet-SN.png",17/05 09:00 PM | CA (SN+ 008) West Ham United vs. Manchester City ( :25)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1909761&extension=ts&play_token=4TX94uP3JT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1909761&extension=ts&play_token=23Y7gti2Zv
 #EXTINF:-1 tvg-id="979905" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/UK/led.png",17/05 09:00 PM | LEEDS UNITED FHD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer B23CDBD810B5EC84FCEF58462176F27A
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/979905
 #EXTINF:-1 tvg-id="1538164" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=52004",17/05 09:00 PM | Live Football 23: Arsenal vs Manchester United
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538164&extension=ts&play_token=SXYhix1moQ
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538164&extension=ts&play_token=oaf2cclCyN
 #EXTINF:-1 tvg-id="1454430" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454430&extension=ts&play_token=CjWdJPaBhY
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454430&extension=ts&play_token=XvTIOeX617
 #EXTINF:-1 tvg-id="1454429" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454429&extension=ts&play_token=94YsavEOil
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454429&extension=ts&play_token=MgTYblCnEG
 #EXTINF:-1 tvg-id="1454428" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 01: Manchester United vs Nottingham Forest 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454428&extension=ts&play_token=A1pCKCZCbU
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454428&extension=ts&play_token=5j8JDFQmWh
 #EXTINF:-1 tvg-id="1454427" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454427&extension=ts&play_token=Ph6sOnFKsw
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454427&extension=ts&play_token=yPpJrVPewU
 #EXTINF:-1 tvg-id="1454426" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454426&extension=ts&play_token=9cHrvYvOaI
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454426&extension=ts&play_token=GXMvTyD1kp
 #EXTINF:-1 tvg-id="1454425" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454425&extension=ts&play_token=EUgbwfZqbf
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454425&extension=ts&play_token=BrgL22saLa
 #EXTINF:-1 tvg-id="1454415" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 06: Newcastle United vs West Ham United 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454415&extension=ts&play_token=OWgcFdHDec
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454415&extension=ts&play_token=n3kZbmX8El
 #EXTINF:-1 tvg-id="1454414" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 06: Newcastle United vs West Ham United 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454414&extension=ts&play_token=JFGWMG6GXl
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454414&extension=ts&play_token=f5WewzIjbr
 #EXTINF:-1 tvg-id="1454413" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 06: Newcastle United vs West Ham United 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454413&extension=ts&play_token=aO8xVTXHBA
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454413&extension=ts&play_token=qMXKjMKcc2
 #EXTINF:-1 tvg-id="993042" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",17/05 09:00 PM | UEFA 18 Manchester United vs Atletico Madrid
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=993042&extension=ts&play_token=YgvaZCmtyY
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=993042&extension=ts&play_token=iiutAxYcfh
 #EXTINF:-1 tvg-id="1363980" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.95/images/1363980.png",17/05 09:00 PM | UEFA 18 Manchester United vs Atletico Madrid
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1363980&extension=ts&play_token=5WBuy5Jos7
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1363980&extension=ts&play_token=rq9udjnbKQ
 #EXTINF:-1 tvg-id="1363980" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.95/images/1363980.png",17/05 09:00 PM | UEFA 18 Manchester United vs Atletico Madrid
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:32:34:34; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer BEB0724CBD3B08D9571395FC477F1EED
-http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=1363980&extension=ts&play_token=noxUTycwSH
+#EXTVLCOPT:http-header=Authorization: Bearer 5950ADF5564D3DAC84F94742DF95E3E9
+http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=1363980&extension=ts&play_token=7pFqDEz8TS
 #EXTINF:-1 tvg-id="1940109" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 09:00 PM | End ICC CWC League Two 2023-27 106th Match Nepal vs United States Of America all | 8K US: SOCCER 48
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940109&extension=ts&play_token=mvxzPuyvjD
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940109&extension=ts&play_token=3SPA1EqG3b
+#EXTINF:-1 tvg-id="1940062" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 09:00 PM | End D.C. United vs. St. Louis CITY SC all | 8K US: SOCCER 95
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940062&extension=ts&play_token=BLJV9efZWb
 #EXTINF:-1 tvg-id="1025263" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",17/05 09:00 PM | UEFA 18 Manchester United vs Atletico Madrid
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1025263&extension=ts&play_token=UGGmGBxyK7
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1025263&extension=ts&play_token=G5q027bqrR
 #EXTINF:-1 tvg-id="1924721" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 09:00 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY (US) 8K US: ESPN+ 9
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924721&extension=ts&play_token=scabMF8Ago
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924721&extension=ts&play_token=GNXiJvn8Jz
 #EXTINF:-1 tvg-id="1924718" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 09:00 PM | ENDED CHELSEA VS. MANCHESTER UNITED (US) 8K US: ESPN+ 12
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924718&extension=ts&play_token=cfApvl8NjJ
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924718&extension=ts&play_token=s1hWlGiBCY
 #EXTINF:-1 tvg-id="1939954" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 09:00 PM | End ICC CWC League Two 2023-27 106th Match Nepal vs United States Of America all | 8K CA: SOCCER 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1939954&extension=ts&play_token=dQDFd7PVUJ
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1939954&extension=ts&play_token=gvb5oGxz5Y
 #EXTINF:-1 tvg-id="1488479" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",17/05 09:00 PM | ENDED CHELSEA VS. MANCHESTER UNITED (CA) 8K CA: SPORTSNET 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1488479&extension=ts&play_token=rStW8TfdNx
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1488479&extension=ts&play_token=3jSlNNprT3
 #EXTINF:-1 tvg-id="1488477" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",17/05 09:00 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY (CA) 8K CA: SPORTSNET 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1488477&extension=ts&play_token=Wzmuw2XhZN
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1488477&extension=ts&play_token=zxMVpEaGj4
 #EXTINF:-1 tvg-id="1984104" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962",17/05 09:00 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY -02 (BR) 8K BR: DISNEY+ 22
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1984104&extension=ts&play_token=GrkCWGfphp
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1984104&extension=ts&play_token=fB9xKn2KU6
 #EXTINF:-1 tvg-id="1984103" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962",17/05 09:00 PM | ENDED CHELSEA VS. MANCHESTER UNITED -02 (BR) 8K BR: DISNEY+ 23
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1984103&extension=ts&play_token=3thQjh4Jcw
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1984103&extension=ts&play_token=vLRYtVIi40
 #EXTINF:-1 tvg-id="1825993" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 09:00 PM | ENDED FOTBOLL: WOMEN'S SUPER LEAGUE CHELSEA-MANCHESTER UNITED (SE) 8K SE: PLAY+ 10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1825993&extension=ts&play_token=U4cWmsARKY
-#EXTINF:-1 tvg-id="1825987" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 09:00 PM | LIVE CHELSEA MANCHESTER UNITED (SE) 8K SE: PLAY+ 16
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1825993&extension=ts&play_token=fltk3CgGL9
+#EXTINF:-1 tvg-id="1825987" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 09:00 PM | ENDED CHELSEA MANCHESTER UNITED (SE) 8K SE: PLAY+ 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1825987&extension=ts&play_token=pNMVs7Ml1Z
-#EXTINF:-1 tvg-id="1005965" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14003.jpg?5075",17/05 09:00 PM | LIVE CHELSEA MANCHESTER UNITED (SE) 8K SE: TV4 PLAY 1
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1825987&extension=ts&play_token=2qsAs4hQRA
+#EXTINF:-1 tvg-id="1005965" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14003.jpg?5075",17/05 09:00 PM | ENDED CHELSEA MANCHESTER UNITED (SE) 8K SE: TV4 PLAY 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1005965&extension=ts&play_token=vPEVQG7lYo
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1005965&extension=ts&play_token=9vEvOyJDlx
 #EXTINF:-1 tvg-id="1128629" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13844.png?ver=3041",17/05 09:00 PM | LIVE CHELSEA MANCHESTER UNITED (NO) 8K NO: VGTV 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1128629&extension=ts&play_token=Ox9BrbKkTh
-#EXTINF:-1 tvg-id="1634725" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.118/picons/logos/logos/tv-4-play.png",17/05 09:00 PM | LIVE CHELSEA MANCHESTER UNITED (SE) 8K SE: TV4 PLAY 1
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1128629&extension=ts&play_token=A2ajQjSmr4
+#EXTINF:-1 tvg-id="1634725" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.118/picons/logos/logos/tv-4-play.png",17/05 09:00 PM | ENDED CHELSEA MANCHESTER UNITED (SE) 8K SE: TV4 PLAY 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1634725&extension=ts&play_token=giySWraGRW
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1634725&extension=ts&play_token=tIC7J1Dxcn
 #EXTINF:-1 tvg-id="2021238" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PLAYPLUS.png",17/05 09:00 PM | ENDED FOTBOLL: WOMEN'S SUPER LEAGUE CHELSEA-MANCHESTER UNITED (SE) 8K SE: PLAY+ 10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2021238&extension=ts&play_token=u2KLtkZtNj
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2021238&extension=ts&play_token=oltF5BjDvp
 #EXTINF:-1 tvg-id="1675568" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.118/picons/logos/logos/VGTV.png",17/05 09:00 PM | LIVE CHELSEA MANCHESTER UNITED (NO) 8K NO: VGTV 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1675568&extension=ts&play_token=A0WVeeFhpa
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1675568&extension=ts&play_token=QwvlbMT2TW
 #EXTINF:-1 tvg-id="2062082" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 09:00 PM | End ICC CWC League Two 2023-27 106th Match Nepal vs United States Of America all | 8K US: SOCCER 48
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062082&extension=ts&play_token=8mwECQjrwL
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062082&extension=ts&play_token=SOgtuazOSP
+#EXTINF:-1 tvg-id="2062035" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 09:00 PM | End D.C. United vs. St. Louis CITY SC all | 8K US: SOCCER 95
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062035&extension=ts&play_token=3QxpDQ9KM0
 #EXTINF:-1 tvg-id="2058129" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 09:00 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY (US) 8K US: ESPN+ 9
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058129&extension=ts&play_token=254JQIZXhF
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058129&extension=ts&play_token=YhZwP9EEAQ
 #EXTINF:-1 tvg-id="2058126" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 09:00 PM | ENDED CHELSEA VS. MANCHESTER UNITED (US) 8K US: ESPN+ 12
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058126&extension=ts&play_token=bSlndmf2zW
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058126&extension=ts&play_token=3IlTGF0tSp
 #EXTINF:-1 tvg-id="1916417" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177349.png",17/05 09:00 PM | ENDED CHELSEA VS. MANCHESTER UNITED (CA) 8K CA: SPORTSNET 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1916417&extension=ts&play_token=uAgmLQXcLI
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1916417&extension=ts&play_token=jNudzcIyQ2
 #EXTINF:-1 tvg-id="1916415" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177349.png",17/05 09:00 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY (CA) 8K CA: SPORTSNET 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1916415&extension=ts&play_token=fyKnn09urm
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1916415&extension=ts&play_token=0GlskRsIpg
 #EXTINF:-1 tvg-id="2062329" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 09:00 PM | End ICC CWC League Two 2023-27 106th Match Nepal vs United States Of America all | 8K CA: SOCCER 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062329&extension=ts&play_token=6R1S5OzC91
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062329&extension=ts&play_token=kQVW1ELoRk
 #EXTINF:-1 tvg-id="2070612" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png",17/05 09:00 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY -02 (BR) 8K BR: DISNEY+ 22
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070612&extension=ts&play_token=pVvWJtQS7W
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070612&extension=ts&play_token=Df1BB68aqt
 #EXTINF:-1 tvg-id="2070611" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png",17/05 09:00 PM | ENDED CHELSEA VS. MANCHESTER UNITED -02 (BR) 8K BR: DISNEY+ 23
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070611&extension=ts&play_token=3YnNFfLKmC
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070611&extension=ts&play_token=1wpFopzisy
 #EXTINF:-1 tvg-id="1538120" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",17/05 09:00 PM | FAWSL: Chelsea vs Manchester United @ :Sportsnet+ 05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538120&extension=ts&play_token=Kwz7MQllLK
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538120&extension=ts&play_token=tVqi9ZaMXU
 #EXTINF:-1 tvg-id="1538118" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",17/05 09:00 PM | FAWSL: West Ham United vs Manchester City @ :Sportsnet+ 07
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538118&extension=ts&play_token=tPJI5xIt4B
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538118&extension=ts&play_token=c1EySFxeCD
 #EXTINF:-1 tvg-id="1672263" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962",17/05 09:00 PM | (MX) (Disney 043) Fort Lauderdale United vs. Sporting Jax ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1672263&extension=ts&play_token=uY7g1JQZ4b
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1672263&extension=ts&play_token=zVe0FD0FPE
 #EXTINF:-1 tvg-id="1704142" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 09:00 PM | Fotboll: Women's Super League Chelsea vs Manchester United @ :TeliaPlay SE 10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704142&extension=ts&play_token=gn3mjcCbOd
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704142&extension=ts&play_token=FK6NwzvrvD
 #EXTINF:-1 tvg-id="1704136" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 09:00 PM | Chelsea vs Manchester United @ :TeliaPlay SE 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704136&extension=ts&play_token=IR0AZQ9mMy
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704136&extension=ts&play_token=pmOdltUCOx
 #EXTINF:-1 tvg-id="1704027" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14003.jpg?5075",17/05 09:00 PM | Chelsea Manchester United :Tv4 Play SE 04
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704027&extension=ts&play_token=ZGJDpK0wcG
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704027&extension=ts&play_token=WucQqHUGmg
 #EXTINF:-1 tvg-id="1990113" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://img.meccdn.com/online-images/logo_196_230815142104204940_org.png",17/05 09:00 PM | Chelsea Manchester United :Tv4 Play SE 04
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1990113&extension=ts&play_token=2OThNnKs9k
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1990113&extension=ts&play_token=G4juwXYiTn
 #EXTINF:-1 tvg-id="1991530" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/TeliaPlay.png",17/05 09:00 PM | Fotboll: Women's Super League Chelsea vs Manchester United @ :TeliaPlay SE 10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1991530&extension=ts&play_token=YhoNCNwy4v
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1991530&extension=ts&play_token=BobqArTGkZ
 #EXTINF:-1 tvg-id="1991524" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/TeliaPlay.png",17/05 09:00 PM | Chelsea vs Manchester United @ :TeliaPlay SE 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1991524&extension=ts&play_token=A0cUYFH2FV
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1991524&extension=ts&play_token=DvQkkp7xIi
 #EXTINF:-1 tvg-id="1363960" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 09:00 PM | UEFA 18 Manchester United vs Atletico Madrid
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1363960&extension=ts&play_token=KZhFMiookr
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1363960&extension=ts&play_token=tnAb6B4vyC
 #EXTINF:-1 tvg-id="1831704" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2338.jpg?1644",17/05 09:00 PM | US (Peacock 015) Brentford v. Crystal Palace ( :15)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1831704&extension=ts&play_token=YgV22PztBk
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1831704&extension=ts&play_token=EWqThQ0CNw
 #EXTINF:-1 tvg-id="1910862" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Peacock.png",17/05 09:00 PM | US (Peacock 015) Brentford v. Crystal Palace ( :15)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910862&extension=ts&play_token=vCKwZCgOQE
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910862&extension=ts&play_token=S2skjPKfIz
 #EXTINF:-1 tvg-id="1454421" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 04: Brentford vs Crystal Palace 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454421&extension=ts&play_token=FfQ7JFGOgx
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454421&extension=ts&play_token=7ETBDvTbvk
 #EXTINF:-1 tvg-id="1454420" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 04: Brentford vs Crystal Palace 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454420&extension=ts&play_token=AguoWDqTZ9
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454420&extension=ts&play_token=xgZ0aHPcdR
 #EXTINF:-1 tvg-id="1454419" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 04: Brentford vs Crystal Palace 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454419&extension=ts&play_token=hpbsGEOWXy
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454419&extension=ts&play_token=8MWgHqW8xS
 #EXTINF:-1 tvg-id="1831706" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2338.jpg?1644",17/05 09:00 PM | US (Peacock 013) Wolves v. Fulham ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1831706&extension=ts&play_token=ZYfxKeg6ZT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1831706&extension=ts&play_token=AxlKat5tOL
 #EXTINF:-1 tvg-id="1910864" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Peacock.png",17/05 09:00 PM | US (Peacock 013) Wolves v. Fulham ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910864&extension=ts&play_token=GXmkZbW1UG
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910864&extension=ts&play_token=iPb0yv74dS
 #EXTINF:-1 tvg-id="1831705" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2338.jpg?1644",17/05 09:00 PM | US (Peacock 014) Everton v. Sunderland ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1831705&extension=ts&play_token=BF4BiSJ9gy
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1831705&extension=ts&play_token=hCYn5jJIqA
 #EXTINF:-1 tvg-id="1910863" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Peacock.png",17/05 09:00 PM | US (Peacock 014) Everton v. Sunderland ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910863&extension=ts&play_token=obIAmev11n
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910863&extension=ts&play_token=7SNetE9Yfc
 #EXTINF:-1 tvg-id="1454418" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 05: Everton vs Sunderland 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454418&extension=ts&play_token=QIXWOB9zIo
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454418&extension=ts&play_token=8kGfkBzJA9
 #EXTINF:-1 tvg-id="1454417" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 05: Everton vs Sunderland 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454417&extension=ts&play_token=09siTWQeCa
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454417&extension=ts&play_token=JeSTywKnVg
 #EXTINF:-1 tvg-id="1454416" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 09:00 PM | 05: Everton vs Sunderland 17/05
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454416&extension=ts&play_token=SrvMGKn7an
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454416&extension=ts&play_token=guHQ32nLiL
 #EXTINF:-1 tvg-id="1910729" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 11:00 PM | US (Paramount 013) Atalanta vs. Bologna ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4A37B5F62FC0A010604633CDE6CA21E1
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910729&extension=ts&play_token=GUYbT1GJ5P
-#EXTINF:-1 tvg-id="1162261" group-title="⚽️🇪🇦|Live La Liga-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13848.png?ver=29274",17/05 11:00 PM | VILLARREAL CF B SEVILLA ATLÉTICO (ES) 8K ES: + 23
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910729&extension=ts&play_token=8xTK0ZRMvb
+#EXTINF:-1 tvg-id="234285" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/USA/ES+.png",17/05 11:30 PM | US ESPN PLUS 09 WEST HAM UNITED @ MANCHESTER CITY – /
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/234285
+#EXTINF:-1 tvg-id="234286" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/USA/ES+.png",17/05 11:30 PM | US ESPN PLUS 10 EN ESPAÑOL: WEST HAM UNITED @ MANCHESTER CITY – /
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/234286
+#EXTINF:-1 tvg-id="234288" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/USA/ES+.png",17/05 11:30 PM | US ESPN PLUS 12 CHELSEA @ MANCHESTER UNITED – /
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/234288
+#EXTINF:-1 tvg-id="1119291" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/CANADA/sn.png",17/05 11:30 PM | CA SN+ 4 CHELSEA @ MANCHESTER UNITED – /
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1119291
+#EXTINF:-1 tvg-id="1119295" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/CANADA/sn.png",17/05 11:30 PM | CA SN+ 8 WEST HAM UNITED @ MANCHESTER CITY – /
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1119295
+#EXTINF:-1 tvg-id="1940066" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 11:30 PM | End New England Revolution vs. Minnesota United all | 8K US: SOCCER 91
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1162261&extension=ts&play_token=j35b3y1NK2
-#EXTINF:-1 tvg-id="1672740" group-title="⚽️🇪🇦|Live La Liga-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",17/05 11:00 PM | (MX) (Dazn 018) Sevilla FC _ Real Madrid ( :00)
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940066&extension=ts&play_token=Wk69nwNodh
+#EXTINF:-1 tvg-id="588059" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13414.png?60345",17/05 11:30 PM | MANCHESTER UNITED ᴴᴰ ◉
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 65DAD97538C409649A7320CDC6453AB5
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1672740&extension=ts&play_token=3Pd3k0RYun
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=588059&extension=ts&play_token=pErKipY40p
+#EXTINF:-1 tvg-id="661423" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10757.png?64981",17/05 11:30 PM | SHEFFIELD UNITED
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=661423&extension=ts&play_token=95o7aBGEhm
+#EXTINF:-1 tvg-id="678598" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13744.png?ver=9390",17/05 11:30 PM | FA Player 01 Chelsea vs Manchester United // //
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=678598&extension=ts&play_token=ZUOwNBcMZV
+#EXTINF:-1 tvg-id="2062039" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 11:30 PM | End New England Revolution vs. Minnesota United all | 8K US: SOCCER 91
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062039&extension=ts&play_token=3GnLfeLCeI
+#EXTINF:-1 tvg-id="725954" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/MANCHESTERUNITED.png",17/05 11:30 PM | MANCHESTER UNITED HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=725954&extension=ts&play_token=TS1l784CFr
+#EXTINF:-1 tvg-id="1429570" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.95/images/1429570.png",17/05 11:30 PM | FA Player 01 Chelsea vs Manchester United // //
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1429570&extension=ts&play_token=pLXR2H1sEy
+#EXTINF:-1 tvg-id="725954" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/MANCHESTERUNITED.png",17/05 11:30 PM | MANCHESTER UNITED HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:32:34:34; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5950ADF5564D3DAC84F94742DF95E3E9
+http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=725954&extension=ts&play_token=TMlZPwUJjl
+#EXTINF:-1 tvg-id="1429570" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.95/images/1429570.png",17/05 11:30 PM | FA Player 01 Chelsea vs Manchester United // //
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:32:34:34; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5950ADF5564D3DAC84F94742DF95E3E9
+http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=1429570&extension=ts&play_token=wLaPrhi85E
+#EXTINF:-1 tvg-id="1924720" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 11:30 PM | ENDED EN ESPAÑOL-WEST HAM UNITED VS. MANCHESTER CITY (US) 8K US: ESPN+ 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924720&extension=ts&play_token=Bq6yN5h1vj
+#EXTINF:-1 tvg-id="1601710" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 11:30 PM | US (ESPN+ 009) West Ham United vs. Manchester City ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601710&extension=ts&play_token=cha5Ex9GXC
+#EXTINF:-1 tvg-id="1601709" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 11:30 PM | US (ESPN+ 010) En Español_West Ham United vs. Manchester City ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601709&extension=ts&play_token=peT1YOZYnX
+#EXTINF:-1 tvg-id="1601707" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 11:30 PM | US (ESPN+ 012) Chelsea vs. Manchester United ( :05)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601707&extension=ts&play_token=OCc8MkdY82
+#EXTINF:-1 tvg-id="1910724" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 11:30 PM | US (Paramount 018) Orlando City SC vs. Atlanta United FC ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1910724&extension=ts&play_token=Ka14QHk0yV
+#EXTINF:-1 tvg-id="2058128" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 11:30 PM | ENDED EN ESPAÑOL-WEST HAM UNITED VS. MANCHESTER CITY (US) 8K US: ESPN+ 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058128&extension=ts&play_token=JNZ5tWqH8W
+#EXTINF:-1 tvg-id="1949903" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 11:30 PM | US (ESPN+ 009) West Ham United vs. Manchester City ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949903&extension=ts&play_token=JU9FsGrLdJ
+#EXTINF:-1 tvg-id="1949902" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 11:30 PM | US (ESPN+ 010) En Español_West Ham United vs. Manchester City ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949902&extension=ts&play_token=GWqqHSOXWv
+#EXTINF:-1 tvg-id="1949900" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 11:30 PM | US (ESPN+ 012) Chelsea vs. Manchester United ( :05)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1949900&extension=ts&play_token=5QKNNqCjvn
+#EXTINF:-1 tvg-id="1909765" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Sportsnet-SN.png",17/05 11:30 PM | CA (SN+ 004) Chelsea vs. Manchester United ( :05)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1909765&extension=ts&play_token=F62V5OTXdt
+#EXTINF:-1 tvg-id="1909761" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Sportsnet-SN.png",17/05 11:30 PM | CA (SN+ 008) West Ham United vs. Manchester City ( :25)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1909761&extension=ts&play_token=23Y7gti2Zv
+#EXTINF:-1 tvg-id="979905" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/UK/led.png",17/05 11:30 PM | LEEDS UNITED FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/979905
+#EXTINF:-1 tvg-id="1538164" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=52004",17/05 11:30 PM | Live Football 23: Arsenal vs Manchester United
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538164&extension=ts&play_token=oaf2cclCyN
+#EXTINF:-1 tvg-id="1454430" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 01: Manchester United vs Nottingham Forest 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454430&extension=ts&play_token=XvTIOeX617
+#EXTINF:-1 tvg-id="1454429" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 01: Manchester United vs Nottingham Forest 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454429&extension=ts&play_token=MgTYblCnEG
+#EXTINF:-1 tvg-id="1454428" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 01: Manchester United vs Nottingham Forest 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454428&extension=ts&play_token=5j8JDFQmWh
+#EXTINF:-1 tvg-id="1454427" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454427&extension=ts&play_token=yPpJrVPewU
+#EXTINF:-1 tvg-id="1454426" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454426&extension=ts&play_token=GXMvTyD1kp
+#EXTINF:-1 tvg-id="1454425" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 02: Leeds United vs Brighton & Hove Albion 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454425&extension=ts&play_token=BrgL22saLa
+#EXTINF:-1 tvg-id="1454415" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 06: Newcastle United vs West Ham United 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454415&extension=ts&play_token=n3kZbmX8El
+#EXTINF:-1 tvg-id="1454414" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 06: Newcastle United vs West Ham United 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454414&extension=ts&play_token=f5WewzIjbr
+#EXTINF:-1 tvg-id="1454413" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 06: Newcastle United vs West Ham United 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454413&extension=ts&play_token=qMXKjMKcc2
+#EXTINF:-1 tvg-id="993042" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",17/05 11:30 PM | UEFA 18 Manchester United vs Atletico Madrid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=993042&extension=ts&play_token=iiutAxYcfh
+#EXTINF:-1 tvg-id="1363980" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.95/images/1363980.png",17/05 11:30 PM | UEFA 18 Manchester United vs Atletico Madrid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1363980&extension=ts&play_token=rq9udjnbKQ
+#EXTINF:-1 tvg-id="1363980" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.95/images/1363980.png",17/05 11:30 PM | UEFA 18 Manchester United vs Atletico Madrid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:32:34:34; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5950ADF5564D3DAC84F94742DF95E3E9
+http://line.iptvgoat.com:80/play/live.php?mac=00:1A:79:32:34:34&stream=1363980&extension=ts&play_token=7pFqDEz8TS
+#EXTINF:-1 tvg-id="1940109" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 11:30 PM | End ICC CWC League Two 2023-27 106th Match Nepal vs United States Of America all | 8K US: SOCCER 48
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940109&extension=ts&play_token=3SPA1EqG3b
+#EXTINF:-1 tvg-id="1940062" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 11:30 PM | End D.C. United vs. St. Louis CITY SC all | 8K US: SOCCER 95
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940062&extension=ts&play_token=BLJV9efZWb
+#EXTINF:-1 tvg-id="1025263" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",17/05 11:30 PM | UEFA 18 Manchester United vs Atletico Madrid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1025263&extension=ts&play_token=G5q027bqrR
+#EXTINF:-1 tvg-id="1924721" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 11:30 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY (US) 8K US: ESPN+ 9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924721&extension=ts&play_token=GNXiJvn8Jz
+#EXTINF:-1 tvg-id="1924718" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",17/05 11:30 PM | ENDED CHELSEA VS. MANCHESTER UNITED (US) 8K US: ESPN+ 12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1924718&extension=ts&play_token=s1hWlGiBCY
+#EXTINF:-1 tvg-id="1939954" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 11:30 PM | End ICC CWC League Two 2023-27 106th Match Nepal vs United States Of America all | 8K CA: SOCCER 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1939954&extension=ts&play_token=gvb5oGxz5Y
+#EXTINF:-1 tvg-id="1488479" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",17/05 11:30 PM | ENDED CHELSEA VS. MANCHESTER UNITED (CA) 8K CA: SPORTSNET 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1488479&extension=ts&play_token=3jSlNNprT3
+#EXTINF:-1 tvg-id="1488477" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",17/05 11:30 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY (CA) 8K CA: SPORTSNET 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1488477&extension=ts&play_token=zxMVpEaGj4
+#EXTINF:-1 tvg-id="1984104" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962",17/05 11:30 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY -02 (BR) 8K BR: DISNEY+ 22
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1984104&extension=ts&play_token=fB9xKn2KU6
+#EXTINF:-1 tvg-id="1984103" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962",17/05 11:30 PM | ENDED CHELSEA VS. MANCHESTER UNITED -02 (BR) 8K BR: DISNEY+ 23
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1984103&extension=ts&play_token=vLRYtVIi40
+#EXTINF:-1 tvg-id="1825993" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 11:30 PM | ENDED FOTBOLL: WOMEN'S SUPER LEAGUE CHELSEA-MANCHESTER UNITED (SE) 8K SE: PLAY+ 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1825993&extension=ts&play_token=fltk3CgGL9
+#EXTINF:-1 tvg-id="1825987" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 11:30 PM | ENDED CHELSEA MANCHESTER UNITED (SE) 8K SE: PLAY+ 16
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1825987&extension=ts&play_token=2qsAs4hQRA
+#EXTINF:-1 tvg-id="1005965" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14003.jpg?5075",17/05 11:30 PM | ENDED CHELSEA MANCHESTER UNITED (SE) 8K SE: TV4 PLAY 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1005965&extension=ts&play_token=9vEvOyJDlx
+#EXTINF:-1 tvg-id="1128629" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13844.png?ver=3041",17/05 11:30 PM | LIVE CHELSEA MANCHESTER UNITED (NO) 8K NO: VGTV 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1128629&extension=ts&play_token=A2ajQjSmr4
+#EXTINF:-1 tvg-id="1634725" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.118/picons/logos/logos/tv-4-play.png",17/05 11:30 PM | ENDED CHELSEA MANCHESTER UNITED (SE) 8K SE: TV4 PLAY 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1634725&extension=ts&play_token=tIC7J1Dxcn
+#EXTINF:-1 tvg-id="2021238" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PLAYPLUS.png",17/05 11:30 PM | ENDED FOTBOLL: WOMEN'S SUPER LEAGUE CHELSEA-MANCHESTER UNITED (SE) 8K SE: PLAY+ 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2021238&extension=ts&play_token=oltF5BjDvp
+#EXTINF:-1 tvg-id="1675568" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.118/picons/logos/logos/VGTV.png",17/05 11:30 PM | LIVE CHELSEA MANCHESTER UNITED (NO) 8K NO: VGTV 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1675568&extension=ts&play_token=QwvlbMT2TW
+#EXTINF:-1 tvg-id="2062082" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 11:30 PM | End ICC CWC League Two 2023-27 106th Match Nepal vs United States Of America all | 8K US: SOCCER 48
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062082&extension=ts&play_token=SOgtuazOSP
+#EXTINF:-1 tvg-id="2062035" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 11:30 PM | End D.C. United vs. St. Louis CITY SC all | 8K US: SOCCER 95
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062035&extension=ts&play_token=3QxpDQ9KM0
+#EXTINF:-1 tvg-id="2058129" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 11:30 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY (US) 8K US: ESPN+ 9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058129&extension=ts&play_token=YhZwP9EEAQ
+#EXTINF:-1 tvg-id="2058126" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",17/05 11:30 PM | ENDED CHELSEA VS. MANCHESTER UNITED (US) 8K US: ESPN+ 12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2058126&extension=ts&play_token=3IlTGF0tSp
+#EXTINF:-1 tvg-id="1916417" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177349.png",17/05 11:30 PM | ENDED CHELSEA VS. MANCHESTER UNITED (CA) 8K CA: SPORTSNET 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1916417&extension=ts&play_token=jNudzcIyQ2
+#EXTINF:-1 tvg-id="1916415" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177349.png",17/05 11:30 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY (CA) 8K CA: SPORTSNET 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1916415&extension=ts&play_token=0GlskRsIpg
+#EXTINF:-1 tvg-id="2062329" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 11:30 PM | End ICC CWC League Two 2023-27 106th Match Nepal vs United States Of America all | 8K CA: SOCCER 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062329&extension=ts&play_token=kQVW1ELoRk
+#EXTINF:-1 tvg-id="2070612" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png",17/05 11:30 PM | ENDED WEST HAM UNITED VS. MANCHESTER CITY -02 (BR) 8K BR: DISNEY+ 22
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070612&extension=ts&play_token=Df1BB68aqt
+#EXTINF:-1 tvg-id="2070611" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png",17/05 11:30 PM | ENDED CHELSEA VS. MANCHESTER UNITED -02 (BR) 8K BR: DISNEY+ 23
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070611&extension=ts&play_token=1wpFopzisy
+#EXTINF:-1 tvg-id="1538120" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",17/05 11:30 PM | FAWSL: Chelsea vs Manchester United @ :Sportsnet+ 05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538120&extension=ts&play_token=tVqi9ZaMXU
+#EXTINF:-1 tvg-id="1538118" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13748.png?ver=952",17/05 11:30 PM | FAWSL: West Ham United vs Manchester City @ :Sportsnet+ 07
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1538118&extension=ts&play_token=c1EySFxeCD
+#EXTINF:-1 tvg-id="1672263" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962",17/05 11:30 PM | (MX) (Disney 043) Fort Lauderdale United vs. Sporting Jax ( :05)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1672263&extension=ts&play_token=zVe0FD0FPE
+#EXTINF:-1 tvg-id="1704142" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 11:30 PM | Fotboll: Women's Super League Chelsea vs Manchester United @ :TeliaPlay SE 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704142&extension=ts&play_token=FK6NwzvrvD
+#EXTINF:-1 tvg-id="1704136" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13788.png?ver=74295",17/05 11:30 PM | Chelsea vs Manchester United @ :TeliaPlay SE 16
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704136&extension=ts&play_token=pmOdltUCOx
+#EXTINF:-1 tvg-id="1704027" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14003.jpg?5075",17/05 11:30 PM | Chelsea Manchester United :Tv4 Play SE 04
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1704027&extension=ts&play_token=WucQqHUGmg
+#EXTINF:-1 tvg-id="1990113" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://img.meccdn.com/online-images/logo_196_230815142104204940_org.png",17/05 11:30 PM | Chelsea Manchester United :Tv4 Play SE 04
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1990113&extension=ts&play_token=G4juwXYiTn
+#EXTINF:-1 tvg-id="1991530" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/TeliaPlay.png",17/05 11:30 PM | Fotboll: Women's Super League Chelsea vs Manchester United @ :TeliaPlay SE 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1991530&extension=ts&play_token=BobqArTGkZ
+#EXTINF:-1 tvg-id="1991524" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/TeliaPlay.png",17/05 11:30 PM | Chelsea vs Manchester United @ :TeliaPlay SE 16
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1991524&extension=ts&play_token=DvQkkp7xIi
+#EXTINF:-1 tvg-id="1363960" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 11:30 PM | UEFA 18 Manchester United vs Atletico Madrid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1363960&extension=ts&play_token=tnAb6B4vyC
+#EXTINF:-1 tvg-id="1300601" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="https://go4.pw/USA/FloSport.png",17/05 11:30 PM | US FLO 626 TRACK NJSIAA OUTDOOR MEET OF CHAMPIONS – /
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1300601
+#EXTINF:-1 tvg-id="1454415" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 06: Newcastle United vs West Ham United 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454415&extension=ts&play_token=n3kZbmX8El
+#EXTINF:-1 tvg-id="1454414" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 06: Newcastle United vs West Ham United 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454414&extension=ts&play_token=f5WewzIjbr
+#EXTINF:-1 tvg-id="1454413" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=77394",17/05 11:30 PM | 06: Newcastle United vs West Ham United 17/05
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1454413&extension=ts&play_token=qMXKjMKcc2
+#EXTINF:-1 tvg-id="1162261" group-title="⚽️🇪🇦|Live La Liga-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13848.png?ver=29274",18/05 12:00 AM | LIVE VILLARREAL CF B SEVILLA ATLÉTICO (ES) 8K ES: + 23
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1162261&extension=ts&play_token=286pyBRzn6
+#EXTINF:-1 tvg-id="1672740" group-title="⚽️🇪🇦|Live La Liga-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",18/05 12:00 AM | (MX) (Dazn 018) Sevilla FC _ Real Madrid ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1672740&extension=ts&play_token=vASg2Dm1gj
+#EXTINF:-1 tvg-id="1018307" group-title="⚽️🇨🇵|Live Ligue 1-Match" tvg-logo="https://go4.pw/57.png",18/05 02:00 AM | FR OLYMPIQUE MARSEILLE VS RENNES
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1018307
+#EXTINF:-1 tvg-id="1018316" group-title="⚽️🇨🇵|Live Ligue 1-Match" tvg-logo="https://go4.pw/57.png",18/05 02:00 AM | AR OLYMPIQUE MARSEILLE VS RENNES
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1BBE2D13E1ACA356ACA78C55444EC7AF
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1018316
