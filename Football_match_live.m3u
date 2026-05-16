@@ -1,14 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1918787" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/05 12:45 AM | Live Al-Nassr Gamba Osaka Final all 8K DE: SOCCER 90
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D39ACC19F7E033C78A7A48D6269B9520
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1918787&extension=ts&play_token=qeSeEI2M9p
-#EXTINF:-1 tvg-id="2054962" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/05 12:45 AM | Live Al-Nassr Gamba Osaka Final all 8K DE: SOCCER 90
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F34B66932DFEB7B82956F9FE49471D7C
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2054962&extension=ts&play_token=7sSoPvzXOo
 #EXTINF:-1 tvg-id="1910732" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",17/05 05:30 PM | US (Paramount 010) Roma vs. Lazio ( :15)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
