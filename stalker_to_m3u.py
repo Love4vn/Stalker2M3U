@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Hoàn chỉnh
+Stalker to M3U converter – Hoàn chỉnh + kiểm tra stream thực tế
 - Đọc danh sách portal từ Mac_list.txt (url,mac)
 - Tự động handshake, lấy token, lấy danh sách kênh
+- Kiểm tra stream thử (lấy kênh đầu tiên, gọi create_link và xác thực)
 - Lọc kênh thể thao, loại bỏ kênh SD, loại trừ từ khóa (tên và group)
 - Sắp xếp toàn bộ kênh từ tất cả portal theo thứ tự ưu tiên: Anh → Mỹ → Úc → New Zealand → khác
 - Giữ nguyên group-title gốc, thêm tiền tố [tên_portal]
@@ -342,8 +343,43 @@ def get_token_path_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Op
     return None, None, None
 
 
-def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
-    """Kiểm tra portal: handshake, lấy kênh, trả về thông tin"""
+def check_stream_url(stream_url: str, headers: Dict, debug: bool = False) -> bool:
+    """Kiểm tra stream URL có trả về nội dung hợp lệ không (không bị lỗi 458, access denied, ...)"""
+    try:
+        # Gửi request với range nhỏ để kiểm tra đầu stream (tránh tải toàn bộ)
+        headers_check = headers.copy()
+        headers_check['Range'] = 'bytes=0-1024'
+        resp = requests.get(stream_url, headers=headers_check, timeout=10, stream=True)
+        if debug:
+            print(f"      Stream test response status: {resp.status_code}")
+        if resp.status_code in [200, 206]:
+            # Đọc một phần nội dung để kiểm tra lỗi text
+            content = b''
+            for chunk in resp.iter_content(chunk_size=512):
+                content += chunk
+                if len(content) > 1024:
+                    break
+            content_decoded = content.decode('utf-8', errors='ignore').lower()
+            error_keywords = ['access denied', 'incorrect key', 'invalid', 'error', 'forbidden', 'unauthorized', '458']
+            if any(kw in content_decoded for kw in error_keywords):
+                if debug:
+                    print(f"      Stream test FAILED: error keyword found in response")
+                return False
+            if debug:
+                print(f"      Stream test OK")
+            return True
+        else:
+            if debug:
+                print(f"      Stream test FAILED: HTTP {resp.status_code}")
+            return False
+    except Exception as e:
+        if debug:
+            print(f"      Stream test exception: {e}")
+        return False
+
+
+def test_portal(url: str, mac: str, debug: bool = False, check_stream: bool = True) -> Optional[Dict]:
+    """Kiểm tra portal: handshake, lấy kênh, kiểm tra stream thử, trả về thông tin"""
     if debug:
         print(f"  Getting token for {url}")
     token, handshake_path, base = get_token_path_and_base(url, mac, debug)
@@ -364,6 +400,33 @@ def test_portal(url: str, mac: str, debug: bool = False) -> Optional[Dict]:
             return None
         if debug:
             print(f"  Got {len(channels)} channels")
+        
+        # Kiểm tra stream thực tế nếu yêu cầu
+        if check_stream and channels:
+            # Lấy channel đầu tiên để test
+            test_ch = channels[0]
+            stream_url = stalker.create_link(test_ch.get("cmd", ""))
+            if stream_url:
+                if debug:
+                    print(f"  Testing stream URL (first channel): {stream_url[:100]}...")
+                headers = {
+                    'User-Agent': 'Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3',
+                    'Cookie': f'mac={mac}; stb_lang=en; timezone=GMT',
+                }
+                if token:
+                    headers['Authorization'] = f'Bearer {token}'
+                if check_stream_url(stream_url, headers, debug):
+                    if debug:
+                        print("  Stream test: OK")
+                else:
+                    if debug:
+                        print("  Stream test: FAILED (error or inaccessible)")
+                    return None
+            else:
+                if debug:
+                    print("  Could not create stream URL for test channel")
+                return None
+                
     except Exception as e:
         print(f"Channel fetch failed for {url}: {e}")
         return None
@@ -514,17 +577,17 @@ def main():
     valid = []
     for url, mac in portals:
         print(f"Testing {url} {mac}")
-        res = test_portal(url, mac, debug=True)
+        res = test_portal(url, mac, debug=True, check_stream=True)   # Bật kiểm tra stream
         if res:
             valid.append(res)
             expiry = res["expiry_date"].strftime("%Y-%m-%d") if res["expiry_date"] else "unknown"
             print(f"  -> Active, expiry: {expiry}")
         else:
-            print("  -> Failed or expired")
+            print("  -> Failed or expired (stream test may have failed)")
 
     # Sắp xếp theo expiry (dài nhất trước)
     valid.sort(key=lambda x: x["expiry_date"] if x["expiry_date"] else datetime.min, reverse=True)
-    top = valid[:4]
+    top = valid[:4]   # Lấy tối đa 4 portal (có thể điều chỉnh)
     print(f"\nSelected {len(top)} portal(s):")
     for p in top:
         expiry_str = p["expiry_date"].strftime("%Y-%m-%d") if p["expiry_date"] else "unknown"
