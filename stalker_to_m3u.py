@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-Stalker to M3U converter – Hoàn chỉnh + kiểm tra stream thực tế
+Stalker to M3U converter – Hoàn chỉnh + kiểm tra stream thực tế + sắp xếp theo số lượng kênh
 - Đọc danh sách portal từ Mac_list.txt (url,mac)
 - Tự động handshake, lấy token, lấy danh sách kênh
 - Kiểm tra stream thử (lấy kênh đầu tiên, gọi create_link và xác thực)
+- Lưu tổng số kênh của portal
+- Sắp xếp các portal đã qua kiểm tra theo số lượng kênh giảm dần, chọn 4 portal có nhiều kênh nhất
 - Lọc kênh thể thao, loại bỏ kênh SD, loại trừ từ khóa (tên và group)
 - Sắp xếp toàn bộ kênh từ tất cả portal theo thứ tự ưu tiên: Anh → Mỹ → Úc → New Zealand → khác
 - Giữ nguyên group-title gốc, thêm tiền tố [tên_portal]
@@ -24,6 +26,7 @@ import requests
 
 # ========== CẤU HÌNH ==========
 DETAILED_DEBUG = False   # Bật True để xem response chi tiết (hữu ích khi gỡ lỗi expiry)
+MAX_PORTALS = 4          # Số lượng portal tối đa sẽ lấy (dựa trên số kênh nhiều nhất)
 
 # ========== LỚP STALKER LITE ==========
 class StalkerLite:
@@ -346,14 +349,12 @@ def get_token_path_and_base(url: str, mac: str, debug: bool = False) -> Tuple[Op
 def check_stream_url(stream_url: str, headers: Dict, debug: bool = False) -> bool:
     """Kiểm tra stream URL có trả về nội dung hợp lệ không (không bị lỗi 458, access denied, ...)"""
     try:
-        # Gửi request với range nhỏ để kiểm tra đầu stream (tránh tải toàn bộ)
         headers_check = headers.copy()
         headers_check['Range'] = 'bytes=0-1024'
         resp = requests.get(stream_url, headers=headers_check, timeout=10, stream=True)
         if debug:
             print(f"      Stream test response status: {resp.status_code}")
         if resp.status_code in [200, 206]:
-            # Đọc một phần nội dung để kiểm tra lỗi text
             content = b''
             for chunk in resp.iter_content(chunk_size=512):
                 content += chunk
@@ -379,7 +380,7 @@ def check_stream_url(stream_url: str, headers: Dict, debug: bool = False) -> boo
 
 
 def test_portal(url: str, mac: str, debug: bool = False, check_stream: bool = True) -> Optional[Dict]:
-    """Kiểm tra portal: handshake, lấy kênh, kiểm tra stream thử, trả về thông tin"""
+    """Kiểm tra portal: handshake, lấy kênh, kiểm tra stream thử, trả về thông tin kèm số kênh"""
     if debug:
         print(f"  Getting token for {url}")
     token, handshake_path, base = get_token_path_and_base(url, mac, debug)
@@ -398,12 +399,12 @@ def test_portal(url: str, mac: str, debug: bool = False, check_stream: bool = Tr
             if debug:
                 print("  No channels returned")
             return None
+        total_channels = len(channels)
         if debug:
-            print(f"  Got {len(channels)} channels")
+            print(f"  Got {total_channels} channels")
         
         # Kiểm tra stream thực tế nếu yêu cầu
         if check_stream and channels:
-            # Lấy channel đầu tiên để test
             test_ch = channels[0]
             stream_url = stalker.create_link(test_ch.get("cmd", ""))
             if stream_url:
@@ -433,8 +434,12 @@ def test_portal(url: str, mac: str, debug: bool = False, check_stream: bool = Tr
     profile = stalker.get_profile()
     expiry_dt = get_expiry_date(profile)
     return {
-        "url": url, "mac": mac, "stalker": stalker,
-        "profile": profile, "expiry_date": expiry_dt,
+        "url": url,
+        "mac": mac,
+        "stalker": stalker,
+        "profile": profile,
+        "expiry_date": expiry_dt,
+        "total_channels": total_channels,   # Lưu tổng số kênh
     }
 
 
@@ -477,7 +482,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
     all_sport_items = []
 
     for portal in portals:
-        print(f"Processing portal: {portal['url']}")
+        print(f"Processing portal: {portal['url']} (total channels: {portal.get('total_channels', 0)})")
         stalker = portal["stalker"]
         mac = portal["mac"]
         token = stalker.token
@@ -577,21 +582,21 @@ def main():
     valid = []
     for url, mac in portals:
         print(f"Testing {url} {mac}")
-        res = test_portal(url, mac, debug=True, check_stream=True)   # Bật kiểm tra stream
+        res = test_portal(url, mac, debug=True, check_stream=True)
         if res:
             valid.append(res)
             expiry = res["expiry_date"].strftime("%Y-%m-%d") if res["expiry_date"] else "unknown"
-            print(f"  -> Active, expiry: {expiry}")
+            print(f"  -> Active, total channels: {res['total_channels']}, expiry: {expiry}")
         else:
             print("  -> Failed or expired (stream test may have failed)")
 
-    # Sắp xếp theo expiry (dài nhất trước)
-    valid.sort(key=lambda x: x["expiry_date"] if x["expiry_date"] else datetime.min, reverse=True)
-    top = valid[:4]   # Lấy tối đa 4 portal (có thể điều chỉnh)
-    print(f"\nSelected {len(top)} portal(s):")
+    # Sắp xếp theo số lượng kênh giảm dần (portal nào nhiều kênh nhất đứng đầu)
+    valid.sort(key=lambda x: x.get("total_channels", 0), reverse=True)
+    top = valid[:MAX_PORTALS]   # Lấy tối đa MAX_PORTALS portal có nhiều kênh nhất
+    print(f"\nSelected {len(top)} portal(s) with most channels:")
     for p in top:
         expiry_str = p["expiry_date"].strftime("%Y-%m-%d") if p["expiry_date"] else "unknown"
-        print(f"  {p['url']} – expires {expiry_str}")
+        print(f"  {p['url']} – total channels: {p.get('total_channels', 0)}, expires {expiry_str}")
 
     if not top:
         print("No active portals found. Exiting.")
