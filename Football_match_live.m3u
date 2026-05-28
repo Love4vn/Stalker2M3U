@@ -1,36 +1,21 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1360326" group-title="Live UEFA Conference League-Match" tvg-logo="https://go4.pw/SPAIN/VIX.png",28/05 02:00 AM | ES VIX 01 CRYSTAL PALACE @ RAYO VALLECANO – /
+#EXTINF:-1 tvg-id="1940129" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",29/05 06:30 PM | End Belgium U17 Spanien all | 8K US: SOCCER 28
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CD5F87719FCFAE55823F477FCFAB7488
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1360326
-#EXTINF:-1 tvg-id="1312091" group-title="Live UEFA Conference League-Match" tvg-logo="https://go4.pw/USA/para.png",28/05 02:00 AM | US PARAMOUNT 01 CRYSTAL PALACE @ RAYO VALLECANO – /
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 9EEA449F2D2F8E210BD9364FCE5A7496
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940129&extension=ts&play_token=i6B8ueiq2E
+#EXTINF:-1 tvg-id="615639" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 162: 2025 AC Avalanche U17 AAA vs CBHA Bulls U17 22/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CD5F87719FCFAE55823F477FCFAB7488
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1312091
-#EXTINF:-1 tvg-id="1285506" group-title="Live UEFA Conference League-Match" tvg-logo="https://go4.pw/AMERICA/USA/DAZNSPORT1.png",28/05 02:00 AM | CA DAZN 03 FINAL: CRYSTAL PALACE @ RAYO VALLECANO – /
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 9EEA449F2D2F8E210BD9364FCE5A7496
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615639&extension=ts&play_token=gaqlLnHIKp
+#EXTINF:-1 tvg-id="615535" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 266: 2025 OHA vs Mount Academy U17 24/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CD5F87719FCFAE55823F477FCFAB7488
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1285506
-#EXTINF:-1 tvg-id="682968" group-title="Live UEFA Conference League-Match" tvg-logo="https://go4.pw/germany/vip-events.png",28/05 02:00 AM | EN CRYSTAL PALACE VS RAYO VALLECANO
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 9EEA449F2D2F8E210BD9364FCE5A7496
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615535&extension=ts&play_token=wjMs0zVgQt
+#EXTINF:-1 tvg-id="615516" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 285: 2025 BWC Academy U17 vs Pacific Coast U17 24/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CD5F87719FCFAE55823F477FCFAB7488
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/682968
-#EXTINF:-1 tvg-id="1123346" group-title="Live UEFA Conference League-Match" tvg-logo="https://go4.pw/germany/vip-events.png",28/05 02:00 AM | FR CRYSTAL PALACE VS RAYO VALLECANO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CD5F87719FCFAE55823F477FCFAB7488
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1123346
-#EXTINF:-1 tvg-id="682964" group-title="Live UEFA Conference League-Match" tvg-logo="https://go4.pw/germany/vip-events.png",28/05 02:00 AM | AR CRYSTAL PALACE VS RAYO VALLECANO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CD5F87719FCFAE55823F477FCFAB7488
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/682964
-#EXTINF:-1 tvg-id="1024490" group-title="Live UEFA Conference League-Match" tvg-logo="https://go4.pw/germany/vip-events.png",28/05 02:00 AM | SP CRYSTAL PALACE VS RAYO VALLECANO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CD5F87719FCFAE55823F477FCFAB7488
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1024490
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 9EEA449F2D2F8E210BD9364FCE5A7496
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615516&extension=ts&play_token=XC7tcEjczP
