@@ -1,81 +1,41 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="1940129" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",29/05 06:30 PM | End Belgium U17 Spanien all | 8K US: SOCCER 28
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 89AA93DC3D34BD6951B00074F07470B9
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1940129&extension=ts&play_token=cmRWiaGXAY
-#EXTINF:-1 tvg-id="615639" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 162: 2025 AC Avalanche U17 AAA vs CBHA Bulls U17 22/10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 89AA93DC3D34BD6951B00074F07470B9
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615639&extension=ts&play_token=UI1L3T9kUx
-#EXTINF:-1 tvg-id="615535" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 266: 2025 OHA vs Mount Academy U17 24/10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 89AA93DC3D34BD6951B00074F07470B9
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615535&extension=ts&play_token=1sP4MZgUll
-#EXTINF:-1 tvg-id="615516" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 285: 2025 BWC Academy U17 vs Pacific Coast U17 24/10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 89AA93DC3D34BD6951B00074F07470B9
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615516&extension=ts&play_token=Idt8aNBnnw
-#EXTINF:-1 tvg-id="1940129" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",29/05 06:30 PM | End Belgium U17 Spanien all | 8K US: SOCCER 28
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB15B963A457D5D28E7C090D4294CFC9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940129&extension=ts&play_token=RnqzRVgRKY
+#EXTVLCOPT:http-header=Authorization: Bearer D7FDC9A04BE62593052619E4A445D6CB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940129&extension=ts&play_token=XBNncTK7t7
 #EXTINF:-1 tvg-id="615639" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 162: 2025 AC Avalanche U17 AAA vs CBHA Bulls U17 22/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB15B963A457D5D28E7C090D4294CFC9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615639&extension=ts&play_token=tdaKkFQy0M
+#EXTVLCOPT:http-header=Authorization: Bearer D7FDC9A04BE62593052619E4A445D6CB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615639&extension=ts&play_token=Gd5durtQ17
 #EXTINF:-1 tvg-id="615535" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 266: 2025 OHA vs Mount Academy U17 24/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB15B963A457D5D28E7C090D4294CFC9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615535&extension=ts&play_token=xhvPIoMhAW
+#EXTVLCOPT:http-header=Authorization: Bearer D7FDC9A04BE62593052619E4A445D6CB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615535&extension=ts&play_token=jEBAcykqLd
 #EXTINF:-1 tvg-id="615516" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 06:30 PM | Flo (FLSP) 285: 2025 BWC Academy U17 vs Pacific Coast U17 24/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB15B963A457D5D28E7C090D4294CFC9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615516&extension=ts&play_token=9NW9mce426
-#EXTINF:-1 tvg-id="1940129" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",29/05 11:00 PM | End Belgium U17 Spanien all | 8K US: SOCCER 28
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 89AA93DC3D34BD6951B00074F07470B9
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1940129&extension=ts&play_token=cmRWiaGXAY
-#EXTINF:-1 tvg-id="615639" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 11:00 PM | Flo (FLSP) 162: 2025 AC Avalanche U17 AAA vs CBHA Bulls U17 22/10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 89AA93DC3D34BD6951B00074F07470B9
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615639&extension=ts&play_token=UI1L3T9kUx
-#EXTINF:-1 tvg-id="615535" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 11:00 PM | Flo (FLSP) 266: 2025 OHA vs Mount Academy U17 24/10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 89AA93DC3D34BD6951B00074F07470B9
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615535&extension=ts&play_token=1sP4MZgUll
-#EXTINF:-1 tvg-id="615516" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 11:00 PM | Flo (FLSP) 285: 2025 BWC Academy U17 vs Pacific Coast U17 24/10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 89AA93DC3D34BD6951B00074F07470B9
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615516&extension=ts&play_token=Idt8aNBnnw
+#EXTVLCOPT:http-header=Authorization: Bearer D7FDC9A04BE62593052619E4A445D6CB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615516&extension=ts&play_token=KndgyjCv39
 #EXTINF:-1 tvg-id="1940129" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",29/05 11:00 PM | End Belgium U17 Spanien all | 8K US: SOCCER 28
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB15B963A457D5D28E7C090D4294CFC9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940129&extension=ts&play_token=RnqzRVgRKY
+#EXTVLCOPT:http-header=Authorization: Bearer D7FDC9A04BE62593052619E4A445D6CB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940129&extension=ts&play_token=XBNncTK7t7
 #EXTINF:-1 tvg-id="615639" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 11:00 PM | Flo (FLSP) 162: 2025 AC Avalanche U17 AAA vs CBHA Bulls U17 22/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB15B963A457D5D28E7C090D4294CFC9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615639&extension=ts&play_token=tdaKkFQy0M
+#EXTVLCOPT:http-header=Authorization: Bearer D7FDC9A04BE62593052619E4A445D6CB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615639&extension=ts&play_token=Gd5durtQ17
 #EXTINF:-1 tvg-id="615535" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 11:00 PM | Flo (FLSP) 266: 2025 OHA vs Mount Academy U17 24/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB15B963A457D5D28E7C090D4294CFC9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615535&extension=ts&play_token=xhvPIoMhAW
+#EXTVLCOPT:http-header=Authorization: Bearer D7FDC9A04BE62593052619E4A445D6CB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615535&extension=ts&play_token=jEBAcykqLd
 #EXTINF:-1 tvg-id="615516" group-title="Live Euro-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",29/05 11:00 PM | Flo (FLSP) 285: 2025 BWC Academy U17 vs Pacific Coast U17 24/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB15B963A457D5D28E7C090D4294CFC9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615516&extension=ts&play_token=9NW9mce426
+#EXTVLCOPT:http-header=Authorization: Bearer D7FDC9A04BE62593052619E4A445D6CB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=615516&extension=ts&play_token=KndgyjCv39
