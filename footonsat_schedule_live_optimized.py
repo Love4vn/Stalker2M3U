@@ -73,7 +73,9 @@ PATTERN_NOWTV_PREFIX = re.compile(r'^NOWTV[\|\s]*', re.I)   # NEW
 ALLOWED_FOOTBALL_LEAGUES = {
     "Premier League", "Serie A", "La Liga", "Bundesliga", "Ligue 1",
     "UEFA Champions League", "UEFA Europa League", "UEFA Europa Conference League",
-    "UEFA Euro", "FA Cup", "League Cup"
+    "UEFA Euro", "FA Cup", "League Cup",
+    "International Friendly",            # Đã thêm
+    "FIFA World Cup"                     # THÊM DÒNG NÀY
 }
 
 COUNTRY_CODES: Set[str] = {
