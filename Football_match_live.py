@@ -42,7 +42,9 @@ M3U_FETCH_WORKERS = 40
 ALLOWED_FOOTBALL_LEAGUES = {
     "Premier League", "Serie A", "La Liga", "Bundesliga", "Ligue 1",
     "UEFA Champions League", "UEFA Europa League", "UEFA Europa Conference League",
-    "UEFA Euro", "FA Cup", "League Cup"
+    "UEFA Euro", "FA Cup", "League Cup",
+    "International Friendly",            # Đã thêm
+    "FIFA World Cup"                     # THÊM DÒNG NÀY
 }
 
 LEAGUE_MAPPING = {
@@ -94,6 +96,8 @@ LEAGUE_GROUP_NAME = {
     "UEFA Euro": "Live Euro-Match",
     "FA Cup": "Live FA, League Cup-Match",
     "League Cup": "Live FA, League Cup-Match",
+    "FIFA World Cup": "🏆|Live FIFA World Cup-Match",           # THÊM DÒNG NÀY
+    "International Friendly": "🌍|Live International Friendly-Match"
 }
 
 # ================== TEAM NAME MAPPING ==================
