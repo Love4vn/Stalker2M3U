@@ -1,41 +1,56 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2040505" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",04/06 06:30 PM | Italien U17 Spanien U17 Halbfinale UEFA U17-EM | 8K DE: DAZN 20
+#EXTINF:-1 tvg-id="2054950" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",04/06 11:00 PM | Northern Ireland vs. Guinea all | 8K DE: SOCCER 102
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 624ACED6BFA3BE8653389A3B7A3600EC
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040505&extension=ts&play_token=reShM8GMLG
-#EXTINF:-1 tvg-id="2040494" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",04/06 06:30 PM | Live Belgien U17 Frankreich U17 Halbfinale UEFA U17-EM 8K DE: DAZN 31
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2054950&extension=ts&play_token=4DwMqiMqt4
+#EXTINF:-1 tvg-id="2054954" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",04/06 11:00 PM | Slovenia vs. Cyprus all | 8K DE: SOCCER 98
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 624ACED6BFA3BE8653389A3B7A3600EC
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040494&extension=ts&play_token=IT5DiM9fAM
-#EXTINF:-1 tvg-id="2055002" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",04/06 06:30 PM | Live Belgium U17 France U17 Semi-final all 8K DE: SOCCER 50
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 624ACED6BFA3BE8653389A3B7A3600EC
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055002&extension=ts&play_token=0hpgYnGa1l
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2054954&extension=ts&play_token=WsDJh6qTYL
 #EXTINF:-1 tvg-id="2040505" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",05/06 12:00 AM | Italien U17 Spanien U17 Halbfinale UEFA U17-EM | 8K DE: DAZN 20
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 624ACED6BFA3BE8653389A3B7A3600EC
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040505&extension=ts&play_token=reShM8GMLG
-#EXTINF:-1 tvg-id="2040494" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",05/06 12:00 AM | Live Belgien U17 Frankreich U17 Halbfinale UEFA U17-EM 8K DE: DAZN 31
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2040505&extension=ts&play_token=2JMHXiUEOi
+#EXTINF:-1 tvg-id="2040495" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",05/06 12:00 AM | End Belgien U17 Frankreich U17 Halbfinale UEFA U17-EM | 8K DE: DAZN 30
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 624ACED6BFA3BE8653389A3B7A3600EC
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040494&extension=ts&play_token=IT5DiM9fAM
-#EXTINF:-1 tvg-id="2055002" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 12:00 AM | Live Belgium U17 France U17 Semi-final all 8K DE: SOCCER 50
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2040495&extension=ts&play_token=rocmRWBD0R
+#EXTINF:-1 tvg-id="2055002" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 12:00 AM | End Belgium U17 France U17 Semi-final all | 8K DE: SOCCER 50
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 624ACED6BFA3BE8653389A3B7A3600EC
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055002&extension=ts&play_token=0hpgYnGa1l
-#EXTINF:-1 tvg-id="2016270" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/VIAPLAY.png",05/06 12:00 AM | LANDSKAMP ANDORRA LIECHTENSTEIN (SE) 8K SE: VIAPLAY 9
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2055002&extension=ts&play_token=nEO6h5xabs
+#EXTINF:-1 tvg-id="2054946" group-title="Live Euro-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 12:00 AM | Italy U17 Spain U17 Semi-final all | 8K DE: SOCCER 106
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 624ACED6BFA3BE8653389A3B7A3600EC
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2016270&extension=ts&play_token=9xxtwhN9yk
-#EXTINF:-1 tvg-id="1735571" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/VIAPLAY.png",05/06 12:00 AM | PRIVATLANDSKAMP ANDORRA LIECHTENSTEIN (NO) 8K NO: VIAPLAY 7
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2054946&extension=ts&play_token=4wL426mxxg
+#EXTINF:-1 tvg-id="2054947" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 12:00 AM | Sweden vs. Greece all | 8K DE: SOCCER 105
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 624ACED6BFA3BE8653389A3B7A3600EC
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1735571&extension=ts&play_token=2jXEo7rouW
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2054947&extension=ts&play_token=kc0imCOHcv
+#EXTINF:-1 tvg-id="2066945" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 12:00 AM | Andorra vs. Liechtenstein all | 8K BR: SOCCER 12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2066945&extension=ts&play_token=sG5WrvYIGV
+#EXTINF:-1 tvg-id="2054949" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 12:00 AM | Andorra vs. Liechtenstein all | 8K DE: SOCCER 103
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2054949&extension=ts&play_token=8fHptgcMFt
+#EXTINF:-1 tvg-id="2066952" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 02:10 AM | France vs. Côte d'Ivoire all | 8K BR: SOCCER 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2066952&extension=ts&play_token=jw4OutOi08
+#EXTINF:-1 tvg-id="2054931" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 02:10 AM | End France vs. Côte d'Ivoire all | 8K DE: SOCCER 121
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 508FC367A79548E2A9B528036E81BEFA
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2054931&extension=ts&play_token=m5Iyw4rnnF
