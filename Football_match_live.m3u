@@ -1,11 +1,71 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2066952" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 02:10 AM | France vs. Côte d'Ivoire all | 8K BR: SOCCER 5
+#EXTINF:-1 tvg-id="2062033" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 07:00 AM | End Czechia vs. Guatemala all | 8K US: SOCCER 97
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062033&extension=ts&play_token=cP5uWbqn5m
+#EXTINF:-1 tvg-id="2062032" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 07:00 AM | End Czechia vs. Guatemala all | 8K US: SOCCER 98
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062032&extension=ts&play_token=WatzC6bTNb
+#EXTINF:-1 tvg-id="2062282" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 07:00 AM | Czechia vs. Guatemala all | 8K CA: SOCCER 49
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062282&extension=ts&play_token=38oOFvmBrr
+#EXTINF:-1 tvg-id="2066934" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 07:00 AM | Czechia vs. Guatemala all | 8K BR: SOCCER 23
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2066934&extension=ts&play_token=7eGpDILb4n
+#EXTINF:-1 tvg-id="2054921" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 07:00 AM | Czechia vs. Guatemala all | 8K DE: SOCCER 131
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2054921&extension=ts&play_token=omLwA8Pw81
+#EXTINF:-1 tvg-id="2066934" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 07:00 AM | Czechia vs. Guatemala all | 8K BR: SOCCER 23
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FD4A764EDF5334DA430754DCA61E88A4
-http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2066952&extension=ts&play_token=35rdOxGWFp
-#EXTINF:-1 tvg-id="2054931" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 02:10 AM | France vs. Côte d'Ivoire all | 8K DE: SOCCER 121
+#EXTVLCOPT:http-header=Authorization: Bearer 453C0DD652AB30259D701062B437EA7F
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2066934&extension=ts&play_token=gQ6YDWLHcF
+#EXTINF:-1 tvg-id="2054921" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 07:00 AM | Czechia vs. Guatemala all | 8K DE: SOCCER 131
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FD4A764EDF5334DA430754DCA61E88A4
-http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2054931&extension=ts&play_token=CelopFSOiz
+#EXTVLCOPT:http-header=Authorization: Bearer 453C0DD652AB30259D701062B437EA7F
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2054921&extension=ts&play_token=hsBHg2dBjN
+#EXTINF:-1 tvg-id="2062022" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 09:00 AM | End Mexico vs. Serbia all | 8K US: SOCCER 108
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062022&extension=ts&play_token=SA1QufA8dO
+#EXTINF:-1 tvg-id="2062020" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 09:00 AM | Mexico vs. Serbia all | 8K US: SOCCER 110
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062020&extension=ts&play_token=J2xxxwvdKp
+#EXTINF:-1 tvg-id="2062247" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 11:00 PM | Georgia vs. Bahrain all | 8K CA: SOCCER 84
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062247&extension=ts&play_token=v70Cis0z6i
+#EXTINF:-1 tvg-id="2066920" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 11:00 PM | Slovakia vs. Montenegro all | 8K BR: SOCCER 37
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2066920&extension=ts&play_token=wR3hIDdFWt
+#EXTINF:-1 tvg-id="2066920" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 11:00 PM | Slovakia vs. Montenegro all | 8K BR: SOCCER 37
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:17:02:32; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 453C0DD652AB30259D701062B437EA7F
+http://globalgnet.live:80/play/live.php?mac=00:1A:79:17:02:32&stream=2066920&extension=ts&play_token=yxkrkk1Lr2
+#EXTINF:-1 tvg-id="2062248" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/06 11:00 PM | Belarus vs. Syria all | 8K CA: SOCCER 83
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2062248&extension=ts&play_token=ct1HUno0w6
+#EXTINF:-1 tvg-id="1868730" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/FIFA.png",06/06 12:00 AM | LIECHTENSTEIN V ESTONIA UEFA QUALIFIERS FIFA WOMEN'S WORLD CUP BRAZIL 2027™ (US) 8K US: FIFA+ 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E6D338117AA18243B3E80581F961D801
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1868730&extension=ts&play_token=HAqHJJxMIG
