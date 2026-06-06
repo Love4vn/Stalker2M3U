@@ -938,45 +938,59 @@ async def main():
     all_games = merged_games
     print(f"✅ Sau khi gộp: {len(all_games)} trận bóng đá duy nhất")
 
-    print("📥 Tải M3U...")
+    print("📥 Đọc M3U từ file local...")
     cached = CacheManager.get_cache()
 
     if cached:
         print(f"   Từ cache: {len(cached)} kênh")
         channels = cached
     else:
-        m3u_links = []
+        # Đọc danh sách file .m3u cần dùng (từ M3U_list.txt)
+        m3u_files = []
         try:
             with open(M3U_LIST_FILE, 'r', encoding='utf-8') as f:
-                m3u_links = [line.strip() for line in f if line.strip().startswith('http')]
-        except:
-            pass
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    # Nếu là URL, trích xuất tên file cuối cùng
+                    if line.startswith('http'):
+                        filename = line.split('/')[-1].split('?')[0]
+                        if filename.endswith('.m3u'):
+                            m3u_files.append(filename)
+                    else:
+                        # Nếu là đường dẫn tương đối, giữ nguyên
+                        if line.endswith('.m3u'):
+                            m3u_files.append(line)
+        except Exception as e:
+            print(f"   ⚠️ Không thể đọc {M3U_LIST_FILE}: {e}")
+            m3u_files = []
 
-        print(f"   {len(m3u_links)} URLs")
+        # Nếu không có file nào, thử tìm tất cả file .m3u trong thư mục hiện tại
+        if not m3u_files:
+            import glob
+            m3u_files = glob.glob("*.m3u")
+            print(f"   🔍 Tự động tìm thấy {len(m3u_files)} file .m3u: {m3u_files}")
 
-        loop = asyncio.get_event_loop()
+        print(f"   📄 Số file M3U cần đọc: {len(m3u_files)}")
+
         all_channels = []
-
-        batch_size = M3U_FETCH_WORKERS
-        for i in range(0, len(m3u_links), batch_size):
-            batch = m3u_links[i:i+batch_size]
-            with ThreadPoolExecutor(max_workers=M3U_FETCH_WORKERS) as ex:
-                contents = await asyncio.gather(*[
-                    loop.run_in_executor(ex, fetch_text_sync, url)
-                    for url in batch
-                ])
-
-            for content in contents:
+        for filename in m3u_files:
+            try:
+                with open(filename, 'r', encoding='utf-8') as f:
+                    content = f.read()
                 if content:
                     parsed = parse_m3u_fast(content)
                     all_channels.extend(parsed)
-
-            print(f"      {min(i + batch_size, len(m3u_links))}/{len(m3u_links)}")
+                    print(f"      ✅ Đọc {filename}: {len(parsed)} kênh")
+                else:
+                    print(f"      ⚠️ {filename} rỗng")
+            except Exception as e:
+                print(f"      ❌ Lỗi đọc {filename}: {e}")
 
         channels = list({ch['url']: ch for ch in all_channels}.values())
         CacheManager.save_cache(channels)
-
-    print(f"   ✅ {len(channels)} kênh")
+        print(f"   ✅ Tổng cộng {len(channels)} kênh hợp lệ")
 
     for ch in channels:
         ch['_clean_match'] = re.sub(r'[|:/-]', ' ', ch['name'])
