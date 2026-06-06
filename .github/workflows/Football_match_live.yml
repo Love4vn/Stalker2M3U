@@ -24,6 +24,10 @@ jobs:
           pip install curl_cffi pycountry
           pip install aiohttp pyyaml
 
+      - name: Convert URLs to local paths in M3U_list.txt
+        run: |
+          sed -i 's|https://raw.githubusercontent.com/Love4vn/Stalker2M3U/1/||g' M3U_list.txt
+      
       - name: Run script
         run: python Football_match_live.py --no-footonsat --skip-validation
 
