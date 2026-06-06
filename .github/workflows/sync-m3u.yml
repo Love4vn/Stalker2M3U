@@ -42,11 +42,11 @@ jobs:
         run: |
           cp *.m3u public-repo/
 
-      - name: Commit and push
+      - name: Commit and push to public repo
         run: |
           cd public-repo
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add *.m3u
           git diff --quiet && git diff --staged --quiet || git commit -m "Sync m3u files from private repo (triggered by ${{ github.event.workflow_run.name }})"
-          git push origin main
+          git push -u origin main
