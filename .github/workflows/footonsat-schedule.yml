@@ -1,8 +1,8 @@
 name: FootOnSat Schedule (24h tới)
 
 on:
-  schedule:
-    - cron: '10 */7 * * *'
+  #schedule:
+  #  - cron: '10 */7 * * *'
   workflow_dispatch:
 
 permissions:
