@@ -35,7 +35,7 @@ jobs:
 
       - name: Clone public repo (dùng PAT)
         run: |
-          git clone https://x-access-token:${{ secrets.PAT_PUBLIC_REPO }}@github.com/your-username/Stalker2M3U-public.git public-repo
+          git clone https://x-access-token:${{ secrets.PAT_PUBLIC_REPO }}@github.com/Love4vn/Stalker2M3U-public.git public-repo
           rm -f public-repo/*.m3u   # xoá .m3u cũ trong public repo
 
       - name: Copy all .m3u files
