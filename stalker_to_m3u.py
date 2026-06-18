@@ -447,7 +447,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
     """Tạo file M3U từ danh sách portal, sắp xếp toàn bộ kênh theo thứ tự ưu tiên quốc gia"""
     # ========== TỪ KHÓA LỌC ==========
     SPORTS_KEYWORDS = [
-        "sport", "sports", "Šport", "football", "soccer", "tennis", "golf", "tudn", "telemundo", "usa network", "paramount+",
+        "worldcup", "sport", "sports", "Šport", "football", "soccer", "tennis", "golf", "tudn", "telemundo", "usa network", "paramount+",
         "motorsport", "formula 1", "f1", "hub premier", "premier league", "viaplay", "disney+ premium",
         "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
         "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
