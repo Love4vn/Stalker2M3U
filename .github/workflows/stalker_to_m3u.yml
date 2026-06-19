@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 2          # Lấy 2 commit gần nhất để so sánh thay đổi
+          fetch-depth: 2
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -24,40 +26,27 @@ jobs:
       - name: Run script
         run: python stalker_to_m3u.py
       - name: Commit and push if changed
+        id: commit
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add Mac_playlist.m3u
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes to commit"
+            echo "changed=false" >> $GITHUB_OUTPUT
             exit 0
           fi
           git commit -m "Update Mac_playlist.m3u"
-          # Kéo thay đổi từ remote về và rebase để tránh lỗi push rejected
           git pull --rebase origin ${{ github.ref_name }}
           git push origin ${{ github.ref_name }}
+          echo "changed=true" >> $GITHUB_OUTPUT
 
   trigger_others:
     runs-on: ubuntu-latest
     needs: [build]
-    if: success()
+    if: needs.build.outputs.changed == 'true'
     steps:
-      - name: Checkout để kiểm tra Mac_playlist.m3u
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-      - name: Kiểm tra file Mac_playlist.m3u có thay đổi không
-        id: check_mac
-        run: |
-          if git diff HEAD~1 HEAD --name-only | grep -q "Mac_playlist.m3u"; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "✅ Phát hiện Mac_playlist.m3u thay đổi"
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-            echo "⚠️ Mac_playlist.m3u không thay đổi, bỏ qua trigger"
-          fi
       - name: Trigger FootOnSat_Optimize
-        if: steps.check_mac.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.ACTIONS_PAT }}
         run: |
@@ -68,7 +57,6 @@ jobs:
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/FootOnSat_Optimize.yml/dispatches \
             -d '{"ref":"main"}'
       - name: Trigger Football_match_live
-        if: steps.check_mac.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.ACTIONS_PAT }}
         run: |
