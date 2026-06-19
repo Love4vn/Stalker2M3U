@@ -55,7 +55,7 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token $GH_TOKEN" \
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/FootOnSat_Optimize.yml/dispatches \
-            -d '{"ref":"main"}'
+            -d '{"ref":"1"}'
       - name: Trigger Football_match_live
         env:
           GH_TOKEN: ${{ secrets.ACTIONS_PAT }}
@@ -65,4 +65,4 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token $GH_TOKEN" \
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/Football_match_live.yml/dispatches \
-            -d '{"ref":"main"}'
+            -d '{"ref":"1"}'
