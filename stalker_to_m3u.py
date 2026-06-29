@@ -455,7 +455,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
         "manchester city", "manchester united", "newcastle", "nottingham forest", "sunderland", "tottenham hotspur",
         "west ham united", "wolverhampton", "bayern", "bayern munich", "borussia dortmund", "bayer leverkusen", "inter milan",
         "ac milan", "napoli", "barcelona", "real madrid", "atlético", "atletico madrid", "psg", "paris saint-germain", "olympique marseille",
-        "antena", "bbc1", "bbc one", "bbc 1", "bnt", "hrt", "ictimai", "itv", "m6", "npo", "orf", "rai", "rsi la", "rtbf la", "rtk", "rts", "RTVE", "RTÉ", "Rustavi", "RUV Sjonvarpid", "SABC", "Sigma TV", "Slovenija TV", "STV Scotland", "UTV Northern Ireland", "VRT 1 Belgium", "ZDF Deutschland"
+        "antena", "bbc1", "bbc one", "bbc 1", "bbc2", "bbc two", "bbc 2", "rds2", "rds 2", "bnt", "hrt", "ictimai", "itv", "m6", "npo", "orf", "rai", "rsi la", "rtbf la", "rtk", "rts", "RTVE", "RTÉ", "Rustavi", "RUV Sjonvarpid", "SABC", "Sigma TV", "Slovenija TV", "STV Scotland", "UTV Northern Ireland", "VRT 1 Belgium", "ZDF Deutschland"
     ]
     EXCLUDE_KEYWORDS = [
         "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
