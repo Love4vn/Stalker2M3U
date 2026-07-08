@@ -199,6 +199,26 @@ http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1458577&ext
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 04E3703B8AB6A0FF4DC74BE45D3B8476
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1458573&extension=ts&play_token=JJ9jdcQs4y
+#EXTINF:-1 tvg-id="325021" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8263.jpg?37574",08/07 07:15 PM | Wimbledon (US: ESPN 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=325021&extension=ts&play_token=J2aNDIzMLE
+#EXTINF:-1 tvg-id="325021" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8263.jpg?37574",08/07 07:15 PM | Wimbledon (US: ESPN 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325021&extension=ts&play_token=Z2x7Fpd4RO
+#EXTINF:-1 tvg-id="45580" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/45580.png",08/07 07:15 PM | Wimbledon (US| ESPN 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=45580&extension=ts&play_token=DHMnGrqkfS
+#EXTINF:-1 tvg-id="45580" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/45580.png",08/07 07:15 PM | Wimbledon (US| ESPN 2 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 04E3703B8AB6A0FF4DC74BE45D3B8476
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=45580&extension=ts&play_token=KlI9rk6aZG
 #EXTINF:-1 tvg-id="1367448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13955.png?ver=85428",08/07 07:15 PM | Wimbledon (CA: FUBO PPV SPORTS ᵁᴴᴰ ³⁸⁴⁰ᴾ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -239,26 +259,6 @@ http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=45579&ext
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 04E3703B8AB6A0FF4DC74BE45D3B8476
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=45579&extension=ts&play_token=larmAW5RX3
-#EXTINF:-1 tvg-id="325021" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8263.jpg?37574",08/07 07:15 PM | Wimbledon (US: ESPN 2 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=325021&extension=ts&play_token=J2aNDIzMLE
-#EXTINF:-1 tvg-id="325021" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8263.jpg?37574",08/07 07:15 PM | Wimbledon (US: ESPN 2 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325021&extension=ts&play_token=Z2x7Fpd4RO
-#EXTINF:-1 tvg-id="45580" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/45580.png",08/07 07:15 PM | Wimbledon (US| ESPN 2 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=45580&extension=ts&play_token=DHMnGrqkfS
-#EXTINF:-1 tvg-id="45580" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/45580.png",08/07 07:15 PM | Wimbledon (US| ESPN 2 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 04E3703B8AB6A0FF4DC74BE45D3B8476
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=45580&extension=ts&play_token=KlI9rk6aZG
 #EXTINF:-1 tvg-id="498682" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12549.jpg?36672",08/07 07:00 PM | Wimbledon 2026 (CA: RDS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -409,66 +409,6 @@ http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=904213&exte
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 04E3703B8AB6A0FF4DC74BE45D3B8476
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=177347&extension=ts&play_token=z6PQpLtl14
-#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",08/07 07:15 PM | Wimbledon (ZG: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1980754&extension=ts&play_token=h3eN2fAPfV
-#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",08/07 07:15 PM | Wimbledon (OD: ESPN ᴴᴰ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011558&extension=ts&play_token=RFCTBjkD1C
-#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",08/07 07:15 PM | Wimbledon (OD: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011267&extension=ts&play_token=biMFyRWIZO
-#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",08/07 07:15 PM | Wimbledon (NL: ESPN UHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=326256&extension=ts&play_token=6TT4FDHXFB
-#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",08/07 07:15 PM | Wimbledon (ZG: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1980754&extension=ts&play_token=0csGnGMEKF
-#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",08/07 07:15 PM | Wimbledon (OD: ESPN ᴴᴰ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2011558&extension=ts&play_token=QIFk4KNmkI
-#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",08/07 07:15 PM | Wimbledon (OD: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2011267&extension=ts&play_token=CWt0Fzj4W1
-#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",08/07 07:15 PM | Wimbledon (NL: ESPN UHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=326256&extension=ts&play_token=thKBRLmpDM
-#EXTINF:-1 tvg-id="1282769" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ESPN.png",08/07 07:15 PM | Wimbledon (NL| ESPN HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282769&extension=ts&play_token=WJxnrolbMN
-#EXTINF:-1 tvg-id="1282754" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ESPN.png",08/07 07:15 PM | Wimbledon (NL| ESPN FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282754&extension=ts&play_token=aOtFG4QtgC
-#EXTINF:-1 tvg-id="59266" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/59266.png",08/07 07:15 PM | Wimbledon (BR| ESPN)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59266&extension=ts&play_token=5EGAVHGsGO
-#EXTINF:-1 tvg-id="59265" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/59265.png",08/07 07:15 PM | Wimbledon (BR| ESPN HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59265&extension=ts&play_token=Fog3lUltZ4
 #EXTINF:-1 tvg-id="1562490" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8263.jpg?35002",08/07 07:15 PM | Wimbledon (CL: ESPN 2 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -529,6 +469,66 @@ http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282753&e
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59264&extension=ts&play_token=rh3fOAPlfk
+#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",08/07 07:15 PM | Wimbledon (ZG: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1980754&extension=ts&play_token=h3eN2fAPfV
+#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",08/07 07:15 PM | Wimbledon (OD: ESPN ᴴᴰ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011558&extension=ts&play_token=RFCTBjkD1C
+#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",08/07 07:15 PM | Wimbledon (OD: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011267&extension=ts&play_token=biMFyRWIZO
+#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",08/07 07:15 PM | Wimbledon (NL: ESPN UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A74503F2923122F054F09ACF7A557FA9
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=326256&extension=ts&play_token=6TT4FDHXFB
+#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",08/07 07:15 PM | Wimbledon (ZG: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1980754&extension=ts&play_token=0csGnGMEKF
+#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",08/07 07:15 PM | Wimbledon (OD: ESPN ᴴᴰ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2011558&extension=ts&play_token=QIFk4KNmkI
+#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",08/07 07:15 PM | Wimbledon (OD: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2011267&extension=ts&play_token=CWt0Fzj4W1
+#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",08/07 07:15 PM | Wimbledon (NL: ESPN UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8C0C0EA3E323803D9735C53BC8481944
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=326256&extension=ts&play_token=thKBRLmpDM
+#EXTINF:-1 tvg-id="1282769" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ESPN.png",08/07 07:15 PM | Wimbledon (NL| ESPN HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282769&extension=ts&play_token=WJxnrolbMN
+#EXTINF:-1 tvg-id="1282754" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ESPN.png",08/07 07:15 PM | Wimbledon (NL| ESPN FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282754&extension=ts&play_token=aOtFG4QtgC
+#EXTINF:-1 tvg-id="59266" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/59266.png",08/07 07:15 PM | Wimbledon (BR| ESPN)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59266&extension=ts&play_token=5EGAVHGsGO
+#EXTINF:-1 tvg-id="59265" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/59265.png",08/07 07:15 PM | Wimbledon (BR| ESPN HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E1DC1287D5127EADA762F3A6FCEE15F3
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59265&extension=ts&play_token=Fog3lUltZ4
 #EXTINF:-1 tvg-id="1562704" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?37284",08/07 06:50 PM | Wimbledon Dag 10 (NL: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
