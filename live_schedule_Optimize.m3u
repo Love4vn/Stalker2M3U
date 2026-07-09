@@ -1,124 +1,64 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="441540" group-title="Live UEFA Europa League" tvg-logo="http://photo-tmdb.com/stalker_portal/logos/diemasport2hd.png",10/07 01:00 AM | CSKA Sofia vs Derry City (BG: DIEMA SPORT 4K)
+#EXTINF:-1 tvg-id="1107130" group-title="Live UEFA Conference League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13852.png?ver=77207",10/07 02:00 AM | Dinamo City vs Astana (AL-VIP: SUPER SPORT 1 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=441540&extension=ts&play_token=b1h2KDOlGQ
-#EXTINF:-1 tvg-id="441540" group-title="Live UEFA Europa League" tvg-logo="http://photo-tmdb.com/stalker_portal/logos/diemasport2hd.png",10/07 01:00 AM | CSKA Sofia vs Derry City (BG: DIEMA SPORT 4K)
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1107130&extension=ts&play_token=bZUHJQ0waV
+#EXTINF:-1 tvg-id="1107130" group-title="Live UEFA Conference League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13852.png?ver=77207",10/07 02:00 AM | Dinamo City vs Astana (AL-VIP: SUPER SPORT 1 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=441540&extension=ts&play_token=y7Nx3uzoaN
-#EXTINF:-1 tvg-id="294515" group-title="Live UEFA Conference League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3147.jpeg?ver=40716",10/07 01:00 AM | Vllaznia Shkodër vs Malisheva (AL: RTSH SPORT HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=294515&extension=ts&play_token=sPUVzUTNrV
-#EXTINF:-1 tvg-id="294515" group-title="Live UEFA Conference League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3147.jpeg?ver=40716",10/07 01:00 AM | Vllaznia Shkodër vs Malisheva (AL: RTSH SPORT HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=294515&extension=ts&play_token=KyUc5ODQmP
-#EXTINF:-1 tvg-id="1367448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13955.png?ver=85428",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA: FUBO PPV SPORTS ᵁᴴᴰ ³⁸⁴⁰ᴾ)
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1107130&extension=ts&play_token=1CXh1QQuCn
+#EXTINF:-1 tvg-id="1367448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13955.png?ver=85428",10/07 05:00 PM | Wimbledon (CA: FUBO PPV SPORTS ᵁᴴᴰ ³⁸⁴⁰ᴾ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1367448&extension=ts&play_token=qk2zYBycDk
-#EXTINF:-1 tvg-id="1367448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13955.png?ver=85428",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA: FUBO PPV SPORTS ᵁᴴᴰ ³⁸⁴⁰ᴾ)
+#EXTINF:-1 tvg-id="1367448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13955.png?ver=85428",10/07 05:00 PM | Wimbledon (CA: FUBO PPV SPORTS ᵁᴴᴰ ³⁸⁴⁰ᴾ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
 http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1367448&extension=ts&play_token=JEFXkn4UsL
-#EXTINF:-1 tvg-id="1367448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13955.png?ver=85428",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA: FUBO PPV SPORTS ᵁᴴᴰ ³⁸⁴⁰ᴾ)
+#EXTINF:-1 tvg-id="1367448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13955.png?ver=85428",10/07 05:00 PM | Wimbledon (CA: FUBO PPV SPORTS ᵁᴴᴰ ³⁸⁴⁰ᴾ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1367448&extension=ts&play_token=27Llvw9Bnk
-#EXTINF:-1 tvg-id="437219" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?7255",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (US: ESPN USA HD)
+#EXTINF:-1 tvg-id="437219" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?7255",10/07 05:00 PM | Wimbledon (US: ESPN USA HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=437219&extension=ts&play_token=2quUbvMF6Q
-#EXTINF:-1 tvg-id="325020" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?ver=35784",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (US: ESPN HD)
+#EXTINF:-1 tvg-id="325020" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?ver=35784",10/07 05:00 PM | Wimbledon (US: ESPN HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=325020&extension=ts&play_token=ZPxw43oBzV
-#EXTINF:-1 tvg-id="437219" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?7255",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (US: ESPN USA HD)
+#EXTINF:-1 tvg-id="437219" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?7255",10/07 05:00 PM | Wimbledon (US: ESPN USA HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
 http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=437219&extension=ts&play_token=HZvuvaV7d2
-#EXTINF:-1 tvg-id="325020" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?ver=35784",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (US: ESPN HD)
+#EXTINF:-1 tvg-id="325020" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?ver=35784",10/07 05:00 PM | Wimbledon (US: ESPN HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
 http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=325020&extension=ts&play_token=irlnEji9Ip
-#EXTINF:-1 tvg-id="437219" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?7255",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (US: ESPN USA HD)
+#EXTINF:-1 tvg-id="437219" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?7255",10/07 05:00 PM | Wimbledon (US: ESPN USA HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=437219&extension=ts&play_token=SIb6ZLSJkx
-#EXTINF:-1 tvg-id="325020" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?ver=35784",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (US: ESPN HD)
+#EXTINF:-1 tvg-id="325020" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?ver=35784",10/07 05:00 PM | Wimbledon (US: ESPN HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=325020&extension=ts&play_token=OrYBmw1fJp
-#EXTINF:-1 tvg-id="45579" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/45579.png",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (US| ESPN HD)
+#EXTINF:-1 tvg-id="45579" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/45579.png",10/07 05:00 PM | Wimbledon (US| ESPN HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=45579&extension=ts&play_token=DpBVNq7sGj
-#EXTINF:-1 tvg-id="2012640" group-title="🎾|Live Tennis" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/1966.png?58216",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA: TSN 5 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2012640&extension=ts&play_token=oHnGPTZtRB
-#EXTINF:-1 tvg-id="414138" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA EN: TSN 5)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=414138&extension=ts&play_token=fcktOOHJcy
-#EXTINF:-1 tvg-id="1239014" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1966.png?78624",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA: TSN 5 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1239014&extension=ts&play_token=Zv44YrQWrT
-#EXTINF:-1 tvg-id="414138" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA EN: TSN 5)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=414138&extension=ts&play_token=gEwqbQQLFI
-#EXTINF:-1 tvg-id="1239014" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1966.png?78624",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA: TSN 5 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1239014&extension=ts&play_token=15UEGb5VI2
-#EXTINF:-1 tvg-id="414138" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA EN: TSN 5)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=414138&extension=ts&play_token=PEvO5Rrcms
-#EXTINF:-1 tvg-id="1239014" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1966.png?78624",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA: TSN 5 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1239014&extension=ts&play_token=kTOhcUpS38
-#EXTINF:-1 tvg-id="2077045" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177348.png",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA| TSN 5 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2077045&extension=ts&play_token=h25ZxGrHDo
-#EXTINF:-1 tvg-id="904212" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/904212.png",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA| TSN5 FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=904212&extension=ts&play_token=DUzGcEkJxF
-#EXTINF:-1 tvg-id="177348" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177348.png",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (CA| TSN 5 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177348&extension=ts&play_token=xhQCS49Jv7
 #EXTINF:-1 tvg-id="2012644" group-title="🎾|Live Tennis" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/11142.png?24081",10/07 07:30 PM | Wimbledon (CA: TSN 1 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -169,6 +109,56 @@ http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=904216&ex
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177344&extension=ts&play_token=Cy9aaoxtVX
+#EXTINF:-1 tvg-id="2012640" group-title="🎾|Live Tennis" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/1966.png?58216",10/07 06:00 PM | Breakfast at Wimbledon (CA: TSN 5 ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2012640&extension=ts&play_token=oHnGPTZtRB
+#EXTINF:-1 tvg-id="414138" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",10/07 06:00 PM | Breakfast at Wimbledon (CA EN: TSN 5)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=414138&extension=ts&play_token=fcktOOHJcy
+#EXTINF:-1 tvg-id="1239014" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1966.png?78624",10/07 06:00 PM | Breakfast at Wimbledon (CA: TSN 5 ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1239014&extension=ts&play_token=Zv44YrQWrT
+#EXTINF:-1 tvg-id="414138" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",10/07 06:00 PM | Breakfast at Wimbledon (CA EN: TSN 5)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=414138&extension=ts&play_token=gEwqbQQLFI
+#EXTINF:-1 tvg-id="1239014" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1966.png?78624",10/07 06:00 PM | Breakfast at Wimbledon (CA: TSN 5 ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1239014&extension=ts&play_token=15UEGb5VI2
+#EXTINF:-1 tvg-id="414138" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",10/07 06:00 PM | Breakfast at Wimbledon (CA EN: TSN 5)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=414138&extension=ts&play_token=PEvO5Rrcms
+#EXTINF:-1 tvg-id="1239014" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1966.png?78624",10/07 06:00 PM | Breakfast at Wimbledon (CA: TSN 5 ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1239014&extension=ts&play_token=kTOhcUpS38
+#EXTINF:-1 tvg-id="2077045" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177348.png",10/07 06:00 PM | Breakfast at Wimbledon (CA| TSN 5 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2077045&extension=ts&play_token=h25ZxGrHDo
+#EXTINF:-1 tvg-id="904212" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/904212.png",10/07 06:00 PM | Breakfast at Wimbledon (CA| TSN5 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=904212&extension=ts&play_token=DUzGcEkJxF
+#EXTINF:-1 tvg-id="177348" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177348.png",10/07 06:00 PM | Breakfast at Wimbledon (CA| TSN 5 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177348&extension=ts&play_token=xhQCS49Jv7
 #EXTINF:-1 tvg-id="498682" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12549.jpg?36672",10/07 07:30 PM | Wimbledon 2026 (CA: RDS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -219,86 +209,6 @@ http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&s
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177303&extension=ts&play_token=8f9CJtDOVO
-#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (ZG: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1980754&extension=ts&play_token=bak0p7KARL
-#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (OD: ESPN ᴴᴰ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011558&extension=ts&play_token=sRZi73hm31
-#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (OD: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011267&extension=ts&play_token=oQZiJY6xyL
-#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (NL: ESPN UHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=326256&extension=ts&play_token=VXUnCtsTCZ
-#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (ZG: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1980754&extension=ts&play_token=8lN1BrZII4
-#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (OD: ESPN ᴴᴰ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=2011558&extension=ts&play_token=WarAXT7oap
-#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (OD: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=2011267&extension=ts&play_token=tqbjAHQzuH
-#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (NL: ESPN UHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=326256&extension=ts&play_token=ZTnx7S2bu9
-#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (ZG: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1980754&extension=ts&play_token=zWdauD0AsC
-#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (OD: ESPN ᴴᴰ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011558&extension=ts&play_token=4I6mNdrLQV
-#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (OD: ESPN ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011267&extension=ts&play_token=IX4ppD2NAV
-#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (NL: ESPN UHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=326256&extension=ts&play_token=aWTI3sthOE
-#EXTINF:-1 tvg-id="1282769" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ESPN.png",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (NL| ESPN HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282769&extension=ts&play_token=IZUGvp2LxY
-#EXTINF:-1 tvg-id="1282754" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ESPN.png",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (NL| ESPN FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282754&extension=ts&play_token=vkkC4cg6wY
-#EXTINF:-1 tvg-id="59266" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/59266.png",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (BR| ESPN)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59266&extension=ts&play_token=VgK6RXBmyO
-#EXTINF:-1 tvg-id="59265" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/59265.png",10/07 01:00 AM | M. Polmans / S.Hunter - M. Arevalo / J. Ostapenko (BR| ESPN HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59265&extension=ts&play_token=aZFO9TeQgZ
 #EXTINF:-1 tvg-id="425621" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6342.png?26954",10/07 02:00 AM | Wimbledon (FR: BEIN SPORTS MAX 4 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -329,6 +239,86 @@ http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=506653&ex
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=507371&extension=ts&play_token=2IjV6dPFW8
+#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",10/07 05:00 PM | Wimbledon (ZG: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1980754&extension=ts&play_token=bak0p7KARL
+#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 05:00 PM | Wimbledon (OD: ESPN ᴴᴰ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011558&extension=ts&play_token=sRZi73hm31
+#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 05:00 PM | Wimbledon (OD: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011267&extension=ts&play_token=oQZiJY6xyL
+#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",10/07 05:00 PM | Wimbledon (NL: ESPN UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=326256&extension=ts&play_token=VXUnCtsTCZ
+#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",10/07 05:00 PM | Wimbledon (ZG: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1980754&extension=ts&play_token=8lN1BrZII4
+#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 05:00 PM | Wimbledon (OD: ESPN ᴴᴰ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=2011558&extension=ts&play_token=WarAXT7oap
+#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 05:00 PM | Wimbledon (OD: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=2011267&extension=ts&play_token=tqbjAHQzuH
+#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",10/07 05:00 PM | Wimbledon (NL: ESPN UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=326256&extension=ts&play_token=ZTnx7S2bu9
+#EXTINF:-1 tvg-id="1980754" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",10/07 05:00 PM | Wimbledon (ZG: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1980754&extension=ts&play_token=zWdauD0AsC
+#EXTINF:-1 tvg-id="2011558" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 05:00 PM | Wimbledon (OD: ESPN ᴴᴰ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011558&extension=ts&play_token=4I6mNdrLQV
+#EXTINF:-1 tvg-id="2011267" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",10/07 05:00 PM | Wimbledon (OD: ESPN ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011267&extension=ts&play_token=IX4ppD2NAV
+#EXTINF:-1 tvg-id="326256" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/8258.jpg?57490",10/07 05:00 PM | Wimbledon (NL: ESPN UHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CB214F9CDAF5E02C7DDFB4837134DD80
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=326256&extension=ts&play_token=aWTI3sthOE
+#EXTINF:-1 tvg-id="1282769" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ESPN.png",10/07 05:00 PM | Wimbledon (NL| ESPN HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282769&extension=ts&play_token=IZUGvp2LxY
+#EXTINF:-1 tvg-id="1282754" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ESPN.png",10/07 05:00 PM | Wimbledon (NL| ESPN FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282754&extension=ts&play_token=vkkC4cg6wY
+#EXTINF:-1 tvg-id="59266" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/59266.png",10/07 05:00 PM | Wimbledon (BR| ESPN)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59266&extension=ts&play_token=VgK6RXBmyO
+#EXTINF:-1 tvg-id="59265" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/59265.png",10/07 05:00 PM | Wimbledon (BR| ESPN HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=59265&extension=ts&play_token=aZFO9TeQgZ
 #EXTINF:-1 tvg-id="425622" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6340.png?10505",10/07 07:30 PM | Wimbledon (FR: BEIN SPORTS MAX 5 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -544,16 +534,6 @@ http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282745&e
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 992E7AFC422035F240ECD7539C72A738
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1921307&extension=ts&play_token=X4F0p41la1
-#EXTINF:-1 tvg-id="1107130" group-title="Live UEFA Conference League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13852.png?ver=77207",10/07 02:00 AM | Dinamo City vs Astana (AL-VIP: SUPER SPORT 1 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 702C0E59940DFAC9FBD587560C2DA3DB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1107130&extension=ts&play_token=bZUHJQ0waV
-#EXTINF:-1 tvg-id="1107130" group-title="Live UEFA Conference League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13852.png?ver=77207",10/07 02:00 AM | Dinamo City vs Astana (AL-VIP: SUPER SPORT 1 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3D2F18A8D7358D38A23A51FE4ACFFF30
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1107130&extension=ts&play_token=1CXh1QQuCn
 #EXTINF:-1 tvg-id="1032489" group-title="Live Fifa World Cup" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",10/07 02:15 AM | QF vs France vs Morocco (UK| NOW HK NOW SPORTS 4K 616)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
