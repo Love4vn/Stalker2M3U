@@ -1,171 +1,21 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1940138" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live England vs. Argentina all 8K US: SOCCER 19
+#EXTINF:-1 tvg-id="2070914" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15271.jpg?ver=95591",18/07 01:45 AM | PSF 03 Hearts vs Rayo Vallecano 17/07
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 5EF22C59798ED511D2F9DACDC086D881
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2070914&extension=ts&play_token=kLFOuyGSmf
+#EXTINF:-1 tvg-id="2070914" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15271.jpg?ver=95591",18/07 01:45 AM | PSF 03 Hearts vs Rayo Vallecano 17/07
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1940138&extension=ts&play_token=o7H96w4nuK
-#EXTINF:-1 tvg-id="1939941" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live England vs. Argentina all 8K CA: SOCCER 15
+#EXTVLCOPT:http-header=Authorization: Bearer 0350284359AB0E0CAA9E6E495E387E6E
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=2070914&extension=ts&play_token=8Lf1Pl0Snl
+#EXTINF:-1 tvg-id="2070914" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15271.jpg?ver=95591",18/07 01:45 AM | PSF 03 Hearts vs Rayo Vallecano 17/07
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1939941&extension=ts&play_token=sJsaVVpCfx
-#EXTINF:-1 tvg-id="1611036" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",16/07 02:00 AM | Spanish Feed FIFA World Cup 2026 Semifinal England vs Argentina @ :TSN+ 21
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1611036&extension=ts&play_token=flX30T6vUJ
-#EXTINF:-1 tvg-id="1611035" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",16/07 02:00 AM | 2026 FIFA World Cup Semifinal England vs Argentina A @ :TSN+ 22
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1611035&extension=ts&play_token=OH1MnKW9Eb
-#EXTINF:-1 tvg-id="1611021" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",16/07 02:00 AM | 2026 FIFA World Cup Semifinal England vs Argentina B @ :TSN+ 36
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1611021&extension=ts&play_token=6mpHWJYJhw
-#EXTINF:-1 tvg-id="2063950" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live England vs. Argentina all 8K FR: SOCCER 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=2063950&extension=ts&play_token=GBHsL9bMbo
-#EXTINF:-1 tvg-id="1988117" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live RTVE: England vs. Argentina all 8K ES: SOCCER 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1988117&extension=ts&play_token=JhHFSI1a6Z
-#EXTINF:-1 tvg-id="1988116" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | England vs. Argentina all | 8K ES: SOCCER 10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1988116&extension=ts&play_token=nsG49HJkuM
-#EXTINF:-1 tvg-id="1988102" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | End England vs. Argentina all | 8K ES: SOCCER 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1988102&extension=ts&play_token=D0p6ASLbyy
-#EXTINF:-1 tvg-id="1919083" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live CazéTV: England vs. Argentina all 8K BR: SOCCER 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1919083&extension=ts&play_token=jEJ7YCNRAW
-#EXTINF:-1 tvg-id="1919082" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live England vs. Argentina all 8K BR: SOCCER 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5296A4B7A52D4C01B48268502FCD6D91
-http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1919082&extension=ts&play_token=MZDg3vVGMJ
-#EXTINF:-1 tvg-id="1940138" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live England vs. Argentina all 8K US: SOCCER 19
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940138&extension=ts&play_token=G4wX7jk6mw
-#EXTINF:-1 tvg-id="1939941" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live England vs. Argentina all 8K CA: SOCCER 15
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1939941&extension=ts&play_token=VOvdgct26E
-#EXTINF:-1 tvg-id="1611036" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",16/07 02:00 AM | Spanish Feed FIFA World Cup 2026 Semifinal England vs Argentina @ :TSN+ 21
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1611036&extension=ts&play_token=UPQh2TRufk
-#EXTINF:-1 tvg-id="1611035" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",16/07 02:00 AM | 2026 FIFA World Cup Semifinal England vs Argentina A @ :TSN+ 22
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1611035&extension=ts&play_token=6zIxnpxJS4
-#EXTINF:-1 tvg-id="1611021" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",16/07 02:00 AM | 2026 FIFA World Cup Semifinal England vs Argentina B @ :TSN+ 36
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1611021&extension=ts&play_token=CP68ujx9fK
-#EXTINF:-1 tvg-id="2063950" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live England vs. Argentina all 8K FR: SOCCER 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2063950&extension=ts&play_token=6or95baHBC
-#EXTINF:-1 tvg-id="1988117" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live RTVE: England vs. Argentina all 8K ES: SOCCER 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1988117&extension=ts&play_token=Or8CAIYInQ
-#EXTINF:-1 tvg-id="1988116" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | England vs. Argentina all | 8K ES: SOCCER 10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1988116&extension=ts&play_token=3eGdV2nvT7
-#EXTINF:-1 tvg-id="1988102" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | End England vs. Argentina all | 8K ES: SOCCER 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1988102&extension=ts&play_token=yyXS0RHEtZ
-#EXTINF:-1 tvg-id="1919083" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live CazéTV: England vs. Argentina all 8K BR: SOCCER 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1919083&extension=ts&play_token=s55RfmwljN
-#EXTINF:-1 tvg-id="1919082" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",16/07 02:00 AM | Live England vs. Argentina all 8K BR: SOCCER 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D46311CDC86963C77D3716D9BB6D8BF0
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1919082&extension=ts&play_token=dWZLReJtyS
-#EXTINF:-1 tvg-id="2113102" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live England vs. Argentina all 8K FR: SOCCER 9
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer C3D96F1FB46AB9ECAA3E29730A36D01D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2070914&extension=ts&play_token=Wbrsu3C5eJ
+#EXTINF:-1 tvg-id="2114329" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",18/07 01:45 AM | PSF 03 Hearts vs Rayo Vallecano 17/07
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 09FF8000B91EEE32190D5922D46E5897
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113102&extension=ts&play_token=lyk9YcXAgh
-#EXTINF:-1 tvg-id="2062111" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live England vs. Argentina all 8K US: SOCCER 19
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 09FF8000B91EEE32190D5922D46E5897
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062111&extension=ts&play_token=CG6QampkG8
-#EXTINF:-1 tvg-id="2062316" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live England vs. Argentina all 8K CA: SOCCER 15
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 09FF8000B91EEE32190D5922D46E5897
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062316&extension=ts&play_token=qttC0CkTIq
-#EXTINF:-1 tvg-id="2072544" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live RTVE: England vs. Argentina all 8K ES: SOCCER 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 09FF8000B91EEE32190D5922D46E5897
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072544&extension=ts&play_token=V25C3Jnhxv
-#EXTINF:-1 tvg-id="2072529" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | End England vs. Argentina all | 8K ES: SOCCER 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 09FF8000B91EEE32190D5922D46E5897
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072529&extension=ts&play_token=HPJnKBQ5m3
-#EXTINF:-1 tvg-id="2066956" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live CazéTV: England vs. Argentina all 8K BR: SOCCER 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 09FF8000B91EEE32190D5922D46E5897
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2066956&extension=ts&play_token=v0r6HXeCRe
-#EXTINF:-1 tvg-id="2066955" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live England vs. Argentina all 8K BR: SOCCER 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 09FF8000B91EEE32190D5922D46E5897
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2066955&extension=ts&play_token=ECmiRKGfWB
-#EXTINF:-1 tvg-id="2113102" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live England vs. Argentina all 8K FR: SOCCER 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6EED8E022D6DE3136BE4A5EA6C277325
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113102&extension=ts&play_token=keTrNyaPqP
-#EXTINF:-1 tvg-id="2062111" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live England vs. Argentina all 8K US: SOCCER 19
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6EED8E022D6DE3136BE4A5EA6C277325
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062111&extension=ts&play_token=lKQ4vgkI6Y
-#EXTINF:-1 tvg-id="2062316" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live England vs. Argentina all 8K CA: SOCCER 15
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6EED8E022D6DE3136BE4A5EA6C277325
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062316&extension=ts&play_token=OHtp7voGJP
-#EXTINF:-1 tvg-id="2072544" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | Live RTVE: England vs. Argentina all 8K ES: SOCCER 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6EED8E022D6DE3136BE4A5EA6C277325
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072544&extension=ts&play_token=yi6D8TmBS3
-#EXTINF:-1 tvg-id="2072529" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",16/07 02:00 AM | End England vs. Argentina all | 8K ES: SOCCER 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6EED8E022D6DE3136BE4A5EA6C277325
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072529&extension=ts&play_token=HGpucVmeYF
+#EXTVLCOPT:http-header=Authorization: Bearer 76804B65625B237924F6C17F45256942
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2114329&extension=ts&play_token=x39m69Iddh
