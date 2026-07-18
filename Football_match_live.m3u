@@ -1,16 +1,56 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="2063866" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",19/07 04:00 AM | France vs. England all | 8K FR: SOCCER 93
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E2EE5580B608D2AF91A76C5710A02B79
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2063866&extension=ts&play_token=lystyE8V5t
+#EXTINF:-1 tvg-id="1988033" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",19/07 04:00 AM | France vs. England all | 8K ES: SOCCER 93
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E2EE5580B608D2AF91A76C5710A02B79
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1988033&extension=ts&play_token=Tfss9OTLE5
 #EXTINF:-1 tvg-id="1919047" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",19/07 04:00 AM | CazéTV: France vs. England all | 8K BR: SOCCER 37
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 7AF545CC3D8F6038593B07DADF3A1C70
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1919047&extension=ts&play_token=4bLCyb4ax9
-#EXTINF:-1 tvg-id="1919047" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",19/07 04:00 AM | CazéTV: France vs. England all | 8K BR: SOCCER 37
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E2EE5580B608D2AF91A76C5710A02B79
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1919047&extension=ts&play_token=IpTKcsUjUa
+#EXTINF:-1 tvg-id="1919006" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",19/07 04:00 AM | France vs. England all | 8K BR: SOCCER 78
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E632FA67FDC76E83B8CA916D1D9E9FAD
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1919047&extension=ts&play_token=xVeo8d4gUQ
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E2EE5580B608D2AF91A76C5710A02B79
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1919006&extension=ts&play_token=LHTAw36uPh
+#EXTINF:-1 tvg-id="2113018" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",19/07 04:00 AM | France vs. England all | 8K FR: SOCCER 93
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F31670D7F6D6DA6183C714423C41E5D0
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113018&extension=ts&play_token=EbZtOMDCby
+#EXTINF:-1 tvg-id="2072460" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",19/07 04:00 AM | France vs. England all | 8K ES: SOCCER 93
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F31670D7F6D6DA6183C714423C41E5D0
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072460&extension=ts&play_token=f7lZThmSHF
 #EXTINF:-1 tvg-id="2066920" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",19/07 04:00 AM | CazéTV: France vs. England all | 8K BR: SOCCER 37
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2346574C3BB34D229544E50B43E058B7
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2066920&extension=ts&play_token=Bjc5uhFt6H
+#EXTVLCOPT:http-header=Authorization: Bearer F31670D7F6D6DA6183C714423C41E5D0
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2066920&extension=ts&play_token=Hme67f6l1v
+#EXTINF:-1 tvg-id="2066879" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",19/07 04:00 AM | France vs. England all | 8K BR: SOCCER 78
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F31670D7F6D6DA6183C714423C41E5D0
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2066879&extension=ts&play_token=JFDsBl2S9U
+#EXTINF:-1 tvg-id="2113018" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",19/07 04:00 AM | France vs. England all | 8K FR: SOCCER 93
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7EA73673B0B49D1BCF878B3FA825262B
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113018&extension=ts&play_token=srvhajqpVY
+#EXTINF:-1 tvg-id="2072460" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",19/07 04:00 AM | France vs. England all | 8K ES: SOCCER 93
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7EA73673B0B49D1BCF878B3FA825262B
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072460&extension=ts&play_token=AWQNoFdx3X
+#EXTINF:-1 tvg-id="2072460" group-title="🏆|Live FIFA World Cup-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",19/07 04:00 AM | France vs. England all | 8K ES: SOCCER 93
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer B9673668944322D69C24BA2F58222093
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072460&extension=ts&play_token=CjglortXAG
