@@ -1,571 +1,531 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",25/07 11:30 PM |  (UK| BEIN SPORTS 7 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=238270&extension=ts&play_token=6FcZrNF5bi
-#EXTINF:-1 tvg-id="686562" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=686562&extension=ts&play_token=yn0mzP33QU
-#EXTINF:-1 tvg-id="686561" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=686561&extension=ts&play_token=rfkfaWQbMs
 #EXTINF:-1 tvg-id="324994" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?68030",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=324994&extension=ts&play_token=rQnZFQAjKo
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=324994&extension=ts&play_token=3uN34J8KjF
 #EXTINF:-1 tvg-id="325092" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?ver=69335",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=325092&extension=ts&play_token=rHREpvEVrA
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=325092&extension=ts&play_token=lLyiV05QBJ
+#EXTINF:-1 tvg-id="686562" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=686562&extension=ts&play_token=wQ37nNfCUv
+#EXTINF:-1 tvg-id="686561" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=686561&extension=ts&play_token=BeTzm9ofFc
 #EXTINF:-1 tvg-id="324994" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?68030",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=324994&extension=ts&play_token=In2HIiU1U3
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=324994&extension=ts&play_token=BAER3xfAIy
 #EXTINF:-1 tvg-id="325092" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?ver=69335",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325092&extension=ts&play_token=pq3vVf91y6
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325092&extension=ts&play_token=l3OoheqPwW
 #EXTINF:-1 tvg-id="686562" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686562&extension=ts&play_token=M7f1T3Cof2
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686562&extension=ts&play_token=a7DQNRjZPO
 #EXTINF:-1 tvg-id="686561" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686561&extension=ts&play_token=YqknAl19iJ
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686561&extension=ts&play_token=eERiZWDWad
 #EXTINF:-1 tvg-id="324994" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?68030",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=324994&extension=ts&play_token=N66bnNMsMr
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=324994&extension=ts&play_token=kLoqixpolt
 #EXTINF:-1 tvg-id="325092" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?ver=69335",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=325092&extension=ts&play_token=uLoJI7MtMG
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=325092&extension=ts&play_token=l6HXJzIdBa
 #EXTINF:-1 tvg-id="686562" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=686562&extension=ts&play_token=0Vd0ZsWRxO
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=686562&extension=ts&play_token=L9mLCQYSUa
 #EXTINF:-1 tvg-id="686561" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=686561&extension=ts&play_token=VuMkVswSkq
-#EXTINF:-1 tvg-id="45474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/45474.png",25/07 07:00 PM | Hamburg Open (US| TENNIS HD)
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=686561&extension=ts&play_token=cXKAiHAlUC
+#EXTINF:-1 tvg-id="324994" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?68030",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=45474&extension=ts&play_token=5etI4NHOZy
-#EXTINF:-1 tvg-id="811667" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/811667.png",25/07 07:00 PM | Hamburg Open (US| TENNIS CHANNEL)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=324994&extension=ts&play_token=SobDQLL5M0
+#EXTINF:-1 tvg-id="325092" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?ver=69335",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=811667&extension=ts&play_token=omO53nomgS
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=325092&extension=ts&play_token=bOPY7PNIym
+#EXTINF:-1 tvg-id="686562" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=686562&extension=ts&play_token=hQzRKitvcI
+#EXTINF:-1 tvg-id="686561" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (US: TENNIS CHANNEL)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=686561&extension=ts&play_token=7CO4FmJTfo
 #EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",25/07 11:30 PM |  (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=325027&extension=ts&play_token=jsoFPnxQiV
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=325027&extension=ts&play_token=my6Z9Lfxem
 #EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",25/07 11:30 PM |  (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325027&extension=ts&play_token=hqux0ftiKr
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=325027&extension=ts&play_token=Fcmkh1VKO5
 #EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",25/07 11:30 PM |  (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=325027&extension=ts&play_token=iZNGc8pg4R
-#EXTINF:-1 tvg-id="83957" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/83957.png",25/07 11:30 PM |  (US| BEIN SPORTS 7 HD)
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=325027&extension=ts&play_token=ZmhjnWUtJc
+#EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",25/07 11:30 PM |  (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=83957&extension=ts&play_token=M81gyVa2lw
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=325027&extension=ts&play_token=z5r9cOB4NO
 #EXTINF:-1 tvg-id="1568618" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14545.PNG?ver=52669",25/07 07:00 PM | Hamburg Open (GO: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1568618&extension=ts&play_token=bjkDvar3HZ
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1568618&extension=ts&play_token=vjcwG1SGce
 #EXTINF:-1 tvg-id="1568618" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14545.PNG?ver=52669",25/07 07:00 PM | Hamburg Open (GO: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1568618&extension=ts&play_token=50YaalsSm7
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1568618&extension=ts&play_token=exahx33U1j
 #EXTINF:-1 tvg-id="1568618" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14545.PNG?ver=52669",25/07 07:00 PM | Hamburg Open (GO: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1568618&extension=ts&play_token=jS7SmQv6Xh
-#EXTINF:-1 tvg-id="686544" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1568618&extension=ts&play_token=7FEYpnstaz
+#EXTINF:-1 tvg-id="1568618" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14545.PNG?ver=52669",25/07 07:00 PM | Hamburg Open (GO: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=686544&extension=ts&play_token=mV4XbqZWLC
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1568618&extension=ts&play_token=JNXQYhoGIK
 #EXTINF:-1 tvg-id="479708" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?25404",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=479708&extension=ts&play_token=ls0MMFLS8r
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=479708&extension=ts&play_token=r3trQYWaZl
+#EXTINF:-1 tvg-id="686544" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=686544&extension=ts&play_token=U4xNqBn0Bh
 #EXTINF:-1 tvg-id="479708" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?25404",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=479708&extension=ts&play_token=6hO8NcX5lY
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=479708&extension=ts&play_token=S3KSKRvdd0
 #EXTINF:-1 tvg-id="686544" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686544&extension=ts&play_token=2GITGimoP8
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=686544&extension=ts&play_token=uQvGcPhbjd
 #EXTINF:-1 tvg-id="686544" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=686544&extension=ts&play_token=uAwbsQMcb0
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=686544&extension=ts&play_token=vJ4tUq3rhl
 #EXTINF:-1 tvg-id="479708" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?25404",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=479708&extension=ts&play_token=xo4R80OjCp
-#EXTINF:-1 tvg-id="1562704" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?37284",25/07 06:00 PM | : (NL: ZIGGO SPORT 4 ᴿᴬᵂ)
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=479708&extension=ts&play_token=CumZjhNpIv
+#EXTINF:-1 tvg-id="686544" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13749.jpg?ver=36191",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562704&extension=ts&play_token=rxRd65QskX
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=686544&extension=ts&play_token=CsLruvzlpU
+#EXTINF:-1 tvg-id="479708" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12430.jpg?25404",25/07 07:00 PM | Hamburg Open (DE: TENNIS CHANNEL)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=479708&extension=ts&play_token=bjIHTsuGqv
 #EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",25/07 06:00 PM | : (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1980747&extension=ts&play_token=dHygHPZmDS
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1980747&extension=ts&play_token=YN2H6Ibenh
 #EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",25/07 06:00 PM | : (OD: ZIGGO SPORT 4 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011551&extension=ts&play_token=aOvlKQN1By
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=2011551&extension=ts&play_token=uEMh6f51ZF
 #EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",25/07 06:00 PM | : (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011260&extension=ts&play_token=jJT0gOtsof
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=2011260&extension=ts&play_token=sqfb5eza22
 #EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",25/07 06:00 PM | : (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1537608&extension=ts&play_token=0vxiPxwbSB
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1537608&extension=ts&play_token=vp79U5j486
 #EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",25/07 06:00 PM | : (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1980747&extension=ts&play_token=XqgDdEqXDq
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1980747&extension=ts&play_token=kYNmXpSj5P
 #EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",25/07 06:00 PM | : (OD: ZIGGO SPORT 4 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2011551&extension=ts&play_token=RWnklYX1Q8
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2011551&extension=ts&play_token=z0nU6XRRQP
 #EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",25/07 06:00 PM | : (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2011260&extension=ts&play_token=8xsDuW4WQv
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2011260&extension=ts&play_token=XSpodzQanM
 #EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",25/07 06:00 PM | : (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1537608&extension=ts&play_token=TlRK0JwJOc
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1537608&extension=ts&play_token=Fwz0KWeLsn
 #EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",25/07 06:00 PM | : (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1980747&extension=ts&play_token=X6VFs8ued5
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1980747&extension=ts&play_token=Ab4YPLKSeM
 #EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",25/07 06:00 PM | : (OD: ZIGGO SPORT 4 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011551&extension=ts&play_token=A5xJC78ITC
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011551&extension=ts&play_token=tv0egPxsqK
 #EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",25/07 06:00 PM | : (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011260&extension=ts&play_token=bhwoY1HMHf
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011260&extension=ts&play_token=FzkSHVpOOQ
 #EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",25/07 06:00 PM | : (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1537608&extension=ts&play_token=yOKMZO1eN2
-#EXTINF:-1 tvg-id="1283307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",25/07 06:00 PM | : (NL| ZIGGO SPORT 4 4K)
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1537608&extension=ts&play_token=j16JpA77qT
+#EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",25/07 06:00 PM | : (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1283307&extension=ts&play_token=8b8qYS7ED6
-#EXTINF:-1 tvg-id="1761572" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",25/07 06:00 PM | : (NL| ZIGGO SPORT 4 UHD 8K)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1980747&extension=ts&play_token=jBNT5qHmfu
+#EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",25/07 06:00 PM | : (OD: ZIGGO SPORT 4 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1761572&extension=ts&play_token=B8o1CVt2iO
-#EXTINF:-1 tvg-id="1282760" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",25/07 06:00 PM | : (NL| ZIGGO SPORT 4 HD)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2011551&extension=ts&play_token=geWD54c8d2
+#EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",25/07 06:00 PM | : (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282760&extension=ts&play_token=NUyfwmJnBF
-#EXTINF:-1 tvg-id="1282745" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",25/07 06:00 PM | : (NL| ZIGGO SPORT 4 FHD)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2011260&extension=ts&play_token=2KLxyolXBu
+#EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",25/07 06:00 PM | : (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282745&extension=ts&play_token=rS226XaApA
-#EXTINF:-1 tvg-id="1921307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",25/07 06:00 PM | : (NL| ZIGGO SPORT 4 ᴿᴬᵂ ◉)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1921307&extension=ts&play_token=mdB5y3uTQv
-#EXTINF:-1 tvg-id="1294758" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1294758.png",25/07 11:30 PM |  (AR|  BEIN  SPORTS 7 FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1294758&extension=ts&play_token=zc83M19D3Y
-#EXTINF:-1 tvg-id="1330427" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330427.png",25/07 11:30 PM |  (AR| BEIN SPORTS 7 HEVC)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1330427&extension=ts&play_token=CtrltPyhHo
-#EXTINF:-1 tvg-id="1330443" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330443.png",25/07 11:30 PM |  (AR| BEIN SPORTS 7 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1330443&extension=ts&play_token=Oom4aQFpzl
-#EXTINF:-1 tvg-id="1836262" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1836262.png",25/07 11:30 PM |  (BEIN SPORTS FHD 7)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1836262&extension=ts&play_token=Dc3IHIG6Vz
-#EXTINF:-1 tvg-id="1660421" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1660421.png",25/07 11:30 PM |  (BEIN SPORTS 7 4k)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1660421&extension=ts&play_token=W9CdnkEzgI
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1537608&extension=ts&play_token=q4W1GhkoNN
 #EXTINF:-1 tvg-id="544425" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (8K: beIN SP⚽RTS 7 ᴴᴰ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544425&extension=ts&play_token=ZxRyFI4huD
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=544425&extension=ts&play_token=HxM6Z7v8Th
 #EXTINF:-1 tvg-id="544485" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (8K: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544485&extension=ts&play_token=xHQV9XnYAa
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=544485&extension=ts&play_token=JcsznWUdBo
 #EXTINF:-1 tvg-id="544448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (8K: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544448&extension=ts&play_token=dDJr8yydY9
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=544448&extension=ts&play_token=I62rXwhV7T
 #EXTINF:-1 tvg-id="706545" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (SS: beIN SP⚽RTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=706545&extension=ts&play_token=XQrxLozBEm
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=706545&extension=ts&play_token=Z7GSX43Sg6
 #EXTINF:-1 tvg-id="706532" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (SS: beIN SP⚽RTS 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=706532&extension=ts&play_token=FViyoQoTl6
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=706532&extension=ts&play_token=xLwsdbyJ61
 #EXTINF:-1 tvg-id="1353002" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (BE: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1353002&extension=ts&play_token=ibvUI0wmQA
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1353002&extension=ts&play_token=CIqyIGP3fx
 #EXTINF:-1 tvg-id="1352978" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (BE: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1352978&extension=ts&play_token=5IqJbDeRl6
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1352978&extension=ts&play_token=ccEfOCsr2r
 #EXTINF:-1 tvg-id="1352964" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (BE: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1352964&extension=ts&play_token=uYZflBC3Nm
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1352964&extension=ts&play_token=8U3pt8pf1X
 #EXTINF:-1 tvg-id="544829" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (◉: beIN Sp⚽rts 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544829&extension=ts&play_token=uxqO8E4hPx
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=544829&extension=ts&play_token=02rz2CKPAf
 #EXTINF:-1 tvg-id="544815" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (◉: beIN Sp⚽rts 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544815&extension=ts&play_token=D0AtyAjxHU
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=544815&extension=ts&play_token=SGISAM6xO5
 #EXTINF:-1 tvg-id="544799" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (◉: beIN Sp⚽rts 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544799&extension=ts&play_token=XEdv1LXbhK
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=544799&extension=ts&play_token=oZo1QOF0Hk
 #EXTINF:-1 tvg-id="985148" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985148&extension=ts&play_token=f0J62FGJCY
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=985148&extension=ts&play_token=PIfOur7hHF
 #EXTINF:-1 tvg-id="985112" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985112&extension=ts&play_token=zR2OHBKRNq
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=985112&extension=ts&play_token=N9QbC4yneg
 #EXTINF:-1 tvg-id="985094" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985094&extension=ts&play_token=VZ9m8XRx1u
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=985094&extension=ts&play_token=chD902dybf
 #EXTINF:-1 tvg-id="1201193" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (NM: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201193&extension=ts&play_token=FjXXxJVDB6
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1201193&extension=ts&play_token=Jza9oClDYZ
 #EXTINF:-1 tvg-id="1201153" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (NM: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201153&extension=ts&play_token=FplMJSrHvt
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1201153&extension=ts&play_token=J3Hp9CMtN9
 #EXTINF:-1 tvg-id="1201135" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (NM: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201135&extension=ts&play_token=5AuODJvNDC
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1201135&extension=ts&play_token=lpfRbTEyIC
 #EXTINF:-1 tvg-id="1120425" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (SA: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1120425&extension=ts&play_token=wlACDy5HK2
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1120425&extension=ts&play_token=c41tE6M08K
 #EXTINF:-1 tvg-id="1120405" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (SA: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1120405&extension=ts&play_token=RlIrWSaBvp
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1120405&extension=ts&play_token=zplSaYXvgG
 #EXTINF:-1 tvg-id="544425" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (8K: beIN SP⚽RTS 7 ᴴᴰ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544425&extension=ts&play_token=r010nha0rT
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544425&extension=ts&play_token=S6m8R2IsAS
 #EXTINF:-1 tvg-id="544485" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (8K: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544485&extension=ts&play_token=vldRBz4TKC
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544485&extension=ts&play_token=k4X9QSqiQE
 #EXTINF:-1 tvg-id="544448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (8K: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544448&extension=ts&play_token=uIQiBzkfb5
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544448&extension=ts&play_token=FnAcWNp4Fw
 #EXTINF:-1 tvg-id="706545" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (SS: beIN SP⚽RTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706545&extension=ts&play_token=pN5sxpA9Rk
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706545&extension=ts&play_token=2GNUR9EMdH
 #EXTINF:-1 tvg-id="706532" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (SS: beIN SP⚽RTS 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706532&extension=ts&play_token=6K97YEODor
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=706532&extension=ts&play_token=HmANcqTklG
 #EXTINF:-1 tvg-id="1353002" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (BE: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1353002&extension=ts&play_token=P2woKmKnrb
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1353002&extension=ts&play_token=ITSJY5gt8y
 #EXTINF:-1 tvg-id="1352978" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (BE: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1352978&extension=ts&play_token=yu0lcIh7rU
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1352978&extension=ts&play_token=fZLbHtW0QY
 #EXTINF:-1 tvg-id="1352964" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (BE: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1352964&extension=ts&play_token=oUdqRcM41a
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1352964&extension=ts&play_token=WQ6ALKwVR1
 #EXTINF:-1 tvg-id="544829" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (◉: beIN Sp⚽rts 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544829&extension=ts&play_token=CA3LHdC3U0
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544829&extension=ts&play_token=PWPMfB0839
 #EXTINF:-1 tvg-id="544815" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (◉: beIN Sp⚽rts 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544815&extension=ts&play_token=bvAo52Lzp5
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544815&extension=ts&play_token=7YEcrw8t92
 #EXTINF:-1 tvg-id="544799" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (◉: beIN Sp⚽rts 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544799&extension=ts&play_token=4vK7U4W5Oy
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=544799&extension=ts&play_token=UP8rEwAmHZ
 #EXTINF:-1 tvg-id="985148" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985148&extension=ts&play_token=ux7zGlITvJ
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985148&extension=ts&play_token=Usng1KQ2Ab
 #EXTINF:-1 tvg-id="985112" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985112&extension=ts&play_token=pDoNAfFt2o
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985112&extension=ts&play_token=MGgX8nZBKN
 #EXTINF:-1 tvg-id="985094" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985094&extension=ts&play_token=F2XClRabLr
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=985094&extension=ts&play_token=8mh6MzEXJ2
 #EXTINF:-1 tvg-id="1201193" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (NM: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201193&extension=ts&play_token=7Ir3LTumpG
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201193&extension=ts&play_token=e9JAgsjnyj
 #EXTINF:-1 tvg-id="1201153" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (NM: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201153&extension=ts&play_token=LCwHW4UbIV
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201153&extension=ts&play_token=Fr3FZE5E0E
 #EXTINF:-1 tvg-id="1201135" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (NM: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201135&extension=ts&play_token=tgDHT0MuHj
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1201135&extension=ts&play_token=Us0HB0XFNs
 #EXTINF:-1 tvg-id="1120425" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (SA: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120425&extension=ts&play_token=d0MuNeixWd
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120425&extension=ts&play_token=Dh7nahlG99
 #EXTINF:-1 tvg-id="1120405" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",25/07 11:30 PM |  (SA: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120405&extension=ts&play_token=41Dm4NKNgc
-#EXTINF:-1 tvg-id="1562919" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1954.jpg?48182",25/07 03:30 AM | Tenis (RO: DIGI SPORT 2 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562919&extension=ts&play_token=BCqNTdxbc1
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1120405&extension=ts&play_token=EduPsInCtF
 #EXTINF:-1 tvg-id="425560" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3299.png?54930",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=425560&extension=ts&play_token=h6bvJaYJWl
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=425560&extension=ts&play_token=MTuGymoYQW
 #EXTINF:-1 tvg-id="207224" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?35425",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=207224&extension=ts&play_token=nODwjbCY7O
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=207224&extension=ts&play_token=ZrK30fXVkn
 #EXTINF:-1 tvg-id="106947" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?35425",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=106947&extension=ts&play_token=yCZIkiXTw3
-#EXTINF:-1 tvg-id="1562807" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/627.jpg?40391",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562807&extension=ts&play_token=2q90IWxXZg
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=106947&extension=ts&play_token=QsPhEEjSpk
 #EXTINF:-1 tvg-id="425560" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3299.png?54930",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=425560&extension=ts&play_token=cLFpyz2JBy
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=425560&extension=ts&play_token=tWjfMsEATv
 #EXTINF:-1 tvg-id="207224" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?35425",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=207224&extension=ts&play_token=4uoOjiNBQO
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=207224&extension=ts&play_token=wlfhuSSQWj
 #EXTINF:-1 tvg-id="106947" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?35425",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=106947&extension=ts&play_token=ZGmfMnvvF0
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=106947&extension=ts&play_token=6Pzzr9EINB
 #EXTINF:-1 tvg-id="425560" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3299.png?54930",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=425560&extension=ts&play_token=JMnMvAeYMU
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=425560&extension=ts&play_token=crBHu86qIi
 #EXTINF:-1 tvg-id="207224" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?35425",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=207224&extension=ts&play_token=nMoJYCc8yW
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=207224&extension=ts&play_token=fYYZVOoG2m
 #EXTINF:-1 tvg-id="106947" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?35425",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=106947&extension=ts&play_token=muotrxO4Th
-#EXTINF:-1 tvg-id="506560" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/france/506560.png",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR| EUROSPORT 2 FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=106947&extension=ts&play_token=1gPmChkgoy
+#EXTINF:-1 tvg-id="425560" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3299.png?54930",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=506560&extension=ts&play_token=fXy337WVoQ
-#EXTINF:-1 tvg-id="507387" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/france/507387.png",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR| EUROSPORT 2 HD)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=425560&extension=ts&play_token=G4GQXd0N7I
+#EXTINF:-1 tvg-id="207224" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?35425",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=507387&extension=ts&play_token=PckhaaMeFd
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=207224&extension=ts&play_token=E5SDua13qT
+#EXTINF:-1 tvg-id="106947" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?35425",25/07 08:00 PM | Tournoi ATP de Kitzbühel (FR: EUROSPORT 2 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=106947&extension=ts&play_token=lPFaYYJ6r3
 #EXTINF:-1 tvg-id="1602202" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14266.png?95465",25/07 09:00 PM | World Surf League 2026 - Lexus US Open Of Surfing Challenger Series - Dawn Patrol (PT: SPORT TV 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1602202&extension=ts&play_token=3pKyEOBWLI
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=1602202&extension=ts&play_token=j5EqCBhGXm
 #EXTINF:-1 tvg-id="1602202" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14266.png?95465",25/07 09:00 PM | World Surf League 2026 - Lexus US Open Of Surfing Challenger Series - Dawn Patrol (PT: SPORT TV 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1602202&extension=ts&play_token=JZFHi3AwN2
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1602202&extension=ts&play_token=8o3Hu3R6Co
 #EXTINF:-1 tvg-id="1602202" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14266.png?95465",25/07 09:00 PM | World Surf League 2026 - Lexus US Open Of Surfing Challenger Series - Dawn Patrol (PT: SPORT TV 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1602202&extension=ts&play_token=g3myOJGI7J
-#EXTINF:-1 tvg-id="1613387" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/PORTUGANEW/SPORTTV7.png",25/07 09:00 PM | World Surf League 2026 - Lexus US Open Of Surfing Challenger Series - Dawn Patrol (PT| SPORT TV 7 FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1602202&extension=ts&play_token=Dpe4uHbUAC
+#EXTINF:-1 tvg-id="1602202" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14266.png?95465",25/07 09:00 PM | World Surf League 2026 - Lexus US Open Of Surfing Challenger Series - Dawn Patrol (PT: SPORT TV 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1613387&extension=ts&play_token=9S7kDyOYar
-#EXTINF:-1 tvg-id="1562918" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2296.jpg?31632",25/07 09:00 PM | Tenis: ATP Kitzbuhel Finala (RO: DIGI SPORT 3 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562918&extension=ts&play_token=IBR8cmxdOf
-#EXTINF:-1 tvg-id="1562917" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2295.jpg?65272",25/07 10:00 PM | Tenis: WTA Hamburg Semifinala (RO: DIGI SPORT 4 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562917&extension=ts&play_token=eWH7eJ3NJX
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1602202&extension=ts&play_token=8qpNpLSJk8
 #EXTINF:-1 tvg-id="386453" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1423.png?32444",25/07 11:30 PM | Ténis - ATP World Tour 250, Estoril (PT: EUROSPORT 2 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=386453&extension=ts&play_token=9zHF0b8zLo
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:F8:DB; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 85469101F5870F48F4DBA174A29EA988
+http://pro.most8knew.com:80/play/live.php?mac=00:1A:79:82:F8:DB&stream=386453&extension=ts&play_token=mLSY72pncY
 #EXTINF:-1 tvg-id="386453" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1423.png?32444",25/07 11:30 PM | Ténis - ATP World Tour 250, Estoril (PT: EUROSPORT 2 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AB036294A780CE4D82A0E7B19AA9DDF0
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=386453&extension=ts&play_token=7HYrjR2eEv
+#EXTVLCOPT:http-header=Authorization: Bearer AE3A80226BC00A671AD93CAE1AF7709D
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=386453&extension=ts&play_token=i11FQRDTXM
 #EXTINF:-1 tvg-id="386453" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1423.png?32444",25/07 11:30 PM | Ténis - ATP World Tour 250, Estoril (PT: EUROSPORT 2 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 5920F0CEC1A9DA3B5256060B49B4B35F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=386453&extension=ts&play_token=FYElfZKumv
-#EXTINF:-1 tvg-id="107487" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/PORTUGANEW/EUROSPORT2.png",25/07 11:30 PM | Ténis - ATP World Tour 250, Estoril (PT| EUROSPORT 2)
+#EXTVLCOPT:http-header=Authorization: Bearer BB012C41CCCCA72D57451A3E58B55F4B
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=386453&extension=ts&play_token=wg82ilAW1s
+#EXTINF:-1 tvg-id="386453" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1423.png?32444",25/07 11:30 PM | Ténis - ATP World Tour 250, Estoril (PT: EUROSPORT 2 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=107487&extension=ts&play_token=rSdJ15uL3Y
-#EXTINF:-1 tvg-id="1604042" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/PORTUGANEW/EUROSPORT2.png",25/07 11:30 PM | Ténis - ATP World Tour 250, Estoril (PT| EUROSPORT 2 FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9C6481B4E310F5A2F5B3B6AD591A5107
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1604042&extension=ts&play_token=CRJhw7uSCa
-#EXTINF:-1 tvg-id="1562707" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?37284",26/07 12:30 AM | : Millennium Estoril Open - Estoril (NL: ZIGGO SPORT 1 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 514DCDE5B7D26AB2A360E872A5E66ABC
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562707&extension=ts&play_token=nnlUyF1vJv
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99A3D7E775EAA11EF0D430C9A1187981
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=386453&extension=ts&play_token=SB8bpkXW2I
