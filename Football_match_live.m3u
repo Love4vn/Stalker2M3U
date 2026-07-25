@@ -1,966 +1,1011 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="999566" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",25/07 08:00 PM | LIVE BAYER LEVERKUSEN – OFFENBACHER (SE) 8K SE: AftonBlade 2
+#EXTINF:-1 tvg-id="999564" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",25/07 09:00 PM | LIVE CELTIC – AC MILAN (SE) 8K SE: AftonBlade 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=999566&extension=ts&play_token=aHRkUOAHpc
-#EXTINF:-1 tvg-id="1732531" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/AFTONBLADET.png",25/07 08:00 PM | LIVE BAYER LEVERKUSEN – OFFENBACHER (SE) 8K SE: AftonBlade 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1732531&extension=ts&play_token=HXXOVicWjJ
-#EXTINF:-1 tvg-id="999564" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",25/07 09:00 PM | CELTIC – AC MILAN (SE) 8K SE: AftonBlade 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=999564&extension=ts&play_token=Nr3gaCGLpJ
-#EXTINF:-1 tvg-id="1732529" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/AFTONBLADET.png",25/07 09:00 PM | CELTIC – AC MILAN (SE) 8K SE: AftonBlade 4
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=999564&extension=ts&play_token=xOHIKOUpaF
+#EXTINF:-1 tvg-id="1732529" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/AFTONBLADET.png",25/07 09:00 PM | LIVE CELTIC – AC MILAN (SE) 8K SE: AftonBlade 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1732529&extension=ts&play_token=RtZ9629vPf
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1732529&extension=ts&play_token=QIBpXh34QA
 #EXTINF:-1 tvg-id="2084236" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15271.jpg?ver=95591",25/07 09:00 PM | PSF 04 Bromley vs Crystal Palace
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2084236&extension=ts&play_token=p9cwsj1fSg
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2084236&extension=ts&play_token=zhDNDqyV6t
 #EXTINF:-1 tvg-id="2114328" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",25/07 09:00 PM | PSF 04 Bromley vs Crystal Palace
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2114328&extension=ts&play_token=uk72UjSFWy
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2114328&extension=ts&play_token=1o05KTdCFa
 #EXTINF:-1 tvg-id="2114328" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",25/07 09:00 PM | PSF 04 Bromley vs Crystal Palace
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2114328&extension=ts&play_token=9m8lv4zH74
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2114328&extension=ts&play_token=gOzrvdSIm3
 #EXTINF:-1 tvg-id="2114328" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",25/07 09:00 PM | PSF 04 Bromley vs Crystal Palace
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2114328&extension=ts&play_token=xMrNb23jfz
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2114328&extension=ts&play_token=DwrgtxRb3A
 #EXTINF:-1 tvg-id="2063912" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",25/07 11:00 PM | Stade Rennais FC vs. Club Brugge all | 8K FR: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2063912&extension=ts&play_token=JQr4PGIKb0
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2063912&extension=ts&play_token=dTXNyB3hpb
 #EXTINF:-1 tvg-id="2113064" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",25/07 11:00 PM | Stade Rennais FC vs. Club Brugge all | 8K FR: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113064&extension=ts&play_token=HUo1gDlSd8
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113064&extension=ts&play_token=kPkobda179
 #EXTINF:-1 tvg-id="2113064" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",25/07 11:00 PM | Stade Rennais FC vs. Club Brugge all | 8K FR: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113064&extension=ts&play_token=zhlkX0fW5m
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113064&extension=ts&play_token=vON9awfIGX
 #EXTINF:-1 tvg-id="621396" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",26/07 12:00 AM | LA LIGA MALLORCA 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=621396&extension=ts&play_token=3ZkreYSh4S
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621396&extension=ts&play_token=7RjAsLFHb1
 #EXTINF:-1 tvg-id="1395519" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/MALLORCA.png",26/07 12:00 AM | LA LIGA| MALLORCA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395519&extension=ts&play_token=057Mb895Q1
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395519&extension=ts&play_token=F4Bm43qI7V
 #EXTINF:-1 tvg-id="1395519" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/MALLORCA.png",26/07 12:00 AM | LA LIGA| MALLORCA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395519&extension=ts&play_token=5YIBddLdep
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395519&extension=ts&play_token=o1UFN2YS7L
 #EXTINF:-1 tvg-id="1395519" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/MALLORCA.png",26/07 12:00 AM | LA LIGA| MALLORCA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395519&extension=ts&play_token=Pk9t0KksvZ
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395519&extension=ts&play_token=j0Vlc7FJEz
 #EXTINF:-1 tvg-id="621395" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",26/07 12:00 AM | LA LIGA LAS PALMAS 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=621395&extension=ts&play_token=uBcJaX05qA
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621395&extension=ts&play_token=CuDUSzrIpx
 #EXTINF:-1 tvg-id="430363" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13620.jpg?ver=73852",26/07 12:00 AM | US: BALLY SPORTS SOUTHWEST PLUS (DALLAS) HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=430363&extension=ts&play_token=dSA7qdffVA
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=430363&extension=ts&play_token=VhKTpkT9HZ
 #EXTINF:-1 tvg-id="430361" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13620.jpg?ver=73852",26/07 12:00 AM | US: BALLY SPORTS SOUTHWEST (DALLAS) HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=430361&extension=ts&play_token=qGlIIWZfOl
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=430361&extension=ts&play_token=n7FUo05wph
 #EXTINF:-1 tvg-id="1597417" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/TELEMUNDO.png",26/07 12:00 AM | US| TELEMUNDO 39 (KXTX) DALLAS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1597417&extension=ts&play_token=7iBInesIrv
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1597417&extension=ts&play_token=Ac306hPz2n
 #EXTINF:-1 tvg-id="1597417" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/TELEMUNDO.png",26/07 12:00 AM | US| TELEMUNDO 39 (KXTX) DALLAS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1597417&extension=ts&play_token=XXGtwXGSEz
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1597417&extension=ts&play_token=q6azYjkl1o
 #EXTINF:-1 tvg-id="1597417" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/TELEMUNDO.png",26/07 12:00 AM | US| TELEMUNDO 39 (KXTX) DALLAS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1597417&extension=ts&play_token=KV0pgamXzz
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1597417&extension=ts&play_token=9FG0kRIqYA
 #EXTINF:-1 tvg-id="1395520" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/LASPALMAS.png",26/07 12:00 AM | LA LIGA| LAS PALMAS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395520&extension=ts&play_token=nb44K0Rxk1
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395520&extension=ts&play_token=2wLnPSJKq2
 #EXTINF:-1 tvg-id="1395520" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/LASPALMAS.png",26/07 12:00 AM | LA LIGA| LAS PALMAS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395520&extension=ts&play_token=SBFjynQQHp
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395520&extension=ts&play_token=H8EIafVbG7
 #EXTINF:-1 tvg-id="1395520" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/LASPALMAS.png",26/07 12:00 AM | LA LIGA| LAS PALMAS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395520&extension=ts&play_token=VFnhz2kNrw
-#EXTINF:-1 tvg-id="2063952" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Live Jeux du Commonwealth La journée en direct – 1re partie Glasgow 2026 Commonwealth Games all 8K FR: SOCCER 7
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2063952&extension=ts&play_token=y21Bjbzh9P
-#EXTINF:-1 tvg-id="2063914" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Jeux du Commonwealth La journée en direct – 2e partie Glasgow 2026 Commonwealth Games all | 8K FR: SOCCER 45
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2063914&extension=ts&play_token=bpU4WH1p9y
-#EXTINF:-1 tvg-id="2063905" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Jeux du Commonwealth Natation – Para natation 2e journée Glasgow 2026 Commonwealth Games all | 8K FR: SOCCER 54
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2063905&extension=ts&play_token=oBLQM5EF1W
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395520&extension=ts&play_token=SWk9Q1wB71
 #EXTINF:-1 tvg-id="1918870" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Live Glasgow 2026 Commonwealth Games Tag 2 Teil 1 Englischer Kommentar all 8K DE: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1918870&extension=ts&play_token=Gha1LmxZZd
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918870&extension=ts&play_token=KRmHxVSVmI
 #EXTINF:-1 tvg-id="1918846" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Glasgow 2026 Commonwealth Games Tag 2 Teil 2 Englischer Kommentar all | 8K DE: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1918846&extension=ts&play_token=L6Bh0NXfVt
-#EXTINF:-1 tvg-id="1918830" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | UCI Women's Class 1 Cycling all | 8K DE: SOCCER 47
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918846&extension=ts&play_token=N9xGib65cQ
+#EXTINF:-1 tvg-id="1918830" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | End UCI Women's Class 1 Cycling all | 8K DE: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1918830&extension=ts&play_token=BpnSh7fhaR
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918830&extension=ts&play_token=jhqTGWI2ne
+#EXTINF:-1 tvg-id="1918808" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Commonwealth Games Tag 2 Abendsession Glasgow 2026 Commonwealth Games all | 8K DE: SOCCER 69
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918808&extension=ts&play_token=UGoPa4w347
+#EXTINF:-1 tvg-id="1918807" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Leichtathletik: Commonwealth Games in Glasgow: Tag 2 all | 8K DE: SOCCER 70
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1918807&extension=ts&play_token=9mW8WLYh5E
 #EXTINF:-1 tvg-id="1930975" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Commonwealth Games in Glasgow all | 8K NL: SOCCER 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1930975&extension=ts&play_token=APTywK6Zfs
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1930975&extension=ts&play_token=r5BufouTfw
 #EXTINF:-1 tvg-id="1930973" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Commonwealth Games Glasgow Dag 2 all | 8K NL: SOCCER 26
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1930973&extension=ts&play_token=GMcNQI3Bkm
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1930973&extension=ts&play_token=gVGAeh4Tky
+#EXTINF:-1 tvg-id="2063952" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Live Jeux du Commonwealth La journée en direct – 1re partie Glasgow 2026 Commonwealth Games all 8K FR: SOCCER 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2063952&extension=ts&play_token=lv0kMLPDGX
+#EXTINF:-1 tvg-id="2063914" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Jeux du Commonwealth La journée en direct – 2e partie Glasgow 2026 Commonwealth Games all | 8K FR: SOCCER 45
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2063914&extension=ts&play_token=DoeLuyN6um
+#EXTINF:-1 tvg-id="2063905" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Jeux du Commonwealth Natation – Para natation 2e journée Glasgow 2026 Commonwealth Games all | 8K FR: SOCCER 54
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2063905&extension=ts&play_token=sviMojVRLP
 #EXTINF:-1 tvg-id="1988112" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | End Mateusz Baranowski Bai Yulu Open de Inglaterra Clasificación all | 8K ES: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988112&extension=ts&play_token=E0KjJ2GQox
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988112&extension=ts&play_token=cS09wiMu21
 #EXTINF:-1 tvg-id="1988111" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Juegos de la Commonwealth Sesión de tarde Glasgow 2026 Día 2 all | 8K ES: SOCCER 15
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988111&extension=ts&play_token=OQBkU6HNXM
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988111&extension=ts&play_token=yPxXIqcxR2
 #EXTINF:-1 tvg-id="1988109" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Natación Día 2 Juegos de la Commonwealth Glasgow 2026 all | 8K ES: SOCCER 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988109&extension=ts&play_token=XdZ2gLc29I
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988109&extension=ts&play_token=uiOeNgAjaZ
 #EXTINF:-1 tvg-id="1988108" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Commonwealth Games in Glasgow all | 8K ES: SOCCER 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988108&extension=ts&play_token=0baXttqGcz
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988108&extension=ts&play_token=FS9cN5xIV5
 #EXTINF:-1 tvg-id="1988095" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Atletismo: Juegos De La Commonwealth Glasgow: Día 2 all | 8K ES: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988095&extension=ts&play_token=0jw3sEaZBO
-#EXTINF:-1 tvg-id="1988083" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Iulian Boiko Gong Chenzhi Open de Inglaterra Clasificación all | 8K ES: SOCCER 43
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988095&extension=ts&play_token=VRuLetlv4A
+#EXTINF:-1 tvg-id="1988083" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | End Iulian Boiko Gong Chenzhi Open de Inglaterra Clasificación all | 8K ES: SOCCER 43
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988083&extension=ts&play_token=Ib01ljvylo
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988083&extension=ts&play_token=PmSK9SXrpN
 #EXTINF:-1 tvg-id="1988082" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Alexander Ursenbacher Anton Kazakov Open de Inglaterra Clasificación all | 8K ES: SOCCER 44
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988082&extension=ts&play_token=kbc0QO9gxY
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988082&extension=ts&play_token=7jzesxj92X
 #EXTINF:-1 tvg-id="1988080" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Michal Szubarczyk Julien Leclercq Open de Inglaterra Clasificación all | 8K ES: SOCCER 46
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988080&extension=ts&play_token=UpYMgCR795
-#EXTINF:-1 tvg-id="1988079" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Jimmy White Ka Wai Cheung Open de Inglaterra Clasificación all | 8K ES: SOCCER 47
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988080&extension=ts&play_token=Okjej2SppF
+#EXTINF:-1 tvg-id="1988079" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | End Jimmy White Ka Wai Cheung Open de Inglaterra Clasificación all | 8K ES: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988079&extension=ts&play_token=wY864UBZQL
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988079&extension=ts&play_token=wIVsiaVbtw
 #EXTINF:-1 tvg-id="1988078" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Steven Hallworth Liam Davies Open de Inglaterra Clasificación all | 8K ES: SOCCER 48
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988078&extension=ts&play_token=aJjzJJzJhn
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988078&extension=ts&play_token=MmDONdJQ0R
 #EXTINF:-1 tvg-id="1988077" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Oliver Brown Wang Xinbo Open de Inglaterra Clasificación all | 8K ES: SOCCER 49
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988077&extension=ts&play_token=5wiw1uj523
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988077&extension=ts&play_token=We0uFcWWFX
 #EXTINF:-1 tvg-id="1988076" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Reanne Evans Craig Steadman Open de Inglaterra Clasificación all | 8K ES: SOCCER 50
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988076&extension=ts&play_token=FkIlR7S3f6
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988076&extension=ts&play_token=nEEX1avtEb
 #EXTINF:-1 tvg-id="1988075" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Onyee Ng Jamie Clarke Open de Inglaterra Clasificación all | 8K ES: SOCCER 51
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988075&extension=ts&play_token=EEcUycDdFd
-#EXTINF:-1 tvg-id="1988074" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Mahmoud El Hareedy Luo Zetao Open de Inglaterra Clasificación all | 8K ES: SOCCER 52
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988075&extension=ts&play_token=EPg8LJhhI3
+#EXTINF:-1 tvg-id="1988074" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | End Mahmoud El Hareedy Luo Zetao Open de Inglaterra Clasificación all | 8K ES: SOCCER 52
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988074&extension=ts&play_token=S976SXbYlZ
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988074&extension=ts&play_token=XAjI8b7Lvw
 #EXTINF:-1 tvg-id="1988073" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Liam Graham Kaylan Patel Open de Inglaterra Clasificación all | 8K ES: SOCCER 53
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988073&extension=ts&play_token=lZvhHJ46Kc
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988073&extension=ts&play_token=49cRYnJS3q
 #EXTINF:-1 tvg-id="1988072" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Alfie Burden Artemijs Žižins Open de Inglaterra Clasificación all | 8K ES: SOCCER 54
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988072&extension=ts&play_token=TXKjbPZHOy
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988072&extension=ts&play_token=DMy04kNgDf
 #EXTINF:-1 tvg-id="1988068" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | End ePrix Tokio Clasificación 1ª Carrera all | 8K ES: SOCCER 58
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988068&extension=ts&play_token=CDgi44r6wQ
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988068&extension=ts&play_token=2TK9LEEe6R
 #EXTINF:-1 tvg-id="1988058" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | End Juegos de la Commonwealth Sesión de mañana Glasgow 2026 Día 2 all | 8K ES: SOCCER 68
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1988058&extension=ts&play_token=9AdLts2Qf2
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1988058&extension=ts&play_token=kRLCD53unH
+#EXTINF:-1 tvg-id="1940074" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 12:00 AM | Instant Classic-Weekly Racing at Midvale Speedway all | 8K US: SOCCER 83
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1940074&extension=ts&play_token=I4pB8RpAUP
 #EXTINF:-1 tvg-id="1661127" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=67754",26/07 12:00 AM | (FLSP 622) flofootball: 2026 LaSalle PA vs Paramus Catholic NJ (LaSalle PA vs Paramus Catholic NJ) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1661127&extension=ts&play_token=dHExyzqWs6
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1661127&extension=ts&play_token=TT6ZRWEW87
 #EXTINF:-1 tvg-id="615754" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",26/07 12:00 AM | Flo (FLSP) 47: 2025 Okla. Christian vs UT Dallas Womens 22/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=615754&extension=ts&play_token=k5LaJJEeXh
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615754&extension=ts&play_token=s4kBmfQdOE
 #EXTINF:-1 tvg-id="615682" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",26/07 12:00 AM | Flo (FLSP) 119: 2025 Komoka Kings vs LaSalle Vipers 22/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=615682&extension=ts&play_token=SetilE6zLe
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615682&extension=ts&play_token=kDNYiSLQC1
 #EXTINF:-1 tvg-id="615663" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",26/07 12:00 AM | Flo (FLSP) 138: 2025 St. Marys (TX) vs UT Dallas Mens 22/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=615663&extension=ts&play_token=9uoRqg1Tm1
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615663&extension=ts&play_token=A4YGDWWqOG
 #EXTINF:-1 tvg-id="2113104" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Live Jeux du Commonwealth La journée en direct – 1re partie Glasgow 2026 Commonwealth Games all 8K FR: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113104&extension=ts&play_token=Wo1xYRM7eo
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113104&extension=ts&play_token=9zbDoFFYgU
 #EXTINF:-1 tvg-id="2113066" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Jeux du Commonwealth La journée en direct – 2e partie Glasgow 2026 Commonwealth Games all | 8K FR: SOCCER 45
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113066&extension=ts&play_token=ziZbacDRIR
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113066&extension=ts&play_token=nrwlClqCsn
 #EXTINF:-1 tvg-id="2113057" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Jeux du Commonwealth Natation – Para natation 2e journée Glasgow 2026 Commonwealth Games all | 8K FR: SOCCER 54
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113057&extension=ts&play_token=YLqt9hfWXv
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113057&extension=ts&play_token=GjqcN4khty
+#EXTINF:-1 tvg-id="2062047" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Instant Classic-Weekly Racing at Midvale Speedway all | 8K US: SOCCER 83
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062047&extension=ts&play_token=OoRYlQ9DIm
 #EXTINF:-1 tvg-id="1960640" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/USA/flo.png",26/07 12:00 AM | (FLSP 622) flofootball: 2026 LaSalle PA vs Paramus Catholic NJ (LaSalle PA vs Paramus Catholic NJ) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1960640&extension=ts&play_token=21H1Vr0TYd
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1960640&extension=ts&play_token=xAbTonTuKF
 #EXTINF:-1 tvg-id="2058524" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games in Glasgow all | 8K NL: SOCCER 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2058524&extension=ts&play_token=26Ryg0Fp9a
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2058524&extension=ts&play_token=dJ1R2MEyEL
 #EXTINF:-1 tvg-id="2058522" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games Glasgow Dag 2 all | 8K NL: SOCCER 26
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2058522&extension=ts&play_token=FUhLgWPgc1
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2058522&extension=ts&play_token=HRBwq7wFtR
 #EXTINF:-1 tvg-id="2072539" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Mateusz Baranowski Bai Yulu Open de Inglaterra Clasificación all | 8K ES: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072539&extension=ts&play_token=adZhqy4uhi
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072539&extension=ts&play_token=By5uNHjae3
 #EXTINF:-1 tvg-id="2072538" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Juegos de la Commonwealth Sesión de tarde Glasgow 2026 Día 2 all | 8K ES: SOCCER 15
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072538&extension=ts&play_token=lpNa4OknLJ
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072538&extension=ts&play_token=QmUa0qDos3
 #EXTINF:-1 tvg-id="2072536" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Natación Día 2 Juegos de la Commonwealth Glasgow 2026 all | 8K ES: SOCCER 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072536&extension=ts&play_token=Yj3fKew6sf
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072536&extension=ts&play_token=7z4DIXjOU4
 #EXTINF:-1 tvg-id="2072535" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games in Glasgow all | 8K ES: SOCCER 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072535&extension=ts&play_token=tzU5ubz7eo
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072535&extension=ts&play_token=oIUrYDEdqh
 #EXTINF:-1 tvg-id="2072522" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Atletismo: Juegos De La Commonwealth Glasgow: Día 2 all | 8K ES: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072522&extension=ts&play_token=lg3TTr8WYm
-#EXTINF:-1 tvg-id="2072510" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Iulian Boiko Gong Chenzhi Open de Inglaterra Clasificación all | 8K ES: SOCCER 43
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072522&extension=ts&play_token=iQyHFr680d
+#EXTINF:-1 tvg-id="2072510" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Iulian Boiko Gong Chenzhi Open de Inglaterra Clasificación all | 8K ES: SOCCER 43
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072510&extension=ts&play_token=UsOgzDuK8X
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072510&extension=ts&play_token=Iov2G0MmEo
 #EXTINF:-1 tvg-id="2072509" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Alexander Ursenbacher Anton Kazakov Open de Inglaterra Clasificación all | 8K ES: SOCCER 44
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072509&extension=ts&play_token=Vbwpxr3Q57
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072509&extension=ts&play_token=6zWjv5363S
 #EXTINF:-1 tvg-id="2072507" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Michal Szubarczyk Julien Leclercq Open de Inglaterra Clasificación all | 8K ES: SOCCER 46
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072507&extension=ts&play_token=6ARcgg7GJp
-#EXTINF:-1 tvg-id="2072506" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Jimmy White Ka Wai Cheung Open de Inglaterra Clasificación all | 8K ES: SOCCER 47
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072507&extension=ts&play_token=CqikYkeqjj
+#EXTINF:-1 tvg-id="2072506" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Jimmy White Ka Wai Cheung Open de Inglaterra Clasificación all | 8K ES: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072506&extension=ts&play_token=g68AsH8m61
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072506&extension=ts&play_token=y5HYw3e2Bt
 #EXTINF:-1 tvg-id="2072505" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Steven Hallworth Liam Davies Open de Inglaterra Clasificación all | 8K ES: SOCCER 48
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072505&extension=ts&play_token=WwwG06Fdlp
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072505&extension=ts&play_token=ooXwhnsaKM
 #EXTINF:-1 tvg-id="2072504" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Oliver Brown Wang Xinbo Open de Inglaterra Clasificación all | 8K ES: SOCCER 49
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072504&extension=ts&play_token=r0LizzU1u5
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072504&extension=ts&play_token=8Am8HGz7P0
 #EXTINF:-1 tvg-id="2072503" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Reanne Evans Craig Steadman Open de Inglaterra Clasificación all | 8K ES: SOCCER 50
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072503&extension=ts&play_token=893ANFSq4X
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072503&extension=ts&play_token=N9KajqJ86d
 #EXTINF:-1 tvg-id="2072502" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Onyee Ng Jamie Clarke Open de Inglaterra Clasificación all | 8K ES: SOCCER 51
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072502&extension=ts&play_token=SdH8ts9hsk
-#EXTINF:-1 tvg-id="2072501" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Mahmoud El Hareedy Luo Zetao Open de Inglaterra Clasificación all | 8K ES: SOCCER 52
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072502&extension=ts&play_token=zzWizqvR79
+#EXTINF:-1 tvg-id="2072501" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Mahmoud El Hareedy Luo Zetao Open de Inglaterra Clasificación all | 8K ES: SOCCER 52
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072501&extension=ts&play_token=NGj42X2WVA
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072501&extension=ts&play_token=D8Dkvs9Pjm
 #EXTINF:-1 tvg-id="2072500" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Liam Graham Kaylan Patel Open de Inglaterra Clasificación all | 8K ES: SOCCER 53
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072500&extension=ts&play_token=p07RVd74Sp
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072500&extension=ts&play_token=Uk1bTm0sCf
 #EXTINF:-1 tvg-id="2072499" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Alfie Burden Artemijs Žižins Open de Inglaterra Clasificación all | 8K ES: SOCCER 54
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072499&extension=ts&play_token=KjrKqdKg9A
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072499&extension=ts&play_token=0PE6AnXHCW
 #EXTINF:-1 tvg-id="2072495" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End ePrix Tokio Clasificación 1ª Carrera all | 8K ES: SOCCER 58
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072495&extension=ts&play_token=TQj88SgCrE
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072495&extension=ts&play_token=5HqyzZRukM
 #EXTINF:-1 tvg-id="2072485" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Juegos de la Commonwealth Sesión de mañana Glasgow 2026 Día 2 all | 8K ES: SOCCER 68
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072485&extension=ts&play_token=QoVi3t40pk
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2072485&extension=ts&play_token=4PjCXQRsgs
 #EXTINF:-1 tvg-id="2055045" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Live Glasgow 2026 Commonwealth Games Tag 2 Teil 1 Englischer Kommentar all 8K DE: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2055045&extension=ts&play_token=cmrLvM0JAv
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2055045&extension=ts&play_token=FGeOVFaxJy
 #EXTINF:-1 tvg-id="2055044" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Live Glasgow 2026 Commonwealth Games Tag 2 Teil 1 Englischer Kommentar all 8K DE: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2055044&extension=ts&play_token=IBBNFu16cW
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2055044&extension=ts&play_token=c6Y1JS0Kx8
 #EXTINF:-1 tvg-id="2055021" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Glasgow 2026 Commonwealth Games Tag 2 Teil 2 Englischer Kommentar all | 8K DE: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2055021&extension=ts&play_token=glvg2mzIII
-#EXTINF:-1 tvg-id="2055005" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | UCI Women's Class 1 Cycling all | 8K DE: SOCCER 47
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2055021&extension=ts&play_token=o235zQvKpt
+#EXTINF:-1 tvg-id="2055005" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End UCI Women's Class 1 Cycling all | 8K DE: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2055005&extension=ts&play_token=N7BH4u16Kz
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2055005&extension=ts&play_token=QfBCGwjG3K
+#EXTINF:-1 tvg-id="2054983" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games Tag 2 Abendsession Glasgow 2026 Commonwealth Games all | 8K DE: SOCCER 69
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2054983&extension=ts&play_token=7L9wtA8h0m
+#EXTINF:-1 tvg-id="2054982" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Leichtathletik: Commonwealth Games in Glasgow: Tag 2 all | 8K DE: SOCCER 70
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2054982&extension=ts&play_token=kChFBrN9nc
 #EXTINF:-1 tvg-id="2113104" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Live Jeux du Commonwealth La journée en direct – 1re partie Glasgow 2026 Commonwealth Games all 8K FR: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113104&extension=ts&play_token=TFWfTJyKJP
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113104&extension=ts&play_token=KWadjVQ8cG
 #EXTINF:-1 tvg-id="2113066" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Jeux du Commonwealth La journée en direct – 2e partie Glasgow 2026 Commonwealth Games all | 8K FR: SOCCER 45
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113066&extension=ts&play_token=gZ5s8O0uhP
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113066&extension=ts&play_token=VSLYhnoS3V
 #EXTINF:-1 tvg-id="2113057" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Jeux du Commonwealth Natation – Para natation 2e journée Glasgow 2026 Commonwealth Games all | 8K FR: SOCCER 54
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113057&extension=ts&play_token=g2i4ea93Hh
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113057&extension=ts&play_token=GpYRffpYeY
+#EXTINF:-1 tvg-id="2062047" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Instant Classic-Weekly Racing at Midvale Speedway all | 8K US: SOCCER 83
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062047&extension=ts&play_token=7s9UsBaoSM
 #EXTINF:-1 tvg-id="1960640" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/USA/flo.png",26/07 12:00 AM | (FLSP 622) flofootball: 2026 LaSalle PA vs Paramus Catholic NJ (LaSalle PA vs Paramus Catholic NJ) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1960640&extension=ts&play_token=et81dCG5Wm
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1960640&extension=ts&play_token=OF3a5ajtXS
 #EXTINF:-1 tvg-id="2055045" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Live Glasgow 2026 Commonwealth Games Tag 2 Teil 1 Englischer Kommentar all 8K DE: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2055045&extension=ts&play_token=GodJ7v3O9J
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2055045&extension=ts&play_token=ONPptHwIAY
 #EXTINF:-1 tvg-id="2055044" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Live Glasgow 2026 Commonwealth Games Tag 2 Teil 1 Englischer Kommentar all 8K DE: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2055044&extension=ts&play_token=fUsDUbhyRI
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2055044&extension=ts&play_token=VFzOJgp3gz
 #EXTINF:-1 tvg-id="2055021" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Glasgow 2026 Commonwealth Games Tag 2 Teil 2 Englischer Kommentar all | 8K DE: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2055021&extension=ts&play_token=JZdkP8ArHj
-#EXTINF:-1 tvg-id="2055005" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | UCI Women's Class 1 Cycling all | 8K DE: SOCCER 47
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2055021&extension=ts&play_token=42CvnMBpWs
+#EXTINF:-1 tvg-id="2055005" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End UCI Women's Class 1 Cycling all | 8K DE: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2055005&extension=ts&play_token=bCqo8AL8OS
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2055005&extension=ts&play_token=qikkAUIpbM
+#EXTINF:-1 tvg-id="2054983" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games Tag 2 Abendsession Glasgow 2026 Commonwealth Games all | 8K DE: SOCCER 69
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2054983&extension=ts&play_token=vNJfAy0Kpb
+#EXTINF:-1 tvg-id="2054982" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Leichtathletik: Commonwealth Games in Glasgow: Tag 2 all | 8K DE: SOCCER 70
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2054982&extension=ts&play_token=QOMkZmUVZ9
 #EXTINF:-1 tvg-id="2072539" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Mateusz Baranowski Bai Yulu Open de Inglaterra Clasificación all | 8K ES: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072539&extension=ts&play_token=0zEFpipsZH
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072539&extension=ts&play_token=0XyQurRFly
 #EXTINF:-1 tvg-id="2072538" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Juegos de la Commonwealth Sesión de tarde Glasgow 2026 Día 2 all | 8K ES: SOCCER 15
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072538&extension=ts&play_token=wUSHB9EITz
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072538&extension=ts&play_token=2NozmikG4w
 #EXTINF:-1 tvg-id="2072536" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Natación Día 2 Juegos de la Commonwealth Glasgow 2026 all | 8K ES: SOCCER 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072536&extension=ts&play_token=M74cygGCN3
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072536&extension=ts&play_token=KR5pvpAm5O
 #EXTINF:-1 tvg-id="2072535" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games in Glasgow all | 8K ES: SOCCER 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072535&extension=ts&play_token=dO3HdhN3RW
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072535&extension=ts&play_token=r2wiJdjjsH
 #EXTINF:-1 tvg-id="2072522" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Atletismo: Juegos De La Commonwealth Glasgow: Día 2 all | 8K ES: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072522&extension=ts&play_token=8hF9nnyDNL
-#EXTINF:-1 tvg-id="2072510" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Iulian Boiko Gong Chenzhi Open de Inglaterra Clasificación all | 8K ES: SOCCER 43
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072522&extension=ts&play_token=dW4cPrUQYR
+#EXTINF:-1 tvg-id="2072510" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Iulian Boiko Gong Chenzhi Open de Inglaterra Clasificación all | 8K ES: SOCCER 43
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072510&extension=ts&play_token=dTOr1eS2GS
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072510&extension=ts&play_token=R4eS0m4cOj
 #EXTINF:-1 tvg-id="2072509" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Alexander Ursenbacher Anton Kazakov Open de Inglaterra Clasificación all | 8K ES: SOCCER 44
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072509&extension=ts&play_token=z2pCMrsf6N
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072509&extension=ts&play_token=8vLplhvm6t
 #EXTINF:-1 tvg-id="2072507" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Michal Szubarczyk Julien Leclercq Open de Inglaterra Clasificación all | 8K ES: SOCCER 46
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072507&extension=ts&play_token=l4KcKjPF1A
-#EXTINF:-1 tvg-id="2072506" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Jimmy White Ka Wai Cheung Open de Inglaterra Clasificación all | 8K ES: SOCCER 47
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072507&extension=ts&play_token=bg49d0wcp5
+#EXTINF:-1 tvg-id="2072506" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Jimmy White Ka Wai Cheung Open de Inglaterra Clasificación all | 8K ES: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072506&extension=ts&play_token=jyi8fxy1qL
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072506&extension=ts&play_token=t3dNmY1OPw
 #EXTINF:-1 tvg-id="2072505" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Steven Hallworth Liam Davies Open de Inglaterra Clasificación all | 8K ES: SOCCER 48
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072505&extension=ts&play_token=udMzfJnmLb
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072505&extension=ts&play_token=WyCpDHfkdC
 #EXTINF:-1 tvg-id="2072504" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Oliver Brown Wang Xinbo Open de Inglaterra Clasificación all | 8K ES: SOCCER 49
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072504&extension=ts&play_token=DdObRUmJ3S
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072504&extension=ts&play_token=binDhtZjI4
 #EXTINF:-1 tvg-id="2072503" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Reanne Evans Craig Steadman Open de Inglaterra Clasificación all | 8K ES: SOCCER 50
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072503&extension=ts&play_token=8Z6XpG6Ssx
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072503&extension=ts&play_token=V1GKMLc7lQ
 #EXTINF:-1 tvg-id="2072502" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Onyee Ng Jamie Clarke Open de Inglaterra Clasificación all | 8K ES: SOCCER 51
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072502&extension=ts&play_token=z36T2ovNK1
-#EXTINF:-1 tvg-id="2072501" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Mahmoud El Hareedy Luo Zetao Open de Inglaterra Clasificación all | 8K ES: SOCCER 52
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072502&extension=ts&play_token=U9hmtV0Idf
+#EXTINF:-1 tvg-id="2072501" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Mahmoud El Hareedy Luo Zetao Open de Inglaterra Clasificación all | 8K ES: SOCCER 52
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072501&extension=ts&play_token=tvN9ouRGfn
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072501&extension=ts&play_token=YmEVnkUoMS
 #EXTINF:-1 tvg-id="2072500" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Liam Graham Kaylan Patel Open de Inglaterra Clasificación all | 8K ES: SOCCER 53
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072500&extension=ts&play_token=I6P7mWlzSI
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072500&extension=ts&play_token=WRM3KyJqsQ
 #EXTINF:-1 tvg-id="2072499" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Alfie Burden Artemijs Žižins Open de Inglaterra Clasificación all | 8K ES: SOCCER 54
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072499&extension=ts&play_token=aYy7tyaPUN
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072499&extension=ts&play_token=qV0vR721Uf
 #EXTINF:-1 tvg-id="2072495" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End ePrix Tokio Clasificación 1ª Carrera all | 8K ES: SOCCER 58
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072495&extension=ts&play_token=3Sw35rQER9
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072495&extension=ts&play_token=1i7igQITiB
 #EXTINF:-1 tvg-id="2072485" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Juegos de la Commonwealth Sesión de mañana Glasgow 2026 Día 2 all | 8K ES: SOCCER 68
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072485&extension=ts&play_token=Fdw63CG2dS
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2072485&extension=ts&play_token=iTTjbqONwN
 #EXTINF:-1 tvg-id="2058524" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games in Glasgow all | 8K NL: SOCCER 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2058524&extension=ts&play_token=o4aXA0YYgF
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2058524&extension=ts&play_token=0U4D3yfkhE
 #EXTINF:-1 tvg-id="2058522" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games Glasgow Dag 2 all | 8K NL: SOCCER 26
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2058522&extension=ts&play_token=DLjbVJ43m8
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2058522&extension=ts&play_token=76EsSMDeBq
 #EXTINF:-1 tvg-id="2072539" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Mateusz Baranowski Bai Yulu Open de Inglaterra Clasificación all | 8K ES: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072539&extension=ts&play_token=1bRx6M9rJt
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072539&extension=ts&play_token=en2sNXq4eN
 #EXTINF:-1 tvg-id="2072538" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Juegos de la Commonwealth Sesión de tarde Glasgow 2026 Día 2 all | 8K ES: SOCCER 15
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072538&extension=ts&play_token=iKXfHC63Wp
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072538&extension=ts&play_token=x4gD3G4jhL
 #EXTINF:-1 tvg-id="2072536" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Natación Día 2 Juegos de la Commonwealth Glasgow 2026 all | 8K ES: SOCCER 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072536&extension=ts&play_token=W32RCFl335
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072536&extension=ts&play_token=RezT59R1JF
 #EXTINF:-1 tvg-id="2072535" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games in Glasgow all | 8K ES: SOCCER 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072535&extension=ts&play_token=b5vD5al20L
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072535&extension=ts&play_token=0gCbAk60iU
 #EXTINF:-1 tvg-id="2072522" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Atletismo: Juegos De La Commonwealth Glasgow: Día 2 all | 8K ES: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072522&extension=ts&play_token=uNJ5kcKjaT
-#EXTINF:-1 tvg-id="2072510" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Iulian Boiko Gong Chenzhi Open de Inglaterra Clasificación all | 8K ES: SOCCER 43
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072522&extension=ts&play_token=kGm9HS36Sv
+#EXTINF:-1 tvg-id="2072510" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Iulian Boiko Gong Chenzhi Open de Inglaterra Clasificación all | 8K ES: SOCCER 43
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072510&extension=ts&play_token=UekFGRnMBN
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072510&extension=ts&play_token=j9cwtY0J8Y
 #EXTINF:-1 tvg-id="2072509" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Alexander Ursenbacher Anton Kazakov Open de Inglaterra Clasificación all | 8K ES: SOCCER 44
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072509&extension=ts&play_token=dKsXqd6spr
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072509&extension=ts&play_token=ig2oejbpEE
 #EXTINF:-1 tvg-id="2072507" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Michal Szubarczyk Julien Leclercq Open de Inglaterra Clasificación all | 8K ES: SOCCER 46
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072507&extension=ts&play_token=xRniNTcT1A
-#EXTINF:-1 tvg-id="2072506" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Jimmy White Ka Wai Cheung Open de Inglaterra Clasificación all | 8K ES: SOCCER 47
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072507&extension=ts&play_token=TzW51LuMJU
+#EXTINF:-1 tvg-id="2072506" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Jimmy White Ka Wai Cheung Open de Inglaterra Clasificación all | 8K ES: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072506&extension=ts&play_token=MPrjsVuFlD
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072506&extension=ts&play_token=yyx6RW2qrK
 #EXTINF:-1 tvg-id="2072505" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Steven Hallworth Liam Davies Open de Inglaterra Clasificación all | 8K ES: SOCCER 48
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072505&extension=ts&play_token=zFc38UvKCh
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072505&extension=ts&play_token=y1D32op5ec
 #EXTINF:-1 tvg-id="2072504" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Oliver Brown Wang Xinbo Open de Inglaterra Clasificación all | 8K ES: SOCCER 49
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072504&extension=ts&play_token=XMPzJQII0q
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072504&extension=ts&play_token=DiJ7QBLrrd
 #EXTINF:-1 tvg-id="2072503" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Reanne Evans Craig Steadman Open de Inglaterra Clasificación all | 8K ES: SOCCER 50
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072503&extension=ts&play_token=ie2YDcFpeY
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072503&extension=ts&play_token=ECflVGeh6T
 #EXTINF:-1 tvg-id="2072502" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Onyee Ng Jamie Clarke Open de Inglaterra Clasificación all | 8K ES: SOCCER 51
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072502&extension=ts&play_token=6lgaszt0cV
-#EXTINF:-1 tvg-id="2072501" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Mahmoud El Hareedy Luo Zetao Open de Inglaterra Clasificación all | 8K ES: SOCCER 52
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072502&extension=ts&play_token=RWtAnY4sTi
+#EXTINF:-1 tvg-id="2072501" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Mahmoud El Hareedy Luo Zetao Open de Inglaterra Clasificación all | 8K ES: SOCCER 52
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072501&extension=ts&play_token=DrP9TEnYW6
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072501&extension=ts&play_token=8WaZXhGdgw
 #EXTINF:-1 tvg-id="2072500" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Liam Graham Kaylan Patel Open de Inglaterra Clasificación all | 8K ES: SOCCER 53
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072500&extension=ts&play_token=MjoSaGbijI
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072500&extension=ts&play_token=5sc0j4MPee
 #EXTINF:-1 tvg-id="2072499" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Alfie Burden Artemijs Žižins Open de Inglaterra Clasificación all | 8K ES: SOCCER 54
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072499&extension=ts&play_token=f9Vraxs71C
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072499&extension=ts&play_token=sqZeyW0Rz8
 #EXTINF:-1 tvg-id="2072495" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End ePrix Tokio Clasificación 1ª Carrera all | 8K ES: SOCCER 58
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072495&extension=ts&play_token=aPSWvl3KLE
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072495&extension=ts&play_token=QcwEVtmOzn
 #EXTINF:-1 tvg-id="2072485" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End Juegos de la Commonwealth Sesión de mañana Glasgow 2026 Día 2 all | 8K ES: SOCCER 68
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072485&extension=ts&play_token=frXMGHM2nP
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2072485&extension=ts&play_token=SQPQsfDLKk
 #EXTINF:-1 tvg-id="2055045" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Live Glasgow 2026 Commonwealth Games Tag 2 Teil 1 Englischer Kommentar all 8K DE: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2055045&extension=ts&play_token=7l3KzwkApt
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2055045&extension=ts&play_token=QV9mB75jOs
 #EXTINF:-1 tvg-id="2055044" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Live Glasgow 2026 Commonwealth Games Tag 2 Teil 1 Englischer Kommentar all 8K DE: SOCCER 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2055044&extension=ts&play_token=ToVfwmnmuE
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2055044&extension=ts&play_token=UgsPzdsxC4
 #EXTINF:-1 tvg-id="2055021" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Glasgow 2026 Commonwealth Games Tag 2 Teil 2 Englischer Kommentar all | 8K DE: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2055021&extension=ts&play_token=KJ27p1dsDe
-#EXTINF:-1 tvg-id="2055005" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | UCI Women's Class 1 Cycling all | 8K DE: SOCCER 47
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2055021&extension=ts&play_token=WNmUwQ4Rpu
+#EXTINF:-1 tvg-id="2055005" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | End UCI Women's Class 1 Cycling all | 8K DE: SOCCER 47
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2055005&extension=ts&play_token=IfVzCuSxAt
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2055005&extension=ts&play_token=VD4r75Qv92
+#EXTINF:-1 tvg-id="2054983" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Commonwealth Games Tag 2 Abendsession Glasgow 2026 Commonwealth Games all | 8K DE: SOCCER 69
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2054983&extension=ts&play_token=9qOtnoUrnf
+#EXTINF:-1 tvg-id="2054982" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Leichtathletik: Commonwealth Games in Glasgow: Tag 2 all | 8K DE: SOCCER 70
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2054982&extension=ts&play_token=B8jwocN5k5
+#EXTINF:-1 tvg-id="2062047" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 12:00 AM | Instant Classic-Weekly Racing at Midvale Speedway all | 8K US: SOCCER 83
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2062047&extension=ts&play_token=qBuUOijkfs
 #EXTINF:-1 tvg-id="1960640" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/USA/flo.png",26/07 12:00 AM | (FLSP 622) flofootball: 2026 LaSalle PA vs Paramus Catholic NJ (LaSalle PA vs Paramus Catholic NJ) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1960640&extension=ts&play_token=dUciFbXUlG
-#EXTINF:-1 tvg-id="1708685" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13794.png?ver=89391",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX NL 19
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1708685&extension=ts&play_token=4fiM058xtk
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1960640&extension=ts&play_token=PPB7grC95D
 #EXTINF:-1 tvg-id="1708092" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13794.png?ver=89391",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX SE 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1708092&extension=ts&play_token=wSk57rFP5V
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1708092&extension=ts&play_token=yZd6O3KfYK
+#EXTINF:-1 tvg-id="1708685" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13794.png?ver=89391",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX NL 19
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1708685&extension=ts&play_token=5E7pnYg11s
 #EXTINF:-1 tvg-id="1707881" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13794.png?ver=89391",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX DK 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1707881&extension=ts&play_token=kWPC6a84TQ
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1707881&extension=ts&play_token=KU6AU2Kjc2
 #EXTINF:-1 tvg-id="1707991" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13794.png?ver=89391",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX NO 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1707991&extension=ts&play_token=fOSlCcaWLO
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1707991&extension=ts&play_token=JgKNv0eRzC
 #EXTINF:-1 tvg-id="1610963" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14409.png?ver=39128",26/07 12:00 AM | MLS on TSN: San Diego vs. Dallas @ :TSN+ 94
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1610963&extension=ts&play_token=22LyfbitUC
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1610963&extension=ts&play_token=CUChvgPsmk
 #EXTINF:-1 tvg-id="609401" group-title="🌍|Live International Friendly-Match" tvg-logo="http://picons.cmshulk.com/picons/logos/laz.telemundodallas.png",26/07 12:00 AM | LA: TELEMUNDO DALLAS HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=609401&extension=ts&play_token=jgKVXfPPch
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=609401&extension=ts&play_token=Cln9V7uejx
 #EXTINF:-1 tvg-id="2026835" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/MAX-MAX.png",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX NL 19
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2026835&extension=ts&play_token=1QdMnyTfu8
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2026835&extension=ts&play_token=Mc9zUjm9dp
 #EXTINF:-1 tvg-id="1996207" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Max.png",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX NO 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1996207&extension=ts&play_token=Xm42ICGny7
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1996207&extension=ts&play_token=kMvePHxSll
 #EXTINF:-1 tvg-id="2026835" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/MAX-MAX.png",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX NL 19
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2026835&extension=ts&play_token=VqHTV5URnQ
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2026835&extension=ts&play_token=RZfLRnlHCh
 #EXTINF:-1 tvg-id="1991622" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/MAX-MAX.png",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX SE 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1991622&extension=ts&play_token=xlQkWCHLeB
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1991622&extension=ts&play_token=l7QYijCCLQ
 #EXTINF:-1 tvg-id="1996381" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/MAX-MAX.png",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX DK 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1996381&extension=ts&play_token=mLemzPi2bF
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1996381&extension=ts&play_token=CTRp23NAyX
 #EXTINF:-1 tvg-id="1996207" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/Max.png",26/07 12:00 AM | All Sports: Glasgow 2026 Commonwealth Games @ :MAX NO 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1996207&extension=ts&play_token=8ViVbB4rnv
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1996207&extension=ts&play_token=HTlXVGXq0p
 #EXTINF:-1 tvg-id="621407" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",26/07 12:30 AM | LA LIGA REAL MADRID 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=621407&extension=ts&play_token=SgAYjywQoz
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621407&extension=ts&play_token=kQJiMGKoSH
 #EXTINF:-1 tvg-id="621402" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",26/07 12:30 AM | LA LIGA REAL BETIS 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=621402&extension=ts&play_token=e5XRu8wRTb
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621402&extension=ts&play_token=sqtTesOvgW
 #EXTINF:-1 tvg-id="621403" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",26/07 12:30 AM | LA LIGA REAL SOCIEDAD 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=621403&extension=ts&play_token=mvAcDqoLPC
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621403&extension=ts&play_token=68WzAA0wBI
 #EXTINF:-1 tvg-id="621401" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",26/07 12:30 AM | LA LIGA VILLAREAL 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=621401&extension=ts&play_token=gBKrI8z1Dn
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=621401&extension=ts&play_token=ROiaeaxRAa
 #EXTINF:-1 tvg-id="1395516" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALBETIS.png",26/07 12:30 AM | LA LIGA| REAL BETIS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395516&extension=ts&play_token=Ly8gKWPCpN
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395516&extension=ts&play_token=xMyMMXvZ4u
 #EXTINF:-1 tvg-id="1395515" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALMADRID.png",26/07 12:30 AM | LA LIGA| REAL MADRID
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395515&extension=ts&play_token=pUFosEdhrZ
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395515&extension=ts&play_token=7wJTNRsAZO
 #EXTINF:-1 tvg-id="1395514" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALSOCIEDAD.png",26/07 12:30 AM | LA LIGA| REAL SOCIEDAD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395514&extension=ts&play_token=kLjtyCG0ix
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395514&extension=ts&play_token=QxLhupblxP
 #EXTINF:-1 tvg-id="1395511" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/VILLAREAL.png",26/07 12:30 AM | LA LIGA| VILLAREAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395511&extension=ts&play_token=IxqFTm18FR
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395511&extension=ts&play_token=BGEXRvFeLS
 #EXTINF:-1 tvg-id="1395516" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALBETIS.png",26/07 12:30 AM | LA LIGA| REAL BETIS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395516&extension=ts&play_token=d62P9jb2YZ
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395516&extension=ts&play_token=uxp5exAmeU
 #EXTINF:-1 tvg-id="1395515" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALMADRID.png",26/07 12:30 AM | LA LIGA| REAL MADRID
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395515&extension=ts&play_token=1jNU6I2zgt
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395515&extension=ts&play_token=QOaPcsOps2
 #EXTINF:-1 tvg-id="1395514" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALSOCIEDAD.png",26/07 12:30 AM | LA LIGA| REAL SOCIEDAD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395514&extension=ts&play_token=Ge7vjghdgR
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395514&extension=ts&play_token=z71Uf8DCw3
 #EXTINF:-1 tvg-id="1395511" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/VILLAREAL.png",26/07 12:30 AM | LA LIGA| VILLAREAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395511&extension=ts&play_token=87Ogw8AJiJ
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395511&extension=ts&play_token=Z1WRkuFbE4
 #EXTINF:-1 tvg-id="1395516" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALBETIS.png",26/07 12:30 AM | LA LIGA| REAL BETIS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395516&extension=ts&play_token=Gkl1rtjDrL
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395516&extension=ts&play_token=myTsvxOgGz
 #EXTINF:-1 tvg-id="1395515" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALMADRID.png",26/07 12:30 AM | LA LIGA| REAL MADRID
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395515&extension=ts&play_token=ePnoZ7ubmn
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395515&extension=ts&play_token=ZX9GAq2eim
 #EXTINF:-1 tvg-id="1395514" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/REALSOCIEDAD.png",26/07 12:30 AM | LA LIGA| REAL SOCIEDAD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395514&extension=ts&play_token=0cH5LR89wF
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395514&extension=ts&play_token=l9HWw4GaNc
 #EXTINF:-1 tvg-id="1395511" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/VILLAREAL.png",26/07 12:30 AM | LA LIGA| VILLAREAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395511&extension=ts&play_token=50Dt4WI0Fu
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1395511&extension=ts&play_token=i8xvfE84mV
 #EXTINF:-1 tvg-id="615727" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13726.png?ver=70441",26/07 12:30 AM | Flo (FLSP) 74: 2025 Laval-Montreal Rousseau vs Magog 22/10
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=615727&extension=ts&play_token=QrG4hsElF1
-#EXTINF:-1 tvg-id="1672740" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",26/07 12:30 AM | (MX) (Dazn 018) Sevilla FC _ Real Madrid ( :00)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1672740&extension=ts&play_token=mGwClqZ8Hi
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=615727&extension=ts&play_token=smSylPxBOm
 #EXTINF:-1 tvg-id="1940093" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",26/07 01:00 AM | Royal Standard de Liège vs. Juventus all | 8K US: SOCCER 64
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1940093&extension=ts&play_token=ylDi5FpkQw
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1940093&extension=ts&play_token=tdNw2CvVx0
 #EXTINF:-1 tvg-id="2062066" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 01:00 AM | Royal Standard de Liège vs. Juventus all | 8K US: SOCCER 64
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062066&extension=ts&play_token=SN74ucbeJc
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062066&extension=ts&play_token=SxyjhFVOlD
 #EXTINF:-1 tvg-id="2062066" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 01:00 AM | Royal Standard de Liège vs. Juventus all | 8K US: SOCCER 64
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062066&extension=ts&play_token=z0I7RRigR5
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062066&extension=ts&play_token=fBGdsH2uId
 #EXTINF:-1 tvg-id="2062066" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",26/07 01:00 AM | Royal Standard de Liège vs. Juventus all | 8K US: SOCCER 64
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2062066&extension=ts&play_token=2CJYDdxuIL
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2062066&extension=ts&play_token=ryJDMPdEjb
 #EXTINF:-1 tvg-id="2084225" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15271.jpg?ver=95591",26/07 02:00 AM | PSF 15 Porto vs Aston Villa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2084225&extension=ts&play_token=hG41WyFr73
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2084225&extension=ts&play_token=phwVAdVmEX
 #EXTINF:-1 tvg-id="2114317" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",26/07 02:00 AM | PSF 15 Porto vs Aston Villa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2114317&extension=ts&play_token=6eBUQIHStX
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2114317&extension=ts&play_token=5g4D6P6H2a
 #EXTINF:-1 tvg-id="2114317" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",26/07 02:00 AM | PSF 15 Porto vs Aston Villa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2114317&extension=ts&play_token=1MQTmPeFDg
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2114317&extension=ts&play_token=dFglZkPvlZ
 #EXTINF:-1 tvg-id="2114317" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",26/07 02:00 AM | PSF 15 Porto vs Aston Villa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2114317&extension=ts&play_token=eKRkoOUVnv
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2114317&extension=ts&play_token=SifyomvMjx
 #EXTINF:-1 tvg-id="1535953" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",26/07 05:00 AM | AU (STAN 09) Liverpool v Sunderland Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1535953&extension=ts&play_token=FHlOwLvOVQ
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535953&extension=ts&play_token=HszzaPV55R
 #EXTINF:-1 tvg-id="1601669" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",26/07 05:00 AM | US (ESPN+ 050) Soccer: Sunderland vs. Liverpool (ESP) ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1601669&extension=ts&play_token=A4cBZHhPnx
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1601669&extension=ts&play_token=lxXKhw6Zg6
 #EXTINF:-1 tvg-id="1909967" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/staun.png",26/07 05:00 AM | AU (STAN 09) Liverpool v Sunderland Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1909967&extension=ts&play_token=gh655PkgP7
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1909967&extension=ts&play_token=UEhxfdj9qY
 #EXTINF:-1 tvg-id="1949862" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",26/07 05:00 AM | US (ESPN+ 050) Soccer: Sunderland vs. Liverpool (ESP) ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1949862&extension=ts&play_token=A7GjaiLr3h
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1949862&extension=ts&play_token=8Afdr1l45a
 #EXTINF:-1 tvg-id="1909967" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/staun.png",26/07 05:00 AM | AU (STAN 09) Liverpool v Sunderland Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1909967&extension=ts&play_token=93BLhZrxKC
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1909967&extension=ts&play_token=cwNvaaQPIK
 #EXTINF:-1 tvg-id="1949862" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",26/07 05:00 AM | US (ESPN+ 050) Soccer: Sunderland vs. Liverpool (ESP) ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1949862&extension=ts&play_token=zky4k73SWM
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1949862&extension=ts&play_token=4dWjPrY6uw
 #EXTINF:-1 tvg-id="1909967" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/staun.png",26/07 05:00 AM | AU (STAN 09) Liverpool v Sunderland Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1909967&extension=ts&play_token=zkQsEAQc5S
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1909967&extension=ts&play_token=Uqd5IJhvfT
 #EXTINF:-1 tvg-id="1949862" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",26/07 05:00 AM | US (ESPN+ 050) Soccer: Sunderland vs. Liverpool (ESP) ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1949862&extension=ts&play_token=IaVYXAwqx5
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1949862&extension=ts&play_token=pWhjahKyVD
 #EXTINF:-1 tvg-id="1966348" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",26/07 05:00 AM | AU (STAN 09) Liverpool v Sunderland Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1966348&extension=ts&play_token=jnP6ETZEAb
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1966348&extension=ts&play_token=k5msZuuieP
 #EXTINF:-1 tvg-id="2084224" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15271.jpg?ver=95591",26/07 05:00 AM | PSF 16 Liverpool vs Sunderland
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2084224&extension=ts&play_token=BlnZ7Tkwhr
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2084224&extension=ts&play_token=EIyLiREPh0
 #EXTINF:-1 tvg-id="999562" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",26/07 05:00 AM | LIVERPOOL – SUNDERLAND (SE) 8K SE: AftonBlade 6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=999562&extension=ts&play_token=QRQ31j11Qy
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=999562&extension=ts&play_token=ipdDDLqAoe
 #EXTINF:-1 tvg-id="1732527" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/AFTONBLADET.png",26/07 05:00 AM | LIVERPOOL – SUNDERLAND (SE) 8K SE: AftonBlade 6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1732527&extension=ts&play_token=CP4rBKlGLc
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1732527&extension=ts&play_token=fTQS9UTlqm
 #EXTINF:-1 tvg-id="1535952" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",26/07 06:30 AM | AU (STAN 10) Leeds United v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1535952&extension=ts&play_token=kpgIubkKro
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535952&extension=ts&play_token=XB3GaIXnTi
 #EXTINF:-1 tvg-id="1601650" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",26/07 06:30 AM | US (ESPN+ 069) Soccer: Leeds vs. Wrexham (ESP) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1601650&extension=ts&play_token=S87SwOry4K
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1601650&extension=ts&play_token=XIgNalWffF
 #EXTINF:-1 tvg-id="1909966" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/staun.png",26/07 06:30 AM | AU (STAN 10) Leeds United v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1909966&extension=ts&play_token=MW1ZuerMdi
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1909966&extension=ts&play_token=QEzj500G63
 #EXTINF:-1 tvg-id="1949843" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",26/07 06:30 AM | US (ESPN+ 069) Soccer: Leeds vs. Wrexham (ESP) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8225306BF8D03344F0ADCCDFA47D4FF
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1949843&extension=ts&play_token=RaDnGbUzGE
+#EXTVLCOPT:http-header=Authorization: Bearer 8AEDC6AE15A9DA4CE3332BFF7B648633
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1949843&extension=ts&play_token=1xK6wOmnAI
 #EXTINF:-1 tvg-id="1909966" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/staun.png",26/07 06:30 AM | AU (STAN 10) Leeds United v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1909966&extension=ts&play_token=cNiA029LtV
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1909966&extension=ts&play_token=cn51LTxXN3
 #EXTINF:-1 tvg-id="1949843" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",26/07 06:30 AM | US (ESPN+ 069) Soccer: Leeds vs. Wrexham (ESP) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E6E0BDE8B079DE2FA1DFFBB8A60FD3BD
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1949843&extension=ts&play_token=C2urtlrbqH
+#EXTVLCOPT:http-header=Authorization: Bearer 2BA81ECA220675B5D3B428DCB475D929
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1949843&extension=ts&play_token=Xn2sejmcU7
 #EXTINF:-1 tvg-id="1909966" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/staun.png",26/07 06:30 AM | AU (STAN 10) Leeds United v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1909966&extension=ts&play_token=cW8qshwcR4
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1909966&extension=ts&play_token=Qlw6W2HNpT
 #EXTINF:-1 tvg-id="1949843" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",26/07 06:30 AM | US (ESPN+ 069) Soccer: Leeds vs. Wrexham (ESP) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 729FD4C10AF4DA57D8CF8A0ED0C1F07F
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1949843&extension=ts&play_token=ApJQe6FyfW
+#EXTVLCOPT:http-header=Authorization: Bearer 1E06444F97E28F07C62A293DCC7B512A
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1949843&extension=ts&play_token=ZP1yXeCqdK
 #EXTINF:-1 tvg-id="1966347" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",26/07 06:30 AM | AU (STAN 10) Leeds United v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1966347&extension=ts&play_token=6fdofAuc8J
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1966347&extension=ts&play_token=QF2AEfU5rV
 #EXTINF:-1 tvg-id="2084223" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15271.jpg?ver=95591",26/07 06:30 AM | PSF 17 Wrexham vs Leeds United
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0B2C01DD943898C472D32032789CBC7E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2084223&extension=ts&play_token=CunN9GgRpx
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F856D9266FE44CC563BD11660C1E46E1
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=2084223&extension=ts&play_token=jripcfMggT
