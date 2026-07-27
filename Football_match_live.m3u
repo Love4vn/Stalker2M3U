@@ -1,51 +1,71 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1910730" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",26/07 10:00 PM | US (Paramount 012) Dundee United vs. Rangers ( :00)
+#EXTINF:-1 tvg-id="1601696" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",29/07 01:45 AM | US (ESPN+ 023) Soccer: Hearts vs. Sk Sturm Graz ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A09C7F93E1D076F40C80670150810F9B
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1601696&extension=ts&play_token=x3jQjEAQYI
+#EXTINF:-1 tvg-id="1601696" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",29/07 01:45 AM | US (ESPN+ 023) Soccer: Hearts vs. Sk Sturm Graz ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BDDD401FAEA5F11C93CC867C8C19AFFC
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1601696&extension=ts&play_token=Ej2Agc2c0P
+#EXTINF:-1 tvg-id="1949889" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",29/07 01:45 AM | US (ESPN+ 023) Soccer: Hearts vs. Sk Sturm Graz ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A394D9621ADA72828719466067475B6C
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1910730&extension=ts&play_token=MXF1NhL6bz
-#EXTINF:-1 tvg-id="1910730" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",26/07 10:00 PM | US (Paramount 012) Dundee United vs. Rangers ( :00)
+#EXTVLCOPT:http-header=Authorization: Bearer BE596DB80D99EC2C289DB12CE8B8E5DF
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1949889&extension=ts&play_token=A1gAzhk8CR
+#EXTINF:-1 tvg-id="1949889" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",29/07 01:45 AM | US (ESPN+ 023) Soccer: Hearts vs. Sk Sturm Graz ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D4428D04B2637AA8269008F1B1B29967
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1910730&extension=ts&play_token=Xvb7wMwqKR
-#EXTINF:-1 tvg-id="1910730" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",26/07 10:00 PM | US (Paramount 012) Dundee United vs. Rangers ( :00)
+#EXTVLCOPT:http-header=Authorization: Bearer F74093C4894D5C111F4CB7A4B90662DA
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1949889&extension=ts&play_token=u7WmwjLPMx
+#EXTINF:-1 tvg-id="993058" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 15B68BC8F6E0651B0E006EFAA43C0B9B
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1910730&extension=ts&play_token=MQQ70NC08V
-#EXTINF:-1 tvg-id="1538186" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13719.png?ver=52004",26/07 10:00 PM | Live Football 01: Rangers vs West Ham
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A09C7F93E1D076F40C80670150810F9B
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=993058&extension=ts&play_token=pNdcjQ2jkG
+#EXTINF:-1 tvg-id="993058" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer BDE5FF7E171C2F4A81CE4F9B451F42AB
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1538186&extension=ts&play_token=fm3J81YrnS
-#EXTINF:-1 tvg-id="1360817" group-title="🌍|Live International Friendly-Match" tvg-logo="http://103.176.90.95/images/1360817.png",26/07 10:00 PM | Live Football 01: Rangers vs West Ham
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BDDD401FAEA5F11C93CC867C8C19AFFC
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=993058&extension=ts&play_token=IwteEqvRnk
+#EXTINF:-1 tvg-id="1363055" group-title="Live UEFA Champions League-Match" tvg-logo="http://103.176.90.95/images/1363055.png",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A394D9621ADA72828719466067475B6C
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1360817&extension=ts&play_token=baKRyT5eU6
-#EXTINF:-1 tvg-id="1926115" group-title="🌍|Live International Friendly-Match" tvg-logo="http://103.176.90.95/images/1363059.png",26/07 10:00 PM | Live Football 01: Rangers vs West Ham
+#EXTVLCOPT:http-header=Authorization: Bearer BE596DB80D99EC2C289DB12CE8B8E5DF
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1363055&extension=ts&play_token=hVfJ12ujYB
+#EXTINF:-1 tvg-id="1363055" group-title="Live UEFA Champions League-Match" tvg-logo="http://103.176.90.95/images/1363055.png",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F74093C4894D5C111F4CB7A4B90662DA
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1363055&extension=ts&play_token=mzVJyyhO1J
+#EXTINF:-1 tvg-id="1025279" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A09C7F93E1D076F40C80670150810F9B
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1025279&extension=ts&play_token=ThNAYuBNoV
+#EXTINF:-1 tvg-id="1025279" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13347.jpg?ver=18026",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BDDD401FAEA5F11C93CC867C8C19AFFC
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1025279&extension=ts&play_token=LIHrKtIhF1
+#EXTINF:-1 tvg-id="1349313" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A394D9621ADA72828719466067475B6C
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1926115&extension=ts&play_token=k2TRzjdd0I
-#EXTINF:-1 tvg-id="1360817" group-title="🌍|Live International Friendly-Match" tvg-logo="http://103.176.90.95/images/1360817.png",26/07 10:00 PM | Live Football 01: Rangers vs West Ham
+#EXTVLCOPT:http-header=Authorization: Bearer BE596DB80D99EC2C289DB12CE8B8E5DF
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1349313&extension=ts&play_token=UaabNLg3AE
+#EXTINF:-1 tvg-id="1363944" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BE596DB80D99EC2C289DB12CE8B8E5DF
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1363944&extension=ts&play_token=eUjwPzPW21
+#EXTINF:-1 tvg-id="1349313" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D4428D04B2637AA8269008F1B1B29967
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1360817&extension=ts&play_token=EZ1lSgrl9v
-#EXTINF:-1 tvg-id="1926115" group-title="🌍|Live International Friendly-Match" tvg-logo="http://103.176.90.95/images/1363059.png",26/07 10:00 PM | Live Football 01: Rangers vs West Ham
+#EXTVLCOPT:http-header=Authorization: Bearer F74093C4894D5C111F4CB7A4B90662DA
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1349313&extension=ts&play_token=w1PT3vocNF
+#EXTINF:-1 tvg-id="1363944" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",29/07 01:45 AM | UEFA 02 Sturm Graz vs Hearts
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D4428D04B2637AA8269008F1B1B29967
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1926115&extension=ts&play_token=4VMm39G4wW
-#EXTINF:-1 tvg-id="1360817" group-title="🌍|Live International Friendly-Match" tvg-logo="http://103.176.90.95/images/1360817.png",26/07 10:00 PM | Live Football 01: Rangers vs West Ham
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 15B68BC8F6E0651B0E006EFAA43C0B9B
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1360817&extension=ts&play_token=KuM20tlVGO
-#EXTINF:-1 tvg-id="1926115" group-title="🌍|Live International Friendly-Match" tvg-logo="http://103.176.90.95/images/1363059.png",26/07 10:00 PM | Live Football 01: Rangers vs West Ham
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 15B68BC8F6E0651B0E006EFAA43C0B9B
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1926115&extension=ts&play_token=jyBaL4fiXw
+#EXTVLCOPT:http-header=Authorization: Bearer F74093C4894D5C111F4CB7A4B90662DA
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1363944&extension=ts&play_token=Kk5z03zMFx
