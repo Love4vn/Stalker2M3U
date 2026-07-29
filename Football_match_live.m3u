@@ -1,181 +1,211 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1601691" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 12:00 AM | US (ESPN+ 028) Soccer: FC Copenhagen vs. FC Polissya ( :00)
+#EXTINF:-1 tvg-id="1601715" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 12:00 AM | US (ESPN+ 004) Soccer: FC Copenhagen vs. FC Polissya ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1601691&extension=ts&play_token=5tIomyDCEl
-#EXTINF:-1 tvg-id="1601691" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 12:00 AM | US (ESPN+ 028) Soccer: FC Copenhagen vs. FC Polissya ( :00)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1601691&extension=ts&play_token=ocv95qk3qv
-#EXTINF:-1 tvg-id="1601691" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 12:00 AM | US (ESPN+ 028) Soccer: FC Copenhagen vs. FC Polissya ( :00)
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1601715&extension=ts&play_token=fV104BZEUh
+#EXTINF:-1 tvg-id="1601715" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 12:00 AM | US (ESPN+ 004) Soccer: FC Copenhagen vs. FC Polissya ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1601691&extension=ts&play_token=K0WwbOcRFO
-#EXTINF:-1 tvg-id="1601691" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 12:00 AM | US (ESPN+ 028) Soccer: FC Copenhagen vs. FC Polissya ( :00)
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1601715&extension=ts&play_token=5uq3N35soJ
+#EXTINF:-1 tvg-id="1601715" group-title="Live UEFA Conference League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 12:00 AM | US (ESPN+ 004) Soccer: FC Copenhagen vs. FC Polissya ( :00)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601691&extension=ts&play_token=gixPsWaW8K
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601715&extension=ts&play_token=LofRtSuA0M
+#EXTINF:-1 tvg-id="1949908" group-title="Live UEFA Conference League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",30/07 12:00 AM | US (ESPN+ 004) Soccer: FC Copenhagen vs. FC Polissya ( :00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1949908&extension=ts&play_token=7vq41A6Gp9
+#EXTINF:-1 tvg-id="1881226" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 01:00 AM | Zabrze Fenerbahce (Sportdigital Fußball) | 8K DE: DAZN 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1881226&extension=ts&play_token=OIo3ikts0Z
+#EXTINF:-1 tvg-id="1893058" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 01:00 AM | Górnik Zabrze Fenerbahçe (Sportdigital Fußball) | 8K CH: DAZN 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1893058&extension=ts&play_token=SXBHNuDbSh
+#EXTINF:-1 tvg-id="1881226" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 01:00 AM | Zabrze Fenerbahce (Sportdigital Fußball) | 8K DE: DAZN 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1881226&extension=ts&play_token=iPiwJP0v8l
+#EXTINF:-1 tvg-id="1893058" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 01:00 AM | Górnik Zabrze Fenerbahçe (Sportdigital Fußball) | 8K CH: DAZN 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1893058&extension=ts&play_token=aLaBumPGmA
+#EXTINF:-1 tvg-id="1881226" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 01:00 AM | Zabrze Fenerbahce (Sportdigital Fußball) | 8K DE: DAZN 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1881226&extension=ts&play_token=5YtfLfVNjC
+#EXTINF:-1 tvg-id="1893058" group-title="Live UEFA Champions League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 01:00 AM | Górnik Zabrze Fenerbahçe (Sportdigital Fußball) | 8K CH: DAZN 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1893058&extension=ts&play_token=ewJXos1HnS
+#EXTINF:-1 tvg-id="2040515" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",30/07 01:00 AM | Zabrze Fenerbahce (Sportdigital Fußball) | 8K DE: DAZN 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2040515&extension=ts&play_token=e3FtS0TDz5
+#EXTINF:-1 tvg-id="2046795" group-title="Live UEFA Champions League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",30/07 01:00 AM | Górnik Zabrze Fenerbahçe (Sportdigital Fußball) | 8K CH: DAZN 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2046795&extension=ts&play_token=mIKvUQ1ygQ
 #EXTINF:-1 tvg-id="1535959" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1535959&extension=ts&play_token=ZZu6IRet3J
-#EXTINF:-1 tvg-id="1601678" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 041) Soccer: Wrexham vs. Liverpool ( :05)
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1535959&extension=ts&play_token=udZwzv94F4
+#EXTINF:-1 tvg-id="1601696" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 023) Soccer: Wrexham vs. Liverpool ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1601678&extension=ts&play_token=HGcd9XSIg9
-#EXTINF:-1 tvg-id="1601677" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 042) Soccer: Wrexham vs. Liverpool (ESP) ( :10)
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1601696&extension=ts&play_token=RL605lZx8M
+#EXTINF:-1 tvg-id="1601695" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 024) Soccer: Wrexham vs. Liverpool (ESP) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1601677&extension=ts&play_token=OImFJ0FcdL
-#EXTINF:-1 tvg-id="1535959" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1535959&extension=ts&play_token=0kwqDPxGBe
-#EXTINF:-1 tvg-id="1601678" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 041) Soccer: Wrexham vs. Liverpool ( :05)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1601678&extension=ts&play_token=jQFO0AFP3f
-#EXTINF:-1 tvg-id="1601677" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 042) Soccer: Wrexham vs. Liverpool (ESP) ( :10)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1601677&extension=ts&play_token=ur9oZqPCak
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1601695&extension=ts&play_token=iWVpUHWPLS
 #EXTINF:-1 tvg-id="1535959" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1535959&extension=ts&play_token=KtuEKtDlhM
-#EXTINF:-1 tvg-id="1601678" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 041) Soccer: Wrexham vs. Liverpool ( :05)
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1535959&extension=ts&play_token=1NMsU2qz3b
+#EXTINF:-1 tvg-id="1601696" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 023) Soccer: Wrexham vs. Liverpool ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1601678&extension=ts&play_token=TBytMTuWfL
-#EXTINF:-1 tvg-id="1601677" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 042) Soccer: Wrexham vs. Liverpool (ESP) ( :10)
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1601696&extension=ts&play_token=cnG4O0oq5k
+#EXTINF:-1 tvg-id="1601695" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 024) Soccer: Wrexham vs. Liverpool (ESP) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1601677&extension=ts&play_token=MFEoO3IKbq
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1601695&extension=ts&play_token=m5buYsArHL
 #EXTINF:-1 tvg-id="1535959" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1535959&extension=ts&play_token=GPFLU6qq5t
-#EXTINF:-1 tvg-id="1601678" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 041) Soccer: Wrexham vs. Liverpool ( :05)
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1535959&extension=ts&play_token=mGhnACxXOz
+#EXTINF:-1 tvg-id="1601696" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 023) Soccer: Wrexham vs. Liverpool ( :05)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601678&extension=ts&play_token=FCT8Upt6hP
-#EXTINF:-1 tvg-id="1601677" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 042) Soccer: Wrexham vs. Liverpool (ESP) ( :10)
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601696&extension=ts&play_token=Be7Nijv9tM
+#EXTINF:-1 tvg-id="1601695" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13699.png?ver=19438",30/07 06:30 AM | US (ESPN+ 024) Soccer: Wrexham vs. Liverpool (ESP) ( :10)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601677&extension=ts&play_token=5hGpGjAOYg
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1601695&extension=ts&play_token=jtFieqqoKD
+#EXTINF:-1 tvg-id="1909973" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/staun.png",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1909973&extension=ts&play_token=Z3utzh5H2L
+#EXTINF:-1 tvg-id="1949889" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",30/07 06:30 AM | US (ESPN+ 023) Soccer: Wrexham vs. Liverpool ( :05)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1949889&extension=ts&play_token=HVGDgt8R7P
+#EXTINF:-1 tvg-id="1949888" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/ESPN.png",30/07 06:30 AM | US (ESPN+ 024) Soccer: Wrexham vs. Liverpool (ESP) ( :10)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1949888&extension=ts&play_token=Kv944gftEp
 #EXTINF:-1 tvg-id="1966354" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1966354&extension=ts&play_token=mh45ZgYPU0
-#EXTINF:-1 tvg-id="1966354" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1966354&extension=ts&play_token=WwwOuaHTDE
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1966354&extension=ts&play_token=lfVJv33x7p
 #EXTINF:-1 tvg-id="1966354" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1966354&extension=ts&play_token=Jw7gEdyyCz
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1966354&extension=ts&play_token=WJeSzMlk6Y
 #EXTINF:-1 tvg-id="1966354" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13746.jpg?ver=81467",30/07 06:30 AM | AU (STAN 03) Liverpool v Wrexham Preseason Club Friendlies 2026 ( :29)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1966354&extension=ts&play_token=ergxVTB4fT
-#EXTINF:-1 tvg-id="1881204" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K DE: DAZN 32
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1966354&extension=ts&play_token=YtNwbPats9
+#EXTINF:-1 tvg-id="1881219" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K DE: DAZN 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1881204&extension=ts&play_token=QtwIV7zYXt
-#EXTINF:-1 tvg-id="1893237" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K AT: DAZN 31
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1881219&extension=ts&play_token=Lw90640Gmd
+#EXTINF:-1 tvg-id="1893252" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K AT: DAZN 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1893237&extension=ts&play_token=5ECAFlHNef
-#EXTINF:-1 tvg-id="1893042" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Football Matchs Amicaux | 8K CH: DAZN 26
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1893252&extension=ts&play_token=0Gnbuhwe6s
+#EXTINF:-1 tvg-id="1893051" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Football Matchs Amicaux | 8K CH: DAZN 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1893042&extension=ts&play_token=pK7xyTCKLV
-#EXTINF:-1 tvg-id="999561" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",30/07 06:30 AM | LIVERPOOL – WREXHAM (SE) 8K SE: AftonBlade 7
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1893051&extension=ts&play_token=yZxjY7EwJ2
+#EXTINF:-1 tvg-id="999564" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",30/07 06:30 AM | LIVERPOOL – WREXHAM (SE) 8K SE: AftonBlade 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C6C1FC57F8A94D66F8965BB3879C3C9B
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=999561&extension=ts&play_token=0CEr3TTIC6
-#EXTINF:-1 tvg-id="999561" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",30/07 06:30 AM | LIVERPOOL – WREXHAM (SE) 8K SE: AftonBlade 7
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=999561&extension=ts&play_token=3Z0mAYQLDV
-#EXTINF:-1 tvg-id="1881204" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K DE: DAZN 32
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1881204&extension=ts&play_token=wcfXyvdDHO
-#EXTINF:-1 tvg-id="1893237" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K AT: DAZN 31
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1893237&extension=ts&play_token=rf4cflKTK4
-#EXTINF:-1 tvg-id="1893042" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Football Matchs Amicaux | 8K CH: DAZN 26
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 23C0F7030F63248328F45924BA223B39
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1893042&extension=ts&play_token=vauwCBZm7x
-#EXTINF:-1 tvg-id="1881204" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K DE: DAZN 32
+#EXTVLCOPT:http-header=Authorization: Bearer BBAA3B7717AC0B6FAAFC9A07E73AB57E
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=999564&extension=ts&play_token=JSKlCbPZvz
+#EXTINF:-1 tvg-id="1881219" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K DE: DAZN 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1881204&extension=ts&play_token=EcPmIZ85cK
-#EXTINF:-1 tvg-id="1893237" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K AT: DAZN 31
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1881219&extension=ts&play_token=H5rBCoeiTg
+#EXTINF:-1 tvg-id="1893252" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K AT: DAZN 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1893237&extension=ts&play_token=u9n09cgHB6
-#EXTINF:-1 tvg-id="1893042" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Football Matchs Amicaux | 8K CH: DAZN 26
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1893252&extension=ts&play_token=bPcD9nkLYV
+#EXTINF:-1 tvg-id="1893051" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Football Matchs Amicaux | 8K CH: DAZN 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1893042&extension=ts&play_token=Lzo2Ga4krH
-#EXTINF:-1 tvg-id="999561" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",30/07 06:30 AM | LIVERPOOL – WREXHAM (SE) 8K SE: AftonBlade 7
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1893051&extension=ts&play_token=CUReTjsOGu
+#EXTINF:-1 tvg-id="999564" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",30/07 06:30 AM | LIVERPOOL – WREXHAM (SE) 8K SE: AftonBlade 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6D595438927BA81F048A10490DD0DEC1
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=999561&extension=ts&play_token=ib02aFMNGQ
-#EXTINF:-1 tvg-id="1881204" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K DE: DAZN 32
+#EXTVLCOPT:http-header=Authorization: Bearer BB7A95ECA0BC62CB39D289A293D47137
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=999564&extension=ts&play_token=5Dm2Z6FSLW
+#EXTINF:-1 tvg-id="1881219" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K DE: DAZN 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1881204&extension=ts&play_token=tsGAdt04pQ
-#EXTINF:-1 tvg-id="1893237" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K AT: DAZN 31
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1881219&extension=ts&play_token=h5GWPdFQ8V
+#EXTINF:-1 tvg-id="1893252" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K AT: DAZN 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1893237&extension=ts&play_token=wfhZHNiOre
-#EXTINF:-1 tvg-id="1893042" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Football Matchs Amicaux | 8K CH: DAZN 26
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1893252&extension=ts&play_token=VzarCEiWo0
+#EXTINF:-1 tvg-id="1893051" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",30/07 06:30 AM | Liverpool Wrexham Football Matchs Amicaux | 8K CH: DAZN 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1893042&extension=ts&play_token=LNO8cgEYT4
-#EXTINF:-1 tvg-id="999561" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",30/07 06:30 AM | LIVERPOOL – WREXHAM (SE) 8K SE: AftonBlade 7
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1893051&extension=ts&play_token=Adfrh7hGov
+#EXTINF:-1 tvg-id="999564" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",30/07 06:30 AM | LIVERPOOL – WREXHAM (SE) 8K SE: AftonBlade 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F512FBD450D21E0E0FCF95CDF3C26A5E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=999561&extension=ts&play_token=mELdBnOwkb
+#EXTVLCOPT:http-header=Authorization: Bearer F59CAC82006199C5C50A35F8098BCE71
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=999564&extension=ts&play_token=drKTBSIyUj
+#EXTINF:-1 tvg-id="2040508" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K DE: DAZN 17
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2040508&extension=ts&play_token=p0rHd6Kk0N
+#EXTINF:-1 tvg-id="2046788" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",30/07 06:30 AM | Liverpool Wrexham Football Matchs Amicaux | 8K CH: DAZN 17
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2046788&extension=ts&play_token=ymNgWHcZ1v
+#EXTINF:-1 tvg-id="2046689" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png",30/07 06:30 AM | Liverpool Wrexham Testspiele | 8K AT: DAZN 16
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F8F1FD877D5AA701A3EE1044DC4AC116
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2046689&extension=ts&play_token=nbYsR82FwV
