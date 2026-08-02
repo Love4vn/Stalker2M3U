@@ -1,24 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1032474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",02/08 05:30 AM | Mubadala Citi DC Open -SF (1-2) (UK| NOW HK NOW SPORTS 6)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1032474&extension=ts&play_token=5JHd7cmyfq
-#EXTINF:-1 tvg-id="1032474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",02/08 05:30 AM | Mubadala Citi DC Open -SF (1-2) (UK| NOW HK NOW SPORTS 6)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1032474&extension=ts&play_token=5yZzBelcrY
-#EXTINF:-1 tvg-id="1032474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",02/08 05:30 AM | Mubadala Citi DC Open -SF (1-2) (UK| NOW HK NOW SPORTS 6)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1032474&extension=ts&play_token=bATD3MB3TE
-#EXTINF:-1 tvg-id="554944" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/554944.png",02/08 05:30 AM | Mubadala Citi DC Open -SF (1-2) (HK| NOW SPORTS 6 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=554944&extension=ts&play_token=Lm4OzSwMHx
 #EXTINF:-1 tvg-id="1032476" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",03/08 01:30 AM | Mubadala DC Open -Final (UK| NOW HK NOW SPORTS 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
@@ -39,92 +19,112 @@ http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1032476&
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=554946&extension=ts&play_token=9Ot7CbdDbk
-#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (UK| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="1032474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",03/08 04:00 AM | Mubadala Citi DC Open -Final (UK| NOW HK NOW SPORTS 6)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1032474&extension=ts&play_token=5JHd7cmyfq
+#EXTINF:-1 tvg-id="1032474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",03/08 04:00 AM | Mubadala Citi DC Open -Final (UK| NOW HK NOW SPORTS 6)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1032474&extension=ts&play_token=5yZzBelcrY
+#EXTINF:-1 tvg-id="1032474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",03/08 04:00 AM | Mubadala Citi DC Open -Final (UK| NOW HK NOW SPORTS 6)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1032474&extension=ts&play_token=bATD3MB3TE
+#EXTINF:-1 tvg-id="554944" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/554944.png",03/08 04:00 AM | Mubadala Citi DC Open -Final (HK| NOW SPORTS 6 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=554944&extension=ts&play_token=Lm4OzSwMHx
+#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",02/08 10:00 AM |  (UK| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=238270&extension=ts&play_token=NKoQljn2Rw
-#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (UK| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",02/08 10:00 AM |  (UK| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=238270&extension=ts&play_token=jvKqvsM8wG
-#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (UK| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",02/08 10:00 AM |  (UK| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
 http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=238270&extension=ts&play_token=1Iq5YKcFLK
-#EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (US: BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",02/08 10:00 AM |  (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=325027&extension=ts&play_token=sJAOGocLCX
-#EXTINF:-1 tvg-id="83957" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/83957.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (US| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="83957" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/83957.png",02/08 10:00 AM |  (US| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=83957&extension=ts&play_token=XcrNhwHJz3
-#EXTINF:-1 tvg-id="83957" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/83957.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (US| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="83957" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/83957.png",02/08 10:00 AM |  (US| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=83957&extension=ts&play_token=0Cv4VwJvux
-#EXTINF:-1 tvg-id="83957" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/83957.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (US| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="83957" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/83957.png",02/08 10:00 AM |  (US| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
 http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=83957&extension=ts&play_token=D4vIXJtLUt
-#EXTINF:-1 tvg-id="498682" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12549.jpg?36672",02/08 05:30 AM | Mubadala Citi DC Open 2026 (CA: RDS 2)
+#EXTINF:-1 tvg-id="498682" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12549.jpg?36672",03/08 04:00 AM | Mubadala Citi DC Open 2026 (CA: RDS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=498682&extension=ts&play_token=pfZr32oACo
-#EXTINF:-1 tvg-id="412931" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12549.jpg?5735",02/08 05:30 AM | Mubadala Citi DC Open 2026 (CA FR: RDS 2)
+#EXTINF:-1 tvg-id="412931" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12549.jpg?5735",03/08 04:00 AM | Mubadala Citi DC Open 2026 (CA FR: RDS 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=412931&extension=ts&play_token=0LcgmfEnJQ
-#EXTINF:-1 tvg-id="412898" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12549.jpg?96429",02/08 05:30 AM | Mubadala Citi DC Open 2026 (CA FR: RDS2 HD)
+#EXTINF:-1 tvg-id="412898" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12549.jpg?96429",03/08 04:00 AM | Mubadala Citi DC Open 2026 (CA FR: RDS2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=412898&extension=ts&play_token=E35dA1XIB2
-#EXTINF:-1 tvg-id="177303" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177303.png",02/08 05:30 AM | Mubadala Citi DC Open 2026 (CA| RDS 2 HD)
+#EXTINF:-1 tvg-id="177303" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177303.png",03/08 04:00 AM | Mubadala Citi DC Open 2026 (CA| RDS 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177303&extension=ts&play_token=IhPcX5NZ9q
-#EXTINF:-1 tvg-id="177303" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177303.png",02/08 05:30 AM | Mubadala Citi DC Open 2026 (CA| RDS 2 HD)
+#EXTINF:-1 tvg-id="177303" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177303.png",03/08 04:00 AM | Mubadala Citi DC Open 2026 (CA| RDS 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=177303&extension=ts&play_token=zEwUprxVON
-#EXTINF:-1 tvg-id="414141" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",02/08 05:30 AM | 2026 Mubadala Citi DC Open Tennis (CA EN: TSN 2)
+#EXTINF:-1 tvg-id="414141" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",03/08 04:00 AM | 2026 Mubadala Citi DC Open Tennis (CA EN: TSN 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=414141&extension=ts&play_token=C1Hk9hXlCu
-#EXTINF:-1 tvg-id="1239040" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6587.png?99081",02/08 05:30 AM | 2026 Mubadala Citi DC Open Tennis (CA: TSN 2 ᴿᴬᵂ)
+#EXTINF:-1 tvg-id="1239040" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6587.png?99081",03/08 04:00 AM | 2026 Mubadala Citi DC Open Tennis (CA: TSN 2 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1239040&extension=ts&play_token=TURFWpnHRu
-#EXTINF:-1 tvg-id="904215" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/904215.png",02/08 05:30 AM | 2026 Mubadala Citi DC Open Tennis (CA| TSN2 FHD)
+#EXTINF:-1 tvg-id="904215" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/904215.png",03/08 04:00 AM | 2026 Mubadala Citi DC Open Tennis (CA| TSN2 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=904215&extension=ts&play_token=ZPhg5EnX2v
-#EXTINF:-1 tvg-id="177345" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177345.png",02/08 05:30 AM | 2026 Mubadala Citi DC Open Tennis (CA| TSN 2 HD)
+#EXTINF:-1 tvg-id="177345" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177345.png",03/08 04:00 AM | 2026 Mubadala Citi DC Open Tennis (CA| TSN 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177345&extension=ts&play_token=KADGgnvxr9
-#EXTINF:-1 tvg-id="904215" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/904215.png",02/08 05:30 AM | 2026 Mubadala Citi DC Open Tennis (CA| TSN2 FHD)
+#EXTINF:-1 tvg-id="904215" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/904215.png",03/08 04:00 AM | 2026 Mubadala Citi DC Open Tennis (CA| TSN2 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=904215&extension=ts&play_token=oAzttHtZYs
-#EXTINF:-1 tvg-id="177345" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177345.png",02/08 05:30 AM | 2026 Mubadala Citi DC Open Tennis (CA| TSN 2 HD)
+#EXTINF:-1 tvg-id="177345" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177345.png",03/08 04:00 AM | 2026 Mubadala Citi DC Open Tennis (CA| TSN 2 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
@@ -229,57 +229,57 @@ http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177320&ex
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=177320&extension=ts&play_token=keiCQPiAI2
-#EXTINF:-1 tvg-id="1294758" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1294758.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (AR|  BEIN  SPORTS 7 FHD)
+#EXTINF:-1 tvg-id="1294758" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1294758.png",02/08 10:00 AM |  (AR|  BEIN  SPORTS 7 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1294758&extension=ts&play_token=lRGg4FXuae
-#EXTINF:-1 tvg-id="1330427" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330427.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (AR| BEIN SPORTS 7 HEVC)
+#EXTINF:-1 tvg-id="1330427" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330427.png",02/08 10:00 AM |  (AR| BEIN SPORTS 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1330427&extension=ts&play_token=mMVz8qUrAT
-#EXTINF:-1 tvg-id="1330443" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330443.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (AR| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="1330443" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330443.png",02/08 10:00 AM |  (AR| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1330443&extension=ts&play_token=CfNPfAKBXJ
-#EXTINF:-1 tvg-id="1836262" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1836262.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (BEIN SPORTS FHD 7)
+#EXTINF:-1 tvg-id="1836262" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1836262.png",02/08 10:00 AM |  (BEIN SPORTS FHD 7)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1836262&extension=ts&play_token=YAndHNHnyB
-#EXTINF:-1 tvg-id="1660421" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1660421.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (BEIN SPORTS 7 4k)
+#EXTINF:-1 tvg-id="1660421" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1660421.png",02/08 10:00 AM |  (BEIN SPORTS 7 4k)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1660421&extension=ts&play_token=KE29HynSsN
-#EXTINF:-1 tvg-id="1294758" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1294758.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (AR|  BEIN  SPORTS 7 FHD)
+#EXTINF:-1 tvg-id="1294758" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1294758.png",02/08 10:00 AM |  (AR|  BEIN  SPORTS 7 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1294758&extension=ts&play_token=JiNcfcS4sN
-#EXTINF:-1 tvg-id="1330427" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330427.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (AR| BEIN SPORTS 7 HEVC)
+#EXTINF:-1 tvg-id="1330427" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330427.png",02/08 10:00 AM |  (AR| BEIN SPORTS 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1330427&extension=ts&play_token=sOqg6BWGtI
-#EXTINF:-1 tvg-id="1330443" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330443.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (AR| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="1330443" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330443.png",02/08 10:00 AM |  (AR| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1330443&extension=ts&play_token=cOoR3Ns1nS
-#EXTINF:-1 tvg-id="1836262" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1836262.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (BEIN SPORTS FHD 7)
+#EXTINF:-1 tvg-id="1836262" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1836262.png",02/08 10:00 AM |  (BEIN SPORTS FHD 7)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1836262&extension=ts&play_token=gTtE8j4qzo
-#EXTINF:-1 tvg-id="1660421" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1660421.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (BEIN SPORTS 7 4k)
+#EXTINF:-1 tvg-id="1660421" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1660421.png",02/08 10:00 AM |  (BEIN SPORTS 7 4k)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90DADBAEE053F9220809E31021940338
 http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1660421&extension=ts&play_token=n9bmkzEhEc
-#EXTINF:-1 tvg-id="1917200" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/arabic/1917200.png",02/08 05:30 AM | Brandon Nakashima vs Taylor Harry Fritz (AR| BEIN SPORT 7 4K)
+#EXTINF:-1 tvg-id="1917200" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/arabic/1917200.png",02/08 10:00 AM |  (AR| BEIN SPORT 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
@@ -384,77 +384,77 @@ http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=712739&e
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
 http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1470603&extension=ts&play_token=ob77VMXU8F
-#EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",02/08 05:30 AM | Mubadala DC Open vs Washington (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
+#EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",02/08 07:30 AM | Mubadala DC Open vs Washington (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1980747&extension=ts&play_token=R7cWLlI9fH
-#EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",02/08 05:30 AM | Mubadala DC Open vs Washington (OD: ZIGGO SPORT 4 ᴴᴰ)
+#EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",02/08 07:30 AM | Mubadala DC Open vs Washington (OD: ZIGGO SPORT 4 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011551&extension=ts&play_token=uXgloHj2Qt
-#EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",02/08 05:30 AM | Mubadala DC Open vs Washington (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
+#EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",02/08 07:30 AM | Mubadala DC Open vs Washington (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011260&extension=ts&play_token=rgqxpk9GdM
-#EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",02/08 05:30 AM | Mubadala DC Open vs Washington (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
+#EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",02/08 07:30 AM | Mubadala DC Open vs Washington (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A177E99C15A4F87E9381B8D1194E5ED1
 http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1537608&extension=ts&play_token=QHn8aYDjUX
-#EXTINF:-1 tvg-id="1283307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 4K)
+#EXTINF:-1 tvg-id="1283307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1283307&extension=ts&play_token=aHAOy8io1t
-#EXTINF:-1 tvg-id="1761572" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 UHD 8K)
+#EXTINF:-1 tvg-id="1761572" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 UHD 8K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1761572&extension=ts&play_token=Y74WKSoPoE
-#EXTINF:-1 tvg-id="1282760" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 HD)
+#EXTINF:-1 tvg-id="1282760" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282760&extension=ts&play_token=h0vvhdFmNn
-#EXTINF:-1 tvg-id="1282745" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 FHD)
+#EXTINF:-1 tvg-id="1282745" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282745&extension=ts&play_token=0wtiYcGsgI
-#EXTINF:-1 tvg-id="1921307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 ᴿᴬᵂ ◉)
+#EXTINF:-1 tvg-id="1921307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F4A5C182CD41DC1736AC6DAAA6DAAC61
 http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1921307&extension=ts&play_token=2IfevZVaHp
-#EXTINF:-1 tvg-id="1283307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 4K)
+#EXTINF:-1 tvg-id="1283307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
 http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1283307&extension=ts&play_token=0qNkjoCemp
-#EXTINF:-1 tvg-id="1761572" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 UHD 8K)
+#EXTINF:-1 tvg-id="1761572" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 UHD 8K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
 http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1761572&extension=ts&play_token=hFpSZ0dtiW
-#EXTINF:-1 tvg-id="1282760" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 HD)
+#EXTINF:-1 tvg-id="1282760" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
 http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1282760&extension=ts&play_token=6bZALlDqoT
-#EXTINF:-1 tvg-id="1282745" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 FHD)
+#EXTINF:-1 tvg-id="1282745" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
 http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1282745&extension=ts&play_token=uu04TZEdGl
-#EXTINF:-1 tvg-id="1921307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 ᴿᴬᵂ ◉)
+#EXTINF:-1 tvg-id="1921307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
 http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1921307&extension=ts&play_token=C1AgiHAxys
-#EXTINF:-1 tvg-id="1917558" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLAND/1917558.png",02/08 05:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 HD)
+#EXTINF:-1 tvg-id="1917558" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLAND/1917558.png",02/08 07:30 AM | Mubadala DC Open vs Washington (NL| ZIGGO SPORT 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F2B6F9E490C211312ADFD4240AA9B30D
