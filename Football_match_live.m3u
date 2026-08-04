@@ -1,106 +1,81 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2063934" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",04/08 11:00 PM | Strasbourg vs. SV 07 Elversberg all | 8K FR: SOCCER 25
+#EXTINF:-1 tvg-id="2063955" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",04/08 11:00 PM | Strasbourg vs. SV 07 Elversberg all | 8K FR: SOCCER 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CFDA894FB7A6BC2DBF279C672A7098A7
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2063934&extension=ts&play_token=lvJjx9xSP2
-#EXTINF:-1 tvg-id="2063934" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",04/08 11:00 PM | Strasbourg vs. SV 07 Elversberg all | 8K FR: SOCCER 25
+#EXTVLCOPT:http-header=Authorization: Bearer CA0FCFE4A9DAFB08C9DDAAA0B7172D57
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2063955&extension=ts&play_token=eYK2oDUWzt
+#EXTINF:-1 tvg-id="2063955" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",04/08 11:00 PM | Strasbourg vs. SV 07 Elversberg all | 8K FR: SOCCER 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 16930A70C12DD21BE452001111E1CD0F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2063934&extension=ts&play_token=sRjqFAlFxR
-#EXTINF:-1 tvg-id="2063934" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",04/08 11:00 PM | Strasbourg vs. SV 07 Elversberg all | 8K FR: SOCCER 25
+#EXTVLCOPT:http-header=Authorization: Bearer 40B1DF3508FBC96DA24AD2D03E106C81
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2063955&extension=ts&play_token=Tl9YsRnl47
+#EXTINF:-1 tvg-id="2113107" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",04/08 11:00 PM | Strasbourg vs. SV 07 Elversberg all | 8K FR: SOCCER 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2E2E51D13F98AA84DBB05C433F2F6C4D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2063934&extension=ts&play_token=dbf6ofE6Qf
-#EXTINF:-1 tvg-id="2113086" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",04/08 11:00 PM | Strasbourg vs. SV 07 Elversberg all | 8K FR: SOCCER 25
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 231FADCA02ED4D7A9CFE02A42774CA3C
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113107&extension=ts&play_token=k48MDL8mcE
+#EXTINF:-1 tvg-id="2113107" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",04/08 11:00 PM | Strasbourg vs. SV 07 Elversberg all | 8K FR: SOCCER 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 92C7A39BBEA7ED0A8F8B6FEC409D1C0B
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113086&extension=ts&play_token=FuwdtvLZkm
+#EXTVLCOPT:http-header=Authorization: Bearer 6F3916D52BF3DC44EA9CCF4A891F14E7
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113107&extension=ts&play_token=eNBOZD7w8x
 #EXTINF:-1 tvg-id="621389" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",05/08 12:00 AM | LA LIGA ALMERÍA 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CFDA894FB7A6BC2DBF279C672A7098A7
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=621389&extension=ts&play_token=yZc1hq0lVY
+#EXTVLCOPT:http-header=Authorization: Bearer CA0FCFE4A9DAFB08C9DDAAA0B7172D57
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=621389&extension=ts&play_token=Hvs6vtsXqh
 #EXTINF:-1 tvg-id="621389" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",05/08 12:00 AM | LA LIGA ALMERÍA 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 16930A70C12DD21BE452001111E1CD0F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=621389&extension=ts&play_token=gbcGTpbEKH
-#EXTINF:-1 tvg-id="621389" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11393.jpg?ver=82037",05/08 12:00 AM | LA LIGA ALMERÍA 4K
+#EXTVLCOPT:http-header=Authorization: Bearer 40B1DF3508FBC96DA24AD2D03E106C81
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=621389&extension=ts&play_token=AeK0281Vn5
+#EXTINF:-1 tvg-id="1395529" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/ALMERIA.png",05/08 12:00 AM | LA LIGA| ALMERÍA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2E2E51D13F98AA84DBB05C433F2F6C4D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=621389&extension=ts&play_token=mgG4Esmq1S
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 231FADCA02ED4D7A9CFE02A42774CA3C
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1395529&extension=ts&play_token=CBXuhxEBgg
 #EXTINF:-1 tvg-id="1395529" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/ALMERIA.png",05/08 12:00 AM | LA LIGA| ALMERÍA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 92C7A39BBEA7ED0A8F8B6FEC409D1C0B
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395529&extension=ts&play_token=43qfGpR6LP
-#EXTINF:-1 tvg-id="1910740" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",05/08 01:45 AM | US (Paramount 002) York City vs. Crawley Town ( :00)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 92C7A39BBEA7ED0A8F8B6FEC409D1C0B
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1910740&extension=ts&play_token=KQ8yi78ktr
-#EXTINF:-1 tvg-id="2063935" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",05/08 01:45 AM | Ipswich Town FC vs. Havre AC all | 8K FR: SOCCER 24
+#EXTVLCOPT:http-header=Authorization: Bearer 6F3916D52BF3DC44EA9CCF4A891F14E7
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1395529&extension=ts&play_token=pKngdSL9GO
+#EXTINF:-1 tvg-id="2063956" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",05/08 01:45 AM | Ipswich Town FC vs. Havre AC all | 8K FR: SOCCER 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CFDA894FB7A6BC2DBF279C672A7098A7
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2063935&extension=ts&play_token=ErR4wVuf6t
-#EXTINF:-1 tvg-id="1940136" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",05/08 01:45 AM | End Valentova vs. Townsend all | 8K US: SOCCER 21
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CFDA894FB7A6BC2DBF279C672A7098A7
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1940136&extension=ts&play_token=e2lStc3Qy0
+#EXTVLCOPT:http-header=Authorization: Bearer CA0FCFE4A9DAFB08C9DDAAA0B7172D57
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2063956&extension=ts&play_token=oYmiAyJBfn
 #EXTINF:-1 tvg-id="1501736" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2274.jpg?ver=37581",05/08 01:45 AM | Carabao Cup: York City vs Crawley Town @ :Paramount+ 02
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CFDA894FB7A6BC2DBF279C672A7098A7
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1501736&extension=ts&play_token=yFQg2aJaFU
-#EXTINF:-1 tvg-id="1940136" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",05/08 01:45 AM | End Valentova vs. Townsend all | 8K US: SOCCER 21
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 16930A70C12DD21BE452001111E1CD0F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1940136&extension=ts&play_token=hNcHqTWobJ
+#EXTVLCOPT:http-header=Authorization: Bearer CA0FCFE4A9DAFB08C9DDAAA0B7172D57
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1501736&extension=ts&play_token=JP7E3KId2J
 #EXTINF:-1 tvg-id="1501736" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2274.jpg?ver=37581",05/08 01:45 AM | Carabao Cup: York City vs Crawley Town @ :Paramount+ 02
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 16930A70C12DD21BE452001111E1CD0F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1501736&extension=ts&play_token=gyxu9zzcRt
-#EXTINF:-1 tvg-id="2063935" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",05/08 01:45 AM | Ipswich Town FC vs. Havre AC all | 8K FR: SOCCER 24
+#EXTVLCOPT:http-header=Authorization: Bearer 40B1DF3508FBC96DA24AD2D03E106C81
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1501736&extension=ts&play_token=0oGDe8ldio
+#EXTINF:-1 tvg-id="2063956" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",05/08 01:45 AM | Ipswich Town FC vs. Havre AC all | 8K FR: SOCCER 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 16930A70C12DD21BE452001111E1CD0F
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2063935&extension=ts&play_token=D6tmXXXwBH
-#EXTINF:-1 tvg-id="1940136" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",05/08 01:45 AM | End Valentova vs. Townsend all | 8K US: SOCCER 21
+#EXTVLCOPT:http-header=Authorization: Bearer 40B1DF3508FBC96DA24AD2D03E106C81
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2063956&extension=ts&play_token=34nuDwK8u5
+#EXTINF:-1 tvg-id="2113108" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/08 01:45 AM | Ipswich Town FC vs. Havre AC all | 8K FR: SOCCER 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2E2E51D13F98AA84DBB05C433F2F6C4D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1940136&extension=ts&play_token=38pHhFtNyK
-#EXTINF:-1 tvg-id="1501736" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2274.jpg?ver=37581",05/08 01:45 AM | Carabao Cup: York City vs Crawley Town @ :Paramount+ 02
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 231FADCA02ED4D7A9CFE02A42774CA3C
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2113108&extension=ts&play_token=1eVsUHwhPb
+#EXTINF:-1 tvg-id="2106797" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",05/08 01:45 AM | Carabao Cup: York City vs Crawley Town @ :Paramount+ 02
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2E2E51D13F98AA84DBB05C433F2F6C4D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1501736&extension=ts&play_token=ZiTDA68mr9
-#EXTINF:-1 tvg-id="2063935" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",05/08 01:45 AM | Ipswich Town FC vs. Havre AC all | 8K FR: SOCCER 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2E2E51D13F98AA84DBB05C433F2F6C4D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2063935&extension=ts&play_token=w1LE1BErzA
-#EXTINF:-1 tvg-id="2113087" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/08 01:45 AM | Ipswich Town FC vs. Havre AC all | 8K FR: SOCCER 24
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 231FADCA02ED4D7A9CFE02A42774CA3C
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2106797&extension=ts&play_token=hkuVMV8VsW
+#EXTINF:-1 tvg-id="2113108" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/08 01:45 AM | Ipswich Town FC vs. Havre AC all | 8K FR: SOCCER 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 92C7A39BBEA7ED0A8F8B6FEC409D1C0B
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113087&extension=ts&play_token=83gaL5a6AI
-#EXTINF:-1 tvg-id="2062109" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",05/08 01:45 AM | End Valentova vs. Townsend all | 8K US: SOCCER 21
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 92C7A39BBEA7ED0A8F8B6FEC409D1C0B
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062109&extension=ts&play_token=3zU6Bf5e7t
+#EXTVLCOPT:http-header=Authorization: Bearer 6F3916D52BF3DC44EA9CCF4A891F14E7
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2113108&extension=ts&play_token=BaI9mSBlo9
 #EXTINF:-1 tvg-id="2106797" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PARAMOUNTPLUS.png",05/08 01:45 AM | Carabao Cup: York City vs Crawley Town @ :Paramount+ 02
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 92C7A39BBEA7ED0A8F8B6FEC409D1C0B
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2106797&extension=ts&play_token=8fYFXtzaFn
+#EXTVLCOPT:http-header=Authorization: Bearer 6F3916D52BF3DC44EA9CCF4A891F14E7
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2106797&extension=ts&play_token=EL1mKVEHuV
