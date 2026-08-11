@@ -1,19 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="228628" group-title="Live UEFA Champions League" tvg-logo="http://picon.tivi-ott.net:25461/picon/BULGARIA/Diema-Sport-2.png",11/08 10:00 PM | Kairat Almaty vs Levski Sofia (┃BG┃ DIEMA SPORT)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 885CC7DB63099EB71CAB8666159AF8A2
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=228628&extension=ts&play_token=Jo56Xq9wcP
-#EXTINF:-1 tvg-id="228628" group-title="Live UEFA Champions League" tvg-logo="http://picon.tivi-ott.net:25461/picon/BULGARIA/Diema-Sport-2.png",11/08 10:00 PM | Kairat Almaty vs Levski Sofia (┃BG┃ DIEMA SPORT)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:44:12:F6; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 21659D868D92CBAA659A32571C99A9E4
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:44:12:F6&stream=228628&extension=ts&play_token=vT0ROL41Kf
-#EXTINF:-1 tvg-id="228628" group-title="Live UEFA Champions League" tvg-logo="http://picon.tivi-ott.net:25461/picon/BULGARIA/Diema-Sport-2.png",11/08 10:00 PM | Kairat Almaty vs Levski Sofia (┃BG┃ DIEMA SPORT)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:F8:BE:49; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 66D2A96206A077DCB974B2A02E0B4C10
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:F8:BE:49&stream=228628&extension=ts&play_token=3iWwmQv7YQ
 #EXTINF:-1 tvg-id="1032474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",11/08 11:30 PM | National Bank Open presented by Rogers -QF (1-2) (UK| NOW HK NOW SPORTS 6)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
