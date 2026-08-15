@@ -1,19 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1686910" group-title="Live International Friendly" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11128.jpg?87925",15/08 07:30 PM | Werder Bremen vs Auxerre (VIP: LIGUE 1+ 2 ᴿᴬᵂ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 7140FB8F6098351AFDA9F0497FAC1460
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1686910&extension=ts&play_token=KQ4XjnLQLK
-#EXTINF:-1 tvg-id="1686852" group-title="Live International Friendly" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11128.jpg?87925",15/08 07:30 PM | Werder Bremen vs Auxerre (VIP: LIGUE 1+ 2 ᴴᴰ)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 7140FB8F6098351AFDA9F0497FAC1460
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1686852&extension=ts&play_token=80EjxP6N2u
-#EXTINF:-1 tvg-id="1917397" group-title="Live International Friendly" tvg-logo="http://51.158.145.100/picons/logos/france/1917397.png",15/08 07:30 PM | Werder Bremen vs Auxerre (FR| LIGUE 1+ 2 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer CB3B1506D41E295DC7463E6E765DACBD
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1917397&extension=ts&play_token=axEfkjoXVS
 #EXTINF:-1 tvg-id="1861861" group-title="Live International Friendly" tvg-logo="http://picons.cmshulk.com/picons/arenasport2.png",15/08 08:00 PM | Brighton H.A. vs Bologna (RS| ARENA SPORT 2 ⱽᴵᴾ ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
