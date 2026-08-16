@@ -1,96 +1,126 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1454902" group-title="🌍|Live International Friendly-Match" tvg-logo="https://go4.pw/EUROPE/PSF.png",17/08 12:00 AM | PSF 01 LIVERPOOL @ COMO – /
+#EXTINF:-1 tvg-id="2084239" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15271.jpg?ver=95591",17/08 12:00 AM | PSF01 Liverpool vs Como // Liverpool vs Como
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 07A84AA56230939D424B49005F922C76
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1454902
-#EXTINF:-1 tvg-id="1285522" group-title="🌍|Live International Friendly-Match" tvg-logo="https://go4.pw/AMERICA/USA/DAZNSPORT1.png",17/08 12:00 AM | CA DAZN 19 LIVERPOOL @ COMO – /
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 07A84AA56230939D424B49005F922C76
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1285522
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BD675F10444515BD93FDDA75429FEA56
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2084239&extension=ts&play_token=O7iTEEbtiN
 #EXTINF:-1 tvg-id="2114331" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",17/08 12:00 AM | PSF01 Liverpool vs Como // Liverpool vs Como
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4688A2A4B27586A09CD118678D389248
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2114331&extension=ts&play_token=wbxGNKvO3L
+#EXTVLCOPT:http-header=Authorization: Bearer 0E357F6D62B653731AF807CDC6A96906
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2114331&extension=ts&play_token=w8vb7BDPyG
 #EXTINF:-1 tvg-id="2114331" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",17/08 12:00 AM | PSF01 Liverpool vs Como // Liverpool vs Como
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E33860F94228BBB2E4EB6A54E395780C
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2114331&extension=ts&play_token=YALhgJFTil
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F5328732C8D5E6DCC13A923A85063
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2114331&extension=ts&play_token=vfp5WrZ3Zs
 #EXTINF:-1 tvg-id="2114331" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PSF.png",17/08 12:00 AM | PSF01 Liverpool vs Como // Liverpool vs Como
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3E2AEFCBE7CDDE4E39489639AE1F22B1
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2114331&extension=ts&play_token=QCVGuIBmQh
+#EXTVLCOPT:http-header=Authorization: Bearer 93DA0273921507204B23351359D8F55D
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2114331&extension=ts&play_token=dPEN9H3d70
+#EXTINF:-1 tvg-id="1918814" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K DE: SOCCER 63
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BD675F10444515BD93FDDA75429FEA56
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1918814&extension=ts&play_token=G5V90NiUWP
+#EXTINF:-1 tvg-id="999566" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13813.png?ver=91937",17/08 12:00 AM | LIVE LIVERPOOL – COMO (SE) 8K SE: AftonBlade 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BD675F10444515BD93FDDA75429FEA56
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=999566&extension=ts&play_token=8g5wKqqtXa
+#EXTINF:-1 tvg-id="1128619" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13844.png?ver=3041",17/08 12:00 AM | LIVE LIVERPOOL COMO (NO) 8K NO: VGTV 13
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BD675F10444515BD93FDDA75429FEA56
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1128619&extension=ts&play_token=eRLCZmJQt5
+#EXTINF:-1 tvg-id="1716100" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13826.jpg?ver=21622",17/08 12:00 AM | LIVE LIVERPOOL COMO (IS) 8K IS: SIMINN 18
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BD675F10444515BD93FDDA75429FEA56
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1716100&extension=ts&play_token=sORdz2lqCu
+#EXTINF:-1 tvg-id="1939942" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K CA: SOCCER 14
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BD675F10444515BD93FDDA75429FEA56
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1939942&extension=ts&play_token=cVsdtqJxe2
+#EXTINF:-1 tvg-id="1940144" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K US: SOCCER 13
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BD675F10444515BD93FDDA75429FEA56
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1940144&extension=ts&play_token=QrCU836vAU
+#EXTINF:-1 tvg-id="1940143" group-title="🌍|Live International Friendly-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14927.png?ver=41795",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K US: SOCCER 14
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BD675F10444515BD93FDDA75429FEA56
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1940143&extension=ts&play_token=1rFRDNuno6
 #EXTINF:-1 tvg-id="2062117" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K US: SOCCER 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4688A2A4B27586A09CD118678D389248
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062117&extension=ts&play_token=lclXmN93xQ
+#EXTVLCOPT:http-header=Authorization: Bearer 0E357F6D62B653731AF807CDC6A96906
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062117&extension=ts&play_token=bmcOyUU6Qz
 #EXTINF:-1 tvg-id="2062116" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K US: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4688A2A4B27586A09CD118678D389248
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062116&extension=ts&play_token=sB9oW76q6M
+#EXTVLCOPT:http-header=Authorization: Bearer 0E357F6D62B653731AF807CDC6A96906
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062116&extension=ts&play_token=BivPHlmxpR
 #EXTINF:-1 tvg-id="2062317" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K CA: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4688A2A4B27586A09CD118678D389248
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062317&extension=ts&play_token=8xYNMw3NrS
+#EXTVLCOPT:http-header=Authorization: Bearer 0E357F6D62B653731AF807CDC6A96906
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2062317&extension=ts&play_token=87voOMySa5
 #EXTINF:-1 tvg-id="2054989" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K DE: SOCCER 63
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 4688A2A4B27586A09CD118678D389248
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2054989&extension=ts&play_token=dYT7csM4Xo
+#EXTVLCOPT:http-header=Authorization: Bearer 0E357F6D62B653731AF807CDC6A96906
+http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=2054989&extension=ts&play_token=aVyBToAdb8
 #EXTINF:-1 tvg-id="2062117" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K US: SOCCER 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E33860F94228BBB2E4EB6A54E395780C
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062117&extension=ts&play_token=E7SQZIr0qj
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F5328732C8D5E6DCC13A923A85063
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062117&extension=ts&play_token=iGtJ51VLKG
 #EXTINF:-1 tvg-id="2062116" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K US: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E33860F94228BBB2E4EB6A54E395780C
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062116&extension=ts&play_token=SYBFiA618r
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F5328732C8D5E6DCC13A923A85063
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062116&extension=ts&play_token=4X7UuXLm5X
 #EXTINF:-1 tvg-id="2062317" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K CA: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E33860F94228BBB2E4EB6A54E395780C
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062317&extension=ts&play_token=ASQcMswVoD
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F5328732C8D5E6DCC13A923A85063
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2062317&extension=ts&play_token=DPwflJ8Zzb
 #EXTINF:-1 tvg-id="2054989" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K DE: SOCCER 63
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E33860F94228BBB2E4EB6A54E395780C
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2054989&extension=ts&play_token=HXh5nK6IQp
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F5328732C8D5E6DCC13A923A85063
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=2054989&extension=ts&play_token=Vi7JQaciBe
 #EXTINF:-1 tvg-id="1675558" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/VGTV.png",17/08 12:00 AM | LIVE LIVERPOOL COMO (NO) 8K NO: VGTV 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E33860F94228BBB2E4EB6A54E395780C
-http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1675558&extension=ts&play_token=r3lZ2du4tn
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F5328732C8D5E6DCC13A923A85063
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1675558&extension=ts&play_token=3raaDVDVer
 #EXTINF:-1 tvg-id="2054989" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K DE: SOCCER 63
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3E2AEFCBE7CDDE4E39489639AE1F22B1
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2054989&extension=ts&play_token=6y2PAVBZ6X
+#EXTVLCOPT:http-header=Authorization: Bearer 93DA0273921507204B23351359D8F55D
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2054989&extension=ts&play_token=A1K6l7gVwu
 #EXTINF:-1 tvg-id="1732531" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/AFTONBLADET.png",17/08 12:00 AM | LIVE LIVERPOOL – COMO (SE) 8K SE: AftonBlade 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3E2AEFCBE7CDDE4E39489639AE1F22B1
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1732531&extension=ts&play_token=kPc1aa0aSI
+#EXTVLCOPT:http-header=Authorization: Bearer 93DA0273921507204B23351359D8F55D
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1732531&extension=ts&play_token=fphVz6MeWg
 #EXTINF:-1 tvg-id="1675558" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/VGTV.png",17/08 12:00 AM | LIVE LIVERPOOL COMO (NO) 8K NO: VGTV 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3E2AEFCBE7CDDE4E39489639AE1F22B1
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1675558&extension=ts&play_token=akIygB532M
+#EXTVLCOPT:http-header=Authorization: Bearer 93DA0273921507204B23351359D8F55D
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=1675558&extension=ts&play_token=qae5mgM96b
 #EXTINF:-1 tvg-id="2062117" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K US: SOCCER 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3E2AEFCBE7CDDE4E39489639AE1F22B1
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2062117&extension=ts&play_token=XKqqHXwPYC
+#EXTVLCOPT:http-header=Authorization: Bearer 93DA0273921507204B23351359D8F55D
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2062117&extension=ts&play_token=cyegkZsTnx
 #EXTINF:-1 tvg-id="2062116" group-title="🌍|Live International Friendly-Match" tvg-logo="http://51.158.145.100/picons/logos/PPV/PPVLIVE.png",17/08 12:00 AM | Live Liverpool vs. Calcio Como 1907 all 8K US: SOCCER 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7C:09:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3E2AEFCBE7CDDE4E39489639AE1F22B1
-http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2062116&extension=ts&play_token=5mRuTlliH0
+#EXTVLCOPT:http-header=Authorization: Bearer 93DA0273921507204B23351359D8F55D
+http://line.hostytv.store:80/play/live.php?mac=00:1A:79:7C:09:B9&stream=2062116&extension=ts&play_token=bWfpKysWrD
