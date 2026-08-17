@@ -1,421 +1,386 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="1032476" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",17/08 10:00 PM | Cincinnati Open E12 (UK| NOW HK NOW SPORTS 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1032476&extension=ts&play_token=xT3UdUdJZm
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1032476&extension=ts&play_token=uRjDEsfCzE
 #EXTINF:-1 tvg-id="791012" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11096.jpg?28750",17/08 10:00 PM | Cincinnati Open E12 (HK: NOW SPORTS 4 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=791012&extension=ts&play_token=GMMESAG7e9
-#EXTINF:-1 tvg-id="554946" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/554946.png",17/08 10:00 PM | Cincinnati Open E12 (HK| NOW SPORTS 4 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=554946&extension=ts&play_token=XHSgzaZMct
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=791012&extension=ts&play_token=zGLZ76a9MT
 #EXTINF:-1 tvg-id="1032474" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",17/08 10:00 PM | Cincinnati Open -Round 3 (A) (UK| NOW HK NOW SPORTS 6)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1032474&extension=ts&play_token=zjMZoXvZZ1
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1032474&extension=ts&play_token=NY7kaY32Xp
 #EXTINF:-1 tvg-id="791010" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10657.jpg?87394",17/08 10:00 PM | Cincinnati Open -Round 3 (A) (HK: NOW SPORTS 6 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=791010&extension=ts&play_token=PqxVarjm8L
-#EXTINF:-1 tvg-id="554944" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/554944.png",17/08 10:00 PM | Cincinnati Open -Round 3 (A) (HK| NOW SPORTS 6 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=554944&extension=ts&play_token=V7APfEFhPV
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=791010&extension=ts&play_token=BB9ivjVk95
 #EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",17/08 10:00 PM |  (UK| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=238270&extension=ts&play_token=CLWnusylp4
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=238270&extension=ts&play_token=YvtlPOZ3E2
 #EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",17/08 10:00 PM |  (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=325027&extension=ts&play_token=c0Ou3w3shv
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=325027&extension=ts&play_token=bri5galRSz
 #EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",17/08 10:00 PM |  (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=325027&extension=ts&play_token=zi3Q5F7Jf2
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=325027&extension=ts&play_token=fRqp2Zfo8z
 #EXTINF:-1 tvg-id="325027" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/537.png?72164",17/08 10:00 PM |  (US: BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=325027&extension=ts&play_token=MJKVIvTWOb
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=325027&extension=ts&play_token=MwPRbUnZ1B
 #EXTINF:-1 tvg-id="83957" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/USA/83957.png",17/08 10:00 PM |  (US| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=83957&extension=ts&play_token=ksx59EzhJ7
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=83957&extension=ts&play_token=5KECK0cGns
 #EXTINF:-1 tvg-id="414140" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA EN: TSN 3)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=414140&extension=ts&play_token=9elFKemYIc
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=414140&extension=ts&play_token=30r1x80299
 #EXTINF:-1 tvg-id="1239032" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11146.png?59759",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA: TSN 3 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1239032&extension=ts&play_token=1NYR9fQuf8
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1239032&extension=ts&play_token=UtGNHrKGoi
 #EXTINF:-1 tvg-id="414140" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA EN: TSN 3)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=414140&extension=ts&play_token=eVRflHoOJ2
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=414140&extension=ts&play_token=j8hjF9wNxV
 #EXTINF:-1 tvg-id="1239032" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11146.png?59759",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA: TSN 3 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1239032&extension=ts&play_token=4j73SuDO1V
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1239032&extension=ts&play_token=0t0AhfCey0
 #EXTINF:-1 tvg-id="414140" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA EN: TSN 3)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=414140&extension=ts&play_token=JR4sk8a2d0
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=414140&extension=ts&play_token=mguY1jlwNL
 #EXTINF:-1 tvg-id="1239032" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11146.png?59759",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA: TSN 3 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1239032&extension=ts&play_token=r7aAeRFmbG
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1239032&extension=ts&play_token=QvATERFvXB
 #EXTINF:-1 tvg-id="904214" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/904214.png",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA| TSN3 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=904214&extension=ts&play_token=HUHHxYZrOW
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=904214&extension=ts&play_token=qTWMGInlxI
 #EXTINF:-1 tvg-id="177346" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177346.png",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA| TSN 3 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177346&extension=ts&play_token=8nV2LFho57
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=177346&extension=ts&play_token=JBNP8J2bhE
 #EXTINF:-1 tvg-id="414139" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA EN: TSN 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=414139&extension=ts&play_token=UORTmg1ILi
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=414139&extension=ts&play_token=vP3kKagpGm
 #EXTINF:-1 tvg-id="1239023" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1889.png?ver=47267",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA: TSN 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1239023&extension=ts&play_token=Fo0vz5pnax
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1239023&extension=ts&play_token=VzAqq9iHlA
 #EXTINF:-1 tvg-id="414139" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA EN: TSN 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=414139&extension=ts&play_token=griqJa1cBd
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=414139&extension=ts&play_token=acJBDnrgfv
 #EXTINF:-1 tvg-id="1239023" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1889.png?ver=47267",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA: TSN 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1239023&extension=ts&play_token=m0YJ9YQXMh
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1239023&extension=ts&play_token=4SRwdo3lTF
 #EXTINF:-1 tvg-id="414139" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1950.png?25265",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA EN: TSN 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=414139&extension=ts&play_token=svjVTbDbMV
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=414139&extension=ts&play_token=Bu5rbewGPN
 #EXTINF:-1 tvg-id="1239023" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1889.png?ver=47267",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA: TSN 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1239023&extension=ts&play_token=pPRFYLYRRf
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1239023&extension=ts&play_token=Qd1byKeIJE
 #EXTINF:-1 tvg-id="904213" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/904213.png",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA| TSN4 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=904213&extension=ts&play_token=IG2598Urgc
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=904213&extension=ts&play_token=iobpkrlEDb
 #EXTINF:-1 tvg-id="177347" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/CANADA/177347.png",17/08 10:00 PM | 2026 Cincinnati Open Tennis (CA| TSN 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=177347&extension=ts&play_token=unXdNi15Go
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=177347&extension=ts&play_token=vAiv9PQE7O
 #EXTINF:-1 tvg-id="1294758" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1294758.png",17/08 10:00 PM |  (AR|  BEIN  SPORTS 7 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1294758&extension=ts&play_token=NDRaZknc9c
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1294758&extension=ts&play_token=uAlnKix9BS
 #EXTINF:-1 tvg-id="1330427" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330427.png",17/08 10:00 PM |  (AR| BEIN SPORTS 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1330427&extension=ts&play_token=TrB8IKiV7F
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1330427&extension=ts&play_token=9SL7pbxeQo
 #EXTINF:-1 tvg-id="1330443" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1330443.png",17/08 10:00 PM |  (AR| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1330443&extension=ts&play_token=XhQvX7wC0m
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1330443&extension=ts&play_token=CQUc0V0pFH
 #EXTINF:-1 tvg-id="1836262" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1836262.png",17/08 10:00 PM |  (BEIN SPORTS FHD 7)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1836262&extension=ts&play_token=jBlE9FaJuv
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1836262&extension=ts&play_token=TQY4WVpl0Z
 #EXTINF:-1 tvg-id="1660421" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/bein/1660421.png",17/08 10:00 PM |  (BEIN SPORTS 7 4k)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1660421&extension=ts&play_token=fic7YaSEzw
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=1660421&extension=ts&play_token=TF9QN7mmWy
 #EXTINF:-1 tvg-id="544425" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (8K: beIN SP⚽RTS 7 ᴴᴰ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544425&extension=ts&play_token=SYGoYOKVBq
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544425&extension=ts&play_token=F1D6IYhfrW
 #EXTINF:-1 tvg-id="544485" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (8K: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544485&extension=ts&play_token=8TjXcYquZH
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544485&extension=ts&play_token=5f61VEvG2Z
 #EXTINF:-1 tvg-id="544448" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (8K: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544448&extension=ts&play_token=OOIc39ICvF
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544448&extension=ts&play_token=ETX0lgpgr7
 #EXTINF:-1 tvg-id="706545" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (SS: beIN SP⚽RTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=706545&extension=ts&play_token=vq1NlagxyQ
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=706545&extension=ts&play_token=JQbqfiOERS
 #EXTINF:-1 tvg-id="706532" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (SS: beIN SP⚽RTS 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=706532&extension=ts&play_token=xMBvdVE48z
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=706532&extension=ts&play_token=cMOeSfC5zt
 #EXTINF:-1 tvg-id="1353002" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (BE: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1353002&extension=ts&play_token=qWBlPO9Cst
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1353002&extension=ts&play_token=DnZj6cVlh9
 #EXTINF:-1 tvg-id="1352978" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (BE: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1352978&extension=ts&play_token=Z1ogGTcybn
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1352978&extension=ts&play_token=IztUzfQ68Y
 #EXTINF:-1 tvg-id="1352964" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (BE: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1352964&extension=ts&play_token=stDFnlPBZW
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1352964&extension=ts&play_token=OKF6UwDwqp
 #EXTINF:-1 tvg-id="544829" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (◉: beIN Sp⚽rts 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544829&extension=ts&play_token=2OveGTaSxq
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544829&extension=ts&play_token=w9NxOPZXvH
 #EXTINF:-1 tvg-id="544815" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (◉: beIN Sp⚽rts 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544815&extension=ts&play_token=VH7ftICUtw
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544815&extension=ts&play_token=tMchNv0PPV
 #EXTINF:-1 tvg-id="544799" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (◉: beIN Sp⚽rts 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544799&extension=ts&play_token=6dpIGM0214
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=544799&extension=ts&play_token=P7j4Zz5TDP
 #EXTINF:-1 tvg-id="985148" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985148&extension=ts&play_token=9zeOdvawCM
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985148&extension=ts&play_token=MPrqtWWwXq
 #EXTINF:-1 tvg-id="985112" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985112&extension=ts&play_token=G6MozpTImn
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985112&extension=ts&play_token=8icn3lJGaP
 #EXTINF:-1 tvg-id="985094" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (ᵁᴴᴰ: beIN Sp⚽rts 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985094&extension=ts&play_token=zG1vI6PEnx
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=985094&extension=ts&play_token=SrL2Cn0DFd
 #EXTINF:-1 tvg-id="1201193" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (NM: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201193&extension=ts&play_token=cEj9MJzlPI
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201193&extension=ts&play_token=uPxgGakpQq
 #EXTINF:-1 tvg-id="1201153" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (NM: beIN SP⚽RTS 7 ʰᵉᵛᶜ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201153&extension=ts&play_token=uJjcJfTWK0
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201153&extension=ts&play_token=keYjeogh9t
 #EXTINF:-1 tvg-id="1201135" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (NM: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201135&extension=ts&play_token=JWjWA6uviQ
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1201135&extension=ts&play_token=DQWLGGUZXz
 #EXTINF:-1 tvg-id="1120425" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (SA: beIN SP⚽RTS 7 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1120425&extension=ts&play_token=YWJZgtBZFl
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1120425&extension=ts&play_token=NqcMIGokpV
 #EXTINF:-1 tvg-id="1120405" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12782.png?95032",17/08 10:00 PM |  (SA: beIN SP⚽RTS 7 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1120405&extension=ts&play_token=R0MWqCg8ea
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1120405&extension=ts&play_token=DH7um9JbDI
 #EXTINF:-1 tvg-id="425591" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1934.png?40558",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=425591&extension=ts&play_token=niu4kPno4M
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=425591&extension=ts&play_token=KcRI0HZugA
 #EXTINF:-1 tvg-id="106946" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/615.jpg?35441",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=106946&extension=ts&play_token=VUZv0N9DOc
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=106946&extension=ts&play_token=nIpeqWfJIX
 #EXTINF:-1 tvg-id="207225" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/615.jpg?83779",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=207225&extension=ts&play_token=CCmnMlJUmp
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=207225&extension=ts&play_token=ECOlg31eSp
 #EXTINF:-1 tvg-id="1562808" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/615.jpg?90759",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562808&extension=ts&play_token=Y6Atd2rVAy
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562808&extension=ts&play_token=OZQEMDcnPd
 #EXTINF:-1 tvg-id="425591" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1934.png?40558",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=425591&extension=ts&play_token=ixcVapBA0F
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=425591&extension=ts&play_token=NglvVYARDM
 #EXTINF:-1 tvg-id="106946" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/615.jpg?35441",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=106946&extension=ts&play_token=g1qB3SEIcA
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=106946&extension=ts&play_token=HNtkRGz7FO
 #EXTINF:-1 tvg-id="207225" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/615.jpg?83779",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=207225&extension=ts&play_token=iMPV9K84zG
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=207225&extension=ts&play_token=mHCoTGxvUF
 #EXTINF:-1 tvg-id="425591" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1934.png?40558",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=425591&extension=ts&play_token=VPWHeKjhmd
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=425591&extension=ts&play_token=iLpFRxbVcJ
 #EXTINF:-1 tvg-id="106946" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/615.jpg?35441",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=106946&extension=ts&play_token=xGonSHLRxp
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=106946&extension=ts&play_token=oeVYGmKhPX
 #EXTINF:-1 tvg-id="207225" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/615.jpg?83779",18/08 12:00 AM | Masters 1000 de Cincinnati (FR: EUROSPORT 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=207225&extension=ts&play_token=h7OFWGQHAj
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=207225&extension=ts&play_token=livFwSwRSJ
 #EXTINF:-1 tvg-id="506559" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/france/506559.png",18/08 12:00 AM | Masters 1000 de Cincinnati (FR| EUROSPORT 1 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=506559&extension=ts&play_token=1kP0BILznk
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=506559&extension=ts&play_token=oKNG4e8KqY
 #EXTINF:-1 tvg-id="507388" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/france/507388.png",18/08 12:00 AM | Masters 1000 de Cincinnati (FR| EUROSPORT 1 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=507388&extension=ts&play_token=C6XvnLiy3a
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C7:3F:B3; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 0356F0BF5C4E5B2E3F8C1968961A22E3
+http://exclusifott.pro:80/play/live.php?mac=00:1A:79:C7:3F:B3&stream=507388&extension=ts&play_token=LUE2K7hRMD
 #EXTINF:-1 tvg-id="1562919" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1954.jpg?48182",18/08 01:00 AM | Tenis Ziua 5 (RO: DIGI SPORT 2 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562919&extension=ts&play_token=I70R1pJLY0
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562919&extension=ts&play_token=mjocUiRavl
 #EXTINF:-1 tvg-id="1562917" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2295.jpg?65272",18/08 01:00 AM | Tenis (RO: DIGI SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562917&extension=ts&play_token=oKj65RwDsg
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562917&extension=ts&play_token=xXRCSpwAwL
 #EXTINF:-1 tvg-id="1562707" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?37284",17/08 10:00 PM | : Cincinnati Open (NL: ZIGGO SPORT 1 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562707&extension=ts&play_token=X3DhlBJvVC
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562707&extension=ts&play_token=cgOJBuKI4T
 #EXTINF:-1 tvg-id="1562704" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?37284",17/08 10:00 PM | : Cincinnati Open (NL: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562704&extension=ts&play_token=uOWDZHeLoR
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562704&extension=ts&play_token=rozDNOnXIu
 #EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",17/08 10:00 PM | : Cincinnati Open (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1980747&extension=ts&play_token=fnsuecvGuC
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1980747&extension=ts&play_token=czXpHHzjWM
 #EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",17/08 10:00 PM | : Cincinnati Open (OD: ZIGGO SPORT 4 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011551&extension=ts&play_token=lHuyk546ch
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011551&extension=ts&play_token=88fw6gC48Y
 #EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",17/08 10:00 PM | : Cincinnati Open (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011260&extension=ts&play_token=vCDFept8e6
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=2011260&extension=ts&play_token=bokCryEwsz
 #EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",17/08 10:00 PM | : Cincinnati Open (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A785E41587EB9175E3911BDD7DDB8A05
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1537608&extension=ts&play_token=p3XPO2aH9A
+#EXTVLCOPT:http-header=Authorization: Bearer 037DAFF5BB1E8A7F503205933D72BD09
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1537608&extension=ts&play_token=8ucB0IoU0S
 #EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",17/08 10:00 PM | : Cincinnati Open (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1980747&extension=ts&play_token=ZG9RUabRCQ
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1980747&extension=ts&play_token=m4trVnDQly
 #EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",17/08 10:00 PM | : Cincinnati Open (OD: ZIGGO SPORT 4 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011551&extension=ts&play_token=k7nMaGmybt
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011551&extension=ts&play_token=HLzifROH61
 #EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",17/08 10:00 PM | : Cincinnati Open (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011260&extension=ts&play_token=TVb8TCKJr4
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=2011260&extension=ts&play_token=JzrY10ltns
 #EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",17/08 10:00 PM | : Cincinnati Open (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:AD:C0:2A; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 2EC37BE7F015FD31382C530D0E27C81B
-http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1537608&extension=ts&play_token=MgLJs9RdEh
+#EXTVLCOPT:http-header=Authorization: Bearer 40C477433665B0973BF68EAC1FF44D52
+http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&stream=1537608&extension=ts&play_token=r0GWjpWRCV
 #EXTINF:-1 tvg-id="1980747" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/15088.PNG?ver=53330",17/08 10:00 PM | : Cincinnati Open (ZG: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1980747&extension=ts&play_token=65sBuJP1vp
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1980747&extension=ts&play_token=7V89uDIiYI
 #EXTINF:-1 tvg-id="2011551" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",17/08 10:00 PM | : Cincinnati Open (OD: ZIGGO SPORT 4 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2011551&extension=ts&play_token=EpzCU8ehg2
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2011551&extension=ts&play_token=D0AM2h3dz9
 #EXTINF:-1 tvg-id="2011260" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13847.png?ver=53660",17/08 10:00 PM | : Cincinnati Open (OD: ZIGGO SPORT 4 ᴿᴬᵂ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2011260&extension=ts&play_token=RbTLo14Z3H
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2011260&extension=ts&play_token=Xd4lVfvEze
 #EXTINF:-1 tvg-id="1537608" group-title="🎾|Live Tennis" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/602.png?87307",17/08 10:00 PM | : Cincinnati Open (NL: ZIGGO SPORT 4 ᴿᴬᵂ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 85699BFC20BD0FF8CD7F709F26B403BF
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1537608&extension=ts&play_token=08xQjpOWiI
-#EXTINF:-1 tvg-id="1283307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",17/08 10:00 PM | : Cincinnati Open (NL| ZIGGO SPORT 4 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1283307&extension=ts&play_token=IEtZDfY4AW
-#EXTINF:-1 tvg-id="1761572" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",17/08 10:00 PM | : Cincinnati Open (NL| ZIGGO SPORT 4 UHD 8K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1761572&extension=ts&play_token=bN6YdpRdvq
-#EXTINF:-1 tvg-id="1282760" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",17/08 10:00 PM | : Cincinnati Open (NL| ZIGGO SPORT 4 HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282760&extension=ts&play_token=3QSWG5ZjsI
-#EXTINF:-1 tvg-id="1282745" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",17/08 10:00 PM | : Cincinnati Open (NL| ZIGGO SPORT 4 FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1282745&extension=ts&play_token=fLU517vzQP
-#EXTINF:-1 tvg-id="1921307" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ZIGGOSPORT.png",17/08 10:00 PM | : Cincinnati Open (NL| ZIGGO SPORT 4 ᴿᴬᵂ ◉)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B7:B5:7F; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 37A2074CEDCA493972C57ECC3CABD592
-http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:B7:B5:7F&stream=1921307&extension=ts&play_token=BnKjAqcUCX
+#EXTVLCOPT:http-header=Authorization: Bearer EA6071C8BE2C39EBD01D5699E2E5212B
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=1537608&extension=ts&play_token=okjwUXR8ZF
