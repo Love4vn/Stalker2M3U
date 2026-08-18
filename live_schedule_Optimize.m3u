@@ -719,6 +719,11 @@ http://paid32945.wd.business-cdn-8k.com:80/play/live.php?mac=00:1A:79:AD:C0:2A&s
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 273A46A26AF02AC0D303CCCD5C74ABDE
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=842679&extension=ts&play_token=VaQEwQjqOL
+#EXTINF:-1 tvg-id="1562918" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2296.jpg?31632",19/08 02:00 AM | Dinamo Zagreb vs Viking (RO: DIGI SPORT 3 ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A895BB06CAB84C34695F2C4B6409F536
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562918&extension=ts&play_token=XPq8gZE9u1
 #EXTINF:-1 tvg-id="1577205" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14592.png?65802",19/08 02:00 AM | Dinamo Zagreb vs Viking (ES: M.LALIGA DE CAMPEONES 3 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -1969,6 +1974,11 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=2084647&exte
 #EXTVLCOPT:http-cookie=mac=00:1A:79:82:03:14; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 273A46A26AF02AC0D303CCCD5C74ABDE
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:82:03:14&stream=842682&extension=ts&play_token=8JAorVowxI
+#EXTINF:-1 tvg-id="1562919" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1954.jpg?48182",19/08 02:00 AM | Levski Sofia vs AEK Athens (RO: DIGI SPORT 2 ᴿᴬᵂ)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A895BB06CAB84C34695F2C4B6409F536
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562919&extension=ts&play_token=XXXJok7Ggd
 #EXTINF:-1 tvg-id="1577206" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14595.png?70832",19/08 02:00 AM | Levski Sofia vs AEK Athens (ES: M.LALIGA DE CAMPEONES 2 ᴴᴰ)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
@@ -2789,6 +2799,11 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562854&exte
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A895BB06CAB84C34695F2C4B6409F536
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562758&extension=ts&play_token=xZS396xQ1y
+#EXTINF:-1 tvg-id="619642" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2319.png?32670",19/08 02:00 AM | Fenerbahçe vs Lyon (AZ: CBC SPORT)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A895BB06CAB84C34695F2C4B6409F536
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=619642&extension=ts&play_token=5Gixai5Li9
 #EXTINF:-1 tvg-id="842763" group-title="Live UEFA Champions League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/9355.png?71856",19/08 02:00 AM | Fenerbahçe vs Lyon (GR: COSMOTE SPORT 3 ᴴᴰ ◉)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
