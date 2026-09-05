@@ -448,7 +448,7 @@ def generate_playlist(portals: List[Dict], output_file: str):
     # ========== TỪ KHÓA LỌC ==========
     SPORTS_KEYWORDS = [
         "worldcup", "sport", "sports", "Šport", "football", "soccer", "tennis", "golf", "usa network", "paramount+",
-        "motorsport", "formula 1", "f1", "hub premier", "premier league", "viaplay", "disney+ premium",
+        "motorsport", "formula 1", "f1", "hub premier", "premier league", "disney+ premium",
         "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
         "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
         "brentford", "brighton", "chelsea", "crystal palace", "everton", "fulham", "leeds united", "liverpool",
