@@ -447,15 +447,14 @@ def generate_playlist(portals: List[Dict], output_file: str):
     """Tạo file M3U từ danh sách portal, sắp xếp toàn bộ kênh theo thứ tự ưu tiên quốc gia"""
     # ========== TỪ KHÓA LỌC ==========
     SPORTS_KEYWORDS = [
-        "worldcup", "sport", "sports", "Šport", "football", "soccer", "tennis", "golf", "tudn", "telemundo", "usa network", "paramount+",
+        "worldcup", "sport", "sports", "Šport", "football", "soccer", "tennis", "golf", "usa network", "paramount+",
         "motorsport", "formula 1", "f1", "hub premier", "premier league", "viaplay", "disney+ premium",
         "monomax", "astro arena", "spotv", "epl", "tsn", "la liga", "laliga", "bundesliga",
         "seriea", "serie a", "uefa", "arsenal", "aston villa", "bournemouth",
         "brentford", "brighton", "chelsea", "crystal palace", "everton", "fulham", "leeds united", "liverpool",
         "manchester city", "manchester united", "newcastle", "nottingham forest", "sunderland", "tottenham hotspur",
         "west ham united", "wolverhampton", "bayern", "bayern munich", "borussia dortmund", "bayer leverkusen", "inter milan",
-        "ac milan", "napoli", "barcelona", "real madrid", "atlético", "atletico madrid", "psg", "paris saint-germain", "olympique marseille",
-        "antena", "bbc1", "bbc one", "bbc 1", "bbc2", "bbc two", "bbc 2", "rds2", "rds 2", "bnt", "hrt", "ictimai", "itv", "m6", "npo", "orf", "rai", "rsi la", "rtbf la", "rtk", "rts", "RTVE", "RTÉ", "Rustavi", "RUV Sjonvarpid", "SABC", "Sigma TV", "Slovenija TV", "STV Scotland", "UTV Northern Ireland", "VRT 1 Belgium", "ZDF Deutschland"
+        "ac milan", "napoli", "barcelona", "real madrid", "atlético", "atletico madrid", "psg", "paris saint-germain", "olympique marseille", "hull city", "ipswich town", "coventry city"
     ]
     EXCLUDE_KEYWORDS = [
         "baseball", "cricket", "nfl", "nhl", "rugby", "basketball", "bóng rổ",
