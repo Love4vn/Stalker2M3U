@@ -1,15 +1,15 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1032476" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",15/09 06:00 AM | Guadalajara Open presentado por Santander E3 (UK| NOW HK NOW SPORTS 4)
+#EXTINF:-1 tvg-id="1032476" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/NOWSPORTS.png",16/09 02:00 AM | Guadalajara Open presentado por Santander E4 (UK| NOW HK NOW SPORTS 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 0E3B2E99120BB6E237A57A6CEF93CBBF
 http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1032476&extension=ts&play_token=oLE3ukHQLb
-#EXTINF:-1 tvg-id="382840" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ASIA/HONGKONG/nowsports.png",15/09 06:00 AM | Guadalajara Open presentado por Santander E3 (┃HK┃ NOW SPORTS 4)
+#EXTINF:-1 tvg-id="382840" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ASIA/HONGKONG/nowsports.png",16/09 02:00 AM | Guadalajara Open presentado por Santander E4 (┃HK┃ NOW SPORTS 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=382840&extension=ts&play_token=vApcMSRFkm
-#EXTINF:-1 tvg-id="382840" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ASIA/HONGKONG/nowsports.png",15/09 06:00 AM | Guadalajara Open presentado por Santander E3 (┃HK┃ NOW SPORTS 4)
+#EXTINF:-1 tvg-id="382840" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ASIA/HONGKONG/nowsports.png",16/09 02:00 AM | Guadalajara Open presentado por Santander E4 (┃HK┃ NOW SPORTS 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
@@ -204,7 +204,7 @@ http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=870313&ex
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312185&extension=ts&play_token=CHDihtrYOx
-#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (UK| BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="238270" group-title="🎾|Live Tennis" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/BEINSPORTS7.png",16/09 02:00 AM |  (UK| BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 0E3B2E99120BB6E237A57A6CEF93CBBF
@@ -219,36 +219,6 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858673&exte
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=858673&extension=ts&play_token=tCQGA19sxp
-#EXTINF:-1 tvg-id="316492" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",15/09 06:00 AM | Zeynep Sönmez vs 🇾 Iryna Shymanovich (US - TENNIS CHANNEL HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/316492
-#EXTINF:-1 tvg-id="71954" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/USA/teni.png",15/09 06:00 AM | Zeynep Sönmez vs 🇾 Iryna Shymanovich (US - TENNIS CHANNEL HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/71954
-#EXTINF:-1 tvg-id="858523" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/tennis channel.png",15/09 06:00 AM | Zeynep Sönmez vs 🇾 Iryna Shymanovich (┃USA┃ TENNIS CHANNEL HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858523&extension=ts&play_token=kMKgxwqfVk
-#EXTINF:-1 tvg-id="988078" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/Tennis/Tennis.png",15/09 06:00 AM | Zeynep Sönmez vs 🇾 Iryna Shymanovich (┃USA┃ TENNIS CHANNEL HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=988078&extension=ts&play_token=TGsew2HzkK
-#EXTINF:-1 tvg-id="858523" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/tennis channel.png",15/09 06:00 AM | Zeynep Sönmez vs 🇾 Iryna Shymanovich (┃USA┃ TENNIS CHANNEL HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=858523&extension=ts&play_token=dwKfY5b3iV
-#EXTINF:-1 tvg-id="988078" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/Tennis/Tennis.png",15/09 06:00 AM | Zeynep Sönmez vs 🇾 Iryna Shymanovich (┃USA┃ TENNIS CHANNEL HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=988078&extension=ts&play_token=WZ03MrJlWV
 #EXTINF:-1 tvg-id="1138920" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/germany/sky_teniss2.png",15/09 11:00 PM | ATP Tennis (DE - SKY SPORT TENNIS 8K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -364,157 +334,147 @@ http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1167174&e
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281068
-#EXTINF:-1 tvg-id="986979" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 4K)
+#EXTINF:-1 tvg-id="986979" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986979
-#EXTINF:-1 tvg-id="551278" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 FHD)
+#EXTINF:-1 tvg-id="551278" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/551278
-#EXTINF:-1 tvg-id="551247" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="551247" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/551247
-#EXTINF:-1 tvg-id="986964" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 4K)
+#EXTINF:-1 tvg-id="986964" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/986964
-#EXTINF:-1 tvg-id="552076" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 FHD)
+#EXTINF:-1 tvg-id="552076" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/552076
-#EXTINF:-1 tvg-id="149619" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="149619" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/149619
-#EXTINF:-1 tvg-id="203891" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 4K)
+#EXTINF:-1 tvg-id="203891" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/203891
-#EXTINF:-1 tvg-id="73357" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 FHD)
+#EXTINF:-1 tvg-id="73357" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/73357
-#EXTINF:-1 tvg-id="987000" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (AR - BEIN SPORTS 7 HD)
+#EXTINF:-1 tvg-id="987000" group-title="🎾|Live Tennis" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_7.png",16/09 02:00 AM |  (AR - BEIN SPORTS 7 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer AC4458931AFB8E940219B52C35DA0D70
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/987000
-#EXTINF:-1 tvg-id="798792" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (┃AR┃ BEIN SPORTS 7 UHD)
+#EXTINF:-1 tvg-id="798792" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",16/09 02:00 AM |  (┃AR┃ BEIN SPORTS 7 UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=798792&extension=ts&play_token=gTVRSsw6F1
-#EXTINF:-1 tvg-id="798802" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (┃AR┃ BEIN SPORTS 7 HEVC)
+#EXTINF:-1 tvg-id="798802" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",16/09 02:00 AM |  (┃AR┃ BEIN SPORTS 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=798802&extension=ts&play_token=QTQQfyYP68
-#EXTINF:-1 tvg-id="1030242" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ARGENTINA/BEIN SPORTS RAW/BEIN SPORTS 7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (┃AR┃ BEIN SPORTS 7 RAW)
+#EXTINF:-1 tvg-id="1030242" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ARGENTINA/BEIN SPORTS RAW/BEIN SPORTS 7.png",16/09 02:00 AM |  (┃AR┃ BEIN SPORTS 7 RAW)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1030242&extension=ts&play_token=kgoOaTMPYS
-#EXTINF:-1 tvg-id="242236" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (┃AR┃ BEIN SPORTS 7)
+#EXTINF:-1 tvg-id="242236" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",16/09 02:00 AM |  (┃AR┃ BEIN SPORTS 7)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=242236&extension=ts&play_token=EThkFUlGlX
-#EXTINF:-1 tvg-id="798792" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (┃AR┃ BEIN SPORTS 7 UHD)
+#EXTINF:-1 tvg-id="798792" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",16/09 02:00 AM |  (┃AR┃ BEIN SPORTS 7 UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=798792&extension=ts&play_token=YFjaL1yBSZ
-#EXTINF:-1 tvg-id="798802" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (┃AR┃ BEIN SPORTS 7 HEVC)
+#EXTINF:-1 tvg-id="798802" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",16/09 02:00 AM |  (┃AR┃ BEIN SPORTS 7 HEVC)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=798802&extension=ts&play_token=wCX5DsOmpb
-#EXTINF:-1 tvg-id="1030242" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ARGENTINA/BEIN SPORTS RAW/BEIN SPORTS 7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (┃AR┃ BEIN SPORTS 7 RAW)
+#EXTINF:-1 tvg-id="1030242" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ARGENTINA/BEIN SPORTS RAW/BEIN SPORTS 7.png",16/09 02:00 AM |  (┃AR┃ BEIN SPORTS 7 RAW)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1030242&extension=ts&play_token=77uidYVgRm
-#EXTINF:-1 tvg-id="242236" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",15/09 06:00 AM | Zeynep Sonmez vs Iryna Shymanovich (┃AR┃ BEIN SPORTS 7)
+#EXTINF:-1 tvg-id="242236" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ALBANIA/BEIN SPORTS/BEIN SPORTS 7.png",16/09 02:00 AM |  (┃AR┃ BEIN SPORTS 7)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=242236&extension=ts&play_token=BiJdrJieRj
-#EXTINF:-1 tvg-id="1972847" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/Tennis/Tennis.png",15/09 06:00 AM | Zeynep Sönmez vs 🇾 Iryna Shymanovich (┃PPV┃ TENNIS CHANNEL FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1972847&extension=ts&play_token=EhvtISOSXv
-#EXTINF:-1 tvg-id="1972847" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/Tennis/Tennis.png",15/09 06:00 AM | Zeynep Sönmez vs 🇾 Iryna Shymanovich (┃PPV┃ TENNIS CHANNEL FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1972847&extension=ts&play_token=hnWs4MhX12
-#EXTINF:-1 tvg-id="207964" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/207964.png",15/09 06:30 AM | Tenis (RO|  DIGI SPORT 4 HD)
+#EXTINF:-1 tvg-id="207964" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/207964.png",16/09 02:00 AM | Tenis (RO|  DIGI SPORT 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 0E3B2E99120BB6E237A57A6CEF93CBBF
 http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=207964&extension=ts&play_token=0alQwGGDuN
-#EXTINF:-1 tvg-id="56116" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/56116.png",15/09 06:30 AM | Tenis (RO| DIGI SPORT 4)
+#EXTINF:-1 tvg-id="56116" group-title="🎾|Live Tennis" tvg-logo="http://picons.cmshulk.com/picons/56116.png",16/09 02:00 AM | Tenis (RO| DIGI SPORT 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 0E3B2E99120BB6E237A57A6CEF93CBBF
 http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=56116&extension=ts&play_token=O0grBYrow1
-#EXTINF:-1 tvg-id="1444090" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4 4K)
+#EXTINF:-1 tvg-id="1444090" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1444090&extension=ts&play_token=oOS3k2Kl0R
-#EXTINF:-1 tvg-id="1444087" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4 FHD)
+#EXTINF:-1 tvg-id="1444087" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1444087&extension=ts&play_token=Dml2KAYfIA
-#EXTINF:-1 tvg-id="1444088" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4 HD)
+#EXTINF:-1 tvg-id="1444088" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1444088&extension=ts&play_token=AzdFiiyrbh
-#EXTINF:-1 tvg-id="1444089" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4)
+#EXTINF:-1 tvg-id="1444089" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1444089&extension=ts&play_token=EMR2EY9c7E
-#EXTINF:-1 tvg-id="1444091" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4 FIBRA)
+#EXTINF:-1 tvg-id="1444091" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4 FIBRA)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 6DA66C9AE14F29A27DA82CBD1391AAD0
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1444091&extension=ts&play_token=1pPpnq7NTE
-#EXTINF:-1 tvg-id="1444090" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4 4K)
+#EXTINF:-1 tvg-id="1444090" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1444090&extension=ts&play_token=1GiC85vMlD
-#EXTINF:-1 tvg-id="1444087" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4 FHD)
+#EXTINF:-1 tvg-id="1444087" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1444087&extension=ts&play_token=nLkkxgXyYZ
-#EXTINF:-1 tvg-id="1444088" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4 HD)
+#EXTINF:-1 tvg-id="1444088" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4 HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1444088&extension=ts&play_token=lh5AkB0lyS
-#EXTINF:-1 tvg-id="1444089" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4)
+#EXTINF:-1 tvg-id="1444089" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1444089&extension=ts&play_token=cDklhTve7O
-#EXTINF:-1 tvg-id="1444091" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",15/09 06:30 AM | Tenis (┃RO┃ DIGI SPORT 4 FIBRA)
+#EXTINF:-1 tvg-id="1444091" group-title="🎾|Live Tennis" tvg-logo="http://picon.tivi-ott.net:25461/picon/ROMANIA/┃RO┃ CANALE SPORT/DIGI SPORT 4.png",16/09 02:00 AM | Tenis (┃RO┃ DIGI SPORT 4 FIBRA)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 81FEF1A7355B9EC042BAFEC94A030ECE
