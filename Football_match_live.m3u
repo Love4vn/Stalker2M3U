@@ -1,44 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="858611" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST GEORGIA HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 054CFC1554B9DA2A3ACCBA3C02D8AD19
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858611&extension=ts&play_token=2kHAnTuX3J
-#EXTINF:-1 tvg-id="858610" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST NORTH CAROLINA HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 054CFC1554B9DA2A3ACCBA3C02D8AD19
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858610&extension=ts&play_token=7hsj9ZbKil
-#EXTINF:-1 tvg-id="858611" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST GEORGIA HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D8CDF6AFEC01E7FF81F75C6118E0BD89
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=858611&extension=ts&play_token=RLsGol0biJ
-#EXTINF:-1 tvg-id="858610" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST NORTH CAROLINA HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer D8CDF6AFEC01E7FF81F75C6118E0BD89
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=858610&extension=ts&play_token=RgGH2NKDS3
-#EXTINF:-1 tvg-id="858611" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST GEORGIA HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 43DABB562E190E9DAD9D378AF0FDA17B
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=858611&extension=ts&play_token=OsZppr2Xd2
-#EXTINF:-1 tvg-id="858610" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST NORTH CAROLINA HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 43DABB562E190E9DAD9D378AF0FDA17B
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=858610&extension=ts&play_token=fnhMrGogf5
-#EXTINF:-1 tvg-id="858611" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST GEORGIA HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:4A:54:2C; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8EFDFAE5BB0CC475C7A4EAE25A9C23B
-http://main.light-ott.net:80/play/live.php?mac=00:1B:79:4A:54:2C&stream=858611&extension=ts&play_token=pgTYMMLkC2
-#EXTINF:-1 tvg-id="858610" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST NORTH CAROLINA HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:4A:54:2C; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A8EFDFAE5BB0CC475C7A4EAE25A9C23B
-http://main.light-ott.net:80/play/live.php?mac=00:1B:79:4A:54:2C&stream=858610&extension=ts&play_token=FsznH3VsWQ
 #EXTINF:-1 tvg-id="1311997" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS RAW DOLBY/SKY SPORTS FOOTBALL.png",16/09 11:00 PM | ┃ ┃ SKY SPORTS FOOTBALL 50 FPS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
@@ -6879,6 +6839,46 @@ http://main.light-ott.net:80/play/live.php?mac=00:1B:79:4A:54:2C&stream=897453&e
 #EXTVLCOPT:http-cookie=mac=00:1B:79:4A:54:2C; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer A8EFDFAE5BB0CC475C7A4EAE25A9C23B
 http://main.light-ott.net:80/play/live.php?mac=00:1B:79:4A:54:2C&stream=897454&extension=ts&play_token=Xh1sGjJ6TQ
+#EXTINF:-1 tvg-id="858611" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST GEORGIA HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 054CFC1554B9DA2A3ACCBA3C02D8AD19
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858611&extension=ts&play_token=2kHAnTuX3J
+#EXTINF:-1 tvg-id="858610" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST NORTH CAROLINA HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 054CFC1554B9DA2A3ACCBA3C02D8AD19
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858610&extension=ts&play_token=7hsj9ZbKil
+#EXTINF:-1 tvg-id="858611" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST GEORGIA HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D8CDF6AFEC01E7FF81F75C6118E0BD89
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=858611&extension=ts&play_token=RLsGol0biJ
+#EXTINF:-1 tvg-id="858610" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST NORTH CAROLINA HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D8CDF6AFEC01E7FF81F75C6118E0BD89
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=858610&extension=ts&play_token=RgGH2NKDS3
+#EXTINF:-1 tvg-id="858611" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST GEORGIA HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 43DABB562E190E9DAD9D378AF0FDA17B
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=858611&extension=ts&play_token=OsZppr2Xd2
+#EXTINF:-1 tvg-id="858610" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST NORTH CAROLINA HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 43DABB562E190E9DAD9D378AF0FDA17B
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=858610&extension=ts&play_token=fnhMrGogf5
+#EXTINF:-1 tvg-id="858611" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST GEORGIA HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:4A:54:2C; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A8EFDFAE5BB0CC475C7A4EAE25A9C23B
+http://main.light-ott.net:80/play/live.php?mac=00:1B:79:4A:54:2C&stream=858611&extension=ts&play_token=pgTYMMLkC2
+#EXTINF:-1 tvg-id="858610" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/USA/sports/bally sports.png",16/09 11:00 PM | ┃USA┃ BALLY SPORTS SOUTH EAST NORTH CAROLINA HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:4A:54:2C; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer A8EFDFAE5BB0CC475C7A4EAE25A9C23B
+http://main.light-ott.net:80/play/live.php?mac=00:1B:79:4A:54:2C&stream=858610&extension=ts&play_token=FsznH3VsWQ
 #EXTINF:-1 tvg-id="1311997" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/UK/UK SKY SPORTS RAW DOLBY/SKY SPORTS FOOTBALL.png",17/09 01:15 AM | ┃ ┃ SKY SPORTS FOOTBALL 50 FPS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
