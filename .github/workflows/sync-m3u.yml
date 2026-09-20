@@ -18,6 +18,10 @@ on:
     branches: [ main, master ]
     paths:
       - '*.m3u'
+# Đảm bảo chỉ 1 workflow chạy tại 1 thời điểm
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   copy-m3u:
