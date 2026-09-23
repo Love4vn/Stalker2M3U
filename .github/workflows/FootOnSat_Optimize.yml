@@ -3,6 +3,11 @@ name: FootOnSat Optimize
 on:
   schedule:
     - cron: '20 * * * *'
+  workflow_run:
+    workflows:
+      - "Generate M3U Playlist"
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
