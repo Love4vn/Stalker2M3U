@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '0 * * * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [stalker_to_m3u]
 # Đảm bảo chỉ 1 workflow chạy tại 1 thời điểm
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
