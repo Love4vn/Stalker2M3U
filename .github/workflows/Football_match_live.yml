@@ -3,6 +3,11 @@ name: Football match live scrape
 on:
   schedule:
     - cron: '10 * * * *'
+  workflow_run:
+    workflows:
+      - "FootOnSat Optimize"       # thay đổi theo tên thực tế
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
