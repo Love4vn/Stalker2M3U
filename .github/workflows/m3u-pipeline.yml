@@ -1,0 +1,115 @@
+name: M3U Playlist Pipeline (Sequential)
+
+on:
+  schedule:
+    - cron: '0 * * * *'          # Mỗi giờ (giống stalker_to_m3u cũ)
+  workflow_dispatch:
+  repository_dispatch:
+    types: [stalker_to_m3u]       # Giữ lại nếu có hệ thống ngoài gọi
+
+permissions:
+  contents: write
+
+# 🔒 Rất quan trọng: KHÔNG cancel để tránh mất dữ liệu giữa chuỗi
+concurrency:
+  group: m3u-pipeline-main
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60          # đủ cho 3 script Python nặng
+    env:
+      TZ: Asia/Ho_Chi_Minh
+
+    steps:
+      # ============================================================
+      # 0. CHUẨN BỊ
+      # ============================================================
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: '1'                # repo đang dùng branch tên '1'
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install requests curl_cffi pycountry aiohttp pyyaml
+
+      # ============================================================
+      # ① STALKER → Mac_playlist.m3u
+      # ============================================================
+      - name: "① Chạy stalker_to_m3u.py"
+        run: python stalker_to_m3u.py
+
+      - name: "① Commit Mac_playlist.m3u"
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add Mac_playlist.m3u
+          git diff --cached --quiet && echo "⏭️ Không có thay đổi" && exit 0
+          git commit -m "① Update Mac_playlist.m3u [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin 1 && git push origin 1 && exit 0
+            echo "Retry $i..."; sleep 5
+          done
+          exit 1
+
+      # ============================================================
+      # ② FootOnSat Optimize → live_schedule_Optimize.m3u
+      # ============================================================
+      - name: "② Convert URLs to local paths in M3U_list.txt"
+        run: |
+          sed -i 's|https://raw.githubusercontent.com/Love4vn/Stalker2M3U/1/||g' M3U_list.txt
+
+      - name: "② Chạy footonsat_schedule_live_optimized.py"
+        run: python footonsat_schedule_live_optimized.py --skip-validation
+
+      - name: "② Commit live_schedule_Optimize.m3u"
+        run: |
+          git add live_schedule_Optimize.m3u
+          git diff --cached --quiet && echo "⏭️ Không có thay đổi" && exit 0
+          git commit -m "② Update live_schedule_Optimize.m3u [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin 1 && git push origin 1 && exit 0
+            echo "Retry $i..."; sleep 5
+          done
+          exit 1
+
+      # ============================================================
+      # ③ Football match live → Football_match_live.m3u
+      # ============================================================
+      - name: "③ Convert URLs to local paths in M3U_list.txt"
+        run: |
+          sed -i 's|https://raw.githubusercontent.com/Love4vn/Stalker2M3U/1/||g' M3U_list.txt
+
+      - name: "③ Chạy Football_match_live.py"
+        run: python Football_match_live.py --no-footonsat --skip-validation
+
+      - name: "③ Commit Football_match_live.m3u"
+        run: |
+          git add Football_match_live.m3u
+          git diff --cached --quiet && echo "⏭️ Không có thay đổi" && exit 0
+          git commit -m "③ Update Football_match_live.m3u [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin 1 && git push origin 1 && exit 0
+            echo "Retry $i..."; sleep 5
+          done
+          exit 1
+
+      # ============================================================
+      # 4. TỔNG KẾT
+      # ============================================================
+      - name: "✅ Tổng kết"
+        if: always()
+        run: |
+          echo "===== 5 commit gần nhất ====="
+          git log --oneline -5
+          echo "===== File output ====="
+          ls -lh Mac_playlist.m3u live_schedule_Optimize.m3u Football_match_live.m3u 2>/dev/null || true
