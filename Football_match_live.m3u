@@ -1,81 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2046300" group-title="⚽️🇪🇦|Live La Liga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/Max.png",02/10 09:30 PM | REAL MADRID GETAFE CF FUTURES 2026/2027 FASE DE GRUPOS (ES) 8K ES: MAX 11
+#EXTINF:-1 tvg-id="2021189" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",03/10 10:30 PM | FOTBOLL: WOMEN'S SUPER LEAGUE MANCHESTER UNITED-LIVERPOOL (SE) 8K SE: PLAY+ 59
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2046300&extension=ts&play_token=qYyWM3e4zL
-#EXTINF:-1 tvg-id="2134496" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VGPLUS.png",02/10 10:30 PM | Manchester United Liverpool @ :VG 04
+#EXTVLCOPT:http-header=Authorization: Bearer 3BD0D3A24830C033A8C6580B7ED2BC07
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021189&extension=ts&play_token=GoADP4QY2m
+#EXTINF:-1 tvg-id="2021188" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",03/10 10:30 PM | MANCHESTER UNITED LIVERPOOL (SE) 8K SE: PLAY+ 60
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2134496&extension=ts&play_token=ufTgSiqJmm
-#EXTINF:-1 tvg-id="2048915" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",02/10 11:30 PM | Leverkusen vs. Werder Bremen Frauen Bundesliga | 8K GB: DAZN 14
+#EXTVLCOPT:http-header=Authorization: Bearer 3BD0D3A24830C033A8C6580B7ED2BC07
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021188&extension=ts&play_token=KOoHMfRStI
+#EXTINF:-1 tvg-id="2134496" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VGPLUS.png",03/10 10:30 PM | Manchester United Liverpool @ :VG 04
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2048915&extension=ts&play_token=5o0CrW6Rbb
-#EXTINF:-1 tvg-id="2040614" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",02/10 11:30 PM | Bayer Leverkusen Werder Bremen Frauen Bundesliga | 8K BE: DAZN 16
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040614&extension=ts&play_token=wlmLZNb94W
-#EXTINF:-1 tvg-id="1600056" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/viaplay-logo.png",02/10 11:30 PM | FRAUEN-BUNDESLIGA LEVERKUSEN WERDER BREMEN (NL) 8K NL: VIAPLAY 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1600056&extension=ts&play_token=FBk67hHiFJ
-#EXTINF:-1 tvg-id="2040506" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",02/10 11:30 PM | Bayer Leverkusen SV Werder Bremen Google Pixel Frauen-Bundesliga | 8K DE: DAZN 19
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040506&extension=ts&play_token=5xmaplAduT
-#EXTINF:-1 tvg-id="2055028" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",02/10 11:30 PM | Bayer Leverkusen SV Werder Bremen all | 8K DE: SOCCER 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055028&extension=ts&play_token=g9lZFcvqCp
-#EXTINF:-1 tvg-id="2046788" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",02/10 11:30 PM | Bayer Leverkusen Werder Brême Frauen Bundesliga | 8K CH: DAZN 17
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2046788&extension=ts&play_token=qY32QhIi0c
-#EXTINF:-1 tvg-id="2145334" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",02/10 11:30 PM | Bayer Leverkusen Werder Bremen Google Pixel Frauen-Bundesliga | 8K ES: DAZN 27
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2145334&extension=ts&play_token=gd9Hz9GJgB
-#EXTINF:-1 tvg-id="2046581" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",02/10 11:30 PM | Leverkusen x Werder Bremen Google Pixel Frauen Bundesliga | 8K PT: DAZN 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2046581&extension=ts&play_token=5ILOPuVHH2
-#EXTINF:-1 tvg-id="2042124" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",02/10 11:30 PM | Bayer Leverkusen Werder Brema Frauen Bundesliga | 8K IT: DAZN 22
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2042124&extension=ts&play_token=6Rayz6nVxw
-#EXTINF:-1 tvg-id="2016266" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VIAPLAY.png",02/10 11:30 PM | FRAUEN-BUNDESLIGA LEVERKUSEN WERDER BREMEN (SE) 8K SE: VIAPLAY 13
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2016266&extension=ts&play_token=4u1fKHWc0X
-#EXTINF:-1 tvg-id="2037365" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VIAPLAY.png",02/10 11:30 PM | FRAUEN-BUNDESLIGA LEVERKUSEN WERDER BREMEN (DK) 8K DK: VIAPLAY 13
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2037365&extension=ts&play_token=VKbZTs8JXn
-#EXTINF:-1 tvg-id="1996026" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/2PLAY.png",02/10 11:30 PM | Soccer: Leverkusen vs Werder Bremen @ :Tv2Play NO 10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1996026&extension=ts&play_token=Z7vc5PgWDS
-#EXTINF:-1 tvg-id="1735566" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VIAPLAY.png",02/10 11:30 PM | FRAUEN-BUNDESLIGA LEVERKUSEN WERDER BREMEN (NO) 8K NO: VIAPLAY 12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1735566&extension=ts&play_token=8ylJJKwC4x
-#EXTINF:-1 tvg-id="2046300" group-title="⚽️🇪🇦|Live La Liga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/Max.png",02/10 11:30 PM | REAL MADRID GETAFE CF FUTURES 2026/2027 FASE DE GRUPOS (ES) 8K ES: MAX 11
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 47A221730C14A15F772AF8C6C78AAB95
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2046300&extension=ts&play_token=qYyWM3e4zL
+#EXTVLCOPT:http-header=Authorization: Bearer 3BD0D3A24830C033A8C6580B7ED2BC07
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2134496&extension=ts&play_token=hxdyZVLkac
