@@ -1,16 +1,31 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2021189" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",03/10 10:30 PM | FOTBOLL: WOMEN'S SUPER LEAGUE MANCHESTER UNITED-LIVERPOOL (SE) 8K SE: PLAY+ 59
+#EXTINF:-1 tvg-id="1634710" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/4PPV.png",03/10 10:30 PM | MANCHESTER UNITED LIVERPOOL (SE) 8K SE: TV4 PLAY 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3BD0D3A24830C033A8C6580B7ED2BC07
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021189&extension=ts&play_token=GoADP4QY2m
-#EXTINF:-1 tvg-id="2021188" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",03/10 10:30 PM | MANCHESTER UNITED LIVERPOOL (SE) 8K SE: PLAY+ 60
+#EXTVLCOPT:http-header=Authorization: Bearer D16E010C52619F8964633193615F0F97
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1634710&extension=ts&play_token=zQjkHHNVVF
+#EXTINF:-1 tvg-id="2021241" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",03/10 10:30 PM | FOTBOLL: WOMEN'S SUPER LEAGUE MANCHESTER UNITED-LIVERPOOL (SE) 8K SE: PLAY+ 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3BD0D3A24830C033A8C6580B7ED2BC07
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021188&extension=ts&play_token=KOoHMfRStI
+#EXTVLCOPT:http-header=Authorization: Bearer D16E010C52619F8964633193615F0F97
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021241&extension=ts&play_token=hmXKed2OFq
+#EXTINF:-1 tvg-id="2021240" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",03/10 10:30 PM | MANCHESTER UNITED LIVERPOOL WOMENS SUPER LEAGUE (SE) 8K SE: PLAY+ 8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D16E010C52619F8964633193615F0F97
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021240&extension=ts&play_token=yRok7rgXAE
+#EXTINF:-1 tvg-id="2021239" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",03/10 10:30 PM | MANCHESTER UNITED LIVERPOOL (SE) 8K SE: PLAY+ 9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D16E010C52619F8964633193615F0F97
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021239&extension=ts&play_token=ccCsjJXOyJ
+#EXTINF:-1 tvg-id="1675567" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VGTV.png",03/10 10:30 PM | MANCHESTER UNITED LIVERPOOL (NO) 8K NO: VGTV 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer D16E010C52619F8964633193615F0F97
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1675567&extension=ts&play_token=uSV5vm3zIy
 #EXTINF:-1 tvg-id="2134496" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VGPLUS.png",03/10 10:30 PM | Manchester United Liverpool @ :VG 04
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3BD0D3A24830C033A8C6580B7ED2BC07
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2134496&extension=ts&play_token=hxdyZVLkac
+#EXTVLCOPT:http-header=Authorization: Bearer D16E010C52619F8964633193615F0F97
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2134496&extension=ts&play_token=AymvQ3TMuK
