@@ -75,7 +75,8 @@ ALLOWED_FOOTBALL_LEAGUES = {
     "UEFA Champions League", "UEFA Europa League", "UEFA Europa Conference League",
     "UEFA Euro", "FA Cup", "League Cup",
     "International Friendly",            # Đã thêm
-    "FIFA World Cup"                     # THÊM DÒNG NÀY
+    "FIFA World Cup",                     # THÊM DÒNG NÀY
+    "UEFA Nations League"
 }
 
 COUNTRY_CODES: Set[str] = {
