@@ -44,7 +44,8 @@ ALLOWED_FOOTBALL_LEAGUES = {
     "UEFA Champions League", "UEFA Europa League", "UEFA Europa Conference League",
     "UEFA Euro", "FA Cup", "League Cup",
     "International Friendly",            # Đã thêm
-    "FIFA World Cup"                     # THÊM DÒNG NÀY
+    "FIFA World Cup",                     # THÊM DÒNG NÀY
+    "UEFA Nations League"
 }
 
 LEAGUE_MAPPING = {
@@ -94,6 +95,7 @@ LEAGUE_GROUP_NAME = {
     "UEFA Europa League": "Live UEFA Europa League-Match",
     "UEFA Europa Conference League": "Live UEFA Conference League-Match",
     "UEFA Euro": "Live Euro-Match",
+    "UEFA Nations League": "Live UEFA Nations League",
     "FA Cup": "Live FA, League Cup-Match",
     "League Cup": "Live FA, League Cup-Match",
     "FIFA World Cup": "🏆|Live FIFA World Cup-Match",           # THÊM DÒNG NÀY
