@@ -164,6 +164,7 @@ LEAGUE_GROUP_NAME = {
     "UEFA Europa League": "Live UEFA Europa League",
     "UEFA Europa Conference League": "Live UEFA Conference League",
     "UEFA Euro": "Live Euro",
+    "UEFA Nations League": "Live UEFA Nations League",
     "FA Cup": "Live FA, League Cup",
     "League Cup": "Live FA, League Cup",
     "Tennis": "🎾|Live Tennis",
