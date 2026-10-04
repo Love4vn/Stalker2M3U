@@ -1,66 +1,181 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2040429" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",04/10 08:30 PM | Borussia M'gladbach FC Viktoria Berlin 2. Frauen-Bundesliga | 8K DE: DAZN 96
+#EXTINF:-1 tvg-id="2042133" group-title="⚽️🇮🇹|Live Serie A-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",04/10 08:00 PM | Live Milan Juventus Serie A Women Athora 8K IT: DAZN 13
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040429&extension=ts&play_token=DPBwkcEV05
-#EXTINF:-1 tvg-id="2058522" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",04/10 10:30 PM | End English Super League Women's: Manchester United V Liverpool all | 8K NL: SOCCER 26
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2042133&extension=ts&play_token=mgMiI0yI6c
+#EXTINF:-1 tvg-id="1363054" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.95/images/1363054.png",04/10 08:00 PM | UEFA 01 Azerbaijan vs Lithuania
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2058522&extension=ts&play_token=4tGwhD1aRl
-#EXTINF:-1 tvg-id="2113074" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",04/10 10:30 PM | End English Super League Women's: Manchester United V Liverpool all | 8K FR: SOCCER 37
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1363054&extension=ts&play_token=rFwdQjKEvB
+#EXTINF:-1 tvg-id="1363997" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.95/images/1363997.png",04/10 08:00 PM | UEFA 01 Azerbaijan vs Lithuania
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2113074&extension=ts&play_token=LioBkT6BH6
-#EXTINF:-1 tvg-id="2113075" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",04/10 10:30 PM | End Women's Super League: Manchester United V Liverpool all | 8K FR: SOCCER 36
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1363997&extension=ts&play_token=tHcNkPRJYl
+#EXTINF:-1 tvg-id="830068" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",04/10 08:00 PM | UEFA 01 Azerbaijan vs Lithuania
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 798E151B39DA7940B21823F823AE1637
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830068&extension=ts&play_token=jyd0vEaDhY
+#EXTINF:-1 tvg-id="830068" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",04/10 08:00 PM | UEFA 01 Azerbaijan vs Lithuania
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1EB932BD81C95885F43F7D1F6073E927
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830068&extension=ts&play_token=EWEK4V3Skn
+#EXTINF:-1 tvg-id="830068" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",04/10 08:00 PM | UEFA 01 Azerbaijan vs Lithuania
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 26324BB98B197E53E72325F4A15FEC5B
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830068&extension=ts&play_token=wk44k8kwMg
+#EXTINF:-1 tvg-id="2055028" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",04/10 08:00 PM | Live Azerbaijan vs. Lithuania all 8K DE: SOCCER 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2113075&extension=ts&play_token=pHk3hz7fBf
-#EXTINF:-1 tvg-id="1634722" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/4PPV.png",04/10 10:30 PM | ENDED MANCHESTER UNITED LIVERPOOL (SE) 8K SE: TV4 PLAY 4
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055028&extension=ts&play_token=xHxyGog6hp
+#EXTINF:-1 tvg-id="2072498" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",04/10 08:00 PM | Live Azerbaijan vs. Lithuania all 8K ES: SOCCER 55
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1634722&extension=ts&play_token=EC8gX1EqDc
-#EXTINF:-1 tvg-id="2021241" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",04/10 10:30 PM | ENDED FOTBOLL: WOMEN'S SUPER LEAGUE MANCHESTER UNITED-LIVERPOOL (SE) 8K SE: PLAY+ 7
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2072498&extension=ts&play_token=HrhGxLL4CH
+#EXTINF:-1 tvg-id="2040508" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",04/10 08:30 PM | Live Borussia M'gladbach FC Viktoria Berlin 2. Frauen-Bundesliga 8K DE: DAZN 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021241&extension=ts&play_token=kbBe2urffW
-#EXTINF:-1 tvg-id="2021240" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",04/10 10:30 PM | ENDED MANCHESTER UNITED LIVERPOOL WOMENS SUPER LEAGUE (SE) 8K SE: PLAY+ 8
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040508&extension=ts&play_token=0k1sXj0rh8
+#EXTINF:-1 tvg-id="1924570" group-title="⚽️🇩🇪|Live Bundesliga-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/FootballLeague.png",04/10 08:30 PM | LIVE BORUSSIA MÖNCHENGLADBACH ♀ VS FC VIKTORIA BERLIN (DE) 8K DE: LEAGUES FOOTBALL 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021240&extension=ts&play_token=X70N9YSk9F
-#EXTINF:-1 tvg-id="2021239" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/PLAYPLUS.png",04/10 10:30 PM | ENDED MANCHESTER UNITED LIVERPOOL (SE) 8K SE: PLAY+ 9
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1924570&extension=ts&play_token=uxeKCMRyNF
+#EXTINF:-1 tvg-id="2055021" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",04/10 11:00 PM | Kosovo vs. Austria all | 8K DE: SOCCER 31
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2021239&extension=ts&play_token=BTGN2I7Ktd
-#EXTINF:-1 tvg-id="1675569" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VGTV.png",04/10 10:30 PM | LIVE MANCHESTER UNITED LIVERPOOL (NO) 8K NO: VGTV 2
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055021&extension=ts&play_token=SHLookE2MU
+#EXTINF:-1 tvg-id="2145308" group-title="Live UEFA Nations League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",04/10 11:00 PM | Kosovo Austria UEFA Nations League | 8K ES: DAZN 53
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1675569&extension=ts&play_token=T8wYl1y1gx
-#EXTINF:-1 tvg-id="1990114" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/4PPV.png",04/10 10:30 PM | Manchester United Liverpool @ :Tv4 Play SE 03
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2145308&extension=ts&play_token=uY74D4f72V
+#EXTINF:-1 tvg-id="2040479" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",04/10 11:00 PM | Malta Andorra UEFA Nations League | 8K DE: DAZN 46
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1990114&extension=ts&play_token=PscWjMTmDL
-#EXTINF:-1 tvg-id="1991529" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/TeliaPlay.png",04/10 10:30 PM | Fotboll: Women super league Manchester United vs Liverpool @ :TeliaPlay SE 11
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2040479&extension=ts&play_token=E29VBubeCS
+#EXTINF:-1 tvg-id="2055020" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",04/10 11:00 PM | Malta vs. Andorra all | 8K DE: SOCCER 32
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1991529&extension=ts&play_token=cg56YGF3Yi
-#EXTINF:-1 tvg-id="1991528" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/TeliaPlay.png",04/10 10:30 PM | Manchester United vs Liverpool @ :TeliaPlay SE 12
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055020&extension=ts&play_token=9EMcCvPaAg
+#EXTINF:-1 tvg-id="2145307" group-title="Live UEFA Nations League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",04/10 11:00 PM | Malta Andorra UEFA Nations League | 8K ES: DAZN 54
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1991528&extension=ts&play_token=KloEoRrLiC
-#EXTINF:-1 tvg-id="2134498" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League-Match" tvg-logo="http://103.176.90.154/picons/logos/PPV/VGPLUS.png",04/10 10:30 PM | Manchester United Liverpool @ :VG 02
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2145307&extension=ts&play_token=7QwTi5oRnI
+#EXTINF:-1 tvg-id="2016256" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/VIAPLAY.png",04/10 11:00 PM | UEFA NATIONS LEAGUE MALTA ANDORRA (SE) 8K SE: VIAPLAY 23
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer A28563A9F9E5C46011D30BB3A9296A62
-http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2134498&extension=ts&play_token=ihKYl4S269
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2016256&extension=ts&play_token=xDqKF95mbW
+#EXTINF:-1 tvg-id="1735548" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/VIAPLAY.png",04/10 11:00 PM | UEFA NATIONS LEAGUE MALTA ANDORRA (NO) 8K NO: VIAPLAY 30
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1735548&extension=ts&play_token=F36X7ci9dW
+#EXTINF:-1 tvg-id="2134465" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/Tv2Play.png",04/10 11:00 PM | UEFA Nations League: Malta-Andorra @ :00 :Tv2Play DK 12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2134465&extension=ts&play_token=YJC6fSPERE
+#EXTINF:-1 tvg-id="1363993" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.95/images/1363993.png",05/10 01:45 AM | UEFA 05 Wales vs Denmark
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1363993&extension=ts&play_token=zqG6zf6pL6
+#EXTINF:-1 tvg-id="1363058" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.95/images/1363058.png",05/10 01:45 AM | UEFA 05 Wales vs Denmark
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1363058&extension=ts&play_token=A5N97aidoR
+#EXTINF:-1 tvg-id="830064" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 05 Wales vs Denmark
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 798E151B39DA7940B21823F823AE1637
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830064&extension=ts&play_token=o59jrP20te
+#EXTINF:-1 tvg-id="830064" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 05 Wales vs Denmark
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1EB932BD81C95885F43F7D1F6073E927
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830064&extension=ts&play_token=L9KaUDiH71
+#EXTINF:-1 tvg-id="830064" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 05 Wales vs Denmark
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 26324BB98B197E53E72325F4A15FEC5B
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830064&extension=ts&play_token=ilUwt27XO6
+#EXTINF:-1 tvg-id="1363056" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.95/images/1363056.png",05/10 01:45 AM | UEFA 03 Portugal vs Norway
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1363056&extension=ts&play_token=z5f3OEYgAC
+#EXTINF:-1 tvg-id="830066" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 03 Portugal vs Norway
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 798E151B39DA7940B21823F823AE1637
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830066&extension=ts&play_token=vQIbhmuyGG
+#EXTINF:-1 tvg-id="830066" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 03 Portugal vs Norway
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1EB932BD81C95885F43F7D1F6073E927
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830066&extension=ts&play_token=mf8qs7RLCq
+#EXTINF:-1 tvg-id="830066" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 03 Portugal vs Norway
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 26324BB98B197E53E72325F4A15FEC5B
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830066&extension=ts&play_token=hTl7NGcjFW
+#EXTINF:-1 tvg-id="2055004" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",05/10 01:45 AM | Portugal vs. Norway all | 8K DE: SOCCER 48
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055004&extension=ts&play_token=X1eYR4r3x3
+#EXTINF:-1 tvg-id="2055003" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",05/10 01:45 AM | Netherlands vs. Serbia all | 8K DE: SOCCER 49
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055003&extension=ts&play_token=Og4CU1UPZY
+#EXTINF:-1 tvg-id="2055010" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/PPVLIVE.png",05/10 01:45 AM | Greece vs. Germany all | 8K DE: SOCCER 42
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2055010&extension=ts&play_token=9UPtoME6T4
+#EXTINF:-1 tvg-id="1363057" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.95/images/1363057.png",05/10 01:45 AM | UEFA 04 Republic of Ireland vs Israel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=1363057&extension=ts&play_token=VGYX632UUW
+#EXTINF:-1 tvg-id="830065" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 04 Republic of Ireland vs Israel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 798E151B39DA7940B21823F823AE1637
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830065&extension=ts&play_token=IPGs54dOUn
+#EXTINF:-1 tvg-id="830065" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 04 Republic of Ireland vs Israel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1EB932BD81C95885F43F7D1F6073E927
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830065&extension=ts&play_token=wvMG0jYVnW
+#EXTINF:-1 tvg-id="830065" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/10 01:45 AM | UEFA 04 Republic of Ireland vs Israel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 26324BB98B197E53E72325F4A15FEC5B
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830065&extension=ts&play_token=QEqNj34igZ
+#EXTINF:-1 tvg-id="2046755" group-title="Live UEFA Nations League" tvg-logo="http://103.176.90.154/picons/logos/PPV/DAZN.png",05/10 01:45 AM | Ireland Israël UEFA Nations League | 8K CH: DAZN 50
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2046755&extension=ts&play_token=oQBoTGE7LX
+#EXTINF:-1 tvg-id="2145286" group-title="Live UEFA Nations League" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12983.png?ver=89182",05/10 01:45 AM | República de Irlanda Israel UEFA Nations League | 8K ES: DAZN 75
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:74:B1:B9; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 2068D18C35F618B83C2654929B472072
+http://mag.greatott.me:80/play/live.php?mac=00:1A:79:74:B1:B9&stream=2145286&extension=ts&play_token=ItViP1Hoqn
