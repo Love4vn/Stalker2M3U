@@ -1,251 +1,401 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="830058" group-title="Live UEFA Europa League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",04/11 09:30 PM | UEFA 11 Rennes vs Olympiakos
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 19FEF7062C73C71A8E7F77D22123E1B7
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830058&extension=ts&play_token=bzD6vRkUAa
+#EXTINF:-1 tvg-id="830058" group-title="Live UEFA Europa League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",04/11 10:30 PM | UEFA 11 Rennes vs Olympiakos
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 19FEF7062C73C71A8E7F77D22123E1B7
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830058&extension=ts&play_token=bzD6vRkUAa
 #EXTINF:-1 tvg-id="1150168" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150168
 #EXTINF:-1 tvg-id="1150167" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150167
 #EXTINF:-1 tvg-id="1150168" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150168
 #EXTINF:-1 tvg-id="1150167" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150167
+#EXTINF:-1 tvg-id="1150168" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150168
+#EXTINF:-1 tvg-id="1150167" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745 [BK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150167
+#EXTINF:-1 tvg-id="830067" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/11 12:45 AM | UEFA 02 Fenerbahce vs Liverpool
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 19FEF7062C73C71A8E7F77D22123E1B7
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830067&extension=ts&play_token=twnujXY771
 #EXTINF:-1 tvg-id="1150141" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150141
 #EXTINF:-1 tvg-id="1150140" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150140
 #EXTINF:-1 tvg-id="1292008" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292008
 #EXTINF:-1 tvg-id="1292015" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292015
 #EXTINF:-1 tvg-id="1292020" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292020
 #EXTINF:-1 tvg-id="1274757" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1274757
 #EXTINF:-1 tvg-id="1150141" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150141
 #EXTINF:-1 tvg-id="1150140" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150140
 #EXTINF:-1 tvg-id="1292008" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292008
 #EXTINF:-1 tvg-id="1292015" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292015
 #EXTINF:-1 tvg-id="1292020" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292020
 #EXTINF:-1 tvg-id="1274757" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1274757
+#EXTINF:-1 tvg-id="1150141" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150141
+#EXTINF:-1 tvg-id="1150140" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745 [BK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150140
+#EXTINF:-1 tvg-id="1292008" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292008
+#EXTINF:-1 tvg-id="1292015" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292015
+#EXTINF:-1 tvg-id="1292020" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292020
+#EXTINF:-1 tvg-id="1274757" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1274757
 #EXTINF:-1 tvg-id="1150166" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150166
 #EXTINF:-1 tvg-id="1150165" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN AEK ATHENS VS REAL MADRID 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150165
 #EXTINF:-1 tvg-id="1150166" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150166
 #EXTINF:-1 tvg-id="1150165" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN AEK ATHENS VS REAL MADRID 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150165
+#EXTINF:-1 tvg-id="1150166" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN AEK ATHENS VS REAL MADRID 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150166
+#EXTINF:-1 tvg-id="1150165" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN AEK ATHENS VS REAL MADRID 1745 [BK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150165
+#EXTINF:-1 tvg-id="830068" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/11 12:45 AM | UEFA 01 AEK Athens vs Real Madrid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 19FEF7062C73C71A8E7F77D22123E1B7
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830068&extension=ts&play_token=agTFFtAIvh
 #EXTINF:-1 tvg-id="1150136" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150136
 #EXTINF:-1 tvg-id="1150135" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR AEK ATHENS VS REAL MADRID 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150135
 #EXTINF:-1 tvg-id="1292007" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292007
 #EXTINF:-1 tvg-id="1292006" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR AEK ATHENS VS REAL MADRID 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292006
 #EXTINF:-1 tvg-id="1150174" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150174
 #EXTINF:-1 tvg-id="1292019" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292019
 #EXTINF:-1 tvg-id="1274756" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1274756
 #EXTINF:-1 tvg-id="1150136" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150136
 #EXTINF:-1 tvg-id="1150135" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR AEK ATHENS VS REAL MADRID 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150135
 #EXTINF:-1 tvg-id="1292007" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292007
 #EXTINF:-1 tvg-id="1292006" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR AEK ATHENS VS REAL MADRID 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292006
 #EXTINF:-1 tvg-id="1150174" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150174
 #EXTINF:-1 tvg-id="1292019" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292019
 #EXTINF:-1 tvg-id="1274756" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB AEK ATHENS VS REAL MADRID 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1274756
+#EXTINF:-1 tvg-id="1150136" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR AEK ATHENS VS REAL MADRID 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150136
+#EXTINF:-1 tvg-id="1150135" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR AEK ATHENS VS REAL MADRID 1745 [BK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150135
+#EXTINF:-1 tvg-id="1292007" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR AEK ATHENS VS REAL MADRID 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292007
+#EXTINF:-1 tvg-id="1292006" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR AEK ATHENS VS REAL MADRID 1745 [BK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292006
+#EXTINF:-1 tvg-id="1150174" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP AEK ATHENS VS REAL MADRID 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150174
+#EXTINF:-1 tvg-id="1292019" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE AEK ATHENS VS REAL MADRID 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292019
+#EXTINF:-1 tvg-id="1274756" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB AEK ATHENS VS REAL MADRID 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1274756
 #EXTINF:-1 tvg-id="1150168" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150168
 #EXTINF:-1 tvg-id="1150167" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150167
 #EXTINF:-1 tvg-id="1150168" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150168
 #EXTINF:-1 tvg-id="1150167" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150167
+#EXTINF:-1 tvg-id="1150168" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150168
+#EXTINF:-1 tvg-id="1150167" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | EN FENERBAHÇE VS LIVERPOOL 1745 [BK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150167
+#EXTINF:-1 tvg-id="830067" group-title="Live UEFA Champions League-Match" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",05/11 12:45 AM | UEFA 02 Fenerbahce vs Liverpool
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 19FEF7062C73C71A8E7F77D22123E1B7
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830067&extension=ts&play_token=twnujXY771
 #EXTINF:-1 tvg-id="1150141" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150141
 #EXTINF:-1 tvg-id="1150140" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1150140
 #EXTINF:-1 tvg-id="1292008" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292008
 #EXTINF:-1 tvg-id="1292015" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292015
 #EXTINF:-1 tvg-id="1292020" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1292020
 #EXTINF:-1 tvg-id="1274757" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F26EBE9F804CA10E390CE712FCB5BDAB
+#EXTVLCOPT:http-header=Authorization: Bearer B76DCDD3BA95C5E6E74ED601CE4539BC
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1274757
 #EXTINF:-1 tvg-id="1150141" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150141
 #EXTINF:-1 tvg-id="1150140" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745 [BK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1150140
 #EXTINF:-1 tvg-id="1292008" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292008
 #EXTINF:-1 tvg-id="1292015" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292015
 #EXTINF:-1 tvg-id="1292020" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1292020
 #EXTINF:-1 tvg-id="1274757" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB FENERBAHÇE VS LIVERPOOL 1745
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 472B426E440E5A0BD33F5833AEFE2AF9
+#EXTVLCOPT:http-header=Authorization: Bearer 94F4ADE8C0B79DF7F34DB78C609A4BD6
 http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1274757
+#EXTINF:-1 tvg-id="1150141" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150141
+#EXTINF:-1 tvg-id="1150140" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | FR FENERBAHÇE VS LIVERPOOL 1745 [BK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1150140
+#EXTINF:-1 tvg-id="1292008" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | AR FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292008
+#EXTINF:-1 tvg-id="1292015" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | SP FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292015
+#EXTINF:-1 tvg-id="1292020" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | DE FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1292020
+#EXTINF:-1 tvg-id="1274757" group-title="Live UEFA Champions League-Match" tvg-logo="https://go4.pw/champ/champions.png",05/11 12:45 AM | ALB FENERBAHÇE VS LIVERPOOL 1745
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 3F15517CA2BCC09ED65565481B3F9AA9
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1274757
