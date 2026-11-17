@@ -1,41 +1,141 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="830066" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 03 Hungary vs Northern Ireland
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7B24BFBE95CED2620AB2CAAACD219347
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830066&extension=ts&play_token=CMd6Cg1a7m
+#EXTINF:-1 tvg-id="830066" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 03 Hungary vs Northern Ireland
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 483F20260537BEA0D26592E15010C833
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830066&extension=ts&play_token=Zjwzp9FRZ3
+#EXTINF:-1 tvg-id="830066" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 03 Hungary vs Northern Ireland
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CE99BE1A411DC8765219ECC736014090
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830066&extension=ts&play_token=4oPcDZB5Wo
+#EXTINF:-1 tvg-id="830066" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 03 Hungary vs Northern Ireland
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 51474367C0B69812BDCFFBA16C1423DC
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830066&extension=ts&play_token=kGcEA4EgmO
 #EXTINF:-1 tvg-id="830063" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 06 Republic of Ireland vs Kosovo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6F4B8BB5C2C018A4F540FDB06C6F355B
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830063&extension=ts&play_token=oMIWK2ETD1
+#EXTVLCOPT:http-header=Authorization: Bearer 7B24BFBE95CED2620AB2CAAACD219347
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830063&extension=ts&play_token=N70wI8o1Ox
 #EXTINF:-1 tvg-id="830063" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 06 Republic of Ireland vs Kosovo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AADDA0C5B791A94B066F62CF44FB7D02
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830063&extension=ts&play_token=L0Jkwbmhfv
+#EXTVLCOPT:http-header=Authorization: Bearer 483F20260537BEA0D26592E15010C833
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830063&extension=ts&play_token=yMeHhe0YAU
 #EXTINF:-1 tvg-id="830063" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 06 Republic of Ireland vs Kosovo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 58C0E8120DF48E34122E94B8875E6F1D
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830063&extension=ts&play_token=JDzICUr3NE
+#EXTVLCOPT:http-header=Authorization: Bearer CE99BE1A411DC8765219ECC736014090
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830063&extension=ts&play_token=v5MJXUBIqf
 #EXTINF:-1 tvg-id="830063" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 06 Republic of Ireland vs Kosovo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 338FE050BB2BAD2EE4735591C2FA88B1
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830063&extension=ts&play_token=4Aen9ZeW7q
-#EXTINF:-1 tvg-id="830061" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 08 Poland vs Sweden
+#EXTVLCOPT:http-header=Authorization: Bearer 51474367C0B69812BDCFFBA16C1423DC
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830063&extension=ts&play_token=dJ8Y5mvtb3
+#EXTINF:-1 tvg-id="830065" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 04 Israel vs Austria
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 6F4B8BB5C2C018A4F540FDB06C6F355B
-http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830061&extension=ts&play_token=kiB3PicI3D
-#EXTINF:-1 tvg-id="830061" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 08 Poland vs Sweden
+#EXTVLCOPT:http-header=Authorization: Bearer 7B24BFBE95CED2620AB2CAAACD219347
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830065&extension=ts&play_token=V8OTlTHESb
+#EXTINF:-1 tvg-id="830065" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 04 Israel vs Austria
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer AADDA0C5B791A94B066F62CF44FB7D02
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830061&extension=ts&play_token=l65gG5XimW
-#EXTINF:-1 tvg-id="830061" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 08 Poland vs Sweden
+#EXTVLCOPT:http-header=Authorization: Bearer 483F20260537BEA0D26592E15010C833
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830065&extension=ts&play_token=1eK1KguC3g
+#EXTINF:-1 tvg-id="830065" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 04 Israel vs Austria
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 58C0E8120DF48E34122E94B8875E6F1D
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830061&extension=ts&play_token=1rBooTL8vv
-#EXTINF:-1 tvg-id="830061" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 08 Poland vs Sweden
+#EXTVLCOPT:http-header=Authorization: Bearer CE99BE1A411DC8765219ECC736014090
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830065&extension=ts&play_token=3W550nOBdo
+#EXTINF:-1 tvg-id="830065" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 04 Israel vs Austria
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 338FE050BB2BAD2EE4735591C2FA88B1
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830061&extension=ts&play_token=aJtK88rwYc
+#EXTVLCOPT:http-header=Authorization: Bearer 51474367C0B69812BDCFFBA16C1423DC
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830065&extension=ts&play_token=UkEeQNSTkk
+#EXTINF:-1 tvg-id="830064" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 05 Poland vs Sweden
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7B24BFBE95CED2620AB2CAAACD219347
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830064&extension=ts&play_token=g4vX7JIaVN
+#EXTINF:-1 tvg-id="830064" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 05 Poland vs Sweden
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 483F20260537BEA0D26592E15010C833
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830064&extension=ts&play_token=4zhc0lO5t0
+#EXTINF:-1 tvg-id="830064" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 05 Poland vs Sweden
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CE99BE1A411DC8765219ECC736014090
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830064&extension=ts&play_token=MSE38bLsg3
+#EXTINF:-1 tvg-id="830064" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 05 Poland vs Sweden
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 51474367C0B69812BDCFFBA16C1423DC
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830064&extension=ts&play_token=D43hgYZ7J0
+#EXTINF:-1 tvg-id="830062" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 07 Ukraine vs Georgia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7B24BFBE95CED2620AB2CAAACD219347
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830062&extension=ts&play_token=l3DGN1zAHF
+#EXTINF:-1 tvg-id="830062" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 07 Ukraine vs Georgia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 483F20260537BEA0D26592E15010C833
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830062&extension=ts&play_token=yhK49pC6LZ
+#EXTINF:-1 tvg-id="830062" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 07 Ukraine vs Georgia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CE99BE1A411DC8765219ECC736014090
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830062&extension=ts&play_token=jVLqb09AhM
+#EXTINF:-1 tvg-id="830062" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 07 Ukraine vs Georgia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 51474367C0B69812BDCFFBA16C1423DC
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830062&extension=ts&play_token=Sc5Pzxl7u8
+#EXTINF:-1 tvg-id="830067" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 02 Denmark vs Norway
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7B24BFBE95CED2620AB2CAAACD219347
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830067&extension=ts&play_token=gkdn9Ijh5p
+#EXTINF:-1 tvg-id="830067" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 02 Denmark vs Norway
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 483F20260537BEA0D26592E15010C833
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830067&extension=ts&play_token=aQuzlGz7VH
+#EXTINF:-1 tvg-id="830067" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 02 Denmark vs Norway
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CE99BE1A411DC8765219ECC736014090
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830067&extension=ts&play_token=Gqslcu8jsk
+#EXTINF:-1 tvg-id="830067" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 02 Denmark vs Norway
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 51474367C0B69812BDCFFBA16C1423DC
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830067&extension=ts&play_token=1FxCv7T13e
+#EXTINF:-1 tvg-id="830061" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 08 Wales vs Portugal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7B24BFBE95CED2620AB2CAAACD219347
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=830061&extension=ts&play_token=ebtFSoJZYq
+#EXTINF:-1 tvg-id="830061" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 08 Wales vs Portugal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 483F20260537BEA0D26592E15010C833
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=830061&extension=ts&play_token=IWpWS2vlM9
+#EXTINF:-1 tvg-id="830061" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 08 Wales vs Portugal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CE99BE1A411DC8765219ECC736014090
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=830061&extension=ts&play_token=DNw1tAnIhk
+#EXTINF:-1 tvg-id="830061" group-title="Live UEFA Nations League" tvg-logo="http://picon.tivi-ott.net:25461/picon/TEAMS/UEFA.png",18/11 02:45 AM | UEFA 08 Wales vs Portugal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 51474367C0B69812BDCFFBA16C1423DC
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=830061&extension=ts&play_token=yma9QnmViZ
