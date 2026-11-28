@@ -1,436 +1,561 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT FHD)
+#EXTINF:-1 tvg-id="858523" group-title="🎾|Live Tennis" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4874fbceb44994a7.png",28/11 05:00 PM | Davis Cup (USA┃ TENNIS CHANNEL HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/394553_
-#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT HD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858523&extension=ts&play_token=z3zgZ0j6FO
+#EXTINF:-1 tvg-id="988078" group-title="🎾|Live Tennis" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_b6544e76096de2e6.png",28/11 05:00 PM | Davis Cup (USA┃ TENNIS CHANNEL HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312176_
-#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=394553&extension=ts&play_token=WpK6NXHzuX
-#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312176&extension=ts&play_token=6pmwpwyQYF
-#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=394553&extension=ts&play_token=xN5nxhm6iT
-#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312176&extension=ts&play_token=JOPTvAHlUv
-#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=988078&extension=ts&play_token=g5i45L7Gb4
+#EXTINF:-1 tvg-id="858523" group-title="🎾|Live Tennis" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4874fbceb44994a7.png",28/11 05:00 PM | Davis Cup (USA┃ TENNIS CHANNEL HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=394553&extension=ts&play_token=Ty4Pb2p3pj
-#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT HD)
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=858523&extension=ts&play_token=Fttv0ue2BA
+#EXTINF:-1 tvg-id="988078" group-title="🎾|Live Tennis" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_b6544e76096de2e6.png",28/11 05:00 PM | Davis Cup (USA┃ TENNIS CHANNEL HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312176&extension=ts&play_token=8nz8D7oyGS
-#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS 4K)
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=988078&extension=ts&play_token=zKoyObUd7L
+#EXTINF:-1 tvg-id="858523" group-title="🎾|Live Tennis" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4874fbceb44994a7.png",28/11 05:00 PM | Davis Cup (USA┃ TENNIS CHANNEL HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=858523&extension=ts&play_token=CSCxULXCMx
+#EXTINF:-1 tvg-id="988078" group-title="🎾|Live Tennis" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_b6544e76096de2e6.png",28/11 05:00 PM | Davis Cup (USA┃ TENNIS CHANNEL HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=988078&extension=ts&play_token=Jo1ZMZFKOx
+#EXTINF:-1 tvg-id="1972847" group-title="🎾|Live Tennis" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_b6544e76096de2e6.png",28/11 05:00 PM | Davis Cup (PPV┃ TENNIS CHANNEL FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312008_
-#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1972847&extension=ts&play_token=X1RqjYMdfp
+#EXTINF:-1 tvg-id="1972847" group-title="🎾|Live Tennis" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_b6544e76096de2e6.png",28/11 05:00 PM | Davis Cup (PPV┃ TENNIS CHANNEL FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1972847&extension=ts&play_token=BkToXhIifl
+#EXTINF:-1 tvg-id="1314088" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 10:00 PM | Leeds United - Coventry City (UK┃ HUB PREMIER 2 4K UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312033_
-#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1314088&extension=ts&play_token=27RwegcRHs
+#EXTINF:-1 tvg-id="1314078" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_7e8623d5d27943dd.png",28/11 10:00 PM | Leeds United - Coventry City (UK┃ HUB PREMIER 2 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312049_
-#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312008&extension=ts&play_token=lR7tpnbBzc
-#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312033&extension=ts&play_token=jBIL8PqacA
-#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312049&extension=ts&play_token=ZgjUTib1Ml
-#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312008&extension=ts&play_token=YdNBm36eP1
-#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312033&extension=ts&play_token=8X7Ogr7UpA
-#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312049&extension=ts&play_token=qjcSgXbZ8G
-#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS 4K)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1314078&extension=ts&play_token=DWSJuqjEkH
+#EXTINF:-1 tvg-id="1314088" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 10:00 PM | Leeds United - Coventry City (UK┃ HUB PREMIER 2 4K UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312008&extension=ts&play_token=wuti07JE79
-#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1314088&extension=ts&play_token=oTeXJwjPR2
+#EXTINF:-1 tvg-id="1314078" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_7e8623d5d27943dd.png",28/11 10:00 PM | Leeds United - Coventry City (UK┃ HUB PREMIER 2 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312033&extension=ts&play_token=mwaPy2hKUA
-#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1314078&extension=ts&play_token=iVnuoFAhcv
+#EXTINF:-1 tvg-id="1314088" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 10:00 PM | Leeds United - Coventry City (UK┃ HUB PREMIER 2 4K UHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312049&extension=ts&play_token=LzIKnQkzes
-#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1314088&extension=ts&play_token=ewor4Ztwkd
+#EXTINF:-1 tvg-id="1314078" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_7e8623d5d27943dd.png",28/11 10:00 PM | Leeds United - Coventry City (UK┃ HUB PREMIER 2 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1314078&extension=ts&play_token=1j3d9mHbAw
+#EXTINF:-1 tvg-id="382836" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4a2a81464d555c52.png",28/11 10:00 PM | Manchester United vs Brentford (HK┃ NOW SPORTS EPL 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312036_
-#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=382836&extension=ts&play_token=msoPac4rqy
+#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 10:00 PM | Manchester United vs Brentford (UK┃ HUB PREMIER 1 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312048_
-#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1314077&extension=ts&play_token=IhucNu8nH7
+#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 10:00 PM | Manchester United vs Brentford (UK┃ HUB PREMIER 1 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1314077&extension=ts&play_token=fm6xUEKGri
+#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 10:00 PM | Manchester United vs Brentford (UK┃ HUB PREMIER 1 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1314077&extension=ts&play_token=NbHJYyu5v3
+#EXTINF:-1 tvg-id="1314079" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_be3ebe3aff8a247d.png",28/11 10:00 PM | Manchester United vs Brentford (UK┃ HUB PREMIER 3 FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/394557_
-#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1314079&extension=ts&play_token=k3jx6bH7k5
+#EXTINF:-1 tvg-id="1314079" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_be3ebe3aff8a247d.png",28/11 10:00 PM | Manchester United vs Brentford (UK┃ HUB PREMIER 3 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1314079&extension=ts&play_token=Si39uXad9F
+#EXTINF:-1 tvg-id="1314079" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_be3ebe3aff8a247d.png",28/11 10:00 PM | Manchester United vs Brentford (UK┃ HUB PREMIER 3 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1314079&extension=ts&play_token=CVAmFnMhC7
+#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312177_
-#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312036&extension=ts&play_token=kM1zqh91Tg
-#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312048&extension=ts&play_token=h9pOMqVHqR
-#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=394557&extension=ts&play_token=vU15OupC7z
-#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312177&extension=ts&play_token=0CSL8z7Cll
-#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312036&extension=ts&play_token=fuC30j8b3Q
-#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312048&extension=ts&play_token=Ri9f3cI4Q0
-#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=394557&extension=ts&play_token=6SRaYqe5sv
-#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312177&extension=ts&play_token=HqNJbgqisy
-#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312036&extension=ts&play_token=jvEBjPP6ut
-#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312048&extension=ts&play_token=EtVG25TmHA
-#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=394557&extension=ts&play_token=UJHHMugakM
-#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312177&extension=ts&play_token=4wkWhr5Zjz
-#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=394553&extension=ts&play_token=ai7mnwUuRh
+#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312002_
-#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312002&extension=ts&play_token=x8WMOVG5cW
-#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312002&extension=ts&play_token=q8AuKxCDKm
-#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 02:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312176&extension=ts&play_token=7KjmTX3Mrj
+#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312002&extension=ts&play_token=N7C01WRvQx
-#EXTINF:-1 tvg-id="382836" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4a2a81464d555c52.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (HK┃ NOW SPORTS EPL 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/382836_
-#EXTINF:-1 tvg-id="382836" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4a2a81464d555c52.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (HK┃ NOW SPORTS EPL 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=382836&extension=ts&play_token=7YH0bSLFTH
-#EXTINF:-1 tvg-id="382836" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4a2a81464d555c52.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (HK┃ NOW SPORTS EPL 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=382836&extension=ts&play_token=2zfSjkWQ2J
-#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/394553_
-#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312176_
-#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=394553&extension=ts&play_token=WpK6NXHzuX
-#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312176&extension=ts&play_token=6pmwpwyQYF
-#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=394553&extension=ts&play_token=xN5nxhm6iT
-#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312176&extension=ts&play_token=JOPTvAHlUv
-#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=394553&extension=ts&play_token=9fLQEHR3Ot
+#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=394553&extension=ts&play_token=Ty4Pb2p3pj
-#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENT HD)
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312176&extension=ts&play_token=a64YpJx0xa
+#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312176&extension=ts&play_token=8nz8D7oyGS
-#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS 4K)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=394553&extension=ts&play_token=5zyBBJPYPx
+#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312008_
-#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312033_
-#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312176&extension=ts&play_token=Ppui5BRFVj
+#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS 4K)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312049_
-#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312008&extension=ts&play_token=lR7tpnbBzc
-#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312033&extension=ts&play_token=jBIL8PqacA
-#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312049&extension=ts&play_token=ZgjUTib1Ml
-#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312008&extension=ts&play_token=YdNBm36eP1
-#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312033&extension=ts&play_token=8X7Ogr7UpA
-#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312049&extension=ts&play_token=qjcSgXbZ8G
-#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS 4K)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312008&extension=ts&play_token=wuti07JE79
-#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312033&extension=ts&play_token=mwaPy2hKUA
-#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312049&extension=ts&play_token=LzIKnQkzes
-#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312008&extension=ts&play_token=6o7ddq8FVe
+#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312036_
-#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312033&extension=ts&play_token=Kxe3f1K4gx
+#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312048_
-#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312049&extension=ts&play_token=ADmHCY8jwJ
+#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312008&extension=ts&play_token=KKrUhyBnOA
+#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312033&extension=ts&play_token=O2sZxQVvWn
+#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312049&extension=ts&play_token=dlz564zkve
+#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312008&extension=ts&play_token=grUZLfH4J0
+#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312033&extension=ts&play_token=luDlLUkrMC
+#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312049&extension=ts&play_token=Di631QPCOf
+#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/394557_
-#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312036&extension=ts&play_token=dWEOPxxdf3
+#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312177_
-#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312036&extension=ts&play_token=kM1zqh91Tg
-#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312048&extension=ts&play_token=h9pOMqVHqR
-#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=394557&extension=ts&play_token=vU15OupC7z
-#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312177&extension=ts&play_token=0CSL8z7Cll
-#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312036&extension=ts&play_token=fuC30j8b3Q
-#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312048&extension=ts&play_token=Ri9f3cI4Q0
-#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=394557&extension=ts&play_token=6SRaYqe5sv
-#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312177&extension=ts&play_token=HqNJbgqisy
-#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312036&extension=ts&play_token=jvEBjPP6ut
-#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312048&extension=ts&play_token=EtVG25TmHA
-#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=394557&extension=ts&play_token=UJHHMugakM
-#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAGUE HD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312177&extension=ts&play_token=4wkWhr5Zjz
-#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312048&extension=ts&play_token=WvKecS6LE4
+#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1312002_
-#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312002&extension=ts&play_token=x8WMOVG5cW
-#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1312002&extension=ts&play_token=q8AuKxCDKm
-#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312002&extension=ts&play_token=N7C01WRvQx
-#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ HUB PREMIER 1 FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=394557&extension=ts&play_token=PMq678bjza
+#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 141DF37603DE0A64D0EFDC14344F3C0C
-http://localhost/ch/1314077_
-#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ HUB PREMIER 1 FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F18B24656CBF622F0100DBE1F7560863
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1314077&extension=ts&play_token=FjqSFMJjo9
-#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ HUB PREMIER 1 FHD)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer E7458881D6B40FE274FF4B8934C29F87
-http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1314077&extension=ts&play_token=P965VK7KYi
-#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",28/11 03:00 AM | Nottingham Forest vs Chelsea (UK┃ HUB PREMIER 1 FHD)
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312177&extension=ts&play_token=EPYQbtOFpY
+#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer F2A550FC02EB2836F4A0376C0D08E742
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1314077&extension=ts&play_token=ucI8mCsJjM
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312036&extension=ts&play_token=XzcpFA2rp4
+#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312048&extension=ts&play_token=kDKHxxRCrj
+#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=394557&extension=ts&play_token=4zPrGSbrvf
+#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312177&extension=ts&play_token=euITUkWoh4
+#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312036&extension=ts&play_token=CkN5s4jPMa
+#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312048&extension=ts&play_token=gmF1cWk1Fj
+#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=394557&extension=ts&play_token=PmouvSp7qo
+#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312177&extension=ts&play_token=n2miccgv8z
+#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312002&extension=ts&play_token=bDjgYZ4S0E
+#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312002&extension=ts&play_token=QaaNkG0uCe
+#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",28/11 11:30 PM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312002&extension=ts&play_token=ZeNMKf1HIs
+#EXTINF:-1 tvg-id="1312728" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 RAW 50FPS FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312728&extension=ts&play_token=ZxBaiwPALC
+#EXTINF:-1 tvg-id="1312718" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HEVC FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312718&extension=ts&play_token=yN40LhnGCt
+#EXTINF:-1 tvg-id="1312720" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HEVC HD IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312720&extension=ts&play_token=c56vDTGALY
+#EXTINF:-1 tvg-id="1312726" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312726&extension=ts&play_token=2CzJ1Hroc2
+#EXTINF:-1 tvg-id="1312724" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312724&extension=ts&play_token=SuKHLhmf0y
+#EXTINF:-1 tvg-id="1312730" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 FHD (UK))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312730&extension=ts&play_token=HnilHmpPGg
+#EXTINF:-1 tvg-id="827989" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_ce3e30047ebf5ad6.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 8K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=827989&extension=ts&play_token=x24l04xDrv
+#EXTINF:-1 tvg-id="1312728" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 RAW 50FPS FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312728&extension=ts&play_token=DwYKUxWVIw
+#EXTINF:-1 tvg-id="1312718" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HEVC FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312718&extension=ts&play_token=HWVwNbdUHf
+#EXTINF:-1 tvg-id="1312720" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HEVC HD IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312720&extension=ts&play_token=aeHjHoOASr
+#EXTINF:-1 tvg-id="1312726" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312726&extension=ts&play_token=hvvnGTRUM1
+#EXTINF:-1 tvg-id="1312724" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312724&extension=ts&play_token=Y4mvPTOOl0
+#EXTINF:-1 tvg-id="1312730" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 FHD (UK))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312730&extension=ts&play_token=zKqE9ZeR69
+#EXTINF:-1 tvg-id="827989" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_ce3e30047ebf5ad6.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 8K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=827989&extension=ts&play_token=cXMWRp8MOB
+#EXTINF:-1 tvg-id="1312728" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 RAW 50FPS FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312728&extension=ts&play_token=kvMnJQidJv
+#EXTINF:-1 tvg-id="1312718" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HEVC FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312718&extension=ts&play_token=eBrji2BWWW
+#EXTINF:-1 tvg-id="1312720" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HEVC HD IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312720&extension=ts&play_token=ptgzmyM85K
+#EXTINF:-1 tvg-id="1312726" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 FHD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312726&extension=ts&play_token=RrAT8dPmIq
+#EXTINF:-1 tvg-id="1312724" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 HD (IRELAND))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312724&extension=ts&play_token=k1nRG9eznv
+#EXTINF:-1 tvg-id="1312730" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_c1145b381cfd1add.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 FHD (UK))
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312730&extension=ts&play_token=rWC9DEbcrS
+#EXTINF:-1 tvg-id="827989" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_ce3e30047ebf5ad6.png",28/11 11:30 PM | Elche vs Atletico Madrid (UK┃ PREMIER SPORTS 2 8K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=827989&extension=ts&play_token=Cdz1pWFkvi
+#EXTINF:-1 tvg-id="382836" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4a2a81464d555c52.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (HK┃ NOW SPORTS EPL 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=382836&extension=ts&play_token=msoPac4rqy
+#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ HUB PREMIER 1 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1314077&extension=ts&play_token=IhucNu8nH7
+#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ HUB PREMIER 1 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1314077&extension=ts&play_token=fm6xUEKGri
+#EXTINF:-1 tvg-id="1314077" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_32350b3f80ef09cd.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ HUB PREMIER 1 FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1314077&extension=ts&play_token=NbHJYyu5v3
+#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312036&extension=ts&play_token=dWEOPxxdf3
+#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312048&extension=ts&play_token=WvKecS6LE4
+#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=394557&extension=ts&play_token=PMq678bjza
+#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312177&extension=ts&play_token=EPYQbtOFpY
+#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312036&extension=ts&play_token=XzcpFA2rp4
+#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312048&extension=ts&play_token=kDKHxxRCrj
+#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=394557&extension=ts&play_token=4zPrGSbrvf
+#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312177&extension=ts&play_token=euITUkWoh4
+#EXTINF:-1 tvg-id="1312036" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312036&extension=ts&play_token=CkN5s4jPMa
+#EXTINF:-1 tvg-id="1312048" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312048&extension=ts&play_token=gmF1cWk1Fj
+#EXTINF:-1 tvg-id="394557" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=394557&extension=ts&play_token=PmouvSp7qo
+#EXTINF:-1 tvg-id="1312177" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_4dd02e7d21443650.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAGUE HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312177&extension=ts&play_token=n2miccgv8z
+#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312002&extension=ts&play_token=bDjgYZ4S0E
+#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312002&extension=ts&play_token=QaaNkG0uCe
+#EXTINF:-1 tvg-id="1312002" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_a08241e5309d79ac.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS PREMIER LEAUGE 50FPS)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312002&extension=ts&play_token=ZeNMKf1HIs
+#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=394553&extension=ts&play_token=ai7mnwUuRh
+#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312176&extension=ts&play_token=7KjmTX3Mrj
+#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=394553&extension=ts&play_token=9fLQEHR3Ot
+#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312176&extension=ts&play_token=a64YpJx0xa
+#EXTINF:-1 tvg-id="394553" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=394553&extension=ts&play_token=5zyBBJPYPx
+#EXTINF:-1 tvg-id="1312176" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENT HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312176&extension=ts&play_token=Ppui5BRFVj
+#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312008&extension=ts&play_token=6o7ddq8FVe
+#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312033&extension=ts&play_token=Kxe3f1K4gx
+#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312049&extension=ts&play_token=ADmHCY8jwJ
+#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312008&extension=ts&play_token=KKrUhyBnOA
+#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312033&extension=ts&play_token=O2sZxQVvWn
+#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=1312049&extension=ts&play_token=dlz564zkve
+#EXTINF:-1 tvg-id="1312008" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_6c5cf7e3feb24582.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS 4K)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312008&extension=ts&play_token=grUZLfH4J0
+#EXTINF:-1 tvg-id="1312033" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC FHD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312033&extension=ts&play_token=luDlLUkrMC
+#EXTINF:-1 tvg-id="1312049" group-title="⚽️🏴󠁧󠁢󠁥󠁮󠁧󠁿|Live Premier League" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_0c2724337581a4cb.png",29/11 12:30 AM | Ipswich Town vs Aston Villa (UK┃ SKY SPORTS MAIN EVENTS HEVC HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1312049&extension=ts&play_token=Di631QPCOf
+#EXTINF:-1 tvg-id="858592" group-title="⚽️🇨🇵|Live Ligue 1" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_8702eb64f3b64d31.png",29/11 02:45 AM | PSG - Lorient (USA┃ BEIN SPORTS 4 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858592&extension=ts&play_token=xtGzeBHp7N
+#EXTINF:-1 tvg-id="858592" group-title="⚽️🇨🇵|Live Ligue 1" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_8702eb64f3b64d31.png",29/11 02:45 AM | PSG - Lorient (USA┃ BEIN SPORTS 4 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=858592&extension=ts&play_token=Ij0r3V4bhW
+#EXTINF:-1 tvg-id="858592" group-title="⚽️🇨🇵|Live Ligue 1" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_8702eb64f3b64d31.png",29/11 02:45 AM | PSG - Lorient (USA┃ BEIN SPORTS 4 HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=858592&extension=ts&play_token=b9HIOoIRqn
+#EXTINF:-1 tvg-id="858554" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_69efd116637730cb.png",29/11 03:00 AM | Real Madrid vs Alavés (USA┃ ESPN HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 056625F55B3035D6DCBDF19C2C9DC149
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=858554&extension=ts&play_token=sCjydKzlzd
+#EXTINF:-1 tvg-id="858554" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_69efd116637730cb.png",29/11 03:00 AM | Real Madrid vs Alavés (USA┃ ESPN HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B3:2E:5D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F878F992AD01792E9628D4ED77F20F5E
+http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:B3:2E:5D&stream=858554&extension=ts&play_token=Vab5lEvi0u
+#EXTINF:-1 tvg-id="858554" group-title="⚽️🇪🇦|Live La Liga" tvg-logo="https://cover.mauve-cdn.net/LIVE/LOGOS/T1_69efd116637730cb.png",29/11 03:00 AM | Real Madrid vs Alavés (USA┃ ESPN HD)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer CF65B99F5BED54EF8DAD6F0D8F0BC18F
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=858554&extension=ts&play_token=iv0l880gCU
